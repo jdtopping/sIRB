@@ -8,6 +8,7 @@
   <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLResearchStudy" />
   <version value="0.1.0" />
   <name value="DLResearchStudy" />
+  <title value="Determination Letter Research Study" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -68,10 +69,19 @@
     <element id="ResearchStudy.sponsor">
       <path value="ResearchStudy.sponsor" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+      </type>
     </element>
     <element id="ResearchStudy.principalInvestigator">
       <path value="ResearchStudy.principalInvestigator" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
