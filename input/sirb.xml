@@ -6,7 +6,27 @@
   <title value="Single Institutional Review Board (sIRB) Implementation Guide" />  
   <status value="draft" />
   <experimental value="false"/>  
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/rcrim/"/>
+    </telecom>
+  </contact>  
   <description value="Data standards to move data and documents from clinical research sites to a single ethics review board in support of the &quot;NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Research&quot;" />
+  <jurisdiction>
+    <!-- This will drive SNOMED release used -->
+    <coding>
+      <!-- This is the code for universal -->
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <!-- Change to this if the IG is country-specific
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      -->
+    </coding>
+  </jurisdiction>
   <packageId value="hl7.fhir.us.sirb"/>    
   <fhirVersion value="4.0.1" />
   <definition>
@@ -59,8 +79,8 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="history.html"/>
-        <title value="History"/>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
         <generation value="html"/>
       </page>      
     </page>
