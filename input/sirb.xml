@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="hl7.fhir.us.sirb"/>
-  <url value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.us.sirb" />
+  <url value="http://hl7.org/fhir/us/sirb/ImplementationGuide/hl7.fhir.us.sirb" />
   <name value="SingleInstitutionalReviewBoard" />
   <title value="Single Institutional Review Board (sIRB) Implementation Guide" />  
   <status value="draft" />
