@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
+  <id value="hl7.fhir.us.sirb"/>
+  <url value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.us.sirb" />
+  <name value="SingleInstitutionalReviewBoard" />
+  <title value="Single Institutional Review Board (sIRB) Implementation Guide" />  
+  <status value="draft" />
+  <experimental value="false"/>  
+  <description value="Data standards to move data and documents from clinical research sites to a single ethics review board in support of the &quot;NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Research&quot;" />
+  <packageId value="hl7.fhir.us.sirb"/>    
+  <fhirVersion value="4.0.1" />
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <!--    <resource>
+      <reference>
+        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+      </reference>
+      <name value="Name you want in artifact list"/>
+      <description value="Description you want in artifact list"/>
+    </resource>-->    
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="determination.html"/>
+        <title value="Determination Letter"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="protocol.html"/>
+        <title value="Study Protocol"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="consent.html"/>
+        <title value="Informed Consent"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="history.html"/>
+        <title value="History"/>
+        <generation value="html"/>
+      </page>      
+    </page>
+  </definition>
+</ImplementationGuide>
