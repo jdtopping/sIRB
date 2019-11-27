@@ -1,0 +1,18 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="NonReliantList"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Non-Reliant IRB List</div>
+    </text>
+    <status value="current"/>
+    <mode value="working"/>
+    <title value="List - NonReliantIRB"/>
+    <entry>
+        <item>
+            <reference value="Organization/UnivSouthCoast"/>
+        </item>
+    </entry>
+</List>

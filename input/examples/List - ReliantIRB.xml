@@ -1,0 +1,28 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="ReliantList"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Reliant IRB List</div>
+    </text>
+    <status value="current"/>
+    <mode value="working"/>
+    <title value="List - ReliantIRB"/>    
+    <entry>
+        <item>
+            <reference value="PractitionerRole/CambridgeRole"/>
+        </item>
+    </entry>
+    <entry>
+        <item>
+            <reference value="PractitionerRole/GoldenGateRole"/>
+        </item>
+    </entry>
+    <entry>
+        <item>
+            <reference value="PractitionerRole/RidgeviewRole"/>
+        </item>
+    </entry>
+</List>

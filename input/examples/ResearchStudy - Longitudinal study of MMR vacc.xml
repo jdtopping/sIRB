@@ -1,0 +1,28 @@
+<ResearchStudy xmlns="http://hl7.org/fhir">
+    <id value="MMRStudy"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLResearchStudy"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Longitudinal study of MMR vaccination in patients born from 1980-2018</div>
+    </text>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://ncimeta.nci.nih.gov"/>
+                <code value="C2985863"/>
+                <display value="Review Board Approval Number"></display>
+            </coding>
+        </type>
+        <value value="123456789" />
+    </identifier> 
+    <title value="Longitudinal study of MMR vaccination in patients born from 1980-2018"/>
+    <status value="in-review"/>
+    <sponsor>
+        <reference value="Organization/Cambridge"/>
+    </sponsor>
+    <principalInvestigator>
+        <reference value="Practitioner/CoreyWarren"/>
+    </principalInvestigator>
+</ResearchStudy>

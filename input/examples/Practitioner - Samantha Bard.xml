@@ -1,0 +1,22 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="SamanthaBard"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2019-10-07T15:53:51.707+00:00"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Samantha Bard</div>
+    </text>
+    <name>
+        <text value="Samantha Bard"/>
+        <family value="Bard"/>
+        <given value="Samantha"/>
+    </name>
+    <telecom>
+        <system value="email"/>
+        <value value="sbard@ridgeview.net"/>
+        <use value="work"/>
+    </telecom>
+</Practitioner>

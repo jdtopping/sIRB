@@ -41,9 +41,5 @@
       <path value="Organization.name" />
       <min value="1" />
     </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-      <min value="1" />
-    </element>
   </differential>
 </StructureDefinition>

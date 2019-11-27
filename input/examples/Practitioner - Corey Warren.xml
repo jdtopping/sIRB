@@ -1,0 +1,20 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="CoreyWarren"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Corey Warren</div>
+    </text>
+    <name>
+        <text value="Corey Warren"/>
+        <family value="Warren"/>
+        <given value="Corey"/>
+    </name>
+    <telecom>
+        <system value="email"/>
+        <value value="corey_warren@cambridgepeds.edu"/>
+        <use value="work"/>
+    </telecom>
+</Practitioner>

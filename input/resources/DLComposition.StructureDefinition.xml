@@ -43,7 +43,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="id" />
+          <path value="title" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -52,16 +52,24 @@
       <path value="Composition.section" />
       <sliceName value="title" />
     </element>
+    <element id="Composition.section:title.title">
+      <path value="Composition.section.title" />
+      <fixedString value="title" />
+    </element>
     <element id="Composition.section:information">
       <path value="Composition.section" />
       <sliceName value="information" />
+    </element>
+    <element id="Composition.section:information.title">
+      <path value="Composition.section.title" />
+      <fixedString value="information" />
     </element>
     <element id="Composition.section:information.entry">
       <path value="Composition.section.entry" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="id" />
+          <type value="profile" />
+          <path value="resolve()" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -71,7 +79,6 @@
       <sliceName value="Practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
         <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
       </type>
     </element>
@@ -95,12 +102,16 @@
       <path value="Composition.section" />
       <sliceName value="relianceDetermination" />
     </element>
+    <element id="Composition.section:relianceDetermination.title">
+      <path value="Composition.section.title" />
+      <fixedString value="relianceDetermination" />
+    </element>
     <element id="Composition.section:relianceDetermination.section">
       <path value="Composition.section.section" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="id" />
+          <path value="title" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -108,6 +119,10 @@
     <element id="Composition.section:relianceDetermination.section:reviewingIRB">
       <path value="Composition.section.section" />
       <sliceName value="reviewingIRB" />
+    </element>
+    <element id="Composition.section:relianceDetermination.section:reviewingIRB.title">
+      <path value="Composition.section.section.title" />
+      <fixedString value="reviewingIRB" />
     </element>
     <element id="Composition.section:relianceDetermination.section:reviewingIRB.entry">
       <path value="Composition.section.section.entry" />
@@ -140,6 +155,10 @@
       <path value="Composition.section.section" />
       <sliceName value="approvedIRBList" />
     </element>
+    <element id="Composition.section:relianceDetermination.section:approvedIRBList.title">
+      <path value="Composition.section.section.title" />
+      <fixedString value="approvedIRBList" />
+    </element>
     <element id="Composition.section:relianceDetermination.section:approvedIRBList.entry">
       <path value="Composition.section.section.entry" />
       <slicing>
@@ -161,6 +180,10 @@
     <element id="Composition.section:relianceDetermination.section:nonApprovedIRBList">
       <path value="Composition.section.section" />
       <sliceName value="nonApprovedIRBList" />
+    </element>
+    <element id="Composition.section:relianceDetermination.section:nonApprovedIRBList.title">
+      <path value="Composition.section.section.title" />
+      <fixedString value="nonApprovedIRBList" />
     </element>
     <element id="Composition.section:relianceDetermination.section:nonApprovedIRBList.entry">
       <path value="Composition.section.section.entry" />
@@ -184,12 +207,16 @@
       <path value="Composition.section" />
       <sliceName value="responsibilities" />
     </element>
+    <element id="Composition.section:responsibilities.title">
+      <path value="Composition.section.title" />
+      <fixedString value="responsibilities" />
+    </element>
     <element id="Composition.section:responsibilities.section">
       <path value="Composition.section.section" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="id" />
+          <path value="title" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -198,20 +225,32 @@
       <path value="Composition.section.section" />
       <sliceName value="overallPIResponsibilities" />
     </element>
+    <element id="Composition.section:responsibilities.section:overallPIResponsibilities.title">
+      <path value="Composition.section.section.title" />
+      <fixedString value="overallPIResponsibilities" />
+    </element>
     <element id="Composition.section:responsibilities.section:siteInvestigatorResponsibilities">
       <path value="Composition.section.section" />
       <sliceName value="siteInvestigatorResponsibilities" />
+    </element>
+    <element id="Composition.section:responsibilities.section:siteInvestigatorResponsibilities.title">
+      <path value="Composition.section.section.title" />
+      <fixedString value="siteInvestigatorResponsibilities" />
     </element>
     <element id="Composition.section:close">
       <path value="Composition.section" />
       <sliceName value="close" />
     </element>
+    <element id="Composition.section:close.title">
+      <path value="Composition.section.title" />
+      <fixedString value="close" />
+    </element>
     <element id="Composition.section:close.entry">
       <path value="Composition.section.entry" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="id" />
+          <type value="profile" />
+          <path value="resolve()" />
         </discriminator>
         <rules value="open" />
       </slicing>

@@ -1,0 +1,32 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="UnivSouthCoast"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">University of Southern Coast</div>
+    </text>
+    <identifier>
+        <value value="FWA11119999"/>
+    </identifier>
+    <active value="true"/>
+    <type>
+        <coding>
+            <code value="prov"/>
+        </coding>
+    </type>
+    <name value="University of Southern Coast"/>
+    <contact>
+        <name>
+            <use value="usual"/>
+            <family value="Foy"/>
+            <given value="Claire"/>
+        </name>
+        <telecom>
+            <system value="email"/>
+            <value value="ffoy@usc.tech"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+</Organization>

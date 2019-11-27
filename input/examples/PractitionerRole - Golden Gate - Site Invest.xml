@@ -1,0 +1,23 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="GoldenGateRole"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Golden Gate Medical Center - Site Investigator</div>
+    </text>
+    <practitioner>
+        <reference value="Practitioner/MarkJessup"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/GoldenGate"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="768816002"/>
+            <display value="Site Investigator"/>
+        </coding>
+    </code>
+</PractitionerRole>

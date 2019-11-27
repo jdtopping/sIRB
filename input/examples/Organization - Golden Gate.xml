@@ -1,0 +1,21 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="GoldenGate"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2019-10-07T15:51:07.816+00:00"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Golden Gate Medical Center</div>
+    </text>
+    <identifier>
+        <value value="FWA7777777"/>
+    </identifier>
+    <type>
+        <coding>
+            <code value="prov"/>
+        </coding>
+    </type>
+    <name value="Golden Gate Medical Center"/>
+</Organization>
