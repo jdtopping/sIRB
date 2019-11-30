@@ -1,9 +1,9 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="GoldenGate"/>
+    <id value="sirb-dl-ex-org-gg"/>
     <meta>
         <versionId value="2"/>
         <lastUpdated value="2019-10-07T15:51:07.816+00:00"/>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>
     </meta>
     <text>
         <status value="generated"/>

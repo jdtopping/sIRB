@@ -1,7 +1,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-    <id value="CoreyWarren"/>
+    <id value="sirb-dl-ex-prac-cw"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>
     </meta>
     <text>
         <status value="generated"/>

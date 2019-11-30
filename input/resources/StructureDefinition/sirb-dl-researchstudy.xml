@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DLResearchStudy" />
+  <id value="sirb-dl-researchstudy" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2019-09-30T19:02:48.628+00:00" />
   </meta>
-  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLResearchStudy" />
+  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy" />
   <version value="0.1.0" />
-  <name value="DLResearchStudy" />
-  <title value="Determination Letter Research Study" />
+  <name value="sirb-dl-researchstudy" />
+  <title value="sIRB - Determination Letter - ResearchStudy" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -71,7 +71,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
       </type>
     </element>
     <element id="ResearchStudy.principalInvestigator">
@@ -79,8 +79,8 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole" />
       </type>
     </element>
   </differential>

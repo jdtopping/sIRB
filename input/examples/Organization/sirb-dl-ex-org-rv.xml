@@ -1,7 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="Ridgeview"/>
+    <id value="sirb-dl-ex-org-rv"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>
     </meta>
     <text>
         <status value="generated"/>

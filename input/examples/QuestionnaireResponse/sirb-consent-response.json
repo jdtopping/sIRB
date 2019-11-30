@@ -1,0 +1,1579 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "sirb-consent-response",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
+    ]
+  },
+  "questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire" ,
+  "status": "completed",
+  "authored": "2019-10-08T19:25:03.033Z",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Title of the Study",
+      "answer": [
+        {
+          "valueString": "A Randomized Clinical Trial on the combinative use of letters A and B."
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Site Principal Investigator",
+      "item": [
+        {
+          "linkId": "2.1",
+          "text": "Site Principal Investigator Last Name",
+          "answer": [
+            {
+              "valueString": "Doe"
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "text": "Site Prinicipal Investigator First Name",
+          "answer": [
+            {
+              "valueString": "Jane"
+            }
+          ]
+        },
+        {
+          "linkId": "2.3",
+          "text": "Site Prinicipal Investigator Professional Degrees",
+          "answer": [
+            {
+              "valueString": "PhD"
+            }
+          ]
+        },
+        {
+          "linkId": "2.4",
+          "text": "Site Prinicipal Investigator Associated Institution",
+          "answer": [
+            {
+              "valueString": "University of the States"
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "text": "Site Prinicipal Investigator Contact Information",
+          "answer": [
+            {
+              "valueString": "XXX-XXX-XXXX Smith Building Room 14, College Circle, XX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Conducting Institution",
+      "item": [
+        {
+          "linkId": "3.1",
+          "text": "Conducting Institution Name",
+          "answer": [
+            {
+              "valueString": "The University of the States"
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "text": "Conducting Institution Address",
+          "answer": [
+            {
+              "valueString": "College Circle, XX, ZZZZZ"
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "text": "Conducting Institution OID",
+          "answer": [
+            {
+              "valueString": "XXX.XX.XXX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Sponsor or Funding Source",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Sponsor Name",
+          "answer": [
+            {
+              "valueString": "Pharmacum Pharma"
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Sponsor OID",
+          "answer": [
+            {
+              "valueString": "XXX.XX.XXX1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Sponsor or Funding Source",
+      "item": [
+        {
+          "linkId": "4.1",
+          "text": "Sponsor Name",
+          "answer": [
+            {
+              "valueString": "Other Pharma Co."
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "text": "Sponsor OID",
+          "answer": [
+            {
+              "valueString": "XXX.XX.XXX2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Summary Text",
+      "item": [
+        {
+          "linkId": "5.1",
+          "text": "Summary Text Statement",
+          "answer": [
+            {
+              "valueString": "This is the Mandated paragraph that describes the basic purpose, procedures and reasons behind the research in easily understood prose. To be set off from other text in a box."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Introduction and Statement of Research",
+      "item": [
+        {
+          "linkId": "6a",
+          "text": "About this Consent Form",
+          "answer": [
+            {
+              "valueString": "This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends.  Additional information about the RCT study can be included here to introduce it to the participant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Purpose",
+      "item": [
+        {
+          "linkId": "7.1",
+          "text": "Why is this research being done?",
+          "answer": [
+            {
+              "valueString": "This study is being conducted to better understand the relationship between A and B, and the effects on people who use these letters.  In addition, this study will also generate data that may be applicable to all letter based conditions."
+            }
+          ]
+        },
+        {
+          "linkId": "7.2",
+          "text": "Who will the subjects be interacting with during the course of the study?",
+          "answer": [
+            {
+              "valueString": "Each participant will be working with a specific research coordinator.  This RC will be your point of contact for the study, and be responsible for scheduling procedures and followup."
+            }
+          ]
+        },
+        {
+          "linkId": "7.3",
+          "text": "Who is being invited to participate?",
+          "answer": [
+            {
+              "valueString": "This study is open to all people who are users of specifically A and B in combination.  Users of A and B in isolation will not be enrolled."
+            }
+          ]
+        },
+        {
+          "linkId": "7.4",
+          "text": "Total expected study enrollment",
+          "answer": [
+            {
+              "valueInteger": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "text": "Procedures",
+      "item": [
+        {
+          "linkId": "8.a",
+          "text": "Visit Introductory Text",
+          "answer": [
+            {
+              "valueString": "Visits will be scheduled monthly +/- 5 days.  Other information about the visit schedule can be included here."
+            }
+          ]
+        },
+        {
+          "linkId": "8.01",
+          "text": "Visit List",
+          "item": [
+            {
+              "linkId": "8.02",
+              "text": "Visit Type",
+              "answer": [
+                {
+                  "valueString": "Baseline"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03",
+              "text": "Visit Description",
+              "answer": [
+                {
+                  "valueString": "Vitals, Venipuncture, Respiratory testing bank, Bone DXA scan, EQOL"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03a",
+              "text": "Visit Duration",
+              "answer": [
+                {
+                  "valueString": "4"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03b",
+              "text": "Visit Duration Units",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "LinkId",
+                    "code": "2",
+                    "display": "Hours"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.04",
+              "text": "Number of Visits",
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.01",
+          "text": "Visit List",
+          "item": [
+            {
+              "linkId": "8.02",
+              "text": "Visit Type",
+              "answer": [
+                {
+                  "valueString": "Follow up"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03",
+              "text": "Visit Description",
+              "answer": [
+                {
+                  "valueString": "Vitals, Venipuncture"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03a",
+              "text": "Visit Duration",
+              "answer": [
+                {
+                  "valueString": "1"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03b",
+              "text": "Visit Duration Units",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "LinkId",
+                    "code": "2",
+                    "display": "Hours"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.04",
+              "text": "Number of Visits",
+              "answer": [
+                {
+                  "valueInteger": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.01",
+          "text": "Visit List",
+          "item": [
+            {
+              "linkId": "8.02",
+              "text": "Visit Type",
+              "answer": [
+                {
+                  "valueString": "Completion"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03",
+              "text": "Visit Description",
+              "answer": [
+                {
+                  "valueString": "Vitals, Venipuncture, Respiratory testing bank"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03a",
+              "text": "Visit Duration",
+              "answer": [
+                {
+                  "valueString": "3"
+                }
+              ]
+            },
+            {
+              "linkId": "8.03b",
+              "text": "Visit Duration Units",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "LinkId",
+                    "code": "2",
+                    "display": "Hours"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.04",
+              "text": "Number of Visits",
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.05",
+          "text": "Procedure List",
+          "item": [
+            {
+              "linkId": "8.06",
+              "text": "Name of Procedure",
+              "answer": [
+                {
+                  "valueString": "Vitals"
+                }
+              ]
+            },
+            {
+              "linkId": "8.07",
+              "text": "Common Term of Procedure",
+              "answer": [
+                {
+                  "valueString": "Pulse, Wt, BP"
+                }
+              ]
+            },
+            {
+              "linkId": "8.08",
+              "text": "Description of a Procedure",
+              "answer": [
+                {
+                  "valueString": "Basic"
+                }
+              ]
+            },
+            {
+              "linkId": "8.10",
+              "text": "Experimental Procedure Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "No"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.11",
+              "text": "Research Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "Standard of Care"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.12",
+              "text": "Frequency of Procedures",
+              "answer": [
+                {
+                  "valueDecimal": 7
+                }
+              ]
+            },
+            {
+              "linkId": "8.13",
+              "text": "Procedure Duration (minutes)",
+              "answer": [
+                {
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.05",
+          "text": "Procedure List",
+          "item": [
+            {
+              "linkId": "8.06",
+              "text": "Name of Procedure",
+              "answer": [
+                {
+                  "valueString": "Venipuncture"
+                }
+              ]
+            },
+            {
+              "linkId": "8.07",
+              "text": "Common Term of Procedure",
+              "answer": [
+                {
+                  "valueString": "Blood Draw"
+                }
+              ]
+            },
+            {
+              "linkId": "8.08",
+              "text": "Description of a Procedure",
+              "answer": [
+                {
+                  "valueString": "4 tubes of blood will be drawn."
+                }
+              ]
+            },
+            {
+              "linkId": "8.09",
+              "text": "Procedure Category",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "1",
+                    "display": "Blood Collection"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.10",
+              "text": "Experimental Procedure Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "No"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.11",
+              "text": "Research Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "Standard of Care"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.12",
+              "text": "Frequency of Procedures",
+              "answer": [
+                {
+                  "valueDecimal": 7
+                }
+              ]
+            },
+            {
+              "linkId": "8.13",
+              "text": "Procedure Duration (minutes)",
+              "answer": [
+                {
+                  "valueDecimal": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.05",
+          "text": "Procedure List",
+          "item": [
+            {
+              "linkId": "8.06",
+              "text": "Name of Procedure",
+              "answer": [
+                {
+                  "valueString": "Respiratory testing bank"
+                }
+              ]
+            },
+            {
+              "linkId": "8.07",
+              "text": "Common Term of Procedure",
+              "answer": [
+                {
+                  "valueString": "Breathing testing"
+                }
+              ]
+            },
+            {
+              "linkId": "8.08",
+              "text": "Description of a Procedure",
+              "answer": [
+                {
+                  "valueString": "These tests will consist of 5 different tests measuring breathing rate, vital capacity and 3 other tests.  Some tests will not require any procedure other than observation by the study coordinator.  Vital capacity will involve taking a very deep breath and completely exhaling into a tube in order to measure total volume.  Another test will involve walking on a treadmill while wearing a mask and several different speeds on the treadmill."
+                }
+              ]
+            },
+            {
+              "linkId": "8.09",
+              "text": "Procedure Category",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "7",
+                    "display": "(Need plan for other)"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.10",
+              "text": "Experimental Procedure Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "No"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.11",
+              "text": "Research Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "1",
+                    "display": "Research"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.12",
+              "text": "Frequency of Procedures",
+              "answer": [
+                {
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "linkId": "8.13",
+              "text": "Procedure Duration (minutes)",
+              "answer": [
+                {
+                  "valueDecimal": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.05",
+          "text": "Procedure List",
+          "item": [
+            {
+              "linkId": "8.06",
+              "text": "Name of Procedure",
+              "answer": [
+                {
+                  "valueString": "Bone DXA scan"
+                }
+              ]
+            },
+            {
+              "linkId": "8.07",
+              "text": "Common Term of Procedure",
+              "answer": [
+                {
+                  "valueString": "Bone Density Scan"
+                }
+              ]
+            },
+            {
+              "linkId": "8.08",
+              "text": "Description of a Procedure",
+              "answer": [
+                {
+                  "valueString": "This procedure will involve wearing a hospital gown and laying still in a large machine.  The amount of x-rays used is equivalent to the amount absorbed on a transcontinental flight."
+                }
+              ]
+            },
+            {
+              "linkId": "8.09",
+              "text": "Procedure Category",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "X-Ray"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.10",
+              "text": "Experimental Procedure Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "2",
+                    "display": "No"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.11",
+              "text": "Research Indicator",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "1",
+                    "display": "Research"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8.12",
+              "text": "Frequency of Procedures",
+              "answer": [
+                {
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "linkId": "8.13",
+              "text": "Procedure Duration (minutes)",
+              "answer": [
+                {
+                  "valueDecimal": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.b",
+          "text": "Procedure Supplemental Visit Text",
+          "answer": [
+            {
+              "valueString": "There may be additional information about procedures to capture here that applies to all or some of the procedures listed.  Other comparisons or warnings can be detailed here."
+            }
+          ]
+        },
+        {
+          "linkId": "8.14",
+          "text": "Total Duration of Study Participation",
+          "answer": [
+            {
+              "valueDecimal": 6
+            }
+          ]
+        },
+        {
+          "linkId": "8.15",
+          "text": "Total Duration of Study Participation (units)",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "3",
+                "display": "Months"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {},
+    {
+      "linkId": "10",
+      "text": "Alternative Procedures",
+      "item": [
+        {
+          "linkId": "10.1",
+          "text": "Alternative Procedure Text",
+          "answer": [
+            {
+              "valueString": "This section would not be relevant in an observational study, but would otherwise detail alternatives to the active treatment in an interventional study."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "text": "Benefits",
+      "item": [
+        {
+          "linkId": "11.1",
+          "text": "Name of Benefit",
+          "answer": [
+            {
+              "valueString": "Increased letter understanding"
+            }
+          ]
+        },
+        {
+          "linkId": "11.2",
+          "text": "Description of Benefit",
+          "answer": [
+            {
+              "valueString": "Information from this study will be used to inform policy and refine current understanding and treatment for patients who use both A and B.  In addition, this study will also provide increased understanding of all letters."
+            }
+          ]
+        },
+        {
+          "linkId": "11.3",
+          "text": "Benefit to you",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "11.4",
+          "text": "Benefit to society",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "12",
+      "text": "Compensation",
+      "item": [
+        {
+          "linkId": "12.1",
+          "text": "Will there be compensation for participation?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "12.a",
+          "text": "Compensation Supplemental Text",
+          "answer": [
+            {
+              "valueString": "Participants will receive $100 for completing the baseline visit, $25 for each follow up visit they complete and $200 for completing they study in full."
+            }
+          ]
+        },
+        {
+          "linkId": "12.2",
+          "text": "Compensation List",
+          "item": [
+            {
+              "linkId": "12.3",
+              "text": "What types of visits or milestones will I be compensated for?",
+              "answer": [
+                {
+                  "valueString": "Baseline"
+                }
+              ]
+            },
+            {
+              "linkId": "12.5",
+              "text": "How many visits or milestones of this type will there be compensation for?",
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ]
+            },
+            {
+              "linkId": "12.6",
+              "text": "How much will be paid per this type of visit or milestone?",
+              "answer": [
+                {
+                  "valueString": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "12.2",
+          "text": "Compensation List",
+          "item": [
+            {
+              "linkId": "12.3",
+              "text": "What types of visits or milestones will I be compensated for?",
+              "answer": [
+                {
+                  "valueString": "Follow up"
+                }
+              ]
+            },
+            {
+              "linkId": "12.5",
+              "text": "How many visits or milestones of this type will there be compensation for?",
+              "answer": [
+                {
+                  "valueInteger": 4
+                }
+              ]
+            },
+            {
+              "linkId": "12.6",
+              "text": "How much will be paid per this type of visit or milestone?",
+              "answer": [
+                {
+                  "valueString": "25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "12.2",
+          "text": "Compensation List",
+          "item": [
+            {
+              "linkId": "12.3",
+              "text": "What types of visits or milestones will I be compensated for?",
+              "answer": [
+                {
+                  "valueString": "Completion"
+                }
+              ]
+            },
+            {
+              "linkId": "12.5",
+              "text": "How many visits or milestones of this type will there be compensation for?",
+              "answer": [
+                {
+                  "valueInteger": 1
+                }
+              ]
+            },
+            {
+              "linkId": "12.6",
+              "text": "How much will be paid per this type of visit or milestone?",
+              "answer": [
+                {
+                  "valueString": "200"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "text": "Costs",
+      "item": [
+        {
+          "linkId": "13.1",
+          "text": "What are the costs of participation, if any?",
+          "answer": [
+            {
+              "valueString": "Missed wages, transportation costs"
+            }
+          ]
+        },
+        {
+          "linkId": "13.2",
+          "text": "Will there be reimbursement for other study visit costs incurred?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "13.3",
+          "text": "Who will pay for medical treatment if research related injury occurs?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Treatment not covered"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "13.4",
+          "text": "Additional description of treatment coverage",
+          "answer": [
+            {
+              "valueString": "No additional treatment coverage is expected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "14",
+      "text": "Participant Rights and whom to contact for answers",
+      "item": [
+        {
+          "linkId": "14.1",
+          "text": "What are the rights of a subject?",
+          "answer": [
+            {
+              "valueString": "Subjects can expect study staff to update them on any changes to the study"
+            }
+          ]
+        },
+        {
+          "linkId": "14.2",
+          "text": "Contact Information for IRB contact for questions regarding participant rights",
+          "answer": [
+            {
+              "valueString": "IRB contact information"
+            }
+          ]
+        },
+        {
+          "linkId": "14.3",
+          "text": "Contact Information for Study Cooridinator for questions regarding study procedures",
+          "answer": [
+            {
+              "valueString": "SC contact information"
+            }
+          ]
+        },
+        {
+          "linkId": "14.4",
+          "text": "Contact Information for PI for research-related injury",
+          "answer": [
+            {
+              "valueString": "PI contact information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "16",
+      "text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
+      "answer": [
+        {
+          "valueString": "If the participant is not able to complete the procedures are described, they may be deemed ineligible for the study and terminated prior to study conclusion."
+        }
+      ]
+    },
+    {
+      "linkId": "18",
+      "text": "Early Withdrawal",
+      "item": [
+        {
+          "linkId": "18.1",
+          "text": "Are there consequences for early withdrawal?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "18.2",
+          "text": "Are there Emotional Consequences of Withdrawal",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "18.3",
+          "text": "Are there Physical Consequences of Withdrawal",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "18.4",
+          "text": "What are the consequences of withdrawal?",
+          "answer": [
+            {
+              "valueString": "If there had been consequences for withdrawal, they could have been captured here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "19",
+      "text": "Confidentiality of Records",
+      "item": [
+        {
+          "linkId": "19.2",
+          "text": "Will confidentiality be protected?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "19.2.1",
+          "text": "How will confidentiality be protected?",
+          "answer": [
+            {
+              "valueString": "All study records will be captured with a generic study ID.  Only the study coordinator will have the key to lookup individual participant data in the source system, and will not enter this into the clinical database."
+            }
+          ]
+        },
+        {
+          "linkId": "19.3",
+          "text": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "19.3.1",
+          "text": "Describe any data security policies and processes protecting the data",
+          "answer": [
+            {
+              "valueString": "Description of data security Processes"
+            }
+          ]
+        },
+        {
+          "linkId": "19.4",
+          "text": "Who can use or see participant information?",
+          "item": [
+            {
+              "linkId": "19.4.1",
+              "text": "Role or group who will have access to data",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "Custom",
+                    "code": "3",
+                    "display": "External Regulatory Authorities"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "19.4.2",
+              "text": "Description of Information Disclosed",
+              "answer": [
+                {
+                  "valueString": "Governmental auditors will have access to data as part of auditing procedures, but will not have access to the key linking the data to the original data storage system."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "19.5",
+          "text": "Will the data be released for future use?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "19.5.1",
+          "text": "Will the future use data be deidentified?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "19.5.2",
+          "text": "Deidentification detail",
+          "answer": [
+            {
+              "valueString": "Data released to other researchers will not be"
+            }
+          ]
+        },
+        {
+          "linkId": "19.5.3",
+          "text": "Required text disclosure surrounding future use.",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Identifiers might be removed from private information or biospecimens, and this information could then be used for future research studies or distributed to another investigator for future research studies without additional informed consent."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "20",
+      "text": "Specimen Management",
+      "item": [
+        {
+          "linkId": "20.1",
+          "text": "Were specimens collected as part of this study?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.2",
+          "text": "Is whole genome sequencing being conducted?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.4",
+          "text": "Sharing or no Sharing of samples.",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.4.1",
+          "text": "Conditions of sharing",
+          "answer": [
+            {
+              "valueString": "These are the conditions under which samples may be shared with other entities"
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.5",
+          "text": "Will participant share in profit with commerical use?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.6",
+          "text": "Description of Collection and Storage",
+          "answer": [
+            {
+              "valueString": "This is the description of how samples are collected and stored in a way that facilitates their retrieval."
+            }
+          ]
+        },
+        {
+          "linkId": "20.1.7",
+          "text": "Can consent for sample use be revoked?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "21",
+      "text": "Will there be Broad Consent for Storage, maintenance and secondary research use?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "22",
+      "text": "Can the study team contact you for future research?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "23",
+      "text": "Will participants share or not share in commercial profit?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "24",
+      "text": "Will the study team contact you with new information that may affect your willingness to remain in the study",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "25",
+      "text": "Will the study team disclose clinically relevant study results to you?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "26a",
+      "text": "Clinical Trials.gov statement",
+      "answer": [
+        {
+          "valueString": "A description of this clinical trial will be available on http://www.ClinicalTrials.gov, as required by U.S. Law. This Web site will not include information that can identify you. At most, the Web site will include a summary of the results. You can search this Web site at any time."
+        }
+      ]
+    },
+    {
+      "linkId": "26",
+      "text": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "Custom",
+            "code": "1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "27",
+      "text": "When will the PHI Authorization Expire based on date or time past an event",
+      "answer": [
+        {
+          "valueString": "Authorization will expire 5 years past final study visit."
+        }
+      ]
+    },
+    {
+      "linkId": "28",
+      "text": "Statement of PHI Authorization Revocation",
+      "answer": [
+        {
+          "valueString": "Particpants have the ability to revoke their consent to share PHI at any time but that there are limitations on what restrictions can apply to data that has already been shared."
+        }
+      ]
+    },
+    {
+      "linkId": "29",
+      "text": "Signature",
+      "item": [
+        {
+          "linkId": "29.1",
+          "text": "Indicator to include Subject Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.2",
+          "text": "Indicator to include Assent Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.3",
+          "text": "Indicator to include Legally Authorized Representative Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.4",
+          "text": "Indicator to include a Witness Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "1",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.5",
+          "text": "Indicator to include Parent 1 Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.6",
+          "text": "Indicator to include Parent 2 Signature and Date",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "Custom",
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "30",
+      "text": "ID and Version",
+      "item": [
+        {
+          "linkId": "30.1",
+          "text": "Protocol or Study Number",
+          "answer": [
+            {
+              "valueString": "A23512"
+            }
+          ]
+        },
+        {
+          "linkId": "30.2",
+          "text": "IRB Number",
+          "answer": [
+            {
+              "valueString": "Pro0002313"
+            }
+          ]
+        },
+        {
+          "linkId": "30.3",
+          "text": "Version Number of Consent",
+          "answer": [
+            {
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "linkId": "30.4",
+          "text": "Version Date of Consent",
+          "answer": [
+            {
+              "valueDateTime": "2019-10-01T17:01:00.000Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

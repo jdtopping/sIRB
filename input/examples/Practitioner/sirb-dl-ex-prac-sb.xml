@@ -1,9 +1,9 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-    <id value="SamanthaBard"/>
+    <id value="sirb-dl-ex-prac-sb"/>
     <meta>
         <versionId value="3"/>
         <lastUpdated value="2019-10-07T15:53:51.707+00:00"/>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,7 +16,7 @@
     </name>
     <telecom>
         <system value="email"/>
-        <value value="sbard@ridgeview.net"/>
+        <value value="sbard@Ridgeview.net"/>
         <use value="work"/>
     </telecom>
 </Practitioner>

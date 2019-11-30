@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DLOrganization" />
+  <id value="sirb-dl-organization" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2019-09-30T19:01:58.701+00:00" />
   </meta>
-  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
   <version value="0.1.0" />
-  <name value="DLOrganization" />
-  <title value="Determination Letter Organization" />
+  <name value="sirb-dl-organization" />
+  <title value="sIRB - Determination Letter - Organization" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>

@@ -1,7 +1,7 @@
 <List xmlns="http://hl7.org/fhir">
-    <id value="NonReliantList"/>
+    <id value="sirb-dl-ex-list-non"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -12,7 +12,7 @@
     <title value="Non-Reliant IRB List"/>
     <entry>
         <item>
-            <reference value="Organization/UnivSouthCoast"/>
+            <reference value="Organization/sirb-dl-ex-org-usc"/>
         </item>
     </entry>
 </List>

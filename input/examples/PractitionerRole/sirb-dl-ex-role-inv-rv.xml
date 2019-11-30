@@ -1,17 +1,17 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="CambridgeRole"/>
+    <id value="sirb-dl-ex-role-inv-rv"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/>
     </meta>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Cambridge Pediatric Hospital - Site Investigator</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Ridgeview Health System - Site Investigator</div>
     </text>
     <practitioner>
-        <reference value="Practitioner/CoreyWarren"/>
+        <reference value="Practitioner/sirb-dl-ex-prac-sb"/>
     </practitioner>
     <organization>
-        <reference value="Organization/Cambridge"/>
+        <reference value="Organization/sirb-dl-ex-org-rv"/>
     </organization>
     <code>
         <coding>

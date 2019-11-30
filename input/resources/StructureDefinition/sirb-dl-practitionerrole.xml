@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DLPractitionerRole" />
+  <id value="sirb-dl-practitionerrole" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2019-09-30T19:02:33.125+00:00" />
   </meta>
-  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
+  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole" />
   <version value="0.1.0" />
-  <name value="DLPractitionerRole" />
-  <title value="Determination Letter Practitioner Role" />
+  <name value="sirb-dl-practitionerrole" />
+  <title value="sIRB - Determination Letter - PractitionerRole" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -42,7 +42,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner" />
       </type>
     </element>
     <element id="PractitionerRole.organization">
@@ -50,7 +50,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
       </type>
     </element>
     <element id="PractitionerRole.code.coding.system">

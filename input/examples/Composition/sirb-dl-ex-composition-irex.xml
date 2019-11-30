@@ -1,18 +1,18 @@
 <Composition xmlns="http://hl7.org/fhir">
-    <id value="IREXDetLetter"/>
+    <id value="sirb-dl-ex-composition-irex"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLComposition"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/>
     </meta>
     <status value="preliminary"/>
     <type>
         <text value="Determination Letter"/>
     </type>
     <subject>
-        <reference value="ResearchStudy/MMRStudy"/>
+        <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
     </subject>
     <date value="2019-03-06T00:20:03.815Z"/>
     <author>
-        <reference value="Practitioner/CoreyWarren"/>
+        <reference value="Practitioner/sirb-dl-ex-prac-cw"/>
     </author>
     <title value="Determination Letter Composition - IREX"/>
     <confidentiality value="L"/>
@@ -51,13 +51,13 @@
             </div>
         </text>
         <entry>
-            <reference value="PractitionerRole/GoldenGateRole"/>
+            <reference value="PractitionerRole/sirb-dl-ex-role-inv-gg"/>
         </entry>
         <entry>
-            <reference value="Organization/GoldenGate"/>
+            <reference value="Organization/sirb-dl-ex-org-gg"/>
         </entry>
         <entry>
-            <reference value="ResearchStudy/MMRStudy"/>
+            <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
         </entry>
     </section>
     <section id="close">
@@ -76,7 +76,7 @@
             </div>
         </text>
         <entry>
-            <reference value="ResearchStudy/MMRStudy"/>
+            <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
         </entry>
     </section>
 </Composition>

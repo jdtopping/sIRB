@@ -1,7 +1,7 @@
 <List xmlns="http://hl7.org/fhir">
-    <id value="ReliantList"/>
+    <id value="sirb-dl-ex-list-rel"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -12,17 +12,17 @@
     <title value="Reliant IRB List"/>    
     <entry>
         <item>
-            <reference value="PractitionerRole/CambridgeRole"/>
+            <reference value="PractitionerRole/sirb-dl-ex-role-inv-cb"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="PractitionerRole/GoldenGateRole"/>
+            <reference value="PractitionerRole/sirb-dl-ex-role-inv-gg"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="PractitionerRole/RidgeviewRole"/>
+            <reference value="PractitionerRole/sirb-dl-ex-role-inv-rv"/>
         </item>
     </entry>
 </List>

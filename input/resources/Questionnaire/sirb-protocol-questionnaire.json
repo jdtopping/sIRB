@@ -1,11 +1,13 @@
 {
   "resourceType" : "Questionnaire",
-  "id" : "ProtocolQuestionnaire",
+  "id" : "sirb-protocol-questionnaire",
   "meta" : {
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
     ]
   },
-  "name" : "ProtocolQuestionnaire",
+  "url" : "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
+  "version" : "0.1.0",    
+  "name" : "sirb-protocol-questionnaire",
   "title" : "Protocol Questionnaire",
   "status" : "draft",
   "subjectType" : [
@@ -18,10 +20,10 @@
         {
           "system" : "Custom",
           "code" : "1",
-          "display" : "Title of the Protocol"
+          "display" : "sIRB Protocol"
         }
       ],
-      "text" : "Title of the Protocol",
+      "text" : "sIRB Protocol",
       "type" : "group",
       "required" : false,
       "item" : [

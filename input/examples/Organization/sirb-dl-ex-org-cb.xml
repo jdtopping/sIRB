@@ -1,31 +1,30 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="UnivSouthCoast"/>
+    <id value="sirb-dl-ex-org-cb"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>
     </meta>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">University of Southern Coast</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Cambridge Pediatric Hospital</div>
     </text>
     <identifier>
-        <value value="FWA11119999"/>
+        <value value="FWA12345678"/>
     </identifier>
-    <active value="true"/>
     <type>
         <coding>
             <code value="prov"/>
         </coding>
     </type>
-    <name value="University of Southern Coast"/>
+    <name value="Cambridge Pediatric Hospital"/>
     <contact>
         <name>
             <use value="usual"/>
-            <family value="Foy"/>
-            <given value="Claire"/>
+            <family value="Lee"/>
+            <given value="Sarah"/>
         </name>
         <telecom>
             <system value="email"/>
-            <value value="ffoy@usc.tech"/>
+            <value value="slee@Cambridgepeds.edu"/>
             <use value="work"/>
         </telecom>
     </contact>

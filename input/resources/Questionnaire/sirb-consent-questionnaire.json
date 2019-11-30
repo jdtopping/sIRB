@@ -1,11 +1,13 @@
 {
   "resourceType": "Questionnaire",
-  "id" : "ConsentQuestionnaire",
+  "id" : "sirb-consent-questionnaire",
   "meta" : {
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
     ]
   },
-  "name": "ConsentQuestionnaire",
+  "url" : "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire",
+  "version" : "0.1.0",  
+  "name": "sirb-consent-questionnaire",
   "title": "Consent Questionnaire",
   "status": "draft",
   "item": [

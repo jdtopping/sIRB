@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DLPractitioner" />
+  <id value="sirb-dl-practitioner" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2019-09-30T19:02:18.857+00:00" />
   </meta>
-  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
+  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner" />
   <version value="0.1.0" />
-  <name value="DLPractitioner" />
-  <title value="Determination Letter Practitioner" />
+  <name value="sirb-dl-practitioner" />
+  <title value="sIRB - Determination Letter - Practitioner" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>

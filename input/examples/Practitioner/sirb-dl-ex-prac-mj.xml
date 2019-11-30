@@ -1,7 +1,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-    <id value="MarkJessup"/>
+    <id value="sirb-dl-ex-prac-mj"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -14,7 +14,7 @@
     </name>
     <telecom>
         <system value="email"/>
-        <value value="m_jessup@goldengate.edu"/>
+        <value value="m_jessup@GoldenGate.edu"/>
         <use value="work"/>
     </telecom>
 </Practitioner>

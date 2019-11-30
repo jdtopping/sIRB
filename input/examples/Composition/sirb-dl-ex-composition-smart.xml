@@ -1,18 +1,18 @@
 <Composition xmlns="http://hl7.org/fhir">
-    <id value="SMARTDetLetter"/>
+    <id value="sirb-dl-ex-composition-smart"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLComposition"/>
+        <profile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/>
     </meta>
     <status value="preliminary"/>
     <type>
         <text value="Determination Letter"/>
     </type>
     <subject>
-        <reference value="ResearchStudy/MMRStudy"/>
+        <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
     </subject>
     <date value="2019-03-06T00:20:03.815Z"/>
     <author>
-        <reference value="Practitioner/CoreyWarren"/>
+        <reference value="Practitioner/sirb-dl-ex-prac-cw"/>
     </author>
     <title value="Determination Letter Composition - SMARTIRB"/>
     <confidentiality value="L"/>
@@ -70,13 +70,13 @@
             </div>
         </text>
         <entry>
-            <reference value="PractitionerRole/CambridgeRole"/>
+            <reference value="PractitionerRole/sirb-dl-ex-role-inv-cb"/>
         </entry>
         <entry>
-            <reference value="Organization/Cambridge"/>
+            <reference value="Organization/sirb-dl-ex-org-cb"/>
         </entry>
         <entry>
-            <reference value="ResearchStudy/MMRStudy"/>
+            <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
         </entry>
     </section>
     <section id="relianceDetermination">
@@ -90,13 +90,13 @@
             </div>
         </text>
         <entry>
-            <reference value="Organization/Cambridge"/>
+            <reference value="Organization/sirb-dl-ex-org-cb"/>
         </entry>
         <entry>
-            <reference value="List/ReliantList"/>
+            <reference value="List/sirb-dl-ex-list-rel"/>
         </entry>
         <entry>
-            <reference value="List/NonReliantList"/>
+            <reference value="List/sirb-dl-ex-list-non"/>
         </entry>
         <section id="reviewingIRB">
             <title value="reviewingIRB"/>
@@ -154,7 +154,7 @@
                         </tr>
                         <tr>
                             <td>Site Investigator</td>
-                            <td>&amp;nbsp;Mark Jessup, m_jessup@goldengate.edu</td>
+                            <td>&amp;nbsp;Mark Jessup, m_jessup@GoldenGate.edu</td>
                         </tr>
                     </table>
                     <p>
@@ -167,7 +167,7 @@
                         </tr>
                         <tr>
                             <td>Site Investigator</td>
-                            <td>&amp;nbsp;Samantha Bard, sbard@ridgeview.net</td>
+                            <td>&amp;nbsp;Samantha Bard, sbard@Ridgeview.net</td>
                         </tr>
                     </table>
                 </div>
@@ -264,7 +264,7 @@
             </div>
         </text>
         <entry>
-            <reference value="Organization/Cambridge"/>
+            <reference value="Organization/sirb-dl-ex-org-cb"/>
         </entry>
     </section>
 </Composition>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DLComposition" />
-  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLComposition" />
+  <id value="sirb-dl-composition" />
+  <url value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition" />
   <version value="0.1.0" />
-  <name value="DLComposition" />
-  <title value="Determination Letter Composition" />
+  <name value="sirb-dl-composition" />
+  <title value="sIRB - Determination Letter - Composition" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -79,7 +79,7 @@
       <sliceName value="Practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole" />
       </type>
     </element>
     <element id="Composition.section:information.entry:Organization">
@@ -87,7 +87,7 @@
       <sliceName value="Organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
       </type>
     </element>
     <element id="Composition.section:information.entry:ResearchStudy">
@@ -95,7 +95,7 @@
       <sliceName value="ResearchStudy" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLResearchStudy" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy" />
       </type>
     </element>
     <element id="Composition.section:relianceDetermination">
@@ -139,7 +139,7 @@
       <sliceName value="Organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
       </type>
     </element>
     <element id="Composition.section:relianceDetermination.section:reviewingIRB.entry:Practitioner">
@@ -147,8 +147,8 @@
       <sliceName value="Practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLPractitioner" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner" />
       </type>
     </element>
     <element id="Composition.section:relianceDetermination.section:approvedIRBList">
@@ -174,7 +174,7 @@
       <sliceName value="List" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list" />
       </type>
     </element>
     <element id="Composition.section:relianceDetermination.section:nonApprovedIRBList">
@@ -200,7 +200,7 @@
       <sliceName value="List" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLList" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list" />
       </type>
     </element>
     <element id="Composition.section:responsibilities">
@@ -260,7 +260,7 @@
       <sliceName value="organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/DLOrganization" />
+        <targetProfile value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization" />
       </type>
     </element>
   </differential>
