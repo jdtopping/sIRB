@@ -1,0 +1,511 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"1\"); The code provided (Custom#1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2\"); The code provided (Custom#2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2.1\"); The code provided (Custom#2.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2.2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2.2\"); The code provided (Custom#2.2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2.3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2.3\"); The code provided (Custom#2.3) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2.4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2.4\"); The code provided (Custom#2.4) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "2.5"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"2.5\"); The code provided (Custom#2.5) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"3\"); The code provided (Custom#3) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "3.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"3.1\"); The code provided (Custom#3.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "3.2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"3.2\"); The code provided (Custom#3.2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "3.3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"3.3\"); The code provided (Custom#3.3) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"4\"); The code provided (Custom#4) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "4.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"4.1\"); The code provided (Custom#4.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "4.2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"4.2\"); The code provided (Custom#4.2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "5"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"5\"); The code provided (Custom#5) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "5.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"5.1\"); The code provided (Custom#5.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "6"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"6\"); The code provided (Custom#6) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "7"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"7\"); The code provided (Custom#7) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "7.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"7.1\"); The code provided (Custom#7.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "7.2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"7.2\"); The code provided (Custom#7.2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "7.3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"7.3\"); The code provided (Custom#7.3) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "7.4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"7.4\"); The code provided (Custom#7.4) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"8\"); The code provided (Custom#8) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "10"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"10\"); The code provided (Custom#10) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "10.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"10.1\"); The code provided (Custom#10.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "11"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"11\"); The code provided (Custom#11) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "12"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"12\"); The code provided (Custom#12) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "13"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"13\"); The code provided (Custom#13) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "14"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"14\"); The code provided (Custom#14) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "14.1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"14.1\"); The code provided (Custom#14.1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "14.2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"14.2\"); The code provided (Custom#14.2) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "14.3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"14.3\"); The code provided (Custom#14.3) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "14.4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"14.4\"); The code provided (Custom#14.4) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "15"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"15\"); The code provided (Custom#15) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "16"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"16\"); The code provided (Custom#16) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "18"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"18\"); The code provided (Custom#18) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "19"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"19\"); The code provided (Custom#19) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "20"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"20\"); The code provided (Custom#20) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "21"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"21\"); The code provided (Custom#21) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "22"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"22\"); The code provided (Custom#22) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "23"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"23\"); The code provided (Custom#23) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "24"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"24\"); The code provided (Custom#24) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "25"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"25\"); The code provided (Custom#25) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "26"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"26\"); The code provided (Custom#26) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "27"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"27\"); The code provided (Custom#27) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "28"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"28\"); The code provided (Custom#28) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "29"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"29\"); The code provided (Custom#29) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "32"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"32\"); The code provided (Custom#32) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "33"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"33\"); The code provided (Custom#33) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "30"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"30\"); The code provided (Custom#30) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "Custom",
+  "code" : "31"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"Custom\" is not known (encountered paired with code = \"31\"); The code provided (Custom#31) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
