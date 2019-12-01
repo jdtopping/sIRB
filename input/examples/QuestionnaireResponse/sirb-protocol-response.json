@@ -1,1513 +1,1242 @@
 {
-  "resourceType": "QuestionnaireResponse",
-  "id": "sirb-protocol-response",
-  "meta": {
-    "lastUpdated": "2019-10-01T13:53:57.346-04:00",
-    "profile": [
-      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
-    ]
-  },
-  "questionnaire" : "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",  
-  "status": "completed",
-  "authored": "2019-10-01T17:53:57.273Z",
-  "item": [
-    {
-      "linkId": "1",
-      "text": "sIRB Protocol",
-      "item": [
+    "resourceType": "QuestionnaireResponse",
+    "id": "sirb-protocol-response",
+    "meta": {
+        "profile": ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"]
+    },
+    "questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
+    "status": "completed",
+    "authored": "2019-10-01T17:53:57.273Z",
+    "item": [
         {
-          "linkId": "2",
-          "text": "STUDY TYPE",
-          "answer": [
-            {
-              "valueCoding": {
-                "system": "Custom",
-                "code": "1",
-                "display": "Interventional"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "7",
-          "text": "TITLE PAGE",
-          "item": [
-            {
-              "linkId": "8",
-              "text": "Title ",
-              "answer": [
+            "linkId": "1",
+            "text": "sIRB Protocol",
+            "item": [
                 {
-                  "valueString": "The effect of..."
-                }
-              ]
-            },
-            {
-              "linkId": "14",
-              "text": "Principal Investigator",
-              "item": [
-                {
-                  "linkId": "15",
-                  "text": "First Name",
-                  "answer": [
-                    {
-                      "valueString": "John"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "15_1",
-                  "text": "Last Name",
-                  "answer": [
-                    {
-                      "valueString": "Doe"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "item372",
-                  "text": "Department Name",
-                  "answer": [
-                    {
-                      "valueString": "DOCR"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "16",
-                  "text": "Address",
-                  "answer": [
-                    {
-                      "valueString": "2011 West Street"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "17",
-                  "text": "Phone",
-                  "answer": [
-                    {
-                      "valueString": "9196785678"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "18",
-                  "text": "Email",
-                  "answer": [
-                    {
-                      "valueString": "test@test.com"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "19",
-              "text": "Additional Investigator",
-              "item": [
-                {
-                  "linkId": "20",
-                  "text": "Name",
-                  "answer": [
-                    {
-                      "valueString": "John Doe, II"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i371",
-                  "text": "Department Name",
-                  "answer": [
-                    {
-                      "valueString": "DRTY"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "21",
-                  "text": "Address",
-                  "answer": [
-                    {
-                      "valueString": "2067 East St"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "22",
-                  "text": "Phone",
-                  "answer": [
-                    {
-                      "valueString": "9197866789"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "11",
-              "text": "Protocol Number",
-              "answer": [
-                {
-                  "valueString": "A123-45-6789"
-                }
-              ]
-            },
-            {
-              "linkId": "i503",
-              "text": "Study Number",
-              "answer": [
-                {
-                  "valueString": "123456"
-                }
-              ]
-            },
-            {
-              "linkId": "i504",
-              "text": "IRB Number",
-              "answer": [
-                {
-                  "valueString": "123456"
-                }
-              ]
-            },
-            {
-              "linkId": "12",
-              "text": "ClinicalTrials.Gov Number",
-              "answer": [
-                {
-                  "valueString": "123456"
-                }
-              ]
-            },
-            {
-              "linkId": "13",
-              "text": "IND/IDE Number",
-              "answer": [
-                {
-                  "valueString": "er4567yth"
-                }
-              ]
-            },
-            {
-              "linkId": "26",
-              "text": "Study Product Name",
-              "answer": [
-                {
-                  "valueString": "Tylenol"
-                }
-              ]
-            },
-            {
-              "linkId": "i513",
-              "text": "Study Product Provider",
-              "answer": [
-                {
-                  "valueString": "Glaxo"
-                }
-              ]
-            },
-            {
-              "linkId": "31",
-              "text": "Confidentialty Statement",
-              "answer": [
-                {
-                  "valueString": "Information about study subjects will be kept confidential and managed according to the requirements of the  Health  Insurance  Portability  and  Accountability  Act  of  1996  (HIPAA).    Those  regulations  require  a signed subject authorization informing the subject of the following: Ã¢  ¢What protected health information (PHI) will be collected from subjects in this study\r\nÃ¢  ¢Who will have access to that information and why\r\nÃ¢  ¢Who will use or disclose that information\r\nÃ¢  ¢The rights of a research subject to revoke their authorization for use of their PHI.\r\n In  the  event  that  a  subject  revokes  authorization  to  collect  or  use  PHI,  the  investigator,  by  regulation, retains  the  ability  to  use  all  information  collected  prior  to  the  revocation  of  subject  authorization."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "36",
-          "text": "PROTOCOL SUMMARY",
-          "item": [
-            {
-              "linkId": "39",
-              "text": "SYNOPSIS",
-              "item": [
-                {
-                  "linkId": "40",
-                  "text": "Title (Full)",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i380",
-                  "text": "Title (Short)",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "42",
-                  "text": "Study Description",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "43",
-                  "text": "Objectives",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "44",
-                  "text": "End Points",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "45",
-                  "text": "Study Population",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i514",
-                  "text": "Study Sites",
-                  "answer": [
-                    {
-                      "valueString": "testtestestt"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "46",
-                  "text": "Phase or Stage",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "48",
-                  "text": "Study Duration",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "49",
-                  "text": "Participant Duration",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i515",
-                  "text": "Duration of IP Administration",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i381",
-                  "text": "Accrual Ceiling/Number of Participants (projected-for all sites)",
-                  "answer": [
-                    {
-                      "valueInteger": 234
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i382",
-                  "text": "Description of Study Intervention ( Agent/Procedure)/Investigational Product",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i384",
-                  "text": "Key Procedures",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i385",
-                  "text": "Inclusion/Exclusion Criteria",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i383",
-                  "text": "Reference Theraphy",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i386",
-                  "text": "Statistical Analysis/Methodology (Limit discussion to primary end point and the main secondary endpoint)",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i387",
-                  "text": "Data and Safety Monitoring Plan (who will be responsible for the data quality management and ongoing safety of subjects?)",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "37",
-              "text": "SCHEMA",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "38",
-              "text": "SCHEDULE OF ACTIVITIES [table]",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "i388",
-              "text": "Key Roles and Expertise of Study Team",
-              "item": [
-                {
-                  "linkId": "i389",
-                  "text": "First Name",
-                  "answer": [
-                    {
-                      "valueString": "Criss"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i389_1",
-                  "text": "Last Name",
-                  "answer": [
-                    {
-                      "valueString": "Cross"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i390",
-                  "text": "Position/Title",
-                  "answer": [
-                    {
-                      "valueString": "Specialist"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i391",
-                  "text": "Responsibilities",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "Custom",
-                        "code": "2",
-                        "display": "Screen/Recruit"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "52",
-          "text": "Introduction, Background Information and Scientific Rationale",
-          "item": [
-            {
-              "linkId": "55",
-              "text": "Background",
-              "item": [
-                {
-                  "linkId": "56",
-                  "text": "Describe the relevant literature and the specific gaps in current knowledge that this study intends to address",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "57",
-                  "text": "Provide the scientific or scholarly background for, rationale for, and significance of the research based on the existing literature and how it will add to existing knowledge:",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "58",
-                  "text": "Describe the relevance and usefulness of the objectives",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "59",
-                  "text": "Is this is the first time the study drug, device, or intervention/procedure will be used in humans.",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "Custom",
-                        "code": "1",
-                        "display": "Yes"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "linkId": "60",
-                  "text": "Name and Description of the Investigational Product",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "74",
-              "text": "Potential Riks and Benefits",
-              "item": [
-                {
-                  "linkId": "75",
-                  "text": "Potential Risks",
-                  "item": [
-                    {
-                      "linkId": "76",
-                      "text": "List the reasonably foreseeable risks, discomforts, hazards, and/or inconveniences to the subjects related to their participation in the research, including risk of unintentional loss of confidentiality. Include a description of the probability, magnitude, duration, reversibility, and potential consequences of the risks. Consider physical, psychological, social, legal, and economic risks:",
-                      "answer": [
+                    "linkId": "2",
+                    "text": "STUDY TYPE",
+                    "answer": [
                         {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "77",
-                      "text": "State which study interventions may have unknown risks:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "78",
-                      "text": "State which study interventions may have risks to an embryo or fetus (if a subject is or becomes pregnant) or to a nursing infant of a study subject:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "79",
-                      "text": "Describe risks to people other than the participating subject, e.g., risks to family members, friends, others or risks to the community:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "linkId": "84",
-                  "text": "Potential Benefits",
-                  "item": [
-                    {
-                      "linkId": "85",
-                      "text": "Describe the potential benefits that individual subjects may experience from taking part in the research. Include the probability, magnitude, and duration of the potential benefits:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "87",
-                      "text": "Describe any benefit to the population from which the subject is drawn:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "88",
-                      "text": "Describe any benefit to science, society, and humanity in general:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "linkId": "89",
-                  "text": "Alternatives to Study Participation",
-                  "item": [
-                    {
-                      "linkId": "90",
-                      "text": "Describe alternatives to participating in this research study (e.g. to decide not participate in the study, alternative treatments, no treatment (palliative care), etc.):",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "91",
-                      "text": "Describe the standard clinical care that may be an alternative:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "92",
-                      "text": "Describe how the subject can receive the research procedures/drug/device used in this study in a non-research setting:",
-                      "answer": [
-                        {
-                          "valueString": "test"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "linkId": "93",
-                  "text": "Assessment of Potential Risks and Benefits",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "94",
-          "text": "STUDY PURPOSE, OBJECTIVES OR SPECIFIC AIMS",
-          "item": [
-            {
-              "linkId": "95",
-              "text": "Describe the purpose, specific aims, or objectives of the study (i.e. the reason for performing the study in terms of the scientific question to be answered):    Note: Specify which are the primary or secondary aims or objectives of this study as applicable. The primary objective is the main question. Secondary objectives are goals that will provide further information for the study",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "i318",
-              "text": "Hypothesis",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "96",
-              "text": "Primary Objectives",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "97",
-              "text": "Secondary Objectives",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "98",
-              "text": "Tertiary/Exploratory Objectives",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "101",
-          "text": "STUDY DESIGN",
-          "item": [
-            {
-              "linkId": "102",
-              "text": "Explanation of Study design. (e.g., randomized placebo-controlled, cross-over, cross-sectional, longitudinal, etc.) and, if appropriate, describe stratification/ randomization/blinding scheme",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "108",
-              "text": "Scientific Rationale for Study Design",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "109",
-              "text": "Justification for Dose",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "113",
-              "text": "End of Study Definition",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "103",
-              "text": "Screening Phase",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "104",
-              "text": "Study Intervention Phase",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "105",
-              "text": "Phase II (if applicable include and add details about open label study phase)",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "106",
-              "text": "Follow Up Phase",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "107",
-              "text": "Allocation to Interventional Group",
-              "answer": [
-                {
-                  "valueCoding": {
-                    "system": "Custom",
-                    "display": "testtest"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "114",
-              "text": "Study/Data Collection Instruments",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "100",
-              "text": "Research Setting",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "115",
-          "text": "STUDY ENDPOINTS",
-          "item": [
-            {
-              "linkId": "123",
-              "text": "Provide precise definitions of the study endpoints and criteria for evaluation; if the primary outcomes are derived from several measurements (i.e., composite variables) or if endpoints are based composite variables, then describe precisely how the composite variables are derived.",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "116",
-              "text": "Primary Endpoints",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "118",
-              "text": "Secondary Endpoints",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "120",
-              "text": "Tertiary Endpoints",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "122",
-              "text": "Primary Safety endpoints",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            },
-            {
-              "linkId": "124",
-              "text": "Secondary Safety endpoints",
-              "answer": [
-                {
-                  "valueString": "test"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "125",
-          "text": "STUDY POPULATION",
-          "item": [
-            {
-              "linkId": "126",
-              "text": "Subject Selection",
-              "item": [
-                {
-                  "linkId": "127",
-                  "text": "Category/Group (eg. Adults, controls, parents, children)",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "128",
-                  "text": "Age Range",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "129",
-                  "text": "Maximum Number to be Consented or Reviewed/Collected(include withdrawals and screen failures)"
-                },
-                {
-                  "linkId": "130",
-                  "text": "Number Expected to Complete the Study or Needed to Address the Research Question",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "134",
-                  "text": "Total Number of Subjects",
-                  "answer": [
-                    {
-                      "valueInteger": 234
-                    }
-                  ]
-                },
-                {
-                  "linkId": "135",
-                  "text": "Overall study sample size (if multisite)",
-                  "answer": [
-                    {
-                      "valueString": "456"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "136",
-          "text": "STUDY ENROLLMENT AND WITHDRAWAL",
-          "item": [
-            {
-              "linkId": "item236",
-              "text": "ELIGIBILITY CRITEREA",
-              "item": [
-                {
-                  "linkId": "i389",
-                  "text": "EXCLUSION CRITEREA",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i396",
-                  "text": "If eligibility is based on age, gender, pregnancy/childbearing potential, social/ethnic group, or language spoken (e.g., English Speakers only), provide a scientific rationale.",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "152",
-                  "text": "SCREEN FAILURES",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "153",
-                  "text": "LIFESTYLE CONSIDERATIONS",
-                  "answer": [
-                    {
-                      "valueString": "test"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "141",
-                  "text": "VULNERABLE POPULATIONS",
-                  "item": [
-                    {
-                      "linkId": "i515",
-                      "text": "Can or will pregnant women be enrolled",
-                      "answer": [
-                        {
-                          "valueCoding": {
-                            "system": "LinkId",
-                            "display": "yes"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "i516",
-                      "text": "Can or will the research involve neonates of uncertain viability or non-viable neonates?",
-                      "answer": [
-                        {
-                          "valueCoding": {
-                            "system": "LinkId",
-                            "display": "yes"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "i517",
-                      "text": "Can or will subjects who are not yet adults (neonates, children, teenagers) be enrolled?",
-                      "answer": [
-                        {
-                          "valueCoding": {
-                            "system": "LinkId",
-                            "display": "yes"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "linkId": "i427",
-                      "text": "Respond to the following:",
-                      "item": [
-                        {
-                          "linkId": "i428",
-                          "text": "Check to confirm that you will follow Ã¢  SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)Ã¢   to determine whether a prospective subject has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
-                          "answer": [
-                            {
-                              "valueBoolean": true
+                            "valueCoding": {
+                                "code": "1",
+                                "display": "Interventional"
                             }
-                          ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "7",
+                    "text": "TITLE PAGE",
+                    "item": [
+                        {
+                            "linkId": "8",
+                            "text": "Title",
+                            "answer": [
+                                {"valueString": "The effect of..."}
+                            ]
                         },
                         {
-                          "linkId": "i430",
-                          "text": "How permission to participate in the study will be obtained from the parents or legal guardians:",
-                          "answer": [
-                            {
-                              "valueString": "test"
-                            }
-                          ]
+                            "linkId": "14",
+                            "text": "Principal Investigator",
+                            "item": [
+                                {
+                                    "linkId": "15",
+                                    "text": "First Name",
+                                    "answer": [
+                                        {"valueString": "John"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "15_1",
+                                    "text": "Last Name",
+                                    "answer": [
+                                        {"valueString": "Doe"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "item372",
+                                    "text": "Department Name",
+                                    "answer": [
+                                        {"valueString": "DOCR"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "16",
+                                    "text": "Address",
+                                    "answer": [
+                                        {"valueString": "2011 West Street"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "17",
+                                    "text": "Phone",
+                                    "answer": [
+                                        {"valueString": "9196785678"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "18",
+                                    "text": "Email",
+                                    "answer": [
+                                        {"valueString": "test@test.com"}
+                                    ]
+                                }
+                            ]
                         },
                         {
-                          "linkId": "i431",
-                          "text": "The assent process of children as follows:",
-                          "item": [
-                            {
-                              "linkId": "i432",
-                              "text": "Any waiting period available between informing the prospective subject and obtaining the assent",
-                              "answer": [
+                            "linkId": "19",
+                            "text": "Additional Investigator",
+                            "item": [
                                 {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i433",
-                              "text": "Any process to ensure ongoing assent",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i434",
-                              "text": "Research team members involved in the assent process:",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i435",
-                              "text": "How long children will have to consider study participation:",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i436",
-                              "text": "Steps that will be taken to minimize the possibility of coercion or undue influence:",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i437",
-                              "text": "Steps that will be taken to ensure the subjects'   understanding:",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i438",
-                              "text": "If assent will not be obtained from children, specify why:",
-                              "answer": [
-                                {
-                                  "valueString": "test"
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i521",
-                              "text": "Will children reach 18 years of age while in the study?",
-                              "answer": [
-                                {
-                                  "valueCoding": {
-                                    "system": "LinkId",
-                                    "display": "test"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "linkId": "i439",
-                              "text": "Respond to the following:",
-                              "item": [
-                                {
-                                  "linkId": "i440",
-                                  "text": "Describe the plan to obtain written informed consent from the subject at age 18 years:",
-                                  "answer": [
-                                    {
-                                      "valueString": "testtest"
-                                    }
-                                  ]
+                                    "linkId": "20",
+                                    "text": "Name",
+                                    "answer": [
+                                        {"valueString": "John Doe, II"}
+                                    ]
                                 },
                                 {
-                                  "linkId": "i441",
-                                  "text": "Who will be responsible for managing the plan:",
-                                  "answer": [
-                                    {
-                                      "valueString": "test"
-                                    }
-                                  ]
+                                    "linkId": "i371",
+                                    "text": "Department Name",
+                                    "answer": [
+                                        {"valueString": "DRTY"}
+                                    ]
                                 },
                                 {
-                                  "linkId": "i442",
-                                  "text": "Where the consent discussion will take place:",
-                                  "answer": [
-                                    {
-                                      "valueString": "test"
-                                    }
-                                  ]
+                                    "linkId": "21",
+                                    "text": "Address",
+                                    "answer": [
+                                        {"valueString": "2067 East St"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "22",
+                                    "text": "Phone",
+                                    "answer": [
+                                        {"valueString": "9197866789"}
+                                    ]
                                 }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "142",
-              "text": "PARTICIPANT WITHDRAWAL AND TERMINATION",
-              "item": [
-                {
-                  "linkId": "149",
-                  "text": "Reasons for Withdrawal  or Termination",
-                  "answer": [
-                    {
-                      "valueString": "This study may be temporarily suspended or prematurely terminated if there is sufficient reasonable cause. Written notification, documenting thereason for study suspension or termination, will be provided by the suspending or terminating party to . If the study is prematurely terminated or suspended, the PI will promptly inform the IRB and will provide the reason(s) for the termination or suspension.Circumstances that may warrant termination or suspension include, but are not limited to:Ã¢  ¢Determination of unexpected, significant, or unacceptable risk to participantsÃ¢  ¢Demonstration of efficacy that would warrant stoppingÃ¢  ¢Insufficient compliance to protocol requirementsÃ¢  ¢Data that are not sufficiently complete and/or evaluable Determination of futilityStudy may resume once concerns about safety, protocol compliance, data quality are addressed and satisfy the sponsor, IRB and/or FDA."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "145",
-                  "text": "Handling of Participant Withdrawal or Termination",
-                  "answer": [
-                    {
-                      "valueString": "{Begin sample text}Participants are free to withdraw from participation in the study at any time upon request. An investigator may terminate participation in the study if:Ã¯  ·Any clinical adverse event (AE), laboratory abnormality, or other medical condition or situation occurs such that continued participation in the study would not be in the best interest of the participantÃ¯  ·The participant meets an exclusion criterion (either newly developed or not previously recognized) that precludes further study participation{Endsample text}"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "item253",
-          "text": "STUDY PROCEDURES AND SCHEDULE",
-          "item": [
-            {
-              "linkId": "item260",
-              "text": "RESEARCH PROCEDURES",
-              "answer": [
-                {
-                  "valueString": "{Begin sample text}Ã¯  ·Medical history (describe what is included for history, e.g., time-frame considerations, whether history will be obtained by interview or from medical records)Ã¯  ·Medication history (e.g., describe if a complete medication history is needed, or if only medications currently taken should be included; prescription and over-the-counter medications). Assessment of eligibility should include a review of permitted and prohibited medications.Ã¯  ·Physical examination (list the vital signs [including height and weight] and organ systems to be assessed. Address details in the MOP.); if appropriate, discuss what constitutes a targeted physical examination and at what visits it may occur.Ã¯  ·Radiographic or other imaging assessments. State the specific imaging required and, as appropriate, provide description of what is entailed to perform the specialized imaging. Details describing how to perform the imaging in a standard fashion may be described in a separate document such as a MOP or SOP.Ã¯  ·Biological specimen collection and laboratory evaluations. If biological specimen and laboratory procedures require further detail, they may be described in Section 7.2 Laboratory Procedures/Evaluations below, or in a separate document such as a MOP or SOP. At minimum, the biological specimens and purpose should be listed.Ã¯  ·A discussion of if the results of any study specific procedures (e.g., radiographic or other imaging or laboratory evaluations) will be provided to participant.Ã¯  ·Counseling proceduresÃ¯  ·Assessment of study agent adherenceÃ¯  ·Administration of questionnairesor other instruments for patient-reported outcomes, such as a daily diary."
-                }
-              ]
-            },
-            {
-              "linkId": "item292",
-              "text": "Prohibited Medications, Treatments, and Procedures",
-              "answer": [
-                {
-                  "valueString": "{Begin sample text}Treatment with  will not be permitted unless discussed with and approved by the .{End sample text}"
-                }
-              ]
-            },
-            {
-              "linkId": "179",
-              "text": "CONCOMITANT THERAPY",
-              "answer": [
-                {
-                  "valueString": "All concomitant prescription medications taken during study participation will be recorded on the case report forms (CRFs). For this protocol, a prescription medication is defined as a medication that can be prescribed only by a properly authorized/licensed clinician. Medications to be reported in the CRF are concomitant prescription medications, over-the-counter medications and non-prescription medications."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "item276",
-          "text": "STUDY SCHEDULES",
-          "item": [
-            {
-              "linkId": "item277",
-              "text": "Screening",
-              "answer": [
-                {
-                  "valueString": "{Begin sample text}Screening Visit (Day -28 to -1)Ã¯  ·Obtain informed consent of potential participant verified by signature on written informed consent for screening form.Ã¯  ·Review medical history to determine eligibility based on inclusion/exclusion criteria.Ã¯  ·Review medications history to determine eligibility based on inclusion/exclusion criteria.Ã¯  ·Perform  medical  examinations  needed  to  determine  eligibility  based  on  inclusion/exclusion criteria.Ã¯  ·Collect blood/urine for .Ã¯  ·Schedule study visits for participants who are eligible and available for the duration of the study.Ã¯  ·Provide participants with .{End sample text}"
-                }
-              ]
-            },
-            {
-              "linkId": "item278",
-              "text": "Enrollment/Visit 1/Baseline Visit",
-              "answer": [
-                {
-                  "valueString": "{Begin sample text}Enrollment/Baseline Visit (Visit 1, Day 0)Ã¯  ·Obtain informed consent of potential participant verified by signature on study informed consent form.Ã¯  ·Verify inclusion/exclusion criteria.Ã¯  ·Obtain urine pregnancy test.Ã¯  ·Obtain demographic information, medical history, medication history, alcohol and tobacco use history.Ã¯  ·Record vital signs,results of examinations, other assessments.Ã¯  ·Collect blood/urine for .Ã¯  ·Administer the study treatment.Ã¯  ·.{Endsample text}"
-                }
-              ]
-            },
-            {
-              "linkId": "item280",
-              "text": "Visit 2",
-              "answer": [
-                {
-                  "valueString": "{Begin sample text}Visit 2 (Day X+/-Y)Ã¯  ·Record adverse events as reported by participant or observed by investigator.Ã¯  ·Record vital signs, results of .Ã¯  ·Collect blood/urine for .Ã¯  ·Administer the study agent or provide additional medication to the participant, in accordance with .Ã¯  ·Record participantÃ¢  s adherence to treatment program.{Endsample text}"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "181",
-          "text": "ASSESSMENT OF SAFETY",
-          "item": [
-            {
-              "linkId": "185",
-              "text": "Specification of Safety Parameters",
-              "item": [
-                {
-                  "linkId": "187",
-                  "text": "DEFINITION OF ADVERSE EVENTS (AE)",
-                  "answer": [
-                    {
-                      "valueString": "An adverse event(AE) is any symptom, sign, illness or experience that develops or worsens in severity during the course of the study.  Intercurrent illnesses or injuries should be regarded as adverse events.  Abnormal results of diagnostic procedures are considered to be adverse events if the abnormality:Ã¢  ¢results in study withdrawalÃ¢  ¢is associated with a serious adverse eventÃ¢  ¢is associated with clinical signs or symptomsÃ¢  ¢leads to additional treatment or to further diagnostic testsÃ¢  ¢is considered by the investigator to be of clinical significance"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "188",
-                  "text": "DEFINITION OF SERIOUS ADVERSE EVENTS (SAE)",
-                  "answer": [
-                    {
-                      "valueString": "Adverse events are classified as serious or non-serious.  A serious adverse eventis any AE that is: Ã¢  ¢fatalÃ¢  ¢life-threateningÃ¢  ¢requires or prolongs hospital stayÃ¢  ¢results in persistent or significant disability or incapacityÃ¢  ¢a congenital anomaly or birth defectÃ¢  ¢an important medical eventImportant medical events are those that may not be immediately life threatening, but are clearly of major clinical significance. They may jeopardize the subject, and may require intervention to prevent one of the other seriousoutcomes noted above. For example, drug overdose or abuse, a seizure that did not result in in-patient hospitalization, or intensive treatment of bronchospasm in an emergency department would typically be considered serious. All adverse events that do not meet any of the criteria for serious should be regarded as non-serious adverse events"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "item244",
-                  "text": "Definition of Unanticipated Problems",
-                  "answer": [
-                    {
-                      "valueString": "{Begin sample text}Unanticipated Problems Involving Risk to Subjects or Others: Any incident, experience, or outcome that meets allof the following criteria: Ã¯  ·Unexpected in nature, severity, or frequency(i.e. not described in study-related documents such as the IRB-approved protocol or consent form, the investigators brochure, etc)Ã¯  ·Related or possibly related to participation in the research(i.e. possibly related means there is a reasonable possibility that the incident experience, or outcome may have been caused by the procedures involved in the research)Ã¯  ·Suggests that the research places subjects or others at greater risk of harm(including physical, psychological, economic, or social harm).{Additional sample textfor device protocols}This definition could include an unanticipated adverse device effect, any serious adverse effect on health or safety or any life-threatening problem or death caused by, or associated with, a device, if that effect, problem, or death was not previously identified in nature, severity, or degree of incidence in the investigational plan or application (including a supplementary plan or application), or any other unanticipated serious problem associated with a device that relates to the rights, safety, or welfare of subjects (21 CFR 812.3(s)).{End sample text}"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "189",
-              "text": "CLASSIFICATION OF AN ADVERSE EVENT",
-              "item": [
-                {
-                  "linkId": "190",
-                  "text": "SEVERITY OF EVENT",
-                  "answer": [
-                    {
-                      "valueString": "For AEs not included in the protocol defined grading system, the following guidelines will be used to describe severity.Ã¢  ¢MildÃ¢  Events require minimal or no treatment and do not interfere with the participantÃ¢  s daily activities.Ã¢  ¢ModerateÃ¢  Events result in a low level of inconvenience or concern with the therapeutic measures. Moderate events may cause some interference with functioning.Ã¢  ¢SevereÃ¢  Events interrupt a participantÃ¢  s usual daily activity and may require systemic drug therapy or other treatment. Severe events are usually potentially life-threatening or incapacitating."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "191",
-                  "text": "RELATIONSHIP TO STUDY INTERVENTION/EXPERIMENTAL MANIPULATION",
-                  "answer": [
-                    {
-                      "valueString": "The clinicianÃ¢  s assessment of an AE's relationship tostudy agent (drug, biologic, device) is part of the documentation process, but it is not a factor in determining what is or is not reported in the study. If there is any doubt as to whether a clinical observation is an AE, the event should be reported. All AEs must have their relationship to study agent assessed. In a clinical trial, the study product must always be suspect. To help assess, the following guidelines are used.Ã¢  ¢Related Ã¢  The AE is known to occur with the study agent, there is a reasonable possibility that the study agent caused the AE, or there is a temporal relationship between the study agent and event. Reasonable possibility means that there is evidence to suggest a causal relationship between the study agent and the AE.Ã¢  ¢Not RelatedÃ¢  There is not a reasonable possibility that the administration of the study agent caused the event, there is no temporal relationship between the study agent and event onset, or an alternate etiology has been established.{Alternative text}For all collected AEs, the clinician who examines and evaluates the participant will determine the AEÃ¢  s causality based on temporal relationship and his/her clinical judgment. The degree of certainty about causality will be graded using the categories below.Ã¢  ¢Definitely RelatedÃ¢  There is clear evidence to suggest a causal relationship, and other possible contributing factors can be ruled out. The clinical event, including an abnormal laboratory test result, occurs in a plausible time relationship to drug administration and cannot be explained by concurrent disease or other drugs or chemicals. The response to withdrawal of the drug (dechallenge) should be clinically plausible. The event must be pharmacologically or phenomenologically definitive, with use of a satisfactory rechallenge procedure if necessary.Ã¢  ¢Probably RelatedÃ¢  There is evidence to suggest a causal relationship, and the influence of other factors is unlikely. The clinical event, including an abnormal laboratory test result, occurs within a reasonable time after administration of the drug, is unlikely to be attributed to concurrentdisease or other drugs or chemicals, and follows a clinically reasonable response on withdrawal (dechallenge). Rechallenge information is not required to fulfill this definition.Ã¢  ¢Possibly RelatedÃ¢  There is some evidence to suggest a causal relationship (e.g., the event occurred within a reasonable time after administration of the trial medication). However, other factors may have contributed to the event (e.g., the participantÃ¢  s clinical condition, other concomitant events). Although an AE may rate only as Ã¢  possibly relatedÃ¢   soon after discovery, it can be flagged as requiring more information and later be upgraded to Ã¢  probably relatedÃ¢   orÃ¢  definitely related,Ã¢   as appropriate.Ã¢  ¢Unlikely to be relatedÃ¢  A clinical event, including an abnormal laboratory test result, whosetemporal relationship to drug administration makes a causal relationship improbable (e.g., theevent did not occur within a reasonable time after administration of the trial medication) and inwhich other drugs or chemicals or underlying disease provides plausible explanations (e.g., theparticipantÃ¢  s clinical condition,other concomitant treatments).Ã¢  ¢Not RelatedÃ¢  The AE is completely independent of study drug administration, and/or evidenceexists that the event is definitely related to another etiology. There must be an alternative,definitive etiology documented by the clinician."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "192",
-                  "text": "EXPECTEDNESS",
-                  "answer": [
-                    {
-                      "valueString": " will be responsible for determining whether an AE is expected or unexpected. An AE willbe considered unexpected if the nature, severity, or frequency of the event is not consistent with the risk information previously described for the study agent."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "193",
-              "text": "TIME PERIOD AND FREQUENCY FOR EVENT ASSESSMENT AND FOLLOW-UP",
-              "answer": [
-                {
-                  "valueString": "The occurrence of an AE or SAE may come to the attention of study personnel during study visits and interviews of a study participant presenting for medical care, or upon review by a study monitor. All AEs including local and systemic reactions not meeting the criteria for SAEs will be captured on the appropriate RF. Information to be collected includes event description, time of onset, clinicianÃ¢  s assessment of severity, relationship to study product (assessed only by those with the training and authority to make a diagnosis), and time of resolution/stabilization of the event. All AEs occurring while on study must be documented appropriately regardless of relationship. All AEs will be followed to adequate resolution.Any medical condition that is present at the time that the participant is screened will be considered as baseline and not reported as an AE. However, if the study participantÃ¢  s condition deteriorates at any time during the study, it will be recorded as an AE. UPs will be recorded in the data collection system throughout the study.Changes in the severity of an AE will be documented to allow an assessment of the duration of the event at each level of severity to be performed. AEs characterized as intermittent require documentation of onset and duration of each episode.The PI will record all reportable events with start dates occurring any time after informed consent is obtained until 7 (for non-serious AEs) or 30 days (for SAEs) after the last day of study participation. At each study visit, the investigator will inquire about the occurrence of AE/SAEs since the last visit. Events will be followed for outcome information until resolution or stabilization.All unresolved adverse events should be followed by the investigator until the events are resolved, the subject is lost to follow-up, or the adverse event is otherwise explained.  At the last scheduledvisit, the investigator should instruct each subject to report any subsequent event(s) that the subject, or the subjectÃ¢  s personal physician, believes might reasonably be related to participation in this study.  The investigator should notify the study sponsor of any death or adverse event occurring at any time after a subject has discontinued or terminated study participation that may reasonably be related to this study.  The sponsor should also be notified if the investigator should become aware of the development of cancer or of a congenital anomaly in a subsequently conceived offspring of a subject that has participated in this study."
-                }
-              ]
-            },
-            {
-              "linkId": "186",
-              "text": "Reporting Procedures",
-              "item": [
-                {
-                  "linkId": "194",
-                  "text": "Notifying the IRB",
-                  "item": [
-                    {
-                      "linkId": "194-3",
-                      "text": "Unanticipated Problem Reporting",
-                      "answer": [
+                            ]
+                        },
                         {
-                          "valueString": "{Begin sample text}Incidents or events that meet the OHRP criteria for UPs require the creation and completion of an UP report form. It is the site investigatorÃ¢  s responsibility to report UPs to their IRB and to the DCC/study sponsor. The UP report will include the following information:Ã¯  ·Protocol identifying information: protocol title and number, PIÃ¢  s name, and the IRB project number;Ã¯  ·A detailed description of the event, incident, experience, or outcome;Ã¯  ·An explanation of the basis for determining that the event, incident, experience, or outcome represents an UP;Ã¯  ·A description of any changes to the protocol or other corrective actions that have been taken or are proposed in response to the UP.To satisfy the requirement for prompt reporting, UPs will be reported using the following timeline:Ã¯  ·UPs that are SAEs will be reported to the IRB and to the DCC/study sponsor within  of the investigator becoming aware of the event.Ã¯  ·Any other UP will be reported to the IRB and to the DCC/study sponsor within of the investigator becoming aware of the problem.Ã¯  ·All UPs should be reported to appropriate institutional officials (as required by an institutionÃ¢  s written reporting procedures), the supporting agency head (ordesignee), and OHRP within of the IRÃ¢  s receipt of the report of the problem from the investigator."
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "linkId": "195",
-                  "text": "Notifyiing the Study Sponsor",
-                  "answer": [
-                    {
-                      "valueString": "The study clinician will complete a SAE Form within the following timelines:Ã¢  ¢All deaths and immediately life-threatening events, whether related or unrelated, will be recorded on the SAE Form and submitted to the DCC/studysponsor within 24 hours of site awareness. See Section 1, Key Roles for contact information.Ã¢  ¢Other SAEs regardless of relationship will be submitted to the DCC/study sponsor within 72 hours of site awareness.All SAEs will be followed until satisfactory resolution or until the site investigator deems the event to be chronic or the adherence to be stable. Other supporting documentation of the event may be requested by the DCC/study sponsor and should be provided as soon as possible. As a follow-up to theinitial report, within the following 48 hoursof awareness of the event,the investigator shall provide further information, as applicable, on the unanticipated event or the unanticipated problem in the form of a written narrative.  This should include a copy of the completed Unanticipated Problem form, and any other diagnostic information that will assist the understanding of the event.  Significant new information on ongoing unanticipated adverseeffects shall be provided promptly to the study sponsor.{Additional sample text for device protocols}The study investigator shall complete an Unanticipated Adverse Device Effect Form and submit to the study sponsor and to the reviewing IRB as soon as possible, but in no event later than 10 working days after the investigator first learns of the effect. The study sponsor contact information is provided in Section 1, Key Roles.As a follow-up to the initial report, within the following 48 hoursof awareness of the event,the investigator shall provide further information, as applicable, on the unanticipated event or the unanticipated problem in the form of a written narrative.  This should include a copy of the completed Unanticipated Problem form, and any other diagnostic information that will assist the understanding of the event.  Significant new information on ongoing unanticipated adverseeffects shall be provided promptly to the study sponsor.The study sponsor is responsible for conducting an evaluation of an unanticipated adverse device effect and shall report the results of such evaluation to FDA and to all reviewing IRBs and participating investigators within 10 working days after the sponsor first receives notice of the effect. Thereafter the sponsor shall submit such additional reports concerning the effect as FDA requests."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "item246",
-                  "text": "Notifying the FDA",
-                  "answer": [
-                    {
-                      "valueString": "The study sponsor is required to report certain study events in an expedited fashion to the FDA.  These written notifications of adverse events are referred to as IND/IDEsafety reports. The following describes the IND safety reporting requirements by timeline for reporting and associated type of event:Ã¢  ¢Within 7 calendar days(via telephone or facsimile report)Any study event that is:Ã¢  associated with the use of the study drugÃ¢  unexpected, Ã¢  fatalor life-threateningÃ¢  ¢Within 15 calendar days(via written report)Any study eventthat is:Ã¢  associated with the use of the study drug,Ã¢  unexpected, andÃ¢  serious, but not fatal or life-threatening-or-Ã¢  a previous adverse event that was not initially deemed reportable but is later found to fit the criteria for reporting (reporting within 15calendar days from when event was deemed reportable).Any finding from tests in laboratory animals that: Ã¢  suggest a significant risk for human subjects including reports of mutagenicity, teratogenicity, or carcinogenicity.The following describes the IDEsafety reporting requirements by timeline for reporting and associated type of event:Ã¢  ¢Within 10 workingdays(via telephone or facsimile report)Any study event that is:Ã¢  associated with the use of the study device, andÃ¢  unanticipated, regardless of the seriousness of the event.Ã¢  ¢Within 5 workingdays(via written report)Ã¢  Protocol deviation to protect the life of the subject in emergencyÃ¢  Withdrawal of IRB approvalÃ¢  Lack of informed consentAdditional reporting requirementsSponsors are also required to identify in IND safety reports all previous reports concerning similar adverse events and to analyze the significance of the current event in light of the previous reports.Reporting ProcessAdverse events may be submitted on FDA Form 3500A(MEDWATCH Form; see Attachment XXXX),or in a narrative format. If supplied as in a narrative format, the minimum information to be supplied is noted above at the beginning of section 8.3. The contact information for submitting IND safety reports is noted below:[Include the FDA Division, contact person, telephone number and fax number here]The following describes the IDE safety reporting requirements by timeline for reporting and associated type of event:Ã¢  ¢Within 10 working days (via telephone or facsimile report)Any study event that is: Ã¢  associated with the use of the study device, andÃ¢  unanticipated, regardless of the seriousness of the event.Ã¢  ¢Within 5 working days (via written report)Ã¢  Protocol deviation to protect the life of the subject in emergencyÃ¢  Withdrawal of IRB approvalÃ¢  Lack of informed consent"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "item251",
-              "text": "Study Halting/Stopping Rules",
-              "answer": [
-                {
-                  "valueString": "Administration of study agent will be halted when three grade 3 AEs determined to be Ã¢  probably relatedÃ¢   are reported to the DCC. The DCC will notify the study sponsor and investigators immediately when the third grade 3 event is reported and enrollment screens will stop accepting new study participants. The study sponsor will inform the DSMB members within 24 hours of this occurrence and will provide the DSMB with AE listing reports. The DSMB will convene an ad hoc meeting by teleconference or in writing as soon as possible. The DSMB will provide recommendations for proceeding with the study to the study sponsor/NIH. The study sponsor will inform the FDA of the temporary halt and the disposition of the study."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "228",
-          "text": "CLINICAL MONITORING",
-          "answer": [
-            {
-              "valueString": "{Begin sample text for studies in which a separate CMP is being used}Clinical site monitoring is conducted to ensure that the rights and well-being of human subjectsare protected, that the reported trial data are accurate, complete, and verifiable, and that the conduct of the trial is in compliance with the currently approved protocol/amendment(s), with GCP, and with applicable regulatory requirement(s).Ã¢  ¢Monitoring for this study will be performed by .Ã¢  ¢Ã¢  ¢ will be provided copies of monitoring reports within  days of visit.Ã¢  ¢Details of clinical site monitoring are documented in a CMP. The CMP describes in detail who will conduct the monitoring, at what frequency monitoring will be done, at what level of detail monitoring will be performed, and the distribution of monitoring reports.Ã¢  ¢Independent audits  be conducted by  to ensure monitoring practices are performed consistently across all participating sites and that monitors are following the CMP.{Sample text for studies in which a separate CMP is not being used}Clinical site monitoring is conducted to ensure that the rights and well-being of human subjects are protected, that the reported trial data are accurate, complete, and verifiable, and that the conduct of the trial is in compliance with the currently approved protocol/amendment(s), with GCP, and with applicable regulatory requirement(s).  Ã¢  ¢Ã¢  ¢Independent audits  be conducted by  to ensure monitoring practices are performed consistently across all participating sites.Ã¢  ¢Each clinical site willperform internal quality management of study conduct, data collection, documentation and completion. An individualized quality management plan will be developed to describe a siteÃ¢  s quality management.{End sample text}"
-            }
-          ]
-        },
-        {
-          "linkId": "218",
-          "text": "SUPPORTING DOCUMENTATION AND OPERATIONAL CONSIDERATIONS",
-          "item": [
-            {
-              "linkId": "219",
-              "text": "REGULATORY, ETHICAL, AND STUDY OVERSIGHT CONSIDERATIONS",
-              "item": [
-                {
-                  "linkId": "i492",
-                  "text": "Ethical Standard",
-                  "answer": [
-                    {
-                      "valueString": "The investigator will ensure that this study is conducted in full conformity with Regulations for the Protection of Human Subjects of Research codified in 45 CFR Part 46, 21 CFR Part 50, 21 CFR Part 56, and/or the ICH E6."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "i493",
-                  "text": "Institutional Review Board",
-                  "answer": [
-                    {
-                      "valueString": "{Begin sample text}The protocol, informed consent form(s), recruitment materials, and all participant materials will be submitted to the IRB for review and approval. Approval of both the protocol and the consent form must be obtained before any participant is enrolled. Any amendment to the protocol will require review and approval by the IRB before the changes are implemented to the study. All changes to the consent form will be IRB approved; a determination will be made regarding whether previously consented participants need to be re-consented.{End sample text}"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "220",
-                  "text": "Informed Consent Process",
-                  "item": [
-                    {
-                      "linkId": "221",
-                      "text": "Consent/Assent and Other Informational Documents Provided to Participants",
-                      "answer": [
+                            "linkId": "11",
+                            "text": "Protocol Number",
+                            "answer": [
+                                {"valueString": "A123-45-6789"}
+                            ]
+                        },
                         {
-                          "valueString": "Consent forms describing in detail the study agent, study procedures, and risks are given to the participant and written documentation of informed consent is required prior to starting intervention/administering study product. The following consent materials are submitted with this protocol ."
+                            "linkId": "i503",
+                            "text": "Study Number",
+                            "answer": [
+                                {"valueString": "123456"}
+                            ]
+                        },
+                        {
+                            "linkId": "i504",
+                            "text": "IRB Number",
+                            "answer": [
+                                {"valueString": "123456"}
+                            ]
+                        },
+                        {
+                            "linkId": "12",
+                            "text": "ClinicalTrials.Gov Number",
+                            "answer": [
+                                {"valueString": "123456"}
+                            ]
+                        },
+                        {
+                            "linkId": "13",
+                            "text": "IND/IDE Number",
+                            "answer": [
+                                {"valueString": "er4567yth"}
+                            ]
+                        },
+                        {
+                            "linkId": "26",
+                            "text": "Study Product Name",
+                            "answer": [
+                                {"valueString": "Tylenol"}
+                            ]
+                        },
+                        {
+                            "linkId": "i513",
+                            "text": "Study Product Provider",
+                            "answer": [
+                                {"valueString": "Glaxo"}
+                            ]
+                        },
+                        {
+                            "linkId": "31",
+                            "text": "Confidentialty Statement",
+                            "answer": [
+                                {"valueString": "Information about study subjects will be kept confidential and managed according to the requirements of the  Health  Insurance  Portability  and  Accountability  Act  of  1996  (HIPAA).    Those  regulations  require  a signed subject authorization informing the subject of the following:  What protected health information (PHI) will be collected from subjects in this study\r\n Who will have access to that information and why\r\n Who will use or disclose that information\r\n The rights of a research subject to revoke their authorization for use of their PHI.\r\n In  the  event  that  a  subject  revokes  authorization  to  collect  or  use  PHI,  the  investigator,  by  regulation, retains  the  ability  to  use  all  information  collected  prior  to  the  revocation  of  subject  authorization."}
+                            ]
                         }
-                      ]
-                    }
-                  ]
+                    ]
                 },
                 {
-                  "linkId": "224",
-                  "text": "Participant data and Confidentialty",
-                  "answer": [
-                    {
-                      "valueString": "Information about study subjects will be kept confidential and managed according to the requirements of the Health Insurance Portability and Accountability Act of 1996 (HIPAA).  Those regulations require a signed subject authorization informing the subject of the following: Ã¢  ¢What protected health information (PHI) will be collected from subjects in this studyÃ¢  ¢Who will have access to that information and whyÃ¢  ¢Who will use or disclose that information The rights of a research subject to revoke their authorization for use of their PHI. In the event that a subject revokes authorization to collect or use PHI, the investigator, by regulation, retains the ability to use allinformation collected prior to the revocation of subject authorization.  For subjects that have revoked authorization to collect or use PHI, attempts should be made to obtain permission to collect at least vital status (i.e. that the subject is alive) at the end of their scheduled study period.{End required text}{Begin suggested text}Participant confidentiality is strictly held in trust by the participating investigators, their staff, and the sponsor(s) and their agents. This confidentiality is extended to cover testing of biological samples and genetic tests in addition to the clinical information relating to participants. Therefore, the study protocol, documentation, data, and all other information generated will be held in strict confidence. No information concerning the study or the data will be released to any unauthorized third party without prior written approval of the sponsor.The study monitor, other authorized representatives of the sponsor, representatives of the IRB or pharmaceuticalcompany supplying study product may inspect all documents and records required to be maintained by the investigator, including but not limited to, medical records (office, clinic, or hospital) and pharmacy records for the participants in this study. The clinical study site will permit access to such records.The study participantÃ¢  s contact information will be securely stored at each clinical site for internal use during the study. At the end of the study, all records will continue to be kept in a secure location for as long a period as dictated by local IRB and Institutional regulations.Study participant research data, which is for purposes of statistical analysis and scientific reporting, will be transmitted to and stored at NYU Langone Medical Center. This will not include the participantÃ¢  s contact or identifying information. Rather, individual participants and their research data will be identified by a unique study identification number. The study data entry and study management systems used by clinical sites and by NYU Langone Medical Centerresearch staff will be secured and password protected. At the end of the study, all study databases will be de-identified and archived at the NYU Langone Medical Center.{Additional text for Certificate of Confidentiality}To further protect the privacy of study participants, a Certificate of Confidentiality will be obtained from the NIH. This certificate protects identifiable research information from forced disclosure. It allows the investigator and others who have access to research records to refuse to disclose identifying information on research participation in any civil, criminal, administrative, legislative, or other proceeding, whether at the federal, state, or local level. By protecting researchers and institutions from being compelled to disclose information that would identify research participants, Certificates of Confidentiality help achieve the research objectives and promote participation in studies by helping assure confidentiality and privacy to participants.{Additional text for NIH Data Sharing Policy for Genome-Wide Association Studies (GWAS)}This study is a genome-wide association study and will comply with the NIH Policy for Sharing of Data Obtained in NIH Supported or Conducted GWAS, whichcalls for investigators funded by the NIH for GWAS to 1) share de-identified genetic (genotypic and phenotypic) data through a centralized NIH data repository; and 2) submit documentation that describes how the institutions have considered the interests of the research participants, such as privacy and confidentiality. Submission of data to the NIH GWAS repository will be consistent with the permissions and limitations delineated on the study consent signed by study participants."
-                    }
-                  ]
+                    "linkId": "36",
+                    "text": "PROTOCOL SUMMARY",
+                    "item": [
+                        {
+                            "linkId": "39",
+                            "text": "SYNOPSIS",
+                            "item": [
+                                {
+                                    "linkId": "40",
+                                    "text": "Title (Full)",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i380",
+                                    "text": "Title (Short)",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "42",
+                                    "text": "Study Description",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "43",
+                                    "text": "Objectives",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "44",
+                                    "text": "End Points",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "45",
+                                    "text": "Study Population",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i514",
+                                    "text": "Study Sites",
+                                    "answer": [
+                                        {"valueString": "testtestestt"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "46",
+                                    "text": "Phase or Stage",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "48",
+                                    "text": "Study Duration",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "49",
+                                    "text": "Participant Duration",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i515",
+                                    "text": "Duration of IP Administration",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i381",
+                                    "text": "Accrual Ceiling/Number of Participants (projected-for all sites)",
+                                    "answer": [
+                                        {"valueInteger": 234}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i382",
+                                    "text": "Description of Study Intervention ( Agent/Procedure)/Investigational Product",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i384",
+                                    "text": "Key Procedures",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i385",
+                                    "text": "Inclusion/Exclusion Criteria",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i383",
+                                    "text": "Reference Theraphy",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i386",
+                                    "text": "Statistical Analysis/Methodology (Limit discussion to primary end point and the main secondary endpoint)",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i387",
+                                    "text": "Data and Safety Monitoring Plan (who will be responsible for the data quality management and ongoing safety of subjects?)",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "37",
+                            "text": "SCHEMA",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "38",
+                            "text": "SCHEDULE OF ACTIVITIES [table]",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "i388",
+                            "text": "Key Roles and Expertise of Study Team",
+                            "item": [
+                                {
+                                    "linkId": "i389",
+                                    "text": "First Name",
+                                    "answer": [
+                                        {"valueString": "Criss"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i389_1",
+                                    "text": "Last Name",
+                                    "answer": [
+                                        {"valueString": "Cross"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i390",
+                                    "text": "Position/Title",
+                                    "answer": [
+                                        {"valueString": "Specialist"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i391",
+                                    "text": "Responsibilities",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "code": "2",
+                                                "display": "Screen/Recruit"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "linkId": "item307",
-                  "text": "Future Use of Stored Human Specimens and Data",
-                  "answer": [
-                    {
-                      "valueString": "Data collected for this study will be analyzed and stored at the . After the study is completed, the de-identified, archived data will be transmitted to and stored at the ,under the supervision of , for use by other researchers including those outside of the study. Permission to transmit data to the  will be included in the informed consent.With the participantÃ¢  s approval and as approved by local IRs, de-identified biological samples will be stored at the  with the same goal as the sharing of data with the . These samples could be used for research into the causes of , its complications and other conditions for which individuals with < specify condition(s)> are at increased risk, and to improve treatment. The  will also be provided with a code-link that will allow linking the biological specimens with the phenotypic data from each participant, maintaining the masking of the identity of the participant.During the conduct of the study, an individual participant can choose to withdraw consent to have biological specimens stored for future research. However, withdrawal of consent with regard to biosample storage will not be possible after the study is completed.When the study is completed, access to study data and/or samples will be provided through the . OR [Data collected for this study will be analyzed and stored at the . After the study is completed, the de-identified, archived data will be transmitted to and stored at the , for use by other researchers including those outside of the study. Permission to transmit data to the  will be included in the informed consent. With the participantÃ¢  s approval and as approved by local Institutional Review Boards (IRBs), de-identified biological samples will be stored at the  with the same goal as the sharing of data with the . These samples could be used toresearch the causes of , its complications and other conditions for which individuals with< specify condition(s)>are at increased risk, and to improve treatment. The  will also be provided with a code-link that will allow linking the biological specimens with the phenotypic data from each participant, maintaining the blinding of the identity of the participant.During the conduct of the study, an individual participant can choose to withdraw consent to have biological specimens stored for future research. However, withdrawal of consent with regard to biosample storage maynot be possible after the study is completed. When the study iscompleted, access to study data and/or samples will be provided through the .]"
-                    }
-                  ]
+                    "linkId": "52",
+                    "text": "Introduction, Background Information and Scientific Rationale",
+                    "item": [
+                        {
+                            "linkId": "55",
+                            "text": "Background",
+                            "item": [
+                                {
+                                    "linkId": "56",
+                                    "text": "Describe the relevant literature and the specific gaps in current knowledge that this study intends to address",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "57",
+                                    "text": "Provide the scientific or scholarly background for, rationale for, and significance of the research based on the existing literature and how it will add to existing knowledge:",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "58",
+                                    "text": "Describe the relevance and usefulness of the objectives",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "59",
+                                    "text": "Is this is the first time the study drug, device, or intervention/procedure will be used in humans.",
+                                    "answer": [
+                                        {
+                                            "valueCoding": {
+                                                "code": "1",
+                                                "display": "Yes"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "60",
+                                    "text": "Name and Description of the Investigational Product",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "74",
+                            "text": "Potential Riks and Benefits",
+                            "item": [
+                                {
+                                    "linkId": "75",
+                                    "text": "Potential Risks",
+                                    "item": [
+                                        {
+                                            "linkId": "76",
+                                            "text": "List the reasonably foreseeable risks, discomforts, hazards, and/or inconveniences to the subjects related to their participation in the research, including risk of unintentional loss of confidentiality. Include a description of the probability, magnitude, duration, reversibility, and potential consequences of the risks. Consider physical, psychological, social, legal, and economic risks:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "77",
+                                            "text": "State which study interventions may have unknown risks:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "78",
+                                            "text": "State which study interventions may have risks to an embryo or fetus (if a subject is or becomes pregnant) or to a nursing infant of a study subject:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "79",
+                                            "text": "Describe risks to people other than the participating subject, e.g., risks to family members, friends, others or risks to the community:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "84",
+                                    "text": "Potential Benefits",
+                                    "item": [
+                                        {
+                                            "linkId": "85",
+                                            "text": "Describe the potential benefits that individual subjects may experience from taking part in the research. Include the probability, magnitude, and duration of the potential benefits:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "87",
+                                            "text": "Describe any benefit to the population from which the subject is drawn:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "88",
+                                            "text": "Describe any benefit to science, society, and humanity in general:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "89",
+                                    "text": "Alternatives to Study Participation",
+                                    "item": [
+                                        {
+                                            "linkId": "90",
+                                            "text": "Describe alternatives to participating in this research study (e.g. to decide not participate in the study, alternative treatments, no treatment (palliative care), etc.):",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "91",
+                                            "text": "Describe the standard clinical care that may be an alternative:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "92",
+                                            "text": "Describe how the subject can receive the research procedures/drug/device used in this study in a non-research setting:",
+                                            "answer": [
+                                                {"valueString": "test"}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "93",
+                                    "text": "Assessment of Potential Risks and Benefits",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "linkId": "229",
-                  "text": "QUALITY ASSURANCE AND QUALITY CONTROL",
-                  "answer": [
-                    {
-                      "valueString": "{Begin sample text}QC procedures will be implemented beginning with the data entry system and data QC checks that will be run on the database will be generated. Any missing data or data anomalies will be communicated to the site(s) for clarification/resolution.Following written SOPs, the monitors will verify that the clinical trial is conducted and data are generated, documented (recorded), and reported in compliance with the protocol, GCP, and the applicable regulatory requirements (e.g., Good Laboratory Practices (GLP), Good Manufacturing Practices (GMP)).The investigational site will provide direct access to all trial related sites, source data/documents, and reports for the purpose of monitoring and auditing by the sponsor, and inspection by local and regulatory authorities.{End sample text}"
-                    }
-                  ]
+                    "linkId": "94",
+                    "text": "STUDY PURPOSE, OBJECTIVES OR SPECIFIC AIMS",
+                    "item": [
+                        {
+                            "linkId": "95",
+                            "text": "Describe the purpose, specific aims, or objectives of the study (i.e. the reason for performing the study in terms of the scientific question to be answered):    Note: Specify which are the primary or secondary aims or objectives of this study as applicable. The primary objective is the main question. Secondary objectives are goals that will provide further information for the study",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "i318",
+                            "text": "Hypothesis",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "96",
+                            "text": "Primary Objectives",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "97",
+                            "text": "Secondary Objectives",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "98",
+                            "text": "Tertiary/Exploratory Objectives",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "linkId": "item302",
-                  "text": "SOURCE DOCUMENTS AND ACCESS TO SOURCE DATA/DOCUMENTS",
-                  "answer": [
-                    {
-                      "valueString": "{Begin required text}Source data is all information, original records of clinical findings, observations, or other activities in a clinical trial necessary for the reconstruction and evaluation of the trial.  Source data are contained in source documents.  Examples of these original documents, and data records include: hospital records, clinical and office charts, laboratory notes, memoranda, subjectsÃ¢   diaries or evaluation checklists, pharmacy dispensing records, recorded data from automated instruments, copies or transcriptions certified after verification as being accurate and complete, microfiches, photographic negatives, microfilm or magnetic media, x-rays, subject files, and records kept at the pharmacy, at the laboratories, and at medico-technicaldepartments involved in the clinical trial.It is acceptable to use CRFs as source documents. If this is the case, it should be stated in this section what data will be collected on CRFs and what data will be collected from other sources.The study case report form (CRF) is the primary data collection instrument for the study.  All data requested on the CRF must be recorded.  All missing data must be explained.  If a space on the CRF is left blank because the procedure was not done or the question was notasked, write Ã¢  N/DÃ¢  .  If the item is not applicable to the individual case, write Ã¢  N/AÃ¢  .  All entries should be printed legibly in black ink.  If any entry error has been made, to correct such an error, draw a single straight line through the incorrect entry and enter the correct data above it.  All such changes must be initialed and dated.  DO NOT ERASE OR WHITE OUT ERRORS.  For clarification of illegible or uncertain entries, print the clarification above the item, then initial and date it.{End requiredtext}{Begin suggested text}Access to study records will be limited to IRB-approved members of the study team. The investigator will permit study-related monitoring, audits, and inspections by the IRB/EC, the sponsor, government regulatory bodies, and University compliance and quality assurance groups of all study related documents (e.g. source documents, regulatory documents, data collection instruments, study data etc.).  The investigator will ensure the capability for inspections of applicable study-related facilities (e.g. pharmacy, diagnostic laboratory, etc.).Participation as an investigator in this study implies acceptance of potential inspection by government regulatory authorities and applicable University compliance and quality assurance offices.{End suggested text}"
-                    }
-                  ]
+                    "linkId": "101",
+                    "text": "STUDY DESIGN",
+                    "item": [
+                        {
+                            "linkId": "102",
+                            "text": "Explanation of Study design. (e.g., randomized placebo-controlled, cross-over, cross-sectional, longitudinal, etc.) and, if appropriate, describe stratification/ randomization/blinding scheme",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "108",
+                            "text": "Scientific Rationale for Study Design",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "109",
+                            "text": "Justification for Dose",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "113",
+                            "text": "End of Study Definition",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "103",
+                            "text": "Screening Phase",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "104",
+                            "text": "Study Intervention Phase",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "105",
+                            "text": "Phase II (if applicable include and add details about open label study phase)",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "106",
+                            "text": "Follow Up Phase",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "107",
+                            "text": "Allocation to Interventional Group",
+                            "answer": [
+                                {
+                                    "valueCoding": {"display": "testtest"}
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "114",
+                            "text": "Study/Data Collection Instruments",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "100",
+                            "text": "Research Setting",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "115",
+                    "text": "STUDY ENDPOINTS",
+                    "item": [
+                        {
+                            "linkId": "123",
+                            "text": "Provide precise definitions of the study endpoints and criteria for evaluation; if the primary outcomes are derived from several measurements (i.e., composite variables) or if endpoints are based composite variables, then describe precisely how the composite variables are derived.",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "116",
+                            "text": "Primary Endpoints",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "118",
+                            "text": "Secondary Endpoints",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "120",
+                            "text": "Tertiary Endpoints",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "122",
+                            "text": "Primary Safety endpoints",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        },
+                        {
+                            "linkId": "124",
+                            "text": "Secondary Safety endpoints",
+                            "answer": [
+                                {"valueString": "test"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "125",
+                    "text": "STUDY POPULATION",
+                    "item": [
+                        {
+                            "linkId": "126",
+                            "text": "Subject Selection",
+                            "item": [
+                                {
+                                    "linkId": "127",
+                                    "text": "Category/Group (eg. Adults, controls, parents, children)",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "128",
+                                    "text": "Age Range",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "129",
+                                    "text": "Maximum Number to be Consented or Reviewed/Collected(include withdrawals and screen failures)"
+                                },
+                                {
+                                    "linkId": "130",
+                                    "text": "Number Expected to Complete the Study or Needed to Address the Research Question",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "134",
+                                    "text": "Total Number of Subjects",
+                                    "answer": [
+                                        {"valueInteger": 234}
+                                    ]
+                                },
+                                {
+                                    "linkId": "135",
+                                    "text": "Overall study sample size (if multisite)",
+                                    "answer": [
+                                        {"valueString": "456"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "136",
+                    "text": "STUDY ENROLLMENT AND WITHDRAWAL",
+                    "item": [
+                        {
+                            "linkId": "item236",
+                            "text": "ELIGIBILITY CRITEREA",
+                            "item": [
+                                {
+                                    "linkId": "i389",
+                                    "text": "EXCLUSION CRITEREA",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i396",
+                                    "text": "If eligibility is based on age, gender, pregnancy/childbearing potential, social/ethnic group, or language spoken (e.g., English Speakers only), provide a scientific rationale.",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "152",
+                                    "text": "SCREEN FAILURES",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "153",
+                                    "text": "LIFESTYLE CONSIDERATIONS",
+                                    "answer": [
+                                        {"valueString": "test"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "141",
+                                    "text": "VULNERABLE POPULATIONS",
+                                    "item": [
+                                        {
+                                            "linkId": "i515",
+                                            "text": "Can or will pregnant women be enrolled",
+                                            "answer": [
+                                                {
+                                                    "valueCoding": {
+                                                        "code": "1",
+                                                        "display": "yes"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "i516",
+                                            "text": "Can or will the research involve neonates of uncertain viability or non-viable neonates?",
+                                            "answer": [
+                                                {
+                                                    "valueCoding": {
+                                                        "code": "1",
+                                                        "display": "yes"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "i517",
+                                            "text": "Can or will subjects who are not yet adults (neonates, children, teenagers) be enrolled?",
+                                            "answer": [
+                                                {
+                                                    "valueCoding": {
+                                                        "code": "1",
+                                                        "display": "yes"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "linkId": "i427",
+                                            "text": "Respond to the following:",
+                                            "item": [
+                                                {
+                                                    "linkId": "i428",
+                                                    "text": "Check to confirm that you will follow 'SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)' to determine whether a prospective subject has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
+                                                    "answer": [
+                                                        {"valueBoolean": true}
+                                                    ]
+                                                },
+                                                {
+                                                    "linkId": "i430",
+                                                    "text": "How permission to participate in the study will be obtained from the parents or legal guardians:",
+                                                    "answer": [
+                                                        {"valueString": "test"}
+                                                    ]
+                                                },
+                                                {
+                                                    "linkId": "i431",
+                                                    "text": "The assent process of children as follows:",
+                                                    "item": [
+                                                        {
+                                                            "linkId": "i432",
+                                                            "text": "Any waiting period available between informing the prospective subject and obtaining the assent",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i433",
+                                                            "text": "Any process to ensure ongoing assent",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i434",
+                                                            "text": "Research team members involved in the assent process:",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i435",
+                                                            "text": "How long children will have to consider study participation:",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i436",
+                                                            "text": "Steps that will be taken to minimize the possibility of coercion or undue influence:",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i437",
+                                                            "text": "Steps that will be taken to ensure the subjects's understanding:",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i438",
+                                                            "text": "If assent will not be obtained from children, specify why:",
+                                                            "answer": [
+                                                                {"valueString": "test"}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i521",
+                                                            "text": "Will children reach 18 years of age while in the study?",
+                                                            "answer": [
+                                                                {
+                                                                    "valueCoding": {
+                                                                        "code": "1",
+                                                                        "display": "yes"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "linkId": "i439",
+                                                            "text": "Respond to the following:",
+                                                            "item": [
+                                                                {
+                                                                    "linkId": "i440",
+                                                                    "text": "Describe the plan to obtain written informed consent from the subject at age 18 years:",
+                                                                    "answer": [
+                                                                        {"valueString": "testtest"}
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "linkId": "i441",
+                                                                    "text": "Who will be responsible for managing the plan:",
+                                                                    "answer": [
+                                                                        {"valueString": "test"}
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "linkId": "i442",
+                                                                    "text": "Where the consent discussion will take place:",
+                                                                    "answer": [
+                                                                        {"valueString": "test"}
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "142",
+                            "text": "PARTICIPANT WITHDRAWAL AND TERMINATION",
+                            "item": [
+                                {
+                                    "linkId": "149",
+                                    "text": "Reasons for Withdrawal  or Termination",
+                                    "answer": [
+                                        {"valueString": "This study may be temporarily suspended or prematurely terminated if there is sufficient reasonable cause. Written notification, documenting thereason for study suspension or termination, will be provided by the suspending or terminating party to . If the study is prematurely terminated or suspended, the PI will promptly inform the IRB and will provide the reason(s) for the termination or suspension.Circumstances that may warrant termination or suspension include, but are not limited to: Determination of unexpected, significant, or unacceptable risk to participants Demonstration of efficacy that would warrant stopping Insufficient compliance to protocol requirements Data that are not sufficiently complete and/or evaluable Determination of futilityStudy may resume once concerns about safety, protocol compliance, data quality are addressed and satisfy the sponsor, IRB and/or FDA."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "145",
+                                    "text": "Handling of Participant Withdrawal or Termination",
+                                    "answer": [
+                                        {"valueString": "{Begin sample text}Participants are free to withdraw from participation in the study at any time upon request. An investigator may terminate participation in the study if: Any clinical adverse event (AE), laboratory abnormality, or other medical condition or situation occurs such that continued participation in the study would not be in the best interest of the participant The participant meets an exclusion criterion (either newly developed or not previously recognized) that precludes further study participation{Endsample text}"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "item253",
+                    "text": "STUDY PROCEDURES AND SCHEDULE",
+                    "item": [
+                        {
+                            "linkId": "item260",
+                            "text": "RESEARCH PROCEDURES",
+                            "answer": [
+                                {"valueString": "{Begin sample text} Medical history (describe what is included for history, e.g., time-frame considerations, whether history will be obtained by interview or from medical records) Medication history (e.g., describe if a complete medication history is needed, or if only medications currently taken should be included; prescription and over-the-counter medications). Assessment of eligibility should include a review of permitted and prohibited medications. Physical examination (list the vital signs [including height and weight] and organ systems to be assessed. Address details in the MOP.); if appropriate, discuss what constitutes a targeted physical examination and at what visits it may occur. Radiographic or other imaging assessments. State the specific imaging required and, as appropriate, provide description of what is entailed to perform the specialized imaging. Details describing how to perform the imaging in a standard fashion may be described in a separate document such as a MOP or SOP. Biological specimen collection and laboratory evaluations. If biological specimen and laboratory procedures require further detail, they may be described in Section 7.2 Laboratory Procedures/Evaluations below, or in a separate document such as a MOP or SOP. At minimum, the biological specimens and purpose should be listed. A discussion of if the results of any study specific procedures (e.g., radiographic or other imaging or laboratory evaluations) will be provided to participant. Counseling procedures Assessment of study agent adherence Administration of questionnairesor other instruments for patient-reported outcomes, such as a daily diary."}
+                            ]
+                        },
+                        {
+                            "linkId": "item292",
+                            "text": "Prohibited Medications, Treatments, and Procedures",
+                            "answer": [
+                                {"valueString": "{Begin sample text}Treatment with  will not be permitted unless discussed with and approved by the .{End sample text}"}
+                            ]
+                        },
+                        {
+                            "linkId": "179",
+                            "text": "CONCOMITANT THERAPY",
+                            "answer": [
+                                {"valueString": "All concomitant prescription medications taken during study participation will be recorded on the case report forms (CRFs). For this protocol, a prescription medication is defined as a medication that can be prescribed only by a properly authorized/licensed clinician. Medications to be reported in the CRF are concomitant prescription medications, over-the-counter medications and non-prescription medications."}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "item276",
+                    "text": "STUDY SCHEDULES",
+                    "item": [
+                        {
+                            "linkId": "item277",
+                            "text": "Screening",
+                            "answer": [
+                                {"valueString": "{Begin sample text}Screening Visit (Day -28 to -1) Obtain informed consent of potential participant verified by signature on written informed consent for screening form. Review medical history to determine eligibility based on inclusion/exclusion criteria. Review medications history to determine eligibility based on inclusion/exclusion criteria. Perform  medical  examinations  needed  to  determine  eligibility  based  on  inclusion/exclusion criteria. Collect blood/urine for . Schedule study visits for participants who are eligible and available for the duration of the study. Provide participants with .{End sample text}"}
+                            ]
+                        },
+                        {
+                            "linkId": "item278",
+                            "text": "Enrollment/Visit 1/Baseline Visit",
+                            "answer": [
+                                {"valueString": "{Begin sample text}Enrollment/Baseline Visit (Visit 1, Day 0) Obtain informed consent of potential participant verified by signature on study informed consent form. Verify inclusion/exclusion criteria. Obtain urine pregnancy test. Obtain demographic information, medical history, medication history, alcohol and tobacco use history. Record vital signs,results of examinations, other assessments. Collect blood/urine for . Administer the study treatment. .{Endsample text}"}
+                            ]
+                        },
+                        {
+                            "linkId": "item280",
+                            "text": "Visit 2",
+                            "answer": [
+                                {"valueString": "{Begin sample text}Visit 2 (Day X+/-Y) Record adverse events as reported by participant or observed by investigator. Record vital signs, results of . Collect blood/urine for . Administer the study agent or provide additional medication to the participant, in accordance with . Record participant's adherence to treatment program.{Endsample text}"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "181",
+                    "text": "ASSESSMENT OF SAFETY",
+                    "item": [
+                        {
+                            "linkId": "185",
+                            "text": "Specification of Safety Parameters",
+                            "item": [
+                                {
+                                    "linkId": "187",
+                                    "text": "DEFINITION OF ADVERSE EVENTS (AE)",
+                                    "answer": [
+                                        {"valueString": "An adverse event(AE) is any symptom, sign, illness or experience that develops or worsens in severity during the course of the study.  Intercurrent illnesses or injuries should be regarded as adverse events.  Abnormal results of diagnostic procedures are considered to be adverse events if the abnormality: results in study withdrawal is associated with a serious adverse event is associated with clinical signs or symptoms leads to additional treatment or to further diagnostic tests is considered by the investigator to be of clinical significance"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "188",
+                                    "text": "DEFINITION OF SERIOUS ADVERSE EVENTS (SAE)",
+                                    "answer": [
+                                        {"valueString": "Adverse events are classified as serious or non-serious.  A serious adverse eventis any AE that is:  fatal life-threatening requires or prolongs hospital stay results in persistent or significant disability or incapacity a congenital anomaly or birth defect an important medical eventImportant medical events are those that may not be immediately life threatening, but are clearly of major clinical significance. They may jeopardize the subject, and may require intervention to prevent one of the other seriousoutcomes noted above. For example, drug overdose or abuse, a seizure that did not result in in-patient hospitalization, or intensive treatment of bronchospasm in an emergency department would typically be considered serious. All adverse events that do not meet any of the criteria for serious should be regarded as non-serious adverse events"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "item244",
+                                    "text": "Definition of Unanticipated Problems",
+                                    "answer": [
+                                        {"valueString": "{Begin sample text}Unanticipated Problems Involving Risk to Subjects or Others: Any incident, experience, or outcome that meets allof the following criteria:  Unexpected in nature, severity, or frequency(i.e. not described in study-related documents such as the IRB-approved protocol or consent form, the investigators brochure, etc) Related or possibly related to participation in the research(i.e. possibly related means there is a reasonable possibility that the incident experience, or outcome may have been caused by the procedures involved in the research) Suggests that the research places subjects or others at greater risk of harm(including physical, psychological, economic, or social harm).{Additional sample textfor device protocols}This definition could include an unanticipated adverse device effect, any serious adverse effect on health or safety or any life-threatening problem or death caused by, or associated with, a device, if that effect, problem, or death was not previously identified in nature, severity, or degree of incidence in the investigational plan or application (including a supplementary plan or application), or any other unanticipated serious problem associated with a device that relates to the rights, safety, or welfare of subjects (21 CFR 812.3(s)).{End sample text}"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "189",
+                            "text": "CLASSIFICATION OF AN ADVERSE EVENT",
+                            "item": [
+                                {
+                                    "linkId": "190",
+                                    "text": "SEVERITY OF EVENT",
+                                    "answer": [
+                                        {"valueString": "For AEs not included in the protocol defined grading system, the following guidelines will be used to describe severity. Mild Events require minimal or no treatment and do not interfere with the participant's daily activities. Moderate Events result in a low level of inconvenience or concern with the therapeutic measures. Moderate events may cause some interference with functioning. Severe Events interrupt a participant's usual daily activity and may require systemic drug therapy or other treatment. Severe events are usually potentially life-threatening or incapacitating."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "191",
+                                    "text": "RELATIONSHIP TO STUDY INTERVENTION/EXPERIMENTAL MANIPULATION",
+                                    "answer": [
+                                        {"valueString": "The clinician's assessment of an AE's relationship tostudy agent (drug, biologic, device) is part of the documentation process, but it is not a factor in determining what is or is not reported in the study. If there is any doubt as to whether a clinical observation is an AE, the event should be reported. All AEs must have their relationship to study agent assessed. In a clinical trial, the study product must always be suspect. To help assess, the following guidelines are used. Related  The AE is known to occur with the study agent, there is a reasonable possibility that the study agent caused the AE, or there is a temporal relationship between the study agent and event. Reasonable possibility means that there is evidence to suggest a causal relationship between the study agent and the AE. Not Related There is not a reasonable possibility that the administration of the study agent caused the event, there is no temporal relationship between the study agent and event onset, or an alternate etiology has been established.{Alternative text}For all collected AEs, the clinician who examines and evaluates the participant will determine the AE's causality based on temporal relationship and his/her clinical judgment. The degree of certainty about causality will be graded using the categories below. Definitely Related There is clear evidence to suggest a causal relationship, and other possible contributing factors can be ruled out. The clinical event, including an abnormal laboratory test result, occurs in a plausible time relationship to drug administration and cannot be explained by concurrent disease or other drugs or chemicals. The response to withdrawal of the drug (dechallenge) should be clinically plausible. The event must be pharmacologically or phenomenologically definitive, with use of a satisfactory rechallenge procedure if necessary. Probably Related There is evidence to suggest a causal relationship, and the influence of other factors is unlikely. The clinical event, including an abnormal laboratory test result, occurs within a reasonable time after administration of the drug, is unlikely to be attributed to concurrentdisease or other drugs or chemicals, and follows a clinically reasonable response on withdrawal (dechallenge). Rechallenge information is not required to fulfill this definition. Possibly Related There is some evidence to suggest a causal relationship (e.g., the event occurred within a reasonable time after administration of the trial medication). However, other factors may have contributed to the event (e.g., the participant's clinical condition, other concomitant events). Although an AE may rate only as 'possibly related' soon after discovery, it can be flagged as requiring more information and later be upgraded to 'probably related' or'definitely related,' as appropriate. Unlikely to be related A clinical event, including an abnormal laboratory test result, whosetemporal relationship to drug administration makes a causal relationship improbable (e.g., theevent did not occur within a reasonable time after administration of the trial medication) and inwhich other drugs or chemicals or underlying disease provides plausible explanations (e.g., theparticipant's clinical condition,other concomitant treatments). Not Related The AE is completely independent of study drug administration, and/or evidenceexists that the event is definitely related to another etiology. There must be an alternative,definitive etiology documented by the clinician."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "192",
+                                    "text": "EXPECTEDNESS",
+                                    "answer": [
+                                        {"valueString": "Will be responsible for determining whether an AE is expected or unexpected. An AE willbe considered unexpected if the nature, severity, or frequency of the event is not consistent with the risk information previously described for the study agent."}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "193",
+                            "text": "TIME PERIOD AND FREQUENCY FOR EVENT ASSESSMENT AND FOLLOW-UP",
+                            "answer": [
+                                {"valueString": "The occurrence of an AE or SAE may come to the attention of study personnel during study visits and interviews of a study participant presenting for medical care, or upon review by a study monitor. All AEs including local and systemic reactions not meeting the criteria for SAEs will be captured on the appropriate RF. Information to be collected includes event description, time of onset, clinician's assessment of severity, relationship to study product (assessed only by those with the training and authority to make a diagnosis), and time of resolution/stabilization of the event. All AEs occurring while on study must be documented appropriately regardless of relationship. All AEs will be followed to adequate resolution.Any medical condition that is present at the time that the participant is screened will be considered as baseline and not reported as an AE. However, if the study participant's condition deteriorates at any time during the study, it will be recorded as an AE. UPs will be recorded in the data collection system throughout the study.Changes in the severity of an AE will be documented to allow an assessment of the duration of the event at each level of severity to be performed. AEs characterized as intermittent require documentation of onset and duration of each episode.The PI will record all reportable events with start dates occurring any time after informed consent is obtained until 7 (for non-serious AEs) or 30 days (for SAEs) after the last day of study participation. At each study visit, the investigator will inquire about the occurrence of AE/SAEs since the last visit. Events will be followed for outcome information until resolution or stabilization.All unresolved adverse events should be followed by the investigator until the events are resolved, the subject is lost to follow-up, or the adverse event is otherwise explained.  At the last scheduledvisit, the investigator should instruct each subject to report any subsequent event(s) that the subject, or the subject's personal physician, believes might reasonably be related to participation in this study.  The investigator should notify the study sponsor of any death or adverse event occurring at any time after a subject has discontinued or terminated study participation that may reasonably be related to this study.  The sponsor should also be notified if the investigator should become aware of the development of cancer or of a congenital anomaly in a subsequently conceived offspring of a subject that has participated in this study."}
+                            ]
+                        },
+                        {
+                            "linkId": "186",
+                            "text": "Reporting Procedures",
+                            "item": [
+                                {
+                                    "linkId": "194",
+                                    "text": "Notifying the IRB",
+                                    "item": [
+                                        {
+                                            "linkId": "194-3",
+                                            "text": "Unanticipated Problem Reporting",
+                                            "answer": [
+                                                {"valueString": "{Begin sample text}Incidents or events that meet the OHRP criteria for UPs require the creation and completion of an UP report form. It is the site investigator's responsibility to report UPs to their IRB and to the DCC/study sponsor. The UP report will include the following information: Protocol identifying information: protocol title and number, PI's name, and the IRB project number; A detailed description of the event, incident, experience, or outcome; An explanation of the basis for determining that the event, incident, experience, or outcome represents an UP; A description of any changes to the protocol or other corrective actions that have been taken or are proposed in response to the UP.To satisfy the requirement for prompt reporting, UPs will be reported using the following timeline: UPs that are SAEs will be reported to the IRB and to the DCC/study sponsor within  of the investigator becoming aware of the event. Any other UP will be reported to the IRB and to the DCC/study sponsor within of the investigator becoming aware of the problem. All UPs should be reported to appropriate institutional officials (as required by an institution's written reporting procedures), the supporting agency head (ordesignee), and OHRP within of the IR's receipt of the report of the problem from the investigator."}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "195",
+                                    "text": "Notifyiing the Study Sponsor",
+                                    "answer": [
+                                        {"valueString": "The study clinician will complete a SAE Form within the following timelines: All deaths and immediately life-threatening events, whether related or unrelated, will be recorded on the SAE Form and submitted to the DCC/studysponsor within 24 hours of site awareness. See Section 1, Key Roles for contact information. Other SAEs regardless of relationship will be submitted to the DCC/study sponsor within 72 hours of site awareness.All SAEs will be followed until satisfactory resolution or until the site investigator deems the event to be chronic or the adherence to be stable. Other supporting documentation of the event may be requested by the DCC/study sponsor and should be provided as soon as possible. As a follow-up to theinitial report, within the following 48 hoursof awareness of the event,the investigator shall provide further information, as applicable, on the unanticipated event or the unanticipated problem in the form of a written narrative.  This should include a copy of the completed Unanticipated Problem form, and any other diagnostic information that will assist the understanding of the event.  Significant new information on ongoing unanticipated adverseeffects shall be provided promptly to the study sponsor.{Additional sample text for device protocols}The study investigator shall complete an Unanticipated Adverse Device Effect Form and submit to the study sponsor and to the reviewing IRB as soon as possible, but in no event later than 10 working days after the investigator first learns of the effect. The study sponsor contact information is provided in Section 1, Key Roles.As a follow-up to the initial report, within the following 48 hoursof awareness of the event,the investigator shall provide further information, as applicable, on the unanticipated event or the unanticipated problem in the form of a written narrative.  This should include a copy of the completed Unanticipated Problem form, and any other diagnostic information that will assist the understanding of the event.  Significant new information on ongoing unanticipated adverseeffects shall be provided promptly to the study sponsor.The study sponsor is responsible for conducting an evaluation of an unanticipated adverse device effect and shall report the results of such evaluation to FDA and to all reviewing IRBs and participating investigators within 10 working days after the sponsor first receives notice of the effect. Thereafter the sponsor shall submit such additional reports concerning the effect as FDA requests."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "item246",
+                                    "text": "Notifying the FDA",
+                                    "answer": [
+                                        {"valueString": "The study sponsor is required to report certain study events in an expedited fashion to the FDA.  These written notifications of adverse events are referred to as IND/IDEsafety reports. The following describes the IND safety reporting requirements by timeline for reporting and associated type of event: Within 7 calendar days(via telephone or facsimile report)Any study event that is: associated with the use of the study drug unexpected,  fatalor life-threatening Within 15 calendar days(via written report)Any study eventthat is: associated with the use of the study drug, unexpected, and serious, but not fatal or life-threatening-or- a previous adverse event that was not initially deemed reportable but is later found to fit the criteria for reporting (reporting within 15calendar days from when event was deemed reportable).Any finding from tests in laboratory animals that:  suggest a significant risk for human subjects including reports of mutagenicity, teratogenicity, or carcinogenicity.The following describes the IDEsafety reporting requirements by timeline for reporting and associated type of event: Within 10 workingdays(via telephone or facsimile report)Any study event that is: associated with the use of the study device, and unanticipated, regardless of the seriousness of the event. Within 5 workingdays(via written report) Protocol deviation to protect the life of the subject in emergency Withdrawal of IRB approval Lack of informed consentAdditional reporting requirementsSponsors are also required to identify in IND safety reports all previous reports concerning similar adverse events and to analyze the significance of the current event in light of the previous reports.Reporting ProcessAdverse events may be submitted on FDA Form 3500A(MEDWATCH Form; see Attachment XXXX),or in a narrative format. If supplied as in a narrative format, the minimum information to be supplied is noted above at the beginning of section 8.3. The contact information for submitting IND safety reports is noted below:[Include the FDA Division, contact person, telephone number and fax number here]The following describes the IDE safety reporting requirements by timeline for reporting and associated type of event: Within 10 working days (via telephone or facsimile report)Any study event that is:  associated with the use of the study device, and unanticipated, regardless of the seriousness of the event. Within 5 working days (via written report) Protocol deviation to protect the life of the subject in emergency Withdrawal of IRB approval Lack of informed consent"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "item251",
+                            "text": "Study Halting/Stopping Rules",
+                            "answer": [
+                                {"valueString": "Administration of study agent will be halted when three grade 3 AEs determined to be 'probably related' are reported to the DCC. The DCC will notify the study sponsor and investigators immediately when the third grade 3 event is reported and enrollment screens will stop accepting new study participants. The study sponsor will inform the DSMB members within 24 hours of this occurrence and will provide the DSMB with AE listing reports. The DSMB will convene an ad hoc meeting by teleconference or in writing as soon as possible. The DSMB will provide recommendations for proceeding with the study to the study sponsor/NIH. The study sponsor will inform the FDA of the temporary halt and the disposition of the study."}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "228",
+                    "text": "CLINICAL MONITORING",
+                    "answer": [
+                        {"valueString": "{Begin sample text for studies in which a separate CMP is being used}Clinical site monitoring is conducted to ensure that the rights and well-being of human subjectsare protected, that the reported trial data are accurate, complete, and verifiable, and that the conduct of the trial is in compliance with the currently approved protocol/amendment(s), with GCP, and with applicable regulatory requirement(s). Monitoring for this study will be performed by .   will be provided copies of monitoring reports within  days of visit. Details of clinical site monitoring are documented in a CMP. The CMP describes in detail who will conduct the monitoring, at what frequency monitoring will be done, at what level of detail monitoring will be performed, and the distribution of monitoring reports. Independent audits  be conducted by  to ensure monitoring practices are performed consistently across all participating sites and that monitors are following the CMP.{Sample text for studies in which a separate CMP is not being used}Clinical site monitoring is conducted to ensure that the rights and well-being of human subjects are protected, that the reported trial data are accurate, complete, and verifiable, and that the conduct of the trial is in compliance with the currently approved protocol/amendment(s), with GCP, and with applicable regulatory requirement(s).    Independent audits  be conducted by  to ensure monitoring practices are performed consistently across all participating sites. Each clinical site willperform internal quality management of study conduct, data collection, documentation and completion. An individualized quality management plan will be developed to describe a site's quality management.{End sample text}"}
+                    ]
+                },
+                {
+                    "linkId": "218",
+                    "text": "SUPPORTING DOCUMENTATION AND OPERATIONAL CONSIDERATIONS",
+                    "item": [
+                        {
+                            "linkId": "219",
+                            "text": "REGULATORY, ETHICAL, AND STUDY OVERSIGHT CONSIDERATIONS",
+                            "item": [
+                                {
+                                    "linkId": "i492",
+                                    "text": "Ethical Standard",
+                                    "answer": [
+                                        {"valueString": "The investigator will ensure that this study is conducted in full conformity with Regulations for the Protection of Human Subjects of Research codified in 45 CFR Part 46, 21 CFR Part 50, 21 CFR Part 56, and/or the ICH E6."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "i493",
+                                    "text": "Institutional Review Board",
+                                    "answer": [
+                                        {"valueString": "{Begin sample text}The protocol, informed consent form(s), recruitment materials, and all participant materials will be submitted to the IRB for review and approval. Approval of both the protocol and the consent form must be obtained before any participant is enrolled. Any amendment to the protocol will require review and approval by the IRB before the changes are implemented to the study. All changes to the consent form will be IRB approved; a determination will be made regarding whether previously consented participants need to be re-consented.{End sample text}"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "220",
+                                    "text": "Informed Consent Process",
+                                    "item": [
+                                        {
+                                            "linkId": "221",
+                                            "text": "Consent/Assent and Other Informational Documents Provided to Participants",
+                                            "answer": [
+                                                {"valueString": "Consent forms describing in detail the study agent, study procedures, and risks are given to the participant and written documentation of informed consent is required prior to starting intervention/administering study product. The following consent materials are submitted with this protocol ."}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "224",
+                                    "text": "Participant data and Confidentialty",
+                                    "answer": [
+                                        {"valueString": "Information about study subjects will be kept confidential and managed according to the requirements of the Health Insurance Portability and Accountability Act of 1996 (HIPAA).  Those regulations require a signed subject authorization informing the subject of the following:  What protected health information (PHI) will be collected from subjects in this study Who will have access to that information and why Who will use or disclose that information The rights of a research subject to revoke their authorization for use of their PHI. In the event that a subject revokes authorization to collect or use PHI, the investigator, by regulation, retains the ability to use allinformation collected prior to the revocation of subject authorization.  For subjects that have revoked authorization to collect or use PHI, attempts should be made to obtain permission to collect at least vital status (i.e. that the subject is alive) at the end of their scheduled study period.{End required text}{Begin suggested text}Participant confidentiality is strictly held in trust by the participating investigators, their staff, and the sponsor(s) and their agents. This confidentiality is extended to cover testing of biological samples and genetic tests in addition to the clinical information relating to participants. Therefore, the study protocol, documentation, data, and all other information generated will be held in strict confidence. No information concerning the study or the data will be released to any unauthorized third party without prior written approval of the sponsor.The study monitor, other authorized representatives of the sponsor, representatives of the IRB or pharmaceuticalcompany supplying study product may inspect all documents and records required to be maintained by the investigator, including but not limited to, medical records (office, clinic, or hospital) and pharmacy records for the participants in this study. The clinical study site will permit access to such records.The study participant's contact information will be securely stored at each clinical site for internal use during the study. At the end of the study, all records will continue to be kept in a secure location for as long a period as dictated by local IRB and Institutional regulations.Study participant research data, which is for purposes of statistical analysis and scientific reporting, will be transmitted to and stored at NYU Langone Medical Center. This will not include the participant's contact or identifying information. Rather, individual participants and their research data will be identified by a unique study identification number. The study data entry and study management systems used by clinical sites and by NYU Langone Medical Centerresearch staff will be secured and password protected. At the end of the study, all study databases will be de-identified and archived at the NYU Langone Medical Center.{Additional text for Certificate of Confidentiality}To further protect the privacy of study participants, a Certificate of Confidentiality will be obtained from the NIH. This certificate protects identifiable research information from forced disclosure. It allows the investigator and others who have access to research records to refuse to disclose identifying information on research participation in any civil, criminal, administrative, legislative, or other proceeding, whether at the federal, state, or local level. By protecting researchers and institutions from being compelled to disclose information that would identify research participants, Certificates of Confidentiality help achieve the research objectives and promote participation in studies by helping assure confidentiality and privacy to participants.{Additional text for NIH Data Sharing Policy for Genome-Wide Association Studies (GWAS)}This study is a genome-wide association study and will comply with the NIH Policy for Sharing of Data Obtained in NIH Supported or Conducted GWAS, whichcalls for investigators funded by the NIH for GWAS to 1) share de-identified genetic (genotypic and phenotypic) data through a centralized NIH data repository; and 2) submit documentation that describes how the institutions have considered the interests of the research participants, such as privacy and confidentiality. Submission of data to the NIH GWAS repository will be consistent with the permissions and limitations delineated on the study consent signed by study participants."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "item307",
+                                    "text": "Future Use of Stored Human Specimens and Data",
+                                    "answer": [
+                                        {"valueString": "Data collected for this study will be analyzed and stored at the . After the study is completed, the de-identified, archived data will be transmitted to and stored at the ,under the supervision of , for use by other researchers including those outside of the study. Permission to transmit data to the  will be included in the informed consent.With the participant's approval and as approved by local IRs, de-identified biological samples will be stored at the  with the same goal as the sharing of data with the . These samples could be used for research into the causes of , its complications and other conditions for which individuals with < specify condition(s)> are at increased risk, and to improve treatment. The  will also be provided with a code-link that will allow linking the biological specimens with the phenotypic data from each participant, maintaining the masking of the identity of the participant.During the conduct of the study, an individual participant can choose to withdraw consent to have biological specimens stored for future research. However, withdrawal of consent with regard to biosample storage will not be possible after the study is completed.When the study is completed, access to study data and/or samples will be provided through the . OR [Data collected for this study will be analyzed and stored at the . After the study is completed, the de-identified, archived data will be transmitted to and stored at the , for use by other researchers including those outside of the study. Permission to transmit data to the  will be included in the informed consent. With the participant's approval and as approved by local Institutional Review Boards (IRBs), de-identified biological samples will be stored at the  with the same goal as the sharing of data with the . These samples could be used toresearch the causes of , its complications and other conditions for which individuals with< specify condition(s)>are at increased risk, and to improve treatment. The  will also be provided with a code-link that will allow linking the biological specimens with the phenotypic data from each participant, maintaining the blinding of the identity of the participant.During the conduct of the study, an individual participant can choose to withdraw consent to have biological specimens stored for future research. However, withdrawal of consent with regard to biosample storage maynot be possible after the study is completed. When the study iscompleted, access to study data and/or samples will be provided through the .]"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "229",
+                                    "text": "QUALITY ASSURANCE AND QUALITY CONTROL",
+                                    "answer": [
+                                        {"valueString": "{Begin sample text}QC procedures will be implemented beginning with the data entry system and data QC checks that will be run on the database will be generated. Any missing data or data anomalies will be communicated to the site(s) for clarification/resolution.Following written SOPs, the monitors will verify that the clinical trial is conducted and data are generated, documented (recorded), and reported in compliance with the protocol, GCP, and the applicable regulatory requirements (e.g., Good Laboratory Practices (GLP), Good Manufacturing Practices (GMP)).The investigational site will provide direct access to all trial related sites, source data/documents, and reports for the purpose of monitoring and auditing by the sponsor, and inspection by local and regulatory authorities.{End sample text}"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "item302",
+                                    "text": "SOURCE DOCUMENTS AND ACCESS TO SOURCE DATA/DOCUMENTS",
+                                    "answer": [
+                                        {"valueString": "{Begin required text}Source data is all information, original records of clinical findings, observations, or other activities in a clinical trial necessary for the reconstruction and evaluation of the trial.  Source data are contained in source documents.  Examples of these original documents, and data records include: hospital records, clinical and office charts, laboratory notes, memoranda, subjects' diaries or evaluation checklists, pharmacy dispensing records, recorded data from automated instruments, copies or transcriptions certified after verification as being accurate and complete, microfiches, photographic negatives, microfilm or magnetic media, x-rays, subject files, and records kept at the pharmacy, at the laboratories, and at medico-technicaldepartments involved in the clinical trial.It is acceptable to use CRFs as source documents. If this is the case, it should be stated in this section what data will be collected on CRFs and what data will be collected from other sources.The study case report form (CRF) is the primary data collection instrument for the study.  All data requested on the CRF must be recorded.  All missing data must be explained.  If a space on the CRF is left blank because the procedure was not done or the question was notasked, write 'N/D'.  If the item is not applicable to the individual case, write 'N/A'.  All entries should be printed legibly in black ink.  If any entry error has been made, to correct such an error, draw a single straight line through the incorrect entry and enter the correct data above it.  All such changes must be initialed and dated.  DO NOT ERASE OR WHITE OUT ERRORS.  For clarification of illegible or uncertain entries, print the clarification above the item, then initial and date it.{End requiredtext}{Begin suggested text}Access to study records will be limited to IRB-approved members of the study team. The investigator will permit study-related monitoring, audits, and inspections by the IRB/EC, the sponsor, government regulatory bodies, and University compliance and quality assurance groups of all study related documents (e.g. source documents, regulatory documents, data collection instruments, study data etc.).  The investigator will ensure the capability for inspections of applicable study-related facilities (e.g. pharmacy, diagnostic laboratory, etc.).Participation as an investigator in this study implies acceptance of potential inspection by government regulatory authorities and applicable University compliance and quality assurance offices.{End suggested text}"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "230",
+                            "text": "DATA HANDLING AND RECORD KEEPING",
+                            "item": [
+                                {
+                                    "linkId": "231",
+                                    "text": "Data Collection and Management Responsibilities",
+                                    "answer": [
+                                        {"valueString": "Data collection is the responsibility of the clinical trial staff at the site under the supervision of the site PI.The investigator is responsible for ensuring the accuracy, completeness, legibility, and timeliness of the data reported.All source documents should be completed in a neat, legible manner to ensure accurate interpretation of data. Black ink is required to ensure clarity of reproduced copies. When making changes or corrections, cross out the original entry with a single line, and initial and date the change. DO NOT ERASE, OVERWRITE, OR USE CORRECTION FLUID OR TAPE ON THE ORIGINAL.Copies of the electronic CRF (eCRF) will be provided for use as source documents and maintained for recording data for each participant enrolled in the study. Data reported in the eCRF derived from source documents should be consistent with the source documents or the discrepancies should be explained and captured in a progress note and maintained in the participant's official electronic study record.Clinical data (including AEs, concomitant medications, and expected adverse reactions data) and clinical laboratory data will be entered into , a 21 CFR Part 11-compliant data capture system provided by the . The data system includes password protection and internal quality checks, such as automatic range checks, to identify data that appear inconsistent, incomplete, or inaccurate. Clinical data will be entered directly from the source documents."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "232",
+                                    "text": "Study Records Retention",
+                                    "answer": [
+                                        {"valueString": "Study documents will be retained for the longer of 3 years after close-out,5 years after final reporting/publication, or2 years after the last approval of a marketing applicationis approved for the drug for the indication for which it is being investigatedor 2 years after the investigation is discontinuedand FDA is notified if no application is to be filed or if the application has not been approved for such indication. No records will be destroyed without the written consent of the sponsor, if applicable. It is the responsibility of the sponsor to inform the investigator when these documents no longer need to be retained."}
+                                    ]
+                                },
+                                {
+                                    "linkId": "233",
+                                    "text": "Protocol Deviations",
+                                    "answer": [
+                                        {"valueString": "A protocol deviation is defined by institutional policy. It is the responsibility of the site investigator to use continuous vigilance to identify and report deviations.  All deviations must be addressed in study source documentsand reported to . As a result of deviations, corrective actions are to be developed by the site and implemented promptly. Protocol deviations and corrective actions must be sent to the reviewingIRB"}
+                                    ]
+                                },
+                                {
+                                    "linkId": "234",
+                                    "text": "Publication and Data Sharing Policy",
+                                    "answer": [
+                                        {"valueString": "This study will comply with the NIH Public Access Policy, which ensures that the public has access to the published results of NIH funded research. It requires scientists to submit final peer-reviewed journal manuscripts that arise from NIH funds to the digital archive PubMed Central upon acceptance for publication.The International Committee of Medical Journal Editors (ICMJE) member journals have adopted a clinical trials registration policy as a condition for publication. The ICMJE defines a clinical trial as any research project that prospectively assigns human subjects to intervention or concurrent comparison or control. OR. [This study willbeconducted in accordance with the followingpublication and data sharingpolicies and regulations:National Institutes of Health (NIH)Public Access Policy, which ensures that the public has access to the published results of NIH funded research. It requires scientists to submit final peer-reviewed journal manuscripts that arise from NIH funds to the digital archive PubMed Centralupon acceptance for publication.This study will comply with the NIH Data Sharing Policy and Policy on the Dissemination of NIH-Funded Clinical Trial Information and theClinical Trials Registration and Results Information Submission rule.As such,this trial will beregistered at ClinicalTrials.gov, and results informationfrom thistrial willbe submitted to ClinicalTrials.gov.In addition, every attempt will be made to publish results in peer-reviewed journals.  Data from this study may be requestedfrom other researchers years after the completion of the primary endpoint by contacting . In  addition, this  study  will  comply  with  the  NIH Genomic  Data  Sharing  Policy,  whichapplies  to  all  NIH-funded  research that  generateslarge-scale  human  or  non-human  genomic  data, as  well  as  the  use  of these data for subsequent research. Large-scale data include genome-wide association studies (GWAS), single  nucleotide  polymorphisms  (SNP)  arrays,  and  genome  sequence,  transcriptomic,  epigenomic,  and gene expression data.]"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "235",
+                            "text": "CONFLICT OF INTEREST POLICY",
+                            "answer": [
+                                {"valueString": "The independence of this study from any actual or perceived influence, such as by the pharmaceutical industry, is critical. Therefore any actual conflict of interest of persons who have a role in the design,conduct, analysis, publication, or any aspect of this trial will be disclosed and managed. Furthermore, persons who have a perceived conflict of interest will be required to have such conflicts managed in a way that is appropriate to their participation in the trial. The study leadership in conjunction with the  has established policies and procedures for all study group members to disclose all conflicts of interest and will establish a mechanism for the management of all reported dualities of interest.Any investigator who has a conflict of interest with this study (patent ownership, royalties, or financial gain greater than the minimum allowable by their institution, etc.) must have the conflict reviewed by the NYU Langone Conflict of Interest Management Unit (CIMU)with a Committee-sanctioned conflict management plan that has been reviewed and approved by the study sponsor prior to participation in this study. All NYULMCinvestigators will follow theapplicableconflict of interest policies. OR [The independence of this study from any actual or perceived influence, such asby the pharmaceutical industry,is critical.  Therefore,any actual conflict of interest of persons who have a role in the design, conduct, analysis, publication, or any aspect of this trialwill be disclosed and managed. Furthermore, persons who have a perceived conflict of interest will be required to have such conflicts managed in a way that is appropriate to their participation in the design and conduct of this trial.  The study leadership in conjunction with the  has established policies and procedures for all study group members to disclose all conflicts of interest and will establish a mechanism for the management of all reported dualities of interest.]"}
+                            ]
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "linkId": "230",
-              "text": "DATA HANDLING AND RECORD KEEPING",
-              "item": [
-                {
-                  "linkId": "231",
-                  "text": "Data Collection and Management Responsibilities",
-                  "answer": [
-                    {
-                      "valueString": "Data collection is the responsibility of the clinical trial staff at the site under the supervision of the site PI.The investigator is responsible for ensuring the accuracy, completeness, legibility, and timeliness of the data reported.All source documents should be completed in a neat, legible manner to ensure accurate interpretation of data. Black ink is required to ensure clarity of reproduced copies. When making changes or corrections, cross out the original entry with a single line, and initial and date the change. DO NOT ERASE, OVERWRITE, OR USE CORRECTION FLUID OR TAPE ON THE ORIGINAL.Copies of the electronic CRF (eCRF) will be provided for use as source documents and maintained for recording data for each participant enrolled in the study. Data reported in the eCRF derived from source documents should be consistent with the source documents or the discrepancies should be explained and captured in a progress note and maintained in the participantÃ¢  s official electronic study record.Clinical data (including AEs, concomitant medications, and expected adverse reactions data) and clinical laboratory data will be entered into , a 21 CFR Part 11-compliant data capture system provided by the . The data system includes password protection and internal quality checks, such as automatic range checks, to identify data that appear inconsistent, incomplete, or inaccurate. Clinical data will be entered directly from the source documents."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "232",
-                  "text": "Study Records Retention",
-                  "answer": [
-                    {
-                      "valueString": "Study documents will be retained for the longer of 3 years after close-out,5 years after final reporting/publication, or2 years after the last approval of a marketing applicationis approved for the drug for the indication for which it is being investigatedor 2 years after the investigation is discontinuedand FDA is notified if no application is to be filed or if the application has not been approved for such indication. No records will be destroyed without the written consent of the sponsor, if applicable. It is the responsibility of the sponsor to inform the investigator when these documents no longer need to be retained."
-                    }
-                  ]
-                },
-                {
-                  "linkId": "233",
-                  "text": "Protocol Deviations",
-                  "answer": [
-                    {
-                      "valueString": "A protocol deviation is defined by institutional policy. It is the responsibility of the site investigator to use continuous vigilance to identify and report deviations.  All deviations must be addressed in study source documentsand reported to . As a result of deviations, corrective actions are to be developed by the site and implemented promptly. Protocol deviations and corrective actions must be sent to the reviewingIRB"
-                    }
-                  ]
-                },
-                {
-                  "linkId": "234",
-                  "text": "Publication and Data Sharing Policy",
-                  "answer": [
-                    {
-                      "valueString": "This study will comply with the NIH Public Access Policy, which ensures that the public has access to the published results of NIH funded research. It requires scientists to submit final peer-reviewed journal manuscripts that arise from NIH funds to the digital archive PubMed Central upon acceptance for publication.The International Committee of Medical Journal Editors (ICMJE) member journals have adopted a clinical trials registration policy as a condition for publication. The ICMJE defines a clinical trial as any research project that prospectively assigns human subjects to intervention or concurrent comparison or control. OR. [This study willbeconducted in accordance with the followingpublication and data sharingpolicies and regulations:National Institutes of Health (NIH)Public Access Policy, which ensures that the public has access to the published results of NIH funded research. It requires scientists to submit final peer-reviewed journal manuscripts that arise from NIH funds to the digital archive PubMed Centralupon acceptance for publication.This study will comply with the NIH Data Sharing Policy and Policy on the Dissemination of NIH-Funded Clinical Trial Information and theClinical Trials Registration and Results Information Submission rule.As such,this trial will beregistered at ClinicalTrials.gov, and results informationfrom thistrial willbe submitted to ClinicalTrials.gov.In addition, every attempt will be made to publish results in peer-reviewed journals.  Data from this study may be requestedfrom other researchers years after the completion of the primary endpoint by contacting . In  addition, this  study  will  comply  with  the  NIH Genomic  Data  Sharing  Policy,  whichapplies  to  all  NIH-funded  research that  generateslarge-scale  human  or  non-human  genomic  data, as  well  as  the  use  of these data for subsequent research. Large-scale data include genome-wide association studies (GWAS), single  nucleotide  polymorphisms  (SNP)  arrays,  and  genome  sequence,  transcriptomic,  epigenomic,  and gene expression data.]"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId": "235",
-              "text": "CONFLICT OF INTEREST POLICY",
-              "answer": [
-                {
-                  "valueString": "The independence of this study from any actual or perceived influence, such as by the pharmaceutical industry, is critical. Therefore any actual conflict of interest of persons who have a role in the design,conduct, analysis, publication, or any aspect of this trial will be disclosed and managed. Furthermore, persons who have a perceived conflict of interest will be required to have such conflicts managed in a way that is appropriate to their participation in the trial. The study leadership in conjunction with the  has established policies and procedures for all study group members to disclose all conflicts of interest and will establish a mechanism for the management of all reported dualities of interest.Any investigator who has a conflict of interest with this study (patent ownership, royalties, or financial gain greater than the minimum allowable by their institution, etc.) must have the conflict reviewed by the NYU Langone Conflict of Interest Management Unit (CIMU)with a Committee-sanctioned conflict management plan that has been reviewed and approved by the study sponsor prior to participation in this study. All NYULMCinvestigators will follow theapplicableconflict of interest policies. OR [The independence of this study from any actual or perceived influence, such asby the pharmaceutical industry,is critical.  Therefore,any actual conflict of interest of persons who have a role in the design, conduct, analysis, publication, or any aspect of this trialwill be disclosed and managed. Furthermore, persons who have a perceived conflict of interest will be required to have such conflicts managed in a way that is appropriate to their participation in the design and conduct of this trial.  The study leadership in conjunction with the  has established policies and procedures for all study group members to disclose all conflicts of interest and will establish a mechanism for the management of all reported dualities of interest.]"
-                }
-              ]
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

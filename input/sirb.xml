@@ -105,7 +105,7 @@
 
     <!--   QuestionnaireResponse    -->
 
-<!--    
+   
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/sirb-consent-response"/>
@@ -113,7 +113,6 @@
       <name value="Example - QuestionnaireResponse - sIRB Consent"/>
       <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire"/>      
     </resource>  
-    
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/sirb-protocol-response"/>
@@ -122,7 +121,6 @@
       <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire"/>      
     </resource>  
 
--->
 
     <!--   Composition    -->
     

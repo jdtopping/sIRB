@@ -2,13 +2,13 @@
   "resourceType": "QuestionnaireResponse",
   "id": "sirb-consent-response",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
+  "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"
     ]
   },
   "questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire" ,
   "status": "completed",
-  "authored": "2019-10-08T19:25:03.033Z",
+  "authored": "2019-12-01T05:03:02.558Z",
   "item": [
     {
       "linkId": "1",
@@ -34,7 +34,7 @@
         },
         {
           "linkId": "2.2",
-          "text": "Site Prinicipal Investigator First Name",
+          "text": "Site Principal Investigator First Name",
           "answer": [
             {
               "valueString": "Jane"
@@ -43,7 +43,7 @@
         },
         {
           "linkId": "2.3",
-          "text": "Site Prinicipal Investigator Professional Degrees",
+          "text": "Site Principal Investigator Professional Degrees",
           "answer": [
             {
               "valueString": "PhD"
@@ -52,7 +52,7 @@
         },
         {
           "linkId": "2.4",
-          "text": "Site Prinicipal Investigator Associated Institution",
+          "text": "Site Principal Investigator Associated Institution",
           "answer": [
             {
               "valueString": "University of the States"
@@ -61,7 +61,7 @@
         },
         {
           "linkId": "2.5",
-          "text": "Site Prinicipal Investigator Contact Information",
+          "text": "Site Principal Investigator Contact Information",
           "answer": [
             {
               "valueString": "XXX-XXX-XXXX Smith Building Room 14, College Circle, XX"
@@ -112,7 +112,7 @@
           "text": "Sponsor Name",
           "answer": [
             {
-              "valueString": "Pharmacum Pharma"
+              "valueString": "Pharmacam Pharma"
             }
           ]
         },
@@ -175,7 +175,7 @@
           "text": "About this Consent Form",
           "answer": [
             {
-              "valueString": "This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends.  Additional information about the RCT study can be included here to introduce it to the participant."
+              "valueString": "This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends."
             }
           ]
         }
@@ -273,7 +273,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "LinkId",
                     "code": "2",
                     "display": "Hours"
                   }
@@ -328,7 +327,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "LinkId",
                     "code": "2",
                     "display": "Hours"
                   }
@@ -383,7 +381,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "LinkId",
                     "code": "2",
                     "display": "Hours"
                   }
@@ -438,7 +435,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "No"
                   }
@@ -451,7 +447,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "Standard of Care"
                   }
@@ -515,7 +510,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "1",
                     "display": "Blood Collection"
                   }
@@ -528,7 +522,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "No"
                   }
@@ -541,7 +534,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "Standard of Care"
                   }
@@ -605,7 +597,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "7",
                     "display": "(Need plan for other)"
                   }
@@ -618,7 +609,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "No"
                   }
@@ -631,7 +621,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "1",
                     "display": "Research"
                   }
@@ -695,7 +684,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "X-Ray"
                   }
@@ -708,7 +696,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "2",
                     "display": "No"
                   }
@@ -721,7 +708,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "1",
                     "display": "Research"
                   }
@@ -772,7 +758,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "3",
                 "display": "Months"
               }
@@ -781,7 +766,6 @@
         }
       ]
     },
-    {},
     {
       "linkId": "10",
       "text": "Alternative Procedures",
@@ -825,7 +809,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -838,7 +821,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -857,7 +839,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -993,7 +974,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1006,7 +986,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Treatment not covered"
               }
@@ -1067,11 +1046,17 @@
       ]
     },
     {
-      "linkId": "16",
-      "text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
-      "answer": [
+      "linkId": "15",
+      "text": "Participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefitsto which the subject is otherwise entitled.",
+      "item": [
         {
-          "valueString": "If the participant is not able to complete the procedures are described, they may be deemed ineligible for the study and terminated prior to study conclusion."
+          "linkId": "15.1",
+          "text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
+          "answer": [
+            {
+              "valueString": "If the participant is not able to complete the procedures are described, they may be deemed ineligible for the study and terminated prior to study conclusion."
+            }
+          ]
         }
       ]
     },
@@ -1085,7 +1070,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1098,7 +1082,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1111,7 +1094,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1139,7 +1121,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1161,7 +1142,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1187,7 +1167,6 @@
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "Custom",
                     "code": "3",
                     "display": "External Regulatory Authorities"
                   }
@@ -1211,7 +1190,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1224,7 +1202,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1246,7 +1223,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Identifiers might be removed from private information or biospecimens, and this information could then be used for future research studies or distributed to another investigator for future research studies without additional informed consent."
               }
@@ -1265,7 +1241,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1278,7 +1253,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1291,7 +1265,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1313,7 +1286,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1335,7 +1307,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1350,7 +1321,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1363,7 +1333,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1376,7 +1345,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1389,7 +1357,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1402,7 +1369,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1424,7 +1390,6 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "Custom",
             "code": "1",
             "display": "Yes"
           }
@@ -1459,7 +1424,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1472,7 +1436,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1485,9 +1448,20 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "29.3.1",
+          "text": "Relationship of Legally Authorized Representative",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "5",
+                "display": "Legal Guardian"
               }
             }
           ]
@@ -1498,7 +1472,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "1",
                 "display": "Yes"
               }
@@ -1511,7 +1484,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1524,7 +1496,6 @@
           "answer": [
             {
               "valueCoding": {
-                "system": "Custom",
                 "code": "2",
                 "display": "No"
               }
@@ -1569,7 +1540,7 @@
           "text": "Version Date of Consent",
           "answer": [
             {
-              "valueDateTime": "2019-10-01T17:01:00.000Z"
+              "valueDateTime": "2019-12-01T05:01:00.000Z"
             }
           ]
         }
