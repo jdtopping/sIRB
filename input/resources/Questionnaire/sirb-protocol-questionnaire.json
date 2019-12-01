@@ -1,18 +1,20 @@
 {
-  "resourceType" : "Questionnaire",
   "id" : "sirb-protocol-questionnaire",
-  "meta" : {
-    "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
-    ]
-  },
-  "url" : "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
-  "version" : "0.1.0",    
-  "name" : "sirb-protocol-questionnaire",
-  "title" : "Protocol Questionnaire",
-  "status" : "draft",
-  "subjectType" : [
+  "version": "0.1.0",
+  "subjectType": [
     "ResearchStudy"
   ],
+  "status": "draft",
+  "experimental": false,
+  "url": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
+  "name": "sirb-protocol-questionnaire",
+  "title": "Protocol Questionnaire",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ]
+  },
   "item" : [
     {
       "linkId" : "1",
@@ -388,14 +390,15 @@
               ],
               "text" : "ClinicalTrials.Gov Number",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ],               
               "required" : false,
               "repeats" : false,
               "readOnly" : false
@@ -411,14 +414,15 @@
               ],
               "text" : "Grant Title",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "2"
-                  }
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ],               
               "required" : false
             },
             {
@@ -432,14 +436,15 @@
               ],
               "text" : "NIH Grant Number",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "2"
-                  }
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false,
               "repeats" : false,
               "readOnly" : false
@@ -455,14 +460,15 @@
               ],
               "text" : "IND/IDE Number",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             },
             {
@@ -476,14 +482,15 @@
               ],
               "text" : "Study Product Name",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false,
               "repeats" : false,
               "readOnly" : false
@@ -507,14 +514,15 @@
               ],
               "text" : "Funding Sponsor",
               "type" : "group",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false,
               "repeats" : false,
               "readOnly" : false,
@@ -562,14 +570,15 @@
               ],
               "text" : "Regulatory Sponsor",
               "type" : "group",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : true,
               "item" : [
                 {
@@ -670,14 +679,15 @@
               ],
               "text" : "Study Product Provider",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             },
             {
@@ -795,14 +805,15 @@
               ],
               "text" : "Investigator's Signature",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             },
             {
@@ -1042,14 +1053,15 @@
                   ],
                   "text" : "Grant Number",
                   "type" : "string",
-                  "enableWhen" : [
-                    {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "2"
-                      }
-                    }
-                  ],
+              "enableWhen": [
+                {
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
+                }
+              ], 
                   "required" : false
                 },
                 {
@@ -1194,14 +1206,15 @@
                   ],
                   "text" : "Description of Study Intervention ( Agent/Procedure)/Investigational Product",
                   "type" : "string",
-                  "enableWhen" : [
-                    {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "1"
-                      }
-                    }
-                  ],
+                   "enableWhen": [
+                     {
+                       "answerCoding": {
+                         "code": "1"
+                       },
+                       "question": "2",
+                       "operator": "="
+                     }
+                   ],    
                   "required" : false
                 },
                 {
@@ -1244,14 +1257,15 @@
                   ],
                   "text" : "Reference Theraphy",
                   "type" : "string",
-                  "enableWhen" : [
+                  "enableWhen": [
                     {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "1"
-                      }
+                      "answerCoding": {
+                        "code": "1"
+                      },
+                      "question": "2",
+                      "operator": "="
                     }
-                  ],
+                  ], 
                   "required" : false
                 },
                 {
@@ -1597,14 +1611,15 @@
                   ],
                   "text" : "If there has been experience with the study drug, device, or intervention/procedure in humans, detail the experience to date:",
                   "type" : "string",
-                  "enableWhen" : [
+                  "enableWhen": [
                     {
-                      "question" : "59",
-                      "answerCoding" : {
-                        "code" : "0"
-                      }
+                      "answerCoding": {
+                        "code": "0"
+                      },
+                      "question": "59",
+                      "operator": "="
                     }
-                  ],
+                  ], 
                   "required" : false
                 },
                 {
@@ -1619,14 +1634,15 @@
                   ],
                   "text" : "Name and Description of the Investigational Product",
                   "type" : "string",
-                  "enableWhen" : [
-                    {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "1"
-                      }
-                    }
-                  ],
+                "enableWhen": [
+                  {
+                    "answerCoding": {
+                      "code": "1"
+                    },
+                    "question": "2",
+                    "operator": "="
+                  }
+                ], 
                   "required" : false,
                   "item" : [
                     {
@@ -1754,14 +1770,15 @@
                           ],
                           "text" : "Describe any potential bias in the selection of the active control such that there will be an unfair advantage for the investigational intervention. For example, is the active control treatment known to be significantly less effective in this study population than another treatment:",
                           "type" : "string",
-                          "enableWhen" : [
-                            {
-                              "question" : "68",
-                              "answerCoding" : {
-                                "code" : "1"
-                              }
-                            }
-                          ],
+                           "enableWhen": [
+                             {
+                               "answerCoding": {
+                                 "code": "1"
+                               },
+                               "question": "68",
+                               "operator": "="
+                             }
+                           ], 
                           "required" : false
                         },
                         {
@@ -1864,14 +1881,15 @@
                       ],
                       "text" : "If no, Clarify how it is ethically justified to use this control in the study",
                       "type" : "string",
-                      "enableWhen" : [
+                      "enableWhen": [
                         {
-                          "question" : "68",
-                          "answerCoding" : {
-                            "code" : "0"
-                          }
+                          "answerCoding": {
+                            "code": "0"
+                          },
+                          "question": "68",
+                          "operator": "="
                         }
-                      ],
+                      ], 
                       "required" : false
                     },
                     {
@@ -2406,14 +2424,15 @@
               ],
               "text" : "Justification for Intervention",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "2"
-                  }
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             },
             {
@@ -5189,14 +5208,15 @@
               ],
               "text" : "STUDY BEHAVIORAL OR SOCIAL INTERVENTION (S)",
               "type" : "text",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "2"
-                  }
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false,
               "repeats" : false,
               "readOnly" : false,
@@ -5213,14 +5233,15 @@
                   ],
                   "text" : "Administration of Intervention",
                   "type" : "string",
-                  "enableWhen" : [
+                  "enableWhen": [
                     {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "2"
-                      }
+                      "answerCoding": {
+                        "code": "2"
+                      },
+                      "question": "2",
+                      "operator": "="
                     }
-                  ],
+                  ], 
                   "required" : false
                 },
                 {
@@ -5318,14 +5339,15 @@
               ],
               "text" : "Subject Compliance and Monitoring",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             },
             {
@@ -5340,14 +5362,15 @@
               ],
               "text" : "STUDY INTERVENTION/EXPERIMENTAL MANIPULATION ADHERENCE",
               "type" : "string",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "2"
-                  }
+                  "answerCoding": {
+                    "code": "2"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false
             }
           ]
@@ -7110,14 +7133,15 @@
               ],
               "text" : "Specification of Safety Parameters",
               "type" : "group",
-              "enableWhen" : [
+              "enableWhen": [
                 {
-                  "question" : "2",
-                  "answerCoding" : {
-                    "code" : "1"
-                  }
+                  "answerCoding": {
+                    "code": "1"
+                  },
+                  "question": "2",
+                  "operator": "="
                 }
-              ],
+              ], 
               "required" : false,
               "item" : [
                 {
@@ -7631,14 +7655,15 @@
                   ],
                   "text" : "ANALYSIS OF THE PRIMARY EFFICACY ENDPOINT(S)",
                   "type" : "string",
-                  "enableWhen" : [
-                    {
-                      "question" : "2",
-                      "answerCoding" : {
-                        "code" : "1"
-                      }
-                    }
-                  ],
+                 "enableWhen": [
+                   {
+                     "answerCoding": {
+                       "code": "1"
+                     },
+                     "question": "2",
+                     "operator": "="
+                   }
+                 ], 
                   "required" : false
                 },
                 {

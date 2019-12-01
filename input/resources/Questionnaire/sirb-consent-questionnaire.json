@@ -1,15 +1,20 @@
 {
-  "resourceType": "Questionnaire",
   "id" : "sirb-consent-questionnaire",
-  "meta" : {
-    "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
-    ]
-  },
-  "url" : "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire",
-  "version" : "0.1.0",  
+  "version": "0.1.0",
+  "subjectType": [
+    "ResearchStudy"
+  ],
+  "status": "draft",
+  "experimental": false,
+  "url": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire",
   "name": "sirb-consent-questionnaire",
   "title": "Consent Questionnaire",
-  "status": "draft",
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ]
+  },
   "item": [
     {
       "type": "string",
@@ -1184,10 +1189,11 @@
           "text": "Fetal Risk Details",
           "enableWhen": [
             {
-              "question": "9.4",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "9.4",
+              "operator": "="
             }
           ],
           "definition": "Fetal Risk Details"
@@ -1435,10 +1441,11 @@
           "text": "Compensation Supplemental Text",
           "enableWhen": [
             {
-              "question": "12.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "12.1",
+              "operator": "="
             }
           ],
           "definition": "Compensation Supplemental Text"
@@ -1473,10 +1480,11 @@
           "text": "Compensation List",
           "enableWhen": [
             {
-              "question": "12.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "12.1",
+              "operator": "="
             }
           ],
           "item": [
@@ -1849,10 +1857,11 @@
           "text": "Are there Emotional Consequences of Withdrawal",
           "enableWhen": [
             {
-              "question": "18.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "18.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -1900,10 +1909,11 @@
           "text": "Are there Physical Consequences of Withdrawal",
           "enableWhen": [
             {
-              "question": "18.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "18.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -1936,10 +1946,11 @@
           "text": "What are the consequences of withdrawal?",
           "enableWhen": [
             {
-              "question": "18.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "18.1",
+              "operator": "="
             }
           ],
           "definition": "What are the consequences of withdrawal?"
@@ -2031,10 +2042,11 @@
           "text": "How will confidentiality be protected?",
           "enableWhen": [
             {
-              "question": "19.2",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "19.2",
+              "operator": "="
             }
           ],
           "definition": "How will confidentiality be protected?"
@@ -2096,10 +2108,11 @@
           "text": "Describe any data security policies and processes protecting the data",
           "enableWhen": [
             {
-              "question": "19.3",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "19.3",
+              "operator": "="
             }
           ],
           "definition": "Describe any data security policies and processes protecting the data"
@@ -2271,10 +2284,11 @@
           "text": "Will the future use data be deidentified?",
           "enableWhen": [
             {
-              "question": "19.5",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "19.5",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2307,10 +2321,11 @@
           "text": "Deidentification detail",
           "enableWhen": [
             {
-              "question": "19.5.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "19.5.1",
+              "operator": "="
             }
           ],
           "definition": "Deidentification detail"
@@ -2344,10 +2359,11 @@
           "text": "Required text disclosure surrounding future use.",
           "enableWhen": [
             {
-              "question": "19.5",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "19.5",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2454,10 +2470,11 @@
           "text": "Is whole genome sequencing being conducted?",
           "enableWhen": [
             {
-              "question": "20.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2505,10 +2522,11 @@
           "text": "Sharing or no Sharing of samples.",
           "enableWhen": [
             {
-              "question": "20.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2541,10 +2559,11 @@
           "text": "Conditions of sharing",
           "enableWhen": [
             {
-              "question": "20.1.4",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1.4",
+              "operator": "="
             }
           ],
           "definition": "Conditions of sharing"
@@ -2578,10 +2597,11 @@
           "text": "Will participant share in profit with commerical use?",
           "enableWhen": [
             {
-              "question": "20.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2614,10 +2634,11 @@
           "text": "Description of Collection and Storage",
           "enableWhen": [
             {
-              "question": "20.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1",
+              "operator": "="
             }
           ],
           "definition": "Description of Collection and Storage"
@@ -2651,10 +2672,11 @@
           "text": "Can consent for sample use be revoked?",
           "enableWhen": [
             {
-              "question": "20.1",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "20.1",
+              "operator": "="
             }
           ],
           "answerOption": [
@@ -2732,10 +2754,11 @@
           "text": "If selected, participant identifiable information and identifiable biospecimens will be stored, used and shared for the kinds of future research described in this broad consent form, without anyone asking your permission for each new study.  Identifying information may also be removed from your information and biospecimens, allowing them to be used for any future research or other purpose.",
           "enableWhen": [
             {
-              "question": "21",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "21",
+              "operator": "="
             }
           ],
           "definition": "Standard Broad Consent Text"
@@ -2799,10 +2822,11 @@
           "text": "Conditions about contact for additional sample use, information not currently described or future research",
           "enableWhen": [
             {
-              "question": "22",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "22",
+              "operator": "="
             }
           ],
           "definition": "Conditions about contact for additional sample use, information not currently described or future research"
@@ -2866,10 +2890,11 @@
           "text": "Reasons why participants will or will not share in commerical profit",
           "enableWhen": [
             {
-              "question": "23",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "23",
+              "operator": "="
             }
           ],
           "definition": "Reasons why participants will or will not share in commerical profit"
@@ -2976,10 +3001,11 @@
           "text": "Condtions under which the study results will be disclosed to you",
           "enableWhen": [
             {
-              "question": "25",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "25",
+              "operator": "="
             }
           ],
           "definition": "Condtions under which the study results will be disclosed to you"
@@ -3057,10 +3083,11 @@
           "text": "The Department of Health and Human Services (HHS) has issued a Certificate of Confidentiality to further protect your privacy. With this Certificate, the investigators may not disclose research information that may identify you in any Federal, State, or local civil, criminal, administrative, legislative, or other proceedings, unless you have consented for this use.[trunc]",
           "enableWhen": [
             {
-              "question": "26",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "26",
+              "operator": "="
             }
           ],
           "definition": "Certifcate Confidentiality Boilerplate Text"
@@ -3079,10 +3106,11 @@
           "text": "Required Disclosures based on state law",
           "enableWhen": [
             {
-              "question": "26",
               "answerCoding": {
                 "code": "1"
-              }
+              },
+              "question": "26",
+              "operator": "="
             }
           ],
           "definition": "Section to detail any required disclosures"
