@@ -80,6 +80,37 @@
     </resource>     
 
     <!-- ______________________________________________________________________________________________________ -->
+    <!--   CodeSystems    -->
+    
+    <resource>
+      <reference>
+        <reference value="CodeSystem/sirb-rm-codesystem"/>
+      </reference>
+      <name value="sIRB - Recruitment Materials - CodeSystem"/>
+      <description value="Code System for sIRB Recruitment Materials"/>
+      <exampleBoolean value="false"/>        
+    </resource> 
+
+    <!-- 
+    <resource>
+      <reference>
+        <reference value="CodeSystem/sirb-rm-categories-codesystem"/>
+      </reference>
+      <name value="sIRB - Recruitment Materials Categories - CodeSystem"/>
+      <description value="Code System for sIRB Recruitment Materials Categories"/>
+      <exampleBoolean value="false"/>        
+    </resource> 
+    <resource>
+      <reference>
+        <reference value="CodeSystem/sirb-rm-elements-codesystem"/>
+      </reference>
+      <name value="sIRB - Recruitment Materials Elements - CodeSystem"/>
+      <description value="Code System for sIRB Recruitment Materials Elements"/>
+      <exampleBoolean value="false"/>        
+    </resource> 
+     -->
+
+    <!-- ______________________________________________________________________________________________________ -->
     <!--   Questionnaires    -->
    
     <resource>
@@ -104,7 +135,6 @@
 
 
     <!--   QuestionnaireResponse    -->
-
    
     <resource>
       <reference>
@@ -247,18 +277,6 @@
       <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/>      
     </resource>       
 
-<!--
-    <resource>
-      <reference>
-        <reference value="Questionnaire/questionnaire-sdc-profile-example-render"/>
-      </reference>
-      <name value="SDC-Advanced Rendering"/>
-      <description value="Example showing most of the advanced rendering capabilities of SDC"/>
-      <exampleCanonical value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"/>
-    </resource>
-    
-      <exampleBoolean value="true"/>    
--->
 
     <!-- ______________________________________________________________________________________________________ -->
     <!--   Pages    -->

@@ -3,7 +3,7 @@
   "system" : "http://snomed.info/sct",
   "code" : "768816002",
   "display" : "Site Investigator"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "Associate investigator",
   "severity" : "warning",

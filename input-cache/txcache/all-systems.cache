@@ -1,7 +1,26 @@
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "http://hl7.org/fhirpath/System.String"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"http://hl7.org/fhirpath/System.String\"); The code provided (#http://hl7.org/fhirpath/System.String) is not  valid in the value set FHIRDefinedType"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -10,7 +29,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -19,7 +38,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -28,7 +47,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2.2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -37,7 +56,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2.3"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -46,7 +65,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2.4"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -55,7 +74,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "2.5"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -64,7 +83,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "3"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -73,7 +92,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "3.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -82,7 +101,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "3.2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -91,7 +110,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "3.3"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -100,7 +119,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "4"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -109,7 +128,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "4.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -118,7 +137,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "4.2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -127,7 +146,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "5"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -136,7 +155,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "5.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -145,7 +164,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "6"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -154,7 +173,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "7"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -163,7 +182,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "7.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -172,7 +191,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "7.2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -181,7 +200,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "7.3"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -190,7 +209,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "7.4"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -199,7 +218,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "8"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -208,7 +227,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "10"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -217,7 +236,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "10.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -226,7 +245,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "11"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -235,7 +254,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "12"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -244,7 +263,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "13"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -253,7 +272,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "14"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -262,7 +281,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "14.1"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -271,7 +290,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "14.2"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -280,7 +299,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "14.3"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -289,7 +308,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "14.4"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -298,7 +317,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "15"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -306,17 +325,17 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "16"
-}, "valueSet" :null, "lang":"null"}####
+  "code" : "15.1"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"16\"); The code provided (#16) is not  valid in the value set All codes known to the system"
+  "error" : "The code system \"\" is not known (encountered paired with code = \"15.1\"); The code provided (#15.1) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "18"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -325,7 +344,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "19"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -334,7 +353,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "20"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -343,7 +362,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "21"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -352,7 +371,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "22"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -361,7 +380,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "23"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -370,7 +389,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "24"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -379,7 +398,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "25"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -388,7 +407,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "26"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -397,7 +416,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "27"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -406,7 +425,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "28"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -415,7 +434,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "29"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -424,7 +443,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "32"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -433,7 +452,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "33"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -442,7 +461,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "30"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -451,19 +470,10 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "31"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
 v: {
   "display" : "",
   "severity" : "error",
   "error" : "The code system \"\" is not known (encountered paired with code = \"31\"); The code provided (#31) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "15.1"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"15.1\"); The code provided (#15.1) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
