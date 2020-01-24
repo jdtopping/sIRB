@@ -91,25 +91,6 @@
       <exampleBoolean value="false"/>        
     </resource> 
 
-    <!-- 
-    <resource>
-      <reference>
-        <reference value="CodeSystem/sirb-rm-categories-codesystem"/>
-      </reference>
-      <name value="sIRB - Recruitment Materials Categories - CodeSystem"/>
-      <description value="Code System for sIRB Recruitment Materials Categories"/>
-      <exampleBoolean value="false"/>        
-    </resource> 
-    <resource>
-      <reference>
-        <reference value="CodeSystem/sirb-rm-elements-codesystem"/>
-      </reference>
-      <name value="sIRB - Recruitment Materials Elements - CodeSystem"/>
-      <description value="Code System for sIRB Recruitment Materials Elements"/>
-      <exampleBoolean value="false"/>        
-    </resource> 
-     -->
-
     <!-- ______________________________________________________________________________________________________ -->
     <!--   Questionnaires    -->
    
@@ -133,7 +114,7 @@
     <!-- ______________________________________________________________________________________________________ -->    
     <!--   Examples    -->    
 
-
+      
     <!--   QuestionnaireResponse    -->
    
     <resource>
@@ -141,14 +122,14 @@
         <reference value="QuestionnaireResponse/sirb-consent-response"/>
       </reference>
       <name value="Example - QuestionnaireResponse - sIRB Consent"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire"/>     
     </resource>  
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/sirb-protocol-response"/>
       </reference>
       <name value="Example - QuestionnaireResponse - sIRB Protocol"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire"/>      
     </resource>  
 
 
@@ -159,7 +140,7 @@
         <reference value="Composition/sirb-dl-ex-composition-smart"/>
       </reference>
       <name value="Example - Composition - SMART IRB Determination Letter"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/>      
     </resource>  
 
     <resource>
@@ -167,7 +148,7 @@
         <reference value="Composition/sirb-dl-ex-composition-irex"/>
       </reference>
       <name value="Example - Composition - IREX Determination Letter"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"/>      
     </resource>  
 
     <!--   ResearchStudy    -->
@@ -177,7 +158,7 @@
         <reference value="ResearchStudy/sirb-dl-ex-study-mmr"/>
       </reference>
       <name value="Example - ResearchStudy - MMR Study"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"/>      
     </resource>     
     
     <!--   Organization    -->
@@ -187,28 +168,28 @@
         <reference value="Organization/sirb-dl-ex-org-usc"/>
       </reference>
       <name value="Example - Organization - University of Southern Coast"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>      
     </resource>         
     <resource>
       <reference>
         <reference value="Organization/sirb-dl-ex-org-rv"/>
       </reference>
       <name value="Example - Organization - Ridgeview Health System"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>    
     </resource>    
     <resource>
       <reference>
         <reference value="Organization/sirb-dl-ex-org-gg"/>
       </reference>
       <name value="Example - Organization - Golden Gate Medical Center"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>     
     </resource>    
     <resource>
       <reference>
         <reference value="Organization/sirb-dl-ex-org-cb"/>
       </reference>
       <name value="Example - Organization - Cambridge Pediatric Hospital"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"/>     
     </resource>        
 
     
@@ -219,21 +200,21 @@
         <reference value="Practitioner/sirb-dl-ex-prac-sb"/>
       </reference>
       <name value="Example - Practitioner - Samantha Bard"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>     
     </resource>     
     <resource>
       <reference>
         <reference value="Practitioner/sirb-dl-ex-prac-mj"/>
       </reference>
       <name value="Example - Practitioner - Mark Jessup"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>     
     </resource>  
     <resource>
       <reference>
         <reference value="Practitioner/sirb-dl-ex-prac-cw"/>
       </reference>
       <name value="Example - Practitioner - Corey Warren"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"/>     
     </resource>      
 
     <!--   PractitionerRole    -->
@@ -243,21 +224,21 @@
         <reference value="PractitionerRole/sirb-dl-ex-role-inv-rv"/>
       </reference>
       <name value="Example - PractitionerRole - Ridgeview Health System - Site Investigator"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/>    
     </resource>     
     <resource>
       <reference>
         <reference value="PractitionerRole/sirb-dl-ex-role-inv-gg"/>
       </reference>
       <name value="Example - PractitionerRole - Golden Gate Medical Center - Site Investigator"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/>     
     </resource>    
     <resource>
       <reference>
         <reference value="PractitionerRole/sirb-dl-ex-role-inv-cb"/>
       </reference>
       <name value="Example - PractitionerRole - Cambridge Pediatric Hospital - Site Investigator"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"/>     
     </resource>        
 
     <!--   List    -->
@@ -267,14 +248,14 @@
         <reference value="List/sirb-dl-ex-list-rel"/>
       </reference>
       <name value="Example - List - Reliant IRB List"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/>    
     </resource>     
     <resource>
       <reference>
         <reference value="List/sirb-dl-ex-list-non"/>
       </reference>
       <name value="Example - List - Non-Reliant IRB List"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/> -->      
+      <exampleCanonical value="http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"/>     
     </resource>       
 
 
