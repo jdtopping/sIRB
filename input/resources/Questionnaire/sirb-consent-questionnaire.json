@@ -1,188 +1,158 @@
 {
-  "id": "sirb-consent-questionnaire",
-  "name": "Consent questionnaire",
-  "title": "Consent questionnaire",
   "resourceType": "Questionnaire",
-  "status": "draft",
+  "id": "sirb-consent-questionnaire",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
     ]
   },
+  "name": "Consent_questionnaire",
+  "title": "Consent questionnaire",
+  "status": "draft",
   "item": [
     {
-      "type": "string",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "1",
-          "display": "Title of the Study"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
           "valueInteger": 1
         }
       ],
-      "required": true,
       "linkId": "1",
-      "text": "Title of the Study",
-      "definition": "Title of the study"
-    },
-    {
-      "type": "group",
       "code": [
         {
-          "system": "Custom",
+          "code": "1",
+          "display": "Title of the Study"
+        }
+      ],
+      "text": "Title of the Study",
+      "type": "string",
+      "required": true
+    },
+    {
+      "linkId": "2",
+      "code": [
+        {
           "code": "2",
           "display": "Site Principal Investigator"
         }
       ],
-      "required": false,
-      "linkId": "2",
       "text": "Site Principal Investigator",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "2.1",
           "code": [
             {
-              "system": "Custom",
               "code": "2.1",
               "display": "Site Principal Investigator Last Name"
             }
           ],
-          "required": false,
-          "linkId": "2.1",
           "text": "Site Principal Investigator Last Name",
-          "definition": "Site Principal Investigator Last Name"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "2.2",
           "code": [
             {
-              "system": "Custom",
               "code": "2.2",
               "display": "Site Prinicipal Investigator First Name"
             }
           ],
-          "required": false,
-          "linkId": "2.2",
           "text": "Site Prinicipal Investigator First Name",
-          "definition": "Site Prinicipal Investigator First Name"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "2.3",
           "code": [
             {
-              "system": "Custom",
               "code": "2.3",
               "display": "Site Prinicipal Investigator Professional Degrees"
             }
           ],
-          "required": false,
-          "linkId": "2.3",
           "text": "Site Prinicipal Investigator Professional Degrees",
-          "definition": "Site Prinicipal Investigator Professional Degrees"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "2.4",
           "code": [
             {
-              "system": "Custom",
               "code": "2.4",
               "display": "Site Prinicipal Investigator Associated Institution"
             }
           ],
-          "required": false,
-          "linkId": "2.4",
           "text": "Site Prinicipal Investigator Associated Institution",
-          "definition": "Site Prinicipal Investigator Associated Institution"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "2.5",
           "code": [
             {
-              "system": "Custom",
               "code": "2.5",
               "display": "Site Prinicipal Investigator Contact Information"
             }
           ],
-          "required": false,
-          "linkId": "2.5",
           "text": "Site Prinicipal Investigator Contact Information",
-          "definition": "Site Prinicipal Investigator Contact Information"
+          "type": "string",
+          "required": false
         }
-      ],
-      "definition": "Site Principal Investigator"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "3",
       "code": [
         {
-          "system": "Custom",
           "code": "3",
           "display": "Conducting Institution"
         }
       ],
-      "required": false,
-      "linkId": "3",
       "text": "Conducting Institution",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "3.1",
           "code": [
             {
-              "system": "Custom",
               "code": "3.1",
               "display": "Conducting Institution Name"
             }
           ],
-          "required": false,
-          "linkId": "3.1",
           "text": "Conducting Institution Name",
-          "definition": "Conducting Institution Name"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "3.2",
           "code": [
             {
-              "system": "Custom",
               "code": "3.2",
               "display": "Conducting Institution Address"
             }
           ],
-          "required": false,
-          "linkId": "3.2",
           "text": "Conducting Institution Address",
-          "definition": "Conducting Institution Address"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "3.3",
           "code": [
             {
-              "system": "Custom",
               "code": "3.3",
               "display": "Conducting Institution OID"
             }
           ],
-          "required": false,
-          "linkId": "3.3",
           "text": "Conducting Institution OID",
-          "definition": "Conducting Institution OID"
+          "type": "string",
+          "required": false
         }
-      ],
-      "definition": "Conducting Institution"
+      ]
     },
     {
-      "type": "group",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "4",
-          "display": "Sponsor or Funding Source"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -198,263 +168,237 @@
           }
         }
       ],
+      "linkId": "4",
+      "code": [
+        {
+          "code": "4",
+          "display": "Sponsor or Funding Source"
+        }
+      ],
+      "text": "Sponsor or Funding Source",
+      "type": "group",
       "required": false,
       "repeats": true,
-      "linkId": "4",
-      "text": "Sponsor or Funding Source",
       "item": [
         {
-          "type": "string",
+          "linkId": "4.1",
           "code": [
             {
-              "system": "Custom",
               "code": "4.1",
               "display": "Sponsor Name"
             }
           ],
-          "required": false,
-          "linkId": "4.1",
           "text": "Sponsor Name",
-          "definition": "Sponsor Name"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "4.2",
           "code": [
             {
-              "system": "Custom",
               "code": "4.2",
               "display": "Sponsor OID"
             }
           ],
-          "required": false,
-          "linkId": "4.2",
           "text": "Sponsor OID",
-          "definition": "Sponsor OID"
+          "type": "string",
+          "required": false
+        }
+      ]
+    },
+    {
+      "linkId": "4.3",
+      "code": [
+        {
+          "code": "4.3",
+          "display": "Sponsor Detail Statement"
         }
       ],
-      "definition": "Sponsor or Funding Source"
+      "text": "Sponsor Detail Statement",
+      "type": "string",
+      "required": false
     },
-     {
-          "type": "string",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "4.3",
-              "display": "Sponsor Detail Statement"
-            }
-          ],
-          "required": false,
-          "linkId": "4.3",
-          "text": "Sponsor Detail Statement",
-          "definition": "Sponsor Detail Statement"
-        },
-        {
-      "type": "choice",
+    {
+      "linkId": "4.4",
       "code": [
         {
           "code": "4.4",
-          "display": "Is this consent an eConsent?",
-          "system": "Custom"
+          "display": "Is this consent an eConsent?"
         }
       ],
-      "required": false,
-      "linkId": "4.4",
       "text": "Is this consent an eConsent?",
+      "type": "choice",
+      "required": false,
       "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "1",
-                    "display": "Yes"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "2",
-                    "display": "No"
-                  }
-                }
-              ]
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "No"
+          }
+        }
+      ]
     },
     {
-      "type": "group",
+      "linkId": "5",
       "code": [
         {
-          "system": "Custom",
           "code": "5",
           "display": "Summary Text"
         }
       ],
-      "required": false,
-      "linkId": "5",
       "text": "Summary Text",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "5.1",
-              "display": "Summary Text Statement"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
               "valueInteger": 1
             }
           ],
-          "required": true,
           "linkId": "5.1",
+          "code": [
+            {
+              "code": "5.1",
+              "display": "Summary Text Statement"
+            }
+          ],
           "text": "Summary Text Statement",
-          "definition": "Summary Text Statement"
+          "type": "string",
+          "required": true
         }
-      ],
-      "definition": "Summary Text"
+      ]
     },
     {
-      "type": "group",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "6",
-          "display": "Statement of Research"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
           "valueInteger": 1
         }
       ],
-      "required": true,
       "linkId": "6",
+      "code": [
+        {
+          "code": "6",
+          "display": "Statement of Research"
+        }
+      ],
       "text": "Introduction and Statement of Research",
+      "type": "group",
+      "required": true,
       "item": [
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "6a",
           "text": "About this Consent Form",
+          "type": "text",
+          "required": false,
           "initial": [
             {
               "valueString": "This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends."
             }
-          ],
-          "definition": "About this Consent Form"
+          ]
         }
-      ],
-      "definition": "Introduction and Statement of Research"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "7",
       "code": [
         {
-          "system": "Custom",
           "code": "7",
           "display": "Purpose"
         }
       ],
-      "required": false,
-      "linkId": "7",
       "text": "Purpose",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "7.1",
           "code": [
             {
-              "system": "Custom",
               "code": "7.1",
               "display": "Why is this research being done?"
             }
           ],
-          "required": false,
-          "linkId": "7.1",
           "text": "Why is this research being done?",
-          "definition": "Why is this research being done?"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "7.2",
           "code": [
             {
-              "system": "Custom",
               "code": "7.2",
               "display": "Who will the subjects be interacting with during the course of the study?"
             }
           ],
-          "required": false,
-          "linkId": "7.2",
           "text": "Who will the subjects be interacting with during the course of the study?",
-          "definition": "Who will the subjects be interacting with during the course of the study?"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "7.3",
           "code": [
             {
-              "system": "Custom",
               "code": "7.3",
               "display": "Who is being invited to participate?"
             }
           ],
-          "required": false,
-          "linkId": "7.3",
           "text": "Who is being invited to participate?",
-          "definition": "Who is being invited to participate?"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "integer",
+          "linkId": "7.4",
           "code": [
             {
-              "system": "Custom",
               "code": "7.4",
               "display": "Total expected study enrollment"
             }
           ],
-          "required": false,
-          "linkId": "7.4",
           "text": "Total expected study enrollment",
-          "definition": "Total expected study enrollment"
+          "type": "integer",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "7.5",
           "code": [
             {
-              "system": "Custom",
               "code": "7.5",
               "display": "Additional Enrollment Text"
             }
           ],
-          "required": false,
-          "linkId": "7.5",
           "text": "Additional Enrollment Text",
-          "definition": "Additional Enrollment Text"
-        },
-         {
           "type": "string",
+          "required": false
+        },
+        {
+          "linkId": "7.6",
           "code": [
             {
-              "system": "Custom",
               "code": "7.6",
               "display": "What is involved in the study?"
             }
           ],
-          "required": false,
-          "linkId": "7.6",
           "text": "What is involved in the study?",
-          "definition": "What is involved in the study?"
+          "type": "string",
+          "required": false
         }
-      ],
-      
-      "definition": "Purpose"
+      ]
     },
-     {
-      "type": "display",
+    {
       "linkId": "x8",
       "text": "Assessments",
+      "type": "group",
       "item": [
         {
-          "type": "group",
-          "code": [],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -470,85 +414,65 @@
               }
             }
           ],
-          "required": false,
-          "repeats": true,
           "linkId": "x8.1",
           "text": "Assessment List",
+          "type": "group",
+          "required": false,
+          "repeats": true,
           "item": [
             {
-              "type": "string",
+              "linkId": "x8.1.1",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "x8.1",
                   "display": "Name of the Assessment"
                 }
               ],
-              "required": false,
-              "linkId": "x8.1.1",
               "text": "Name of the Assessment",
-              "definition": "Name of the Assessment"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "x8.1.2",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "x8.2",
                   "display": "Description of Assessment"
                 }
               ],
-              "required": false,
-              "linkId": "x8.1.2",
               "text": "Description of Assessment",
-              "definition": "Description of Assessment"
+              "type": "string",
+              "required": false
             }
-          ],
-          "definition": "Risk List"
+          ]
         },
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "x8.a",
           "text": "Assessment Supplemental Text",
-          "definition": "Assessment Supplemental Text"
-      }
- 
-    
-      ],
-      "definition": "Risks"
+          "type": "text",
+          "required": false
+        }
+      ]
     },
     {
-      "type": "group",
+      "linkId": "8",
       "code": [
         {
-          "system": "Custom",
           "code": "8",
           "display": "Procedures"
         }
       ],
-      "required": false,
-      "linkId": "8",
       "text": "Procedures",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "8.a",
           "text": "Visit Introductory Text",
-          "definition": "Visit Introductory Text"
+          "type": "text",
+          "required": false
         },
         {
-          "type": "group",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "8.01",
-              "display": "Visit List"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -564,50 +488,49 @@
               }
             }
           ],
+          "linkId": "8.01",
+          "code": [
+            {
+              "code": "8.01",
+              "display": "Visit List"
+            }
+          ],
+          "text": "Visit List",
+          "type": "group",
           "required": false,
           "repeats": true,
-          "linkId": "8.01",
-          "text": "Visit List",
           "item": [
             {
-              "type": "string",
+              "linkId": "8.02",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.02",
                   "display": "Visit Type"
                 }
               ],
-              "required": false,
-              "linkId": "8.02",
               "text": "Visit Type",
-              "definition": "Visit Type"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "8.03",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.03",
                   "display": "Visit Description"
                 }
               ],
-              "required": false,
-              "linkId": "8.03",
               "text": "Visit Description",
-              "definition": "Visit Description"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "text",
-              "code": [],
-              "required": false,
               "linkId": "8.03a",
               "text": "Visit Duration",
-              "definition": "Visit Duration"
+              "type": "text",
+              "required": false
             },
             {
-              "type": "choice",
-              "code": [],
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -623,9 +546,10 @@
                   }
                 }
               ],
-              "required": false,
               "linkId": "8.03b",
               "text": "Visit Duration Units",
+              "type": "choice",
+              "required": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -645,29 +569,17 @@
                     "display": "Days"
                   }
                 }
-              ],
-              "definition": "Visit Duration Units"
+              ]
             },
             {
-              "type": "integer",
-              "code": [],
-              "required": false,
               "linkId": "8.04",
               "text": "Number of Visits",
-              "definition": "Number of Visits"
+              "type": "integer",
+              "required": false
             }
-          ],
-          "definition": "Visit List"
+          ]
         },
         {
-          "type": "group",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "8.05",
-              "display": "Procedure List"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -683,63 +595,55 @@
               }
             }
           ],
+          "linkId": "8.05",
+          "code": [
+            {
+              "code": "8.05",
+              "display": "Procedure List"
+            }
+          ],
+          "text": "Procedure List",
+          "type": "group",
           "required": false,
           "repeats": true,
-          "linkId": "8.05",
-          "text": "Procedure List",
           "item": [
             {
-              "type": "string",
+              "linkId": "8.06",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.06",
                   "display": "Name of Procedure"
                 }
               ],
-              "required": false,
-              "linkId": "8.06",
               "text": "Name of Procedure",
-              "definition": "Name of Procedure"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "8.07",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.07",
                   "display": "Common Term of Procedure"
                 }
               ],
-              "required": false,
-              "linkId": "8.07",
               "text": "Common Term of Procedure",
-              "definition": "Common Term for Procedure"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "8.08",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.08",
                   "display": "Description of a Procedure"
                 }
               ],
-              "required": false,
-              "linkId": "8.08",
               "text": "Description of a Procedure",
-              "definition": "Description of a Procedure"
+              "type": "string",
+              "required": false
             },
-          
             {
-              "type": "choice",
-              "code": [
-                {
-                  "system": "Custom",
-                  "code": "8.10",
-                  "display": "Experimental Procedure Indicator"
-                }
-              ],
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -755,9 +659,16 @@
                   }
                 }
               ],
-              "required": false,
               "linkId": "8.10",
+              "code": [
+                {
+                  "code": "8.10",
+                  "display": "Experimental Procedure Indicator"
+                }
+              ],
               "text": "Experimental Procedure Indicator",
+              "type": "choice",
+              "required": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -771,18 +682,9 @@
                     "display": "No"
                   }
                 }
-              ],
-              "definition": "Experimental Procedure Indicator"
+              ]
             },
             {
-              "type": "choice",
-              "code": [
-                {
-                  "system": "Custom",
-                  "code": "8.11",
-                  "display": "Research Indicator"
-                }
-              ],
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -798,9 +700,16 @@
                   }
                 }
               ],
-              "required": false,
               "linkId": "8.11",
+              "code": [
+                {
+                  "code": "8.11",
+                  "display": "Research Indicator"
+                }
+              ],
               "text": "Research Indicator",
+              "type": "choice",
+              "required": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -814,71 +723,53 @@
                     "display": "Standard of Care"
                   }
                 }
-              ],
-              "definition": "Research Indicator"
+              ]
             },
             {
-              "type": "decimal",
+              "linkId": "8.12",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.12",
                   "display": "Frequency of Procedures"
                 }
               ],
-              "required": false,
-              "linkId": "8.12",
               "text": "Frequency of Procedures",
-              "definition": "Overall Frequency of Procedures"
+              "type": "decimal",
+              "required": false
             },
             {
-              "type": "decimal",
+              "linkId": "8.13",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "8.13",
                   "display": "Procedure Duration (minutes)"
                 }
               ],
-              "required": false,
-              "linkId": "8.13",
               "text": "Procedure Duration (minutes)",
-              "definition": "Procedure Duration (minutes)"
+              "type": "decimal",
+              "required": false
             }
-          ],
-          "definition": "Procedure List"
+          ]
         },
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "8.b",
           "text": "Procedure Supplemental Visit Text",
-          "definition": "Procedure Supplemental Visit Text"
+          "type": "text",
+          "required": false
         },
         {
-          "type": "decimal",
+          "linkId": "8.14",
           "code": [
             {
-              "system": "Custom",
               "code": "8.14",
               "display": "Total Duration of Study Participation"
             }
           ],
-          "required": false,
-          "linkId": "8.14",
           "text": "Total Duration of Study Participation",
-          "definition": "Total Duration of Study Participation"
+          "type": "decimal",
+          "required": false
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "8.15",
-              "display": "Total Duration of Study Participation (units)"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -894,9 +785,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "8.15",
+          "code": [
+            {
+              "code": "8.15",
+              "display": "Total Duration of Study Participation (units)"
+            }
+          ],
           "text": "Total Duration of Study Participation (units)",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -922,20 +820,16 @@
                 "display": "Years"
               }
             }
-          ],
-          "definition": "Total Duration of Study Participation (units)"
+          ]
         }
-      ],
-      "definition": "Procedures"
+      ]
     },
     {
-      "type": "display",
       "linkId": "9",
       "text": "Risks",
+      "type": "group",
       "item": [
         {
-          "type": "group",
-          "code": [],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -951,48 +845,37 @@
               }
             }
           ],
-          "required": false,
-          "repeats": true,
           "linkId": "9.1",
           "text": "Risk List",
+          "type": "group",
+          "required": false,
+          "repeats": true,
           "item": [
             {
-              "type": "string",
+              "linkId": "9.1.1",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "9.1",
                   "display": "Name of the risk"
                 }
               ],
-              "required": false,
-              "linkId": "9.1.1",
               "text": "Name of the risk",
-              "definition": "Name of the risk"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "9.1.2",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "9.2",
                   "display": "Description of Risk"
                 }
               ],
-              "required": false,
-              "linkId": "9.1.2",
               "text": "Description of Risk",
-              "definition": "Description of Risk"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "choice",
-              "code": [
-                {
-                  "system": "Custom",
-                  "code": "9.3",
-                  "display": "Risk Category"
-                }
-              ],
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1008,9 +891,16 @@
                   }
                 }
               ],
-               "required": false,
               "linkId": "9.1.3",
+              "code": [
+                {
+                  "code": "9.3",
+                  "display": "Risk Category"
+                }
+              ],
               "text": "Risk Category",
+              "type": "choice",
+              "required": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -1096,30 +986,17 @@
                     "display": "Other Non-Physical"
                   }
                 }
-              ],
-              "definition": "Risk Physical/ Non-Physical"
+              ]
             }
-          ],
-          "definition": "Risk List"
+          ]
         },
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "9.a",
           "text": "Risk Supplemental Text",
-          "definition": "Risk Supplemental Text"
+          "type": "text",
+          "required": false
         },
-        
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "9.4",
-              "display": "Fetal Risks"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1135,9 +1012,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "9.4",
+          "code": [
+            {
+              "code": "9.4",
+              "display": "Fetal Risks"
+            }
+          ],
           "text": "Fetal Risks",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1151,21 +1035,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Fetal Risks"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "9.5",
           "code": [
             {
-              "system": "Custom",
               "code": "9.5",
               "display": "Fetal Risk Details"
             }
           ],
-          "required": false,
-          "linkId": "9.5",
           "text": "Fetal Risk Details",
+          "type": "string",
           "enableWhen": [
             {
               "question": "9.4",
@@ -1175,50 +1056,37 @@
               }
             }
           ],
-          "definition": "Fetal Risk Details"
+          "required": false
         }
-      ],
-      "definition": "Risks"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "10",
       "code": [
         {
-          "system": "Custom",
           "code": "10",
           "display": "Alternative Procedures"
         }
       ],
-      "required": false,
-      "linkId": "10",
       "text": "Alternative Procedures",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "10.1",
           "code": [
             {
-              "system": "Custom",
               "code": "10.1",
               "display": "Alternative Procedure Text"
             }
           ],
-          "required": false,
-          "linkId": "10.1",
           "text": "Alternative Procedure Text",
-          "definition": "Alternative Procedure Text"
+          "type": "string",
+          "required": false
         }
-      ],
-      "definition": "Alternative Procedures"
+      ]
     },
     {
-      "type": "group",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "11",
-          "display": "Benefits"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1234,48 +1102,84 @@
           }
         }
       ],
+      "linkId": "11",
+      "code": [
+        {
+          "code": "11",
+          "display": "Benefits"
+        }
+      ],
+      "text": "Benefits",
+      "type": "group",
       "required": false,
       "repeats": true,
-      "linkId": "11",
-      "text": "Benefits",
       "item": [
         {
-          "type": "string",
+          "linkId": "11.1",
           "code": [
             {
-              "system": "Custom",
               "code": "11.1",
               "display": "Name of Benefit"
             }
           ],
-          "required": false,
-          "linkId": "11.1",
           "text": "Name of Benefit",
-          "definition": "Name of Benefit"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "11.2",
           "code": [
             {
-              "system": "Custom",
               "code": "11.2",
               "display": "Description of Benefit"
             }
           ],
-          "required": false,
-          "linkId": "11.2",
           "text": "Description of Benefit",
-          "definition": "Description of Benefit"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "11.3",
           "code": [
             {
-              "system": "Custom",
               "code": "11.3",
               "display": "Benefit to you"
             }
           ],
+          "text": "Benefit to you",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1291,52 +1195,16 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "11.3",
-          "text": "Benefit to you",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Benefit to you"
-        },
-        {
-          "type": "choice",
+          "linkId": "11.4",
           "code": [
             {
-              "system": "Custom",
               "code": "11.4",
               "display": "Benefit to society"
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "11.4",
           "text": "Benefit to society",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1350,34 +1218,23 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Benefit to society"
+          ]
         }
-      ],
-      "definition": "Benefits"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "12",
       "code": [
         {
-          "system": "Custom",
           "code": "12",
           "display": "Compensation"
         }
       ],
-      "required": false,
-      "linkId": "12",
       "text": "Compensation",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "12.1",
-              "display": "Will there be compensation for participation?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1393,9 +1250,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "12.1",
+          "code": [
+            {
+              "code": "12.1",
+              "display": "Will there be compensation for participation?"
+            }
+          ],
           "text": "Will there be compensation for participation?",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1409,15 +1273,12 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will there be compensation for participation?"
+          ]
         },
         {
-          "type": "text",
-          "code": [],
-          "required": false,
           "linkId": "12.a",
           "text": "Compensation Supplemental Text",
+          "type": "text",
           "enableWhen": [
             {
               "question": "12.1",
@@ -1427,17 +1288,9 @@
               }
             }
           ],
-          "definition": "Compensation Supplemental Text"
+          "required": false
         },
         {
-          "type": "group",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "12.2",
-              "display": "Compensation List"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1453,10 +1306,15 @@
               }
             }
           ],
-          "required": false,
-          "repeats": true,
           "linkId": "12.2",
+          "code": [
+            {
+              "code": "12.2",
+              "display": "Compensation List"
+            }
+          ],
           "text": "Compensation List",
+          "type": "group",
           "enableWhen": [
             {
               "question": "12.1",
@@ -1466,91 +1324,74 @@
               }
             }
           ],
+          "required": false,
+          "repeats": true,
           "item": [
             {
-              "type": "string",
+              "linkId": "12.3",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "12.3",
                   "display": "What types of visits will I be compensated for?"
                 }
               ],
-              "required": false,
-              "linkId": "12.3",
               "text": "What types of visits or milestones will I be compensated for?",
-              "definition": "What types of visits or milestones will I be compensated for?"
+              "type": "string",
+              "required": false
             },
             {
-              "type": "integer",
+              "linkId": "12.5",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "12.5",
                   "display": "How many visits of this type will there be compensation for?"
                 }
               ],
-              "required": false,
-              "linkId": "12.5",
               "text": "How many visits or milestones of this type will there be compensation for?",
-              "definition": "How many visits or milestones of this type will there be compensation for?"
+              "type": "integer",
+              "required": false
             },
             {
-              "type": "string",
+              "linkId": "12.6",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "12.6",
                   "display": "How much will be paid per this type of visit or milestone?"
                 }
               ],
-              "required": false,
-              "linkId": "12.6",
               "text": "How much will be paid per this type of visit or milestone?",
-              "definition": "How much will be paid per this type of visit or milestone?"
+              "type": "string",
+              "required": false
             }
-          ],
-          "definition": "Compensation List"
+          ]
         }
-      ],
-      "definition": "Compensation"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "13",
       "code": [
         {
-          "system": "Custom",
           "code": "13",
           "display": "Costs"
         }
       ],
-      "required": false,
-      "linkId": "13",
       "text": "Costs",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "13.1",
           "code": [
             {
-              "system": "Custom",
               "code": "13.1",
               "display": "What are the costs of participation, if any?"
             }
           ],
-          "required": false,
-          "linkId": "13.1",
           "text": "What are the costs of participation, if any?",
-          "definition": "What are the costs of participation, if any?"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "13.2",
-              "display": "Will there be reimbursement for other study visit costs incurred?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1566,9 +1407,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "13.2",
+          "code": [
+            {
+              "code": "13.2",
+              "display": "Will there be reimbursement for other study visit costs incurred?"
+            }
+          ],
           "text": "Will there be reimbursement for other study visit costs incurred?",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1582,18 +1430,9 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will there be reimbursement for other study visit costs incurred?"
+          ]
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "13.3",
-              "display": "Who will pay for medical treatment if research related injury occurs?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1609,9 +1448,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "13.3",
+          "code": [
+            {
+              "code": "13.3",
+              "display": "Who will pay for medical treatment if research related injury occurs?"
+            }
+          ],
           "text": "Who will pay for medical treatment if research related injury occurs?",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1631,165 +1477,176 @@
                 "display": "Acute but not chronic injury covered"
               }
             }
-          ],
-          "definition": "Who will pay for medical treatment if research related injury occurs?"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "13.4",
           "code": [
             {
-              "system": "Custom",
               "code": "13.4",
               "display": "Additional description of treatment coverage"
             }
           ],
-          "required": false,
-          "linkId": "13.4",
           "text": "Additional description of treatment coverage",
-          "definition": "Additional description of treatment coverage"
+          "type": "string",
+          "required": false
         }
-      ],
-      "definition": "Costs"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "14",
       "code": [
         {
-          "system": "Custom",
           "code": "14",
           "display": "Participant Rights and whom to contact for answers"
         }
       ],
-      "required": false,
-      "linkId": "14",
       "text": "Participant Rights and whom to contact for answers",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "14.1",
           "code": [
             {
-              "system": "Custom",
               "code": "14.1",
               "display": "What are the rights of a subject?"
             }
           ],
-          "required": false,
-          "linkId": "14.1",
           "text": "What are the rights of a subject?",
-          "definition": "What are the rights of a subject?"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "14.2",
           "code": [
             {
-              "system": "Custom",
               "code": "14.2",
               "display": "Contact Information for IRB contact for questions regarding participant rights"
             }
           ],
-          "required": false,
-          "linkId": "14.2",
           "text": "Contact Information for IRB contact for questions regarding participant rights",
-          "definition": "Contact Information for IRB contact for questions regarding participant rights"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "14.3",
           "code": [
             {
-              "system": "Custom",
               "code": "14.3",
               "display": "Contact Information for Study Cooridinator for questions regarding study procedures"
             }
           ],
-          "required": false,
-          "linkId": "14.3",
           "text": "Contact Information for Study Cooridinator for questions regarding study procedures",
-          "definition": "Contact Information for Study Cooridinator for questions regarding study procedures"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "14.4",
           "code": [
             {
-              "system": "Custom",
               "code": "14.4",
               "display": "Contact Information for PI for research-related injury"
             }
           ],
-          "required": false,
-          "linkId": "14.4",
           "text": "Contact Information for PI for research-related injury",
-          "definition": "Contact Information for PI for research-related injury"
+          "type": "string",
+          "required": false
         }
-      ],
-      "definition": "Participant Rights and whom to contact for answers"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "15",
       "code": [
         {
-          "system": "Custom",
           "code": "15",
           "display": "Participation"
         }
       ],
-      "required": false,
-      "linkId": "15",
       "text": "Participation",
-      "item": [
-    
-     {
-      "type": "text",
+      "type": "group",
       "required": false,
-      "linkId": "15.1",
-      "text": "Voluntary Permission Statement",
-      "readOnly": true,
-      "initial": [
+      "item": [
         {
-          "valueString": "Participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefitsto which the subject is otherwise entitled."
+          "linkId": "15.1",
+          "text": "Voluntary Permission Statement",
+          "type": "text",
+          "required": false,
+          "readOnly": true,
+          "initial": [
+            {
+              "valueString": "Participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefitsto which the subject is otherwise entitled."
+            }
+          ]
+        },
+        {
+          "linkId": "16",
+          "code": [
+            {
+              "code": "16",
+              "display": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subjevt's or the legally authorized representative's consent."
+            }
+          ],
+          "text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
+          "type": "text",
+          "required": false
         }
       ]
-    }
-    
-    ,
+    },
     {
-      "type": "text",
+      "linkId": "18",
       "code": [
         {
-          "system": "Custom",
-          "code": "16",
-          "display": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subjevt's or the legally authorized representative's consent."
-        }
-      ],
-      "required": false,
-      "linkId": "16",
-      "text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
-      "definition": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent."
-    }
-    ]
-    }
-   ,
-    {
-      "type": "group",
-      "code": [
-        {
-          "system": "Custom",
           "code": "18",
           "display": "Early Withdrawal"
         }
       ],
-      "required": false,
-      "linkId": "18",
       "text": "Early Withdrawal",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "18.1",
           "code": [
             {
-              "system": "Custom",
               "code": "18.1",
               "display": "Are there consequences for early withdrawal?"
             }
           ],
+          "text": "Are there consequences for early withdrawal?",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1805,34 +1662,41 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "18.1",
-          "text": "Are there consequences for early withdrawal?",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Are there consequences for early withdrawal?"
-        },
-        {
-          "type": "choice",
+          "linkId": "18.2",
           "code": [
             {
-              "system": "Custom",
               "code": "18.1.2",
               "display": "Are there Emotional Consequences of Withdrawal"
             }
           ],
+          "text": "Are there Emotional Consequences of Withdrawal",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "18.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1"
+              }
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -1848,61 +1712,15 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "18.2",
-          "text": "Are there Emotional Consequences of Withdrawal",
-          "enableWhen": [
-            {
-              "question": "18.1",
-              "operator": "=",
-              "answerCoding": {
-                "code": "1"
-              }
-            }
-          ],
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Are there Emotional Consequences of Withdrawal?"
-        },
-        {
-          "type": "choice",
+          "linkId": "18.3",
           "code": [
             {
-              "system": "Custom",
               "code": "18.1.1",
               "display": "Are there Physical Consequences of Withdrawal"
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "18.3",
           "text": "Are there Physical Consequences of Withdrawal",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "18.1",
@@ -1912,6 +1730,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -1925,21 +1744,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Are there Physical Consequences of Withdrawal?"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "18.4",
           "code": [
             {
-              "system": "Custom",
               "code": "18.1.3",
               "display": "What are the consequences of withdrawal?"
             }
           ],
-          "required": false,
-          "linkId": "18.4",
           "text": "What are the consequences of withdrawal?",
+          "type": "string",
           "enableWhen": [
             {
               "question": "18.1",
@@ -1949,52 +1765,40 @@
               }
             }
           ],
-          "definition": "What are the consequences of withdrawal?"
+          "required": false
         }
-      ],
-      "definition": "Early Withdrawal"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "19",
       "code": [
         {
-          "system": "Custom",
           "code": "19",
           "display": "Confidentiality of Records"
         }
       ],
-      "required": false,
-      "linkId": "19",
       "text": "Confidentiality of Records",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "19.1",
           "code": [
             {
-              "system": "Custom",
               "code": "19.1",
               "display": "Medical information and billing statement"
             }
           ],
-          "required": false,
-          "linkId": "19.1",
           "text": "Medical information and billing statement",
+          "type": "string",
+          "required": false,
           "initial": [
             {
               "valueString": "Medical information and billing records are protected by the privacy regulations of the federal Health Insurance Portability and Accountability Act of 1996 (HIPAA).  This type of information is called protected health information (PHI).PHI about you may be obtained from any hospital, doctor, and other health care provider involved in your care."
             }
-          ],
-          "definition": "Mandatory HIPAA statement"
+          ]
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.2",
-              "display": "Will confidentiality be protected?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2010,9 +1814,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "19.2",
+          "code": [
+            {
+              "code": "19.2",
+              "display": "Will confidentiality be protected?"
+            }
+          ],
           "text": "Will confidentiality be protected?",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2026,21 +1837,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will confidentiality be protected?"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "19.2.1",
           "code": [
             {
-              "system": "Custom",
               "code": "19.2.1",
               "display": "How will confidentiality be protected?"
             }
           ],
-          "required": false,
-          "linkId": "19.2.1",
           "text": "How will confidentiality be protected?",
+          "type": "string",
           "enableWhen": [
             {
               "question": "19.2",
@@ -2050,17 +1858,9 @@
               }
             }
           ],
-          "definition": "How will confidentiality be protected?"
+          "required": false
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.3",
-              "display": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2076,9 +1876,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "19.3",
+          "code": [
+            {
+              "code": "19.3",
+              "display": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)"
+            }
+          ],
           "text": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2092,21 +1899,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "19.3.1",
           "code": [
             {
-              "system": "Custom",
               "code": "19.3.1",
               "display": "Describe any data security policies and processes protecting the data"
             }
           ],
-          "required": false,
-          "linkId": "19.3.1",
           "text": "Describe any data security policies and processes protecting the data",
+          "type": "string",
           "enableWhen": [
             {
               "question": "19.3",
@@ -2116,17 +1920,9 @@
               }
             }
           ],
-          "definition": "Describe any data security policies and processes protecting the data"
+          "required": false
         },
         {
-          "type": "group",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.4",
-              "display": "Who can use or see participant information?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2142,20 +1938,19 @@
               }
             }
           ],
+          "linkId": "19.4",
+          "code": [
+            {
+              "code": "19.4",
+              "display": "Who can use or see participant information?"
+            }
+          ],
+          "text": "Who can use or see participant information?",
+          "type": "group",
           "required": false,
           "repeats": true,
-          "linkId": "19.4",
-          "text": "Who can use or see participant information?",
           "item": [
             {
-              "type": "open-choice",
-              "code": [
-                {
-                  "system": "Custom",
-                  "code": "19.4.1",
-                  "display": "Role or group who will have access to data"
-                }
-              ],
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2171,9 +1966,16 @@
                   }
                 }
               ],
-              "required": false,
               "linkId": "19.4.1",
+              "code": [
+                {
+                  "code": "19.4.1",
+                  "display": "Role or group who will have access to data"
+                }
+              ],
               "text": "Role or group who will have access to data",
+              "type": "open-choice",
+              "required": false,
               "answerOption": [
                 {
                   "valueCoding": {
@@ -2193,35 +1995,23 @@
                     "display": "External Regulatory Authorities"
                   }
                 }
-              ],
-              "definition": "Role or group who will have access to data"
+              ]
             },
             {
-              "type": "string",
+              "linkId": "19.4.2",
               "code": [
                 {
-                  "system": "Custom",
                   "code": "19.4.2",
                   "display": "Description of Information Disclosed"
                 }
               ],
-              "required": false,
-              "linkId": "19.4.2",
               "text": "Description of Information Disclosed",
-              "definition": "Description of Information Disclosed"
+              "type": "string",
+              "required": false
             }
-          ],
-          "definition": "Who can use or see participant information?"
+          ]
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.5",
-              "display": "Will the data be released for future use?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2237,9 +2027,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "19.5",
+          "code": [
+            {
+              "code": "19.5",
+              "display": "Will the data be released for future use?"
+            }
+          ],
           "text": "Will the data be released for future use?",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2253,18 +2050,9 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will the data be released for future use?"
+          ]
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.5.1",
-              "display": "Will the future use data be deidentified?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2280,9 +2068,15 @@
               }
             }
           ],
-          "required": false,
           "linkId": "19.5.1",
+          "code": [
+            {
+              "code": "19.5.1",
+              "display": "Will the future use data be deidentified?"
+            }
+          ],
           "text": "Will the future use data be deidentified?",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "19.5",
@@ -2292,6 +2086,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2305,21 +2100,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will the future use data be deidentified?"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "19.5.2",
           "code": [
             {
-              "system": "Custom",
               "code": "19.5.2",
               "display": "Deidentification detail"
             }
           ],
-          "required": false,
-          "linkId": "19.5.2",
           "text": "Deidentification detail",
+          "type": "string",
           "enableWhen": [
             {
               "question": "19.5.1",
@@ -2329,17 +2121,9 @@
               }
             }
           ],
-          "definition": "Deidentification detail"
+          "required": false
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "19.5.3",
-              "display": "Required text disclosure surrounding future use."
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2355,9 +2139,15 @@
               }
             }
           ],
-          "required": false,
           "linkId": "19.5.3",
+          "code": [
+            {
+              "code": "19.5.3",
+              "display": "Required text disclosure surrounding future use."
+            }
+          ],
           "text": "Required text disclosure surrounding future use.",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "19.5",
@@ -2367,6 +2157,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2380,34 +2171,64 @@
                 "display": "Information or biospeciments collected will not be used or distributed for future research studies, even if deidentified."
               }
             }
-          ],
-          "definition": "Required text disclosure surrounding future use."
+          ]
         }
-      ],
-      "definition": "Confidentiality of Records"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "20",
       "code": [
         {
-          "system": "Custom",
           "code": "20",
           "display": "Specimen Management"
         }
       ],
-      "required": false,
-      "linkId": "20",
       "text": "Specimen Management",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "20.1",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1",
               "display": "Were specimens collected as part of this study?"
             }
           ],
+          "text": "Were specimens collected as part of this study?",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2423,34 +2244,41 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "20.1",
-          "text": "Were specimens collected as part of this study?",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Were specimens collected as part of this study?"
-        },
-        {
-          "type": "choice",
+          "linkId": "20.1.2",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1.2",
               "display": "Is whole genome sequencing being conducted?"
             }
           ],
+          "text": "Is whole genome sequencing being conducted?",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "20.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1"
+              }
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2466,61 +2294,15 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "20.1.2",
-          "text": "Is whole genome sequencing being conducted?",
-          "enableWhen": [
-            {
-              "question": "20.1",
-              "operator": "=",
-              "answerCoding": {
-                "code": "1"
-              }
-            }
-          ],
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Is whole genome sequencing being conducted?"
-        },
-        {
-          "type": "choice",
+          "linkId": "20.1.4",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1.4",
               "display": "Sharing or no Sharing of samples."
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "20.1.4",
           "text": "Sharing or no Sharing of samples.",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "20.1",
@@ -2530,6 +2312,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2543,21 +2326,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Sharing or no Sharing of samples."
+          ]
         },
         {
-          "type": "string",
+          "linkId": "20.1.4.1",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1.4.1",
               "display": "Conditions of sharing"
             }
           ],
-          "required": false,
-          "linkId": "20.1.4.1",
           "text": "Conditions of sharing",
+          "type": "string",
           "enableWhen": [
             {
               "question": "20.1.4",
@@ -2567,35 +2347,33 @@
               }
             }
           ],
-          "definition": "Conditions of sharing"
+          "required": false
         },
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "20.1.5",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1.5",
               "display": "Will participant share in profit with commerical use?"
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "20.1.5",
           "text": "Will participant share in profit with commerical use?",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "20.1",
@@ -2605,6 +2383,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2618,21 +2397,18 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Will participant share in profit with commerical use?"
+          ]
         },
         {
-          "type": "string",
+          "linkId": "20.1.6",
           "code": [
             {
-              "system": "Custom",
               "code": "20.1.6",
               "display": "Description of Collection and Storage"
             }
           ],
-          "required": false,
-          "linkId": "20.1.6",
           "text": "Description of Collection and Storage",
+          "type": "string",
           "enableWhen": [
             {
               "question": "20.1",
@@ -2642,17 +2418,9 @@
               }
             }
           ],
-          "definition": "Description of Collection and Storage"
+          "required": false
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "20.1.7",
-              "display": "Can consent for sample use be revoked?"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2668,9 +2436,15 @@
               }
             }
           ],
-          "required": false,
           "linkId": "20.1.7",
+          "code": [
+            {
+              "code": "20.1.7",
+              "display": "Can consent for sample use be revoked?"
+            }
+          ],
           "text": "Can consent for sample use be revoked?",
+          "type": "choice",
           "enableWhen": [
             {
               "question": "20.1",
@@ -2680,6 +2454,7 @@
               }
             }
           ],
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -2693,21 +2468,11 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Indicator if revocation of sample consent is an option"
+          ]
         }
-      ],
-      "definition": "Specimen Management"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "21",
-          "display": "Will there be Broad Consent for Storage, maintenance and secondary research use?"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2723,9 +2488,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "21",
+      "code": [
+        {
+          "code": "21",
+          "display": "Will there be Broad Consent for Storage, maintenance and secondary research use?"
+        }
+      ],
       "text": "Will there be Broad Consent for Storage, maintenance and secondary research use?",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -2742,17 +2514,15 @@
       ],
       "item": [
         {
-          "type": "group",
+          "linkId": "21.1",
           "code": [
             {
-              "system": "Custom",
               "code": "21.1",
               "display": "If selected, participant identifiable information and identifiable biospecimens will be stored, used and shared for the kinds of future research described in this broad consent form, without anyone asking your permission for each new study.  Identifying information may also be removed from your information and biospecimens, allowing them to be used for any future research or other purpose."
             }
           ],
-          "required": false,
-          "linkId": "21.1",
           "text": "If selected, participant identifiable information and identifiable biospecimens will be stored, used and shared for the kinds of future research described in this broad consent form, without anyone asking your permission for each new study.  Identifying information may also be removed from your information and biospecimens, allowing them to be used for any future research or other purpose.",
+          "type": "group",
           "enableWhen": [
             {
               "question": "21",
@@ -2762,20 +2532,11 @@
               }
             }
           ],
-          "definition": "Standard Broad Consent Text"
+          "required": false
         }
-      ],
-      "definition": "Will there be Broad Consent for Storage, maintenance and secondary research use?"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "22",
-          "display": "Can the study team contact you for future research?"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2791,9 +2552,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "22",
+      "code": [
+        {
+          "code": "22",
+          "display": "Can the study team contact you for future research?"
+        }
+      ],
       "text": "Can the study team contact you for future research?",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -2810,17 +2578,15 @@
       ],
       "item": [
         {
-          "type": "string",
+          "linkId": "22.1",
           "code": [
             {
-              "system": "Custom",
               "code": "22.1",
               "display": "Conditions about contact for additional sample use, information not currently described or future research"
             }
           ],
-          "required": false,
-          "linkId": "22.1",
           "text": "Conditions about contact for additional sample use, information not currently described or future research",
+          "type": "string",
           "enableWhen": [
             {
               "question": "22",
@@ -2830,20 +2596,11 @@
               }
             }
           ],
-          "definition": "Conditions about contact for additional sample use, information not currently described or future research"
+          "required": false
         }
-      ],
-      "definition": "Future Research"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "23",
-          "display": "Will participants share or not share in commercial profit?"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2859,9 +2616,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "23",
+      "code": [
+        {
+          "code": "23",
+          "display": "Will participants share or not share in commercial profit?"
+        }
+      ],
       "text": "Will participants share or not share in commercial profit?",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -2878,17 +2642,15 @@
       ],
       "item": [
         {
-          "type": "string",
+          "linkId": "23.1",
           "code": [
             {
-              "system": "Custom",
               "code": "23.1",
               "display": "Reasons why participants will or will not share in commerical profit"
             }
           ],
-          "required": false,
-          "linkId": "23.1",
           "text": "Reasons why participants will or will not share in commerical profit",
+          "type": "string",
           "enableWhen": [
             {
               "question": "23",
@@ -2898,20 +2660,11 @@
               }
             }
           ],
-          "definition": "Reasons why participants will or will not share in commerical profit"
+          "required": false
         }
-      ],
-      "definition": "Will participants share or not share in commercial profit?"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "24",
-          "display": "Will the study team contact you with new information that may affect your willingness to remain in the study"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2927,9 +2680,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "24",
+      "code": [
+        {
+          "code": "24",
+          "display": "Will the study team contact you with new information that may affect your willingness to remain in the study"
+        }
+      ],
       "text": "Will the study team contact you with new information that may affect your willingness to remain in the study",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -2943,18 +2703,9 @@
             "display": "No"
           }
         }
-      ],
-      "definition": "Will the study team contact you with new information that may affect your willingness to remain in the stu"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "25",
-          "display": "Will the study team disclose clinically relevant study results to you?"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2970,9 +2721,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "25",
+      "code": [
+        {
+          "code": "25",
+          "display": "Will the study team disclose clinically relevant study results to you?"
+        }
+      ],
       "text": "Will the study team disclose clinically relevant study results to you?",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -2989,17 +2747,15 @@
       ],
       "item": [
         {
-          "type": "string",
+          "linkId": "25.1",
           "code": [
             {
-              "system": "Custom",
               "code": "25.1",
               "display": "Condtions under which the study results will be disclosed to you"
             }
           ],
-          "required": false,
-          "linkId": "25.1",
           "text": "Condtions under which the study results will be disclosed to you",
+          "type": "string",
           "enableWhen": [
             {
               "question": "25",
@@ -3009,34 +2765,23 @@
               }
             }
           ],
-          "definition": "Condtions under which the study results will be disclosed to you"
+          "required": false
         }
-      ],
-      "definition": "Will the study team disclose clinically relevant study results to you"
+      ]
     },
     {
-      "type": "text",
-      "code": [],
-      "required": false,
       "linkId": "26a",
       "text": "Clinical Trials.gov statement",
+      "type": "text",
+      "required": false,
       "readOnly": true,
       "initial": [
         {
           "valueString": "A description of this clinical trial will be available on http://www.ClinicalTrials.gov, as required by U.S. Law. This Web site will not include information that can identify you. At most, the Web site will include a summary of the results. You can search this Web site at any time."
         }
-      ],
-      "definition": "Clinical Trials.gov statement"
+      ]
     },
     {
-      "type": "choice",
-      "code": [
-        {
-          "system": "Custom",
-          "code": "26",
-          "display": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)"
-        }
-      ],
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3052,9 +2797,16 @@
           }
         }
       ],
-      "required": false,
       "linkId": "26",
+      "code": [
+        {
+          "code": "26",
+          "display": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)"
+        }
+      ],
       "text": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)",
+      "type": "choice",
+      "required": false,
       "answerOption": [
         {
           "valueCoding": {
@@ -3071,23 +2823,15 @@
       ],
       "item": [
         {
-          "type": "string",
+          "linkId": "26.1",
           "code": [
             {
-              "system": "Custom",
               "code": "26.1",
               "display": "Certificate of Confidentiality Statement"
             }
           ],
-          "readOnly": true,
-            "initial": [
-        {
-          "valueString": "The Department of Health and Human Services (HHS) has issued a Certificate of Confidentiality to further protect your privacy. With this Certificate, the investigators may not disclose research information that may identify you in any Federal, State, or local civil, criminal, administrative, legislative, or other proceedings, unless you have consented for this use.[trunc]"
-        }
-      ],
-          "required": false,
-          "linkId": "26.1",
           "text": "Certificate of Confidentiality Statement",
+          "type": "string",
           "enableWhen": [
             {
               "question": "26",
@@ -3097,20 +2841,24 @@
               }
             }
           ],
-          "definition": "Certifcate Confidentiality Boilerplate Text"
+          "required": false,
+          "readOnly": true,
+          "initial": [
+            {
+              "valueString": "The Department of Health and Human Services (HHS) has issued a Certificate of Confidentiality to further protect your privacy. With this Certificate, the investigators may not disclose research information that may identify you in any Federal, State, or local civil, criminal, administrative, legislative, or other proceedings, unless you have consented for this use.[trunc]"
+            }
+          ]
         },
         {
-          "type": "string",
+          "linkId": "26.2",
           "code": [
             {
-              "system": "Custom",
               "code": "26.2",
               "display": "Required Disclosures based on state law"
             }
           ],
-          "required": false,
-          "linkId": "26.2",
           "text": "Required Disclosures based on state law",
+          "type": "string",
           "enableWhen": [
             {
               "question": "26",
@@ -3120,66 +2868,93 @@
               }
             }
           ],
-          "definition": "Section to detail any required disclosures"
+          "required": false
         }
-      ],
-      "definition": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)"
+      ]
     },
     {
-      "type": "string",
+      "linkId": "27",
       "code": [
         {
-          "system": "Custom",
           "code": "27",
           "display": "When will the PHI Authorization Expire based on date or time past an event"
         }
       ],
-      "required": false,
-      "linkId": "27",
       "text": "When will the PHI Authorization Expire based on date or time past an event",
-      "definition": "When will the PHI Authorization Expire"
+      "type": "string",
+      "required": false
     },
     {
-      "type": "text",
+      "linkId": "28",
       "code": [
         {
-          "system": "Custom",
           "code": "28",
           "display": "Statement of PHI Authorization Revocation"
         }
       ],
-      "required": false,
-      "linkId": "28",
       "text": "Statement of PHI Authorization Revocation",
+      "type": "text",
+      "required": false,
       "initial": [
         {
           "valueString": "Particpants have the ability to revoke their consent to share PHI at any time but that there are limitations on what restrictions can apply to data that has already been shared."
         }
-      ],
-      "definition": "Statement of PHI Authorization Revocation"
+      ]
     },
     {
-      "type": "group",
+      "linkId": "29",
       "code": [
         {
-          "system": "Custom",
           "code": "29",
           "display": "Signature"
         }
       ],
-      "required": false,
-      "linkId": "29",
       "text": "Signature",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "29.1",
           "code": [
             {
-              "system": "Custom",
               "code": "29.1",
               "display": "Indicator to include Subject Signature and Date"
             }
           ],
+          "text": "Indicator to include Subject Signature and Date",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3195,34 +2970,32 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "29.1",
-          "text": "Indicator to include Subject Signature and Date",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Indicator to include Subject Signature and Date"
-        },
-        {
-          "type": "choice",
+          "linkId": "29.2",
           "code": [
             {
-              "system": "Custom",
               "code": "29.2",
               "display": "Indicator to include Assent Signature and Date"
             }
           ],
+          "text": "Indicator to include Assent Signature and Date",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3238,52 +3011,16 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "29.2",
-          "text": "Indicator to include Assent Signature and Date",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Indicator to include Assent Signature and Date"
-        },
-        {
-          "type": "choice",
+          "linkId": "29.3",
           "code": [
             {
-              "system": "Custom",
               "code": "29.3",
               "display": "Indicator to include Legally Authorized Representative Signature and Date"
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "29.3",
           "text": "Indicator to include Legally Authorized Representative Signature and Date",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -3297,18 +3034,9 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Indicator to include Legally Authorized Representative Signature and Date"
+          ]
         },
         {
-          "type": "choice",
-          "code": [
-            {
-              "system": "Custom",
-              "code": "29.3.1",
-              "display": "Relationship of Legally Authorized Representative"
-            }
-          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3324,9 +3052,16 @@
               }
             }
           ],
-          "required": false,
           "linkId": "29.3.1",
+          "code": [
+            {
+              "code": "29.3.1",
+              "display": "Relationship of Legally Authorized Representative"
+            }
+          ],
           "text": "Relationship of Legally Authorized Representative",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -3364,18 +3099,50 @@
                 "display": "Other"
               }
             }
-          ],
-          "definition": "Relationship of Legally Authorized Representative"
+          ]
         },
         {
-          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ],
+                "text": "Drop down"
+              }
+            }
+          ],
+          "linkId": "29.4",
           "code": [
             {
-              "system": "Custom",
               "code": "29.4",
               "display": "Indicator to include a Witness Signature and Date"
             }
           ],
+          "text": "Indicator to include a Witness Signature and Date",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3391,34 +3158,32 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "29.4",
-          "text": "Indicator to include a Witness Signature and Date",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Indicator to include a Witness Signature and Date"
-        },
-        {
-          "type": "choice",
+          "linkId": "29.5",
           "code": [
             {
-              "system": "Custom",
               "code": "29.5",
               "display": "Indicator to include Parent 1 Signature and Date"
             }
           ],
+          "text": "Indicator to include Parent 1 Signature and Date",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "display": "No"
+              }
+            }
+          ]
+        },
+        {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -3434,52 +3199,16 @@
               }
             }
           ],
-          "required": false,
-          "linkId": "29.5",
-          "text": "Indicator to include Parent 1 Signature and Date",
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "1",
-                "display": "Yes"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "2",
-                "display": "No"
-              }
-            }
-          ],
-          "definition": "Indicator to include Parent 1 Signature and Date"
-        },
-        {
-          "type": "choice",
+          "linkId": "29.6",
           "code": [
             {
-              "system": "Custom",
               "code": "29.6",
               "display": "Indicator to include Parent 2 Signature and Date"
             }
           ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/questionnaire-item-control",
-                    "code": "drop-down",
-                    "display": "Drop down"
-                  }
-                ],
-                "text": "Drop down"
-              }
-            }
-          ],
-          "required": false,
-          "linkId": "29.6",
           "text": "Indicator to include Parent 2 Signature and Date",
+          "type": "choice",
+          "required": false,
           "answerOption": [
             {
               "valueCoding": {
@@ -3493,77 +3222,65 @@
                 "display": "No"
               }
             }
-          ],
-          "definition": "Indicator to include Parent 2 Signature and Date"
+          ]
         }
-      ],
-      "definition": "Signature"
+      ]
     },
     {
-      "type": "group",
-      "code": [],
-      "required": false,
       "linkId": "30",
       "text": "ID and Version",
+      "type": "group",
+      "required": false,
       "item": [
         {
-          "type": "string",
+          "linkId": "30.1",
           "code": [
             {
-              "system": "Custom",
               "code": "32",
               "display": "Protocol or Study Number"
             }
           ],
-          "required": false,
-          "linkId": "30.1",
           "text": "Protocol or Study Number",
-          "definition": "Protocol or Study Number"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "string",
+          "linkId": "30.2",
           "code": [
             {
-              "system": "Custom",
               "code": "33",
               "display": "IRB Number"
             }
           ],
-          "required": false,
-          "linkId": "30.2",
           "text": "IRB Number",
-          "definition": "IRB Number"
+          "type": "string",
+          "required": false
         },
         {
-          "type": "decimal",
+          "linkId": "30.3",
           "code": [
             {
-              "system": "Custom",
               "code": "30",
               "display": "Version Number of Consent"
             }
           ],
-          "required": false,
-          "linkId": "30.3",
           "text": "Version Number of Consent",
-          "definition": "Version Number of Consent"
+          "type": "decimal",
+          "required": false
         },
         {
-          "type": "dateTime",
+          "linkId": "30.4",
           "code": [
             {
-              "system": "Custom",
               "code": "31",
               "display": "Version Date of Consent"
             }
           ],
-          "required": false,
-          "linkId": "30.4",
           "text": "Version Date of Consent",
-          "definition": "Version Date of Consent"
+          "type": "dateTime",
+          "required": false
         }
-      ],
-      "definition": "ID and Version"
+      ]
     }
   ]
 }

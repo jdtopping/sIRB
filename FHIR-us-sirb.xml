@@ -33,12 +33,9 @@
    <artifact name="sIRB - Consent - Questionnaire"
              key="Questionnaire-sirb-consent-questionnaire"
              id="Questionnaire/sirb-consent-questionnaire"/>
-   <artifact name="Example - QuestionnaireResponse - sIRB Consent"
-             key="QuestionnaireResponse-sirb-consent-response"
-             id="QuestionnaireResponse/sirb-consent-response"/>
-   <artifact name="Example - QuestionnaireResponse - sIRB Protocol"
-             key="QuestionnaireResponse-sirb-protocol-response"
-             id="QuestionnaireResponse/sirb-protocol-response"/>
+   <artifact name="sIRB - Protocol - Questionnaire"
+             key="Questionnaire-sirb-protocol-questionnaire"
+             id="Questionnaire/sirb-protocol-questionnaire"/>
    <artifact name="Example - Composition - SMART IRB Determination Letter"
              key="Composition-sirb-dl-ex-composition-smart"
              id="Composition/sirb-dl-ex-composition-smart"/>
