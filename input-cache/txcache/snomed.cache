@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "768816002",
+  "display" : "Site Investigator"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Associate investigator",
+  "severity" : "warning",
+  "error" : "The display \"Site Investigator\" is not a valid display for the code {http://snomed.info/sct}768816002 - should be one of [\"Associate investigator\",\"Associate investigator (occupation)\",\"A professional who works in projects of sponsoring organization and is responsible for planning, organizing and conducting regulated research.\"]"
+}
+-------------------------------------------------------------------------------------

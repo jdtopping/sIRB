@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/us/sirb"
+               ciUrl="http://hl7.org/fhir/ig/HL7/sirb"
+               defaultWorkgroup=""
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+   <version code="current" url="http://hl7.org/fhir/ig/HL7/sirb"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="sIRB - Determination Letter - Composition"
+             key="StructureDefinition-sirb-dl-composition"
+             id="StructureDefinition/sirb-dl-composition"/>
+   <artifact name="sIRB - Determination Letter - List"
+             key="StructureDefinition-sirb-dl-list"
+             id="StructureDefinition/sirb-dl-list"/>
+   <artifact name="sIRB - Determination Letter - Organization"
+             key="StructureDefinition-sirb-dl-organization"
+             id="StructureDefinition/sirb-dl-organization"/>
+   <artifact name="sIRB - Determination Letter - Practitioner"
+             key="StructureDefinition-sirb-dl-practitioner"
+             id="StructureDefinition/sirb-dl-practitioner"/>
+   <artifact name="sIRB - Determination Letter - PractitionerRole"
+             key="StructureDefinition-sirb-dl-practitionerrole"
+             id="StructureDefinition/sirb-dl-practitionerrole"/>
+   <artifact name="sIRB - Determination Letter - ResearchStudy"
+             key="StructureDefinition-sirb-dl-researchstudy"
+             id="StructureDefinition/sirb-dl-researchstudy"/>
+   <artifact name="sIRB - Recruitment Materials - CodeSystem"
+             key="CodeSystem-sirb-rm-codesystem"
+             id="CodeSystem/sirb-rm-codesystem"/>
+   <artifact name="sIRB - Consent - Questionnaire"
+             key="Questionnaire-sirb-consent-questionnaire"
+             id="Questionnaire/sirb-consent-questionnaire"/>
+   <artifact name="Example - QuestionnaireResponse - sIRB Consent"
+             key="QuestionnaireResponse-sirb-consent-response"
+             id="QuestionnaireResponse/sirb-consent-response"/>
+   <artifact name="Example - QuestionnaireResponse - sIRB Protocol"
+             key="QuestionnaireResponse-sirb-protocol-response"
+             id="QuestionnaireResponse/sirb-protocol-response"/>
+   <artifact name="Example - Composition - SMART IRB Determination Letter"
+             key="Composition-sirb-dl-ex-composition-smart"
+             id="Composition/sirb-dl-ex-composition-smart"/>
+   <artifact name="Example - Composition - IREX Determination Letter"
+             key="Composition-sirb-dl-ex-composition-irex"
+             id="Composition/sirb-dl-ex-composition-irex"/>
+   <artifact name="Example - ResearchStudy - MMR Study"
+             key="ResearchStudy-sirb-dl-ex-study-mmr"
+             id="ResearchStudy/sirb-dl-ex-study-mmr"/>
+   <artifact name="Example - Organization - University of Southern Coast"
+             key="Organization-sirb-dl-ex-org-usc"
+             id="Organization/sirb-dl-ex-org-usc"/>
+   <artifact name="Example - Organization - Ridgeview Health System"
+             key="Organization-sirb-dl-ex-org-rv"
+             id="Organization/sirb-dl-ex-org-rv"/>
+   <artifact name="Example - Organization - Golden Gate Medical Center"
+             key="Organization-sirb-dl-ex-org-gg"
+             id="Organization/sirb-dl-ex-org-gg"/>
+   <artifact name="Example - Organization - Cambridge Pediatric Hospital"
+             key="Organization-sirb-dl-ex-org-cb"
+             id="Organization/sirb-dl-ex-org-cb"/>
+   <artifact name="Example - Practitioner - Samantha Bard"
+             key="Practitioner-sirb-dl-ex-prac-sb"
+             id="Practitioner/sirb-dl-ex-prac-sb"/>
+   <artifact name="Example - Practitioner - Mark Jessup"
+             key="Practitioner-sirb-dl-ex-prac-mj"
+             id="Practitioner/sirb-dl-ex-prac-mj"/>
+   <artifact name="Example - Practitioner - Corey Warren"
+             key="Practitioner-sirb-dl-ex-prac-cw"
+             id="Practitioner/sirb-dl-ex-prac-cw"/>
+   <artifact name="Example - PractitionerRole - Ridgeview Health System - Site Investigator"
+             key="PractitionerRole-sirb-dl-ex-role-inv-rv"
+             id="PractitionerRole/sirb-dl-ex-role-inv-rv"/>
+   <artifact name="Example - PractitionerRole - Golden Gate Medical Center - Site Investigator"
+             key="PractitionerRole-sirb-dl-ex-role-inv-gg"
+             id="PractitionerRole/sirb-dl-ex-role-inv-gg"/>
+   <artifact name="Example - PractitionerRole - Cambridge Pediatric Hospital - Site Investigator"
+             key="PractitionerRole-sirb-dl-ex-role-inv-cb"
+             id="PractitionerRole/sirb-dl-ex-role-inv-cb"/>
+   <artifact name="Example - List - Reliant IRB List"
+             key="List-sirb-dl-ex-list-rel"
+             id="List/sirb-dl-ex-list-rel"/>
+   <artifact name="Example - List - Non-Reliant IRB List"
+             key="List-sirb-dl-ex-list-non"
+             id="List/sirb-dl-ex-list-non"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc"/>
+   <page name="Home" key="index"/>
+   <page name="Determination Letter" key="determination"/>
+   <page name="Study Protocol" key="protocol"/>
+   <page name="Informed Consent" key="consent"/>
+   <page name="Profiles / Extensions / Valuesets" key="artifacts"/>
+   <page name="Downloads" key="downloads"/>
+   <page name="Examples" key="examples"/>
+   <page name="Change History" key="history"/>
+</specification>
