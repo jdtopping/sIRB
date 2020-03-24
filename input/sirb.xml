@@ -2,6 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="hl7.fhir.us.sirb"/>
   <url value="http://hl7.org/fhir/us/sirb/ImplementationGuide/hl7.fhir.us.sirb" />
+  <version value="0.1"></version>
   <name value="SingleInstitutionalReviewBoard" />
   <title value="Single Institutional Review Board (sIRB) Implementation Guide" />  
   <status value="draft" />
@@ -10,7 +11,7 @@
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
-      <system value="other"/>
+      <system value="url"/>
       <value value="http://hl7.org/Special/committees/rcrim/"/>
     </telecom>
   </contact>  
@@ -29,7 +30,7 @@
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
     <!-- ______________________________________________________________________________________________________ -->
     <!--   Profiles    -->
-
+    
     <resource>
       <reference>
         <reference value="StructureDefinition/sirb-dl-composition"/>
@@ -121,6 +122,7 @@
       <description value="Questionnaire for sIRB Consent"/>
       <exampleBoolean value="false"/>        
     </resource>   
+    
     <resource>
       <reference>
         <reference value="Questionnaire/sirb-protocol-questionnaire"/>
@@ -136,21 +138,21 @@
 
     <!--   QuestionnaireResponse    -->
    
+   <!--
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/sirb-consent-response"/>
       </reference>
       <name value="Example - QuestionnaireResponse - sIRB Consent"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-consent-questionnaire"/> -->      
-    </resource>  
+    </resource>
+    
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/sirb-protocol-response"/>
       </reference>
       <name value="Example - QuestionnaireResponse - sIRB Protocol"/>
-      <!-- <exampleCanonical value="http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire"/> -->      
     </resource>  
-
+   -->
 
     <!--   Composition    -->
     
@@ -326,5 +328,21 @@
         <generation value="html"/>
       </page>      
     </page>
+    
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->    
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2020+"/>
+    </parameter>
+    
+    <!--
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>    -->
   </definition>
 </ImplementationGuide>
