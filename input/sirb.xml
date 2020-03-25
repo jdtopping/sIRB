@@ -10,7 +10,7 @@
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
   <contact>
     <telecom>
-      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <!-- Or whatever URL and/or email address(es) are appropriate   -->
       <system value="url"/>
       <value value="http://hl7.org/Special/committees/rcrim/"/>
     </telecom>
