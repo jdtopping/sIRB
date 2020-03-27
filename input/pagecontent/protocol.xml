@@ -1,5 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 	<p>
-    To do
+	  A formal document that describes a complete plan of research activity in the framework of a clinical study; specifically, the study objective(s), design, methodology, eligibility requests for prospective subjects and controls; intervention regimen(s), proposed methods of analysis of data; statistical considerations, and organization of the study. The protocol usually also provides the background and rationale for the trial, but these could be represented in other protocol referenced documents.
   </p>
 </div>
