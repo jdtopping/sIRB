@@ -1,0 +1,22 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="Introduction.html">Introduction</a></li>
+      <li><a href="sIRBProjectTeam.html">sIRB Project Team</a></li>
+      <li><a href="ScopeandContext.html">Scope and Context</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Standardized sIRB Questionnaire Forms<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="Consent.html">Consent</a></li>
+      <li><a href="Protocol.html">Protocol</a></li>
+      <li><a href="Determination.html">Determination</a></li>    </ul>
+  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>

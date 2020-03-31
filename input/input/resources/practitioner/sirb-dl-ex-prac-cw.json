@@ -1,0 +1,39 @@
+{
+	"resourceType": "Practitioner",
+	"id": "sirb-dl-ex-prac-cw",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-03-31T13:52:35.257+00:00",
+		"source": "#tA09SY8xFYenUXMu",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Corey Warren</div>"
+	},
+	"name": [
+		{
+			"text": "Corey Warren",
+			"family": "Warren",
+			"given": [
+				"Corey"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "email",
+			"value": "corey_warren@cambridgepeds.edu",
+			"use": "work"
+		}
+	]
+}

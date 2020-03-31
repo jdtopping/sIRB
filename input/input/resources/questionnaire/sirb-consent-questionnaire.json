@@ -1,0 +1,19 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sirb-consent-questionnaire",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-03-31T05:50:49.645+00:00",
+		"source": "#qi6qYacQDA85ndOm",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"name": "Consent_questionnaire",
+	"title": "Consent questionnaire",
+	"status": "draft"
+}

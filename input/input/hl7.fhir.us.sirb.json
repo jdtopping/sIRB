@@ -1,0 +1,297 @@
+{
+	"resourceType": "ImplementationGuide",
+	"id": "hl7.fhir.us.sirb",
+	"meta": {
+		"versionId": "77",
+		"lastUpdated": "2020-03-31T15:21:11.549+00:00",
+		"source": "#ZRKWvrQKMDsdtDP1"
+	},
+	"contained": [],
+	"extension": [],
+	"url": "http://hl7.org/fhir/us/sirb/ImplementationGuide/hl7.fhir.us.sirb",
+	"version": "0.1",
+	"name": "SingleInstitutionalReviewBoard",
+	"title": "Single Institutional Review Board (sIRB) Implementation Guide",
+	"status": "draft",
+	"publisher": "HL7 International - Biomedical Research and Regulation Work Group",
+	"contact": [
+		{
+			"name": "HL7 International - Biomedical Research and Regulation",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/rcrim"
+				}
+			]
+		}
+	],
+	"description": "Data standards to move data and documents from clinical research sites to a single ethics review board in support of the \"NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Research",
+	"packageId": "hl7.fhir.us.sirb",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"dependsOn": [
+		{
+			"extension": [],
+			"uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+			"packageId": "hl7.fhir.us.core",
+			"version": "current"
+		}
+	],
+	"definition": {
+		"resource": [
+			{
+				"reference": {
+					"reference": "Questionnaire/sirb-protocol-questionnaire",
+					"display": "Protocol Questionnaire"
+				},
+				"name": "Protocol Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Questionnaire/sirb-consent-questionnaire",
+					"display": "Consent questionnaire"
+				},
+				"name": "Consent questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-consent-response"
+				},
+				"name": "Consent Questionnaire Response",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-protocol-response"
+				},
+				"name": "Protocol Questionnaire Response",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-irex",
+					"display": "Determination Letter Composition - IREX"
+				},
+				"name": "Determination Letter Composition - IREX",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-smart",
+					"display": "Determination Letter Composition - SMARTIRB"
+				},
+				"name": "Determination Letter Composition - SMARTIRB",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-non",
+					"display": "Non-Reliant IRB List"
+				},
+				"name": "Non-Reliant IRB List",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-rel",
+					"display": "Reliant IRB List"
+				},
+				"name": "Reliant IRB List",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-cb",
+					"display": "Cambridge Pediatric Hospital"
+				},
+				"name": "Cambridge Pediatric Hospital",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-gg",
+					"display": "Golden Gate Medical Center"
+				},
+				"name": "Golden Gate Medical Center",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-rv",
+					"display": "Ridgeview Health System"
+				},
+				"name": "Ridgeview Health System",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-usc",
+					"display": "University of Southern Coast"
+				},
+				"name": "University of Southern Coast",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "ResearchStudy/sirb-dl-ex-study-mmr",
+					"display": "Longitudinal study of MMR vaccination in patients born from 1980-2018"
+				},
+				"name": "Longitudinal study of MMR vaccination in patients born from 1980-2018",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-composition",
+					"display": "sIRB - Determination Letter - Composition"
+				},
+				"name": "sIRB - Determination Letter - Composition",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-list",
+					"display": "sIRB - Determination Letter - List"
+				},
+				"name": "sIRB - Determination Letter - List",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-organization",
+					"display": "sIRB - Determination Letter - Organization"
+				},
+				"name": "sIRB - Determination Letter - Organization",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitioner",
+					"display": "sIRB - Determination Letter - Practitioner"
+				},
+				"name": "sIRB - Determination Letter - Practitioner",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitionerrole",
+					"display": "sIRB - Determination Letter - PractitionerRole"
+				},
+				"name": "sIRB - Determination Letter - PractitionerRole",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-researchstudy",
+					"display": "sIRB - Determination Letter - ResearchStudy"
+				},
+				"name": "sIRB - Determination Letter - ResearchStudy",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-cw"
+				},
+				"name": "Practitioner Corey Warren",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-mj"
+				},
+				"name": "Practitioner Mark Jessup",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-sb"
+				},
+				"name": "Practitioner Samantha Bard",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-cb"
+				},
+				"name": "Practitioner Role - Site Investigator, Cambridge Pediatric Hospital ",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg"
+				},
+				"name": "Practioner Role - Site Investigator, Golden Gate Medical Center",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-rv"
+				},
+				"name": "Practitioner Role- Site Investigator, Ridgeview Medical Center",
+				"exampleBoolean": true
+			}
+		],
+		"page": {
+			"title": "IG Home Page",
+			"nameUrl": "index.html",
+			"generation": "markdown",
+			"page": [
+				{
+					"title": "Home Page",
+					"generation": "markdown",
+					"page": [
+						{
+							"extension": [],
+							"title": "Introduction",
+							"generation": "markdown",
+							"nameUrl": "Introduction.html"
+						},
+						{
+							"extension": [],
+							"title": "sIRB Project Team",
+							"generation": "markdown",
+							"nameUrl": "sIRBProjectTeam.html"
+						},
+						{
+							"extension": [],
+							"title": "Scope and Context",
+							"generation": "markdown",
+							"nameUrl": "ScopeandContext.html"
+						},
+						{
+							"extension": [],
+							"title": "Consent",
+							"generation": "markdown",
+							"nameUrl": "Consent.html"
+						},
+						{
+							"extension": [],
+							"title": "Protocol",
+							"generation": "markdown",
+							"nameUrl": "Protocol.html"
+						},
+						{
+							"extension": [],
+							"title": "Determination",
+							"generation": "markdown",
+							"nameUrl": "Determination.html"
+						}
+					],
+					"nameUrl": "HomePage.html"
+				}
+			]
+		},
+		"parameter": [
+			{
+				"code": "copyrightyear",
+				"value": "2020+"
+			},
+			{
+				"code": "releaselabel",
+				"value": "CI Build"
+			}
+		]
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"resourceType": "Organization",
+	"id": "sirb-dl-ex-org-usc",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-03-31T13:52:35.064+00:00",
+		"source": "#mmrYYXB86M8oNWRx",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">University of Southern Coast</div>"
+	},
+	"identifier": [
+		{
+			"value": "FWA11119999"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"code": "prov"
+				}
+			]
+		}
+	],
+	"name": "University of Southern Coast",
+	"contact": [
+		{
+			"name": {
+				"use": "usual",
+				"family": "Foy",
+				"given": [
+					"Claire"
+				]
+			},
+			"telecom": [
+				{
+					"system": "email",
+					"value": "ffoy@usc.tech",
+					"use": "work"
+				}
+			]
+		}
+	]
+}

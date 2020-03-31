@@ -1,0 +1,40 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "sirb-dl-ex-role-inv-gg",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-03-31T13:52:35.847+00:00",
+		"source": "#90bUJuL9ZQhTT43t",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Golden Gate Medical Center - Site Investigator</div>"
+	},
+	"practitioner": {
+		"reference": "Practitioner/sirb-dl-ex-prac-mj"
+	},
+	"organization": {
+		"reference": "Organization/sirb-dl-ex-org-gg"
+	},
+	"code": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "768816002",
+					"display": "Site Investigator"
+				}
+			]
+		}
+	]
+}

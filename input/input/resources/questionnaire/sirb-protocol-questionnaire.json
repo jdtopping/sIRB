@@ -1,0 +1,22 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sirb-protocol-questionnaire",
+	"meta": {
+		"versionId": "7",
+		"lastUpdated": "2020-03-31T05:50:49.683+00:00",
+		"source": "#9ukTkpC2EFe6HjIq",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"name": "protocol_questionnaire",
+	"title": "Protocol Questionnaire",
+	"status": "draft",
+	"subjectType": [
+		"ResearchStudy"
+	]
+}
