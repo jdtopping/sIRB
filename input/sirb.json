@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "60",
-		"lastUpdated": "2020-04-09T15:04:24.728+00:00",
-		"source": "#2zu3cLfqkI2MrTtk"
+		"versionId": "69",
+		"lastUpdated": "2020-04-09T15:51:06.509+00:00",
+		"source": "#lTWc8U5TvylOAlPy"
 	},
 	"contained": [],
 	"extension": [],
@@ -403,12 +403,6 @@
 							"title": "Downloads",
 							"generation": "markdown",
 							"nameUrl": "Downloads.html"
-						},
-						{
-							"extension": [],
-							"title": "Render Test",
-							"generation": "html",
-							"nameUrl": "RenderTest.html"
 						}
 					]
 				}
