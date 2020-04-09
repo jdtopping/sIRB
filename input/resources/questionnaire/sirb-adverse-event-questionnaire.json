@@ -1,0 +1,2285 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sirb-adverse-event-questionnaire",
+	"meta": {
+		"versionId": "6",
+		"lastUpdated": "2020-04-09T14:32:09.632+00:00",
+		"source": "#bYeTSbZjDgr2nb4a",
+		"profile": [
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"name": "adverse_event_questionnaire",
+	"title": "Adverse Event Questionnaire",
+	"status": "draft",
+	"subjectType": [
+		"Patient"
+	],
+	"item": [
+		{
+			"linkId": "1",
+			"code": [
+				{
+					"system": "Custom",
+					"code": "1",
+					"display": "Adverse/Serious Adverse Event Form"
+				}
+			],
+			"text": "Adverse/Serious Adverse Event Form",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"linkId": "2",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "2",
+							"display": "Study Information"
+						}
+					],
+					"text": "Study Information",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "3",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "3",
+									"display": "Protocol Title"
+								}
+							],
+							"text": "Protocol Title",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "4",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "4",
+									"display": "Protocol Number"
+								}
+							],
+							"text": "Protocol Number",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "5",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "5",
+									"display": "Type of Study"
+								}
+							],
+							"text": "Type of Study",
+							"type": "string",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "6",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "6",
+									"display": "Does this protocol involve use of FDA regulated products?"
+								}
+							],
+							"text": "Does this protocol involve use of FDA regulated products?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "7",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "7",
+									"display": "FDA Regulated Product Type"
+								}
+							],
+							"text": "FDA Regulated Product Type",
+							"type": "open-choice",
+							"enableWhen": [
+								{
+									"question": "6",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "IND"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "IDE"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "8",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "8",
+									"display": "IND/IDE Number"
+								}
+							],
+							"text": "IND/IDE Number",
+							"type": "string",
+							"enableWhen": [
+								{
+									"question": "6",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "9",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "9",
+							"display": "Principal Investigator"
+						}
+					],
+					"text": "Principal Investigator",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "10",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "10",
+									"display": "First Name"
+								}
+							],
+							"text": "First Name",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "11",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "11",
+									"display": "Last Name"
+								}
+							],
+							"text": "Last Name",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "12",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "12",
+									"display": "Phone"
+								}
+							],
+							"text": "Phone",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "13",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "13",
+									"display": "Email"
+								}
+							],
+							"text": "Email",
+							"type": "string",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "14",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "14",
+							"display": "Primary Contact"
+						}
+					],
+					"text": "Primary Contact",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "15",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "15",
+									"display": "First Name"
+								}
+							],
+							"text": "First Name",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "16",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "16",
+									"display": "Last Name"
+								}
+							],
+							"text": "Last Name",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "17",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "17",
+									"display": "Phone"
+								}
+							],
+							"text": "Phone",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "18",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "18",
+									"display": "Email"
+								}
+							],
+							"text": "Email",
+							"type": "string",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "19",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "19",
+							"display": "Site/Organization"
+						}
+					],
+					"text": "Site/Organization",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "20",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "20",
+									"display": "Name of organization/site where the event occurred"
+								}
+							],
+							"text": "Name of organization/site where the event occurred",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "21",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "21",
+									"display": "Name of organization/site which is recording the adverse event"
+								}
+							],
+							"text": "Name of organization/site which is recording the adverse event",
+							"type": "string",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "22",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "22",
+							"display": "Participant Information"
+						}
+					],
+					"text": "Participant Information",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "23",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "23",
+									"display": "Patient ID"
+								}
+							],
+							"text": "Patient ID",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "24",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "24",
+									"display": "Age"
+								}
+							],
+							"text": "Age",
+							"type": "string",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "25",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "25",
+									"display": "Gender"
+								}
+							],
+							"text": "Gender",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Intersex"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Transgender"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "5",
+										"display": "Prefer not to answer"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+									"valueCoding": {
+										"display": "[lb_av]"
+									}
+								}
+							],
+							"linkId": "26",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "26",
+									"display": "Weight"
+								}
+							],
+							"text": "Weight",
+							"type": "decimal",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+									"valueCoding": {
+										"display": "[ft_i]"
+									}
+								}
+							],
+							"linkId": "27",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "27",
+									"display": "Height"
+								}
+							],
+							"text": "Height",
+							"type": "decimal",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "28",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "28",
+									"display": "Ethnicity"
+								}
+							],
+							"text": "Ethnicity",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Hispanic/Latino"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Not Hispanic/Latino"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "29",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "29",
+									"display": "Race"
+								}
+							],
+							"text": "Race",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Asian"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "American Indian or Alaskan Native"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Black or African American"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Native Hawaiian or Other Pacific Islander"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "5",
+										"display": "White"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "30",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "30",
+									"display": "Which Arm/Cohort/treatment group was the subject assigned to?"
+								}
+							],
+							"text": "Which Arm/Cohort/treatment group was the subject assigned to?",
+							"type": "string",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "31",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "31",
+									"display": "Was subject dosed?"
+								}
+							],
+							"text": "Was subject dosed?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Information Not Available"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "32",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "32",
+									"display": "What study agent was received:"
+								}
+							],
+							"text": "What study agent was received:",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "IND Agent"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Placebo"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Blinded Study Agent"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "33",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "33",
+									"display": "Were there any Protocol Deviations/Violations/Exceptions for this participant?"
+								}
+							],
+							"text": "Were there any Protocol Deviations/Violations/Exceptions for this participant?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "34",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "34",
+									"display": "Describe the Protocol Deviations/Violations/Exceptions"
+								}
+							],
+							"text": "Describe the Protocol Deviations/Violations/Exceptions",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "33",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "35",
+					"code": [
+						{
+							"system": "Custom",
+							"code": "35",
+							"display": "Adverse Event Information"
+						}
+					],
+					"text": "Adverse Event Information",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "36",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "36",
+									"display": "Submission Type"
+								}
+							],
+							"text": "Submission Type",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Initial"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Update"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "37",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "37",
+									"display": "Adverse Event Term (provide diagnosis)"
+								}
+							],
+							"text": "Adverse Event Term (provide diagnosis)",
+							"type": "text",
+							"required": false
+						},
+						{
+							"linkId": "40",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "40",
+									"display": "Start Date"
+								}
+							],
+							"text": "Start Date",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "41",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "41",
+									"display": "Reported Date"
+								}
+							],
+							"text": "Reported Date",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "42",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "42",
+									"display": "Recorded Date"
+								}
+							],
+							"text": "Recorded Date",
+							"type": "string",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "43",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "43",
+									"display": "Is the adverse event still ongoing?"
+								}
+							],
+							"text": "Is the adverse event still ongoing?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "44",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "44",
+									"display": "Stop Date"
+								}
+							],
+							"text": "Stop Date",
+							"type": "string",
+							"enableWhen": [
+								{
+									"question": "43",
+									"operator": "=",
+									"answerCoding": {
+										"code": "0"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "item76",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item76",
+									"display": "Expectedness"
+								}
+							],
+							"text": "Expectedness",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Expected"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Unexpected"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "45",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "45",
+									"display": "Severity"
+								}
+							],
+							"text": "Severity",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Mild"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Moderate"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Severe"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "46",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "46",
+									"display": "Is the Adverse Event Serious?"
+								}
+							],
+							"text": "Is the Adverse Event Serious?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "47",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "47",
+									"display": "Seriousness"
+								}
+							],
+							"text": "Seriousness",
+							"type": "choice",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Death"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Life-threatening"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Initial or prolonged hospitalization"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Required intervention to prevent permanent impairment/damage"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "5",
+										"display": "Other medically important condition"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "6",
+										"display": "Congenital anomaly or birth defect"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "7",
+										"display": "Disability/incapacity"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "item77",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item77",
+									"display": "What is the date adverse event became serious?"
+								}
+							],
+							"text": "What is the date adverse event became serious?",
+							"type": "date",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "48",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "48",
+									"display": "Outcome of Adverse Event"
+								}
+							],
+							"text": "Outcome of Adverse Event",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Recovered/Resolved"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Recovering/Resolving"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Not recovered/Not resolved"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Recovered/Resolved with sequelae"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "5",
+										"display": "Fatal"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "6",
+										"display": "Unknown"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "i75",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "i75",
+									"display": "Was autopsy performed?"
+								}
+							],
+							"text": "Was autopsy performed?",
+							"type": "choice",
+							"enableWhen": [
+								{
+									"question": "48",
+									"operator": "=",
+									"answerCoding": {
+										"code": "5"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Unknown"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "49",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "49",
+									"display": "Relationship of Adverse Event to Study Intervention"
+								}
+							],
+							"text": "Relationship of Adverse Event to Study Intervention",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "Not related"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Unlikely related"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Possibly related"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Probably related"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Definitely related"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/1/35/49.1",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "49.1",
+									"display": "Rationale for relationship with study intervention"
+								}
+							],
+							"text": "Rationale for relationship with study intervention",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "49",
+									"operator": "=",
+									"answerCoding": {
+										"code": "2"
+									}
+								},
+								{
+									"question": "49",
+									"operator": "=",
+									"answerCoding": {
+										"code": "3"
+									}
+								},
+								{
+									"question": "49",
+									"operator": "=",
+									"answerCoding": {
+										"code": "4"
+									}
+								}
+							],
+							"enableBehavior": "any",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "53",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "53",
+									"display": "What are possible alternate causes of the SAE?"
+								}
+							],
+							"text": "What are possible alternate causes of the SAE?",
+							"type": "choice",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								},
+								{
+									"question": "49",
+									"operator": "=",
+									"answerCoding": {
+										"code": "0"
+									}
+								},
+								{
+									"question": "49",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"enableBehavior": "any",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Primary disease"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "5",
+										"display": "Study Procedure"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "7",
+										"display": "Pre-existing condition"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "4",
+										"display": "Underlying disease"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Concomitant medication"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "6",
+										"display": "Other known or suspected cause"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "item78",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item78",
+									"display": "Study Procedure- Specify"
+								}
+							],
+							"text": "Study Procedure- Specify",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "53",
+									"operator": "=",
+									"answerCoding": {
+										"code": "5"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "item79",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item79",
+									"display": "Pre-existing condition-specify"
+								}
+							],
+							"text": "Pre-existing condition-specify",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "53",
+									"operator": "=",
+									"answerCoding": {
+										"code": "7"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "item80",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item80",
+									"display": "Underlying disease-specify"
+								}
+							],
+							"text": "Underlying disease-specify",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "53",
+									"operator": "=",
+									"answerCoding": {
+										"code": "4"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "item81",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item81",
+									"display": "Concomittant medication- specify"
+								}
+							],
+							"text": "Concomittant medication- specify",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "53",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "item82",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "item82",
+									"display": "Other known or suspected cause- specify"
+								}
+							],
+							"text": "Other known or suspected cause- specify",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "53",
+									"operator": "=",
+									"answerCoding": {
+										"code": "6"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "50",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "50",
+									"display": "Action Taken Regarding Study Intervention"
+								}
+							],
+							"text": "Action Taken Regarding Study Intervention",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "None"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Increased"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Decreased"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Discontinued"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "50.1",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "50.1",
+									"display": "If study intervention was discontinued, interrupted, or dose reduced (dechallenged), did AE diminish/abate?"
+								}
+							],
+							"text": "If study intervention was discontinued, interrupted, or dose reduced (dechallenged), did AE diminish/abate?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Not Applicable"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "/1/35/undefined",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "/1/35/undefined",
+									"display": "If study intervention was restarted (rechallenge) did AE recur?"
+								}
+							],
+							"text": "If study intervention was restarted (rechallenge) did AE recur?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Not Applicable"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "52",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "52",
+									"display": "Did the participant receive any relevant concomitant medications in response to the SAE?"
+								}
+							],
+							"text": "Did the participant receive any relevant concomitant medications in response to the SAE?",
+							"type": "choice",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "gtable",
+												"display": "Group Table"
+											}
+										],
+										"text": "Group Table"
+									}
+								}
+							],
+							"linkId": "55",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "55",
+									"display": "SAE Concomitant Medications"
+								}
+							],
+							"text": "SAE Concomitant Medications",
+							"type": "group",
+							"enableWhen": [
+								{
+									"question": "52",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"repeats": true,
+							"item": [
+								{
+									"linkId": "56",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "56",
+											"display": "Medication Name"
+										}
+									],
+									"text": "Medication Name",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "57",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "57",
+											"display": "Indication"
+										}
+									],
+									"text": "Indication",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "58",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "58",
+											"display": "Start Date"
+										}
+									],
+									"text": "Start Date",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "59",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "59",
+											"display": "Stop Date"
+										}
+									],
+									"text": "Stop Date",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "60",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "60",
+											"display": "Check if Ongoing"
+										}
+									],
+									"text": "Check if Ongoing",
+									"type": "boolean",
+									"required": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "61",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "61",
+									"display": "Did the participant receive any treatments/procedures in response to the SAE?"
+								}
+							],
+							"text": "Did the participant receive any treatments/procedures in response to the SAE?",
+							"type": "open-choice",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "gtable",
+												"display": "Group Table"
+											}
+										],
+										"text": "Group Table"
+									}
+								}
+							],
+							"linkId": "62",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "62",
+									"display": "SAE Treatments/Procedures"
+								}
+							],
+							"text": "SAE Treatments/Procedures",
+							"type": "group",
+							"enableWhen": [
+								{
+									"question": "61",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"repeats": true,
+							"item": [
+								{
+									"linkId": "63",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "63",
+											"display": "Treatment/Procedure"
+										}
+									],
+									"text": "Treatment/Procedure",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "64",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "64",
+											"display": "Start Date"
+										}
+									],
+									"text": "Start Date",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "65",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "65",
+											"display": "Stop Date"
+										}
+									],
+									"text": "Stop Date",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "66",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "66",
+											"display": "Check if ongoing"
+										}
+									],
+									"text": "Check if ongoing",
+									"type": "boolean",
+									"required": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "67",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "67",
+									"display": "Did the participant receive relevant laboratory or diagnostic tests in response to the SAE?"
+								}
+							],
+							"text": "Did the participant receive relevant laboratory or diagnostic tests in response to the SAE?",
+							"type": "open-choice",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "gtable",
+												"display": "Group Table"
+											}
+										],
+										"text": "Group Table"
+									}
+								}
+							],
+							"linkId": "68",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "68",
+									"display": "SAE Laboratory or Diagnostic Tests"
+								}
+							],
+							"text": "SAE Laboratory or Diagnostic Tests",
+							"type": "group",
+							"enableWhen": [
+								{
+									"question": "67",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false,
+							"repeats": true,
+							"item": [
+								{
+									"linkId": "69",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "69",
+											"display": "Lab/Diagnostic Test"
+										}
+									],
+									"text": "Lab/Diagnostic Test",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "70",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "70",
+											"display": "Date"
+										}
+									],
+									"text": "Date",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "71",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "71",
+											"display": "Result"
+										}
+									],
+									"text": "Result",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "72",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "72",
+											"display": "Low Range"
+										}
+									],
+									"text": "Low Range",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "73",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "73",
+											"display": "High Range"
+										}
+									],
+									"text": "High Range",
+									"type": "string",
+									"required": false
+								},
+								{
+									"linkId": "74",
+									"code": [
+										{
+											"system": "Custom",
+											"code": "74",
+											"display": "Comments"
+										}
+									],
+									"text": "Comments",
+									"type": "string",
+									"required": false
+								}
+							]
+						},
+						{
+							"linkId": "38",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "38",
+									"display": "Narrative/Comments (provide a description of the SAE including chronological clinical presentation and evolution of the SAE and associated signs/symptoms):"
+								}
+							],
+							"text": "Narrative/Comments (provide a description of the SAE including chronological clinical presentation and evolution of the SAE and associated signs/symptoms):",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "46",
+									"operator": "=",
+									"answerCoding": {
+										"code": "1"
+									}
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "75",
+							"code": [
+								{
+									"system": "Custom",
+									"code": "75",
+									"display": "I verify that this SAE report form accurately displays the results of the examination, tests, evaluations and treatments noted within"
+								}
+							],
+							"text": "I verify that this SAE report form accurately displays the results of the examination, tests, evaluations and treatments noted within",
+							"type": "boolean",
+							"required": false
+						}
+					]
+				}
+			]
+		}
+	]
+}

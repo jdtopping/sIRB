@@ -1,0 +1,583 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "sirb-adverse-event-response",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-04-09T14:14:12.034+00:00",
+		"source": "#zzq5jnhbvsk4J3ay",
+		"profile": [
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"
+		],
+		"tag": [
+			{
+				"code": "lformsVersion: 23.0.1"
+			}
+		]
+	},
+	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-adverse-event-questionnaire",
+	"status": "completed",
+	"authored": "2020-04-09T13:33:09.337Z",
+	"item": [
+		{
+			"linkId": "1",
+			"text": "Adverse/Serious Adverse Event Form",
+			"item": [
+				{
+					"linkId": "2",
+					"text": "Study Information",
+					"item": [
+						{
+							"linkId": "3",
+							"text": "Protocol Title",
+							"answer": [
+								{
+									"valueString": "A Phase II, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Safety and Efficacy of TJ301 (FE 999301) Administered Intravenously in Patients with Active Ulcerative Colitis"
+								}
+							]
+						},
+						{
+							"linkId": "4",
+							"text": "Protocol Number",
+							"answer": [
+								{
+									"valueString": "CTJ301UC201"
+								}
+							]
+						},
+						{
+							"linkId": "5",
+							"text": "Type of Study",
+							"answer": [
+								{
+									"valueString": "Interventional"
+								}
+							]
+						},
+						{
+							"linkId": "6",
+							"text": "Does this protocol involve use of FDA regulated products?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "7",
+							"text": "FDA Regulated Product Type",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "IND"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "8",
+							"text": "IND/IDE Number",
+							"answer": [
+								{
+									"valueString": "TJ301"
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "9",
+					"text": "Principal Investigator",
+					"item": [
+						{
+							"linkId": "10",
+							"text": "First Name",
+							"answer": [
+								{
+									"valueString": "Chen"
+								}
+							]
+						},
+						{
+							"linkId": "11",
+							"text": "Last Name",
+							"answer": [
+								{
+									"valueString": "Minhu"
+								}
+							]
+						},
+						{
+							"linkId": "12",
+							"text": "Phone",
+							"answer": [
+								{
+									"valueString": "878-987-1234"
+								}
+							]
+						},
+						{
+							"linkId": "13",
+							"text": "Email",
+							"answer": [
+								{
+									"valueString": "minhu@test.com"
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "14",
+					"text": "Primary Contact",
+					"item": [
+						{
+							"linkId": "15",
+							"text": "First Name",
+							"answer": [
+								{
+									"valueString": "Yin"
+								}
+							]
+						},
+						{
+							"linkId": "16",
+							"text": "Last Name",
+							"answer": [
+								{
+									"valueString": "Liu"
+								}
+							]
+						},
+						{
+							"linkId": "17",
+							"text": "Phone",
+							"answer": [
+								{
+									"valueString": "65765676789"
+								}
+							]
+						},
+						{
+							"linkId": "18",
+							"text": "Email",
+							"answer": [
+								{
+									"valueString": "liu@test.com"
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "19",
+					"text": "Site/Organization",
+					"item": [
+						{
+							"linkId": "20",
+							"text": "Name of organization/site where the event occurred",
+							"answer": [
+								{
+									"valueString": "Duke University"
+								}
+							]
+						},
+						{
+							"linkId": "21",
+							"text": "Name of organization/site which is recording the adverse event",
+							"answer": [
+								{
+									"valueString": "Duke University"
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "22",
+					"text": "Participant Information",
+					"item": [
+						{
+							"linkId": "23",
+							"text": "Patient ID",
+							"answer": [
+								{
+									"valueString": "12345"
+								}
+							]
+						},
+						{
+							"linkId": "24",
+							"text": "Age",
+							"answer": [
+								{
+									"valueString": "23"
+								}
+							]
+						},
+						{
+							"linkId": "25",
+							"text": "Gender",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Male"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "26",
+							"text": "Weight",
+							"answer": [
+								{
+									"valueDecimal": 123
+								}
+							]
+						},
+						{
+							"linkId": "27",
+							"text": "Height",
+							"answer": [
+								{
+									"valueDecimal": 5.9
+								}
+							]
+						},
+						{
+							"linkId": "28",
+							"text": "Ethnicity",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Hispanic/Latino"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "29",
+							"text": "Race",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "American Indian or Alaskan Native"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "30",
+							"text": "Which Arm/Cohort/treatment group was the subject assigned to?",
+							"answer": [
+								{
+									"valueString": "2"
+								}
+							]
+						},
+						{
+							"linkId": "31",
+							"text": "Was subject dosed?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "32",
+							"text": "What study agent was received:",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "IND Agent"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "33",
+							"text": "Were there any Protocol Deviations/Violations/Exceptions for this participant?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "35",
+					"text": "Adverse Event Information",
+					"item": [
+						{
+							"linkId": "36",
+							"text": "Submission Type",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Initial"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "37",
+							"text": "Adverse Event Term (provide diagnosis)",
+							"answer": [
+								{
+									"valueString": "Labored Breathing"
+								}
+							]
+						},
+						{
+							"linkId": "40",
+							"text": "Start Date",
+							"answer": [
+								{
+									"valueString": "02/02/2019"
+								}
+							]
+						},
+						{
+							"linkId": "41",
+							"text": "Reported Date",
+							"answer": [
+								{
+									"valueString": "02/03/2019"
+								}
+							]
+						},
+						{
+							"linkId": "42",
+							"text": "Recorded Date",
+							"answer": [
+								{
+									"valueString": "02/03/2019"
+								}
+							]
+						},
+						{
+							"linkId": "43",
+							"text": "Is the adverse event still ongoing?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "item76",
+							"text": "Expectedness",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Unexpected"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "45",
+							"text": "Severity",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Moderate"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "46",
+							"text": "Is the Adverse Event Serious?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "47",
+							"text": "Seriousness",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Initial or prolonged hospitalization"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "item77",
+							"text": "What is the date adverse event became serious?",
+							"answer": [
+								{
+									"valueDate": "2019-02-03"
+								}
+							]
+						},
+						{
+							"linkId": "48",
+							"text": "Outcome of Adverse Event",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Recovered/Resolved"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "49",
+							"text": "Relationship of Adverse Event to Study Intervention",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "2",
+										"display": "Possibly related"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/1/35/49.1",
+							"text": "Rationale for relationship with study intervention",
+							"answer": [
+								{
+									"valueString": "Rationale...."
+								}
+							]
+						},
+						{
+							"linkId": "53",
+							"text": "What are possible alternate causes of the SAE?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Primary disease"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "50",
+							"text": "Action Taken Regarding Study Intervention",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "3",
+										"display": "Discontinued"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "50.1",
+							"text": "If study intervention was discontinued, interrupted, or dose reduced (dechallenged), did AE diminish/abate?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/1/35/undefined",
+							"text": "If study intervention was restarted (rechallenge) did AE recur?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "1",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "52",
+							"text": "Did the participant receive any relevant concomitant medications in response to the SAE?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "61",
+							"text": "Did the participant receive any treatments/procedures in response to the SAE?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "67",
+							"text": "Did the participant receive relevant laboratory or diagnostic tests in response to the SAE?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "0",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "38",
+							"text": "Narrative/Comments (provide a description of the SAE including chronological clinical presentation and evolution of the SAE and associated signs/symptoms):",
+							"answer": [
+								{
+									"valueString": "Patient indicated that he experienced labored breathing that had gradually gotten worse."
+								}
+							]
+						},
+						{
+							"linkId": "75",
+							"text": "I verify that this SAE report form accurately displays the results of the examination, tests, evaluations and treatments noted within",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

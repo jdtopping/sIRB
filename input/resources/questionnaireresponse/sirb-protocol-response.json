@@ -1,0 +1,769 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "sirb-protocol-response",
+	"meta": {
+		"versionId": "8",
+		"lastUpdated": "2020-04-09T14:25:59.911+00:00",
+		"source": "#XMHDaaIpSC4QdEyR",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
+	"status": "completed",
+	"authored": "2020-03-23T20:18:43.691Z",
+	"item": [
+		{
+			"linkId": "2",
+			"text": "Study Type",
+			"answer": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "Interventional/Clinical Trial"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "i514",
+			"text": "Intervention",
+			"answer": [
+				{
+					"valueCoding": {
+						"code": "1",
+						"display": "IND- Investigational Drug"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "t12",
+			"text": "Phase",
+			"answer": [
+				{
+					"valueCoding": {
+						"code": "2",
+						"display": "II"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "7",
+			"text": "TITLE PAGE",
+			"item": [
+				{
+					"linkId": "8",
+					"text": "Title",
+					"answer": [
+						{
+							"valueString": "A Phase II, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Safety and Efficacy of TJ301 (FE 999301) Administered Intravenously in Patients with Active Ulcerative Colitis"
+						}
+					]
+				},
+				{
+					"linkId": "i503d",
+					"text": "Short Title",
+					"answer": [
+						{
+							"valueString": "Safety and Efficacy of TJ301 in Patients with Active Ulcerative Colitis"
+						}
+					]
+				},
+				{
+					"linkId": "14",
+					"text": "Principal Investigator",
+					"item": [
+						{
+							"linkId": "15",
+							"text": "First Name",
+							"answer": [
+								{
+									"valueString": "Minhu"
+								}
+							]
+						},
+						{
+							"linkId": "15_1",
+							"text": "Last Name",
+							"answer": [
+								{
+									"valueString": "Chen"
+								}
+							]
+						},
+						{
+							"linkId": "item372",
+							"text": "Department Name",
+							"answer": [
+								{
+									"valueString": "Chair, Department of Gastroenterology and Hepatology Vice President The First Affiliated Hospital, Sun Yat-sen University"
+								}
+							]
+						},
+						{
+							"linkId": "16",
+							"text": "Address",
+							"item": [
+								{
+									"linkId": "item525",
+									"text": "Street Address",
+									"answer": [
+										{
+											"valueString": "58 Zhongshan Road",
+											"item": [
+												{
+													"linkId": "item526",
+													"text": "City",
+													"answer": [
+														{
+															"valueString": "Guangzhou"
+														}
+													]
+												},
+												{
+													"linkId": "item516",
+													"text": "Country",
+													"answer": [
+														{
+															"valueString": "China"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "11",
+					"text": "Protocol Number",
+					"answer": [
+						{
+							"valueString": "CTJ301UC201"
+						}
+					]
+				},
+				{
+					"linkId": "26",
+					"text": "Study Product Name",
+					"answer": [
+						{
+							"valueString": "TJ301 (solution for injection), also referred to as FE 999301 and Olamkicept"
+						}
+					]
+				},
+				{
+					"linkId": "24",
+					"text": "Regulatory Sponsor",
+					"item": [
+						{
+							"linkId": "i373",
+							"text": "Name",
+							"answer": [
+								{
+									"valueString": "Yin Liu"
+								}
+							]
+						},
+						{
+							"linkId": "i374",
+							"text": "Department Name",
+							"answer": [
+								{
+									"valueString": "Leading Biopharm Limited"
+								}
+							]
+						},
+						{
+							"linkId": "i375",
+							"text": "Regulatory Sponsor Address",
+							"item": [
+								{
+									"linkId": "i537",
+									"text": "Street Address",
+									"answer": [
+										{
+											"valueString": "Suite 802, OmniVision Park West Tower",
+											"item": [
+												{
+													"linkId": "i538",
+													"text": "City",
+													"answer": [
+														{
+															"valueString": "Shanghai"
+														}
+													]
+												},
+												{
+													"linkId": "i540",
+													"text": "Zip Code",
+													"answer": [
+														{
+															"valueString": "201210"
+														}
+													]
+												},
+												{
+													"linkId": "item518",
+													"text": "Country",
+													"answer": [
+														{
+															"valueString": "China"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "i377",
+							"text": "Phone Number",
+							"answer": [
+								{
+									"valueString": "+ 86 135 0178 1723"
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "29",
+					"text": "Version Number",
+					"answer": [
+						{
+							"valueString": "V1.1"
+						}
+					]
+				},
+				{
+					"linkId": "30",
+					"text": "Version Date (Day Month Year)",
+					"answer": [
+						{
+							"valueDateTime": "2018-11-12T05:00:00.000Z"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "34",
+			"text": "Statement of Compliance",
+			"answer": [
+				{
+					"valueCoding": {
+						"code": "sc1",
+						"display": "The trial will be carried out in accordance with International Council on Harmonisation Good Clinical Practice (ICH GCP) and the following: tUnited States (US) Code of Federal Regulations (CFR) applicable to clinical studies (45 CFR Part 46, 21 CFR Part 50, 21 CFR Part 56, 21 CFR Part 312, and/or 21 CFR Part 812). National Institutes of Health (NIH)-funded investigators and clinical trial site staff who are responsible for the conduct, management, or oversight of NIH-funded clinical trials have completed Human Subjects Protection and ICH GCP Training. The protocol, informed consent form(s), recruitment materials, and all participant materials will be submitted to the IRB for review and approval. Approval of both the protocol and the consent form(s) must be obtained before any participant is consented. Any amendment to the protocol will require review and approval by the IRB before the changes are implemented to the study. All changes to the consent form(s) will be IRB approved; a determination will be made regarding whether a new consent needs to be obtained from participants who provided consent, using a previously approved consent form."
+					}
+				}
+			]
+		},
+		{
+			"linkId": "36",
+			"text": "Protocol Summary",
+			"item": [
+				{
+					"linkId": "39",
+					"text": "Synopsis",
+					"item": [
+						{
+							"linkId": "40",
+							"text": "Title (Full)",
+							"answer": [
+								{
+									"valueString": "A Phase II, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Safety and Efficacy of TJ301 (FE 999301) Administered Intravenously in Patients with Active Ulcerative Colitis"
+								}
+							]
+						},
+						{
+							"linkId": "i380",
+							"text": "Title (Short)",
+							"answer": [
+								{
+									"valueString": "Primary Objective: \n-To explorate the safety and efficacy of TJ301 in patients with active ulcerative colitis. \nSecondary Objectives : \n-To investigate the pharmacokinetics (PK) of TJ301 in patients with active ulcerative colitis. \n-To investigate the pharmacodynamics (PD) of TJ301 in patients with active ulcerative colitis.\n-To investigate immunogenicity of TJ301 in patients with active ulcerative colitis. Exploratory Objectives â€¢ To explorate the relationship between PKand PD of TJ301 in patients with active ulcerative colitis."
+								}
+							]
+						},
+						{
+							"linkId": "m1",
+							"text": "Methodology",
+							"answer": [
+								{
+									"valueString": "This is a multicenter, randomized, double-blind, placebo-controlled phase II study. The trial includes a Run-in Period (if stable conventional treatment needed), a 4-week Screening Period, a 12-week Treatment Period, and a 3-week Safety Follow-up Period to Day 105. 90 patients will be centrally, dynamically, randomly assigned to 3 groups (1:1:1) to receive 600mg TJ301 biweekly (Q2W), 300mg TJ301 Q2W or placebo Q2W. TJ301 or placebo administrations will occur on Days 0, 14, 28, 42, 56, and 70. Randomisation will be stratified by prior corticosteroids treatment (yes/no) and consent to participate in PK substudy (yes/no). During the treatment period and the follow-up period, patients should be on stable conventional treatment for UC in double-blind except for those who cannot tolerate the stable conventional treatment. Conventional treatment for UC can be the concomitant UC treatment or UC treatment previously received by the patient, including corticosteroids at no more than 20 mg prednisone (or equivalent), and/or with medications containing 5-aminosalicylates (5-ASA), and/or with azathioprine (AZA)/mercaptopurine (6-MP). Study Flowchart There will be 9~10 main visits at the investigational site during the study: - Visit 0: Run-in period: at an optional visit (Visit 0), decision will be made if patients need stable conventional UC treatment to meet the following criteria: with corticosteroids stable for at least 2 weeks prior to Randomization at no more than 20 mg prednisone (or equivalent), and/or with medications containing 5-aminosalicylates (5-ASA) at no less than 2 g 5-ASA per day for at least 3 months and stable for at least 4 weeks prior to Randomization, and/or with azathioprine (AZA) at no less than 1.5 mg/kg/day or mercaptopurine (6-MP) at no less than 0.75 mg/kg/day for at least 6 months and stable for at least 6 weeks prior to Randomization. If patients already met the criteria, they will directly enter the Screening Period (Visit 1). If not, they will need stable conventional UC treatment during the Run-in Period except those who cannot tolerate the medications mentioned above. - Visit 1: Screening Visit, start of Screening Period (Days -28 to -1 prior to Visit 2) - Visit 2: Randomisation Visit (Baseline), start of 12-week Treatment Period - Visits 3-7: 5 visits during 12-week Treatment Period - Visit 8: End of Treatment (EoT) Visit, completion of 12-week Treatment Period - Visit 9: Safety Follow-up Visit, scheduled at 35 days after the last dose of IMP (Day 105). Clinical assessments of disease activity will take place at Visit 1 (Screening Visit), Visit 2 (Randomisation Visit), Visit 3 (Week 2), Visit 4 (Week 4), Visit 5 (Week 6), Visit 6 (Week 8), Visit 7 (Week 10), and Visit 8 (Week 12). During Screening and at Visit 8 (Week 12), assessments of disease activity will also include endoscopy (colonoscopy or sigmoidoscopy); mucosal biopsies for assessment of mucosal healing, histology, immunohistochemistry will be collected during endoscopy at these time points. TJ301 PK will be assessed in a subgroup of patients in Mainland China (24 patients, 8 per arm; electronically assigned at randomisation and consenting to the extra procedures). Blood samples for PK subgroup will be collected as follows: · At 1st dose: pre-dose and 0.5, 1, 2 (end of infusion), 6, 48, 144 (Day 6), and 240 (Day 10) h after the start of the 1st administration; · At the 2nd, 3rd, 4th, and 5th administrations blood samples will be collected pre-dose and at the end of infusion; · At 6th dose: pre-dose and 0.5, 1, 2 (end of infusion), 6, 48, 144 (Day 76), 240 (Day 80), 336 (Day 84), 480 (Day 90), and 840 h (Day 105) after the start of the 6th administration. The actual sampling time will be recorded. For patients completing the last dose of IMP, a Safety Follow-up Visit will be scheduled to Day 105 (Week 15). For patients not completing the trial, a Safety Follow-up Visit will be scheduled 35 days (5.8 - 6.6 half-lives of TJ301) after the last dose of IMP."
+								}
+							]
+						},
+						{
+							"linkId": "44",
+							"text": "End Points",
+							"answer": [
+								{
+									"valueString": "Primary Endpoints\n• Clinical and endoscopic remission at Week 12, defined as a full Mayo score ≤2, no\nindividual subscore >1, rectal bleeding subscore = 0.\n• Adverse events, vital signs, 12-lead Electrocardiography (ECG), and clinical safety\nlaboratory abnormalities.\nSecondary Endpoints\n• Clinical and endoscopic response (decrease from Baseline in full Mayo score ≥3 and ≥30%,\nincluding decrease from Baseline in rectal bleeding subscore ≥1 or rectal bleeding subscore\n≤1) at Week 12.\n• Clinical remission at Weeks 4, 6, 8, 10, and 12 defined as a stool frequency subscore=0,\nrectal bleeding subscore = 0, and 9-point partial Mayo score ≤1.\n• Clinical response (decrease from Baseline in 9-point partial Mayo score ≥2 and ≥30%,\nincluding decrease from Baseline in rectal bleeding subscore ≥1 or rectal bleeding subscore\n≤1) at Weeks 4, 6, 8, 10, and 12.\n• Mucosal healing defined as Mayo endoscopic subscore = 0 or 1 at Week 12.\n• Change from Baseline to Weeks 4, 6, 8, 10, and 12 in 9-point partial Mayo score.\n• Change from Baseline to Week 12 in full Mayo score.\n• Change from Baseline to Week 12 in modified Mayo score (=full Mayo score excluding\nPhysician’s Global Assessment (PGA) subscore).\n• Change from Baseline to Weeks 4, 6, 8, 10, and 12 in PGA score.\n• FDA-defined remission at Week 12, defined as Stool frequency subscore=0, Rectal bleeding\nsubscore=0, and Endoscopy subscore =0 or 1.\n• Immunogenicity: Anti-TJ301 antibodies.\n• PK subgroup: AUCinf, AUCt, %AUCext, Cmax, tmax, CL, Vz, λz, t½, and MRT (if applicable).\n• Peak and trough (pre-infusion) TJ301 serum concentration.\nExploratory Endpoints\n• Change from Baseline to Weeks 4, 8, and 12 in exploratory biomarkers (erythrocyte\nsedimentation rate [ESR], C-reactive protein (CRP), IL-6, IL-6/sIL-6R complex, neutrophil\nand platelet count, faecal calprotectin)."
+								}
+							]
+						},
+						{
+							"linkId": "45",
+							"text": "Study Population",
+							"answer": [
+								{
+									"valueString": "In total, 90 patients with active UC will be enrolled competitively, and randomised equally into three arms with TJ301 (two dose levels) or placebo."
+								}
+							]
+						},
+						{
+							"linkId": "i514d",
+							"text": "Study Sites",
+							"answer": [
+								{
+									"valueString": "Multicenter, international, across Mainland China, Taiwan, Republic of Korea and Australia"
+								}
+							]
+						},
+						{
+							"linkId": "46",
+							"text": "Phase or Stage",
+							"answer": [
+								{
+									"valueString": "II"
+								}
+							]
+						},
+						{
+							"linkId": "48",
+							"text": "Study Duration",
+							"answer": [
+								{
+									"valueString": "First patient first visit: 3rd Quarter 2017 Last patient last visit: 1st Quarter 2020"
+								}
+							]
+						},
+						{
+							"linkId": "i382",
+							"text": "Description of Study Intervention ( Agent/Procedure)/Investigational Product",
+							"answer": [
+								{
+									"valueString": "The IMP in this trial is TJ301 (FE 999301, Olamkicept (proposed INN)) (15 mg/mL in solution for injection [25 mM histidine, 200 mM sucrose, 0.1 mg/mL Polysorbate 20 in aqueous solution]). The placebo is the solution for injection [25 mM histidine, 200 mM sucrose, 0.1 mg/mL Polysorbate 20 in aqueous solution] without TJ301. Both placebo and TJ301 should be stored at -20 ±5 °C and thawed at the site by site personnel (blind to study randomisation) and diluted in 250 mL 5% (w/v) glucose. The infusion time is 2 hours. The following concentrations and infusion volumes of TJ301 and placebo will be used: Dose group Vials Drug volume (mL) 5% (w/v) glucose(mL) TJ301 (mg/mL) Infusion volume (mL) Placebo 8 vials Placebo 40 250 0 290 300 mg 4 vials Placebo and 4 vials TJ301 40 250 1.03 290 600 mg 8 vials TJ301 40 250 2.07 290"
+								}
+							]
+						},
+						{
+							"linkId": "i385",
+							"text": "Inclusion/Exclusion Criteria",
+							"answer": [
+								{
+									"valueString": "1. Male and female patients 18-70 (inclusive) years of age.\n2. Active UC confirmed by colonoscopy with biopsy or flexible sigmoidoscopy with biopsy at\nScreening, with extending > 15-cm past the anal verge from endoscopy.\n3. Active UC with a full Mayo score≥5 and a rectal bleeding subscore ≥1 at screening.\n4. During Day -35 to Day -6 prior to Randomisation, an endoscopy subscore ≥2.\n5. Treated with conventional non-biological UC therapy: with corticosteroids stable for at least 2\nweeks prior to Randomization at no more than 20 mg prednisone (or equivalent), and/or with\nmedications containing 5-aminosalicylates (5-ASA) at no less than 2 g 5-ASA per day for at\nleast 3 months and stable for at least 4 weeks prior to Randomization, and/or with azathioprine\n(AZA) at no less than 1.5 mg/kg/day or mercaptopurine (6-MP) at no less than 0.75 mg/kg/day\nfor at least 6 months and stable for at least 6 weeks prior to Randomization.\n6. A female subject has been sterilized or has been menopausal, or the subject has no pregnancy\nplan during the trial and voluntarily adopts effective contraceptive measures.\n7. The patient is able and willing to comply with the requirements of this trial protocol.\n8. The subject should be able to read and write to understand and fill out Patient Diary.\n9. Voluntarily signed Informed Consent obtained before any trial-related procedures are\nperformed.\nExclusion Criteria\nA subject will not be eligible for inclusion in this study if any of the following criteria apply:\n1. Pregnant or breastfeeding women.\n2. Contraindication to colonoscopy or sigmoidoscopy.\n3. Allergies to any component of TJ301.\n4. History of colostomy, colectomy or partial colectomy.\n5. Current diagnosis of inflammatory bowel disease unclassified, Crohn's disease, ischemic\ncolitis, fulminant colitis and/or toxic megacolon, patients with ulcerative colitis limited to the\nrectum (ulcerative proctitis), infective enteritis, amebic bowel disease and intestinal\nschistosomiasis.\n6. History of malignancy other than a successfully treated non-metastatic cutaneous squamous\ncell or basal cell carcinoma and/or localized carcinoma in situ of the cervix. If the Screening\ncolonoscopy shows evidence of dysplasia or a malignancy, the patient is not eligible."
+								}
+							]
+						},
+						{
+							"linkId": "i386",
+							"text": "Statistical Analysis/Methodology (Limit discussion to primary end point and the main secondary endpoint)",
+							"answer": [
+								{
+									"valueString": "Sample Size A sample size of N=72 (n=24 per treatment/placebo arm) patients is expected to achieve a power of 83% of detecting a trend (p<0.05, one-sided) if the true remission rate difference (at Week 12) between the placebo and highest dose groups (600 mg Q2W) is 30% (10% for the placebo and 40% for the highest dose) using Pearsonâ€™s chi-square test without continuity correction. The trial also has 70% power to reach a statistically significant result (p<0.05, one-sided) in case the remission rate difference between placebo and treatment (300 mg Q2W and 600 mg Q2W combined together) is 20% (10% vs 30%). Considering the dropout rate of approximately 20%, a total of 90 patients will be enrolled competitively. Data Analyses Quantitative variables will be described with the number of non-missing values, mean, standard deviation (SD), median, and minimum/maximum values. Qualitative variables will be described with the number and percentage of patients with each qualitative characteristic. Missing values will not be included in the calculation of percentages. All data will be listed by individual patient and study visit. The primary efficacy endpoint is clinical and endoscopic remission at Week 12. This binary outcome (remission status=yes/no) variable will be analysed by a logistic regression model. A patient with missing data on the remission status will be assumed to be not in remission. All dichotomised secondary endpoints will be analysed using a repeated logistic regression model and continuous endpoints will be analysed using a repeated measures Analysis of Covariance (ANCOVA) model. In addition, patients in both the placebo and the treatment groups will be split into subgroups based on the baseline level of IL-6/sIL-6R complexes. Comparison in endpoints will be made for different subgroups. Safety analyses will be summarized descriptively by treatment groups. No statistical testing for comparison of treatment groups will be performed for safety variables. The PK parameters will be derived using non compartmental method. The PK of TJ301 will be summarized using descriptive statistics."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "52",
+			"text": "Introduction, Background Information and Scientific Rationale",
+			"item": [
+				{
+					"linkId": "55",
+					"text": "Background",
+					"item": [
+						{
+							"linkId": "56",
+							"text": "Describe the relevant literature and the specific gaps in current knowledge that this study intends to address",
+							"answer": [
+								{
+									"valueString": "Interleukin 6 (IL-6) is a pleiotropic cytokine produced by hematopoietic and non-hematopoietic cells, e.g. in response to infection and tissue damage. IL-6 is believed to be a key mediator in diseases such as rheumatoid arthritis (RA), psoriasis and inflammatory bowel disease (IBD; i.e. Crohnâ€™s disease and ulcerative colitis [UC]). IL-6 exerts its multiple biological activities through two main signalling pathways. One is the socalled classic ligand-receptor pathway via membrane-bound IL-6 receptors (IL-6R) present mainly on hepatocytes and certain leukocytes. The second is the trans-signalling pathway via circulating soluble IL-6R (sIL-6R) originating from proteolytic cleavage of the membrane-bound IL 6R or from alternative splicing (1)(2). While the classic IL-6 signalling is involved in the acute inflammatory response, trans-signalling is mainly involved in chronic inflammation and has been shown to prevent disease-promoting mucosal T-cell populations from going into apoptosis. A schematic presentation of the trans-signalling pathway of IL-6 is shown in Figure 1. TACE: tumour necrosis factor alpha converting enzyme ADAM: A disintegrin and metalloprotease Figure 1 Trans-signalling Pathway of IL-6 Patients with Crohnâ€™s disease and UC have been found to produce increased levels of IL-6 when compared with controls, the IL-6 levels being correlated to clinical activity (3)(4)(5)(6). Crohnâ€™s disease and UC patients have also been found to have increased levels of sIL-6R and consequently, IL 6/sIL-6R complex in serum (4)(5)(6). TJ301 (FE 999301, Olamkicept (proposed INN)) is a first-in-class, selective IL-6 trans-signalling inhibitor and anti-inflammatory biologic that is under development for the treatment of UC and Crohnâ€™s disease. TJ301 is a selective IL-6/sIL-6R complex trap consisting of two complete extracellular domains of gp130, the common signal transducer of IL-6-type cytokines, dimerised by fusion to the fragment crystallisable region (Fc region) of human immunoglobulin G1 (IgG1). TJ301 targets and neutralises the IL-6/sIL-6R complex thereby inhibiting the trans-signalling pathway, without any interaction with either IL-6 or IL-6R individually, which is different from other anti-IL6 or anti-IL6R products in development to block IL-6 two signaling pathways. TJ301 is expected to be as effective as existing biologics but safer and more suited for early and long-term use."
+								}
+							]
+						},
+						{
+							"linkId": "57",
+							"text": "Provide the scientific or scholarly background for, rationale for, and significance of the research based on the existing literature and how it will add to existing knowledge:",
+							"answer": [
+								{
+									"valueString": "The safety, tolerability and pharmacokinetic (PK) properties of TJ301 (FE 999301) have been investigated in Germany in two phase 1, single- and multiple-ascending dose clinical studies in healthy and Crohnâ€™s disease subjects with up to 4 weeks of weekly intravenous (i.v.) infusion. These studies showed dose-proportional systemic exposure, in the dose range of 0.75 mg to 750 mg, with a mean terminal half-life of approximately 5 days and no apparent dose-dependent trends in the incidence or nature of adverse events. Furthermore, a cohort of patients with quiescent Crohnâ€™s disease demonstrated similar systemic exposure to that in healthy subjects, for corresponding doses of 75 mg, 300 mg, and 750 mg in the single-ascending-dose trial. The purpose of this proof-of-concept trial is to assess the safety, efficacy, tolerability, pharmacokinetics (PK) and pharmacodynamics (PD) of two different doses of i.v. infusions of TJ301 in patients with active UC. The ability to induce remission of TJ301 will be investigated in the 12-week double-blind treatment period of the study."
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "74",
+					"text": "Risk/Benefit Assessment",
+					"item": [
+						{
+							"linkId": "93",
+							"text": "Assessment of Potential Risks and Benefits",
+							"answer": [
+								{
+									"valueString": "For patients with active UC, 5-aminosalicylate (5-ASA) is considered a first-line treatment, either as oral or topical (e.g. suppositories, enema) formulations. 5-ASA has a benign safety profile with dosing in active disease of up to several grams a day, but is not effective in all patients. Oral, systemic corticosteroids are used for induction of remission in patients not responding to 5-ASA. Corticosteroids have frequent and occasionally serious side effects, e.g. hypothalamicpituitary-adrenal (HPA)-axis suppression, hyperglycaemia/insulin resistance, cataracts, and osteoporosis (notably, IBD itself is a risk factor for osteopenia/osteoporosis, with Crohnâ€™s patients being most affected), and systemic corticosteroids are therefore undesirable in maintenance treatment. Immunosuppressive drugs, such as azathioprine (AZA) or 6-mercaptopurine (6-MP) (i.e. thiopurines), are used as steroid-sparing agents in steroid-dependent or steroid-refractory patients, in induction as well as maintenance treatment (7)(8), but are associated with an increased risk for malignancies (9). Since thiopurines and corticosteroids are not effective in all patients and especially in the moderately to severely active IBD patient population, there is a need for novel, effective and safe second- and even third-line treatment options. In conclusion, patients with active UC are representative of the target population for TJ301, and should present the opportunity to detect a larger effect due to more pronounced disease activity at Baseline."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "94",
+			"text": "STUDY PURPOSE, OBJECTIVES OR SPECIFIC AIMS",
+			"item": [
+				{
+					"linkId": "96",
+					"text": "Primary Objectives",
+					"answer": [
+						{
+							"valueString": "To explorate the safety and efficacy of TJ301 in patients with active ulcerative colitis."
+						}
+					]
+				},
+				{
+					"linkId": "97",
+					"text": "Secondary Objectives",
+					"answer": [
+						{
+							"valueString": "• To investigate the pharmacokinetics of TJ301 in patients with active ulcerative colitis.\n• To investigate the pharmacodynamics of TJ301 in patients with active ulcerative colitis.\n• To investigate immunogenicity of TJ301 in patients with active ulcerative colitis."
+						}
+					]
+				},
+				{
+					"linkId": "98",
+					"text": "Tertiary/Exploratory Objectives",
+					"answer": [
+						{
+							"valueString": "• To explorate the relationship between pharmacokinetics and pharmacodynamics of TJ301 in\npatients with active ulcerative colitis."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "115",
+			"text": "STUDY ENDPOINTS",
+			"item": [
+				{
+					"linkId": "116",
+					"text": "Primary Endpoints",
+					"answer": [
+						{
+							"valueString": "• Clinical and endoscopic remission at Week 12, defined as a full Mayo score ≤2, no\nindividual subscore >1, rectal bleeding subscore = 0.\n• Adverse events, vital signs, 12-lead Electrocardiography (ECG), and clinical safety\nlaboratory abnormalities."
+						}
+					]
+				},
+				{
+					"linkId": "118",
+					"text": "Secondary Endpoints",
+					"answer": [
+						{
+							"valueString": "• Clinical and endoscopic response (decrease from Baseline in full Mayo score ≥3 and ≥30%,\nincluding decrease from Baseline in rectal bleeding subscore ≥1 or rectal bleeding subscore\n≤1) at Week 12.\n• Clinical remission at Weeks 4, 6, 8, 10, and 12 defined as a stool frequency subscore=0,\nrectal bleeding subscore = 0, and 9-point partial Mayo score ≤1.\n• Clinical response (decrease from Baseline in 9-point partial Mayo score ≥2 and ≥30%,\nincluding decrease from Baseline in rectal bleeding subscore ≥1 or rectal bleeding subscore\n≤1) at Weeks 4, 6, 8, 10, and 12.\n• Mucosal healing defined as Mayo endoscopic subscore = 0 or 1 at Week 12.\n• Change from Baseline to Weeks 4, 6, 8, 10, and 12 in 9-point partial Mayo score.\n• Change from Baseline to Week 12 in full Mayo score.\n• Change from Baseline to Week 12 in modified May"
+						}
+					]
+				},
+				{
+					"linkId": "120",
+					"text": "Tertiary Endpoints",
+					"answer": [
+						{
+							"valueString": "• Change from Baseline to Weeks 4, 8, and 12 in exploratory biomarkers (erythrocyte\nsedimentation rate [ESR], C-reactive protein (CRP), IL-6, IL-6/sIL-6R complex, neutrophil\nand platelet count, faecal calprotectin)."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "101",
+			"text": "STUDY DESIGN",
+			"item": [
+				{
+					"linkId": "102",
+					"text": "Overall Design",
+					"answer": [
+						{
+							"valueString": "This is a multicenter, stratified randomized, double-blind, placebo-controlled phase II study.\nThe trial includes a Run-in Period (if stable conventional treatment needed), a 4-week Screening\nPeriod, a 12-week double-blind Treatment Period, and a Safety Follow-up Period of 3 weeks to\nDay 105.\n90 patients will be centrally, dynamically, randomly assigned to 3 groups (1:1:1) to receive 600mg\nTJ301 biweekly (Q2W), 300mg TJ301 Q2W or placebo Q2W. Randomisation will be stratified by\nprior corticosteroids treatment (yes/no) and consent to participate in PK substudy (yes/no). TJ301\nor placebo administrations will occur on Days 0, 14, 28, 42, 56, and 70.\nDuring the double-blind period and the follow-up period, patients should be on stable conventional\ntreatment for UC.\nThere will be 9 ~ 10 main visits at the investigational site during the study:\n• Visit 0: Run-in Period: at an optional visit (Visit 0), decision will be made if patients need\nstable conventional UC treatment to meet the following criteria: with corticosteroids stable\nfor at least 2 weeks prior to Randomization at no more than 20 mg prednisone (or\nequivalent), and/or with medications containing 5-aminosalicylates (5-ASA) at no less than\n2 g 5-ASA per day for at least 3 months and stable for at least 4 weeks prior to\nRandomization, and/or with azathioprine (AZA) at no less than 1.5 mg/kg/day or\nmercaptopurine (6-MP) at no less than 0.75 mg/kg/day for at least 6 months and stable for at\nleast 6 weeks prior to Randomization. If patients already met the criteria, they will directly\nenter the Screening Period (Visit 1). If not, they will need stable conventional UC treatment\nduring the Run-in Period except those who cannot tolerate the medications mentioned above.\n• Visit 1: Screening Visit, start of Screening Period (Days -28 to -1 prior to Visit 2)\n• Visit 2: Randomisation Visit (Baseline), start of 12-week Double-blind Treatment Period\n• Visits 3-7: 5 visits during 12-week Double-blind Treatment Period\n• Visit 8: End of Treatment (EoT) Visit, completion of 12-week Double-blind Treatment\nPeriod\n• Visit 9: Safety Follow-up Visit, scheduled at 35 days after the last dose of IMP (Day 105).\nClinical assessments of disease activity will take place at Visit 1 (Screening Visit), Visit 2\n(Randomisation Visit), Visit 3 (Week 2), Visit 4 (Week 4), Visit 5 (Week 6), Visit 6 (Week 8),\nVisit 7 (Week 10), and Visit 8 (Week 12). During Screening and at Visit 8 (Week 12), assessments\nof disease activity will also include endoscopy (colonoscopy or sigmoidoscopy); mucosal biopsies\nfor assessment of mucosal healing, histology, immunohistochemistry will be collected during\nendoscopy at these time points.\nTJ301 PK will be assessed in a subgroup of patients in Mainland China (24 patients, 8 per arm;\nelectronically assigned at randomisation and consenting to the extra procedures). Blood samples for\nPK subgroup will be collected in as follows:\n• At 1st dose: pre-dose and 0.5, 1, 2 (end of infusion), 6, 48, 144 (Day 6), and 240 (Day 10) h\nafter the start of the 1st administration;\n• At the 2nd, 3rd, 4th, and 5th administrations blood samples will be collected pre-dose and at\nthe end of infusion;\n• At 6th dose: pre-dose and 0.5, 1, 2 (end of infusion), 6, 48, 144 (Day 76), 240 (Day 80), 336\n(Day 84), 480 (Day 90), and 840 h (Day 105) after the start of the 6th administration.\nThe actual sampling time will be recorded.\nThe schedule of blood sampling for PK assessment allows the evaluation of PK profiles after single\ndose and after multiple doses in patients with UC. Considering the terminal plasma half-life of 5.3 –\n6.0 days for TJ301 in healthy volunteers, the last blood sample will be collected at 840 hours\n(5.8~6.6 half-lives of TJ301) after the last dose. Also due to the long half-life of TJ301, the\nscheduled sparse blood sampling would be able to capture the PK profile of TJ301.\nIn order to ensure that standard therapy is not withheld from patients not gaining sufficiently from\nIMP treatment, patients suffering a worsening in disease after Visit 5 are to be withdrawn.\nWorsening will be defined as an increase from last visit in Mayo rectal bleeding subscore ≥1, over\n3 consecutive days (Appendix 1). Such worsening should be evaluated by the Investigator and\nconfirmed by endoscopy (no improvement or worse) prior to deciding whether or not to withdraw\nthe patient.\nFor patients not completing the trial, a Safety Follow-up Visit will be scheduled 35 days (5.8 - 6.6\nhalf-lives of TJ301) after the last dose of IMP. For patients completing the 12-week Treatment\nPeriod, likewise a Safety Follow-up Visit will be scheduled at 35 days after the last dose of IMP\n(Days 105)."
+						}
+					]
+				},
+				{
+					"linkId": "108",
+					"text": "Scientific Rationale for Study Design",
+					"answer": [
+						{
+							"valueString": "This trial is designed as a randomised, double-blind, placebo-controlled proof-of-concept trial of\nTJ301. Patients will be on concomitant treatment with stable doses of corticosteroids, or\nimmunomodulators, or 5-ASA/sulfasalazine – all first- or second-line standard of care in UC – for\nat least the duration of the 12-week Treatment Period (i.e. up to the primary endpoint). Two dose\nlevels of TJ301 will be investigated, and as discussed in Section 3.4.4, modelling of the effect on a\nPD biomarker, based on PK measurements over a wide range of serum concentrations of TJ301,\nsuggests that the chosen dosages may show a dose-dependent clinical efficacy.\nThe typical duration of induction treatment in active UC, both in clinical practice and in clinical\ntrials, is at least 8 weeks. The novel mechanism of action with TJ301, with blockade of only IL-6\ntrans-signalling, may influence the time to a clinically relevant endpoint such as clinical remission.\nIn order to capture the full extent of the potential treatment effect, the primary endpoint will be\nassessed at Week 12. As shown in the recent proof-of-concept trial with etrolizumab (10) in a similar trial population as the one proposed with TJ301, placebo response was higher earlier during\nthe treatment course (at Week 6 as opposed to Week 10). Thus, more substantive ‘true’ response\nand remission rates can be expected with longer treatment duration."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "125",
+			"text": "STUDY POPULATION",
+			"item": [
+				{
+					"linkId": "126",
+					"text": "Subject Selection",
+					"item": [
+						{
+							"linkId": "127",
+							"text": "Category/Group (eg. Adults, controls, parents, children)",
+							"answer": [
+								{
+									"valueString": "This trial is designed to include adult and elderly male and female outpatients with active, UC. Patients who fulfil all of the inclusion criteria (Section 4.1.1) and none of the exclusion criteria (Section 4.1.2) are eligible for inclusion in the trial."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "136",
+			"text": "STUDY ENROLLMENT AND WITHDRAWAL",
+			"item": [
+				{
+					"linkId": "item236",
+					"text": "Eligibility Criterea",
+					"item": [
+						{
+							"linkId": "150",
+							"text": "Inclusion and Exclusion Criterea",
+							"item": [
+								{
+									"linkId": "item990",
+									"text": "Inclusion Criteria",
+									"answer": [
+										{
+											"valueString": "1. Male and female patients 18-70 (inclusive) years of age.\n2. Active UC confirmed by colonoscopy with biopsy or flexible sigmoidoscopy with biopsy at\nScreening, with extending > 15-cm past the anal verge from endoscopy.\n3. Active UC with a full Mayo score ≥5 and a rectal bleeding subscore ≥1 at screening.\n4. During Day -35 to Day-6 prior to Randomisation, an endoscopy subscore ≥2.\n5. Treated with conventional non-biological UC therapy: with corticosteroids stable for at least 2\nweeks prior to Randomization at no more than 20 mg prednisone (or equivalent), and/or with\nmedications containing 5-aminosalicylates (5-ASA) at no less than 2 g 5-ASA per day for at\nleast 3 months and stable for at least 4 weeks prior to Randomization, and/or with azathioprine\n(AZA) at no less than 1.5 mg/kg/day or mercaptopurine (6-MP) at no less than 0.75 mg/kg/day\nfor at least 6 months and stable for at least 6 weeks prior to Randomization.\n6. A female subject has been sterilized or has been menopausal, or the subject has no pregnancy\nplan during the trial and voluntarily adopts effective contraceptive measures.\n7. The patient is able and willing to comply with the requirements of this trial protocol.\n8. The subject should be able to read and write to understand and fill out Patient Diary.\n9. Voluntarily signed Informed Consent obtained before any trial-related procedures are\nperformed."
+										}
+									]
+								},
+								{
+									"linkId": "i991",
+									"text": "Exclusion Criteria",
+									"answer": [
+										{
+											"valueString": "1. Pregnant or breastfeeding women.\n2. Contraindication to colonoscopy or sigmoidoscopy.\n3. Allergies to any component of TJ301.\n4. History of colostomy, colectomy or partial colectomy.\n5. Current diagnosis of inflammatory bowel disease unclassified, Crohn's disease, ischemic colitis,\nfulminant colitis and/or toxic megacolon, patients with ulcerative colitis limited to the rectum\n(ulcerative proctitis), infective enteritis, amebic bowel disease and intestinal schistosomiasis.\n6. History of malignancy other than a successfully treated non-metastatic cutaneous squamous\ncell or basal cell carcinoma and/or localized carcinoma in situ of the cervix. If the Screening\ncolonoscopy shows evidence of dysplasia or a malignancy, the patient is not eligible.\n7. Primary or secondary immunodeficiency including neutropenia (absolute neutrophil count\n<1500/μL); or lymphopenia (absolute lymphocyte count <500/μL).\n8. Moderate to severe anaemia (haemoglobin <9 g/dL), or thrombocytopenia (platelet count <75,\n000/μL), or serum creatinine >2 mg/dL.\n9. Autoimmune disease besides UC, with the exceptions of Sjogren's syndrome or\nhypothyroidism.\n10. Clostridium (C.) difficile positive at screening visit or treated for C. difficile within the 4\nweeks prior to Randomization.\n11. Known clinically relevant chronic liver disease. Impaired hepatic function in the absence of a\ndiagnosis of primary sclerosing cholangitis (serum transaminases >2.5 x upper limit of normal\n[ULN], alkaline phosphatase >2.5 x ULN, or abnormalities in synthetic liver function tests\njudged by the investigator to be clinically significant), or a diagnosis of primary sclerosing\ncholangitis, serum transaminases >3 x ULN, alkaline phosphatase >3 x ULN, or abnormalities\nin synthetic liver function tests (total bilirubin >1.5 x ULN) judged by the investigator to be\nclinically significant.\n12. Serious underlying disease other than UC in the opinion of the investigator.\n13. History of drug addiction within the last 1 year or current drug addiction or use of illicit drugs.\n14. Any indication of the regular use of more than 40 grams of alcohol every day.\n15. Smokers who smoke more than 10 cigarettes per day.\n16. Known concurrent acute or chronic viral hepatitis B or C infection or human\nimmunodeficiency virus (HIV) infection.\n17. Presence or history of active tuberculosis (TB) or latent TB infection, defined as 1) a positive\nQuantiFERON-TB Gold test at Screening, or 2) a positive T-spot test within 4 weeks of\nRandomisation and evidence of current or previous pulmonary tuberculosis by chest X-ray\nwithin 12 weeks of Randomisation.\n18. Positive immunoglobulin M antibody titres in the presence of negative immunoglobulin G\ntitres to Epstein-Barr virus (EBV).\n19. If clinical suspicion of cytomegalovirus (CMV), cytomegalovirus testing should be undertaken.\nSubjects with intestinal mucosa biopsy positive for cytomegalovirus at screening are to be\nexcluded.\n20. Receiving any investigational therapy or any approved therapy for investigational use within\n30 days or 5 half-lives prior to Randomization (whichever is longer).\n21. Currently taking any medications other than those allowed per protocol guidelines."
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "141",
+							"text": "Vulnerable Populations",
+							"item": [
+								{
+									"linkId": "i515",
+									"text": "Can or will pregnant women be enrolled",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i516",
+									"text": "Can or will the research involve neonates of uncertain viability or non-viable neonates?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i517",
+									"text": "Can or will subjects who are not yet adults (neonates, children, teenagers) be enrolled?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i518",
+									"text": "Can or will minors who are: I)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i522",
+									"text": "Can or will cognitively impaired adults (adults with impaired-decision making capacity) or adults who may lose the capacity to consent be enrolled?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i476",
+									"text": "Can or will prisoners be enrolled?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i484",
+									"text": "Can or will students and/or employees be enrolled in this research?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								},
+								{
+									"linkId": "i519",
+									"text": "Can or will wards of the state and/or children at risk of becoming wards of the state be enrolled (this includes foster children or any child that is in state custody)?",
+									"answer": [
+										{
+											"valueCoding": {
+												"code": "0",
+												"display": "No"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "138",
+					"text": "STRATEGIES FOR RECRUITMENT AND RETENTION",
+					"item": [
+						{
+							"linkId": "139",
+							"text": "Recruitment Methods",
+							"item": [
+								{
+									"linkId": "id396",
+									"text": "Describe when, where, and how potential subjects will be recruited",
+									"answer": [
+										{
+											"valueString": "Approximately 25-30 sites will participate in this trial.\nEach trial site will require potential patients to undergo a Screening Visit prior to randomisation to\na treatment group. Each patient will receive a unique screening number which must be entered in a\nscreening log that must be maintained at each trial site. The screening number will be allocated\nsequentially in the order in which the patients are screened. The results of each screening should be\nrecorded in the screening log. Selected data for screened patients should also be entered in the\nelectronic case record form (e-CRF), along with the reason for screening failure if the patient is not\nrandomised to treatment.\nUnder no circumstances will patients screened in the trial be permitted to be re-screened for a\nsecond time in this trial, except who need Run-in Period to stabilize the dose of concomitant\ntreatment per protocol."
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "154",
+			"text": "STUDY INTERVENTION",
+			"item": [
+				{
+					"linkId": "155",
+					"text": "Study Agent",
+					"item": [
+						{
+							"linkId": "item540",
+							"text": "Study Agent and Control Description",
+							"answer": [
+								{
+									"valueString": "The IMP in this trial is TJ301 (15 mg/mL in solution for injection [25 mM histidine, 200 mM\nsucrose, 0.1 mg/mL polysorbate 20 in aqueous solution]).\n· Active substance: TJ301\n· Provide by: Leading Biopharm Limited\n· Manufacturer: Octoplus Development B.V. (now as Dr. Reddy’s Research &Development\nB.V.) , Netherlands\n· Application form: intra-venous Infusion\n· Formulation: 15 mg/mL, 5mL vials, Solution for injection\n· Packaging /units per package: diluted in 250 mL 5% (w/v) glucose for infusion\n· Storage (incl. specific storage guidance): TJ301 is stored at -20±5°C\n· Market authorisation: No\nThe placebo is the solution for injection [25 mM histidine, 200 mM sucrose, 0.1 mg/mL\npolysorbate 20 in aqueous solution] without TJ301.\n· Active substance: No\n· Provide by: Leading Biopharm Limited\n· Manufacturer: Octoplus Development B.V. (now as Dr. Reddy’s Research &Development\nB.V.), Netherlands\n· Application form: intra-venous Infusion\n· Formulation: 15 mg/mL, 5mL vials, Solution for injection\n· Packaging /units per package: diluted in 250 mL 5% (w/v) glucose for infusion\n· Storage (incl. specific storage guidance): Placebo is stored at -20±5°C\n· Market authorisation: No\nBoth placebo and TJ301 should be stored at -20±5°C and thawed at the site by site personnel (blind\nto study randomisation) and diluted in 250 mL 5% (w/v) glucose (1.03 mg/mL TJ301 for the 300\nmg group, 2.07 mg/mL TJ301 for the 600 mg group and 0 mg/mL TJ301 for the placebo group ).\nThe infusion time is 2 hours"
+								}
+							]
+						},
+						{
+							"linkId": "163",
+							"text": "Packaging and Labeling",
+							"answer": [
+								{
+									"valueString": "Packaging and labelling of IMP will be performed under responsibility of Leading Biopharm Limited or entrusted CRO in accordance with GMP/GCP and national regulatory requirements. All IMP will be labelled with trial specific labels each containing a unique IMP number. A self-adhesive tear-off label will be included and is to be affixed to the drug accountability form maintained at the trial site."
+								}
+							]
+						},
+						{
+							"linkId": "160",
+							"text": "Product Storage and Stability",
+							"answer": [
+								{
+									"valueString": "The Investigator will ensure that all medicinal products will be stored at the trial sites in appropriate conditions in a secure location with controlled access. The storage condition for placebo and TJ301 is -20 ±5 °C and thawed at the pharmacy and diluted in 250 mL 5% (w/v) glucose. When reconstituted for infusion, the finally diluted IMPs should be stored at 15-25 °C and used as soon as possible within 3 hours of preparation. The IMP will be administered as i.v. infusions every 2 weeks for 12 weeks (i.e. 6 infusions in total). An infusion volume of 290 mL will be used. The infusion time will be 2 hours. Following the first and second i.v. infusion, the patient will be monitored for infusion reactions at the site for three hours after infusion. For the remaining infusions, the patient will be monitored for one hour post-infusion only, since clinical experience in this field has shown that this is sufficient for patients receiving frequent infusions. The temperature in the storage compartment shall be monitored every working day with a thermometer and the values shall be documented. Deviations in storage temperature must be reported without delay, and the medicinal products must not be used until further instructions from the Sponsor are received."
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "sw123",
+			"text": "STUDY INTERVENTION DISCONTINUATION AND PARTICIPANT DISCONTINUATION/WITHDRAWAL",
+			"item": [
+				{
+					"linkId": "item523",
+					"text": "Discontinuation of Study Intervention",
+					"answer": [
+						{
+							"valueString": "In addition to the patient's right to withdraw from the trial at any time, as well as withdrawal at the Investigator's discretion as discussed in Section 4.4, the SRC (Section 3.3) will review blinded data, for safety. In order to ensure that standard therapy is not withheld from patients not gaining sufficiently from IMP treatment, patients suffering a worsening in disease after Visit 5 are to be withdrawn. Worsening will be defined as an increase from last visit in Mayo rectal bleeding subscore1, over 3 days (Appendix 1). Such worsening should be evaluated by the Investigator and confirmed by endoscopy (no improvement or worse) prior to deciding whether or not to withdraw the patient."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "218",
+			"text": "SUPPORTING DOCUMENTATION AND OPERATIONAL CONSIDERATIONS",
+			"item": [
+				{
+					"linkId": "237",
+					"text": "Abbreviations and Special Terms",
+					"answer": [
+						{
+							"valueString": "ICH International Conference on Harmonisation\nICMJE International Committee of Medical Journal Editors\nIEC Independent Ethics Committee\nIgG1 Immunoglobulin G1\nIL-6 Interleukin 6\nIL-6R IL-6 Receptors\nIMP Investigational Medicinal Product\nITT Intention-to-Treat\nIRB Institutional Review Board\ni.v. Intravenous\nMedDRA Medical Dictionary for Regulatory Activities\n6-MP 6-Mercaptopurine\nPD Pharmacodynamic(s)\nPK Pharmacokinetic(s)\nPP Per Protocol\nPRO Patient Reported Outcome\nPT Preferred Term\nRA Rheumatoid Arthritis\nSAE Serious Adverse Event\nSAP Statistical Analysis Plan\nSD Standard Deviation\nSDV Source Data Verification\nsIL-6R Soluble IL-6 Receptor\nSOC System Organ Class\nSRC Safety Review Committee\nSUSAR Suspected, Unexpected Serious Adverse Reaction"
+						}
+					]
+				}
+			]
+		}
+	]
+}

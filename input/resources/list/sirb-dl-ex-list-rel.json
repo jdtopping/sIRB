@@ -1,0 +1,22 @@
+{
+	"resourceType": "List",
+	"id": "sirb-dl-ex-list-rel",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-03T18:53:00.886+00:00",
+		"source": "#P3HADcXO1h6LUJXr",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"status": "current",
+	"mode": "working",
+	"title": "Reliant IRB List"
+}

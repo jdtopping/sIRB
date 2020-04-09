@@ -1,0 +1,35 @@
+{
+	"resourceType": "Organization",
+	"id": "sirb-dl-ex-org-usc",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-03T18:53:00.895+00:00",
+		"source": "#R894bA0DAdaaa9bt",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"identifier": [
+		{
+			"value": "FWA11119999"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"code": "prov"
+				}
+			]
+		}
+	],
+	"name": "University of Southern Coast"
+}

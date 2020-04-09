@@ -1,0 +1,27 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "sirb-dl-list",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-03T18:53:00.892+00:00",
+		"source": "#756XEjgvD9yHbDcq",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list",
+	"version": "0.1.0",
+	"name": "sirb-dl-list",
+	"title": "sIRB - Determination Letter - List",
+	"status": "draft",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "List",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+	"derivation": "constraint"
+}

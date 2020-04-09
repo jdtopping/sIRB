@@ -1,0 +1,27 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "sirb-dl-practitioner",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-03T18:53:00.876+00:00",
+		"source": "#494CYa88LXze44vE",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner",
+	"version": "0.1.0",
+	"name": "sirb-dl-practitioner",
+	"title": "sIRB - Determination Letter - Practitioner",
+	"status": "draft",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Practitioner",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+	"derivation": "constraint"
+}

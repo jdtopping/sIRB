@@ -1,0 +1,27 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "sirb-dl-practitionerrole",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-03T18:53:00.872+00:00",
+		"source": "#CAdkO9N2FYZ6kUO1",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole",
+	"version": "0.1.0",
+	"name": "sirb-dl-practitionerrole",
+	"title": "sIRB - Determination Letter - PractitionerRole",
+	"status": "draft",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint"
+}
