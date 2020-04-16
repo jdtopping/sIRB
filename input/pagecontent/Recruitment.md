@@ -1,7 +1,1 @@
-[Previous Page - Determination](Determination.html)
-
-Lorem Ipsum.
-
-<table><tr><td><img src="recruitment_materials.png" /></td></tr></table>
-
-[Next Page - Protocol](Protocol.html)
+W1ByZXZpb3VzIFBhZ2UgLSBEZXRlcm1pbmF0aW9uXShEZXRlcm1pbmF0aW9uLmh0bWwpCgpMb3JlbSBJcHN1bS4KCjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJyZWNydWl0bWVudF9tYXRlcmlhbHMucG5nIiAvPjwvdGQ+PC90cj48L3RhYmxlPgoKW05leHQgUGFnZSAtIFByb3RvY29sXShQcm90b2NvbC5odG1sKQ==

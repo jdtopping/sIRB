@@ -1,7 +1,1 @@
-The Determination Letter
-
-		Composition => Bundle = FHIR Document
-
-		Questionnaire => QuestionnaireResponse
-
-[Next Page - Recruitment](Recruitment.html)
+VGhlIERldGVybWluYXRpb24gTGV0dGVyCgoJCUNvbXBvc2l0aW9uID0+IEJ1bmRsZSA9IEZISVIgRG9jdW1lbnQKCgkJUXVlc3Rpb25uYWlyZSA9PiBRdWVzdGlvbm5haXJlUmVzcG9uc2UKCltOZXh0IFBhZ2UgLSBSZWNydWl0bWVudF0oUmVjcnVpdG1lbnQuaHRtbCk=
