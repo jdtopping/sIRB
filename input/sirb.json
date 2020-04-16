@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "78",
-		"lastUpdated": "2020-04-16T06:28:14.553+00:00",
-		"source": "#wegvTt8uSFYkqJAw"
+		"versionId": "95",
+		"lastUpdated": "2020-04-16T13:16:31.304+00:00",
+		"source": "#CU558kCjkRFQEjXO"
 	},
 	"contained": [],
 	"extension": [],
@@ -47,7 +47,7 @@
 		"grouping": [
 			{
 				"id": "new-group1",
-				"name": "Questionniares"
+				"name": "Questionnaires"
 			},
 			{
 				"id": "new-group2",
@@ -328,6 +328,7 @@
 					"display": "Recruitment Materials"
 				},
 				"name": "Recruitment Materials Questionnaire",
+				"description": "Reporting form for Recruitment Materials.",
 				"exampleBoolean": true,
 				"groupingId": "new-group1"
 			},
@@ -338,6 +339,7 @@
 					"display": "Continuing Review"
 				},
 				"name": "Continuing Review Questionnaire",
+				"description": "Reporting form for Continuing Review.",
 				"exampleBoolean": true,
 				"groupingId": "new-group1"
 			},
@@ -354,10 +356,11 @@
 			{
 				"extension": [],
 				"reference": {
-					"reference": "Questionnaire/7903",
+					"reference": "Questionnaire/sirb-non-medical-events-questionnaire",
 					"display": "NonMedical Events"
 				},
 				"name": "Non-Medical Event Questionnaire",
+				"description": "Event reporting form for non-medical events.",
 				"exampleBoolean": true,
 				"groupingId": "new-group1"
 			}
