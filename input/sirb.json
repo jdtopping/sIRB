@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "69",
-		"lastUpdated": "2020-04-09T15:51:06.509+00:00",
-		"source": "#lTWc8U5TvylOAlPy"
+		"versionId": "78",
+		"lastUpdated": "2020-04-16T06:28:14.553+00:00",
+		"source": "#wegvTt8uSFYkqJAw"
 	},
 	"contained": [],
 	"extension": [],
@@ -193,7 +193,7 @@
 					"reference": "StructureDefinition/sirb-dl-composition",
 					"display": "sIRB - Determination Letter - Composition"
 				},
-				"name": "sIRB - Determination Letter - Composition",
+				"name": "Determination Letter - Composition",
 				"description": "This is a sIRB reliance agreement letter.",
 				"exampleBoolean": false
 			},
@@ -203,7 +203,7 @@
 					"reference": "StructureDefinition/sirb-dl-list",
 					"display": "sIRB - Determination Letter - List"
 				},
-				"name": "sIRB - Determination Letter - List",
+				"name": "Determination Letter - List",
 				"description": "List of relying institutions who gave the protocol review authority to single IRB.",
 				"exampleBoolean": false
 			},
@@ -213,7 +213,7 @@
 					"reference": "StructureDefinition/sirb-dl-organization",
 					"display": "sIRB - Determination Letter - Organization"
 				},
-				"name": "sIRB - Determination Letter - Organization",
+				"name": "Determination Letter - Organization",
 				"description": "Institution that is responsible for reviewing sIRB.",
 				"exampleBoolean": false
 			},
@@ -223,7 +223,7 @@
 					"reference": "StructureDefinition/sirb-dl-practitioner",
 					"display": "sIRB - Determination Letter - Practitioner"
 				},
-				"name": "sIRB - Determination Letter - Practitioner",
+				"name": "Determination Letter - Practitioner",
 				"description": "Single IRB Principal Investigator.",
 				"exampleBoolean": false
 			},
@@ -233,7 +233,7 @@
 					"reference": "StructureDefinition/sirb-dl-practitionerrole",
 					"display": "sIRB - Determination Letter - PractitionerRole"
 				},
-				"name": "sIRB - Determination Letter - PractitionerRole",
+				"name": "Determination Letter - PractitionerRole",
 				"description": "Principal Investigator role.",
 				"exampleBoolean": false
 			},
@@ -243,7 +243,7 @@
 					"reference": "StructureDefinition/sirb-dl-researchstudy",
 					"display": "sIRB - Determination Letter - ResearchStudy"
 				},
-				"name": "sIRB - Determination Letter - ResearchStudy",
+				"name": "Determination Letter - ResearchStudy",
 				"description": "Relevant information about the research study.",
 				"exampleBoolean": false
 			},
@@ -288,7 +288,7 @@
 				"reference": {
 					"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg"
 				},
-				"name": "Practioner Role - Site Investigator, Golden Gate Medical Center",
+				"name": "Practitioner Role - Site Investigator, Golden Gate Medical Center",
 				"description": "Site Investigator Role.",
 				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
 			},
@@ -327,7 +327,7 @@
 					"reference": "Questionnaire/sirb-recruitment-questionnaire",
 					"display": "Recruitment Materials"
 				},
-				"name": "Recruitment Materials",
+				"name": "Recruitment Materials Questionnaire",
 				"exampleBoolean": true,
 				"groupingId": "new-group1"
 			},
@@ -337,7 +337,7 @@
 					"reference": "Questionnaire/sirb-review-questionnaire",
 					"display": "Continuing Review"
 				},
-				"name": "Continuing Review",
+				"name": "Continuing Review Questionnaire",
 				"exampleBoolean": true,
 				"groupingId": "new-group1"
 			},
@@ -346,10 +346,20 @@
 				"reference": {
 					"reference": "QuestionnaireResponse/sirb-adverse-event-response"
 				},
-				"name": "Medical Adverse Event",
+				"name": "Medical Adverse Event Response",
 				"description": "Completed Adverse Event reporting form for medical events.",
 				"exampleBoolean": true,
 				"groupingId": "new-group2"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/7903",
+					"display": "NonMedical Events"
+				},
+				"name": "Non-Medical Event Questionnaire",
+				"exampleBoolean": true,
+				"groupingId": "new-group1"
 			}
 		],
 		"page": {
@@ -391,6 +401,12 @@
 							"title": "Adverse Event ",
 							"generation": "markdown",
 							"nameUrl": "AdverseEvent.html"
+						},
+						{
+							"extension": [],
+							"title": "Non-Medical Event",
+							"generation": "markdown",
+							"nameUrl": "Non-MedicalEvent.html"
 						},
 						{
 							"extension": [],
