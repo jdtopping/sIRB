@@ -1,1 +1,34 @@
-ewoJInJlc291cmNlVHlwZSI6ICJDb21wb3NpdGlvbiIsCgkiaWQiOiAic2lyYi1kbC1leC1jb21wb3NpdGlvbi1zbWFydCIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjQiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA0LTAzVDE4OjUzOjAwLjg5MyswMDowMCIsCgkJInNvdXJjZSI6ICIjdDFRNGNHR3VHeFpOMVI0YiIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL3NpcmIvU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLWNvbXBvc2l0aW9uIgoJCV0sCgkJInRhZyI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL3YzLU9ic2VydmF0aW9uVmFsdWUiLAoJCQkJImNvZGUiOiAiU1VCU0VUVEVEIiwKCQkJCSJkaXNwbGF5IjogIlJlc291cmNlIGVuY29kZWQgaW4gc3VtbWFyeSBtb2RlIgoJCQl9CgkJXQoJfSwKCSJzdGF0dXMiOiAicHJlbGltaW5hcnkiLAoJInR5cGUiOiB7CgkJInRleHQiOiAiRGV0ZXJtaW5hdGlvbiBMZXR0ZXIiCgl9LAoJInN1YmplY3QiOiB7CgkJInJlZmVyZW5jZSI6ICJSZXNlYXJjaFN0dWR5L3NpcmItZGwtZXgtc3R1ZHktbW1yIgoJfSwKCSJkYXRlIjogIjIwMTktMDMtMDZUMDA6MjA6MDMuODE1WiIsCgkiYXV0aG9yIjogWwoJCXsKCQkJInJlZmVyZW5jZSI6ICJQcmFjdGl0aW9uZXIvc2lyYi1kbC1leC1wcmFjLWN3IgoJCX0KCV0sCgkidGl0bGUiOiAiRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgQ29tcG9zaXRpb24gLSBTTUFSVElSQiIsCgkiY29uZmlkZW50aWFsaXR5IjogIkwiCn0=
+{
+	"resourceType": "Composition",
+	"id": "sirb-dl-ex-composition-smart",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-03T18:53:00.893+00:00",
+		"source": "#t1Q4cGGuGxZN1R4b",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"status": "preliminary",
+	"type": {
+		"text": "Determination Letter"
+	},
+	"subject": {
+		"reference": "ResearchStudy/sirb-dl-ex-study-mmr"
+	},
+	"date": "2019-03-06T00:20:03.815Z",
+	"author": [
+		{
+			"reference": "Practitioner/sirb-dl-ex-prac-cw"
+		}
+	],
+	"title": "Determination Letter Composition - SMARTIRB",
+	"confidentiality": "L"
+}

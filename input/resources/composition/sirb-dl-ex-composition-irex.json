@@ -1,1 +1,34 @@
-ewoJInJlc291cmNlVHlwZSI6ICJDb21wb3NpdGlvbiIsCgkiaWQiOiAic2lyYi1kbC1leC1jb21wb3NpdGlvbi1pcmV4IiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiNCIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDQtMDNUMTg6NTM6MDAuODYzKzAwOjAwIiwKCQkic291cmNlIjogIiNoVTBCSTZrQTFzek9XU2pQIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtY29tcG9zaXRpb24iCgkJXSwKCQkidGFnIjogWwoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vdjMtT2JzZXJ2YXRpb25WYWx1ZSIsCgkJCQkiY29kZSI6ICJTVUJTRVRURUQiLAoJCQkJImRpc3BsYXkiOiAiUmVzb3VyY2UgZW5jb2RlZCBpbiBzdW1tYXJ5IG1vZGUiCgkJCX0KCQldCgl9LAoJInN0YXR1cyI6ICJwcmVsaW1pbmFyeSIsCgkidHlwZSI6IHsKCQkidGV4dCI6ICJEZXRlcm1pbmF0aW9uIExldHRlciIKCX0sCgkic3ViamVjdCI6IHsKCQkicmVmZXJlbmNlIjogIlJlc2VhcmNoU3R1ZHkvc2lyYi1kbC1leC1zdHVkeS1tbXIiCgl9LAoJImRhdGUiOiAiMjAxOS0wMy0wNlQwMDoyMDowMy44MTVaIiwKCSJhdXRob3IiOiBbCgkJewoJCQkicmVmZXJlbmNlIjogIlByYWN0aXRpb25lci9zaXJiLWRsLWV4LXByYWMtY3ciCgkJfQoJXSwKCSJ0aXRsZSI6ICJEZXRlcm1pbmF0aW9uIExldHRlciBDb21wb3NpdGlvbiAtIElSRVgiLAoJImNvbmZpZGVudGlhbGl0eSI6ICJMIgp9
+{
+	"resourceType": "Composition",
+	"id": "sirb-dl-ex-composition-irex",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-03T18:53:00.863+00:00",
+		"source": "#hU0BI6kA1szOWSjP",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"status": "preliminary",
+	"type": {
+		"text": "Determination Letter"
+	},
+	"subject": {
+		"reference": "ResearchStudy/sirb-dl-ex-study-mmr"
+	},
+	"date": "2019-03-06T00:20:03.815Z",
+	"author": [
+		{
+			"reference": "Practitioner/sirb-dl-ex-prac-cw"
+		}
+	],
+	"title": "Determination Letter Composition - IREX",
+	"confidentiality": "L"
+}

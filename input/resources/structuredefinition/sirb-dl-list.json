@@ -1,1 +1,27 @@
-ewoJInJlc291cmNlVHlwZSI6ICJTdHJ1Y3R1cmVEZWZpbml0aW9uIiwKCSJpZCI6ICJzaXJiLWRsLWxpc3QiLAoJIm1ldGEiOiB7CgkJInZlcnNpb25JZCI6ICIyIiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNC0wM1QxODo1MzowMC44OTIrMDA6MDAiLAoJCSJzb3VyY2UiOiAiIzc1NlhFamd2RDl5SGJEY3EiLAoJCSJ0YWciOiBbCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92My1PYnNlcnZhdGlvblZhbHVlIiwKCQkJCSJjb2RlIjogIlNVQlNFVFRFRCIsCgkJCQkiZGlzcGxheSI6ICJSZXNvdXJjZSBlbmNvZGVkIGluIHN1bW1hcnkgbW9kZSIKCQkJfQoJCV0KCX0sCgkidXJsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtbGlzdCIsCgkidmVyc2lvbiI6ICIwLjEuMCIsCgkibmFtZSI6ICJzaXJiLWRsLWxpc3QiLAoJInRpdGxlIjogInNJUkIgLSBEZXRlcm1pbmF0aW9uIExldHRlciAtIExpc3QiLAoJInN0YXR1cyI6ICJkcmFmdCIsCgkiZmhpclZlcnNpb24iOiAiNC4wLjEiLAoJImtpbmQiOiAicmVzb3VyY2UiLAoJImFic3RyYWN0IjogZmFsc2UsCgkidHlwZSI6ICJMaXN0IiwKCSJiYXNlRGVmaW5pdGlvbiI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vTGlzdCIsCgkiZGVyaXZhdGlvbiI6ICJjb25zdHJhaW50Igp9
+{
+	"resourceType": "StructureDefinition",
+	"id": "sirb-dl-list",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-03T18:53:00.892+00:00",
+		"source": "#756XEjgvD9yHbDcq",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list",
+	"version": "0.1.0",
+	"name": "sirb-dl-list",
+	"title": "sIRB - Determination Letter - List",
+	"status": "draft",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "List",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+	"derivation": "constraint"
+}
