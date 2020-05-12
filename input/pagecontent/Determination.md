@@ -1,11 +1,1 @@
-The Determination Letter
-
-		Composition => Bundle = FHIR Document
-
-		Questionnaire => QuestionnaireResponse
-		
-Lorem Ipsum.
-
-<table><tr><td><img src="determination.png" /></td></tr></table>
-
-[Next Page - Recruitment Materials](RecruitmentMaterials.html)
+VGhlIERldGVybWluYXRpb24gTGV0dGVyCgoJCUNvbXBvc2l0aW9uID0+IEJ1bmRsZSA9IEZISVIgRG9jdW1lbnQKCgkJUXVlc3Rpb25uYWlyZSA9PiBRdWVzdGlvbm5haXJlUmVzcG9uc2UKCltOZXh0IFBhZ2UgLSBSZWNydWl0bWVudF0oUmVjcnVpdG1lbnQuaHRtbCk=

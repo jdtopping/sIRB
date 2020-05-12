@@ -1,7 +1,1 @@
-[Previous Page - Protocol](Protocol.html)
-
-A document explaining all the relevant information to assist an individual in understanding the expectations and risks in making a decision about a procedure. This document is presented to and signed by the individual or guardian.
-
-<table><tr><td><img src="consent.png" /></td></tr></table>
-
-[Next Page - Adverse Event ](AdverseEvent.html)
+W1ByZXZpb3VzIFBhZ2UgLSBQcm90b2NvbF0oUHJvdG9jb2wuaHRtbCkKCkEgZG9jdW1lbnQgZXhwbGFpbmluZyBhbGwgdGhlIHJlbGV2YW50IGluZm9ybWF0aW9uIHRvIGFzc2lzdCBhbiBpbmRpdmlkdWFsIGluIHVuZGVyc3RhbmRpbmcgdGhlIGV4cGVjdGF0aW9ucyBhbmQgcmlza3MgaW4gbWFraW5nIGEgZGVjaXNpb24gYWJvdXQgYSBwcm9jZWR1cmUuIFRoaXMgZG9jdW1lbnQgaXMgcHJlc2VudGVkIHRvIGFuZCBzaWduZWQgYnkgdGhlIGluZGl2aWR1YWwgb3IgZ3VhcmRpYW4uCgo8dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iY29uc2VudC5wbmciIC8+PC90ZD48L3RyPjwvdGFibGU+CgpbTmV4dCBQYWdlIC0gQWR2ZXJzZSBFdmVudCBdKEFkdmVyc2VFdmVudC5odG1sKQ==

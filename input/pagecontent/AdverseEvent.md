@@ -1,7 +1,1 @@
-[Previous Page - Consent](Consent.html)
-
-No page content yet
-
-<table><tr><td><img src="adverse_event_form.png" /></td></tr></table>
-
-[Next Page - Non-Medical Event](Non-MedicalEvent.html)
+W1ByZXZpb3VzIFBhZ2UgLSBDb25zZW50XShDb25zZW50Lmh0bWwpCgpObyBwYWdlIGNvbnRlbnQgeWV0Cgo8dGFibGU+PHRyPjx0ZD48aW1nIHNyYz0iYWR2ZXJzZV9ldmVudF9mb3JtLnBuZyIgLz48L3RkPjwvdHI+PC90YWJsZT4KCltOZXh0IFBhZ2UgLSBOb24tTWVkaWNhbCBFdmVudF0oTm9uLU1lZGljYWxFdmVudC5odG1sKQ==
