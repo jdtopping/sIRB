@@ -1,0 +1,1195 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "sirb-nonmedicalevents-questionnaire",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-29T16:30:15.023+00:00",
+		"source": "#C2GgLvaHVLAWENSk"
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
+	"url": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-nonmedicalevents-questionnaire",
+	"version": "0.1.0",
+	"name": "NonMedical_events",
+	"title": "NonMedical Events",
+	"status": "draft",
+	"experimental": false,
+	"item": [
+		{
+			"linkId": "/study",
+			"text": "General Study Information",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"linkId": "/study/title",
+					"text": "Title:",
+					"type": "string",
+					"required": false
+				},
+				{
+					"linkId": "/study/irb",
+					"text": "IRB Number:",
+					"type": "string",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/study/status",
+					"text": "Status:",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "nochange",
+								"display": "No change in research activities"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "stopped",
+								"display": "All research activities temporarily and voluntarily stopped for all subjects"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "partial",
+								"display": "Partial voluntary hold on some research activities for all subjects (explain below)"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "hold",
+								"display": "Voluntary hold on new subject enrollment only"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/study/status_explain",
+					"text": "If partial, please explain:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/study/status",
+							"operator": "=",
+							"answerCoding": {
+								"code": "partial"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "/pi",
+			"text": "Principal Investigator",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"linkId": "/pi/name",
+					"text": "Name:",
+					"type": "string",
+					"required": false
+				},
+				{
+					"linkId": "/pi/phone",
+					"text": "Telephone:",
+					"type": "string",
+					"required": false
+				},
+				{
+					"linkId": "/pi/email",
+					"text": "Email:",
+					"type": "string",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "/report",
+			"text": "Report",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"linkId": "/report/date",
+					"text": "Report Date:",
+					"type": "date",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/report/type",
+					"text": "Type:",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "internal",
+								"display": "Internal"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "external",
+								"display": "External"
+							}
+						}
+					]
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/report/status",
+					"text": "Status:",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "initial",
+								"display": "Initial"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "followup",
+								"display": "Follow-up"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/report/criteria",
+					"text": "Check at least one of the following criteria:",
+					"type": "group",
+					"required": false
+				},
+				{
+					"linkId": "/report/new_check",
+					"text": "New information indiciation unexpected change to the risks of the research.",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/new",
+					"text": "New or increased risk",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/new_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"enableBehavior": "all",
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/new/date",
+							"text": "Date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/new/discovered",
+							"text": "Date discovered:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/new/description",
+							"text": "Description:",
+							"type": "text",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/event_check",
+					"text": "Unanticipated Problem Involving Risk to Subjects or Others",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/event",
+					"text": "Unanticipated Problem",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/event_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"enableBehavior": "all",
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/event/date",
+							"text": "Event date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/event/realized",
+							"text": "Date event was realized by PI or team:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/event/summary",
+							"text": "Event Summary:",
+							"type": "text",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "/report/event/unexpected",
+							"text": "Was this event Unexpected?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/unexpected_explain",
+							"text": "If yes, please explain:",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "/report/event/unexpected",
+									"operator": "=",
+									"answerCoding": {
+										"code": "yes"
+									}
+								}
+							],
+							"enableBehavior": "all",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "/report/event/related",
+							"text": "Was this event Related or Possibly Related to participation in the research?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/related_explain",
+							"text": "If yes, please explain:",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "/report/event/related",
+									"operator": "=",
+									"answerCoding": {
+										"code": "yes"
+									}
+								}
+							],
+							"enableBehavior": "all",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/questionnaire-item-control",
+												"code": "drop-down",
+												"display": "Drop down"
+											}
+										],
+										"text": "Drop down"
+									}
+								}
+							],
+							"linkId": "/report/event/risk",
+							"text": "Does this event suggest that the research places subject(s) or others at a greater Risk of harm than was previously known?",
+							"type": "choice",
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/risk_explain",
+							"text": "If yes, please explain:",
+							"type": "text",
+							"enableWhen": [
+								{
+									"question": "/report/event/risk",
+									"operator": "=",
+									"answerCoding": {
+										"code": "yes"
+									}
+								}
+							],
+							"enableBehavior": "all",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/deviation_check",
+					"text": "Protocol Deviation (accidential or unitentional)",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/deviation",
+					"text": "Protocol Deviation (Non-Compliance)",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/deviation_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"enableBehavior": "all",
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/deviation/date",
+							"text": "Date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/deviation/discovered",
+							"text": "Date discovered:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/deviation/description",
+							"text": "Description:",
+							"type": "text",
+							"required": false
+						},
+						{
+							"linkId": "/report/deviation/involve",
+							"text": "Does the deviation involve any of the following? (Check all that apply)",
+							"type": "group",
+							"required": false,
+							"item": [
+								{
+									"linkId": "/report/deviation/involve/failure",
+									"text": "Failure to obtain informed consent when IRB deemed required",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/involve/modify",
+									"text": "Modifying the protocol without IRB approval, except to avoid hazard to subjects",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/involve/conduct",
+									"text": "Conducting research prior to IRB approval, during an IRB suspension or after IRB approval ends",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/involve/explain",
+									"text": "Please explain any Checked items:",
+									"type": "text",
+									"enableWhen": [
+										{
+											"question": "/report/deviation/involve/failure",
+											"operator": "=",
+											"answerBoolean": true
+										},
+										{
+											"question": "/report/deviation/involve/modify",
+											"operator": "=",
+											"answerBoolean": true
+										},
+										{
+											"question": "/report/deviation/involve/conduct",
+											"operator": "=",
+											"answerBoolean": true
+										}
+									],
+									"enableBehavior": "any",
+									"required": false
+								}
+							]
+						},
+						{
+							"linkId": "/report/deviation/affect",
+							"text": "Was the deviation a substantive change from the protocol adversely affecting any of the following? (Check all that apply)",
+							"type": "group",
+							"required": false,
+							"item": [
+								{
+									"linkId": "/report/deviation/affect/subject",
+									"text": "The rights, welfare, or safety of the subjects",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/affect/research",
+									"text": "The integrity of the research area",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/affect/willingness",
+									"text": "The subjects' willingness to continue participation",
+									"type": "boolean",
+									"required": false
+								},
+								{
+									"linkId": "/report/deviation/affect/explain",
+									"text": "Please explain any Checked items:",
+									"type": "text",
+									"enableWhen": [
+										{
+											"question": "/report/deviation/affect/subject",
+											"operator": "=",
+											"answerBoolean": true
+										},
+										{
+											"question": "/report/deviation/affect/research",
+											"operator": "=",
+											"answerBoolean": true
+										},
+										{
+											"question": "/report/deviation/affect/willingness",
+											"operator": "=",
+											"answerBoolean": true
+										}
+									],
+									"enableBehavior": "any",
+									"required": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "/report/confidentiality_check",
+					"text": "A breach of Confidentiality",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/confidentiality",
+					"text": "Breach of Confidentiality",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/confidentiality_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"enableBehavior": "all",
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/confidentiality/date",
+							"text": "Date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/confidentiality/discovered",
+							"text": "Date discovered:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/confidentiality/description",
+							"text": "Description:",
+							"type": "text",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/incarceration_check",
+					"text": "Incarceration of a subject in a protocol not approved to enroll prisoners",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/incarceration",
+					"text": "Incarceration",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/incarceration_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"enableBehavior": "all",
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/incarceration/date",
+							"text": "Date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/incarceration/discovered",
+							"text": "Date discovered:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/incarceration/description",
+							"text": "Description:",
+							"type": "text",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/complaint_check",
+					"text": "Complaint of a subject indicating unexpected risks or cannot be resolved by team.",
+					"type": "boolean",
+					"required": false
+				},
+				{
+					"linkId": "/report/complaint",
+					"text": "Complaint",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "/report/complaint_check",
+							"operator": "=",
+							"answerBoolean": true
+						}
+					],
+					"required": false,
+					"item": [
+						{
+							"linkId": "/report/complaint/date",
+							"text": "Date:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/complaint/discovered",
+							"text": "Date received:",
+							"type": "date",
+							"required": false
+						},
+						{
+							"linkId": "/report/complaint/description",
+							"text": "Description:",
+							"type": "text",
+							"required": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/reporting",
+			"text": "Reporting",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/reporting/sponsor",
+					"text": "Was the Sponsor notified?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/reporting/sponsor_date",
+					"text": "Notification date:",
+					"type": "date",
+					"enableWhen": [
+						{
+							"question": "/reporting/sponsor",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/reporting/irb",
+					"text": "Was the IRB notified?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/reporting/irb_date",
+					"text": "Notification date:",
+					"type": "date",
+					"enableWhen": [
+						{
+							"question": "/reporting/irb",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"linkId": "/reporting/other",
+					"text": "Where any Other Parties notified? Please list:",
+					"type": "text",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "/action",
+			"text": "Corrective and Preventative Action Plan",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/action/root",
+					"text": "Was a Root Cause analysis performed?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/root_results",
+					"text": "If yes, provide determination:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/action/root",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/action/correction",
+					"text": "Was Corrective Action implemented?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "pending",
+								"display": "Pending - Currently under development"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/correction_summary",
+					"text": "If yes, provide a summary:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/action/correction",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/action/prevention",
+					"text": "Was Preventitive Action implemented?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "pending",
+								"display": "Pending - Currently under development"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/prevention_summary",
+					"text": "If yes, provide a summary:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/action/prevention",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				}
+			]
+		},
+		{
+			"linkId": "/change",
+			"text": "Study Protocol and Informed Consent",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/change/study",
+					"text": "Are changes required to the Study Protocol as a result of this report?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/study_justify",
+					"text": "If no, justify your decision to not change the study protocol:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/change/study",
+							"operator": "=",
+							"answerCoding": {
+								"code": "no"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/change/consent",
+					"text": "Are changes required to the Informed Consent as a result of this report?",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/consent_justify",
+					"text": "If no, justify your decision to not change the informed consent:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/change/consent",
+							"operator": "=",
+							"answerCoding": {
+								"code": "no"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/change/notify",
+					"text": "Are notifications or re-consenting of subjects required as a result of this change?",
+					"type": "choice",
+					"enableWhen": [
+						{
+							"question": "/change/study",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						},
+						{
+							"question": "/change/consent",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "any",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/notify_explain",
+					"text": "If yes, detail how the notification and/or re-consent will occur:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/change/notify",
+							"operator": "=",
+							"answerCoding": {
+								"code": "yes"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				},
+				{
+					"linkId": "/change/justify",
+					"text": "If no, justify your decision to not notify (re-consent) subjects:",
+					"type": "text",
+					"enableWhen": [
+						{
+							"question": "/change/notify",
+							"operator": "=",
+							"answerCoding": {
+								"code": "no"
+							}
+						}
+					],
+					"enableBehavior": "all",
+					"required": false
+				}
+			]
+		}
+	]
+}

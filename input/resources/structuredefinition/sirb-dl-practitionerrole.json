@@ -1,1 +1,104 @@
-ewoJInJlc291cmNlVHlwZSI6ICJTdHJ1Y3R1cmVEZWZpbml0aW9uIiwKCSJpZCI6ICJzaXJiLWRsLXByYWN0aXRpb25lcnJvbGUiLAoJIm1ldGEiOiB7CgkJInZlcnNpb25JZCI6ICIyIiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNC0wM1QxODo1MzowMC44NzIrMDA6MDAiLAoJCSJzb3VyY2UiOiAiI0NBZGtPOU4yRllaNmtVTzEiLAoJCSJ0YWciOiBbCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92My1PYnNlcnZhdGlvblZhbHVlIiwKCQkJCSJjb2RlIjogIlNVQlNFVFRFRCIsCgkJCQkiZGlzcGxheSI6ICJSZXNvdXJjZSBlbmNvZGVkIGluIHN1bW1hcnkgbW9kZSIKCQkJfQoJCV0KCX0sCgkidXJsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtcHJhY3RpdGlvbmVycm9sZSIsCgkidmVyc2lvbiI6ICIwLjEuMCIsCgkibmFtZSI6ICJzaXJiLWRsLXByYWN0aXRpb25lcnJvbGUiLAoJInRpdGxlIjogInNJUkIgLSBEZXRlcm1pbmF0aW9uIExldHRlciAtIFByYWN0aXRpb25lclJvbGUiLAoJInN0YXR1cyI6ICJkcmFmdCIsCgkiZmhpclZlcnNpb24iOiAiNC4wLjEiLAoJImtpbmQiOiAicmVzb3VyY2UiLAoJImFic3RyYWN0IjogZmFsc2UsCgkidHlwZSI6ICJQcmFjdGl0aW9uZXJSb2xlIiwKCSJiYXNlRGVmaW5pdGlvbiI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vUHJhY3RpdGlvbmVyUm9sZSIsCgkiZGVyaXZhdGlvbiI6ICJjb25zdHJhaW50Igp9
+{
+	"resourceType": "StructureDefinition",
+	"id": "sirb-dl-practitionerrole",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-29T19:53:33.932+00:00",
+		"source": "#L23XphvhnFYGos6w",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p/></div>"
+	},
+	"url": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole",
+	"version": "0.1.0",
+	"name": "Sirb_dl_practitionerrole",
+	"title": "sIRB - Determination Letter - PractitionerRole",
+	"status": "draft",
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "US",
+					"display": "United States of America"
+				}
+			]
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"mapping": [
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "servd",
+			"uri": "http://www.omg.org/spec/ServD/1.0/",
+			"name": "ServD"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "PractitionerRole.practitioner",
+				"path": "PractitionerRole.practitioner",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+						]
+					}
+				]
+			},
+			{
+				"id": "PractitionerRole.organization",
+				"path": "PractitionerRole.organization",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+						]
+					}
+				]
+			},
+			{
+				"id": "PractitionerRole.code.coding.system",
+				"path": "PractitionerRole.code.coding.system",
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "PractitionerRole.code.coding.code",
+				"path": "PractitionerRole.code.coding.code",
+				"fixedCode": "768816002"
+			}
+		]
+	}
+}

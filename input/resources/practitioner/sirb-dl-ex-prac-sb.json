@@ -1,1 +1,39 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQcmFjdGl0aW9uZXIiLAoJImlkIjogInNpcmItZGwtZXgtcHJhYy1zYiIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjQiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA0LTAzVDE4OjUzOjAxLjA0NyswMDowMCIsCgkJInNvdXJjZSI6ICIjYnZzWXY4ZDE1Sjc1Skg5VyIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL3NpcmIvU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLXByYWN0aXRpb25lciIKCQldLAoJCSJ0YWciOiBbCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92My1PYnNlcnZhdGlvblZhbHVlIiwKCQkJCSJjb2RlIjogIlNVQlNFVFRFRCIsCgkJCQkiZGlzcGxheSI6ICJSZXNvdXJjZSBlbmNvZGVkIGluIHN1bW1hcnkgbW9kZSIKCQkJfQoJCV0KCX0sCgkibmFtZSI6IFsKCQl7CgkJCSJ0ZXh0IjogIlNhbWFudGhhIEJhcmQiLAoJCQkiZmFtaWx5IjogIkJhcmQiLAoJCQkiZ2l2ZW4iOiBbCgkJCQkiU2FtYW50aGEiCgkJCV0KCQl9CgldLAoJInRlbGVjb20iOiBbCgkJewoJCQkic3lzdGVtIjogImVtYWlsIiwKCQkJInZhbHVlIjogInNiYXJkQFJpZGdldmlldy5uZXQiLAoJCQkidXNlIjogIndvcmsiCgkJfQoJXQp9
+{
+	"resourceType": "Practitioner",
+	"id": "sirb-dl-ex-prac-sb",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:15.015+00:00",
+		"source": "#7lKISnnj6VwLQ7Lj",
+		"profile": [
+			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+		],
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Samantha Bard</div>"
+	},
+	"name": [
+		{
+			"text": "Samantha Bard",
+			"family": "Bard",
+			"given": [
+				"Samantha"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "email",
+			"value": "sbard@Ridgeview.net",
+			"use": "work"
+		}
+	]
+}

@@ -1,1 +1,8 @@
-W1ByZXZpb3VzIFBhZ2UgLSBSZWNydWl0bWVudF0oUmVjcnVpdG1lbnQuaHRtbCkKCkEgZm9ybWFsIGRvY3VtZW50IHRoYXQgZGVzY3JpYmVzIGEgY29tcGxldGUgcGxhbiBvZiByZXNlYXJjaCBhY3Rpdml0eSBpbiB0aGUgZnJhbWV3b3JrIG9mIGEgY2xpbmljYWwgc3R1ZHk7IHNwZWNpZmljYWxseSwgdGhlIHN0dWR5IG9iamVjdGl2ZShzKSwgZGVzaWduLCBtZXRob2RvbG9neSwgZWxpZ2liaWxpdHkgcmVxdWVzdHMgZm9yIHByb3NwZWN0aXZlIHN1YmplY3RzIGFuZCBjb250cm9sczsgaW50ZXJ2ZW50aW9uIHJlZ2ltZW4ocyksIHByb3Bvc2VkIG1ldGhvZHMgb2YgYW5hbHlzaXMgb2YgZGF0YTsgc3RhdGlzdGljYWwgY29uc2lkZXJhdGlvbnMsIGFuZCBvcmdhbml6YXRpb24gb2YgdGhlIHN0dWR5LiBUaGUgcHJvdG9jb2wgdXN1YWxseSBhbHNvIHByb3ZpZGVzIHRoZSBiYWNrZ3JvdW5kIGFuZCByYXRpb25hbGUgZm9yIHRoZSB0cmlhbCwgYnV0IHRoZXNlIGNvdWxkIGJlIHJlcHJlc2VudGVkIGluIG90aGVyIHByb3RvY29sIHJlZmVyZW5jZWQgZG9jdW1lbnRzLgoKCjx0YWJsZT48dHI+PHRkPjxpbWcgc3JjPSJwcm90b2NvbC5wbmciIC8+PC90ZD48L3RyPjwvdGFibGU+CgpbTmV4dCBQYWdlIC0gQ29uc2VudF0oQ29uc2VudC5odG1sKQ==
+[Previous Page - Recruitment Materials](RecruitmentMaterials.html)
+
+A formal document that describes a complete plan of research activity in the framework of a clinical study; specifically, the study objective(s), design, methodology, eligibility requests for prospective subjects and controls; intervention regimen(s), proposed methods of analysis of data; statistical considerations, and organization of the study. The protocol usually also provides the background and rationale for the trial, but these could be represented in other protocol referenced documents.
+
+
+<table><tr><td><img src="protocol.png" /></td></tr></table>
+
+[Next Page - Consent](Consent.html)

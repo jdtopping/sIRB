@@ -1,1 +1,522 @@
-ewoJInJlc291cmNlVHlwZSI6ICJJbXBsZW1lbnRhdGlvbkd1aWRlIiwKCSJpZCI6ICJzaXJiIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMTA0IiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNC0xNlQxNDowNzoxOS4xMDcrMDA6MDAiLAoJCSJzb3VyY2UiOiAiIzc5SktYT1ZmZjA3WDhTTUUiCgl9LAoJImNvbnRhaW5lZCI6IFtdLAoJImV4dGVuc2lvbiI6IFtdLAoJInVybCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL0ltcGxlbWVudGF0aW9uR3VpZGUvc2lyYiIsCgkidmVyc2lvbiI6ICIwLjEiLAoJIm5hbWUiOiAiU2luZ2xlSW5zdGl0dXRpb25hbFJldmlld0JvYXJkIiwKCSJ0aXRsZSI6ICJTaW5nbGUgSW5zdGl0dXRpb25hbCBSZXZpZXcgQm9hcmQgKHNJUkIpIEltcGxlbWVudGF0aW9uIEd1aWRlIiwKCSJzdGF0dXMiOiAiZHJhZnQiLAoJImNvbnRhY3QiOiBbCgkJewoJCQkibmFtZSI6ICJITDcgSW50ZXJuYXRpb25hbCAtIEJpb21lZGljYWwgUmVzZWFyY2ggYW5kIFJlZ3VsYXRpb24iLAoJCQkidGVsZWNvbSI6IFsKCQkJCXsKCQkJCQkic3lzdGVtIjogInVybCIsCgkJCQkJInZhbHVlIjogImh0dHA6Ly93d3cuaGw3Lm9yZy9TcGVjaWFsL2NvbW1pdHRlZXMvcmNyaW0iCgkJCQl9CgkJCV0KCQl9CgldLAoJImRlc2NyaXB0aW9uIjogIkRhdGEgc3RhbmRhcmRzIHRvIG1vdmUgZGF0YSBhbmQgZG9jdW1lbnRzIGZyb20gY2xpbmljYWwgcmVzZWFyY2ggc2l0ZXMgdG8gYSBzaW5nbGUgZXRoaWNzIHJldmlldyBib2FyZCBpbiBzdXBwb3J0IG9mIHRoZSBcIk5JSCBQb2xpY3kgb24gdGhlIFVzZSBvZiBhIFNpbmdsZSBJbnN0aXR1dGlvbmFsIFJldmlldyBCb2FyZCBmb3IgTXVsdGktU2l0ZSBSZXNlYXJjaHNcblxuIyMjIEJhY2tncm91bmRcbkxhdW5jaGluZyBhIG11bHRpLXNpdGUgY2xpbmljYWwgc3R1ZHkgaXMgZnJlcXVlbnRseSBhIGxvbmcgYW5kIGludm9sdmVkIHByb2Nlc3MgdGhhdCBjYW4gZGVsYXkgdGhlIGRldmVsb3BtZW50IG9mIHBvdGVudGlhbGx5IGVmZmVjdGl2ZSBjbGluaWNhbCB0cmVhdG1lbnQuIEV0aGljcyByZXZpZXcgYW5kIGFwcHJvdmFsIHByb2Nlc3NlcyBjb25kdWN0ZWQgYnkgSVJCcyBoYXZlIGJlZW4gY2l0ZWQgYXMgYSBtYWpvciBjb250cmlidXRvciB0byBkZWxheXMgaW4gaW5pdGlhdGluZyBtdWx0aS1zaXRlIHN0dWRpZXMuIEluIHJlc3BvbnNlLCB0aGUgc2V0IG9mIGZlZGVyYWwgcmVndWxhdGlvbnMgZm9yIGh1bWFuLXN1YmplY3RzIHJlc2VhcmNoIChDb21tb24gUnVsZSwgNDUgQ0ZSIFBhcnQgNDYuMTE0KSB3YXMgcmV2aXNlZCB3aXRoIGEgcmVxdWlyZW1lbnQgdGhhdCBhIHNpbmdsZSBJUkIgYmUgbmFtZWQgd2hlbiBtdWx0aXBsZSBzaXRlcyBhcmUgdXNpbmcgdGhlIHNhbWUgcHJvdG9jb2wuIFJhdGhlciB0aGFuIGVhY2ggc2l0ZSB3YWl0aW5nIGZvciBhcHByb3ZhbCBvZiBhIHN0dWR5IGJ5IGl0cyBsb2NhbCBJUkIgYmVmb3JlIGVucm9sbGluZyBzdWJqZWN0cywgYSBzaW5nbGUgSVJCIHJldmlldyB3aWxsIGV4cGVkaXRlIGFwcHJvdmFsIGFuZCBpbXByb3ZlIHRoZSB0aW1lbGluZSBmb3Igc3R1ZHkgaW5pdGlhdGlvbiBhbmQgY29tcGxldGlvbi4gUmVzZWFyY2hlcnMgY29tbWVudGVkIGFib3V0IHRoZSByZWR1bmRhbmN5IG9mIGVmZm9ydCwgYWRkaXRpb25hbCBjb3N0cywgYW5kIGFkbWluaXN0cmF0aXZlIGJ1cmRlbnMgdGhhdCBvZnRlbiBsZWFkIHRvIGRlbGF5cyBhbmQgaW1iYWxhbmNlcyBpbiBlbnJvbGxtZW50IG9mIHJlc2VhcmNoIHBhcnRpY2lwYW50cyBpbiBtdWx0aS1zaXRlIGNsaW5pY2FsIHN0dWRpZXMuIFRoZSBidXJkZW4gb2YgdGFza3MgcmVsYXRlZCB0byBJUkIgYXBwcm92YWwsIHdoaWNoIG1vc3QgZnJlcXVlbnRseSBtdXN0IGJlIGNvbXBsZXRlZCBtYW51YWxseSBhdCBtdWx0aXBsZSBjbGluaWNhbCBpbnZlc3RpZ2F0aW9uYWwgc2l0ZXMsIGNhbiBhbHNvIGFkdmVyc2VseSBpbXBhY3Qgc2l0ZSBkYXRhIHF1YWxpdHkgYW5kIHN1c3RhaW5hYmlsaXR5LlxuXG4jIyMgU2lnbmlmaWNhbmNlXG5JbiBsaWV1IG9mIGFkIGhvYyB0cmFuc2ZlcnMgb2YgUERGcyBhbmQgb3RoZXIgZG9jdW1lbnQgZm9ybWF0cyB2aWEgZW1haWwgb3Igb25saW5lIHN1Ym1pc3Npb24sIHRoaXMgcHJvamVjdCB1dGlsaXplcyBGSElSIGJhc2VkIHN0YW5kYXJkcyB0byBmYWNpbGl0YXRlIGRvY3VtZW50IGV4Y2hhbmdlLiBBIHN0YW5kYXJkcyBlbmFibGVkIHByb2Nlc3MgbGV2ZXJhZ2VkIGJ5IHNvZnR3YXJlIGhhcyB0aGUgcG90ZW50aWFsIHRvIHNpZ25pZmljYW50bHkgZGVjcmVhc2UgdGhlIGV4dGVuc2l2ZSBtYW51YWwgdGFza3MgdGhhdCBoYXZlIGJlY29tZSBhc3NvY2lhdGVkIHdpdGggdXNpbmcgYSBzaW5nbGUgSVJCIHN5c3RlbS4gVGhpcyB1c2Ugb2YgRkhJUiBzdGFuZGFyZHMgdG8gbWVldCB0aGUgbmVlZCBmb3IgYW4gZWZmaWNpZW50IGV4Y2hhbmdlIG9mIGRhdGEgYW5kIGRvY3VtZW50cyB3aWxsIGltcHJvdmUgdGhlIG9wZXJhdGlvbmFsIGVmZmljaWVuY3kuIFxuXG48dGFibGU+PHRyPjx0ZD48aW1nIHNyYz1cInNJUkIgSUcgZGlhZ3JhbS5qcGdcIiAvPjwvdGQ+PC90cj48L3RhYmxlPlxuXG4jIyMgQ292ZXJhZ2VcblRoaXMgSW1wbGVtZW50YXRpb24gZ3VpZGUgY292ZXJzIHRoZSBJUkIgRGV0ZXJtaW5hdGlvbiBMZXR0ZXIsIFN0dWR5IFByb3RvY29sLCBhbmQgQ29uc2VudCB0ZW1wbGF0ZXMuIEl0IHdpbGwgYmUgZXhwYW5kZWQgd2l0aCB0aGUgY29tcGxldGlvbiBvZiBvdGhlciB0ZW1wbGF0ZXMgYXNzb2NpYXRlZCB3aXRoIHRoZSBzSVJCIGFwcHJvdmFsIHByb2Nlc3Mgd2hlbiBjb21wbGV0ZWQuXG5cbiMjIyBEZXBlbmRlbmNpZXNcblRoZXNlIHN0YW5kYXJkcyB3ZXJlIGRldmVsb3BlZCBiYXNlZCB1cG9uIHRoZSBbUjRdKGh0dHA6Ly9obDcub3JnL2ZoaXIvUjQvKSBGSElSIHZlcnNpb24uXG5cbltQcm9maWxlc10oZmlsZTovLy9DOi9TSVJCL0dpdEh1YkxpbmtlZC9vdXRwdXQvYXJ0aWZhY3RzLmh0bWwpXG4iLAoJInBhY2thZ2VJZCI6ICJobDcuZmhpci51cy5zaXJiIiwKCSJmaGlyVmVyc2lvbiI6IFsKCQkiNC4wLjEiCgldLAoJImRlcGVuZHNPbiI6IFsKCQl7CgkJCSJleHRlbnNpb24iOiBbXSwKCQkJInVyaSI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvSW1wbGVtZW50YXRpb25HdWlkZS9obDcuZmhpci51cy5jb3JlIiwKCQkJInBhY2thZ2VJZCI6ICJobDcuZmhpci51cy5jb3JlIiwKCQkJInZlcnNpb24iOiAiY3VycmVudCIKCQl9LAoJCXsKCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkidXJpIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXYvc2RjL0ltcGxlbWVudGF0aW9uR3VpZGUvaGw3LmZoaXIudXMuc2RjIiwKCQkJInBhY2thZ2VJZCI6ICJobDcuZmhpci51di5zZGMiLAoJCQkidmVyc2lvbiI6ICJjdXJyZW50IgoJCX0KCV0sCgkiZGVmaW5pdGlvbiI6IHsKCQkiZ3JvdXBpbmciOiBbCgkJCXsKCQkJCSJpZCI6ICJuZXctZ3JvdXAxIiwKCQkJCSJuYW1lIjogIlF1ZXN0aW9ubmFpcmVzIgoJCQl9LAoJCQl7CgkJCQkiaWQiOiAibmV3LWdyb3VwMiIsCgkJCQkibmFtZSI6ICJRdWVzdGlvbm5haXJlIFJlc3BvbnNlcyIKCQkJfQoJCV0sCgkJInJlc291cmNlIjogWwoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUXVlc3Rpb25uYWlyZS9zaXJiLXByb3RvY29sLXF1ZXN0aW9ubmFpcmUiLAoJCQkJCSJkaXNwbGF5IjogIlByb3RvY29sIFF1ZXN0aW9ubmFpcmUiCgkJCQl9LAoJCQkJIm5hbWUiOiAiUHJvdG9jb2wgUXVlc3Rpb25uYWlyZSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiQSBsaXN0IG9mIHN0dWR5IHByb3RvY29sIHJlbGF0ZWQgcXVlc3Rpb25zIHRoYXQgd2lsbCBuZWVkIHRvIGJlIGNvbXBsZXRlZCBieSBhIHByaW5jaXBhbCBpbnZlc3RpZ2F0b3IgYW5kIHN1Ym1pdHRlZCB0byBzaW5nbGUgSVJCLiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiB0cnVlLAoJCQkJImdyb3VwaW5nSWQiOiAibmV3LWdyb3VwMSIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlF1ZXN0aW9ubmFpcmUvc2lyYi1jb25zZW50LXF1ZXN0aW9ubmFpcmUiLAoJCQkJCSJkaXNwbGF5IjogIkNvbnNlbnQgcXVlc3Rpb25uYWlyZSIKCQkJCX0sCgkJCQkibmFtZSI6ICJDb25zZW50IFF1ZXN0aW9ubmFpcmUiLAoJCQkJImRlc2NyaXB0aW9uIjogIkEgbGlzdCBvZiBxdWVzdGlvbnMgdGhhdCB3aWxsIG5lZWQgdG8gYmUgY29tcGxldGVkIGJ5IGEgcHJpbmNpcGFsIGludmVzdGlnYXRvciB0byBnZW5lcmF0ZSBhbiBpbmZvcm1lZCBjb25zZW50IGRvY3VtZW50LiBUaGlzIGNvbnNlY2VudCBkb2N1bWVudCB3aWxsIHRoZW4gYmUgc3VibWl0dGVkIHRvIGEgc2luZ2xlIElSQi4iLAoJCQkJImV4YW1wbGVCb29sZWFuIjogdHJ1ZSwKCQkJCSJncm91cGluZ0lkIjogIm5ldy1ncm91cDEiCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJRdWVzdGlvbm5haXJlUmVzcG9uc2Uvc2lyYi1jb25zZW50LXJlc3BvbnNlIgoJCQkJfSwKCQkJCSJuYW1lIjogIkNvbnNlbnQgUXVlc3Rpb25uYWlyZSBSZXNwb25zZSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiQSBjb21wbGV0ZWQgc3R1ZHkgY29uc2VudCBmb3JtIHF1ZXN0aW9ubmFpcmUuIiwKCQkJCSJleGFtcGxlQm9vbGVhbiI6IHRydWUsCgkJCQkiZ3JvdXBpbmdJZCI6ICJuZXctZ3JvdXAyIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUXVlc3Rpb25uYWlyZVJlc3BvbnNlL3NpcmItcHJvdG9jb2wtcmVzcG9uc2UiCgkJCQl9LAoJCQkJIm5hbWUiOiAiUHJvdG9jb2wgUXVlc3Rpb25uYWlyZSBSZXNwb25zZSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiQSBjb21wbGV0ZWQgc3R1ZHkgcHJvdG9jb2wgZm9ybSBxdWVzdGlvbm5haXJlLiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiB0cnVlLAoJCQkJImdyb3VwaW5nSWQiOiAibmV3LWdyb3VwMiIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIkNvbXBvc2l0aW9uL3NpcmItZGwtZXgtY29tcG9zaXRpb24taXJleCIsCgkJCQkJImRpc3BsYXkiOiAiRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgQ29tcG9zaXRpb24gLSBJUkVYIgoJCQkJfSwKCQkJCSJuYW1lIjogIkRldGVybWluYXRpb24gTGV0dGVyIENvbXBvc2l0aW9uIC0gSVJFWCIsCgkJCQkiZGVzY3JpcHRpb24iOiAiQSBTaW5nbGUgSVJCIFJlbGlhbmNlIExldHRlciBnZW5lcmF0ZWQgYnkgSVJFWCBJUkIgc3lzdGVtIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtY29tcG9zaXRpb24iCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJDb21wb3NpdGlvbi9zaXJiLWRsLWV4LWNvbXBvc2l0aW9uLXNtYXJ0IiwKCQkJCQkiZGlzcGxheSI6ICJEZXRlcm1pbmF0aW9uIExldHRlciBDb21wb3NpdGlvbiAtIFNNQVJUSVJCIgoJCQkJfSwKCQkJCSJuYW1lIjogIkRldGVybWluYXRpb24gTGV0dGVyIENvbXBvc2l0aW9uIC0gU01BUlRJUkIiLAoJCQkJImRlc2NyaXB0aW9uIjogIkEgU2luZ2xlIElSQiBSZWxpYW5jZSBMZXR0ZXIgZ2VuZXJhdGVkIGJ5IFNNQVJUIElSQiBzeXN0ZW0uIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtY29tcG9zaXRpb24iCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJMaXN0L3NpcmItZGwtZXgtbGlzdC1ub24iLAoJCQkJCSJkaXNwbGF5IjogIk5vbi1SZWxpYW50IElSQiBMaXN0IgoJCQkJfSwKCQkJCSJuYW1lIjogIk5vbi1SZWxpYW50IElSQiBMaXN0IiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJMaXN0IG9mIG5vbi1yZWxpYW50IGluc3RpdHV0aW9ucy4iLAoJCQkJImV4YW1wbGVDYW5vbmljYWwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9zaXJiL1N0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1saXN0IgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiTGlzdC9zaXJiLWRsLWV4LWxpc3QtcmVsIiwKCQkJCQkiZGlzcGxheSI6ICJSZWxpYW50IElSQiBMaXN0IgoJCQkJfSwKCQkJCSJuYW1lIjogIlJlbGlhbnQgSVJCIExpc3QiLAoJCQkJImRlc2NyaXB0aW9uIjogIkxpc3Qgb2YgcmVsaWFudCBJUkJzIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtbGlzdCIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIk9yZ2FuaXphdGlvbi9zaXJiLWRsLWV4LW9yZy1jYiIsCgkJCQkJImRpc3BsYXkiOiAiQ2FtYnJpZGdlIFBlZGlhdHJpYyBIb3NwaXRhbCIKCQkJCX0sCgkJCQkibmFtZSI6ICJDYW1icmlkZ2UgUGVkaWF0cmljIEhvc3BpdGFsIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJJbnN0aXR1dGlvbiB3aGVyZSBhIHJlc2VhcmNoIHRha2VzIHBsYWNlLiIsCgkJCQkiZXhhbXBsZUNhbm9uaWNhbCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL3NpcmIvU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLW9yZ2FuaXphdGlvbiIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIk9yZ2FuaXphdGlvbi9zaXJiLWRsLWV4LW9yZy1nZyIsCgkJCQkJImRpc3BsYXkiOiAiR29sZGVuIEdhdGUgTWVkaWNhbCBDZW50ZXIiCgkJCQl9LAoJCQkJIm5hbWUiOiAiR29sZGVuIEdhdGUgTWVkaWNhbCBDZW50ZXIiLAoJCQkJImRlc2NyaXB0aW9uIjogIkluc3RpdHV0aW9uIHdoZXJlIGEgcmVzZWFyY2ggdGFrZXMgcGxhY2UuIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtb3JnYW5pemF0aW9uIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiT3JnYW5pemF0aW9uL3NpcmItZGwtZXgtb3JnLXJ2IiwKCQkJCQkiZGlzcGxheSI6ICJSaWRnZXZpZXcgSGVhbHRoIFN5c3RlbSIKCQkJCX0sCgkJCQkibmFtZSI6ICJSaWRnZXZpZXcgSGVhbHRoIFN5c3RlbSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiSW5zdGl0dXRpb24gd2hlcmUgYSByZXNlYXJjaCB0YWtlcyBwbGFjZS4iLAoJCQkJImV4YW1wbGVDYW5vbmljYWwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9zaXJiL1N0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1vcmdhbml6YXRpb24iCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJPcmdhbml6YXRpb24vc2lyYi1kbC1leC1vcmctdXNjIiwKCQkJCQkiZGlzcGxheSI6ICJVbml2ZXJzaXR5IG9mIFNvdXRoZXJuIENvYXN0IgoJCQkJfSwKCQkJCSJuYW1lIjogIlVuaXZlcnNpdHkgb2YgU291dGhlcm4gQ29hc3QiLAoJCQkJImRlc2NyaXB0aW9uIjogIkluc3RpdHV0aW9uIHdoZXJlIGEgcmVzZWFyY2ggdGFrZXMgcGxhY2UuIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtb3JnYW5pemF0aW9uIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUmVzZWFyY2hTdHVkeS9zaXJiLWRsLWV4LXN0dWR5LW1tciIsCgkJCQkJImRpc3BsYXkiOiAiTG9uZ2l0dWRpbmFsIHN0dWR5IG9mIE1NUiB2YWNjaW5hdGlvbiBpbiBwYXRpZW50cyBib3JuIGZyb20gMTk4MC0yMDE4IgoJCQkJfSwKCQkJCSJuYW1lIjogIkxvbmdpdHVkaW5hbCBzdHVkeSBvZiBNTVIgdmFjY2luYXRpb24gaW4gcGF0aWVudHMgYm9ybiBmcm9tIDE5ODAtMjAxOCIsCgkJCQkiZGVzY3JpcHRpb24iOiAiUmVsZXZhbnQgaW5mb3JtYXRpb24gYWJvdXQgdGhlIHJlc2VhcmNoIHN0dWR5LiIsCgkJCQkiZXhhbXBsZUNhbm9uaWNhbCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL3NpcmIvU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLXJlc2VhcmNoc3R1ZHkiCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJTdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtY29tcG9zaXRpb24iLAoJCQkJCSJkaXNwbGF5IjogInNJUkIgLSBEZXRlcm1pbmF0aW9uIExldHRlciAtIENvbXBvc2l0aW9uIgoJCQkJfSwKCQkJCSJuYW1lIjogIkRldGVybWluYXRpb24gTGV0dGVyIC0gQ29tcG9zaXRpb24iLAoJCQkJImRlc2NyaXB0aW9uIjogIlRoaXMgaXMgYSBzSVJCIHJlbGlhbmNlIGFncmVlbWVudCBsZXR0ZXIuIiwKCQkJCSJleGFtcGxlQm9vbGVhbiI6IGZhbHNlCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJTdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtbGlzdCIsCgkJCQkJImRpc3BsYXkiOiAic0lSQiAtIERldGVybWluYXRpb24gTGV0dGVyIC0gTGlzdCIKCQkJCX0sCgkJCQkibmFtZSI6ICJEZXRlcm1pbmF0aW9uIExldHRlciAtIExpc3QiLAoJCQkJImRlc2NyaXB0aW9uIjogIkxpc3Qgb2YgcmVseWluZyBpbnN0aXR1dGlvbnMgd2hvIGdhdmUgdGhlIHByb3RvY29sIHJldmlldyBhdXRob3JpdHkgdG8gc2luZ2xlIElSQi4iLAoJCQkJImV4YW1wbGVCb29sZWFuIjogZmFsc2UKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlN0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1vcmdhbml6YXRpb24iLAoJCQkJCSJkaXNwbGF5IjogInNJUkIgLSBEZXRlcm1pbmF0aW9uIExldHRlciAtIE9yZ2FuaXphdGlvbiIKCQkJCX0sCgkJCQkibmFtZSI6ICJEZXRlcm1pbmF0aW9uIExldHRlciAtIE9yZ2FuaXphdGlvbiIsCgkJCQkiZGVzY3JpcHRpb24iOiAiSW5zdGl0dXRpb24gdGhhdCBpcyByZXNwb25zaWJsZSBmb3IgcmV2aWV3aW5nIHNJUkIuIiwKCQkJCSJleGFtcGxlQm9vbGVhbiI6IGZhbHNlCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJTdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtcHJhY3RpdGlvbmVyIiwKCQkJCQkiZGlzcGxheSI6ICJzSVJCIC0gRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgLSBQcmFjdGl0aW9uZXIiCgkJCQl9LAoJCQkJIm5hbWUiOiAiRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgLSBQcmFjdGl0aW9uZXIiLAoJCQkJImRlc2NyaXB0aW9uIjogIlNpbmdsZSBJUkIgUHJpbmNpcGFsIEludmVzdGlnYXRvci4iLAoJCQkJImV4YW1wbGVCb29sZWFuIjogZmFsc2UKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlN0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1wcmFjdGl0aW9uZXJyb2xlIiwKCQkJCQkiZGlzcGxheSI6ICJzSVJCIC0gRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgLSBQcmFjdGl0aW9uZXJSb2xlIgoJCQkJfSwKCQkJCSJuYW1lIjogIkRldGVybWluYXRpb24gTGV0dGVyIC0gUHJhY3RpdGlvbmVyUm9sZSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiUHJpbmNpcGFsIEludmVzdGlnYXRvciByb2xlLiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiBmYWxzZQoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLXJlc2VhcmNoc3R1ZHkiLAoJCQkJCSJkaXNwbGF5IjogInNJUkIgLSBEZXRlcm1pbmF0aW9uIExldHRlciAtIFJlc2VhcmNoU3R1ZHkiCgkJCQl9LAoJCQkJIm5hbWUiOiAiRGV0ZXJtaW5hdGlvbiBMZXR0ZXIgLSBSZXNlYXJjaFN0dWR5IiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJSZWxldmFudCBpbmZvcm1hdGlvbiBhYm91dCB0aGUgcmVzZWFyY2ggc3R1ZHkuIiwKCQkJCSJleGFtcGxlQm9vbGVhbiI6IGZhbHNlCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJQcmFjdGl0aW9uZXIvc2lyYi1kbC1leC1wcmFjLWN3IgoJCQkJfSwKCQkJCSJuYW1lIjogIlByYWN0aXRpb25lciBDb3JleSBXYXJyZW4iLAoJCQkJImRlc2NyaXB0aW9uIjogIlJlc2VhcmNoIFN0dWR5IFByaW5jaXBhbCBJbnZlc3RpZ2F0b3IuIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtcHJhY3RpdGlvbmVyIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3NpcmItZGwtZXgtcHJhYy1taiIKCQkJCX0sCgkJCQkibmFtZSI6ICJQcmFjdGl0aW9uZXIgTWFyayBKZXNzdXAiLAoJCQkJImRlc2NyaXB0aW9uIjogIlJlc2VhcmNoIFN0dWR5IFByaW5jaXBhbCBJbnZlc3RpZ2F0b3IuIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtcHJhY3RpdGlvbmVyIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3NpcmItZGwtZXgtcHJhYy1zYiIKCQkJCX0sCgkJCQkibmFtZSI6ICJQcmFjdGl0aW9uZXIgU2FtYW50aGEgQmFyZCIsCgkJCQkiZGVzY3JpcHRpb24iOiAiUmVzZWFyY2ggU3R1ZHkgUHJpbmNpcGFsIEludmVzdGlnYXRvci4iLAoJCQkJImV4YW1wbGVDYW5vbmljYWwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9zaXJiL1N0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1wcmFjdGl0aW9uZXIiCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJQcmFjdGl0aW9uZXJSb2xlL3NpcmItZGwtZXgtcm9sZS1pbnYtY2IiCgkJCQl9LAoJCQkJIm5hbWUiOiAiUHJhY3RpdGlvbmVyIFJvbGUgLSBTaXRlIEludmVzdGlnYXRvciwgQ2FtYnJpZGdlIFBlZGlhdHJpYyBIb3NwaXRhbCAiLAoJCQkJImRlc2NyaXB0aW9uIjogIlNpdGUgSW52ZXN0aWdhdG9yIFJvbGUuIiwKCQkJCSJleGFtcGxlQ2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvc2lyYi9TdHJ1Y3R1cmVEZWZpbml0aW9uL3NpcmItZGwtcHJhY3RpdGlvbmVycm9sZSIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlByYWN0aXRpb25lclJvbGUvc2lyYi1kbC1leC1yb2xlLWludi1nZyIKCQkJCX0sCgkJCQkibmFtZSI6ICJQcmFjdGl0aW9uZXIgUm9sZSAtIFNpdGUgSW52ZXN0aWdhdG9yLCBHb2xkZW4gR2F0ZSBNZWRpY2FsIENlbnRlciIsCgkJCQkiZGVzY3JpcHRpb24iOiAiU2l0ZSBJbnZlc3RpZ2F0b3IgUm9sZS4iLAoJCQkJImV4YW1wbGVDYW5vbmljYWwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9zaXJiL1N0cnVjdHVyZURlZmluaXRpb24vc2lyYi1kbC1wcmFjdGl0aW9uZXJyb2xlIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyUm9sZS9zaXJiLWRsLWV4LXJvbGUtaW52LXJ2IgoJCQkJfSwKCQkJCSJuYW1lIjogIlByYWN0aXRpb25lciBSb2xlLSBTaXRlIEludmVzdGlnYXRvciwgUmlkZ2V2aWV3IE1lZGljYWwgQ2VudGVyIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJTaXRlIEludmVzdGlnYXRvciBSb2xlLiIsCgkJCQkiZXhhbXBsZUNhbm9uaWNhbCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL3NpcmIvU3RydWN0dXJlRGVmaW5pdGlvbi9zaXJiLWRsLXByYWN0aXRpb25lcnJvbGUiCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJRdWVzdGlvbm5haXJlL3NpcmItYWR2ZXJzZS1ldmVudC1xdWVzdGlvbm5haXJlIiwKCQkJCQkiZGlzcGxheSI6ICJBZHZlcnNlIEV2ZW50IFF1ZXN0aW9ubmFpcmUiCgkJCQl9LAoJCQkJIm5hbWUiOiAiQWR2ZXJzZSBFdmVudCBRdWVzdGlvbm5haXJlIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJBZHZlcnNlIEV2ZW50IHJlcG9ydGluZyBmb3JtIGZvciBtZWRpY2FsIGV2ZW50cy4iLAoJCQkJImV4YW1wbGVCb29sZWFuIjogdHJ1ZSwKCQkJCSJncm91cGluZ0lkIjogIm5ldy1ncm91cDEiCgkJCX0sCgkJCXsKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJDb2RlU3lzdGVtL3NpcmItcm0tY29kZXN5c3RlbSIsCgkJCQkJImRpc3BsYXkiOiAiUmVjcnVpdG1lbnRfbWF0ZXJpYWxzX2NvZGVzeXN0ZW0iCgkJCQl9LAoJCQkJIm5hbWUiOiAiUmVjcnVpdG1lbnRfbWF0ZXJpYWxzX2NvZGVzeXN0ZW0iLAoJCQkJImV4YW1wbGVCb29sZWFuIjogZmFsc2UsCgkJCQkiZGVzY3JpcHRpb24iOiAiQ29kZSBTeXN0ZW0gcHJvdmlkaW5nIGEgbGlzdCBvZiBTdHVkeSByZWNydWl0bWVudCBtYXRlcmlhbCBjYXRlZ29yaWVzIGFuZCBpdGVtcy4iCgkJCX0sCgkJCXsKCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCSJyZWZlcmVuY2UiOiB7CgkJCQkJInJlZmVyZW5jZSI6ICJRdWVzdGlvbm5haXJlL3NpcmItcmVjcnVpdG1lbnQtcXVlc3Rpb25uYWlyZSIsCgkJCQkJImRpc3BsYXkiOiAiUmVjcnVpdG1lbnQgTWF0ZXJpYWxzIgoJCQkJfSwKCQkJCSJuYW1lIjogIlJlY3J1aXRtZW50IE1hdGVyaWFscyBRdWVzdGlvbm5haXJlIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJSZXBvcnRpbmcgZm9ybSBmb3IgUmVjcnVpdG1lbnQgTWF0ZXJpYWxzLiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiB0cnVlLAoJCQkJImdyb3VwaW5nSWQiOiAibmV3LWdyb3VwMSIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlF1ZXN0aW9ubmFpcmUvc2lyYi1yZXZpZXctcXVlc3Rpb25uYWlyZSIsCgkJCQkJImRpc3BsYXkiOiAiQ29udGludWluZyBSZXZpZXciCgkJCQl9LAoJCQkJIm5hbWUiOiAiQ29udGludWluZyBSZXZpZXcgUXVlc3Rpb25uYWlyZSIsCgkJCQkiZGVzY3JpcHRpb24iOiAiUmVwb3J0aW5nIGZvcm0gZm9yIENvbnRpbnVpbmcgUmV2aWV3LiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiB0cnVlLAoJCQkJImdyb3VwaW5nSWQiOiAibmV3LWdyb3VwMSIKCQkJfSwKCQkJewoJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJInJlZmVyZW5jZSI6IHsKCQkJCQkicmVmZXJlbmNlIjogIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS9zaXJiLWFkdmVyc2UtZXZlbnQtcmVzcG9uc2UiCgkJCQl9LAoJCQkJIm5hbWUiOiAiTWVkaWNhbCBBZHZlcnNlIEV2ZW50IFJlc3BvbnNlIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJDb21wbGV0ZWQgQWR2ZXJzZSBFdmVudCByZXBvcnRpbmcgZm9ybSBmb3IgbWVkaWNhbCBldmVudHMuIiwKCQkJCSJleGFtcGxlQm9vbGVhbiI6IHRydWUsCgkJCQkiZ3JvdXBpbmdJZCI6ICJuZXctZ3JvdXAyIgoJCQl9LAoJCQl7CgkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkicmVmZXJlbmNlIjogewoJCQkJCSJyZWZlcmVuY2UiOiAiUXVlc3Rpb25uYWlyZS9zaXJiLW5vbi1tZWRpY2FsLWV2ZW50cy1xdWVzdGlvbm5haXJlIiwKCQkJCQkiZGlzcGxheSI6ICJOb25NZWRpY2FsIEV2ZW50cyIKCQkJCX0sCgkJCQkibmFtZSI6ICJOb24tTWVkaWNhbCBFdmVudCBRdWVzdGlvbm5haXJlIiwKCQkJCSJkZXNjcmlwdGlvbiI6ICJFdmVudCByZXBvcnRpbmcgZm9ybSBmb3Igbm9uLW1lZGljYWwgZXZlbnRzLiIsCgkJCQkiZXhhbXBsZUJvb2xlYW4iOiB0cnVlLAoJCQkJImdyb3VwaW5nSWQiOiAibmV3LWdyb3VwMSIKCQkJfQoJCV0sCgkJInBhZ2UiOiB7CgkJCSJ0aXRsZSI6ICJJRyBIb21lIFBhZ2UiLAoJCQkibmFtZVVybCI6ICJpbmRleC5odG1sIiwKCQkJImdlbmVyYXRpb24iOiAibWFya2Rvd24iLAoJCQkicGFnZSI6IFsKCQkJCXsKCQkJCQkibmFtZVVybCI6ICJ0b2MubWQiLAoJCQkJCSJ0aXRsZSI6ICJUYWJsZSBvZiBDb250ZW50cyIsCgkJCQkJImdlbmVyYXRpb24iOiAiZ2VuZXJhdGVkIiwKCQkJCQkicGFnZSI6IFsKCQkJCQkJewoJCQkJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJCQkJInRpdGxlIjogIkRldGVybWluYXRpb24iLAoJCQkJCQkJImdlbmVyYXRpb24iOiAibWFya2Rvd24iLAoJCQkJCQkJIm5hbWVVcmwiOiAiRGV0ZXJtaW5hdGlvbi5odG1sIgoJCQkJCQl9LAoJCQkJCQl7CgkJCQkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkJCQkidGl0bGUiOiAiUmVjcnVpdG1lbnQiLAoJCQkJCQkJImdlbmVyYXRpb24iOiAibWFya2Rvd24iLAoJCQkJCQkJIm5hbWVVcmwiOiAiUmVjcnVpdG1lbnQuaHRtbCIKCQkJCQkJfSwKCQkJCQkJewoJCQkJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJCQkJInRpdGxlIjogIlByb3RvY29sIiwKCQkJCQkJCSJnZW5lcmF0aW9uIjogIm1hcmtkb3duIiwKCQkJCQkJCSJuYW1lVXJsIjogIlByb3RvY29sLmh0bWwiCgkJCQkJCX0sCgkJCQkJCXsKCQkJCQkJCSJleHRlbnNpb24iOiBbXSwKCQkJCQkJCSJ0aXRsZSI6ICJDb25zZW50IiwKCQkJCQkJCSJnZW5lcmF0aW9uIjogIm1hcmtkb3duIiwKCQkJCQkJCSJuYW1lVXJsIjogIkNvbnNlbnQuaHRtbCIKCQkJCQkJfSwKCQkJCQkJewoJCQkJCQkJImV4dGVuc2lvbiI6IFtdLAoJCQkJCQkJInRpdGxlIjogIkFkdmVyc2UgRXZlbnQgIiwKCQkJCQkJCSJnZW5lcmF0aW9uIjogIm1hcmtkb3duIiwKCQkJCQkJCSJuYW1lVXJsIjogIkFkdmVyc2VFdmVudC5odG1sIgoJCQkJCQl9LAoJCQkJCQl7CgkJCQkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkJCQkidGl0bGUiOiAiTm9uLU1lZGljYWwgRXZlbnQiLAoJCQkJCQkJImdlbmVyYXRpb24iOiAibWFya2Rvd24iLAoJCQkJCQkJIm5hbWVVcmwiOiAiTm9uLU1lZGljYWxFdmVudC5odG1sIgoJCQkJCQl9LAoJCQkJCQl7CgkJCQkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkJCQkidGl0bGUiOiAiQ29udGludWluZyBSZXZpZXciLAoJCQkJCQkJImdlbmVyYXRpb24iOiAibWFya2Rvd24iLAoJCQkJCQkJIm5hbWVVcmwiOiAiQ29udGludWluZ1Jldmlldy5odG1sIgoJCQkJCQl9LAoJCQkJCQl7CgkJCQkJCQkiZXh0ZW5zaW9uIjogW10sCgkJCQkJCQkidGl0bGUiOiAiRG93bmxvYWRzIiwKCQkJCQkJCSJnZW5lcmF0aW9uIjogIm1hcmtkb3duIiwKCQkJCQkJCSJuYW1lVXJsIjogIkRvd25sb2Fkcy5odG1sIgoJCQkJCQl9CgkJCQkJXQoJCQkJfQoJCQldCgkJfSwKCQkicGFyYW1ldGVyIjogWwoJCQl7CgkJCQkiY29kZSI6ICJjb3B5cmlnaHR5ZWFyIiwKCQkJCSJ2YWx1ZSI6ICIyMDIwKyIKCQkJfSwKCQkJewoJCQkJImNvZGUiOiAicmVsZWFzZWxhYmVsIiwKCQkJCSJ2YWx1ZSI6ICJDSSBCdWlsZCIKCQkJfQoJCV0KCX0KfQ==
+{
+	"resourceType": "ImplementationGuide",
+	"id": "sirb",
+	"meta": {
+		"versionId": "169",
+		"lastUpdated": "2020-05-07T04:16:12.972+00:00",
+		"source": "#1qfmIp9QdKPsFpAi"
+	},
+	"contained": [],
+	"extension": [],
+	"url": "http://hl7.org/fhir/us/ImplementationGuide/sirb",
+	"version": "0.1",
+	"name": "SingleInstitutionalReviewBoard",
+	"title": "Single Institutional Review Board (sIRB) Implementation Guide",
+	"status": "draft",
+	"contact": [
+		{
+			"name": "HL7 International - Biomedical Research and Regulation",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/rcrim"
+				}
+			]
+		}
+	],
+	"description": "Data standards to move data and documents from clinical research sites to a single ethics review board in support of the \"NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Researches\n\n# Background\nLaunching a multi-site clinical study is frequently a long and involved process that can delay the development of potentially effective clinical treatment. Ethics review and approval processes conducted by IRBs have been cited as a major contributor to delays in initiating multi-site studies. In response, the set of federal regulations for human-subjects research (Common Rule, 45 CFR Part 46.114) was revised with a requirement that a single IRB be named when multiple sites are using the same protocol. Rather than each site waiting for approval of a study by its local IRB before enrolling subjects, a single IRB review will expedite approval and improve the timeline for study initiation and completion. Researchers commented about the redundancy of effort, additional costs, and administrative burdens that often lead to delays and imbalances in enrollment of research participants in multi-site clinical studies. The burden of tasks related to IRB approval, which most frequently must be completed manually at multiple clinical investigational sites, can also adversely impact site data quality and sustainability.\n\n# Significance\nIn lieu of ad hoc transfers of PDFs and other document formats via email or online submission, this project utilizes FHIR based standards to facilitate document exchange. A standards enabled process leveraged by software has the potential to significantly decrease the extensive manual tasks that have become associated with using a single IRB system. This use of FHIR standards to meet the need for an efficient exchange of data and documents will improve the operational efficiency. \n\n# Coverage\nThis Implementation guide covers the IRB Determination Letter, Study Protocol, and Consent templates. It will be expanded with the completion of other templates associated with the sIRB approval process when completed.\n\n# Scope\nThe sIRB implementation guide deals with creation and exchange of standardized sIRB forms and form responses using FHIR questionnaire and questionnaire response resources. The questionnaires may have nested structures and embed skip/branching logics to display appropriate questions based on previous answers. Pre population of questionnaire forms and extraction of data elements/resources from questionnaire responses is out of scope for the current version of sIRB implementation guide; these functionalities can be incorporated into your specific implementation by referring to Structure Data Capture (SDC) implementation guide.\n\n# Assumptions\nThe implementation guide assumes that the implementer has or will have a capability to send, receive, render and display FHIR questionnaires and questionnaire responses. Implements may consider using free software such as NLM's FHIR Questionnaire rendering tool or design their own. Exchange of resources can be achieved by any of the FHIR messaging mechanisms. Please refer to FHIR standard documentation, open source implementations of FHIR specifications, and FHIR Messaging for additional information. \n\n# Actors\n1. Form Author/Editor: A system or organization who is responsible for creating, updating and deprecating the standardized sIRB forms such as Determination Letter, Protocol, Consent, Adverse Event, Recruitment Materials, and Continuous Review\n2. sIRB Form Repository: A form repository that stores standardized sIRB forms. IRB systems will request form templates from this repository.\n4. Central IRB Application: An IRB software system that a PI access to complete and submit the standardized forms.\n5. Relying IRB Application: An IRB software that receives and renders completed and approved forms by the central IRB.\n6. Principal Investigator/Practitioner: A person who is authorized to initiate a research study by completing the research protocol form.\n\n\n# Workflow Overview\n\nIn the workflow outlined below, a Central IRB system requests one of the standardized sIRB questionnaires forms forms from Repository as a form of a questionnaire resource. The central IRB system receives the questionnaire response resource and renders/displays it to the Principal Investigator-PI (user). The PI enters and submits responses applicable to the selected standardized sIRB form. The submitted responses will be saved as questionnaire response resources on the Central IRB's FHIR server. The Central IRB will serve as a single source of truth for IRB Documents. The relying IRB system will send a RESTful request or implement a subscription resource to get most recent forms from the central IRB's FHIR server.\n\n<table><tr><td><img src=\"sIRB IG diagram.jpg\" /></td></tr></table>\n\n\n\n\n# Dependencies\nThese standards were developed based upon the [R4](http://hl7.org/fhir/R4/) FHIR version.\n\n[Profiles](file:///C:/SIRB/GitHubLinked/output/artifacts.html)\n",
+	"packageId": "hl7.fhir.us.sirb",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"dependsOn": [
+		{
+			"extension": [],
+			"uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+			"packageId": "hl7.fhir.us.core",
+			"version": "current"
+		}
+	],
+	"definition": {
+		"grouping": [
+			{
+				"id": "questionnaire-group",
+				"name": "Questionnaires"
+			},
+			{
+				"id": "response-group",
+				"name": "Questionnaire Responses"
+			}
+		],
+		"resource": [
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-protocol-questionnaire",
+					"display": "Protocol Questionnaire"
+				},
+				"name": "Protocol Questionnaire",
+				"description": "A list of study protocol related questions that will need to be completed by a principal investigator and submitted to single IRB.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-consent-questionnaire",
+					"display": "Consent questionnaire"
+				},
+				"name": "Consent Questionnaire",
+				"description": "A list of questions that will need to be completed by a principal investigator to generate an informed consent document. This consent document will then be submitted to a single IRB.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-consent-response",
+					"display": "Consent Questionnaire Response"
+				},
+				"name": "Consent Questionnaire Response",
+				"description": "A completed study consent form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-protocol-response",
+					"display": "Protocol Questionnaire Response"
+				},
+				"name": "Protocol Questionnaire Response",
+				"description": "A completed study protocol form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-adverse-event-questionnaire",
+					"display": "Adverse Event Questionnaire"
+				},
+				"name": "Adverse Event Questionnaire",
+				"description": "Adverse Event reporting form for medical events.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "CodeSystem/sirb-rm-codesystem",
+					"display": "Recruitment_materials_codesystem"
+				},
+				"name": "Recruitment Materials Codesystem",
+				"description": "Code System for Recruitment Materials",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-recruitment-questionnaire",
+					"display": "Recruitment Materials Questionnaire"
+				},
+				"name": "Recruitment Materials Questionnaire",
+				"description": "Reporting form for Recruitment Materials.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-adverse-event-response",
+					"display": "Medical Adverse Event Response"
+				},
+				"name": "Medical Adverse Event Response",
+				"description": "Completed Adverse Event reporting form for medical events.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-determination-questionnaire",
+					"display": "Determination Letter Questionnaire"
+				},
+				"name": "Determination Letter Questionnaire",
+				"description": "Reporting form for a Determination Letter",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-continuingreview-questionnaire",
+					"display": "Continuing Review Questionnaire"
+				},
+				"name": "Continuing Review Questionnaire",
+				"description": "Reporting form for Continuing Review.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-nonmedicalevents-questionnaire",
+					"display": "Non-Medical Events Questionnaire"
+				},
+				"name": "Non-Medical Events Questionnaire",
+				"description": "Reporting form for Non-Medical Events.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-continuingreview-questionnaireresponse",
+					"display": "Continuing Review Response"
+				},
+				"name": "Continuing Review Response",
+				"description": "A completed continuing review form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-recruitment-questionnaireresponse",
+					"display": "Recruitment Materials Response"
+				},
+				"name": "Recruitment Materials Response",
+				"description": "A completed recruitment materials form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-determination-questionnaireresponse",
+					"display": "Determination Letter Response"
+				},
+				"name": "Determination Letter Response",
+				"description": "A completed determination letter form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-nonmedicalevents-questionnaireresponse",
+					"display": "Non-Medical Events Response"
+				},
+				"name": "Non-Medical Events Response",
+				"description": "A completed non-medical events form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitionerrole",
+					"display": "sIRB - Determination Letter - PractitionerRole"
+				},
+				"name": "sIRB - Determination Letter - PractitionerRole",
+				"description": "Profile for PractitionerRole in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-list",
+					"display": "sIRB - Determination Letter - List"
+				},
+				"name": "sIRB - Determination Letter - List",
+				"description": "Profile for List in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-researchstudy",
+					"display": "sIRB - Determination Letter - ResearchStudy"
+				},
+				"name": "sIRB - Determination Letter - ResearchStudy",
+				"description": "Profile for ResearchStudy in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-composition",
+					"display": "sIRB - Determination Letter - Composition"
+				},
+				"name": "sIRB - Determination Letter - Composition",
+				"description": "Profile for Composition in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitioner",
+					"display": "sIRB - Determination Letter - Practitioner"
+				},
+				"name": "sIRB - Determination Letter - Practitioner",
+				"description": "Profile for Practitioner in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-organization",
+					"display": "sIRB - Determination Letter - Organization"
+				},
+				"name": "sIRB - Determination Letter - Organization",
+				"description": "Profile for Organization in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-irex-220742",
+					"display": "Composition Example - Determination Letter - IREX"
+				},
+				"name": "Composition Example - Determination Letter - IREX",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-smart-220742",
+					"display": "Composition Example - Determination Letter - SMARTIRB"
+				},
+				"name": "Composition Example - Determination Letter - SMARTIRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-non",
+					"display": "List Example - Non-Reliant IRB"
+				},
+				"name": "List Example - Non-Reliant IRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-rel",
+					"display": "List Example - Reliant IRB"
+				},
+				"name": "List Example - Reliant IRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-gg",
+					"display": "Organization Example - Golden Gate Medical Center"
+				},
+				"name": "Organization Example - Golden Gate Medical Center",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-usc",
+					"display": "Organization Example - University of Southern Coast"
+				},
+				"name": "Organization Example - University of Southern Coast",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-rv",
+					"display": "Organization Example - Ridgeview Health System"
+				},
+				"name": "Organization Example - Ridgeview Health System",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-cb",
+					"display": "Organization Example - Cambridge Pediatric Hospital"
+				},
+				"name": "Organization Example - Cambridge Pediatric Hospital",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-mj",
+					"display": "Practitioner Example - Mark Jessup"
+				},
+				"name": "Practitioner Example - Mark Jessup",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-sb",
+					"display": "Practitioner Example - Samantha Bard"
+				},
+				"name": "Practitioner Example - Samantha Bard",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-cw",
+					"display": "Practitioner Example - Corey Warren"
+				},
+				"name": "Practitioner Example - Corey Warren",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-cb",
+					"display": "PractitionerRole Example - Cambridge Pediatric Hospital - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Cambridge Pediatric Hospital - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-rv",
+					"display": "PractitionerRole Example - Ridgeview Health System - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Ridgeview Health System - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg",
+					"display": "PractitionerRole Example - Golden Gate Medical Center - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Golden Gate Medical Center - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "ResearchStudy/sirb-dl-ex-study-mmr",
+					"display": "Research Study Example - Study 01"
+				},
+				"name": "Research Study Example - Study 01",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "ResearchStudy/sirb-dl-ex-study-ph2",
+					"display": "Research Study Example - Study 02"
+				},
+				"name": "Research Study Example - Study 02",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-dl-subscription"
+				},
+				"name": "Subscription Example - Determination Letter Bundle",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-dl2-subscription"
+				},
+				"name": "Subscription Example - Determination Letter Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-cs-subscription"
+				},
+				"name": "Subscription Example - Consent Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-pr-subscription"
+				},
+				"name": "Subscription Example - Protocol Questionnaire",
+				"exampleBoolean": true
+			}
+		],
+		"page": {
+			"title": "IG Home Page",
+			"nameUrl": "index.html",
+			"generation": "markdown",
+			"page": [
+				{
+					"title": "Standardized sIRB Questionnaire Forms",
+					"generation": "generated",
+					"page": [
+						{
+							"extension": [],
+							"title": "Determination",
+							"generation": "markdown",
+							"nameUrl": "Determination.html"
+						},
+						{
+							"extension": [],
+							"title": "Recruitment Materials",
+							"generation": "markdown",
+							"nameUrl": "RecruitmentMaterials.html"
+						},
+						{
+							"extension": [],
+							"title": "Protocol",
+							"generation": "markdown",
+							"nameUrl": "Protocol.html"
+						},
+						{
+							"extension": [],
+							"title": "Consent",
+							"generation": "markdown",
+							"nameUrl": "Consent.html"
+						},
+						{
+							"extension": [],
+							"title": "Adverse Event ",
+							"generation": "markdown",
+							"nameUrl": "AdverseEvent.html"
+						},
+						{
+							"extension": [],
+							"title": "Non-Medical Event",
+							"generation": "markdown",
+							"nameUrl": "Non-MedicalEvent.html"
+						},
+						{
+							"extension": [],
+							"title": "Continuing Review",
+							"generation": "markdown",
+							"nameUrl": "ContinuingReview.html"
+						},
+						{
+							"extension": [],
+							"title": "Downloads",
+							"generation": "markdown",
+							"nameUrl": "Downloads.html"
+						}
+					],
+					"nameUrl": "StandardizedsIRBQuestionnaireForms.html"
+				}
+			]
+		},
+		"parameter": [
+			{
+				"code": "copyrightyear",
+				"value": "2020+"
+			},
+			{
+				"code": "releaselabel",
+				"value": "CI Build"
+			}
+		]
+	}
+}
