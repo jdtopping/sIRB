@@ -2,9 +2,9 @@
 	"resourceType": "QuestionnaireResponse",
 	"id": "sirb-protocol-response",
 	"meta": {
-		"versionId": "8",
-		"lastUpdated": "2020-04-09T14:25:59.911+00:00",
-		"source": "#XMHDaaIpSC4QdEyR",
+		"versionId": "9",
+		"lastUpdated": "2020-05-07T03:34:23.419+00:00",
+		"source": "#HmCgrrcQCK6bNjVx",
 		"tag": [
 			{
 				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
@@ -12,6 +12,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
 	},
 	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-protocol-questionnaire",
 	"status": "completed",
@@ -36,19 +40,7 @@
 				{
 					"valueCoding": {
 						"code": "1",
-						"display": "IND- Investigational Drug"
-					}
-				}
-			]
-		},
-		{
-			"linkId": "t12",
-			"text": "Phase",
-			"answer": [
-				{
-					"valueCoding": {
-						"code": "2",
-						"display": "II"
+						"display": "Drug"
 					}
 				}
 			]
@@ -163,7 +155,7 @@
 				},
 				{
 					"linkId": "24",
-					"text": "Regulatory Sponsor",
+					"text": "Sponsor",
 					"item": [
 						{
 							"linkId": "i373",
@@ -185,7 +177,7 @@
 						},
 						{
 							"linkId": "i375",
-							"text": "Regulatory Sponsor Address",
+							"text": "Sponsor Address",
 							"item": [
 								{
 									"linkId": "i537",
@@ -325,7 +317,7 @@
 						},
 						{
 							"linkId": "i514d",
-							"text": "Study Sites",
+							"text": "Description of Sites/Facilities Enrolling Participants",
 							"answer": [
 								{
 									"valueString": "Multicenter, international, across Mainland China, Taiwan, Republic of Korea and Australia"
@@ -370,7 +362,7 @@
 						},
 						{
 							"linkId": "i386",
-							"text": "Statistical Analysis/Methodology (Limit discussion to primary end point and the main secondary endpoint)",
+							"text": "Statistical Analysis",
 							"answer": [
 								{
 									"valueString": "Sample Size A sample size of N=72 (n=24 per treatment/placebo arm) patients is expected to achieve a power of 83% of detecting a trend (p<0.05, one-sided) if the true remission rate difference (at Week 12) between the placebo and highest dose groups (600 mg Q2W) is 30% (10% for the placebo and 40% for the highest dose) using Pearsonâ€™s chi-square test without continuity correction. The trial also has 70% power to reach a statistically significant result (p<0.05, one-sided) in case the remission rate difference between placebo and treatment (300 mg Q2W and 600 mg Q2W combined together) is 20% (10% vs 30%). Considering the dropout rate of approximately 20%, a total of 90 patients will be enrolled competitively. Data Analyses Quantitative variables will be described with the number of non-missing values, mean, standard deviation (SD), median, and minimum/maximum values. Qualitative variables will be described with the number and percentage of patients with each qualitative characteristic. Missing values will not be included in the calculation of percentages. All data will be listed by individual patient and study visit. The primary efficacy endpoint is clinical and endoscopic remission at Week 12. This binary outcome (remission status=yes/no) variable will be analysed by a logistic regression model. A patient with missing data on the remission status will be assumed to be not in remission. All dichotomised secondary endpoints will be analysed using a repeated logistic regression model and continuous endpoints will be analysed using a repeated measures Analysis of Covariance (ANCOVA) model. In addition, patients in both the placebo and the treatment groups will be split into subgroups based on the baseline level of IL-6/sIL-6R complexes. Comparison in endpoints will be made for different subgroups. Safety analyses will be summarized descriptively by treatment groups. No statistical testing for comparison of treatment groups will be performed for safety variables. The PK parameters will be derived using non compartmental method. The PK of TJ301 will be summarized using descriptive statistics."

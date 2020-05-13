@@ -2,21 +2,22 @@
 	"resourceType": "QuestionnaireResponse",
 	"id": "sirb-adverse-event-response",
 	"meta": {
-		"versionId": "1",
-		"lastUpdated": "2020-04-09T14:14:12.034+00:00",
-		"source": "#zzq5jnhbvsk4J3ay",
-		"profile": [
-			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"
-		],
+		"versionId": "4",
+		"lastUpdated": "2020-05-07T03:44:28.127+00:00",
+		"source": "#5vcTwOumQcNGXi0I",
 		"tag": [
 			{
 				"code": "lformsVersion: 23.0.1"
 			}
 		]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
 	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-adverse-event-questionnaire",
 	"status": "completed",
-	"authored": "2020-04-09T13:33:09.337Z",
+	"authored": "2020-05-04T17:26:32.488Z",
 	"item": [
 		{
 			"linkId": "1",
@@ -235,7 +236,7 @@
 							"text": "Weight",
 							"answer": [
 								{
-									"valueDecimal": 123
+									"valueDecimal": 129
 								}
 							]
 						},
@@ -244,7 +245,7 @@
 							"text": "Height",
 							"answer": [
 								{
-									"valueDecimal": 5.9
+									"valueDecimal": 5.1
 								}
 							]
 						},
@@ -254,8 +255,8 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"code": "1",
-										"display": "Hispanic/Latino"
+										"code": "2",
+										"display": "Not Hispanic/Latino"
 									}
 								}
 							]
@@ -266,8 +267,8 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"code": "2",
-										"display": "American Indian or Alaskan Native"
+										"code": "1",
+										"display": "Asian"
 									}
 								}
 							]
@@ -277,7 +278,7 @@
 							"text": "Which Arm/Cohort/treatment group was the subject assigned to?",
 							"answer": [
 								{
-									"valueString": "2"
+									"valueString": "1"
 								}
 							]
 						},
@@ -349,7 +350,7 @@
 							"text": "Start Date",
 							"answer": [
 								{
-									"valueString": "02/02/2019"
+									"valueString": "02-02-2019"
 								}
 							]
 						},
@@ -358,7 +359,7 @@
 							"text": "Reported Date",
 							"answer": [
 								{
-									"valueString": "02/03/2019"
+									"valueString": "02-03-2019"
 								}
 							]
 						},
@@ -367,19 +368,7 @@
 							"text": "Recorded Date",
 							"answer": [
 								{
-									"valueString": "02/03/2019"
-								}
-							]
-						},
-						{
-							"linkId": "43",
-							"text": "Is the adverse event still ongoing?",
-							"answer": [
-								{
-									"valueCoding": {
-										"code": "1",
-										"display": "Yes"
-									}
+									"valueString": "02-03-2029"
 								}
 							]
 						},
@@ -401,8 +390,8 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"code": "2",
-										"display": "Moderate"
+										"code": "3",
+										"display": "Severe"
 									}
 								}
 							]
@@ -425,8 +414,8 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"code": "3",
-										"display": "Initial or prolonged hospitalization"
+										"code": "2",
+										"display": "Life-threatening"
 									}
 								}
 							]
@@ -458,18 +447,9 @@
 							"answer": [
 								{
 									"valueCoding": {
-										"code": "2",
-										"display": "Possibly related"
+										"code": "0",
+										"display": "Not related"
 									}
-								}
-							]
-						},
-						{
-							"linkId": "/1/35/49.1",
-							"text": "Rationale for relationship with study intervention",
-							"answer": [
-								{
-									"valueString": "Rationale...."
 								}
 							]
 						},
@@ -498,7 +478,7 @@
 							]
 						},
 						{
-							"linkId": "50.1",
+							"linkId": "50_1",
 							"text": "If study intervention was discontinued, interrupted, or dose reduced (dechallenged), did AE diminish/abate?",
 							"answer": [
 								{
@@ -510,7 +490,7 @@
 							]
 						},
 						{
-							"linkId": "/1/35/undefined",
+							"linkId": "50_2",
 							"text": "If study intervention was restarted (rechallenge) did AE recur?",
 							"answer": [
 								{

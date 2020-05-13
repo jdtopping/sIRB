@@ -2,9 +2,9 @@
 	"resourceType": "List",
 	"id": "sirb-dl-ex-list-rel",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.886+00:00",
-		"source": "#P3HADcXO1h6LUJXr",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:38:52.617+00:00",
+		"source": "#cXBihSXdPpYJcUyX",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
 		],
@@ -16,7 +16,28 @@
 			}
 		]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reliant IRB List</div>"
+	},
 	"status": "current",
 	"mode": "working",
-	"title": "Reliant IRB List"
+	"title": "Reliant IRB List",
+	"entry": [
+		{
+			"item": {
+				"reference": "PractitionerRole/sirb-dl-ex-role-inv-cb"
+			}
+		},
+		{
+			"item": {
+				"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg"
+			}
+		},
+		{
+			"item": {
+				"reference": "PractitionerRole/sirb-dl-ex-role-inv-rv"
+			}
+		}
+	]
 }

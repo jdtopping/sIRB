@@ -2,15 +2,17 @@
 	"resourceType": "Questionnaire",
 	"id": "sirb-recruitment-questionnaire",
 	"meta": {
-		"versionId": "2",
-		"lastUpdated": "2020-04-07T02:18:28.790+00:00",
-		"source": "#gzrq8kBE9y4l7Afz",
-		"profile": [
-			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
-		]
+		"versionId": "4",
+		"lastUpdated": "2020-04-29T16:30:15.024+00:00",
+		"source": "#7QsfvOFsa5LvHqjo"
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
+	"url": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-recruitment-questionnaire",
 	"version": "0.1.0",
-	"name": "Recruitment_materials_questionnaire",
+	"name": "Recruitment_materials",
 	"title": "Recruitment Materials",
 	"status": "draft",
 	"experimental": false,
@@ -228,9 +230,9 @@
 							]
 						},
 						{
-							"linkId": "materials/broadcast/audioattach",
-							"text": "Audio Clip Attachment",
-							"type": "url",
+							"linkId": "materials/broadcast/audiodesc",
+							"text": "Audio Clip Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/broadcast/audio",
@@ -270,9 +272,9 @@
 							]
 						},
 						{
-							"linkId": "materials/broadcast/videoattach",
-							"text": "Video Clip Attachment",
-							"type": "url",
+							"linkId": "materials/broadcast/videodesc",
+							"text": "Video Clip Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/broadcast/video",
@@ -312,9 +314,9 @@
 							]
 						},
 						{
-							"linkId": "materials/broadcast/radioattach",
-							"text": "Radio Spot Attachment",
-							"type": "url",
+							"linkId": "materials/broadcast/radiodesc",
+							"text": "Radio Spot Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/broadcast/radio",
@@ -354,9 +356,9 @@
 							]
 						},
 						{
-							"linkId": "materials/broadcast/tvattach",
-							"text": "TV Spot Attachment",
-							"type": "url",
+							"linkId": "materials/broadcast/tvdesc",
+							"text": "TV Spot Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/broadcast/tv",
@@ -481,9 +483,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/billboardattach",
-							"text": "Billboard/Bus Ad Attachment",
-							"type": "url",
+							"linkId": "materials/printed/billboarddesc",
+							"text": "Billboard/Bus Ad Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/billboard",
@@ -523,9 +525,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/brochureattach",
-							"text": "Brochure/Pamphlet Attachment",
-							"type": "url",
+							"linkId": "materials/printed/brochuredesc",
+							"text": "Brochure/Pamphlet Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/brochure",
@@ -565,9 +567,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/flyersattach",
-							"text": "Flyer/Notice Attachment",
-							"type": "url",
+							"linkId": "materials/printed/flyersdesc",
+							"text": "Flyer/Notice Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/flyers",
@@ -607,9 +609,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/magazineattach",
-							"text": "Magazine Attachment",
-							"type": "url",
+							"linkId": "materials/printed/magazinedesc",
+							"text": "Magazine Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/magazine",
@@ -649,9 +651,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/mailattach",
-							"text": "Mail Attachment",
-							"type": "url",
+							"linkId": "materials/printed/maildesc",
+							"text": "Mail Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/mail",
@@ -691,9 +693,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/newspaperattach",
-							"text": "Newspaper Attachment",
-							"type": "url",
+							"linkId": "materials/printed/newspaperdesc",
+							"text": "Newspaper Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/newspaper",
@@ -733,9 +735,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/postcardattach",
-							"text": "Postcard Attachment",
-							"type": "url",
+							"linkId": "materials/printed/postcarddesc",
+							"text": "Postcard Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/postcard",
@@ -775,9 +777,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/posterattach",
-							"text": "Poster/Sign Attachment",
-							"type": "url",
+							"linkId": "materials/printed/posterdesc",
+							"text": "Poster/Sign Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/poster",
@@ -817,9 +819,9 @@
 							]
 						},
 						{
-							"linkId": "materials/printed/tentattach",
-							"text": "Table Tent Attachment",
-							"type": "url",
+							"linkId": "materials/printed/tentdesc",
+							"text": "Table Tent Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/printed/tent",
@@ -944,9 +946,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/emailattach",
-							"text": "Email Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/emaildesc",
+							"text": "Email Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/email",
@@ -986,9 +988,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/networkingattach",
-							"text": "Networking Site Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/networkingdesc",
+							"text": "Networking Site Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/networking",
@@ -1028,9 +1030,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/podcastattach",
-							"text": "Podcast Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/podcastdesc",
+							"text": "Podcast Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/podcast",
@@ -1070,9 +1072,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/socialattach",
-							"text": "Social Media Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/socialdesc",
+							"text": "Social Media Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/social",
@@ -1112,9 +1114,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/bannerattach",
-							"text": "Web Banner Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/bannerdesc",
+							"text": "Web Banner Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/banner",
@@ -1154,9 +1156,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/webadattach",
-							"text": "Web Page Ad Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/webaddesc",
+							"text": "Web Page Ad Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/webad",
@@ -1196,9 +1198,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/postingattach",
-							"text": "Web/Internet Posting Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/postingdesc",
+							"text": "Web/Internet Posting Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/posting",
@@ -1238,9 +1240,9 @@
 							]
 						},
 						{
-							"linkId": "materials/electronic/websiteattach",
-							"text": "Website Attachment",
-							"type": "url",
+							"linkId": "materials/electronic/websitedesc",
+							"text": "Website Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/electronic/website",
@@ -1365,9 +1367,9 @@
 							]
 						},
 						{
-							"linkId": "materials/direct/discussionattach",
-							"text": "In-Person Discussion Attachment",
-							"type": "url",
+							"linkId": "materials/direct/discussiondesc",
+							"text": "In-Person Discussion Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/direct/discussion",
@@ -1407,9 +1409,9 @@
 							]
 						},
 						{
-							"linkId": "materials/direct/invitationattach",
-							"text": "Letter/Invitation Attachment",
-							"type": "url",
+							"linkId": "materials/direct/invitationdesc",
+							"text": "Letter/Invitation Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/direct/invitation",
@@ -1449,9 +1451,9 @@
 							]
 						},
 						{
-							"linkId": "materials/direct/phoneattach",
-							"text": "Telephone Call Attachment",
-							"type": "url",
+							"linkId": "materials/direct/phonedesc",
+							"text": "Telephone Call Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/direct/phone",
@@ -1576,9 +1578,9 @@
 							]
 						},
 						{
-							"linkId": "materials/group/advertisementattach",
-							"text": "Advertisement Attachment",
-							"type": "url",
+							"linkId": "materials/group/advertisementdesc",
+							"text": "Advertisement Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/group/advertisement",
@@ -1618,9 +1620,9 @@
 							]
 						},
 						{
-							"linkId": "materials/group/bulletinattach",
-							"text": "Bulletin Board Attachment",
-							"type": "url",
+							"linkId": "materials/group/bulletindesc",
+							"text": "Bulletin Board Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/group/bulletin",
@@ -1660,9 +1662,9 @@
 							]
 						},
 						{
-							"linkId": "materials/group/newsletterattach",
-							"text": "Newsletter Attachment",
-							"type": "url",
+							"linkId": "materials/group/newsletterdesc",
+							"text": "Newsletter Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/group/newsletter",
@@ -1702,9 +1704,9 @@
 							]
 						},
 						{
-							"linkId": "materials/group/journalattach",
-							"text": "Professional Journal Attachment",
-							"type": "url",
+							"linkId": "materials/group/journaldesc",
+							"text": "Professional Journal Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/group/journal",
@@ -1744,9 +1746,9 @@
 							]
 						},
 						{
-							"linkId": "materials/group/tipattach",
-							"text": "Tip Sheet Attachment",
-							"type": "url",
+							"linkId": "materials/group/tipdesc",
+							"text": "Tip Sheet Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/group/tip",
@@ -1871,9 +1873,9 @@
 							]
 						},
 						{
-							"linkId": "materials/public/announcementattach",
-							"text": "Announcement Attachment",
-							"type": "url",
+							"linkId": "materials/public/announcementdesc",
+							"text": "Announcement Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/public/announcement",
@@ -1913,9 +1915,9 @@
 							]
 						},
 						{
-							"linkId": "materials/public/pressattach",
-							"text": "Press Release Attachment",
-							"type": "url",
+							"linkId": "materials/public/pressdesc",
+							"text": "Press Release Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/public/press",
@@ -1955,9 +1957,9 @@
 							]
 						},
 						{
-							"linkId": "materials/public/solicitationattach",
-							"text": "Public Solicitation Attachment",
-							"type": "url",
+							"linkId": "materials/public/solicitationdesc",
+							"text": "Public Solicitation Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/public/solicitation",
@@ -1997,9 +1999,9 @@
 							]
 						},
 						{
-							"linkId": "materials/public/snowballattach",
-							"text": "Snowball Sampling Attachment",
-							"type": "url",
+							"linkId": "materials/public/snowballdesc",
+							"text": "Snowball Sampling Description",
+							"type": "text",
 							"enableWhen": [
 								{
 									"question": "materials/public/snowball",

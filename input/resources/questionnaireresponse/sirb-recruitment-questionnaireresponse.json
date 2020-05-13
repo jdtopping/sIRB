@@ -1,0 +1,203 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "sirb-recruitment-questionnaireresponse",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-29T16:30:31.794+00:00",
+		"source": "#oE9WSc3lKB6SaxGA",
+		"tag": [
+			{
+				"system": "https://your.system/doc_type",
+				"code": "non-medical",
+				"display": "Document Type"
+			},
+			{
+				"system": "https://your.system/doc_irb_num",
+				"code": "220742",
+				"display": "IRB Number"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
+	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-recruitment-questionnaire",
+	"status": "completed",
+	"item": [
+		{
+			"linkId": "study",
+			"text": "Research Study",
+			"item": [
+				{
+					"linkId": "study/name",
+					"text": "Name",
+					"answer": [
+						{
+							"valueString": "Comparison Chart Review of Pediatric Inpatients."
+						}
+					]
+				},
+				{
+					"linkId": "study/irbnum",
+					"text": "IRB Number",
+					"answer": [
+						{
+							"valueString": "220742"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "institution",
+			"text": "Institution",
+			"item": [
+				{
+					"linkId": "institution/name",
+					"text": "Name",
+					"answer": [
+						{
+							"valueString": "Ridgeview Research Facility"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "principal",
+			"text": "Principal Investigator",
+			"item": [
+				{
+					"linkId": "principal/fname",
+					"text": "First Name",
+					"answer": [
+						{
+							"valueString": "Nancy"
+						}
+					]
+				},
+				{
+					"linkId": "principal/lname",
+					"text": "Last Name",
+					"answer": [
+						{
+							"valueString": "Ford"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "materials",
+			"text": "Recruitment Materials",
+			"item": [
+				{
+					"linkId": "materials/usematerials",
+					"text": "Will Recruitment Materials be Utilized?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "materials/usebroadcast",
+					"text": "Will Broadcast Materials be Utilized?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "materials/useprinted",
+					"text": "Will Printed Materials be Utilized?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "materials/printed",
+					"text": "Printed Communication",
+					"item": [
+						{
+							"linkId": "materials/printed/brochure",
+							"text": "Brochure/Pamphlet",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "materials/usedirect",
+					"text": "Will Direct Communication Materials be Utilized?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "materials/direct",
+					"text": "Direct Communication",
+					"item": [
+						{
+							"linkId": "materials/direct/discussion",
+							"text": "In-Person Discussion",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "materials/usepublic",
+					"text": "Will Public Communication Materials be Utilized?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "materials/public",
+					"text": "Public Communication",
+					"item": [
+						{
+							"linkId": "materials/public/announcement",
+							"text": "Announcement",
+							"answer": [
+								{
+									"valueBoolean": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

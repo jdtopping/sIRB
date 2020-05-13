@@ -2,9 +2,9 @@
 	"resourceType": "PractitionerRole",
 	"id": "sirb-dl-ex-role-inv-rv",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:01.065+00:00",
-		"source": "#NnJY7tjeVJTpTLBB",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:25.762+00:00",
+		"source": "#0goML7QUD5jjy74C",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ridgeview Health System - Site Investigator</div>"
 	},
 	"practitioner": {
 		"reference": "Practitioner/sirb-dl-ex-prac-sb"

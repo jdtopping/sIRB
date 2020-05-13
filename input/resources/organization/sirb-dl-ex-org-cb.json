@@ -2,9 +2,9 @@
 	"resourceType": "Organization",
 	"id": "sirb-dl-ex-org-cb",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.885+00:00",
-		"source": "#7dAPO68WQUtz7UpT",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:04.479+00:00",
+		"source": "#PmxsyCkJ5q7bXEIG",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cambridge Pediatric Hospital</div>"
 	},
 	"identifier": [
 		{
@@ -30,5 +34,23 @@
 			]
 		}
 	],
-	"name": "Cambridge Pediatric Hospital"
+	"name": "Cambridge Pediatric Hospital",
+	"contact": [
+		{
+			"name": {
+				"use": "usual",
+				"family": "Lee",
+				"given": [
+					"Sarah"
+				]
+			},
+			"telecom": [
+				{
+					"system": "email",
+					"value": "slee@Cambridgepeds.edu",
+					"use": "work"
+				}
+			]
+		}
+	]
 }

@@ -2,9 +2,9 @@
 	"resourceType": "Practitioner",
 	"id": "sirb-dl-ex-prac-mj",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.871+00:00",
-		"source": "#Jf05qld0yBR6yuDq",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:15.014+00:00",
+		"source": "#oTZZsXnGZMl4Svh5",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mark Jessup</div>"
 	},
 	"name": [
 		{

@@ -1,0 +1,437 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "sirb-nonmedicalevents-questionnaireresponse",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-29T16:30:31.802+00:00",
+		"source": "#MxssY8U6Na9XH0VQ",
+		"tag": [
+			{
+				"system": "https://your.system/doc_type",
+				"code": "non-medical",
+				"display": "Document Type"
+			},
+			{
+				"system": "https://your.system/doc_irb_num",
+				"code": "220742",
+				"display": "IRB Number"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
+	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-nonmedicalevents-questionnaire",
+	"status": "completed",
+	"item": [
+		{
+			"linkId": "/study",
+			"text": "General Study Information",
+			"item": [
+				{
+					"linkId": "/study/title",
+					"text": "Title:",
+					"answer": [
+						{
+							"valueString": "Comparison Chart Review of Pediatric Inpatients."
+						}
+					]
+				},
+				{
+					"linkId": "/study/irb",
+					"text": "IRB Number:",
+					"answer": [
+						{
+							"valueString": "220742"
+						}
+					]
+				},
+				{
+					"linkId": "/study/status",
+					"text": "Status:",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "nochange",
+								"display": "No change in research activities"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/pi",
+			"text": "Principal Investigator",
+			"item": [
+				{
+					"linkId": "/pi/name",
+					"text": "Name:",
+					"answer": [
+						{
+							"valueString": "Nancy Ford"
+						}
+					]
+				},
+				{
+					"linkId": "/pi/phone",
+					"text": "Telephone:",
+					"answer": [
+						{
+							"valueString": "555-555-5555"
+						}
+					]
+				},
+				{
+					"linkId": "/pi/email",
+					"text": "Email:",
+					"answer": [
+						{
+							"valueString": "nancy.ford@place.org"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/report",
+			"text": "Report",
+			"item": [
+				{
+					"linkId": "/report/date",
+					"text": "Report Date:",
+					"answer": [
+						{
+							"valueDate": "2020-04-27"
+						}
+					]
+				},
+				{
+					"linkId": "/report/type",
+					"text": "Type:",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "internal",
+								"display": "Internal"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/report/status",
+					"text": "Status:",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "initial",
+								"display": "Initial"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/report/new_check",
+					"text": "New information indiciation unexpected change to the risks of the research.",
+					"answer": [
+						{
+							"valueBoolean": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/event_check",
+					"text": "Unanticipated Problem Involving Risk to Subjects or Others",
+					"answer": [
+						{
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "/report/event",
+					"text": "Unanticipated Problem",
+					"item": [
+						{
+							"linkId": "/report/event/date",
+							"text": "Event date:",
+							"answer": [
+								{
+									"valueDate": "2020-04-08"
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/realized",
+							"text": "Date event was realized by PI or team:",
+							"answer": [
+								{
+									"valueDate": "2020-04-24"
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/summary",
+							"text": "Event Summary:",
+							"answer": [
+								{
+									"valueString": "Details include..."
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/unexpected",
+							"text": "Was this event Unexpected?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/unexpected_explain",
+							"text": "If yes, please explain:",
+							"answer": [
+								{
+									"valueString": "It was unexpected because..."
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/related",
+							"text": "Was this event Related or Possibly Related to participation in the research?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/related_explain",
+							"text": "If yes, please explain:",
+							"answer": [
+								{
+									"valueString": "It was related to research because..."
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/risk",
+							"text": "Does this event suggest that the research places subject(s) or others at a greater Risk of harm than was previously known?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "/report/event/risk_explain",
+							"text": "If yes, please explain:",
+							"answer": [
+								{
+									"valueString": "The subject is at greater risk because..."
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "/report/deviation_check",
+					"text": "Protocol Deviation (accidential or unitentional)",
+					"answer": [
+						{
+							"valueBoolean": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/confidentiality_check",
+					"text": "A breach of Confidentiality",
+					"answer": [
+						{
+							"valueBoolean": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/incarceration_check",
+					"text": "Incarceration of a subject in a protocol not approved to enroll prisoners",
+					"answer": [
+						{
+							"valueBoolean": false
+						}
+					]
+				},
+				{
+					"linkId": "/report/complaint_check",
+					"text": "Complaint of a subject indicating unexpected risks or cannot be resolved by team.",
+					"answer": [
+						{
+							"valueBoolean": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/reporting",
+			"text": "Reporting",
+			"item": [
+				{
+					"linkId": "/reporting/sponsor",
+					"text": "Was the Sponsor notified?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/reporting/sponsor_date",
+					"text": "Notification date:",
+					"answer": [
+						{
+							"valueDate": "2020-04-24"
+						}
+					]
+				},
+				{
+					"linkId": "/reporting/irb",
+					"text": "Was the IRB notified?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/reporting/irb_date",
+					"text": "Notification date:",
+					"answer": [
+						{
+							"valueDate": "2020-04-24"
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/action",
+			"text": "Corrective and Preventative Action Plan",
+			"item": [
+				{
+					"linkId": "/action/root",
+					"text": "Was a Root Cause analysis performed?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "no",
+								"display": "No"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/correction",
+					"text": "Was Corrective Action implemented?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "pending",
+								"display": "Pending - Currently under development"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/prevention",
+					"text": "Was Preventitive Action implemented?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/action/prevention_summary",
+					"text": "If yes, provide a summary:",
+					"answer": [
+						{
+							"valueString": "Preventative actions include...."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/change",
+			"text": "Study Protocol and Informed Consent",
+			"item": [
+				{
+					"linkId": "/change/study",
+					"text": "Are changes required to the Study Protocol as a result of this report?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/consent",
+					"text": "Are changes required to the Informed Consent as a result of this report?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/notify",
+					"text": "Are notifications or re-consenting of subjects required as a result of this change?",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "yes",
+								"display": "Yes"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/change/notify_explain",
+					"text": "If yes, detail how the notification and/or re-consent will occur:",
+					"answer": [
+						{
+							"valueString": "Changes will occur...."
+						}
+					]
+				}
+			]
+		}
+	]
+}

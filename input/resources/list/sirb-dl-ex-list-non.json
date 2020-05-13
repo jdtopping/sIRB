@@ -2,9 +2,9 @@
 	"resourceType": "List",
 	"id": "sirb-dl-ex-list-non",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.885+00:00",
-		"source": "#s8Zl8plUMMkgUZI9",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:38:52.617+00:00",
+		"source": "#avjQoLQA4zEKMhP3",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
 		],
@@ -16,7 +16,18 @@
 			}
 		]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Non-Reliant IRB List</div>"
+	},
 	"status": "current",
 	"mode": "working",
-	"title": "Non-Reliant IRB List"
+	"title": "Non-Reliant IRB List",
+	"entry": [
+		{
+			"item": {
+				"reference": "Organization/sirb-dl-ex-org-usc"
+			}
+		}
+	]
 }

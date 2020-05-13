@@ -1,0 +1,27 @@
+{
+	"resourceType": "Subscription",
+	"id": "sirb-dl2-subscription",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-04-29T17:17:19.387+00:00",
+		"tag": [
+			{
+				"system": "http://hapifhir.io/fhir/StructureDefinition/subscription-matching-strategy",
+				"code": "DATABASE",
+				"display": "Database"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p/></div>"
+	},
+	"status": "active",
+	"reason": "Monitor new Determination Letter Bundles",
+	"criteria": "Questionnaire?_tag=https://your.system/doc_type|Determination",
+	"channel": {
+		"type": "rest-hook",
+		"endpoint": "https://your.system-webapp/api/save-document",
+		"payload": "application/xml"
+	}
+}

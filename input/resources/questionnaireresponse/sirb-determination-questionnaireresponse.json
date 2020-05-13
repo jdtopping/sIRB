@@ -1,0 +1,242 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "sirb-determination-questionnaireresponse",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-04-29T16:30:31.777+00:00",
+		"source": "#0xYEWXpO8N7OjOek",
+		"tag": [
+			{
+				"system": "https://your.system/doc_type",
+				"code": "Determination",
+				"display": "Document Type"
+			},
+			{
+				"system": "https://your.system/doc_irb_num",
+				"code": "220742",
+				"display": "IRB Number"
+			}
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p/>\n    </div>"
+	},
+	"questionnaire": "http://hl7.org/fhir/us/sirb/Questionnaire/sirb-determination-questionnaire",
+	"status": "completed",
+	"item": [
+		{
+			"linkId": "/study",
+			"text": "Research Study",
+			"item": [
+				{
+					"linkId": "/study/irb",
+					"text": "IRB #",
+					"answer": [
+						{
+							"valueString": "220742"
+						}
+					]
+				},
+				{
+					"linkId": "/study/title",
+					"text": "Title",
+					"answer": [
+						{
+							"valueString": "Comparison Chart Review of Pediatric Inpatients."
+						}
+					]
+				}
+			]
+		},
+		{
+			"linkId": "/reliance",
+			"text": "Reliance Determination",
+			"item": [
+				{
+					"linkId": "/reliance/reviewing",
+					"text": "Reviewing IRB",
+					"item": [
+						{
+							"linkId": "/reliance/reviewing/institution",
+							"text": "Institution",
+							"item": [
+								{
+									"linkId": "/reliance/reviewing/institution/name",
+									"text": "Name",
+									"answer": [
+										{
+											"valueString": "Ridgeview Research Facility"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/reviewing/institution/fwa",
+									"text": "Federal Wide Assurance (FWA):",
+									"answer": [
+										{
+											"valueString": "FWA0000005"
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "/reliance/reviewing/poc",
+							"text": "Point of Contact",
+							"item": [
+								{
+									"linkId": "/reliance/reviewing/poc/first",
+									"text": "First Name",
+									"answer": [
+										{
+											"valueString": "IRB"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/reviewing/poc/last",
+									"text": "Last Name",
+									"answer": [
+										{
+											"valueString": "Office"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/reviewing/poc/email",
+									"text": "Email",
+									"answer": [
+										{
+											"valueString": "irb_office@ridgeview.org"
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "/reliance/reviewing/investigator",
+							"text": "Site Investigator",
+							"item": [
+								{
+									"linkId": "/reliance/reviewing/investigator/first",
+									"text": "First Name",
+									"answer": [
+										{
+											"valueString": "Nancy"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/reviewing/investigator/last",
+									"text": "Last Name",
+									"answer": [
+										{
+											"valueString": "Ford"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/reviewing/investigator/email",
+									"text": "Email",
+									"answer": [
+										{
+											"valueString": "nford@ridgeview.org"
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "/reliance/reviewing/same",
+							"text": "Overall PI same as Site Investigator?",
+							"answer": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "/reliance/decision",
+					"text": "Determination Decision",
+					"answer": [
+						{
+							"valueCoding": {
+								"code": "acceptreview",
+								"display": "Accepts Review"
+							}
+						}
+					]
+				},
+				{
+					"linkId": "/reliance/relying",
+					"text": "Relying IRB",
+					"item": [
+						{
+							"linkId": "/reliance/relying/institution",
+							"text": "Institution",
+							"item": [
+								{
+									"linkId": "/reliance/relying/institution/name",
+									"text": "Name",
+									"answer": [
+										{
+											"valueString": "Anderson-McCoy University"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/relying/institution/fwa",
+									"text": "Federal Wide Assurance (FWA)",
+									"answer": [
+										{
+											"valueString": "FWA0000018"
+										}
+									]
+								}
+							]
+						},
+						{
+							"linkId": "/reliance/relying/investigator",
+							"text": "Site Investigator",
+							"item": [
+								{
+									"linkId": "/reliance/relying/investigator/first",
+									"text": "First Name",
+									"answer": [
+										{
+											"valueString": "Akash"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/relying/investigator/last",
+									"text": "Last Name",
+									"answer": [
+										{
+											"valueString": "Reddy"
+										}
+									]
+								},
+								{
+									"linkId": "/reliance/relying/investigator/email",
+									"text": "Email",
+									"answer": [
+										{
+											"valueString": "areddy@mccoy.edu"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

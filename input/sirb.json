@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "95",
-		"lastUpdated": "2020-04-16T13:16:31.304+00:00",
-		"source": "#CU558kCjkRFQEjXO"
+		"versionId": "169",
+		"lastUpdated": "2020-05-07T04:16:12.972+00:00",
+		"source": "#1qfmIp9QdKPsFpAi"
 	},
 	"contained": [],
 	"extension": [],
@@ -24,7 +24,7 @@
 			]
 		}
 	],
-	"description": "Data standards to move data and documents from clinical research sites to a single ethics review board in support of the \"NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Researchs\n\n### Background\nLaunching a multi-site clinical study is frequently a long and involved process that can delay the development of potentially effective clinical treatment. Ethics review and approval processes conducted by IRBs have been cited as a major contributor to delays in initiating multi-site studies. In response, the set of federal regulations for human-subjects research (Common Rule, 45 CFR Part 46.114) was revised with a requirement that a single IRB be named when multiple sites are using the same protocol. Rather than each site waiting for approval of a study by its local IRB before enrolling subjects, a single IRB review will expedite approval and improve the timeline for study initiation and completion. Researchers commented about the redundancy of effort, additional costs, and administrative burdens that often lead to delays and imbalances in enrollment of research participants in multi-site clinical studies. The burden of tasks related to IRB approval, which most frequently must be completed manually at multiple clinical investigational sites, can also adversely impact site data quality and sustainability.\n\n### Significance\nIn lieu of ad hoc transfers of PDFs and other document formats via email or online submission, this project utilizes FHIR based standards to facilitate document exchange. A standards enabled process leveraged by software has the potential to significantly decrease the extensive manual tasks that have become associated with using a single IRB system. This use of FHIR standards to meet the need for an efficient exchange of data and documents will improve the operational efficiency. \n\n<table><tr><td><img src=\"sIRB IG diagram.jpg\" /></td></tr></table>\n\n### Coverage\nThis Implementation guide covers the IRB Determination Letter, Study Protocol, and Consent templates. It will be expanded with the completion of other templates associated with the sIRB approval process when completed.\n\n### Dependencies\nThese standards were developed based upon the [R4](http://hl7.org/fhir/R4/) FHIR version.\n\n[Profiles](file:///C:/SIRB/GitHubLinked/output/artifacts.html)\n",
+	"description": "Data standards to move data and documents from clinical research sites to a single ethics review board in support of the \"NIH Policy on the Use of a Single Institutional Review Board for Multi-Site Researches\n\n# Background\nLaunching a multi-site clinical study is frequently a long and involved process that can delay the development of potentially effective clinical treatment. Ethics review and approval processes conducted by IRBs have been cited as a major contributor to delays in initiating multi-site studies. In response, the set of federal regulations for human-subjects research (Common Rule, 45 CFR Part 46.114) was revised with a requirement that a single IRB be named when multiple sites are using the same protocol. Rather than each site waiting for approval of a study by its local IRB before enrolling subjects, a single IRB review will expedite approval and improve the timeline for study initiation and completion. Researchers commented about the redundancy of effort, additional costs, and administrative burdens that often lead to delays and imbalances in enrollment of research participants in multi-site clinical studies. The burden of tasks related to IRB approval, which most frequently must be completed manually at multiple clinical investigational sites, can also adversely impact site data quality and sustainability.\n\n# Significance\nIn lieu of ad hoc transfers of PDFs and other document formats via email or online submission, this project utilizes FHIR based standards to facilitate document exchange. A standards enabled process leveraged by software has the potential to significantly decrease the extensive manual tasks that have become associated with using a single IRB system. This use of FHIR standards to meet the need for an efficient exchange of data and documents will improve the operational efficiency. \n\n# Coverage\nThis Implementation guide covers the IRB Determination Letter, Study Protocol, and Consent templates. It will be expanded with the completion of other templates associated with the sIRB approval process when completed.\n\n# Scope\nThe sIRB implementation guide deals with creation and exchange of standardized sIRB forms and form responses using FHIR questionnaire and questionnaire response resources. The questionnaires may have nested structures and embed skip/branching logics to display appropriate questions based on previous answers. Pre population of questionnaire forms and extraction of data elements/resources from questionnaire responses is out of scope for the current version of sIRB implementation guide; these functionalities can be incorporated into your specific implementation by referring to Structure Data Capture (SDC) implementation guide.\n\n# Assumptions\nThe implementation guide assumes that the implementer has or will have a capability to send, receive, render and display FHIR questionnaires and questionnaire responses. Implements may consider using free software such as NLM's FHIR Questionnaire rendering tool or design their own. Exchange of resources can be achieved by any of the FHIR messaging mechanisms. Please refer to FHIR standard documentation, open source implementations of FHIR specifications, and FHIR Messaging for additional information. \n\n# Actors\n1. Form Author/Editor: A system or organization who is responsible for creating, updating and deprecating the standardized sIRB forms such as Determination Letter, Protocol, Consent, Adverse Event, Recruitment Materials, and Continuous Review\n2. sIRB Form Repository: A form repository that stores standardized sIRB forms. IRB systems will request form templates from this repository.\n4. Central IRB Application: An IRB software system that a PI access to complete and submit the standardized forms.\n5. Relying IRB Application: An IRB software that receives and renders completed and approved forms by the central IRB.\n6. Principal Investigator/Practitioner: A person who is authorized to initiate a research study by completing the research protocol form.\n\n\n# Workflow Overview\n\nIn the workflow outlined below, a Central IRB system requests one of the standardized sIRB questionnaires forms forms from Repository as a form of a questionnaire resource. The central IRB system receives the questionnaire response resource and renders/displays it to the Principal Investigator-PI (user). The PI enters and submits responses applicable to the selected standardized sIRB form. The submitted responses will be saved as questionnaire response resources on the Central IRB's FHIR server. The Central IRB will serve as a single source of truth for IRB Documents. The relying IRB system will send a RESTful request or implement a subscription resource to get most recent forms from the central IRB's FHIR server.\n\n<table><tr><td><img src=\"sIRB IG diagram.jpg\" /></td></tr></table>\n\n\n\n\n# Dependencies\nThese standards were developed based upon the [R4](http://hl7.org/fhir/R4/) FHIR version.\n\n[Profiles](file:///C:/SIRB/GitHubLinked/output/artifacts.html)\n",
 	"packageId": "hl7.fhir.us.sirb",
 	"fhirVersion": [
 		"4.0.1"
@@ -35,22 +35,16 @@
 			"uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
 			"packageId": "hl7.fhir.us.core",
 			"version": "current"
-		},
-		{
-			"extension": [],
-			"uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.us.sdc",
-			"packageId": "hl7.fhir.uv.sdc",
-			"version": "current"
 		}
 	],
 	"definition": {
 		"grouping": [
 			{
-				"id": "new-group1",
+				"id": "questionnaire-group",
 				"name": "Questionnaires"
 			},
 			{
-				"id": "new-group2",
+				"id": "response-group",
 				"name": "Questionnaire Responses"
 			}
 		],
@@ -64,7 +58,7 @@
 				"name": "Protocol Questionnaire",
 				"description": "A list of study protocol related questions that will need to be completed by a principal investigator and submitted to single IRB.",
 				"exampleBoolean": true,
-				"groupingId": "new-group1"
+				"groupingId": "questionnaire-group"
 			},
 			{
 				"extension": [],
@@ -73,233 +67,31 @@
 					"display": "Consent questionnaire"
 				},
 				"name": "Consent Questionnaire",
-				"description": "A list of questions that will need to be completed by a principal investigator to generate an informed consent document. This consecent document will then be submitted to a single IRB.",
+				"description": "A list of questions that will need to be completed by a principal investigator to generate an informed consent document. This consent document will then be submitted to a single IRB.",
 				"exampleBoolean": true,
-				"groupingId": "new-group1"
+				"groupingId": "questionnaire-group"
 			},
 			{
 				"extension": [],
 				"reference": {
-					"reference": "QuestionnaireResponse/sirb-consent-response"
+					"reference": "QuestionnaireResponse/sirb-consent-response",
+					"display": "Consent Questionnaire Response"
 				},
 				"name": "Consent Questionnaire Response",
 				"description": "A completed study consent form questionnaire.",
 				"exampleBoolean": true,
-				"groupingId": "new-group2"
+				"groupingId": "response-group"
 			},
 			{
 				"extension": [],
 				"reference": {
-					"reference": "QuestionnaireResponse/sirb-protocol-response"
+					"reference": "QuestionnaireResponse/sirb-protocol-response",
+					"display": "Protocol Questionnaire Response"
 				},
 				"name": "Protocol Questionnaire Response",
 				"description": "A completed study protocol form questionnaire.",
 				"exampleBoolean": true,
-				"groupingId": "new-group2"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Composition/sirb-dl-ex-composition-irex",
-					"display": "Determination Letter Composition - IREX"
-				},
-				"name": "Determination Letter Composition - IREX",
-				"description": "A Single IRB Reliance Letter generated by IREX IRB system",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Composition/sirb-dl-ex-composition-smart",
-					"display": "Determination Letter Composition - SMARTIRB"
-				},
-				"name": "Determination Letter Composition - SMARTIRB",
-				"description": "A Single IRB Reliance Letter generated by SMART IRB system.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "List/sirb-dl-ex-list-non",
-					"display": "Non-Reliant IRB List"
-				},
-				"name": "Non-Reliant IRB List",
-				"description": "List of non-reliant institutions.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "List/sirb-dl-ex-list-rel",
-					"display": "Reliant IRB List"
-				},
-				"name": "Reliant IRB List",
-				"description": "List of reliant IRBs",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Organization/sirb-dl-ex-org-cb",
-					"display": "Cambridge Pediatric Hospital"
-				},
-				"name": "Cambridge Pediatric Hospital",
-				"description": "Institution where a research takes place.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Organization/sirb-dl-ex-org-gg",
-					"display": "Golden Gate Medical Center"
-				},
-				"name": "Golden Gate Medical Center",
-				"description": "Institution where a research takes place.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Organization/sirb-dl-ex-org-rv",
-					"display": "Ridgeview Health System"
-				},
-				"name": "Ridgeview Health System",
-				"description": "Institution where a research takes place.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Organization/sirb-dl-ex-org-usc",
-					"display": "University of Southern Coast"
-				},
-				"name": "University of Southern Coast",
-				"description": "Institution where a research takes place.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "ResearchStudy/sirb-dl-ex-study-mmr",
-					"display": "Longitudinal study of MMR vaccination in patients born from 1980-2018"
-				},
-				"name": "Longitudinal study of MMR vaccination in patients born from 1980-2018",
-				"description": "Relevant information about the research study.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-composition",
-					"display": "sIRB - Determination Letter - Composition"
-				},
-				"name": "Determination Letter - Composition",
-				"description": "This is a sIRB reliance agreement letter.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-list",
-					"display": "sIRB - Determination Letter - List"
-				},
-				"name": "Determination Letter - List",
-				"description": "List of relying institutions who gave the protocol review authority to single IRB.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-organization",
-					"display": "sIRB - Determination Letter - Organization"
-				},
-				"name": "Determination Letter - Organization",
-				"description": "Institution that is responsible for reviewing sIRB.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-practitioner",
-					"display": "sIRB - Determination Letter - Practitioner"
-				},
-				"name": "Determination Letter - Practitioner",
-				"description": "Single IRB Principal Investigator.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-practitionerrole",
-					"display": "sIRB - Determination Letter - PractitionerRole"
-				},
-				"name": "Determination Letter - PractitionerRole",
-				"description": "Principal Investigator role.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "StructureDefinition/sirb-dl-researchstudy",
-					"display": "sIRB - Determination Letter - ResearchStudy"
-				},
-				"name": "Determination Letter - ResearchStudy",
-				"description": "Relevant information about the research study.",
-				"exampleBoolean": false
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Practitioner/sirb-dl-ex-prac-cw"
-				},
-				"name": "Practitioner Corey Warren",
-				"description": "Research Study Principal Investigator.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Practitioner/sirb-dl-ex-prac-mj"
-				},
-				"name": "Practitioner Mark Jessup",
-				"description": "Research Study Principal Investigator.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Practitioner/sirb-dl-ex-prac-sb"
-				},
-				"name": "Practitioner Samantha Bard",
-				"description": "Research Study Principal Investigator.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "PractitionerRole/sirb-dl-ex-role-inv-cb"
-				},
-				"name": "Practitioner Role - Site Investigator, Cambridge Pediatric Hospital ",
-				"description": "Site Investigator Role.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg"
-				},
-				"name": "Practitioner Role - Site Investigator, Golden Gate Medical Center",
-				"description": "Site Investigator Role.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "PractitionerRole/sirb-dl-ex-role-inv-rv"
-				},
-				"name": "Practitioner Role- Site Investigator, Ridgeview Medical Center",
-				"description": "Site Investigator Role.",
-				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+				"groupingId": "response-group"
 			},
 			{
 				"extension": [],
@@ -310,59 +102,348 @@
 				"name": "Adverse Event Questionnaire",
 				"description": "Adverse Event reporting form for medical events.",
 				"exampleBoolean": true,
-				"groupingId": "new-group1"
+				"groupingId": "questionnaire-group"
 			},
 			{
+				"extension": [],
 				"reference": {
 					"reference": "CodeSystem/sirb-rm-codesystem",
 					"display": "Recruitment_materials_codesystem"
 				},
-				"name": "Recruitment_materials_codesystem",
-				"exampleBoolean": false,
-				"description": "Code System providing a list of Study recruitment material categories and items."
+				"name": "Recruitment Materials Codesystem",
+				"description": "Code System for Recruitment Materials",
+				"exampleBoolean": false
 			},
 			{
 				"extension": [],
 				"reference": {
 					"reference": "Questionnaire/sirb-recruitment-questionnaire",
-					"display": "Recruitment Materials"
+					"display": "Recruitment Materials Questionnaire"
 				},
 				"name": "Recruitment Materials Questionnaire",
 				"description": "Reporting form for Recruitment Materials.",
 				"exampleBoolean": true,
-				"groupingId": "new-group1"
+				"groupingId": "questionnaire-group"
 			},
 			{
 				"extension": [],
 				"reference": {
-					"reference": "Questionnaire/sirb-review-questionnaire",
-					"display": "Continuing Review"
-				},
-				"name": "Continuing Review Questionnaire",
-				"description": "Reporting form for Continuing Review.",
-				"exampleBoolean": true,
-				"groupingId": "new-group1"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "QuestionnaireResponse/sirb-adverse-event-response"
+					"reference": "QuestionnaireResponse/sirb-adverse-event-response",
+					"display": "Medical Adverse Event Response"
 				},
 				"name": "Medical Adverse Event Response",
 				"description": "Completed Adverse Event reporting form for medical events.",
 				"exampleBoolean": true,
-				"groupingId": "new-group2"
+				"groupingId": "response-group"
 			},
 			{
 				"extension": [],
 				"reference": {
-					"reference": "Questionnaire/sirb-non-medical-events-questionnaire",
-					"display": "NonMedical Events"
+					"reference": "Questionnaire/sirb-determination-questionnaire",
+					"display": "Determination Letter Questionnaire"
 				},
-				"name": "Non-Medical Event Questionnaire",
-				"description": "Event reporting form for non-medical events.",
+				"name": "Determination Letter Questionnaire",
+				"description": "Reporting form for a Determination Letter",
 				"exampleBoolean": true,
-				"groupingId": "new-group1"
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-continuingreview-questionnaire",
+					"display": "Continuing Review Questionnaire"
+				},
+				"name": "Continuing Review Questionnaire",
+				"description": "Reporting form for Continuing Review.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Questionnaire/sirb-nonmedicalevents-questionnaire",
+					"display": "Non-Medical Events Questionnaire"
+				},
+				"name": "Non-Medical Events Questionnaire",
+				"description": "Reporting form for Non-Medical Events.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-continuingreview-questionnaireresponse",
+					"display": "Continuing Review Response"
+				},
+				"name": "Continuing Review Response",
+				"description": "A completed continuing review form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-recruitment-questionnaireresponse",
+					"display": "Recruitment Materials Response"
+				},
+				"name": "Recruitment Materials Response",
+				"description": "A completed recruitment materials form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-determination-questionnaireresponse",
+					"display": "Determination Letter Response"
+				},
+				"name": "Determination Letter Response",
+				"description": "A completed determination letter form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "QuestionnaireResponse/sirb-nonmedicalevents-questionnaireresponse",
+					"display": "Non-Medical Events Response"
+				},
+				"name": "Non-Medical Events Response",
+				"description": "A completed non-medical events form questionnaire.",
+				"exampleBoolean": true,
+				"groupingId": "response-group"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitionerrole",
+					"display": "sIRB - Determination Letter - PractitionerRole"
+				},
+				"name": "sIRB - Determination Letter - PractitionerRole",
+				"description": "Profile for PractitionerRole in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-list",
+					"display": "sIRB - Determination Letter - List"
+				},
+				"name": "sIRB - Determination Letter - List",
+				"description": "Profile for List in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-researchstudy",
+					"display": "sIRB - Determination Letter - ResearchStudy"
+				},
+				"name": "sIRB - Determination Letter - ResearchStudy",
+				"description": "Profile for ResearchStudy in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-composition",
+					"display": "sIRB - Determination Letter - Composition"
+				},
+				"name": "sIRB - Determination Letter - Composition",
+				"description": "Profile for Composition in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-practitioner",
+					"display": "sIRB - Determination Letter - Practitioner"
+				},
+				"name": "sIRB - Determination Letter - Practitioner",
+				"description": "Profile for Practitioner in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "StructureDefinition/sirb-dl-organization",
+					"display": "sIRB - Determination Letter - Organization"
+				},
+				"name": "sIRB - Determination Letter - Organization",
+				"description": "Profile for Organization in the Determination Letter.",
+				"exampleBoolean": false
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-irex-220742",
+					"display": "Composition Example - Determination Letter - IREX"
+				},
+				"name": "Composition Example - Determination Letter - IREX",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Composition/sirb-dl-ex-composition-smart-220742",
+					"display": "Composition Example - Determination Letter - SMARTIRB"
+				},
+				"name": "Composition Example - Determination Letter - SMARTIRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-composition"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-non",
+					"display": "List Example - Non-Reliant IRB"
+				},
+				"name": "List Example - Non-Reliant IRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "List/sirb-dl-ex-list-rel",
+					"display": "List Example - Reliant IRB"
+				},
+				"name": "List Example - Reliant IRB",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-list"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-gg",
+					"display": "Organization Example - Golden Gate Medical Center"
+				},
+				"name": "Organization Example - Golden Gate Medical Center",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-usc",
+					"display": "Organization Example - University of Southern Coast"
+				},
+				"name": "Organization Example - University of Southern Coast",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-rv",
+					"display": "Organization Example - Ridgeview Health System"
+				},
+				"name": "Organization Example - Ridgeview Health System",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Organization/sirb-dl-ex-org-cb",
+					"display": "Organization Example - Cambridge Pediatric Hospital"
+				},
+				"name": "Organization Example - Cambridge Pediatric Hospital",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-mj",
+					"display": "Practitioner Example - Mark Jessup"
+				},
+				"name": "Practitioner Example - Mark Jessup",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-sb",
+					"display": "Practitioner Example - Samantha Bard"
+				},
+				"name": "Practitioner Example - Samantha Bard",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "Practitioner/sirb-dl-ex-prac-cw",
+					"display": "Practitioner Example - Corey Warren"
+				},
+				"name": "Practitioner Example - Corey Warren",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-cb",
+					"display": "PractitionerRole Example - Cambridge Pediatric Hospital - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Cambridge Pediatric Hospital - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-rv",
+					"display": "PractitionerRole Example - Ridgeview Health System - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Ridgeview Health System - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "PractitionerRole/sirb-dl-ex-role-inv-gg",
+					"display": "PractitionerRole Example - Golden Gate Medical Center - Site Investigator"
+				},
+				"name": "PractitionerRole Example - Golden Gate Medical Center - Site Investigator",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitionerrole"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "ResearchStudy/sirb-dl-ex-study-mmr",
+					"display": "Research Study Example - Study 01"
+				},
+				"name": "Research Study Example - Study 01",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
+			},
+			{
+				"extension": [],
+				"reference": {
+					"reference": "ResearchStudy/sirb-dl-ex-study-ph2",
+					"display": "Research Study Example - Study 02"
+				},
+				"name": "Research Study Example - Study 02",
+				"exampleCanonical": "http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-dl-subscription"
+				},
+				"name": "Subscription Example - Determination Letter Bundle",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-dl2-subscription"
+				},
+				"name": "Subscription Example - Determination Letter Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-cs-subscription"
+				},
+				"name": "Subscription Example - Consent Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Subscription/sirb-pr-subscription"
+				},
+				"name": "Subscription Example - Protocol Questionnaire",
+				"exampleBoolean": true
 			}
 		],
 		"page": {
@@ -371,8 +452,7 @@
 			"generation": "markdown",
 			"page": [
 				{
-					"nameUrl": "toc.md",
-					"title": "Table of Contents",
+					"title": "Standardized sIRB Questionnaire Forms",
 					"generation": "generated",
 					"page": [
 						{
@@ -383,9 +463,9 @@
 						},
 						{
 							"extension": [],
-							"title": "Recruitment",
+							"title": "Recruitment Materials",
 							"generation": "markdown",
-							"nameUrl": "Recruitment.html"
+							"nameUrl": "RecruitmentMaterials.html"
 						},
 						{
 							"extension": [],
@@ -423,7 +503,8 @@
 							"generation": "markdown",
 							"nameUrl": "Downloads.html"
 						}
-					]
+					],
+					"nameUrl": "StandardizedsIRBQuestionnaireForms.html"
 				}
 			]
 		},

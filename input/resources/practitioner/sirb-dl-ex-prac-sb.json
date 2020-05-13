@@ -2,9 +2,9 @@
 	"resourceType": "Practitioner",
 	"id": "sirb-dl-ex-prac-sb",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:01.047+00:00",
-		"source": "#bvsYv8d15J75JH9W",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:15.015+00:00",
+		"source": "#7lKISnnj6VwLQ7Lj",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Samantha Bard</div>"
 	},
 	"name": [
 		{

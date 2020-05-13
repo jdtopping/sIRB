@@ -2,9 +2,9 @@
 	"resourceType": "Organization",
 	"id": "sirb-dl-ex-org-rv",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.947+00:00",
-		"source": "#LBCTuHUg9emjqugP",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:04.479+00:00",
+		"source": "#tZypdgRNIPLhsE16",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-organization"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ridgeview Health System</div>"
 	},
 	"identifier": [
 		{

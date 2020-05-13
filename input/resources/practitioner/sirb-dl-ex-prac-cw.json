@@ -2,9 +2,9 @@
 	"resourceType": "Practitioner",
 	"id": "sirb-dl-ex-prac-cw",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:00.872+00:00",
-		"source": "#THmXkLy8QQOiQrqN",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:15.015+00:00",
+		"source": "#u0xQoEJZN19vlbUY",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-practitioner"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Corey Warren</div>"
 	},
 	"name": [
 		{

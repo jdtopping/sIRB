@@ -2,9 +2,9 @@
 	"resourceType": "CodeSystem",
 	"id": "sirb-rm-codesystem",
 	"meta": {
-		"versionId": "7",
-		"lastUpdated": "2020-04-07T02:16:56.584+00:00",
-		"source": "#M9gsyWAPnp4kkbSL",
+		"versionId": "10",
+		"lastUpdated": "2020-04-29T14:08:49.835+00:00",
+		"source": "#STaohWOg9xw0bGfW",
 		"profile": [
 			"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 		]
@@ -15,7 +15,8 @@
 	},
 	"url": "http://hl7.org/fhir/CodeSystem/recruitment",
 	"version": "0.1.0",
-	"name": "Recruitment_materials_codesystem",
+	"name": "Recruitment Materials Codesystem",
+	"title": "Recruitment Materials Codesystem",
 	"status": "draft",
 	"experimental": false,
 	"publisher": "UAMS",
@@ -228,6 +229,5 @@
 				}
 			]
 		}
-	],
-	"title": "Recruitment_materials_codesystem"
+	]
 }

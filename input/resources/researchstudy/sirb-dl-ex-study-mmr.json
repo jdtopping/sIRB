@@ -2,9 +2,9 @@
 	"resourceType": "ResearchStudy",
 	"id": "sirb-dl-ex-study-mmr",
 	"meta": {
-		"versionId": "4",
-		"lastUpdated": "2020-04-03T18:53:01.019+00:00",
-		"source": "#Q11NnKbC1ZPbUD8s",
+		"versionId": "5",
+		"lastUpdated": "2020-04-29T16:39:39.529+00:00",
+		"source": "#RqPnsX432RXrMwaK",
 		"profile": [
 			"http://hl7.org/fhir/us/sirb/StructureDefinition/sirb-dl-researchstudy"
 		],
@@ -15,6 +15,10 @@
 				"display": "Resource encoded in summary mode"
 			}
 		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Longitudinal study of MMR vaccination in patients born from 1980-2018</div>"
 	},
 	"identifier": [
 		{
