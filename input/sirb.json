@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "169",
-		"lastUpdated": "2020-05-07T04:16:12.972+00:00",
-		"source": "#1qfmIp9QdKPsFpAi"
+		"versionId": "175",
+		"lastUpdated": "2020-05-15T01:41:40.961+00:00",
+		"source": "#3F3L1eS0JAKYFoa3"
 	},
 	"contained": [],
 	"extension": [],
@@ -57,17 +57,6 @@
 				},
 				"name": "Protocol Questionnaire",
 				"description": "A list of study protocol related questions that will need to be completed by a principal investigator and submitted to single IRB.",
-				"exampleBoolean": true,
-				"groupingId": "questionnaire-group"
-			},
-			{
-				"extension": [],
-				"reference": {
-					"reference": "Questionnaire/sirb-consent-questionnaire",
-					"display": "Consent questionnaire"
-				},
-				"name": "Consent Questionnaire",
-				"description": "A list of questions that will need to be completed by a principal investigator to generate an informed consent document. This consent document will then be submitted to a single IRB.",
 				"exampleBoolean": true,
 				"groupingId": "questionnaire-group"
 			},
@@ -443,6 +432,14 @@
 					"reference": "Subscription/sirb-pr-subscription"
 				},
 				"name": "Subscription Example - Protocol Questionnaire",
+				"exampleBoolean": true
+			},
+			{
+				"reference": {
+					"reference": "Questionnaire/sirb-consent-questionnaire",
+					"display": "Consent_questionnaire"
+				},
+				"name": "Consent Questionnaire",
 				"exampleBoolean": true
 			}
 		],
