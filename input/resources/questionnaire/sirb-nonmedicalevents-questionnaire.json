@@ -65,19 +65,19 @@
 						{
 							"valueCoding": {
 								"code": "stopped",
-								"display": "All research activities temporarily and voluntarily stopped for all subjects"
+								"display": "All research activities temporarily and voluntarily stopped for all participants"
 							}
 						},
 						{
 							"valueCoding": {
 								"code": "partial",
-								"display": "Partial voluntary hold on some research activities for all subjects (explain below)"
+								"display": "Partial voluntary hold on some research activities for all participants (explain below)"
 							}
 						},
 						{
 							"valueCoding": {
 								"code": "hold",
-								"display": "Voluntary hold on new subject enrollment only"
+								"display": "Voluntary hold on new participant enrollment only"
 							}
 						}
 					]
@@ -256,7 +256,7 @@
 				},
 				{
 					"linkId": "/report/event_check",
-					"text": "Unanticipated Problem Involving Risk to Subjects or Others",
+					"text": "Unanticipated Problem Involving Risk to Participants or Others",
 					"type": "boolean",
 					"required": false
 				},
@@ -411,7 +411,7 @@
 								}
 							],
 							"linkId": "/report/event/risk",
-							"text": "Does this event suggest that the research places subject(s) or others at a greater Risk of harm than was previously known?",
+							"text": "Does this event suggest that the research places participant(s) or others at a greater Risk of harm than was previously known?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -499,15 +499,29 @@
 								},
 								{
 									"linkId": "/report/deviation/involve/modify",
-									"text": "Modifying the protocol without IRB approval, except to avoid hazard to subjects",
+									"text": "Modifying the protocol without IRB approval, except to avoid hazard to participants",
 									"type": "boolean",
 									"required": false
 								},
 								{
 									"linkId": "/report/deviation/involve/conduct",
 									"text": "Conducting research prior to IRB approval, during an IRB suspension or after IRB approval ends",
-									"type": "boolean",
-									"required": false
+									"type": "choice",
+									"required": false,
+									"answerOption": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
 								},
 								{
 									"linkId": "/report/deviation/involve/explain",
@@ -543,7 +557,7 @@
 							"item": [
 								{
 									"linkId": "/report/deviation/affect/subject",
-									"text": "The rights, welfare, or safety of the subjects",
+									"text": "The rights, welfare, or safety of the participants",
 									"type": "boolean",
 									"required": false
 								},
@@ -555,7 +569,7 @@
 								},
 								{
 									"linkId": "/report/deviation/affect/willingness",
-									"text": "The subjects' willingness to continue participation",
+									"text": "The participants' willingness to continue participation",
 									"type": "boolean",
 									"required": false
 								},
@@ -629,7 +643,7 @@
 				},
 				{
 					"linkId": "/report/incarceration_check",
-					"text": "Incarceration of a subject in a protocol not approved to enroll prisoners",
+					"text": "Incarceration of a participant in a protocol not approved to enroll prisoners",
 					"type": "boolean",
 					"required": false
 				},
@@ -669,7 +683,7 @@
 				},
 				{
 					"linkId": "/report/complaint_check",
-					"text": "Complaint of a subject indicating unexpected risks or cannot be resolved by team.",
+					"text": "Complaint of a participant indicating unexpected risks or cannot be resolved by team.",
 					"type": "boolean",
 					"required": false
 				},
@@ -1122,7 +1136,7 @@
 						}
 					],
 					"linkId": "/change/notify",
-					"text": "Are notifications or re-consenting of subjects required as a result of this change?",
+					"text": "Are notifications or re-consenting of participants required as a result of this change?",
 					"type": "choice",
 					"enableWhen": [
 						{
@@ -1175,7 +1189,7 @@
 				},
 				{
 					"linkId": "/change/justify",
-					"text": "If no, justify your decision to not notify (re-consent) subjects:",
+					"text": "If no, justify your decision to not notify (re-consent) participants:",
 					"type": "text",
 					"enableWhen": [
 						{

@@ -64,7 +64,7 @@
 						{
 							"valueCoding": {
 								"code": "open-no-subjects",
-								"display": "Open with no subject"
+								"display": "Open with no participant"
 							}
 						},
 						{
@@ -286,7 +286,7 @@
 		},
 		{
 			"linkId": "/subjects",
-			"text": "Accrual of Subjects",
+			"text": "Accrual of Participants",
 			"type": "group",
 			"required": false,
 			"item": [
@@ -298,61 +298,61 @@
 					"item": [
 						{
 							"linkId": "/subjects/count/activation",
-							"text": "Subjects enrolled since activation:",
+							"text": "Participants enrolled since activation:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/approval",
-							"text": "Subjects enrolled since last approval:",
+							"text": "Participants enrolled since last approval:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/approved",
-							"text": "Subjects approved to enroll:",
+							"text": "Participants approved to enroll:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/consented",
-							"text": "Subjects consented:",
+							"text": "Participants consented:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/withdrawn",
-							"text": "Subjects withdrawn:",
+							"text": "Participants withdrawn:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/lost",
-							"text": "Subjects lost to contact:",
+							"text": "Participants lost to contact:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/failure",
-							"text": "Subjects with screen failures:",
+							"text": "Participants with screen failures:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/active",
-							"text": "Subjects still active or follow-up:",
+							"text": "Participants still active or follow-up:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/complete",
-							"text": "Subjects completed study:",
+							"text": "Participants completed study:",
 							"type": "integer",
 							"required": false
 						},
 						{
 							"linkId": "/subjects/count/gender",
-							"text": "By Gender:",
+							"text": "By Sex:",
 							"type": "group",
 							"required": false,
 							"item": [
@@ -468,7 +468,7 @@
 					"item": [
 						{
 							"linkId": "/subjects/vulnerable/count",
-							"text": "Number of potentially vulnerable subjects enrolled:",
+							"text": "Number of potentially vulnerable participants enrolled:",
 							"type": "integer",
 							"required": false
 						},
@@ -567,7 +567,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/benefits",
-							"text": "Have subjects experienced any benefits since your last report?",
+							"text": "Have participants experienced any benefits since your last report?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -618,7 +618,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/withdrawn",
-							"text": "Have subjects been withdrawn from this study?",
+							"text": "Have participants been withdrawn from this study?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -669,7 +669,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/complaint",
-							"text": "Have any subjects or others complained about the research?",
+							"text": "Have any participants or others complained about the research?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -1096,7 +1096,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/consent",
-							"text": "Was informed consent obtained from all enrolled subjects?",
+							"text": "Was informed consent obtained from all enrolled participants?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [

@@ -2,9 +2,9 @@
 	"resourceType": "Questionnaire",
 	"id": "sirb-consent-questionnaire",
 	"meta": {
-		"versionId": "9",
-		"lastUpdated": "2020-05-15T01:55:26.861+00:00",
-		"source": "#1BbOz9h9NUxVMkLr",
+		"versionId": "12",
+		"lastUpdated": "2020-05-15T04:48:00.572+00:00",
+		"source": "#2SxMgGsPxVNO9TFL",
 		"tag": [
 			{
 				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
@@ -34,13 +34,6 @@
 		{
 			"linkId": "2",
 			"definition": "Site Principal Investigator",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "2",
-					"display": "Site Principal Investigator"
-				}
-			],
 			"text": "Site Principal Investigator",
 			"type": "group",
 			"required": false,
@@ -48,13 +41,6 @@
 				{
 					"linkId": "2.1",
 					"definition": "Site Principal Investigator Last Name",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "2.1",
-							"display": "Site Principal Investigator Last Name"
-						}
-					],
 					"text": "Site Principal Investigator Last Name",
 					"type": "string",
 					"required": false
@@ -62,13 +48,6 @@
 				{
 					"linkId": "2.2",
 					"definition": "Site Prinicipal Investigator First Name",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "2.2",
-							"display": "Site Prinicipal Investigator First Name"
-						}
-					],
 					"text": "Site Prinicipal Investigator First Name",
 					"type": "string",
 					"required": false
@@ -76,13 +55,6 @@
 				{
 					"linkId": "2.3",
 					"definition": "Site Prinicipal Investigator Professional Degrees",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "2.3",
-							"display": "Site Prinicipal Investigator Professional Degrees"
-						}
-					],
 					"text": "Site Prinicipal Investigator Professional Degrees",
 					"type": "string",
 					"required": false
@@ -90,13 +62,6 @@
 				{
 					"linkId": "2.4",
 					"definition": "Site Prinicipal Investigator Associated Institution",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "2.4",
-							"display": "Site Prinicipal Investigator Associated Institution"
-						}
-					],
 					"text": "Site Prinicipal Investigator Associated Institution",
 					"type": "string",
 					"required": false
@@ -104,13 +69,6 @@
 				{
 					"linkId": "2.5",
 					"definition": "Site Prinicipal Investigator Contact Information",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "2.5",
-							"display": "Site Prinicipal Investigator Contact Information"
-						}
-					],
 					"text": "Site Prinicipal Investigator Contact Information",
 					"type": "string",
 					"required": false
@@ -120,13 +78,6 @@
 		{
 			"linkId": "3",
 			"definition": "Conducting Institution",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "3",
-					"display": "Conducting Institution"
-				}
-			],
 			"text": "Conducting Institution",
 			"type": "group",
 			"required": false,
@@ -134,13 +85,6 @@
 				{
 					"linkId": "3.1",
 					"definition": "Conducting Institution Name",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "3.1",
-							"display": "Conducting Institution Name"
-						}
-					],
 					"text": "Conducting Institution Name",
 					"type": "string",
 					"required": false
@@ -148,13 +92,6 @@
 				{
 					"linkId": "3.2",
 					"definition": "Conducting Institution Address",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "3.2",
-							"display": "Conducting Institution Address"
-						}
-					],
 					"text": "Conducting Institution Address",
 					"type": "string",
 					"required": false
@@ -162,13 +99,6 @@
 				{
 					"linkId": "3.3",
 					"definition": "Conducting Institution OID",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "3.3",
-							"display": "Conducting Institution OID"
-						}
-					],
 					"text": "Conducting Institution OID",
 					"type": "string",
 					"required": false
@@ -193,13 +123,6 @@
 			],
 			"linkId": "4",
 			"definition": "Sponsor or Funding Source",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "4",
-					"display": "Sponsor or Funding Source"
-				}
-			],
 			"text": "Sponsor or Funding Source",
 			"type": "group",
 			"required": false,
@@ -208,13 +131,6 @@
 				{
 					"linkId": "4.1",
 					"definition": "Sponsor Name",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "4.1",
-							"display": "Sponsor Name"
-						}
-					],
 					"text": "Sponsor Name",
 					"type": "string",
 					"required": false
@@ -222,13 +138,6 @@
 				{
 					"linkId": "4.2",
 					"definition": "Sponsor OID",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "4.2",
-							"display": "Sponsor OID"
-						}
-					],
 					"text": "Sponsor OID",
 					"type": "string",
 					"required": false
@@ -238,26 +147,12 @@
 		{
 			"linkId": "4.3",
 			"definition": "Sponsor Detail Statement",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "4.3",
-					"display": "Sponsor Detail Statement"
-				}
-			],
 			"text": "Sponsor Detail Statement",
 			"type": "string",
 			"required": false
 		},
 		{
 			"linkId": "4.4",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "4.4",
-					"display": "Is this consent an eConsent?"
-				}
-			],
 			"text": "Is this consent an eConsent?",
 			"type": "choice",
 			"required": false,
@@ -279,13 +174,6 @@
 		{
 			"linkId": "5",
 			"definition": "Summary Text",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "5",
-					"display": "Summary Text"
-				}
-			],
 			"text": "Summary Text",
 			"type": "group",
 			"required": false,
@@ -299,13 +187,6 @@
 					],
 					"linkId": "5.1",
 					"definition": "Summary Text Statement",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "5.1",
-							"display": "Summary Text Statement"
-						}
-					],
 					"text": "Summary Text Statement",
 					"type": "string",
 					"required": true
@@ -321,13 +202,6 @@
 			],
 			"linkId": "6",
 			"definition": "Introduction and Statement of Research",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "6",
-					"display": "Statement of Research"
-				}
-			],
 			"text": "Introduction and Statement of Research",
 			"type": "group",
 			"required": true,
@@ -349,13 +223,6 @@
 		{
 			"linkId": "7",
 			"definition": "Purpose",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "7",
-					"display": "Purpose"
-				}
-			],
 			"text": "Purpose",
 			"type": "group",
 			"required": false,
@@ -363,41 +230,20 @@
 				{
 					"linkId": "7.1",
 					"definition": "Why is this research being done?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.1",
-							"display": "Why is this research being done?"
-						}
-					],
 					"text": "Why is this research being done?",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "7.2",
-					"definition": "Who will the subjects be interacting with during the course of the study?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.2",
-							"display": "Who will the subjects be interacting with during the course of the study?"
-						}
-					],
-					"text": "Who will the subjects be interacting with during the course of the study?",
+					"definition": "Who will the participants be interacting with during the course of the study?",
+					"text": "Who will the participants be interacting with during the course of the study?",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "7.3",
 					"definition": "Who is being invited to participate?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.3",
-							"display": "Who is being invited to participate?"
-						}
-					],
 					"text": "Who is being invited to participate?",
 					"type": "string",
 					"required": false
@@ -405,13 +251,6 @@
 				{
 					"linkId": "7.4",
 					"definition": "Total expected study enrollment",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.4",
-							"display": "Total expected study enrollment"
-						}
-					],
 					"text": "Total expected study enrollment",
 					"type": "integer",
 					"required": false
@@ -419,13 +258,6 @@
 				{
 					"linkId": "7.5",
 					"definition": "Additional Enrollment Text",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.5",
-							"display": "Additional Enrollment Text"
-						}
-					],
 					"text": "Additional Enrollment Text",
 					"type": "string",
 					"required": false
@@ -433,13 +265,6 @@
 				{
 					"linkId": "7.6",
 					"definition": "What is involved in the study?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "7.6",
-							"display": "What is involved in the study?"
-						}
-					],
 					"text": "What is involved in the study?",
 					"type": "string",
 					"required": false
@@ -478,13 +303,6 @@
 						{
 							"linkId": "x8.1.1",
 							"definition": "Name of the Assessment",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "x8.1",
-									"display": "Name of the Assessment"
-								}
-							],
 							"text": "Name of the Assessment",
 							"type": "string",
 							"required": false
@@ -492,13 +310,6 @@
 						{
 							"linkId": "x8.1.2",
 							"definition": "Description of Assessment",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "x8.2",
-									"display": "Description of Assessment"
-								}
-							],
 							"text": "Description of Assessment",
 							"type": "string",
 							"required": false
@@ -517,13 +328,6 @@
 		{
 			"linkId": "8",
 			"definition": "Procedures",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "8",
-					"display": "Procedures"
-				}
-			],
 			"text": "Procedures",
 			"type": "group",
 			"required": false,
@@ -553,13 +357,6 @@
 					],
 					"linkId": "8.01",
 					"definition": "Visit List",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "8.01",
-							"display": "Visit List"
-						}
-					],
 					"text": "Visit List",
 					"type": "group",
 					"required": false,
@@ -568,13 +365,6 @@
 						{
 							"linkId": "8.02",
 							"definition": "Visit Type",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.02",
-									"display": "Visit Type"
-								}
-							],
 							"text": "Visit Type",
 							"type": "string",
 							"required": false
@@ -582,13 +372,6 @@
 						{
 							"linkId": "8.03",
 							"definition": "Visit Description",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.03",
-									"display": "Visit Description"
-								}
-							],
 							"text": "Visit Description",
 							"type": "string",
 							"required": false
@@ -669,13 +452,6 @@
 					],
 					"linkId": "8.05",
 					"definition": "Procedure List",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "8.05",
-							"display": "Procedure List"
-						}
-					],
 					"text": "Procedure List",
 					"type": "group",
 					"required": false,
@@ -684,13 +460,6 @@
 						{
 							"linkId": "8.06",
 							"definition": "Name of Procedure",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.06",
-									"display": "Name of Procedure"
-								}
-							],
 							"text": "Name of Procedure",
 							"type": "string",
 							"required": false
@@ -698,13 +467,6 @@
 						{
 							"linkId": "8.07",
 							"definition": "Common Term for Procedure",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.07",
-									"display": "Common Term of Procedure"
-								}
-							],
 							"text": "Common Term of Procedure",
 							"type": "string",
 							"required": false
@@ -712,13 +474,6 @@
 						{
 							"linkId": "8.08",
 							"definition": "Description of a Procedure",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.08",
-									"display": "Description of a Procedure"
-								}
-							],
 							"text": "Description of a Procedure",
 							"type": "string",
 							"required": false
@@ -741,13 +496,6 @@
 							],
 							"linkId": "8.10",
 							"definition": "Experimental Procedure Indicator",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.10",
-									"display": "Experimental Procedure Indicator"
-								}
-							],
 							"text": "Experimental Procedure Indicator",
 							"type": "choice",
 							"required": false,
@@ -784,13 +532,6 @@
 							],
 							"linkId": "8.11",
 							"definition": "Research Indicator",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.11",
-									"display": "Research Indicator"
-								}
-							],
 							"text": "Research Indicator",
 							"type": "choice",
 							"required": false,
@@ -812,13 +553,6 @@
 						{
 							"linkId": "8.12",
 							"definition": "Overall Frequency of Procedures",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.12",
-									"display": "Frequency of Procedures"
-								}
-							],
 							"text": "Frequency of Procedures",
 							"type": "decimal",
 							"required": false
@@ -826,13 +560,6 @@
 						{
 							"linkId": "8.13",
 							"definition": "Procedure Duration (minutes)",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "8.13",
-									"display": "Procedure Duration (minutes)"
-								}
-							],
 							"text": "Procedure Duration (minutes)",
 							"type": "decimal",
 							"required": false
@@ -849,13 +576,6 @@
 				{
 					"linkId": "8.14",
 					"definition": "Total Duration of Study Participation",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "8.14",
-							"display": "Total Duration of Study Participation"
-						}
-					],
 					"text": "Total Duration of Study Participation",
 					"type": "decimal",
 					"required": false
@@ -878,13 +598,6 @@
 					],
 					"linkId": "8.15",
 					"definition": "Total Duration of Study Participation (units)",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "8.15",
-							"display": "Total Duration of Study Participation (units)"
-						}
-					],
 					"text": "Total Duration of Study Participation (units)",
 					"type": "choice",
 					"required": false,
@@ -949,13 +662,6 @@
 						{
 							"linkId": "9.1.1",
 							"definition": "Name of the risk",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "9.1",
-									"display": "Name of the risk"
-								}
-							],
 							"text": "Name of the risk",
 							"type": "string",
 							"required": false
@@ -963,13 +669,6 @@
 						{
 							"linkId": "9.1.2",
 							"definition": "Description of Risk",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "9.2",
-									"display": "Description of Risk"
-								}
-							],
 							"text": "Description of Risk",
 							"type": "string",
 							"required": false
@@ -992,13 +691,6 @@
 							],
 							"linkId": "9.1.3",
 							"definition": "Risk Physical/ Non-Physical",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "9.3",
-									"display": "Risk Category"
-								}
-							],
 							"text": "Risk Category",
 							"type": "choice",
 							"required": false,
@@ -1116,13 +808,6 @@
 					],
 					"linkId": "9.4",
 					"definition": "Fetal Risks",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "9.4",
-							"display": "Fetal Risks"
-						}
-					],
 					"text": "Fetal Risks",
 					"type": "choice",
 					"required": false,
@@ -1144,13 +829,6 @@
 				{
 					"linkId": "9.5",
 					"definition": "Fetal Risk Details",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "9.5",
-							"display": "Fetal Risk Details"
-						}
-					],
 					"text": "Fetal Risk Details",
 					"type": "string",
 					"enableWhen": [
@@ -1169,13 +847,6 @@
 		{
 			"linkId": "10",
 			"definition": "Alternative Procedures",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "10",
-					"display": "Alternative Procedures"
-				}
-			],
 			"text": "Alternative Procedures",
 			"type": "group",
 			"required": false,
@@ -1183,13 +854,6 @@
 				{
 					"linkId": "10.1",
 					"definition": "Alternative Procedure Text",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "10.1",
-							"display": "Alternative Procedure Text"
-						}
-					],
 					"text": "Alternative Procedure Text",
 					"type": "string",
 					"required": false
@@ -1214,13 +878,6 @@
 			],
 			"linkId": "11",
 			"definition": "Benefits",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "11",
-					"display": "Benefits"
-				}
-			],
 			"text": "Benefits",
 			"type": "group",
 			"required": false,
@@ -1229,13 +886,6 @@
 				{
 					"linkId": "11.1",
 					"definition": "Name of Benefit",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "11.1",
-							"display": "Name of Benefit"
-						}
-					],
 					"text": "Name of Benefit",
 					"type": "string",
 					"required": false
@@ -1243,13 +893,6 @@
 				{
 					"linkId": "11.2",
 					"definition": "Description of Benefit",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "11.2",
-							"display": "Description of Benefit"
-						}
-					],
 					"text": "Description of Benefit",
 					"type": "string",
 					"required": false
@@ -1272,13 +915,6 @@
 					],
 					"linkId": "11.3",
 					"definition": "Benefit to you",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "11.3",
-							"display": "Benefit to you"
-						}
-					],
 					"text": "Benefit to you",
 					"type": "choice",
 					"required": false,
@@ -1315,13 +951,6 @@
 					],
 					"linkId": "11.4",
 					"definition": "Benefit to society",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "11.4",
-							"display": "Benefit to society"
-						}
-					],
 					"text": "Benefit to society",
 					"type": "choice",
 					"required": false,
@@ -1345,13 +974,6 @@
 		{
 			"linkId": "12",
 			"definition": "Compensation",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "12",
-					"display": "Compensation"
-				}
-			],
 			"text": "Compensation",
 			"type": "group",
 			"required": false,
@@ -1374,13 +996,6 @@
 					],
 					"linkId": "12.1",
 					"definition": "Will there be compensation for participation?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "12.1",
-							"display": "Will there be compensation for participation?"
-						}
-					],
 					"text": "Will there be compensation for participation?",
 					"type": "choice",
 					"required": false,
@@ -1433,13 +1048,6 @@
 					],
 					"linkId": "12.2",
 					"definition": "Compensation List",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "12.2",
-							"display": "Compensation List"
-						}
-					],
 					"text": "Compensation List",
 					"type": "group",
 					"enableWhen": [
@@ -1457,13 +1065,6 @@
 						{
 							"linkId": "12.3",
 							"definition": "What types of visits or milestones will I be compensated for?",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "12.3",
-									"display": "What types of visits will I be compensated for?"
-								}
-							],
 							"text": "What types of visits or milestones will I be compensated for?",
 							"type": "string",
 							"required": false
@@ -1471,13 +1072,6 @@
 						{
 							"linkId": "12.5",
 							"definition": "How many visits or milestones of this type will there be compensation for?",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "12.5",
-									"display": "How many visits of this type will there be compensation for?"
-								}
-							],
 							"text": "How many visits or milestones of this type will there be compensation for?",
 							"type": "integer",
 							"required": false
@@ -1485,13 +1079,6 @@
 						{
 							"linkId": "12.6",
 							"definition": "How much will be paid per this type of visit or milestone?",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "12.6",
-									"display": "How much will be paid per this type of visit or milestone?"
-								}
-							],
 							"text": "How much will be paid per this type of visit or milestone?",
 							"type": "string",
 							"required": false
@@ -1503,13 +1090,6 @@
 		{
 			"linkId": "13",
 			"definition": "Costs",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "13",
-					"display": "Costs"
-				}
-			],
 			"text": "Costs",
 			"type": "group",
 			"required": false,
@@ -1517,13 +1097,6 @@
 				{
 					"linkId": "13.1",
 					"definition": "What are the costs of participation, if any?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "13.1",
-							"display": "What are the costs of participation, if any?"
-						}
-					],
 					"text": "What are the costs of participation, if any?",
 					"type": "string",
 					"required": false
@@ -1546,13 +1119,6 @@
 					],
 					"linkId": "13.2",
 					"definition": "Will there be reimbursement for other study visit costs incurred?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "13.2",
-							"display": "Will there be reimbursement for other study visit costs incurred?"
-						}
-					],
 					"text": "Will there be reimbursement for other study visit costs incurred?",
 					"type": "choice",
 					"required": false,
@@ -1589,13 +1155,6 @@
 					],
 					"linkId": "13.3",
 					"definition": "Who will pay for medical treatment if research related injury occurs?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "13.3",
-							"display": "Who will pay for medical treatment if research related injury occurs?"
-						}
-					],
 					"text": "Who will pay for medical treatment if research related injury occurs?",
 					"type": "choice",
 					"required": false,
@@ -1623,13 +1182,6 @@
 				{
 					"linkId": "13.4",
 					"definition": "Additional description of treatment coverage",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "13.4",
-							"display": "Additional description of treatment coverage"
-						}
-					],
 					"text": "Additional description of treatment coverage",
 					"type": "string",
 					"required": false
@@ -1639,41 +1191,20 @@
 		{
 			"linkId": "14",
 			"definition": "Participant Rights and whom to contact for answers",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "14",
-					"display": "Participant Rights and whom to contact for answers"
-				}
-			],
 			"text": "Participant Rights and whom to contact for answers",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
 					"linkId": "14.1",
-					"definition": "What are the rights of a subject?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "14.1",
-							"display": "What are the rights of a subject?"
-						}
-					],
-					"text": "What are the rights of a subject?",
+					"definition": "What are the rights of a participant?",
+					"text": "What are the rights of a participant?",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "14.2",
 					"definition": "Contact Information for IRB contact for questions regarding participant rights",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "14.2",
-							"display": "Contact Information for IRB contact for questions regarding participant rights"
-						}
-					],
 					"text": "Contact Information for IRB contact for questions regarding participant rights",
 					"type": "string",
 					"required": false
@@ -1681,13 +1212,6 @@
 				{
 					"linkId": "14.3",
 					"definition": "Contact Information for Study Cooridinator for questions regarding study procedures",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "14.3",
-							"display": "Contact Information for Study Cooridinator for questions regarding study procedures"
-						}
-					],
 					"text": "Contact Information for Study Cooridinator for questions regarding study procedures",
 					"type": "string",
 					"required": false
@@ -1695,13 +1219,6 @@
 				{
 					"linkId": "14.4",
 					"definition": "Contact Information for PI for research-related injury",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "14.4",
-							"display": "Contact Information for PI for research-related injury"
-						}
-					],
 					"text": "Contact Information for PI for research-related injury",
 					"type": "string",
 					"required": false
@@ -1710,13 +1227,6 @@
 		},
 		{
 			"linkId": "15",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "15",
-					"display": "Participation"
-				}
-			],
 			"text": "Participation",
 			"type": "group",
 			"required": false,
@@ -1729,21 +1239,14 @@
 					"readOnly": true,
 					"initial": [
 						{
-							"valueString": "Participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefitsto which the subject is otherwise entitled."
+							"valueString": "Participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the participant is otherwise entitled, and the participant may discontinue participation at any time without penalty or loss of benefitsto which the participant is otherwise entitled."
 						}
 					]
 				},
 				{
 					"linkId": "16",
-					"definition": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "16",
-							"display": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subjevt's or the legally authorized representative's consent."
-						}
-					],
-					"text": "What are the anticipated circumstances under which subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent.",
+					"definition": "What are the anticipated circumstances under which participant's participation may be terminated by the investigator without regard to the participant's or the legally authorized representative's consent.",
+					"text": "What are the anticipated circumstances under which participant's participation may be terminated by the investigator without regard to the participant's or the legally authorized representative's consent.",
 					"type": "text",
 					"required": false
 				}
@@ -1752,13 +1255,6 @@
 		{
 			"linkId": "18",
 			"definition": "Early Withdrawal",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "18",
-					"display": "Early Withdrawal"
-				}
-			],
 			"text": "Early Withdrawal",
 			"type": "group",
 			"required": false,
@@ -1781,13 +1277,6 @@
 					],
 					"linkId": "18.1",
 					"definition": "Are there consequences for early withdrawal?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "18.1",
-							"display": "Are there consequences for early withdrawal?"
-						}
-					],
 					"text": "Are there consequences for early withdrawal?",
 					"type": "choice",
 					"required": false,
@@ -1824,13 +1313,6 @@
 					],
 					"linkId": "18.2",
 					"definition": "Are there Emotional Consequences of Withdrawal?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "18.1.2",
-							"display": "Are there Emotional Consequences of Withdrawal"
-						}
-					],
 					"text": "Are there Emotional Consequences of Withdrawal",
 					"type": "choice",
 					"enableWhen": [
@@ -1876,13 +1358,6 @@
 					],
 					"linkId": "18.3",
 					"definition": "Are there Physical Consequences of Withdrawal?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "18.1.1",
-							"display": "Are there Physical Consequences of Withdrawal"
-						}
-					],
 					"text": "Are there Physical Consequences of Withdrawal",
 					"type": "choice",
 					"enableWhen": [
@@ -1913,13 +1388,6 @@
 				{
 					"linkId": "18.4",
 					"definition": "What are the consequences of withdrawal?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "18.1.3",
-							"display": "What are the consequences of withdrawal?"
-						}
-					],
 					"text": "What are the consequences of withdrawal?",
 					"type": "string",
 					"enableWhen": [
@@ -1938,13 +1406,6 @@
 		{
 			"linkId": "19",
 			"definition": "Confidentiality of Records",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "19",
-					"display": "Confidentiality of Records"
-				}
-			],
 			"text": "Confidentiality of Records",
 			"type": "group",
 			"required": false,
@@ -1952,13 +1413,6 @@
 				{
 					"linkId": "19.1",
 					"definition": "Mandatory HIPAA statement",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.1",
-							"display": "Medical information and billing statement"
-						}
-					],
 					"text": "Medical information and billing statement",
 					"type": "string",
 					"required": false,
@@ -1986,13 +1440,6 @@
 					],
 					"linkId": "19.2",
 					"definition": "Will confidentiality be protected?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.2",
-							"display": "Will confidentiality be protected?"
-						}
-					],
 					"text": "Will confidentiality be protected?",
 					"type": "choice",
 					"required": false,
@@ -2014,13 +1461,6 @@
 				{
 					"linkId": "19.2.1",
 					"definition": "How will confidentiality be protected?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.2.1",
-							"display": "How will confidentiality be protected?"
-						}
-					],
 					"text": "How will confidentiality be protected?",
 					"type": "string",
 					"enableWhen": [
@@ -2052,13 +1492,6 @@
 					],
 					"linkId": "19.3",
 					"definition": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.3",
-							"display": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)"
-						}
-					],
 					"text": "Are there data security or policies that need to be included in the consent, particularly around device use (optional)",
 					"type": "choice",
 					"required": false,
@@ -2080,13 +1513,6 @@
 				{
 					"linkId": "19.3.1",
 					"definition": "Describe any data security policies and processes protecting the data",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.3.1",
-							"display": "Describe any data security policies and processes protecting the data"
-						}
-					],
 					"text": "Describe any data security policies and processes protecting the data",
 					"type": "string",
 					"enableWhen": [
@@ -2118,13 +1544,6 @@
 					],
 					"linkId": "19.4",
 					"definition": "Who can use or see participant information?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.4",
-							"display": "Who can use or see participant information?"
-						}
-					],
 					"text": "Who can use or see participant information?",
 					"type": "group",
 					"required": false,
@@ -2148,13 +1567,6 @@
 							],
 							"linkId": "19.4.1",
 							"definition": "Role or group who will have access to data",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "19.4.1",
-									"display": "Role or group who will have access to data"
-								}
-							],
 							"text": "Role or group who will have access to data",
 							"type": "open-choice",
 							"required": false,
@@ -2182,13 +1594,6 @@
 						{
 							"linkId": "19.4.2",
 							"definition": "Description of Information Disclosed",
-							"code": [
-								{
-									"system": "Custom",
-									"code": "19.4.2",
-									"display": "Description of Information Disclosed"
-								}
-							],
 							"text": "Description of Information Disclosed",
 							"type": "string",
 							"required": false
@@ -2213,13 +1618,6 @@
 					],
 					"linkId": "19.5",
 					"definition": "Will the data be released for future use?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.5",
-							"display": "Will the data be released for future use?"
-						}
-					],
 					"text": "Will the data be released for future use?",
 					"type": "choice",
 					"required": false,
@@ -2256,13 +1654,6 @@
 					],
 					"linkId": "19.5.1",
 					"definition": "Will the future use data be deidentified?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.5.1",
-							"display": "Will the future use data be deidentified?"
-						}
-					],
 					"text": "Will the future use data be deidentified?",
 					"type": "choice",
 					"enableWhen": [
@@ -2293,13 +1684,6 @@
 				{
 					"linkId": "19.5.2",
 					"definition": "Deidentification detail",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.5.2",
-							"display": "Deidentification detail"
-						}
-					],
 					"text": "Deidentification detail",
 					"type": "string",
 					"enableWhen": [
@@ -2331,13 +1715,6 @@
 					],
 					"linkId": "19.5.3",
 					"definition": "Required text disclosure surrounding future use.",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "19.5.3",
-							"display": "Required text disclosure surrounding future use."
-						}
-					],
 					"text": "Required text disclosure surrounding future use.",
 					"type": "choice",
 					"enableWhen": [
@@ -2370,13 +1747,6 @@
 		{
 			"linkId": "20",
 			"definition": "Specimen Management",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "20",
-					"display": "Specimen Management"
-				}
-			],
 			"text": "Specimen Management",
 			"type": "group",
 			"required": false,
@@ -2399,13 +1769,6 @@
 					],
 					"linkId": "20.1",
 					"definition": "Were specimens collected as part of this study?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1",
-							"display": "Were specimens collected as part of this study?"
-						}
-					],
 					"text": "Were specimens collected as part of this study?",
 					"type": "choice",
 					"required": false,
@@ -2442,13 +1805,6 @@
 					],
 					"linkId": "20.1.2",
 					"definition": "Is whole genome sequencing being conducted?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.2",
-							"display": "Is whole genome sequencing being conducted?"
-						}
-					],
 					"text": "Is whole genome sequencing being conducted?",
 					"type": "choice",
 					"enableWhen": [
@@ -2494,13 +1850,6 @@
 					],
 					"linkId": "20.1.4",
 					"definition": "Sharing or no Sharing of samples.",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.4",
-							"display": "Sharing or no Sharing of samples."
-						}
-					],
 					"text": "Sharing or no Sharing of samples.",
 					"type": "choice",
 					"enableWhen": [
@@ -2531,13 +1880,6 @@
 				{
 					"linkId": "20.1.4.1",
 					"definition": "Conditions of sharing",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.4.1",
-							"display": "Conditions of sharing"
-						}
-					],
 					"text": "Conditions of sharing",
 					"type": "string",
 					"enableWhen": [
@@ -2569,13 +1911,6 @@
 					],
 					"linkId": "20.1.5",
 					"definition": "Will participant share in profit with commerical use?",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.5",
-							"display": "Will participant share in profit with commerical use?"
-						}
-					],
 					"text": "Will participant share in profit with commerical use?",
 					"type": "choice",
 					"enableWhen": [
@@ -2606,13 +1941,6 @@
 				{
 					"linkId": "20.1.6",
 					"definition": "Description of Collection and Storage",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.6",
-							"display": "Description of Collection and Storage"
-						}
-					],
 					"text": "Description of Collection and Storage",
 					"type": "string",
 					"enableWhen": [
@@ -2644,13 +1972,6 @@
 					],
 					"linkId": "20.1.7",
 					"definition": "Indicator if revocation of sample consent is an option",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "20.1.7",
-							"display": "Can consent for sample use be revoked?"
-						}
-					],
 					"text": "Can consent for sample use be revoked?",
 					"type": "choice",
 					"enableWhen": [
@@ -2698,13 +2019,6 @@
 			],
 			"linkId": "21",
 			"definition": "Will there be Broad Consent for Storage, maintenance and secondary research use?",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "21",
-					"display": "Will there be Broad Consent for Storage, maintenance and secondary research use?"
-				}
-			],
 			"text": "Will there be Broad Consent for Storage, maintenance and secondary research use?",
 			"type": "choice",
 			"required": false,
@@ -2726,13 +2040,6 @@
 				{
 					"linkId": "21.1",
 					"definition": "Standard Broad Consent Text",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "21.1",
-							"display": "If selected, participant identifiable information and identifiable biospecimens will be stored, used and shared for the kinds of future research described in this broad consent form, without anyone asking your permission for each new study.  Identifying information may also be removed from your information and biospecimens, allowing them to be used for any future research or other purpose."
-						}
-					],
 					"text": "If selected, participant identifiable information and identifiable biospecimens will be stored, used and shared for the kinds of future research described in this broad consent form, without anyone asking your permission for each new study.  Identifying information may also be removed from your information and biospecimens, allowing them to be used for any future research or other purpose.",
 					"type": "group",
 					"enableWhen": [
@@ -2766,13 +2073,6 @@
 			],
 			"linkId": "22",
 			"definition": "Future Research",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "22",
-					"display": "Can the study team contact you for future research?"
-				}
-			],
 			"text": "Can the study team contact you for future research?",
 			"type": "choice",
 			"required": false,
@@ -2794,13 +2094,6 @@
 				{
 					"linkId": "22.1",
 					"definition": "Conditions about contact for additional sample use, information not currently described or future research",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "22.1",
-							"display": "Conditions about contact for additional sample use, information not currently described or future research"
-						}
-					],
 					"text": "Conditions about contact for additional sample use, information not currently described or future research",
 					"type": "string",
 					"enableWhen": [
@@ -2834,13 +2127,6 @@
 			],
 			"linkId": "23",
 			"definition": "Will participants share or not share in commercial profit?",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "23",
-					"display": "Will participants share or not share in commercial profit?"
-				}
-			],
 			"text": "Will participants share or not share in commercial profit?",
 			"type": "choice",
 			"required": false,
@@ -2862,13 +2148,6 @@
 				{
 					"linkId": "23.1",
 					"definition": "Reasons why participants will or will not share in commerical profit",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "23.1",
-							"display": "Reasons why participants will or will not share in commerical profit"
-						}
-					],
 					"text": "Reasons why participants will or will not share in commerical profit",
 					"type": "string",
 					"enableWhen": [
@@ -2902,13 +2181,6 @@
 			],
 			"linkId": "24",
 			"definition": "Will the study team contact you with new information that may affect your willingness to remain in the stu",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "24",
-					"display": "Will the study team contact you with new information that may affect your willingness to remain in the study"
-				}
-			],
 			"text": "Will the study team contact you with new information that may affect your willingness to remain in the study",
 			"type": "choice",
 			"required": false,
@@ -2945,13 +2217,6 @@
 			],
 			"linkId": "25",
 			"definition": "Will the study team disclose clinically relevant study results to you",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "25",
-					"display": "Will the study team disclose clinically relevant study results to you?"
-				}
-			],
 			"text": "Will the study team disclose clinically relevant study results to you?",
 			"type": "choice",
 			"required": false,
@@ -2973,13 +2238,6 @@
 				{
 					"linkId": "25.1",
 					"definition": "Condtions under which the study results will be disclosed to you",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "25.1",
-							"display": "Condtions under which the study results will be disclosed to you"
-						}
-					],
 					"text": "Condtions under which the study results will be disclosed to you",
 					"type": "string",
 					"enableWhen": [
@@ -3026,13 +2284,6 @@
 			],
 			"linkId": "26",
 			"definition": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "26",
-					"display": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)"
-				}
-			],
 			"text": "Is this study covered under a Certificate of Confidentiality? (default Y in NIH)",
 			"type": "choice",
 			"required": false,
@@ -3054,13 +2305,6 @@
 				{
 					"linkId": "26.1",
 					"definition": "Certifcate Confidentiality Boilerplate Text",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "26.1",
-							"display": "Certificate of Confidentiality Statement"
-						}
-					],
 					"text": "Certificate of Confidentiality Statement",
 					"type": "string",
 					"enableWhen": [
@@ -3083,13 +2327,6 @@
 				{
 					"linkId": "26.2",
 					"definition": "Section to detail any required disclosures",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "26.2",
-							"display": "Required Disclosures based on state law"
-						}
-					],
 					"text": "Required Disclosures based on state law",
 					"type": "string",
 					"enableWhen": [
@@ -3108,13 +2345,6 @@
 		{
 			"linkId": "27",
 			"definition": "When will the PHI Authorization Expire",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "27",
-					"display": "When will the PHI Authorization Expire based on date or time past an event"
-				}
-			],
 			"text": "When will the PHI Authorization Expire based on date or time past an event",
 			"type": "string",
 			"required": false
@@ -3122,13 +2352,6 @@
 		{
 			"linkId": "28",
 			"definition": "Statement of PHI Authorization Revocation",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "28",
-					"display": "Statement of PHI Authorization Revocation"
-				}
-			],
 			"text": "Statement of PHI Authorization Revocation",
 			"type": "text",
 			"required": false,
@@ -3141,13 +2364,6 @@
 		{
 			"linkId": "29",
 			"definition": "Signature",
-			"code": [
-				{
-					"system": "Custom",
-					"code": "29",
-					"display": "Signature"
-				}
-			],
 			"text": "Signature",
 			"type": "group",
 			"required": false,
@@ -3169,15 +2385,8 @@
 						}
 					],
 					"linkId": "29.1",
-					"definition": "Indicator to include Subject Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.1",
-							"display": "Indicator to include Subject Signature and Date"
-						}
-					],
-					"text": "Indicator to include Subject Signature and Date",
+					"definition": "Indicator to include Participant Signature and Date",
+					"text": "Indicator to include Participant Signature and Date",
 					"type": "choice",
 					"required": false,
 					"answerOption": [
@@ -3213,13 +2422,6 @@
 					],
 					"linkId": "29.2",
 					"definition": "Indicator to include Assent Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.2",
-							"display": "Indicator to include Assent Signature and Date"
-						}
-					],
 					"text": "Indicator to include Assent Signature and Date",
 					"type": "choice",
 					"required": false,
@@ -3256,13 +2458,6 @@
 					],
 					"linkId": "29.3",
 					"definition": "Indicator to include Legally Authorized Representative Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.3",
-							"display": "Indicator to include Legally Authorized Representative Signature and Date"
-						}
-					],
 					"text": "Indicator to include Legally Authorized Representative Signature and Date",
 					"type": "choice",
 					"required": false,
@@ -3299,13 +2494,6 @@
 					],
 					"linkId": "29.3.1",
 					"definition": "Relationship of Legally Authorized Representative",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.3.1",
-							"display": "Relationship of Legally Authorized Representative"
-						}
-					],
 					"text": "Relationship of Legally Authorized Representative",
 					"type": "choice",
 					"required": false,
@@ -3366,13 +2554,6 @@
 					],
 					"linkId": "29.4",
 					"definition": "Indicator to include a Witness Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.4",
-							"display": "Indicator to include a Witness Signature and Date"
-						}
-					],
 					"text": "Indicator to include a Witness Signature and Date",
 					"type": "choice",
 					"required": false,
@@ -3409,13 +2590,6 @@
 					],
 					"linkId": "29.5",
 					"definition": "Indicator to include Parent 1 Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.5",
-							"display": "Indicator to include Parent 1 Signature and Date"
-						}
-					],
 					"text": "Indicator to include Parent 1 Signature and Date",
 					"type": "choice",
 					"required": false,
@@ -3452,13 +2626,6 @@
 					],
 					"linkId": "29.6",
 					"definition": "Indicator to include Parent 2 Signature and Date",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "29.6",
-							"display": "Indicator to include Parent 2 Signature and Date"
-						}
-					],
 					"text": "Indicator to include Parent 2 Signature and Date",
 					"type": "choice",
 					"required": false,
@@ -3489,13 +2656,6 @@
 				{
 					"linkId": "30.1",
 					"definition": "Protocol or Study Number",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "32",
-							"display": "Protocol or Study Number"
-						}
-					],
 					"text": "Protocol or Study Number",
 					"type": "string",
 					"required": false
@@ -3503,13 +2663,6 @@
 				{
 					"linkId": "30.2",
 					"definition": "IRB Number",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "33",
-							"display": "IRB Number"
-						}
-					],
 					"text": "IRB Number",
 					"type": "string",
 					"required": false
@@ -3517,13 +2670,6 @@
 				{
 					"linkId": "30.3",
 					"definition": "Version Number of Consent",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "30",
-							"display": "Version Number of Consent"
-						}
-					],
 					"text": "Version Number of Consent",
 					"type": "decimal",
 					"required": false
@@ -3531,13 +2677,6 @@
 				{
 					"linkId": "30.4",
 					"definition": "Version Date of Consent",
-					"code": [
-						{
-							"system": "Custom",
-							"code": "31",
-							"display": "Version Date of Consent"
-						}
-					],
 					"text": "Version Date of Consent",
 					"type": "dateTime",
 					"required": false

@@ -1,6 +1,6 @@
 [Previous Page - Non-Medical Event](Non-MedicalEvent.html)
 
-Lorem Ipsum.
+Continuing Review
 
 <table><tr><td><img src="continuing_review.png" /></td></tr></table>
 

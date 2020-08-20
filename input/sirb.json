@@ -2,9 +2,9 @@
 	"resourceType": "ImplementationGuide",
 	"id": "sirb",
 	"meta": {
-		"versionId": "175",
-		"lastUpdated": "2020-05-15T01:41:40.961+00:00",
-		"source": "#3F3L1eS0JAKYFoa3"
+		"versionId": "180",
+		"lastUpdated": "2020-05-15T05:07:23.756+00:00",
+		"source": "#F1B9CoRC41n3Q3oY"
 	},
 	"contained": [],
 	"extension": [],
@@ -121,7 +121,7 @@
 					"display": "Medical Adverse Event Response"
 				},
 				"name": "Medical Adverse Event Response",
-				"description": "Completed Adverse Event reporting form for medical events.",
+				"description": "A completed Adverse Event reporting form for medical events. ",
 				"exampleBoolean": true,
 				"groupingId": "response-group"
 			},
@@ -435,12 +435,15 @@
 				"exampleBoolean": true
 			},
 			{
+				"extension": [],
 				"reference": {
 					"reference": "Questionnaire/sirb-consent-questionnaire",
 					"display": "Consent_questionnaire"
 				},
 				"name": "Consent Questionnaire",
-				"exampleBoolean": true
+				"description": "A list of questions completed by a principal investigator to capture content for a consent document.",
+				"exampleBoolean": true,
+				"groupingId": "questionnaire-group"
 			}
 		],
 		"page": {

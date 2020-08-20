@@ -1332,7 +1332,7 @@
 							"item": [
 								{
 									"linkId": "76",
-									"text": "List the reasonably foreseeable risks, discomforts, hazards, and/or inconveniences to the subjects related to their participation in the research, including risk of unintentional loss of confidentiality. Include a description of the probability, magnitude, duration, reversibility, and potential consequences of the risks. Consider physical, psychological, social, legal, and economic risks:",
+									"text": "List the reasonably foreseeable risks, discomforts, hazards, and/or inconveniences to the participants related to their participation in the research, including risk of unintentional loss of confidentiality. Include a description of the probability, magnitude, duration, reversibility, and potential consequences of the risks. Consider physical, psychological, social, legal, and economic risks:",
 									"type": "text",
 									"required": false
 								},
@@ -1344,13 +1344,13 @@
 								},
 								{
 									"linkId": "78",
-									"text": "State which study interventions may have risks to an embryo or fetus (if a subject is or becomes pregnant) or to a nursing infant of a study subject:",
+									"text": "State which study interventions may have risks to an embryo or fetus (if a participant is or becomes pregnant) or to a nursing infant of a study participant:",
 									"type": "text",
 									"required": false
 								},
 								{
 									"linkId": "79",
-									"text": "Describe risks to people other than the participating subject, e.g., risks to family members, friends, others or risks to the community:",
+									"text": "Describe risks to people other than the participating participant, e.g., risks to family members, friends, others or risks to the community:",
 									"type": "text",
 									"required": false
 								},
@@ -1434,7 +1434,7 @@
 							"item": [
 								{
 									"linkId": "85",
-									"text": "Describe the potential benefits that individual subjects may experience from taking part in the research. Include the probability, magnitude, and duration of the potential benefits:",
+									"text": "Describe the potential benefits that individual participants may experience from taking part in the research. Include the probability, magnitude, and duration of the potential benefits:",
 									"type": "text",
 									"required": false,
 									"item": [
@@ -1462,7 +1462,7 @@
 								},
 								{
 									"linkId": "87",
-									"text": "Describe any benefit to the population from which the subject is drawn:",
+									"text": "Describe any benefit to the population from which the participant is drawn:",
 									"type": "text",
 									"required": false
 								},
@@ -1494,7 +1494,7 @@
 								},
 								{
 									"linkId": "92",
-									"text": "Describe how the subject can receive the research procedures/drug/device used in this study in a non-research setting:",
+									"text": "Describe how the participant can receive the research procedures/drug/device used in this study in a non-research setting:",
 									"type": "text",
 									"required": false
 								}
@@ -1901,7 +1901,7 @@
 								}
 							],
 							"linkId": "i395",
-							"text": "Can study subjects participate in another research study while participating in this research study:",
+							"text": "Can study participants participate in another research study while participating in this research study:",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -2128,7 +2128,7 @@
 										},
 										{
 											"linkId": "i416",
-											"text": "Check to confirm that no inducements, monetary or otherwise, will be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the subject of a planned abortion.",
+											"text": "Check to confirm that no inducements, monetary or otherwise, will be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the participant of a planned abortion.",
 											"type": "boolean",
 											"required": false,
 											"item": [
@@ -2375,7 +2375,7 @@
 										}
 									],
 									"linkId": "i517",
-									"text": "Can or will subjects who are not yet adults (neonates, children, teenagers) be enrolled?",
+									"text": "Can or will participants who are not yet adults (neonates, children, teenagers) be enrolled?",
 									"type": "choice",
 									"required": false,
 									"answerOption": [
@@ -2410,7 +2410,7 @@
 									"item": [
 										{
 											"linkId": "i428",
-											"text": "Check to confirm that you will follow the SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)  to determine whether a prospective subject has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
+											"text": "Check to confirm that you will follow the SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)  to determine whether a prospective participant has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
 											"type": "boolean",
 											"required": false,
 											"item": [
@@ -2436,7 +2436,7 @@
 											"item": [
 												{
 													"linkId": "i432",
-													"text": "Any waiting period available between informing the prospective subject and obtaining the assent",
+													"text": "Any waiting period available between informing the prospective participant and obtaining the assent",
 													"type": "text",
 													"required": false
 												},
@@ -2466,7 +2466,7 @@
 												},
 												{
 													"linkId": "i437",
-													"text": "Steps that will be taken to ensure the subjects's understanding:",
+													"text": "Steps that will be taken to ensure the participants's understanding:",
 													"type": "text",
 													"required": false
 												},
@@ -2528,7 +2528,7 @@
 													"item": [
 														{
 															"linkId": "i440",
-															"text": "Describe the plan to obtain written informed consent from the subject at age 18 years:",
+															"text": "Describe the plan to obtain written informed consent from the participant at age 18 years:",
 															"type": "text",
 															"required": false
 														},
@@ -2546,7 +2546,7 @@
 														},
 														{
 															"linkId": "i443",
-															"text": "What will happen if the subject cannot be located to provide consent at age 18 years:",
+															"text": "What will happen if the participant cannot be located to provide consent at age 18 years:",
 															"type": "text",
 															"required": false
 														}
@@ -2678,13 +2678,13 @@
 									"item": [
 										{
 											"linkId": "i460",
-											"text": "Describe whether the research holds out a prospect of direct benefit to the individual subject that is unavailable outside the research context",
+											"text": "Describe whether the research holds out a prospect of direct benefit to the individual participant that is unavailable outside the research context",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i461",
-											"text": "Describe why the objectives of the study cannot be met by enrolling subjects who are able to give consent",
+											"text": "Describe why the objectives of the study cannot be met by enrolling participants who are able to give consent",
 											"type": "text",
 											"required": false
 										},
@@ -2702,55 +2702,55 @@
 										},
 										{
 											"linkId": "i464",
-											"text": "Who will determine if the subject is able to provide informed consent:",
+											"text": "Who will determine if the participant is able to provide informed consent:",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i465",
-											"text": "How it will be determined whether the subject is able to provide informed consent:",
+											"text": "How it will be determined whether the participant is able to provide informed consent:",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i466",
-											"text": "When and how often (even after obtaining informed consent) it will be determined whether the subject is able to provide informed consent",
+											"text": "When and how often (even after obtaining informed consent) it will be determined whether the participant is able to provide informed consent",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i467",
-											"text": "List the individuals from whom permission will be obtained if the subject cannot provide informed consent. Prioritize the list (e.g., durable power of attorney for health care, court appointed guardian for health care decisions, spouse, and adult child.):",
+											"text": "List the individuals from whom permission will be obtained if the participant cannot provide informed consent. Prioritize the list (e.g., durable power of attorney for health care, court appointed guardian for health care decisions, spouse, and adult child.):",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i468",
-											"text": "If it is possible that subjects may regain capacity to provide informed consent during the study, describe how frequently this will be assessed and state that subjects will be consented to the study in the event that they regain capacity to provide informed consent",
+											"text": "If it is possible that participants may regain capacity to provide informed consent during the study, describe how frequently this will be assessed and state that participants will be consented to the study in the event that they regain capacity to provide informed consent",
 											"type": "text",
 											"required": false
 										},
 										{
 											"linkId": "i469",
-											"text": "Describe the process for assent of the subjects as follows:",
+											"text": "Describe the process for assent of the participants as follows:",
 											"type": "group",
 											"required": false,
 											"item": [
 												{
 													"linkId": "i470",
-													"text": "Whether assent will be required of all, some, or none of the subjects. If some, specify which subjects will be required to assent and which will not:",
+													"text": "Whether assent will be required of all, some, or none of the participants. If some, specify which participants will be required to assent and which will not:",
 													"type": "text",
 													"required": false
 												},
 												{
 													"linkId": "i471",
-													"text": "If assent will not be obtained from some or all subjects, an explanation of why not:",
+													"text": "If assent will not be obtained from some or all participants, an explanation of why not:",
 													"type": "text",
 													"required": false
 												},
 												{
 													"linkId": "i472",
-													"text": "Whether assent of the subjects will be documented and the process to document assent. The IRB allows the person obtaining assent to document assent on the consent document and does not routinely require assent documents and does not routinely require subjects to sign assent documents:",
+													"text": "Whether assent of the participants will be documented and the process to document assent. The IRB allows the person obtaining assent to document assent on the consent document and does not routinely require assent documents and does not routinely require participants to sign assent documents:",
 													"type": "text",
 													"required": false
 												}
@@ -2764,7 +2764,7 @@
 										},
 										{
 											"linkId": "i474",
-											"text": "Check to confirm that subjects will be withdrawn if they appear to be unduly distressed at any time during the study.",
+											"text": "Check to confirm that participants will be withdrawn if they appear to be unduly distressed at any time during the study.",
 											"type": "boolean",
 											"required": false
 										}
@@ -2834,7 +2834,7 @@
 										},
 										{
 											"linkId": "i479",
-											"text": "Procedures for the selection of subjects within the prison which are fair to all Prisoners and immune from arbitrary intervention by prison authorities or Prisoners. Unless the Principal Investigator provides to the Board justification in writing for following some other procedures, control subjects must be selected randomly from the group of available Prisoners who meet the characteristics needed for that particular research project:",
+											"text": "Procedures for the selection of participants within the prison which are fair to all Prisoners and immune from arbitrary intervention by prison authorities or Prisoners. Unless the Principal Investigator provides to the Board justification in writing for following some other procedures, control participants must be selected randomly from the group of available Prisoners who meet the characteristics needed for that particular research project:",
 											"type": "text",
 											"required": false
 										},
@@ -2852,7 +2852,7 @@
 										},
 										{
 											"linkId": "i482",
-											"text": "If follow-up examination or care of subjects after the end of their participation is required, describe the provision for such examination or care, taking into account the varying lengths of individual Prisoners  sentences, and for informing subjects of this fact:",
+											"text": "If follow-up examination or care of participants after the end of their participation is required, describe the provision for such examination or care, taking into account the varying lengths of individual Prisoners  sentences, and for informing participants of this fact:",
 											"type": "text",
 											"required": false
 										}
@@ -2934,7 +2934,7 @@
 										},
 										{
 											"linkId": "i489",
-											"text": "Protections to ensure that a subject's decision about participation and/or early withdrawal from the study will not affect his/her status as a student or employee:",
+											"text": "Protections to ensure that a participant's decision about participation and/or early withdrawal from the study will not affect his/her status as a student or employee:",
 											"type": "text",
 											"required": false
 										},
@@ -3078,7 +3078,7 @@
 											"item": [
 												{
 													"linkId": "i455",
-													"text": "Describe whether the research is related to their status as wards OR if the research is conducted in schools, camps, hospitals, institutions, or similar settings in which the majority of children involved as subjects are not wards",
+													"text": "Describe whether the research is related to their status as wards OR if the research is conducted in schools, camps, hospitals, institutions, or similar settings in which the majority of children involved as participants are not wards",
 													"type": "text",
 													"required": false
 												},
@@ -3122,13 +3122,13 @@
 							"item": [
 								{
 									"linkId": "id396",
-									"text": "Describe when, where, and how potential subjects will be recruited",
+									"text": "Describe when, where, and how potential participants will be recruited",
 									"type": "text",
 									"required": false,
 									"item": [
 										{
 											"linkId": "i397",
-											"text": "If potential subjects will be recruited by telephone, describe how many times the research team will attempt to call / leave a voice message:",
+											"text": "If potential participants will be recruited by telephone, describe how many times the research team will attempt to call / leave a voice message:",
 											"type": "text",
 											"required": false,
 											"item": [
@@ -3144,7 +3144,7 @@
 								},
 								{
 									"linkId": "i399",
-									"text": "When subjects respond to recruitment material, describe the information that will be provided to them about the study and the information that will be collected from subjects (e.g. name, telephone number, etc.). Describe also, how many times you will attempt to respond to call the subject back / leave a voice message:",
+									"text": "When participants respond to recruitment material, describe the information that will be provided to them about the study and the information that will be collected from participants (e.g. name, telephone number, etc.). Describe also, how many times you will attempt to respond to call the participant back / leave a voice message:",
 									"type": "text",
 									"required": false,
 									"item": [
@@ -3158,13 +3158,13 @@
 								},
 								{
 									"linkId": "i401",
-									"text": "Describe source of subjects (for example, patient population, local community, etc.):",
+									"text": "Describe source of participants (for example, patient population, local community, etc.):",
 									"type": "text",
 									"required": false
 								},
 								{
 									"linkId": "i402",
-									"text": "Describe methods that will be used to identify potential subjects:",
+									"text": "Describe methods that will be used to identify potential participants:",
 									"type": "text",
 									"required": false,
 									"item": [
@@ -3192,7 +3192,7 @@
 									"item": [
 										{
 											"linkId": "i406",
-											"text": "Describe how the recruitment methods described will be effective in attracting the targeted subject population:",
+											"text": "Describe how the recruitment methods described will be effective in attracting the targeted participant population:",
 											"type": "text",
 											"required": false
 										}
@@ -4071,7 +4071,7 @@
 									"item": [
 										{
 											"linkId": "i495",
-											"text": "Specify how the research team will assure that subjects have sufficient time to consider whether to participate in the research",
+											"text": "Specify how the research team will assure that participants have sufficient time to consider whether to participate in the research",
 											"type": "text",
 											"required": false
 										},
@@ -4083,7 +4083,7 @@
 										},
 										{
 											"linkId": "i497",
-											"text": "Some subjects may be vulnerable to coercion or undue influence, such as those who are economically or educationally disadvantaged, mentally disabled, or students (undergraduate, graduate, and medical students) and employees (administrative, clerical, nursing, lab technicians, post-doctoral fellows and house staff, etc.), describe the procedures to ensure the voluntary participation of these individuals",
+											"text": "Some participants may be vulnerable to coercion or undue influence, such as those who are economically or educationally disadvantaged, mentally disabled, or students (undergraduate, graduate, and medical students) and employees (administrative, clerical, nursing, lab technicians, post-doctoral fellows and house staff, etc.), describe the procedures to ensure the voluntary participation of these individuals",
 											"type": "text",
 											"required": false
 										},
@@ -4255,7 +4255,7 @@
 										{
 											"valueCoding": {
 												"code": "2",
-												"display": "Access subject identifiable data"
+												"display": "Access participant identifiable data"
 											}
 										}
 									]
@@ -4439,7 +4439,7 @@
 					"item": [
 						{
 							"linkId": "i321",
-							"text": "Describe the steps the research team will take to ensure that a subject is appropriately enrolled or registered in the study prior to receiving any study intervention (e.g. describe and submit any protocol eligibility checklist that will be used, specify who on the research team will confirm eligibility and that consent was documented, etc.):",
+							"text": "Describe the steps the research team will take to ensure that a participant is appropriately enrolled or registered in the study prior to receiving any study intervention (e.g. describe and submit any protocol eligibility checklist that will be used, specify who on the research team will confirm eligibility and that consent was documented, etc.):",
 							"type": "text",
 							"required": false
 						}
@@ -4465,7 +4465,7 @@
 						},
 						{
 							"linkId": "i328",
-							"text": "Describe the coverage plan to address any issues (including subject safety issues) that occur while the PI is away and/or unavailable. The research team member designated to serve as the acting PI in the PIabsence should have similar training and expertise as the PI:",
+							"text": "Describe the coverage plan to address any issues (including participant safety issues) that occur while the PI is away and/or unavailable. The research team member designated to serve as the acting PI in the PIabsence should have similar training and expertise as the PI:",
 							"type": "text",
 							"required": false
 						},
@@ -4492,7 +4492,7 @@
 								}
 							],
 							"linkId": "i330",
-							"text": "Are medical or psychological resources that subjects might need, such as for emergencies or medical issues, are available for the study?",
+							"text": "Are medical or psychological resources that participants might need, such as for emergencies or medical issues, are available for the study?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -4526,7 +4526,7 @@
 						},
 						{
 							"linkId": "i333",
-							"text": "Check to confirm that  any amendments to the protocol or informed consent documents be reviewed and approved by the IRB prior to use, unless required to eliminate an apparent immediate hazard to subjects?",
+							"text": "Check to confirm that  any amendments to the protocol or informed consent documents be reviewed and approved by the IRB prior to use, unless required to eliminate an apparent immediate hazard to participants?",
 							"type": "boolean",
 							"required": false
 						}
