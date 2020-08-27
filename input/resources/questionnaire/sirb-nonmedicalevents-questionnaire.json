@@ -256,7 +256,7 @@
 				},
 				{
 					"linkId": "/report/event_check",
-					"text": "Unanticipated Problem Involving Risk to participants or Others",
+					"text": "Unanticipated Problem Involving Risk to Participants or Others",
 					"type": "boolean",
 					"required": false
 				},
@@ -506,8 +506,22 @@
 								{
 									"linkId": "/report/deviation/involve/conduct",
 									"text": "Conducting research prior to IRB approval, during an IRB suspension or after IRB approval ends",
-									"type": "boolean",
-									"required": false
+									"type": "choice",
+									"required": false,
+									"answerOption": [
+								{
+									"valueCoding": {
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
 								},
 								{
 									"linkId": "/report/deviation/involve/explain",
@@ -542,7 +556,7 @@
 							"required": false,
 							"item": [
 								{
-									"linkId": "/report/deviation/affect/participant",
+									"linkId": "/report/deviation/affect/subject",
 									"text": "The rights, welfare, or safety of the participants",
 									"type": "boolean",
 									"required": false
@@ -565,7 +579,7 @@
 									"type": "text",
 									"enableWhen": [
 										{
-											"question": "/report/deviation/affect/participant",
+											"question": "/report/deviation/affect/subject",
 											"operator": "=",
 											"answerBoolean": true
 										},
