@@ -63,8 +63,8 @@
 						},
 						{
 							"valueCoding": {
-								"code": "open-no-subjects",
-								"display": "Open with no subject"
+								"code": "open-no-participants",
+								"display": "Open with no participant"
 							}
 						},
 						{
@@ -285,97 +285,97 @@
 			]
 		},
 		{
-			"linkId": "/subjects",
-			"text": "Accrual of Subjects",
+			"linkId": "/participants",
+			"text": "Accrual of participants",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
-					"linkId": "/subjects/counts",
+					"linkId": "/participants/counts",
 					"text": "Provide counts for the following:",
 					"type": "group",
 					"required": false,
 					"item": [
 						{
-							"linkId": "/subjects/count/activation",
-							"text": "Subjects enrolled since activation:",
+							"linkId": "/participants/count/activation",
+							"text": "participants enrolled since activation:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/approval",
-							"text": "Subjects enrolled since last approval:",
+							"linkId": "/participants/count/approval",
+							"text": "participants enrolled since last approval:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/approved",
-							"text": "Subjects approved to enroll:",
+							"linkId": "/participants/count/approved",
+							"text": "participants approved to enroll:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/consented",
-							"text": "Subjects consented:",
+							"linkId": "/participants/count/consented",
+							"text": "participants consented:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/withdrawn",
-							"text": "Subjects withdrawn:",
+							"linkId": "/participants/count/withdrawn",
+							"text": "participants withdrawn:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/lost",
-							"text": "Subjects lost to contact:",
+							"linkId": "/participants/count/lost",
+							"text": "participants lost to contact:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/failure",
-							"text": "Subjects with screen failures:",
+							"linkId": "/participants/count/failure",
+							"text": "participants with screen failures:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/active",
-							"text": "Subjects still active or follow-up:",
+							"linkId": "/participants/count/active",
+							"text": "participants still active or follow-up:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/complete",
-							"text": "Subjects completed study:",
+							"linkId": "/participants/count/complete",
+							"text": "participants completed study:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/count/gender",
+							"linkId": "/participants/count/gender",
 							"text": "By Gender:",
 							"type": "group",
 							"required": false,
 							"item": [
 								{
-									"linkId": "/subjects/count/gender/men",
+									"linkId": "/participants/count/gender/men",
 									"text": "Men:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/gender/women",
+									"linkId": "/participants/count/gender/women",
 									"text": "Women:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/gender/trans",
+									"linkId": "/participants/count/gender/trans",
 									"text": "Transgender:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/gender/another",
+									"linkId": "/participants/count/gender/another",
 									"text": "Another Identity:",
 									"type": "integer",
 									"required": false
@@ -383,49 +383,49 @@
 							]
 						},
 						{
-							"linkId": "/subjects/count/race",
+							"linkId": "/participants/count/race",
 							"text": "By Race",
 							"type": "group",
 							"required": false,
 							"item": [
 								{
-									"linkId": "/subjects/count/race/white",
+									"linkId": "/participants/count/race/white",
 									"text": "White:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/black",
+									"linkId": "/participants/count/race/black",
 									"text": "Black or African American:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/asian",
+									"linkId": "/participants/count/race/asian",
 									"text": "Asian:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/native",
+									"linkId": "/participants/count/race/native",
 									"text": "American Indian or Alaska Native:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/pacific",
+									"linkId": "/participants/count/race/pacific",
 									"text": "Native Hawaiian or other Pacific Islander:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/more",
+									"linkId": "/participants/count/race/more",
 									"text": "More than One Race:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/race/unknown",
+									"linkId": "/participants/count/race/unknown",
 									"text": "Unknown/Not Reported:",
 									"type": "integer",
 									"required": false
@@ -433,25 +433,25 @@
 							]
 						},
 						{
-							"linkId": "/subjects/count/ethnicity",
+							"linkId": "/participants/count/ethnicity",
 							"text": "By Ethnicity",
 							"type": "group",
 							"required": false,
 							"item": [
 								{
-									"linkId": "/subjects/count/ethnicity/hispanic",
+									"linkId": "/participants/count/ethnicity/hispanic",
 									"text": "Hispanic or Latino:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/ethnicity/not",
+									"linkId": "/participants/count/ethnicity/not",
 									"text": "Not Hispanic or Latino:",
 									"type": "integer",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/count/ethnicity/unknown",
+									"linkId": "/participants/count/ethnicity/unknown",
 									"text": "Unknown/Not Reported:",
 									"type": "integer",
 									"required": false
@@ -461,67 +461,67 @@
 					]
 				},
 				{
-					"linkId": "/subjects/vulnerable",
+					"linkId": "/participants/vulnerable",
 					"text": "Vulnerable Populations",
 					"type": "group",
 					"required": false,
 					"item": [
 						{
-							"linkId": "/subjects/vulnerable/count",
-							"text": "Number of potentially vulnerable subjects enrolled:",
+							"linkId": "/participants/vulnerable/count",
+							"text": "Number of potentially vulnerable participants enrolled:",
 							"type": "integer",
 							"required": false
 						},
 						{
-							"linkId": "/subjects/vulnerable/check",
+							"linkId": "/participants/vulnerable/check",
 							"text": "Check all that apply:",
 							"type": "group",
 							"required": false,
 							"item": [
 								{
-									"linkId": "/subjects/vulnerable/check/children",
+									"linkId": "/participants/vulnerable/check/children",
 									"text": "Children",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/impaired",
+									"linkId": "/participants/vulnerable/check/impaired",
 									"text": "Cognitively Impaired",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/employees",
+									"linkId": "/participants/vulnerable/check/employees",
 									"text": "Employees",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/fetuses",
+									"linkId": "/participants/vulnerable/check/fetuses",
 									"text": "Fetuses",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/neonates",
+									"linkId": "/participants/vulnerable/check/neonates",
 									"text": "Neonates (non-viable / uncertain viability)",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/pregnant",
+									"linkId": "/participants/vulnerable/check/pregnant",
 									"text": "Pregnant Women",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/prisoners",
+									"linkId": "/participants/vulnerable/check/prisoners",
 									"text": "Prisoners",
 									"type": "boolean",
 									"required": false
 								},
 								{
-									"linkId": "/subjects/vulnerable/check/students",
+									"linkId": "/participants/vulnerable/check/students",
 									"text": "Students",
 									"type": "boolean",
 									"required": false
@@ -567,7 +567,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/benefits",
-							"text": "Have subjects experienced any benefits since your last report?",
+							"text": "Have participants experienced any benefits since your last report?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -618,7 +618,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/withdrawn",
-							"text": "Have subjects been withdrawn from this study?",
+							"text": "Have participants been withdrawn from this study?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -669,7 +669,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/complaint",
-							"text": "Have any subjects or others complained about the research?",
+							"text": "Have any participants or others complained about the research?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
@@ -1096,7 +1096,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/consent",
-							"text": "Was informed consent obtained from all enrolled subjects?",
+							"text": "Was informed consent obtained from all enrolled participants?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [
