@@ -21,39 +21,28 @@
   "name": "AE_Questionnaire",
   "title": "Adverse Medical Event Questionnaire",
   "status": "draft",
-  "item": [
-    {
-      "linkId": "1",
-      "text": "Adverse/Serious Adverse Medical Event Form",
-      "type": "group",
-      "required": false,
+  
       "item": [
         {
           "linkId": "2",
-          "text": "Study Information",
+          "text": "RESEARCH STUDY",
           "type": "group",
           "required": false,
           "item": [
             {
               "linkId": "3",
-              "text": "Protocol Title",
+              "text": "Study Title",
               "type": "string",
               "required": false
             },
             {
               "linkId": "4",
-              "text": "IRB Number",
+              "text": "IRB Protocol Number",
               "type": "string",
               "required": false
             },
             {
-              "linkId": "5",
-              "text": "Study Type",
-              "type": "choice",
-              
-              "required": false
-            },
-            {
+
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -69,8 +58,30 @@
                   }
                 }
               ],
+              "linkId": "5",
+              "text": "Study Type",
+              "type": "choice",
+              "answerOption" : [
+        {
+          "valueCoding" : {
+            "code" : "1",
+            "display" : "Interventional"
+          }
+        },
+        {
+          "valueCoding" : {
+            "code" : "2",
+            "display" : "Not Interventional"
+          }
+        }
+      ],
+              
+              "required": false
+            },
+            {
+              
               "linkId": "6",
-              "text": "Does this protocol require an FDA exemption?",
+              "text": "Requirement for FDA exemption",
               "type": "choice",
               "required": false,
               "answerOption": [
@@ -151,7 +162,7 @@
         },
         {
           "linkId": "9",
-          "text": "Principal Investigator",
+          "text": "Site Principal Investigator",
           "type": "group",
           "required": false,
           "item": [
@@ -309,13 +320,13 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
                   "valueCoding": {
-                    "display": "[lb_av]"
+                    "display": "[lb]"
                   }
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
                   "valueCoding": {
-                    "display": "kg"
+                    "display": "[kg]"
                   }
                 }
               ],
@@ -331,13 +342,25 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
                   "valueCoding": {
-                    "display": "[in_i]"
+                    "display": "[in]"
+                  }
+                },
+                  {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "[ft]"
                   }
                 },
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
                   "valueCoding": {
-                    "display": "cm"
+                    "display": "[cm]"
+                  }
+                },
+                  {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "[m]"
                   }
                 }
               ],
@@ -457,7 +480,7 @@
                 }
               ],
               "linkId": "31",
-              "text": "Was subject dosed?",
+              "text": "Participant dosed",
               "type": "choice",
               "required": false,
               "answerOption": [
@@ -477,6 +500,12 @@
                   "valueCoding": {
                     "code": "3",
                     "display": "Information Not Available"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "display": "Not Applicable"
                   }
                 }
               ]
@@ -500,6 +529,15 @@
               "linkId": "32",
               "text": "What study agent was received:",
               "type": "choice",
+              "enableWhen": [
+                {
+                  "question": "31",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "1"
+                  }
+                }
+              ],
               "required": false,
               "answerOption": [
                 {
@@ -624,19 +662,19 @@
             {
               "linkId": "40",
               "text": "Start Date",
-              "type": "string",
+              "type": "date",
               "required": false
             },
             {
               "linkId": "41",
               "text": "Reported Date",
-              "type": "string",
+              "type": "date",
               "required": false
             },
             {
               "linkId": "42",
               "text": "Recorded Date",
-              "type": "string",
+              "type": "date",
               "required": false
             },
             {
@@ -677,7 +715,7 @@
             {
               "linkId": "44",
               "text": "Stop Date",
-              "type": "string",
+              "type": "date",
               "enableWhen": [
                 {
                   "question": "43",
@@ -1271,21 +1309,36 @@
                 {
                   "valueCoding": {
                     "code": "1",
-                    "display": "Increased"
+                    "display": "Treatment Stopped"
                   }
                 },
-                {
+                  {
                   "valueCoding": {
                     "code": "2",
-                    "display": "Decreased"
+                    "display": "Treatment interrupted"
                   }
                 },
                 {
                   "valueCoding": {
                     "code": "3",
-                    "display": "Discontinued"
+                    "display": "Reduced Dose"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "display": "Increased Dose"
+                  }
+                },
+                
+
+                   {
+                  "valueCoding": {
+                    "code": "5",
+                    "display": "Delayed Dose"
                   }
                 }
+                
               ]
             },
             {
@@ -1434,13 +1487,13 @@
                 {
                   "linkId": "58",
                   "text": "Start Date",
-                  "type": "string",
+                  "type": "date",
                   "required": false
                 },
                 {
                   "linkId": "59",
                   "text": "Stop Date",
-                  "type": "string",
+                  "type": "date",
                   "required": false
                 },
                 {
@@ -1535,13 +1588,13 @@
                 {
                   "linkId": "64",
                   "text": "Start Date",
-                  "type": "string",
+                  "type": "date",
                   "required": false
                 },
                 {
                   "linkId": "65",
                   "text": "Stop Date",
-                  "type": "string",
+                  "type": "date",
                   "required": false
                 },
                 {
@@ -1636,7 +1689,7 @@
                 {
                   "linkId": "70",
                   "text": "Date",
-                  "type": "string",
+                  "type": "date",
                   "required": false
                 },
                 {
@@ -1729,6 +1782,6 @@
           ]
         }
       ]
-    }
-  ]
+    
+  
 }

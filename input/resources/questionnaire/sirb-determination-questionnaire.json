@@ -26,18 +26,21 @@
 			"type": "group",
 			"required": false,
 			"item": [
+				
 				{
-					"linkId": "/study/irb",
-					"text": "IRB #",
+					"linkId": "/study/title",
+					"text": "Study Title",
 					"type": "string",
 					"required": false
 				},
+
 				{
-					"linkId": "/study/title",
-					"text": "Title",
+					"linkId": "/study/irb",
+					"text": "IRB Protocol Number",
 					"type": "string",
 					"required": false
 				}
+				
 			]
 		},
 		{
@@ -100,7 +103,7 @@
 						},
 						{
 							"linkId": "/reliance/reviewing/investigator",
-							"text": "Site Investigator",
+							"text": "Site Principal Investigator",
 							"type": "group",
 							"required": false,
 							"item": [
@@ -141,7 +144,7 @@
 								}
 							],
 							"linkId": "/reliance/reviewing/same",
-							"text": "Overall PI same as Site Investigator?",
+							"text": "Overall Principal Investigator same as Site Principal Investigator?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [

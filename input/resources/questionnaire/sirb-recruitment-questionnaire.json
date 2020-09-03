@@ -25,13 +25,13 @@
 			"item": [
 				{
 					"linkId": "study/name",
-					"text": "Name",
+					"text": "Study Title",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "study/irbnum",
-					"text": "IRB Number",
+					"text": "IRB Protocol Number",
 					"type": "string",
 					"required": false
 				}
@@ -39,7 +39,7 @@
 		},
 		{
 			"linkId": "institution",
-			"text": "Institution",
+			"text": "Institution Name",
 			"type": "group",
 			"required": false,
 			"item": [
@@ -1424,7 +1424,7 @@
 						},
 						{
 							"linkId": "materials/direct/phone",
-							"text": "Telephone Call",
+							"text": "Phone Call",
 							"type": "boolean",
 							"required": false,
 							"item": [
@@ -1445,14 +1445,14 @@
 										}
 									],
 									"linkId": "materials/direct/phone-help",
-									"text": "A communication or conversation by telephone.",
+									"text": "A communication or conversation by phone.",
 									"type": "display"
 								}
 							]
 						},
 						{
 							"linkId": "materials/direct/phonedesc",
-							"text": "Telephone Call Description",
+							"text": "Phone Call Description",
 							"type": "text",
 							"enableWhen": [
 								{
