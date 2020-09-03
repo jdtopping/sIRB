@@ -914,7 +914,7 @@
             },
             {
               "linkId": "item77",
-              "text": "What is the date Adverse Medical event became serious?",
+              "text": "What is the date Adverse Medical Event became serious?",
               "type": "date",
               "enableWhen": [
                 {
@@ -1498,9 +1498,23 @@
                 },
                 {
                   "linkId": "60",
-                  "text": "Check if Ongoing",
-                  "type": "boolean",
-                  "required": false
+                  "text": "Ongoing",
+                  "type": "choice",
+                  "required": false,
+                  "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "0",
+                    "display": "No"
+                  }
+                }
+              ]
                 }
               ]
             },
@@ -1599,9 +1613,25 @@
                 },
                 {
                   "linkId": "66",
-                  "text": "Check if ongoing",
-                  "type": "boolean",
-                  "required": false
+                  "text": "Ongoing",
+                  "type": "choice",
+                  "required": false,
+                  "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "code": "0",
+                    "display": "No"
+                  }
+                }
+              ]
+                }
+              ]
                 }
               ]
             },
