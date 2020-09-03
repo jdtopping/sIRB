@@ -19,19 +19,19 @@
 	"item": [
 		{
 			"linkId": "/study",
-			"text": "General Study Information",
+			"text": "Research Study",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
 					"linkId": "/study/title",
-					"text": "Title:",
+					"text": "Study Title:",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "/study/irb",
-					"text": "IRB Number:",
+					"text": "IRB Protocol Number:",
 					"type": "string",
 					"required": false
 				},
@@ -102,7 +102,7 @@
 		},
 		{
 			"linkId": "/pi",
-			"text": "Principal Investigator",
+			"text": "Site Principal Investigator",
 			"type": "group",
 			"required": false,
 			"item": [
@@ -114,7 +114,7 @@
 				},
 				{
 					"linkId": "/pi/phone",
-					"text": "Telephone:",
+					"text": "Phone:",
 					"type": "string",
 					"required": false
 				},
@@ -216,7 +216,7 @@
 				},
 				{
 					"linkId": "/report/new_check",
-					"text": "New information indiciation unexpected change to the risks of the research.",
+					"text": "New information resulted in unexpected change in risks of the research.",
 					"type": "boolean",
 					"required": false
 				},
@@ -282,7 +282,7 @@
 						},
 						{
 							"linkId": "/report/event/realized",
-							"text": "Date event was realized by PI or team:",
+							"text": "Date event became aware to study team:",
 							"type": "date",
 							"required": false
 						},
@@ -623,7 +623,7 @@
 					"item": [
 						{
 							"linkId": "/report/confidentiality/date",
-							"text": "Date:",
+							"text": "Date breach occurred",
 							"type": "date",
 							"required": false
 						},
@@ -669,7 +669,7 @@
 						},
 						{
 							"linkId": "/report/incarceration/discovered",
-							"text": "Date discovered:",
+							"text": "Date incarceration was discovered:",
 							"type": "date",
 							"required": false
 						},
@@ -832,7 +832,7 @@
 				},
 				{
 					"linkId": "/reporting/other",
-					"text": "Where any Other Parties notified? Please list:",
+					"text": "Were any Other Parties notified? Please list:",
 					"type": "text",
 					"required": false
 				}
