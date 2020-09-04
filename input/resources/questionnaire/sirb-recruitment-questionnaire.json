@@ -39,13 +39,13 @@
 		},
 		{
 			"linkId": "institution",
-			"text": "Site Institution",
+			"text": "Institution Name",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
 					"linkId": "institution/name",
-					"text": "Institution Name",
+					"text": "Name",
 					"type": "string",
 					"required": true
 				}
@@ -53,7 +53,7 @@
 		},
 		{
 			"linkId": "principal",
-			"text": "Site Principal Investigator",
+			"text": "Principal Investigator",
 			"type": "group",
 			"required": false,
 			"item": [
