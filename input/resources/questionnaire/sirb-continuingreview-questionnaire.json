@@ -1,3 +1,4 @@
+
 {
 	"resourceType": "Questionnaire",
 	"id": "sirb-continuingreview-questionnaire",
@@ -18,19 +19,19 @@
 	"item": [
 		{
 			"linkId": "/study",
-			"text": "General Study Information",
+			"text": "Research Study",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
 					"linkId": "/study/title",
-					"text": "Title:",
+					"text": "Study Title:",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "/study/irb",
-					"text": "IRB Number:",
+					"text": "IRB Protocol Number:",
 					"type": "string",
 					"required": false
 				},
@@ -260,7 +261,7 @@
 		},
 		{
 			"linkId": "/pi",
-			"text": "Principal Investigator",
+			"text": "Site Principal Investigator",
 			"type": "group",
 			"required": false,
 			"item": [
@@ -272,7 +273,7 @@
 				},
 				{
 					"linkId": "/pi/phone",
-					"text": "Telephone:",
+					"text": "Phone:",
 					"type": "string",
 					"required": false
 				},
@@ -842,7 +843,7 @@
 						},
 						{
 							"linkId": "/report/sincelast/multi_summary",
-							"text": "If yes, please summarize findings and recommendings:",
+							"text": "If yes, please summarize findings and recommendations:",
 							"type": "text",
 							"enableWhen": [
 								{
@@ -924,7 +925,7 @@
 								}
 							],
 							"linkId": "/report/sincelast/risk_change",
-							"text": "In the opinion of the principal investigator, have the risks or potential benefits changed?",
+							"text": "In the opinion of the Principal Investigator, have the risks or potential benefits changed?",
 							"type": "choice",
 							"required": false,
 							"answerOption": [

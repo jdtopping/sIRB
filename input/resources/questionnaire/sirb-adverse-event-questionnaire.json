@@ -81,7 +81,7 @@
             {
               
               "linkId": "6",
-              "text": "Requirement for FDA exemption",
+              "text": "Does this protocol require an FDA exemption?",
               "type": "choice",
               "required": false,
               "answerOption": [
@@ -914,7 +914,7 @@
             },
             {
               "linkId": "item77",
-              "text": "What is the date Adverse Medical Event became serious?",
+              "text": "What is the date Adverse Medical event became serious?",
               "type": "date",
               "enableWhen": [
                 {
@@ -1498,23 +1498,9 @@
                 },
                 {
                   "linkId": "60",
-                  "text": "Ongoing",
-                  "type": "choice",
-                  "required": false,
-                  "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "1",
-                    "display": "Yes"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "0",
-                    "display": "No"
-                  }
-                }
-              ]
+                  "text": "Check if Ongoing",
+                  "type": "boolean",
+                  "required": false
                 }
               ]
             },
@@ -1613,25 +1599,9 @@
                 },
                 {
                   "linkId": "66",
-                  "text": "Ongoing",
-                  "type": "choice",
-                  "required": false,
-                  "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "1",
-                    "display": "Yes"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "0",
-                    "display": "No"
-                  }
-                }
-              ]
-                }
-              ]
+                  "text": "Check if ongoing",
+                  "type": "boolean",
+                  "required": false
                 }
               ]
             },
