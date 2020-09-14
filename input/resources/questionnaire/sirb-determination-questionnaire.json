@@ -16,9 +16,7 @@
   "title" : "IRB Determination Questionnaire",
   "status" : "draft",
   "experimental" : false,
-  "subjectType" : [
-    "ResearchStudy"
-  ],
+  
   "item" : [
     {
       "linkId" : "/study",
