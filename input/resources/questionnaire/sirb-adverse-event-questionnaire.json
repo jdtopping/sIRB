@@ -1,6 +1,6 @@
 {
   "resourceType" : "Questionnaire",
-  "id" : "sirb-Adverse Medical-event-questionnaire",
+  "id" : "sirb-adverse-event-questionnaire",
   "meta" : {
     "versionId" : "14",
     "lastUpdated" : "2020-05-07T03:58:04.522+00:00",
