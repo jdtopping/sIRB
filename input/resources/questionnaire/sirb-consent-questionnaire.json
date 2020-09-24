@@ -26,9 +26,9 @@
 				}
 			],
 			"linkId": "1",
-			"definition": "Title of the study",
-			"text": "Title of the Study",
-			"type": "string",
+			"definition": "Study Title",
+			"text": "Study Title",
+			"type": "text",
 			"required": true
 		},
 		{
@@ -40,66 +40,66 @@
 			"item": [
 				{
 					"linkId": "2.1",
-					"definition": "Site Principal Investigator Last Name",
-					"text": "Site Principal Investigator Last Name",
+					"definition": "Last Name",
+					"text": "Last Name",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "2.2",
-					"definition": "Site Prinicipal Investigator First Name",
-					"text": "Site Prinicipal Investigator First Name",
+					"definition": "First Name",
+					"text": "First Name",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "2.3",
-					"definition": "Site Prinicipal Investigator Professional Degrees",
-					"text": "Site Prinicipal Investigator Professional Degrees",
+					"definition": "Professional Degrees",
+					"text": "Professional Degrees",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "2.4",
-					"definition": "Site Prinicipal Investigator Associated Institution",
-					"text": "Site Prinicipal Investigator Associated Institution",
+					"definition": "Associated Institution",
+					"text": "Associated Institution",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "2.5",
-					"definition": "Site Prinicipal Investigator Contact Information",
-					"text": "Site Prinicipal Investigator Contact Information",
-					"type": "string",
+					"definition": "Contact Information",
+					"text": "Contact Information",
+					"type": "text",
 					"required": false
 				}
 			]
 		},
 		{
 			"linkId": "3",
-			"definition": "Conducting Institution",
-			"text": "Conducting Institution",
+			"definition": "Relying Institution",
+			"text": "Relying Institution",
 			"type": "group",
 			"required": false,
 			"item": [
 				{
 					"linkId": "3.1",
-					"definition": "Conducting Institution Name",
-					"text": "Conducting Institution Name",
+					"definition": "Name",
+					"text": "Name",
 					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "3.2",
-					"definition": "Conducting Institution Address",
-					"text": "Conducting Institution Address",
-					"type": "string",
+					"definition": "Address",
+					"text": "Address",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "3.3",
-					"definition": "Conducting Institution OID",
-					"text": "Conducting Institution OID",
+					"definition": "OID",
+					"text": "OID",
 					"type": "string",
 					"required": false
 				}
@@ -146,9 +146,9 @@
 		},
 		{
 			"linkId": "4.3",
-			"definition": "Sponsor Detail Statement",
-			"text": "Sponsor Detail Statement",
-			"type": "string",
+			"definition": "Sponsor Detail",
+			"text": "Sponsor Detail",
+			"type": "text",
 			"required": false
 		},
 		{
@@ -188,7 +188,7 @@
 					"linkId": "5.1",
 					"definition": "Summary Text Statement",
 					"text": "Summary Text Statement",
-					"type": "string",
+					"type": "text",
 					"required": true
 				}
 			]
@@ -208,8 +208,8 @@
 			"item": [
 				{
 					"linkId": "6a",
-					"definition": "About this Consent Form",
-					"text": "About this Consent Form",
+					"definition": "About Consent Form",
+					"text": "About Consent Form",
 					"type": "text",
 					"required": false,
 					"initial": [
@@ -229,23 +229,23 @@
 			"item": [
 				{
 					"linkId": "7.1",
-					"definition": "Why is this research being done?",
-					"text": "Why is this research being done?",
-					"type": "string",
+					"definition": "Reason for Research",
+					"text": "Reason for Research",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "7.2",
-					"definition": "Who will the participants be interacting with during the course of the study?",
-					"text": "Who will the participants be interacting with during the course of the study?",
-					"type": "string",
+					"definition": "Interactions with others",
+					"text": "Interactions with others",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "7.3",
-					"definition": "Who is being invited to participate?",
-					"text": "Who is being invited to participate?",
-					"type": "string",
+					"definition": "Invited Participants",
+					"text": "Invited Participants",
+					"type": "text",
 					"required": false
 				},
 				{
@@ -259,14 +259,14 @@
 					"linkId": "7.5",
 					"definition": "Additional Enrollment Text",
 					"text": "Additional Enrollment Text",
-					"type": "string",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "7.6",
 					"definition": "What is involved in the study?",
 					"text": "What is involved in the study?",
-					"type": "string",
+					"type": "text",
 					"required": false
 				}
 			]
@@ -311,7 +311,7 @@
 							"linkId": "x8.1.2",
 							"definition": "Description of Assessment",
 							"text": "Description of Assessment",
-							"type": "string",
+							"type": "text",
 							"required": false
 						}
 					]
@@ -327,8 +327,8 @@
 		},
 		{
 			"linkId": "8",
-			"definition": "Procedures",
-			"text": "Procedures",
+			"definition": "Visits and Procedures",
+			"text": "Visits and Procedures",
 			"type": "group",
 			"required": false,
 			"item": [
@@ -373,7 +373,7 @@
 							"linkId": "8.03",
 							"definition": "Visit Description",
 							"text": "Visit Description",
-							"type": "string",
+							"type": "text",
 							"required": false
 						},
 						{
@@ -475,7 +475,7 @@
 							"linkId": "8.08",
 							"definition": "Description of a Procedure",
 							"text": "Description of a Procedure",
-							"type": "string",
+							"type": "text",
 							"required": false
 						},
 						{
@@ -568,8 +568,8 @@
 				},
 				{
 					"linkId": "8.b",
-					"definition": "Procedure Supplemental Visit Text",
-					"text": "Procedure Supplemental Visit Text",
+					"definition": "Procedure Supplemental Text",
+					"text": "Procedure Supplemental Text",
 					"type": "text",
 					"required": false
 				},
@@ -577,57 +577,10 @@
 					"linkId": "8.14",
 					"definition": "Total Duration of Study Participation",
 					"text": "Total Duration of Study Participation",
-					"type": "decimal",
+					"type": "string",
 					"required": false
-				},
-				{
-					"extension": [
-						{
-							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-							"valueCodeableConcept": {
-								"coding": [
-									{
-										"system": "http://hl7.org/fhir/questionnaire-item-control",
-										"code": "drop-down",
-										"display": "Drop down"
-									}
-								],
-								"text": "Drop down"
-							}
-						}
-					],
-					"linkId": "8.15",
-					"definition": "Total Duration of Study Participation (units)",
-					"text": "Total Duration of Study Participation (units)",
-					"type": "choice",
-					"required": false,
-					"answerOption": [
-						{
-							"valueCoding": {
-								"code": "1",
-								"display": "Hours"
-							}
-						},
-						{
-							"valueCoding": {
-								"code": "2",
-								"display": "Days"
-							}
-						},
-						{
-							"valueCoding": {
-								"code": "3",
-								"display": "Months"
-							}
-						},
-						{
-							"valueCoding": {
-								"code": "4",
-								"display": "Years"
-							}
-						}
-					]
 				}
+				
 			]
 		},
 		{
@@ -670,7 +623,7 @@
 							"linkId": "9.1.2",
 							"definition": "Description of Risk",
 							"text": "Description of Risk",
-							"type": "string",
+							"type": "text",
 							"required": false
 						},
 						{
@@ -713,13 +666,7 @@
 										"display": "Illness or Infection"
 									}
 								},
-								{
-									"valueCoding": {
-										"code": "4",
-										"display": "Unforeseen Physical"
-									}
-								},
-								{
+																{
 									"valueCoding": {
 										"code": "5",
 										"display": "Other Physical"
@@ -767,12 +714,7 @@
 										"display": "Insurability"
 									}
 								},
-								{
-									"valueCoding": {
-										"code": "13",
-										"display": "Unforeseen Non-Physical"
-									}
-								},
+							
 								{
 									"valueCoding": {
 										"code": "14",
@@ -830,7 +772,7 @@
 					"linkId": "9.5",
 					"definition": "Fetal Risk Details",
 					"text": "Fetal Risk Details",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "9.4",
@@ -855,7 +797,7 @@
 					"linkId": "10.1",
 					"definition": "Alternative Procedure Text",
 					"text": "Alternative Procedure Text",
-					"type": "string",
+					"type": "text",
 					"required": false
 				}
 			]
@@ -894,7 +836,7 @@
 					"linkId": "11.2",
 					"definition": "Description of Benefit",
 					"text": "Description of Benefit",
-					"type": "string",
+					"type": "text",
 					"required": false
 				},
 				{
@@ -1066,7 +1008,7 @@
 							"linkId": "12.3",
 							"definition": "What types of visits or milestones will I be compensated for?",
 							"text": "What types of visits or milestones will I be compensated for?",
-							"type": "string",
+							"type": "text",
 							"required": false
 						},
 						{
@@ -1080,7 +1022,7 @@
 							"linkId": "12.6",
 							"definition": "How much will be paid per this type of visit or milestone?",
 							"text": "How much will be paid per this type of visit or milestone?",
-							"type": "string",
+							"type": "text",
 							"required": false
 						}
 					]
@@ -1098,7 +1040,7 @@
 					"linkId": "13.1",
 					"definition": "What are the costs of participation, if any?",
 					"text": "What are the costs of participation, if any?",
-					"type": "string",
+					"type": "text",
 					"required": false
 				},
 				{
@@ -1183,7 +1125,7 @@
 					"linkId": "13.4",
 					"definition": "Additional description of treatment coverage",
 					"text": "Additional description of treatment coverage",
-					"type": "string",
+					"type": "text",
 					"required": false
 				}
 			]
@@ -1199,28 +1141,28 @@
 					"linkId": "14.1",
 					"definition": "What are the rights of a participant?",
 					"text": "What are the rights of a participant?",
-					"type": "string",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "14.2",
-					"definition": "Contact Information for IRB contact for questions regarding participant rights",
-					"text": "Contact Information for IRB contact for questions regarding participant rights",
-					"type": "string",
+					"definition": "Site IRB Contact Information",
+					"text": "Site IRB Contact Information",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "14.3",
-					"definition": "Contact Information for Study Cooridinator for questions regarding study procedures",
-					"text": "Contact Information for Study Cooridinator for questions regarding study procedures",
-					"type": "string",
+					"definition": "Study Coordinator Contact Information",
+					"text": "Study Coordinator Contact Information",
+					"type": "text",
 					"required": false
 				},
 				{
 					"linkId": "14.4",
-					"definition": "Contact Information for PI for research-related injury",
-					"text": "Contact Information for PI for research-related injury",
-					"type": "string",
+					"definition": "Site Principal Investigator Contact Information",
+					"text": "Site Principal Investigator Contact Information",
+					"type": "text",
 					"required": false
 				}
 			]
@@ -1389,7 +1331,7 @@
 					"linkId": "18.4",
 					"definition": "What are the consequences of withdrawal?",
 					"text": "What are the consequences of withdrawal?",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "18.1",
@@ -1414,7 +1356,7 @@
 					"linkId": "19.1",
 					"definition": "Mandatory HIPAA statement",
 					"text": "Medical information and billing statement",
-					"type": "string",
+					"type": "text",
 					"required": false,
 					"initial": [
 						{
@@ -1462,7 +1404,7 @@
 					"linkId": "19.2.1",
 					"definition": "How will confidentiality be protected?",
 					"text": "How will confidentiality be protected?",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "19.2",
@@ -1514,7 +1456,7 @@
 					"linkId": "19.3.1",
 					"definition": "Describe any data security policies and processes protecting the data",
 					"text": "Describe any data security policies and processes protecting the data",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "19.3",
@@ -1595,7 +1537,7 @@
 							"linkId": "19.4.2",
 							"definition": "Description of Information Disclosed",
 							"text": "Description of Information Disclosed",
-							"type": "string",
+							"type": "text",
 							"required": false
 						}
 					]
@@ -1685,7 +1627,7 @@
 					"linkId": "19.5.2",
 					"definition": "Deidentification detail",
 					"text": "Deidentification detail",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "19.5.1",
@@ -1881,7 +1823,7 @@
 					"linkId": "20.1.4.1",
 					"definition": "Conditions of sharing",
 					"text": "Conditions of sharing",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "20.1.4",
@@ -1942,7 +1884,7 @@
 					"linkId": "20.1.6",
 					"definition": "Description of Collection and Storage",
 					"text": "Description of Collection and Storage",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "20.1",
@@ -2095,7 +2037,7 @@
 					"linkId": "22.1",
 					"definition": "Conditions about contact for additional sample use, information not currently described or future research",
 					"text": "Conditions about contact for additional sample use, information not currently described or future research",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "22",
@@ -2149,7 +2091,7 @@
 					"linkId": "23.1",
 					"definition": "Reasons why participants will or will not share in commerical profit",
 					"text": "Reasons why participants will or will not share in commerical profit",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "23",
@@ -2239,7 +2181,7 @@
 					"linkId": "25.1",
 					"definition": "Condtions under which the study results will be disclosed to you",
 					"text": "Condtions under which the study results will be disclosed to you",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "25",
@@ -2306,7 +2248,7 @@
 					"linkId": "26.1",
 					"definition": "Certifcate Confidentiality Boilerplate Text",
 					"text": "Certificate of Confidentiality Statement",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "26",
@@ -2328,7 +2270,7 @@
 					"linkId": "26.2",
 					"definition": "Section to detail any required disclosures",
 					"text": "Required Disclosures based on state law",
-					"type": "string",
+					"type": "text",
 					"enableWhen": [
 						{
 							"question": "26",
@@ -2346,7 +2288,7 @@
 			"linkId": "27",
 			"definition": "When will the PHI Authorization Expire",
 			"text": "When will the PHI Authorization Expire based on date or time past an event",
-			"type": "string",
+			"type": "text",
 			"required": false
 		},
 		{
