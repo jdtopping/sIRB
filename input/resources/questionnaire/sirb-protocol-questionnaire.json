@@ -5,7 +5,6 @@
     "versionId" : "15",
     "lastUpdated" : "2020-05-07T02:57:31.343+00:00",
     "source" : "#xJ1wqpNax3RofqHY"
-    
   },
   "text" : {
     "status" : "generated",
@@ -41,7 +40,7 @@
         {
           "valueCoding" : {
             "code" : "1",
-            "display" : "Interventional/Clinical Trial"
+            "display" : "Clinical Trial"
           }
         },
         {
@@ -75,8 +74,6 @@
             "display" : "Drug/Biologic/Vaccine"
           }
         },
-        
-        
         {
           "valueCoding" : {
             "code" : "2",
@@ -126,9 +123,6 @@
       "linkId" : "i520x",
       "text" : "Does this protocol require an FDA exemption?",
       "type" : "choice",
-      "required" : false,
-      "repeats" : false,
-      "readOnly" : false,
       "enableWhen" : [
         {
           "question" : "i514",
@@ -137,7 +131,6 @@
             "code" : "1"
           }
         },
-
         {
           "question" : "i514",
           "operator" : "=",
@@ -146,7 +139,9 @@
           }
         }
       ],
-      
+      "required" : false,
+      "repeats" : false,
+      "readOnly" : false,
       "answerOption" : [
         {
           "valueCoding" : {
@@ -407,25 +402,25 @@
               "repeats" : false,
               "readOnly" : false,
               "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "Principal Investigator"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "2",
-            "display" : "Co-Investigator"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "3",
-            "display" : "Program Manager"
-          }
-        }
-      ]
+                {
+                  "valueCoding" : {
+                    "code" : "1",
+                    "display" : "Co-Principal Investigator"
+                  }
+                },
+                {
+                  "valueCoding" : {
+                    "code" : "2",
+                    "display" : "Co-Investigator"
+                  }
+                },
+                {
+                  "valueCoding" : {
+                    "code" : "3",
+                    "display" : "Program Director"
+                  }
+                }
+              ]
             },
             {
               "linkId" : "20",
@@ -433,7 +428,7 @@
               "type" : "text",
               "required" : false
             },
-             {
+            {
               "linkId" : "20_1",
               "text" : "Last Name",
               "type" : "text",
@@ -571,7 +566,6 @@
           ],
           "required" : false
         },
-
         {
           "linkId" : "13_1",
           "text" : "IDE Number",
@@ -587,7 +581,6 @@
           ],
           "required" : false
         },
-
         {
           "linkId" : "26",
           "text" : "Study Product Name",
@@ -800,7 +793,7 @@
               "repeats" : false,
               "readOnly" : false
             },
-             {
+            {
               "linkId" : "i505_1",
               "text" : "Last Name",
               "type" : "text",
@@ -1063,8 +1056,14 @@
               "required" : false
             },
             {
+              "linkId" : "45",
+              "text" : "Study Population",
+              "type" : "text",
+              "required" : false
+            },
+            {
               "linkId" : "46",
-              "text" : "Phase or Stage",
+              "text" : "Phase",
               "type" : "text",
               "required" : false
             },
@@ -1097,12 +1096,6 @@
             {
               "linkId" : "m1",
               "text" : "Methodology",
-              "type" : "text",
-              "required" : false
-            },
-            {
-              "linkId" : "45",
-              "text" : "Study Population",
               "type" : "text",
               "required" : false
             },
@@ -3049,19 +3042,19 @@
                       "repeats" : false,
                       "readOnly" : false,
                       "answerOption" : [
-                    {
-                      "valueCoding" : {
-                        "code" : "1",
-                        "display" : "Yes"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "0",
-                        "display" : "No"
-                      }
-                    }
-                  ]
+                        {
+                          "valueCoding" : {
+                            "code" : "1",
+                            "display" : "Yes"
+                          }
+                        },
+                        {
+                          "valueCoding" : {
+                            "code" : "0",
+                            "display" : "No"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
