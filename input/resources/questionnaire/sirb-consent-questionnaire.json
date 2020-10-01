@@ -26,10 +26,26 @@
 				}
 			],
 			"linkId": "1",
-			"definition": "Study Title",
-			"text": "Study Title",
+			"definition": "Research Study",
+			"text": "Research Study",
 			"type": "text",
-			"required": true
+			"required": true,
+			"item": [
+				{
+					"linkId": "1.1",
+					"definition": "Study Title",
+					"text": "Study Title",
+					"type": "Text",
+					"required": false
+				},
+				{
+					"linkId": "1.2",
+					"definition": "Protocol or Study Number",
+					"text": "Protocol or Study Number",
+					"type": "string",
+					"required": false
+				}
+			]
 		},
 		{
 			"linkId": "2",
@@ -1679,7 +1695,7 @@
 						{
 							"valueCoding": {
 								"code": "2",
-								"display": "Information or biospeciments collected will not be used or distributed for future research studies, even if deidentified."
+								"display": "Information or biospecimens collected will not be used or distributed for future research studies, even if deidentified."
 							}
 						}
 					]
@@ -2068,8 +2084,8 @@
 				}
 			],
 			"linkId": "23",
-			"definition": "Will participants share or not share in commercial profit?",
-			"text": "Will participants share or not share in commercial profit?",
+			"definition": "Will participants share in commercial profit?",
+			"text": "Will participants share in commercial profit?",
 			"type": "choice",
 			"required": false,
 			"answerOption": [
@@ -2089,8 +2105,8 @@
 			"item": [
 				{
 					"linkId": "23.1",
-					"definition": "Reasons why participants will or will not share in commerical profit",
-					"text": "Reasons why participants will or will not share in commerical profit",
+					"definition": "Reasons why participants will share in commerical profit",
+					"text": "Reasons why participants will share in commerical profit",
 					"type": "text",
 					"enableWhen": [
 						{
@@ -2595,13 +2611,7 @@
 			"type": "group",
 			"required": false,
 			"item": [
-				{
-					"linkId": "30.1",
-					"definition": "Protocol or Study Number",
-					"text": "Protocol or Study Number",
-					"type": "string",
-					"required": false
-				},
+				
 				{
 					"linkId": "30.2",
 					"definition": "IRB Number",
@@ -2611,15 +2621,29 @@
 				},
 				{
 					"linkId": "30.3",
-					"definition": "Version Number of Consent",
-					"text": "Version Number of Consent",
-					"type": "decimal",
+					"definition": "sIRB Version Number of Consent",
+					"text": "sIRB Version Number of Consent",
+					"type": "string",
 					"required": false
 				},
 				{
 					"linkId": "30.4",
+					"definition": "Relying Site Version Number",
+					"text": "Relying Site Version Number",
+					"type": "string",
+					"required": false
+				},
+				{
+					"linkId": "30.5",
 					"definition": "Version Date of Consent",
 					"text": "Version Date of Consent",
+					"type": "dateTime",
+					"required": false
+				},
+				{
+					"linkId": "30.6",
+					"definition": "Expiration Date of Consent",
+					"text": "Expiration Date of Consent",
 					"type": "dateTime",
 					"required": false
 				}
