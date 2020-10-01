@@ -5,7 +5,6 @@
     "versionId" : "15",
     "lastUpdated" : "2020-05-07T02:57:31.343+00:00",
     "source" : "#xJ1wqpNax3RofqHY"
-    
   },
   "text" : {
     "status" : "generated",
@@ -18,84 +17,10 @@
   "status" : "draft",
   "item" : [
     {
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                "code" : "drop-down",
-                "display" : "Drop down"
-              }
-            ],
-            "text" : "Drop down"
-          }
-        }
-      ],
-      "linkId" : "2",
-      "text" : "Study Type",
-      "type" : "choice",
-      "required" : true,
-      "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "Interventional/Clinical Trial"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "2",
-            "display" : "Observational"
-          }
-        }
-      ]
-    },
-    {
-      "linkId" : "i514",
-      "text" : "Intervention",
-      "type" : "choice",
-      "enableWhen" : [
-        {
-          "question" : "2",
-          "operator" : "=",
-          "answerCoding" : {
-            "code" : "1"
-          }
-        }
-      ],
+      "linkId" : "7",
+      "text" : "Research Study",
+      "type" : "group",
       "required" : false,
-      "repeats" : false,
-      "readOnly" : false,
-      "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "Drug/Biologic/Vaccine"
-          }
-        },
-        
-        
-        {
-          "valueCoding" : {
-            "code" : "2",
-            "display" : "Device"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "4",
-            "display" : "Social/Behavioral/educational (SBE)"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "5",
-            "display" : "Procedural"
-          }
-        }
-      ],
       "item" : [
         {
           "extension" : [
@@ -105,100 +30,170 @@
                 "coding" : [
                   {
                     "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                    "code" : "help",
-                    "display" : "Help-Button"
+                    "code" : "drop-down",
+                    "display" : "Drop down"
                   }
                 ],
-                "text" : "Help-Button"
+                "text" : "Drop down"
               }
             }
           ],
-          "linkId" : "i514-help",
-          "text" : "A process or action that is the focus of a clinical study. Interventions include drugs, medical devices, procedures, vaccines, and other products that are either investigational or already available. Interventions can also include noninvasive approaches, such as education or modifying diet and exercise.",
-          "type" : "display",
+          "linkId" : "2",
+          "text" : "Study Type",
+          "type" : "choice",
+          "required" : true,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "code" : "1",
+                "display" : "Clinical Trial"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "2",
+                "display" : "Observational"
+              }
+            }
+          ]
+        },
+        {
+          "linkId" : "i514",
+          "text" : "Intervention",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "2",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "1"
+              }
+            }
+          ],
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
-        }
-      ]
-    },
-    {
-      "linkId" : "i520x",
-      "text" : "Does this protocol require an FDA exemption?",
-      "type" : "choice",
-      "required" : false,
-      "repeats" : false,
-      "readOnly" : false,
-      "enableWhen" : [
-        {
-          "question" : "i514",
-          "operator" : "=",
-          "answerCoding" : {
-            "code" : "1"
-          }
-        },
-
-        {
-          "question" : "i514",
-          "operator" : "=",
-          "answerCoding" : {
-            "code" : "2"
-          }
-        }
-      ],
-      
-      "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "Yes"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "0",
-            "display" : "No"
-          }
-        }
-      ]
-    },
-    {
-      "linkId" : "i521x",
-      "text" : "Type of exemption",
-      "type" : "open-choice",
-      "enableWhen" : [
-        {
-          "question" : "i520x",
-          "operator" : "=",
-          "answerCoding" : {
-            "code" : "1"
-          }
-        }
-      ],
-      "required" : false,
-      "repeats" : false,
-      "readOnly" : false,
-      "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "IND"
-          }
+          "readOnly" : false,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "code" : "1",
+                "display" : "Drug/Biologic/Vaccine"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "2",
+                "display" : "Device"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "4",
+                "display" : "Social/Behavioral/educational (SBE)"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "5",
+                "display" : "Procedural"
+              }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help",
+                        "display" : "Help-Button"
+                      }
+                    ],
+                    "text" : "Help-Button"
+                  }
+                }
+              ],
+              "linkId" : "i514-help",
+              "text" : "A process or action that is the focus of a clinical study. Interventions include drugs, medical devices, procedures, vaccines, and other products that are either investigational or already available. Interventions can also include noninvasive approaches, such as education or modifying diet and exercise.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "valueCoding" : {
-            "code" : "2",
-            "display" : "IDE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId" : "7",
-      "text" : "General Study Information",
-      "type" : "group",
-      "required" : false,
-      "item" : [
+          "linkId" : "i520x",
+          "text" : "Does this protocol require an FDA exemption?",
+          "type" : "choice",
+          "enableWhen" : [
+            {
+              "question" : "i514",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "1"
+              }
+            },
+            {
+              "question" : "i514",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "2"
+              }
+            }
+          ],
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "code" : "1",
+                "display" : "Yes"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "0",
+                "display" : "No"
+              }
+            }
+          ]
+        },
+        {
+          "linkId" : "i521x",
+          "text" : "Type of exemption",
+          "type" : "open-choice",
+          "enableWhen" : [
+            {
+              "question" : "i520x",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "1"
+              }
+            }
+          ],
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "answerOption" : [
+            {
+              "valueCoding" : {
+                "code" : "1",
+                "display" : "IND"
+              }
+            },
+            {
+              "valueCoding" : {
+                "code" : "2",
+                "display" : "IDE"
+              }
+            }
+          ]
+        },
         {
           "linkId" : "8",
           "text" : "Study Title",
@@ -407,25 +402,25 @@
               "repeats" : false,
               "readOnly" : false,
               "answerOption" : [
-        {
-          "valueCoding" : {
-            "code" : "1",
-            "display" : "Principal Investigator"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "2",
-            "display" : "Co-Investigator"
-          }
-        },
-        {
-          "valueCoding" : {
-            "code" : "3",
-            "display" : "Program Manager"
-          }
-        }
-      ]
+                {
+                  "valueCoding" : {
+                    "code" : "1",
+                    "display" : "Co-Principal Investigator"
+                  }
+                },
+                {
+                  "valueCoding" : {
+                    "code" : "2",
+                    "display" : "Co-Investigator"
+                  }
+                },
+                {
+                  "valueCoding" : {
+                    "code" : "3",
+                    "display" : "Program Director"
+                  }
+                }
+              ]
             },
             {
               "linkId" : "20",
@@ -433,7 +428,7 @@
               "type" : "text",
               "required" : false
             },
-             {
+            {
               "linkId" : "20_1",
               "text" : "Last Name",
               "type" : "text",
@@ -571,7 +566,6 @@
           ],
           "required" : false
         },
-
         {
           "linkId" : "13_1",
           "text" : "IDE Number",
@@ -587,7 +581,6 @@
           ],
           "required" : false
         },
-
         {
           "linkId" : "26",
           "text" : "Study Product Name",
@@ -800,7 +793,7 @@
               "repeats" : false,
               "readOnly" : false
             },
-             {
+            {
               "linkId" : "i505_1",
               "text" : "Last Name",
               "type" : "text",
@@ -1063,8 +1056,14 @@
               "required" : false
             },
             {
+              "linkId" : "45",
+              "text" : "Study Population",
+              "type" : "text",
+              "required" : false
+            },
+            {
               "linkId" : "46",
-              "text" : "Phase or Stage",
+              "text" : "Phase",
               "type" : "text",
               "required" : false
             },
@@ -1097,12 +1096,6 @@
             {
               "linkId" : "m1",
               "text" : "Methodology",
-              "type" : "text",
-              "required" : false
-            },
-            {
-              "linkId" : "45",
-              "text" : "Study Population",
               "type" : "text",
               "required" : false
             },
@@ -3049,19 +3042,19 @@
                       "repeats" : false,
                       "readOnly" : false,
                       "answerOption" : [
-                    {
-                      "valueCoding" : {
-                        "code" : "1",
-                        "display" : "Yes"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "0",
-                        "display" : "No"
-                      }
-                    }
-                  ]
+                        {
+                          "valueCoding" : {
+                            "code" : "1",
+                            "display" : "Yes"
+                          }
+                        },
+                        {
+                          "valueCoding" : {
+                            "code" : "0",
+                            "display" : "No"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
