@@ -1606,6 +1606,14 @@
                       "required" : false
                     }
                   ]
+                },
+                {
+                  "linkId" : "i520",
+                  "text" : "Other benefits",
+                  "type" : "text",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 }
               ]
             },
@@ -1654,6 +1662,12 @@
                   "text" : "Describe any benefit to science, society, and humanity in general:",
                   "type" : "text",
                   "required" : false
+                },
+                {
+                  "linkId" : "93",
+                  "text" : "Other benefits",
+                  "type" : "text",
+                  "required" : false
                 }
               ]
             },
@@ -1680,14 +1694,16 @@
                   "text" : "Describe how the participant can receive the research procedures/drug/device used in this study in a non-research setting:",
                   "type" : "text",
                   "required" : false
+                },
+                {
+                  "linkId" : "i521",
+                  "text" : "Other alternatives to study participation",
+                  "type" : "text",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 }
               ]
-            },
-            {
-              "linkId" : "93",
-              "text" : "Assessment of Potential Risks and Benefits",
-              "type" : "text",
-              "required" : false
             }
           ]
         }
