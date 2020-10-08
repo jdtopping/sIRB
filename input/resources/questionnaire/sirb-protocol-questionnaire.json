@@ -1609,7 +1609,7 @@
                 },
                 {
                   "linkId" : "i520",
-                  "text" : "Other benefits",
+                  "text" : "Other risks",
                   "type" : "text",
                   "required" : false,
                   "repeats" : false,
