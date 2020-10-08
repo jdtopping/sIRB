@@ -371,19 +371,9 @@
                   "text" : "Women:",
                   "type" : "integer",
                   "required" : false
-                },
-                {
-                  "linkId" : "/subjects/count/gender/trans",
-                  "text" : "Transgender:",
-                  "type" : "integer",
-                  "required" : false
-                },
-                {
-                  "linkId" : "/subjects/count/gender/another",
-                  "text" : "Another Identity:",
-                  "type" : "integer",
-                  "required" : false
                 }
+               
+                
               ]
             },
             {
