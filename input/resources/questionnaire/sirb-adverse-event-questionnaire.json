@@ -5,7 +5,6 @@
     "versionId" : "14",
     "lastUpdated" : "2020-05-07T03:58:04.522+00:00",
     "source" : "#AIdKrFPevFTkT9y8"
-    
   },
   "text" : {
     "status" : "generated",
@@ -17,19 +16,22 @@
   "status" : "draft",
   "item" : [
     {
-      "linkId" : "2",
+      "linkId" : "mae1",
+      "definition" : "2",
       "text" : "RESEARCH STUDY",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "3",
+          "linkId" : "mae1.1",
+          "definition" : "3",
           "text" : "Study Title",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "4",
+          "linkId" : "mae1.2",
+          "definition" : "4",
           "text" : "IRB Protocol Number",
           "type" : "string",
           "required" : false
@@ -50,7 +52,8 @@
               }
             }
           ],
-          "linkId" : "5",
+          "linkId" : "mae1.3",
+          "definition" : "5",
           "text" : "Study Type",
           "type" : "choice",
           "required" : false,
@@ -70,7 +73,8 @@
           ]
         },
         {
-          "linkId" : "6",
+          "linkId" : "mae1.4",
+          "definition" : "6",
           "text" : "Does this protocol require an FDA exemption?",
           "type" : "choice",
           "required" : false,
@@ -107,12 +111,13 @@
               }
             }
           ],
-          "linkId" : "7",
+          "linkId" : "mae1.5",
+          "definition" : "7",
           "text" : "Type of Exemption",
           "type" : "open-choice",
           "enableWhen" : [
             {
-              "question" : "6",
+              "question" : "mae1.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -136,12 +141,13 @@
           ]
         },
         {
-          "linkId" : "8",
+          "linkId" : "mae1.6",
+          "definition" : "8",
           "text" : "IND/IDE Number",
           "type" : "string",
           "enableWhen" : [
             {
-              "question" : "6",
+              "question" : "mae1.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -153,31 +159,36 @@
       ]
     },
     {
-      "linkId" : "9",
+      "linkId" : "mae2",
+      "definition" : "9",
       "text" : "Site Principal Investigator",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "10",
+          "linkId" : "mae2.1",
+          "definition" : "10",
           "text" : "First Name",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "11",
+          "linkId" : "mae2.3",
+          "definition" : "11",
           "text" : "Last Name",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "12",
+          "linkId" : "mae2.3",
+          "definition" : "12",
           "text" : "Phone",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "13",
+          "linkId" : "mae2.4",
+          "definition" : "13",
           "text" : "Email",
           "type" : "string",
           "required" : false
@@ -185,31 +196,36 @@
       ]
     },
     {
-      "linkId" : "14",
+      "linkId" : "mae3",
+      "definition" : "14",
       "text" : "Primary Contact",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "15",
+          "linkId" : "mae3.1",
+          "definition" : "15",
           "text" : "First Name",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "16",
+          "linkId" : "mae3.2",
+          "definition" : "16",
           "text" : "Last Name",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "17",
+          "linkId" : "mae3.3",
+          "definition" : "17",
           "text" : "Phone",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "18",
+          "linkId" : "mae3.4",
+          "definition" : "18",
           "text" : "Email",
           "type" : "string",
           "required" : false
@@ -217,19 +233,22 @@
       ]
     },
     {
-      "linkId" : "19",
+      "linkId" : "mae4",
+      "definition" : "19",
       "text" : "Site/Organization",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "20",
+          "linkId" : "mae4.1",
+          "definition" : "20",
           "text" : "Name of organization/site where the event occurred",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "21",
+          "linkId" : "mae4.2",
+          "definition" : "21",
           "text" : "Name of organization/site which is recording the Adverse Medical event",
           "type" : "string",
           "required" : false
@@ -237,19 +256,22 @@
       ]
     },
     {
-      "linkId" : "22",
+      "linkId" : "mae5",
+      "definition" : "22",
       "text" : "Participant Information",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "23",
+          "linkId" : "mae5.1",
+          "definition" : "23",
           "text" : "Patient ID",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "24",
+          "linkId" : "mae5.2",
+          "definition" : "24",
           "text" : "Age",
           "type" : "string",
           "required" : false
@@ -270,7 +292,8 @@
               }
             }
           ],
-          "linkId" : "25",
+          "linkId" : "mae5.3",
+          "definition" : "25",
           "text" : "Gender",
           "type" : "choice",
           "required" : false,
@@ -322,7 +345,8 @@
               }
             }
           ],
-          "linkId" : "26",
+          "linkId" : "mae5.4",
+          "definition" : "26",
           "text" : "Weight",
           "type" : "quantity",
           "required" : false
@@ -354,7 +378,8 @@
               }
             }
           ],
-          "linkId" : "27",
+          "linkId" : "mae5.5",
+          "definition" : "27",
           "text" : "Height",
           "type" : "quantity",
           "required" : false
@@ -375,7 +400,8 @@
               }
             }
           ],
-          "linkId" : "28",
+          "linkId" : "mae5.6",
+          "definition" : "28",
           "text" : "Ethnicity",
           "type" : "choice",
           "required" : false,
@@ -410,7 +436,8 @@
               }
             }
           ],
-          "linkId" : "29",
+          "linkId" : "mae5.7",
+          "definition" : "29",
           "text" : "Race",
           "type" : "choice",
           "required" : false,
@@ -448,13 +475,15 @@
           ]
         },
         {
-          "linkId" : "30",
+          "linkId" : "mae5.8",
+          "definition" : "30",
           "text" : "Which Arm/Cohort/treatment group was the participant assigned to?",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "31",
+          "linkId" : "mae5.9",
+          "definition" : "31",
           "text" : "Participant dosed",
           "type" : "choice",
           "required" : false,
@@ -503,12 +532,13 @@
               }
             }
           ],
-          "linkId" : "32",
+          "linkId" : "mae5.10",
+          "definition" : "32",
           "text" : "What study agent was received:",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "31",
+              "question" : "mae5.9",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -553,7 +583,8 @@
               }
             }
           ],
-          "linkId" : "33",
+          "linkId" : "mae5.11",
+          "definition" : "33",
           "text" : "Were there any Protocol Deviations/Violations/Exceptions for this participant?",
           "type" : "choice",
           "required" : false,
@@ -573,12 +604,13 @@
           ]
         },
         {
-          "linkId" : "34",
+          "linkId" : "mae5.12",
+          "definition" : "34",
           "text" : "Describe the Protocol Deviations/Violations/Exceptions",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "33",
+              "question" : "mae5.11",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -590,7 +622,8 @@
       ]
     },
     {
-      "linkId" : "35",
+      "linkId" : "mae6",
+      "definition" : "35",
       "text" : "Adverse Medical Event Information",
       "type" : "group",
       "required" : false,
@@ -611,7 +644,8 @@
               }
             }
           ],
-          "linkId" : "36",
+          "linkId" : "mae6.1",
+          "definition" : "36",
           "text" : "Submission Type",
           "type" : "choice",
           "required" : false,
@@ -631,7 +665,8 @@
           ]
         },
         {
-          "linkId" : "37",
+          "linkId" : "mae6.2",
+          "definition" : "37",
           "text" : "Adverse Event Description",
           "type" : "text",
           "required" : false,
@@ -643,19 +678,22 @@
           ]
         },
         {
-          "linkId" : "40",
+          "linkId" : "mae6.3",
+          "definition" : "40",
           "text" : "Start Date",
           "type" : "date",
           "required" : false
         },
         {
-          "linkId" : "41",
+          "linkId" : "mae6.4",
+          "definition" : "41",
           "text" : "Reported Date",
           "type" : "date",
           "required" : false
         },
         {
-          "linkId" : "42",
+          "linkId" : "mae6.5",
+          "definition" : "42",
           "text" : "Recorded Date",
           "type" : "date",
           "required" : false
@@ -676,7 +714,8 @@
               }
             }
           ],
-          "linkId" : "43",
+          "linkId" : "mae6.6",
+          "definition" : "43",
           "text" : "Is the Adverse Medical event still ongoing?",
           "type" : "choice",
           "required" : false,
@@ -696,12 +735,13 @@
           ]
         },
         {
-          "linkId" : "44",
+          "linkId" : "mae6.7",
+          "definition" : "44",
           "text" : "Stop Date",
           "type" : "date",
           "enableWhen" : [
             {
-              "question" : "43",
+              "question" : "mae6.6",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "0"
@@ -726,7 +766,8 @@
               }
             }
           ],
-          "linkId" : "item76",
+          "linkId" : "mae6.8",
+          "definition" : "item76",
           "text" : "Expectedness",
           "type" : "choice",
           "required" : false,
@@ -761,7 +802,8 @@
               }
             }
           ],
-          "linkId" : "45",
+          "linkId" : "mae6.9",
+          "definition" : "45",
           "text" : "Severity",
           "type" : "choice",
           "required" : false,
@@ -802,7 +844,8 @@
               }
             }
           ],
-          "linkId" : "46",
+          "linkId" : "mae6.10",
+          "definition" : "46",
           "text" : "Is the Adverse Medical Event Serious?",
           "type" : "choice",
           "required" : false,
@@ -837,12 +880,13 @@
               }
             }
           ],
-          "linkId" : "47",
+          "linkId" : "mae6.11",
+          "definition" : "47",
           "text" : "Seriousness",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "46",
+              "question" : "mae6.10",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -896,12 +940,13 @@
           ]
         },
         {
-          "linkId" : "item77",
+          "linkId" : "mae6.12",
+          "definition" : "48",
           "text" : "What is the date Adverse Medical Event became serious?",
           "type" : "date",
           "enableWhen" : [
             {
-              "question" : "46",
+              "question" : "mae6.10",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -926,7 +971,8 @@
               }
             }
           ],
-          "linkId" : "48",
+          "linkId" : "mae6.13",
+          "definition" : "48",
           "text" : "Outcome of Adverse Medical Event",
           "type" : "choice",
           "required" : false,
@@ -985,12 +1031,13 @@
               }
             }
           ],
-          "linkId" : "i75",
+          "linkId" : "mae6.14",
+          "definition" : "i75",
           "text" : "Was autopsy performed?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "48",
+              "question" : "mae6.13",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "5"
@@ -1035,7 +1082,8 @@
               }
             }
           ],
-          "linkId" : "49",
+          "linkId" : "mae6.15",
+          "definition" : "49",
           "text" : "Relationship of Adverse Medical Event to Study Intervention",
           "type" : "choice",
           "required" : false,
@@ -1073,26 +1121,27 @@
           ]
         },
         {
-          "linkId" : "49_1",
+          "linkId" : "mae6.16",
+          "definition" : "49_1",
           "text" : "Rationale for relationship with study intervention",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "49",
+              "question" : "mae6.15",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
               }
             },
             {
-              "question" : "49",
+              "question" : "mae6.15",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "3"
               }
             },
             {
-              "question" : "49",
+              "question" : "mae6.15",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "4"
@@ -1120,26 +1169,21 @@
               }
             }
           ],
-          "linkId" : "53",
+          "linkId" : "mae6.17",
+          "definition" : "53",
           "text" : "What are possible alternate causes of the SAE?",
           "type" : "choice",
           "enableWhen" : [
+            
             {
-              "question" : "46",
-              "operator" : "=",
-              "answerCoding" : {
-                "code" : "1"
-              }
-            },
-            {
-              "question" : "49",
+              "question" : "mae6.15",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "0"
               }
             },
             {
-              "question" : "49",
+              "question" : "mae6.15",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1188,12 +1232,13 @@
           ]
         },
         {
-          "linkId" : "item78",
+          "linkId" : "mae6.18",
+          "definition" : "item78",
           "text" : "Study Procedure- Specify",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "53",
+              "question" : "mae6.17",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "5"
@@ -1203,12 +1248,13 @@
           "required" : false
         },
         {
-          "linkId" : "item79",
+          "linkId" : "mae6.19",
+          "definition" : "item79",
           "text" : "Pre-existing condition-specify",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "53",
+              "question" : "mae6.17",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "7"
@@ -1218,12 +1264,13 @@
           "required" : false
         },
         {
-          "linkId" : "item80",
+          "linkId" : "mae6.20",
+          "definition" : "item80",
           "text" : "Underlying disease-specify",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "53",
+              "question" : "mae6.17",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "4"
@@ -1233,12 +1280,13 @@
           "required" : false
         },
         {
-          "linkId" : "item81",
+          "linkId" : "mae6.21",
+          "definition" : "item81",
           "text" : "Concomittant medication- specify",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "53",
+              "question" : "mae6.17",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1248,12 +1296,13 @@
           "required" : false
         },
         {
-          "linkId" : "item82",
+          "linkId" : "mae6.22",
+          "definition" : "item82",
           "text" : "Other known or suspected cause- specify",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "53",
+              "question" : "mae6.17",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "6"
@@ -1278,7 +1327,8 @@
               }
             }
           ],
-          "linkId" : "50",
+          "linkId" : "mae6.23",
+          "definition" : "50",
           "text" : "Action Taken Regarding Study Intervention",
           "type" : "choice",
           "required" : false,
@@ -1322,7 +1372,8 @@
           ]
         },
         {
-          "linkId" : "50_1",
+          "linkId" : "mae6.24",
+          "definition" : "50_1",
           "text" : "If study intervention was discontinued, interrupted, or dose reduced (dechallenged), did AE diminish/abate?",
           "type" : "choice",
           "required" : false,
@@ -1350,7 +1401,8 @@
           ]
         },
         {
-          "linkId" : "50_2",
+          "linkId" : "mae6.25",
+          "definition" : "50_2",
           "text" : "If study intervention was restarted (rechallenge) did AE recur?",
           "type" : "choice",
           "required" : false,
@@ -1393,12 +1445,13 @@
               }
             }
           ],
-          "linkId" : "52",
+          "linkId" : "mae6.26",
+          "definition" : "52",
           "text" : "Did the participant receive any relevant concomitant medications in response to the SAE?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "46",
+              "question" : "mae6.10",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1437,12 +1490,13 @@
               }
             }
           ],
-          "linkId" : "55",
+          "linkId" : "mae6.27",
+          "definition" : "55",
           "text" : "SAE Concomitant Medications",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "52",
+              "question" : "mae6.26",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1453,31 +1507,36 @@
           "repeats" : true,
           "item" : [
             {
-              "linkId" : "56",
+              "linkId" : "mae6.28.1",
+              "definition" : "56",
               "text" : "Medication Name",
               "type" : "string",
               "required" : false
             },
             {
-              "linkId" : "57",
+              "linkId" : "mae6.28.2",
+              "definition" : "57",
               "text" : "Indication",
               "type" : "string",
               "required" : false
             },
             {
-              "linkId" : "58",
+              "linkId" : "mae6.28.3",
+              "definition" : "58",
               "text" : "Start Date",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "59",
+              "linkId" : "mae6.28.4",
+              "definition" : "59",
               "text" : "Stop Date",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "60",
+              "linkId" : "mae6.28.5",
+              "definition" : "60",
               "text" : "Ongoing",
               "type" : "choice",
               "required" : false,
@@ -1514,12 +1573,13 @@
               }
             }
           ],
-          "linkId" : "61",
+          "linkId" : "mae6.29",
+          "definition" : "61",
           "text" : "Did the participant receive any treatments/procedures in response to the SAE?",
           "type" : "open-choice",
           "enableWhen" : [
             {
-              "question" : "46",
+              "question" : "mae6.10",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1558,12 +1618,13 @@
               }
             }
           ],
-          "linkId" : "62",
+          "linkId" : "mae6.30",
+          "definition" : "62",
           "text" : "SAE Treatments/Procedures",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "61",
+              "question" : "mae6.29",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1574,25 +1635,29 @@
           "repeats" : true,
           "item" : [
             {
-              "linkId" : "63",
+              "linkId" : "mae6.30.1",
+              "definition" : "63",
               "text" : "Treatment/Procedure",
               "type" : "string",
               "required" : false
             },
             {
-              "linkId" : "64",
+              "linkId" : "mae6.30.2",
+              "definition" : "64",
               "text" : "Start Date",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "65",
+              "linkId" : "mae6.30.3",
+              "definition" : "65",
               "text" : "Stop Date",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "66",
+              "linkId" : "mae6.30.4",
+              "definition" : "66",
               "text" : "Ongoing",
               "type" : "choice",
               "required" : false,
@@ -1631,12 +1696,13 @@
           }
         }
       ],
-      "linkId" : "67",
+      "linkId" : "mae7",
+      "definition" : "67",
       "text" : "Did the participant receive relevant laboratory or diagnostic tests in response to the SAE?",
       "type" : "open-choice",
       "enableWhen" : [
         {
-          "question" : "46",
+          "question" : "mae6.10",
           "operator" : "=",
           "answerCoding" : {
             "code" : "1"
@@ -1675,12 +1741,13 @@
           }
         }
       ],
-      "linkId" : "68",
+      "linkId" : "mae8",
+      "definition" : "68",
       "text" : "SAE Laboratory or Diagnostic Tests",
       "type" : "group",
       "enableWhen" : [
         {
-          "question" : "67",
+          "question" : "mae7",
           "operator" : "=",
           "answerCoding" : {
             "code" : "1"
@@ -1691,37 +1758,43 @@
       "repeats" : true,
       "item" : [
         {
-          "linkId" : "69",
+          "linkId" : "mae8.1",
+          "definition" : "69",
           "text" : "Lab/Diagnostic Test",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "70",
+          "linkId" : "mae8.2",
+          "definition" : "70",
           "text" : "Date",
           "type" : "date",
           "required" : false
         },
         {
-          "linkId" : "71",
+          "linkId" : "mae8.3",
+          "definition" : "71",
           "text" : "Result",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "72",
+          "linkId" : "mae8.4",
+          "definition" : "72",
           "text" : "Low Range",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "73",
+          "linkId" : "mae8.5",
+          "definition" : "73",
           "text" : "High Range",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "74",
+          "linkId" : "mae8.6",
+          "definition" : "74",
           "text" : "Comments",
           "type" : "string",
           "required" : false
@@ -1729,12 +1802,13 @@
       ]
     },
     {
-      "linkId" : "38",
+      "linkId" : "mae9",
+      "definition" : "38",
       "text" : "Narrative/Comments (provide a description of the SAE including chronological clinical presentation and evolution of the SAE and associated signs/symptoms):",
       "type" : "text",
       "enableWhen" : [
         {
-          "question" : "46",
+          "question" : "mae6.10",
           "operator" : "=",
           "answerCoding" : {
             "code" : "1"

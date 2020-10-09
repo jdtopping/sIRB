@@ -17,7 +17,7 @@
   "status" : "draft",
   "item" : [
     {
-      "linkId" : "/study",
+      "linkId" : "cr1",
       "text" : "Research Study",
       "type" : "group",
       "required" : false,
@@ -25,7 +25,7 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "/study/title",
+          "linkId" : "cr1.1",
           "text" : "Study Title",
           "type" : "string",
           "required" : false,
@@ -33,7 +33,7 @@
           "readOnly" : false
         },
         {
-          "linkId" : "/study/irb",
+          "linkId" : "cr1.2",
           "text" : "IRB Protocol Number",
           "type" : "string",
           "required" : false
@@ -54,7 +54,7 @@
               }
             }
           ],
-          "linkId" : "/study/enrollment",
+          "linkId" : "cr1.3",
           "text" : "Enrollment Status:",
           "type" : "choice",
           "required" : false,
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "linkId" : "/study/intervention",
+          "linkId" : "cr1.4",
           "text" : "Intervention Status:",
           "type" : "choice",
           "required" : false,
@@ -142,7 +142,7 @@
               }
             }
           ],
-          "linkId" : "/study/status",
+          "linkId" : "cr1.5",
           "text" : "Study Status:",
           "type" : "choice",
           "required" : false,
@@ -189,7 +189,8 @@
               }
             }
           ],
-          "linkId" : "/study/funding",
+          "linkId" : "cr1.6",
+          "definition" : "/study/funding",
           "text" : "Funding Source:",
           "type" : "choice",
           "required" : false,
@@ -245,12 +246,12 @@
           ]
         },
         {
-          "linkId" : "/study/funding_other",
+          "linkId" : "cr1.7",
           "text" : "Other:",
           "type" : "string",
           "enableWhen" : [
             {
-              "question" : "/study/funding",
+              "question" : "cr1.6",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "other"
@@ -263,25 +264,25 @@
       ]
     },
     {
-      "linkId" : "/pi",
+      "linkId" : "cr2",
       "text" : "Site Principal Investigator",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/pi/name",
+          "linkId" : "cr2.1",
           "text" : "Name:",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/pi/phone",
+          "linkId" : "cr2.2",
           "text" : "Phone",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/pi/email",
+          "linkId" : "cr2.3",
           "text" : "Email:",
           "type" : "string",
           "required" : false
@@ -289,97 +290,97 @@
       ]
     },
     {
-      "linkId" : "/subjects",
+      "linkId" : "cr3",
       "text" : "Accrual of Participants",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/subjects/counts",
+          "linkId" : "cr3.1",
           "text" : "Provide counts for the following:",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "/subjects/count/activation",
+              "linkId" : "cr3.1.1",
               "text" : "Participants enrolled since activation:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/approval",
+              "linkId" : "cr3.1.2",
               "text" : "Participants enrolled since last approval:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/approved",
+              "linkId" : "cr3.1.3",
               "text" : "Participants approved to enroll:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/consented",
+              "linkId" : "cr3.1.4",
               "text" : "Participants consented:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/withdrawn",
+              "linkId" : "cr3.1.5",
               "text" : "Participants withdrawn:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/lost",
+              "linkId" : "cr3.1.6",
               "text" : "Participants lost to contact:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/failure",
+              "linkId" : "cr3.1.7",
               "text" : "Participants with screen failures:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/active",
+              "linkId" : "cr3.1.8",
               "text" : "Participants still active or follow-up:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/complete",
+              "linkId" : "cr3.1.9",
               "text" : "Participants completed study:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/count/gender",
+              "linkId" : "cr3.1.10",
               "text" : "By Sex:",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/subjects/count/gender/men",
+                  "linkId" : "cr3.1.10.1",
                   "text" : "Men:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/gender/women",
+                  "linkId" : "cr3.1.10.2",
                   "text" : "Women:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/gender/trans",
+                  "linkId" : "cr3.1.10.3",
                   "text" : "Transgender:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/gender/another",
+                  "linkId" : "cr3.1.10.4",
                   "text" : "Another Identity:",
                   "type" : "integer",
                   "required" : false
@@ -387,49 +388,49 @@
               ]
             },
             {
-              "linkId" : "/subjects/count/race",
+              "linkId" : "cr3.1.11",
               "text" : "By Race",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/subjects/count/race/white",
+                  "linkId" : "cr3.1.11.1",
                   "text" : "White:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/black",
+                  "linkId" : "cr3.1.11.2",
                   "text" : "Black or African American:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/asian",
+                  "linkId" : "cr3.1.11.3",
                   "text" : "Asian:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/native",
+                  "linkId" : "cr3.1.11.4",
                   "text" : "American Indian or Alaska Native:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/pacific",
+                  "linkId" : "cr3.1.11.5",
                   "text" : "Native Hawaiian or other Pacific Islander:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/more",
+                  "linkId" : "cr3.1.11.6",
                   "text" : "More than One Race:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/race/unknown",
+                  "linkId" : "cr3.1.11.7",
                   "text" : "Unknown/Not Reported:",
                   "type" : "integer",
                   "required" : false
@@ -437,25 +438,25 @@
               ]
             },
             {
-              "linkId" : "/subjects/count/ethnicity",
+              "linkId" : "cr3.1.12",
               "text" : "By Ethnicity",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/subjects/count/ethnicity/hispanic",
+                  "linkId" : "cr3.1.12.1",
                   "text" : "Hispanic or Latino:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/ethnicity/not",
+                  "linkId" : "cr3.1.12.2",
                   "text" : "Not Hispanic or Latino:",
                   "type" : "integer",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/count/ethnicity/unknown",
+                  "linkId" : "cr3.1.12.3",
                   "text" : "Unknown/Not Reported:",
                   "type" : "integer",
                   "required" : false
@@ -465,67 +466,67 @@
           ]
         },
         {
-          "linkId" : "/subjects/vulnerable",
+          "linkId" : "cr3.2",
           "text" : "Vulnerable Populations",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "/subjects/vulnerable/count",
+              "linkId" : "cr3.2.1",
               "text" : "Number of potentially vulnerable participants enrolled:",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "/subjects/vulnerable/check",
+              "linkId" : "cr3.2.2",
               "text" : "Check all that apply:",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/subjects/vulnerable/check/children",
+                  "linkId" : "cr3.2.2.1",
                   "text" : "Children",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/impaired",
+                  "linkId" : "cr3.2.2.2",
                   "text" : "Cognitively Impaired",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/employees",
+                  "linkId" : "cr3.2.2.3",
                   "text" : "Employees",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/fetuses",
+                  "linkId" : "cr3.2.2.4",
                   "text" : "Fetuses",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/neonates",
+                  "linkId" : "cr3.2.2.5",
                   "text" : "Neonates (non-viable / uncertain viability)",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/pregnant",
+                  "linkId" : "cr3.2.2.6",
                   "text" : "Pregnant Women",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/prisoners",
+                  "linkId" : "cr3.2.2.7",
                   "text" : "Prisoners",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/subjects/vulnerable/check/students",
+                  "linkId" : "cr3.2.2.8",
                   "text" : "Students",
                   "type" : "boolean",
                   "required" : false
@@ -537,19 +538,19 @@
       ]
     },
     {
-      "linkId" : "/report",
+      "linkId" : "cr4",
       "text" : "Study Report",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/report/sincelast",
+          "linkId" : "cr4.1",
           "text" : "Since your last report:",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/sincelast/summary",
+              "linkId" : "cr4.1.1",
               "text" : "Summarize the study progress:",
               "type" : "text",
               "required" : false
@@ -570,7 +571,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/benefits",
+              "linkId" : "cr4.1.2",
+              "definition" : "/report/sincelast/benefits",
               "text" : "Have participants experienced any benefits since your last report?",
               "type" : "choice",
               "required" : false,
@@ -590,12 +592,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/benefits_summary",
+              "linkId" : "cr4.1.3",
               "text" : "If yes, please summarize the benefits:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/benefits",
+                  "question" : "cr4.1.2",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -621,7 +623,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/withdrawn",
+              "linkId" : "cr4.1.4",
+              "definition" : "/report/sincelast/withdrawn",
               "text" : "Have participants been withdrawn from this study?",
               "type" : "choice",
               "required" : false,
@@ -641,12 +644,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/withdrawn_summary",
+              "linkId" : "cr4.1.5",
               "text" : "If yes, please summarize the withdrawals:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/withdrawn",
+                  "question" : "cr4.1.4",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -672,7 +675,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/complaint",
+              "linkId" : "cr4.1.6",
+              "definition" : "/report/sincelast/complaint",
               "text" : "Have any participants or others complained about the research?",
               "type" : "choice",
               "required" : false,
@@ -692,12 +696,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/complaint_summary",
+              "linkId" : "cr4.1.7",
               "text" : "If yes, please summarize the complaints:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/complaint",
+                  "question" : "cr4.1.6",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -723,7 +727,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/literature",
+              "linkId" : "cr4.1.8",
+              "definition" : "/report/sincelast/literature",
               "text" : "Has any new and relevant literature been published related to the risks or benefits associated with this research?",
               "type" : "choice",
               "required" : false,
@@ -743,12 +748,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/literature_summary",
+              "linkId" : "cr4.1.9",
               "text" : "If yes, please summarize relevance to study:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/literature",
+                  "question" : "cr4.1.8",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -774,7 +779,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/findings",
+              "linkId" : "cr4.1.10",
+              "definition" : "/report/sincelast/findings",
               "text" : "Have there been any interim findings?",
               "type" : "choice",
               "required" : false,
@@ -794,12 +800,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/findings_summary",
+              "linkId" : "cr4.1.11",
               "text" : "If yes, please summarize findings:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/findings",
+                  "question" : "cr4.1.10",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -825,7 +831,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/multi",
+              "linkId" : "cr4.1.12",
+              "definition" : "/report/sincelast/multi",
               "text" : "Have there been any multi-center trial reports?",
               "type" : "choice",
               "required" : false,
@@ -845,12 +852,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/multi_summary",
+              "linkId" : "cr4.1.13",
               "text" : "If yes, please summarize findings and recommendations",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/multi",
+                  "question" : "cr4.1.12",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -882,7 +889,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/dsmb",
+              "linkId" : "cr4.1.14",
+              "definition" : "/report/sincelast/dsmb",
               "text" : "Have there been any data safety monitoring board reports?",
               "type" : "choice",
               "required" : false,
@@ -902,12 +910,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/dsmb_summary",
+              "linkId" : "cr4.1.15",
               "text" : "If yes, please summarize findings and recommendations:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/dsmb",
+                  "question" : "cr4.1.14",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -933,7 +941,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/risk_change",
+              "linkId" : "cr4.1.16",
+              "definition" : "/report/sincelast/risk_change",
               "text" : "In the opinion of the Principal Investigator, have the risks or potential benefits changed?",
               "type" : "choice",
               "required" : false,
@@ -953,12 +962,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/risk_change_summary",
+              "linkId" : "cr4.1.17",
               "text" : "If yes, please summarize the changes:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/risk_change",
+                  "question" : "cr4.1.16",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -984,7 +993,7 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/audit",
+              "linkId" : "cr4.1.18",
               "text" : "Has an audit of the research been conducted by a federal agency or sponsor?",
               "type" : "choice",
               "required" : false,
@@ -1019,7 +1028,7 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/publications",
+              "linkId" : "cr4.1.19",
               "text" : "Have there been any presentations or publications (including abstracts) from this research?",
               "type" : "choice",
               "required" : false,
@@ -1054,7 +1063,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/study_change",
+              "linkId" : "cr4.1.20",
+              "definition" : "/report/sincelast/study_change",
               "text" : "Have there been any substantial changes to the study (protocol, consent forms, or other study documents) or to the risk-benefit assessment?",
               "type" : "choice",
               "required" : false,
@@ -1074,12 +1084,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/study_change_summary",
+              "linkId" : "cr4.1.21",
               "text" : "If yes, please summarize the changes:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/study_change",
+                  "question" : "cr4.1.20",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -1105,7 +1115,7 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/consent",
+              "linkId" : "cr4.1.22",
               "text" : "Was informed consent obtained from all enrolled participants?",
               "type" : "choice",
               "required" : false,
@@ -1140,7 +1150,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/sincelast/other",
+              "linkId" : "cr4.1.23",
+              "definition" : "/report/sincelast/other",
               "text" : "Has there been any other relevant information regarding this protocol?",
               "type" : "choice",
               "required" : false,
@@ -1160,12 +1171,12 @@
               ]
             },
             {
-              "linkId" : "/report/sincelast/other_summary",
+              "linkId" : "cr4.1.24",
               "text" : "If yes, please summarize:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/sincelast/other",
+                  "question" : "cr4.1.23",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -1180,7 +1191,7 @@
       ]
     },
     {
-      "linkId" : "/event",
+      "linkId" : "cr5",
       "text" : "Adverse Events",
       "type" : "group",
       "required" : false,
@@ -1201,7 +1212,8 @@
               }
             }
           ],
-          "linkId" : "/event/event/ae",
+          "linkId" : "cr5.1",
+          "definition" : "/event/event/ae",
           "text" : "Have there been any internal or local adverse events in the research?",
           "type" : "choice",
           "required" : false,
@@ -1236,12 +1248,12 @@
               }
             }
           ],
-          "linkId" : "/event/event/expected",
+          "linkId" : "cr5.2",
           "text" : "Did these adverse events occur at the frequency and level of severity expected?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "/event/event/ae",
+              "question" : "cr5.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1281,7 +1293,7 @@
               }
             }
           ],
-          "linkId" : "/event/event/deviation",
+          "linkId" : "cr5.3",
           "text" : "Have any protocol deviations or violations occurred in this study?",
           "type" : "choice",
           "required" : false,
@@ -1303,7 +1315,7 @@
       ]
     },
     {
-      "linkId" : "/interest",
+      "linkId" : "cr6",
       "text" : "Conflict of Interest",
       "type" : "group",
       "required" : false,
@@ -1324,7 +1336,8 @@
               }
             }
           ],
-          "linkId" : "/interest/conflict",
+          "linkId" : "cr6.1",
+          "definition" : "/interest/conflict",
           "text" : "Has there been a change in the financial disclosure status of the Principal Investigator or other members of the Research Staff that has not been reported to the IRB?",
           "type" : "choice",
           "required" : false,
@@ -1344,12 +1357,12 @@
           ]
         },
         {
-          "linkId" : "/interest/conflict_explain",
+          "linkId" : "cr6.2",
           "text" : "If yes, please explain:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/interest/conflict",
+              "question" : "cr6.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"

@@ -16,22 +16,21 @@
   "title" : "IRB Determination Questionnaire",
   "status" : "draft",
   "experimental" : false,
-  
   "item" : [
     {
-      "linkId" : "/study",
+      "linkId" : "dl1",
       "text" : "Research Study",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/study/title",
+          "linkId" : "dl1.1",
           "text" : "Study Title",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/study/irb",
+          "linkId" : "dl1.2",
           "text" : "IRB Protocol Number",
           "type" : "string",
           "required" : false
@@ -39,31 +38,31 @@
       ]
     },
     {
-      "linkId" : "/reliance",
+      "linkId" : "dl2",
       "text" : "Reliance Determination",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/reliance/reviewing",
+          "linkId" : "dl2.1",
           "text" : "Reviewing IRB",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "/reliance/reviewing/institution",
+              "linkId" : "dl2.1.1",
               "text" : "Institution",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/reliance/reviewing/institution/name",
+                  "linkId" : "dl2.1.1.1",
                   "text" : "Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/reviewing/institution/fwa",
+                  "linkId" : "dl2.1.1.2",
                   "text" : "Federal Wide Assurance (FWA):",
                   "type" : "string",
                   "required" : false
@@ -71,25 +70,25 @@
               ]
             },
             {
-              "linkId" : "/reliance/reviewing/poc",
+              "linkId" : "dl2.1.2",
               "text" : "Point of Contact",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/reliance/reviewing/poc/first",
+                  "linkId" : "dl2.1.2.1",
                   "text" : "First Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/reviewing/poc/last",
+                  "linkId" : "dl2.1.2.2",
                   "text" : "Last Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/reviewing/poc/email",
+                  "linkId" : "dl2.1.2.3",
                   "text" : "Email",
                   "type" : "string",
                   "required" : false
@@ -97,7 +96,7 @@
               ]
             },
             {
-              "linkId" : "/reliance/reviewing/overall",
+              "linkId" : "dl2.3.1",
               "text" : "Overall Principal Investigator",
               "type" : "group",
               "required" : false,
@@ -109,19 +108,19 @@
               ],
               "item" : [
                 {
-                  "linkId" : "/reliance/reviewing/overall/first",
+                  "linkId" : "dl2.3.1.1",
                   "text" : "First Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/reviewing/overall/last",
+                  "linkId" : "dl2.3.1.2",
                   "text" : "Last Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/reviewing/overall/email",
+                  "linkId" : "dl2.3.1.3",
                   "text" : "Email",
                   "type" : "string",
                   "required" : false
@@ -146,7 +145,7 @@
               }
             }
           ],
-          "linkId" : "/reliance/decision",
+          "linkId" : "dl2.2",
           "text" : "Determination Decision",
           "type" : "choice",
           "required" : false,
@@ -166,25 +165,25 @@
           ]
         },
         {
-          "linkId" : "/reliance/relying",
+          "linkId" : "dl2.3",
           "text" : "Relying IRB",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "/reliance/relying/institution",
+              "linkId" : "dl2.3.1",
               "text" : "Institution",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/reliance/relying/institution/name",
+                  "linkId" : "dl2.3.1.1",
                   "text" : "Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/relying/institution/fwa",
+                  "linkId" : "dl2.3.1.2",
                   "text" : "Federal Wide Assurance (FWA)",
                   "type" : "string",
                   "required" : false
@@ -192,25 +191,25 @@
               ]
             },
             {
-              "linkId" : "/reliance/relying/investigator",
+              "linkId" : "dl2.3.2",
               "text" : "Site Investigator",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/reliance/relying/investigator/first",
+                  "linkId" : "dl2.3.2.1",
                   "text" : "First Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/relying/investigator/last",
+                  "linkId" : "dl2.3.2.2",
                   "text" : "Last Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "/reliance/relying/investigator/email",
+                  "linkId" : "dl2.3.2.3",
                   "text" : "Email",
                   "type" : "string",
                   "required" : false
