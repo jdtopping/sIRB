@@ -18,19 +18,19 @@
   "experimental" : false,
   "item" : [
     {
-      "linkId" : "/study",
+      "linkId" : "nme1",
       "text" : "Research Study",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/study/title",
+          "linkId" : "nme1.1",
           "text" : "Study Title:",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/study/irb",
+          "linkId" : "nme1.3",
           "text" : "IRB Protocol Number:",
           "type" : "string",
           "required" : false
@@ -51,7 +51,8 @@
               }
             }
           ],
-          "linkId" : "/study/status",
+          "linkId" : "nme1.4",
+          "definition" : "/study/status",
           "text" : "Status:",
           "type" : "choice",
           "required" : false,
@@ -83,12 +84,12 @@
           ]
         },
         {
-          "linkId" : "/study/status_explain",
+          "linkId" : "nme1.5",
           "text" : "If partial, please explain:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/study/status",
+              "question" : "nme1.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "partial"
@@ -101,25 +102,25 @@
       ]
     },
     {
-      "linkId" : "/pi",
+      "linkId" : "nme2",
       "text" : "Principal Investigator",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/pi/name",
+          "linkId" : "nme2.1",
           "text" : "Name:",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/pi/phone",
+          "linkId" : "nme2.2",
           "text" : "Phone:",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "/pi/email",
+          "linkId" : "nme2.3",
           "text" : "Email:",
           "type" : "string",
           "required" : false
@@ -127,19 +128,19 @@
       ]
     },
     {
-      "linkId" : "/report",
+      "linkId" : "nme3",
       "text" : "Report",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "/report/date",
+          "linkId" : "nme3.1",
           "text" : "Report Date:",
           "type" : "date",
           "required" : false
         },
         {
-          "linkId" : "/report/status",
+          "linkId" : "nme3.2",
           "text" : "Report Status",
           "type" : "choice",
           "required" : false,
@@ -161,24 +162,25 @@
           ]
         },
         {
-          "linkId" : "/report/criteria",
+          "linkId" : "nme3.3",
           "text" : "Check at least one of the following criteria:",
           "type" : "group",
           "required" : false
         },
         {
-          "linkId" : "/report/new_check",
+          "linkId" : "nme3.4",
+          "definition" : "/report/new_check",
           "text" : "New information resulted in unexpected change in risks of the research.",
           "type" : "boolean",
           "required" : false
         },
         {
-          "linkId" : "/report/new",
+          "linkId" : "nme3.5",
           "text" : "New or increased risk",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/new_check",
+              "question" : "nme3.4",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -187,19 +189,19 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/new/date",
+              "linkId" : "nme3.5.1",
               "text" : "Date:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/new/discovered",
+              "linkId" : "nme3.5.2",
               "text" : "Date discovered:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/new/description",
+              "linkId" : "nme3.5.3",
               "text" : "Description:",
               "type" : "text",
               "required" : false
@@ -207,18 +209,19 @@
           ]
         },
         {
-          "linkId" : "/report/event_check",
+          "linkId" : "nme3.6",
+          "definition" : "/report/event_check",
           "text" : "Unanticipated Problem Involving Risk to Participants or Others",
           "type" : "boolean",
           "required" : false
         },
         {
-          "linkId" : "/report/event",
+          "linkId" : "nme3.7",
           "text" : "Unanticipated Problem",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/event_check",
+              "question" : "nme3.6",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -227,19 +230,19 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/event/date",
+              "linkId" : "nme3.7.1",
               "text" : "Event date:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/event/realized",
+              "linkId" : "nme3.7.2",
               "text" : "Date event became aware to study team:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/event/summary",
+              "linkId" : "nme3.7.3",
               "text" : "Event Summary:",
               "type" : "text",
               "required" : false
@@ -260,7 +263,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/event/unexpected",
+              "linkId" : "nme3.7.4",
+              "definition" : "/report/event/unexpected",
               "text" : "Was this event Unexpected?",
               "type" : "choice",
               "required" : false,
@@ -280,12 +284,12 @@
               ]
             },
             {
-              "linkId" : "/report/event/unexpected_explain",
+              "linkId" : "nme3.7.5",
               "text" : "If yes, please explain:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/event/unexpected",
+                  "question" : "nme3.7.4",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -311,7 +315,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/event/related",
+              "linkId" : "nme3.7.6",
+              "definition" : "/report/event/related",
               "text" : "Was this event Related or Possibly Related to participation in the research?",
               "type" : "choice",
               "required" : false,
@@ -331,12 +336,12 @@
               ]
             },
             {
-              "linkId" : "/report/event/related_explain",
+              "linkId" : "nme3.7.7",
               "text" : "If yes, please explain:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/event/related",
+                  "question" : "nme3.7.6",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -362,7 +367,8 @@
                   }
                 }
               ],
-              "linkId" : "/report/event/risk",
+              "linkId" : "nme3.7.8",
+              "definition" : "/report/event/risk",
               "text" : "Does this event suggest that the research places participant(s) or others at a greater Risk of harm than was previously known?",
               "type" : "choice",
               "required" : false,
@@ -382,12 +388,12 @@
               ]
             },
             {
-              "linkId" : "/report/event/risk_explain",
+              "linkId" : "nme3.7.9",
               "text" : "If yes, please explain:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "/report/event/risk",
+                  "question" : "nme3.7.8",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "yes"
@@ -400,18 +406,19 @@
           ]
         },
         {
-          "linkId" : "/report/deviation_check",
+          "linkId" : "nme3.8",
+          "definition" : "/report/deviation_check",
           "text" : "Protocol Deviation (accidential or unitentional)",
           "type" : "boolean",
           "required" : false
         },
         {
-          "linkId" : "/report/deviation",
+          "linkId" : "nme3.9",
           "text" : "Protocol Deviation (Non-Compliance)",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/deviation_check",
+              "question" : "nme3.8",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -420,43 +427,46 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/deviation/date",
+              "linkId" : "nme3.9.1",
               "text" : "Date:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/deviation/discovered",
+              "linkId" : "nme3.9.2",
               "text" : "Date discovered:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/deviation/description",
+              "linkId" : "nme3.9.3",
               "text" : "Description:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "/report/deviation/involve",
+              "linkId" : "nme3.9.4",
               "text" : "Does the deviation involve any of the following? (Check all that apply)",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/report/deviation/involve/failure",
+                  "linkId" : "nme3.9.4.1",
+                  "definition" : "/report/deviation/involve/failure",
                   "text" : "Failure to obtain informed consent when IRB deemed required",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/report/deviation/involve/modify",
+                  "linkId" : "nme3.9.4.2",
+                  "definition" : "/report/deviation/involve/modify",
                   "text" : "Modifying the protocol without IRB approval, except to avoid hazard to participants",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/report/deviation/involve/conduct",
+                  "linkId" : "nme3.9.4.3",
+                  "definition" : "/report/deviation/involve/conduct",
                   "text" : "Conducting research prior to IRB approval, during an IRB suspension or after IRB approval ends",
                   "type" : "choice",
                   "required" : false,
@@ -476,22 +486,22 @@
                   ]
                 },
                 {
-                  "linkId" : "/report/deviation/involve/explain",
+                  "linkId" : "nme3.9.4.4",
                   "text" : "Please explain any Checked items:",
                   "type" : "text",
                   "enableWhen" : [
                     {
-                      "question" : "/report/deviation/involve/failure",
+                      "question" : "nme3.9.4.1",
                       "operator" : "=",
                       "answerBoolean" : true
                     },
                     {
-                      "question" : "/report/deviation/involve/modify",
+                      "question" : "nme3.9.4.2",
                       "operator" : "=",
                       "answerBoolean" : true
                     },
                     {
-                      "question" : "/report/deviation/involve/conduct",
+                      "question" : "nme3.9.4.3",
                       "operator" : "=",
                       "answerBoolean" : true
                     }
@@ -502,46 +512,49 @@
               ]
             },
             {
-              "linkId" : "/report/deviation/affect",
+              "linkId" : "nme3.9.5",
               "text" : "Was the deviation a substantive change from the protocol adversely affecting any of the following? (Check all that apply)",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "/report/deviation/affect/subject",
+                  "linkId" : "nme3.9.5.1",
+                  "definition" : "/report/deviation/affect/subject",
                   "text" : "The rights, welfare, or safety of the participants",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/report/deviation/affect/research",
+                  "linkId" : "nme3.9.5.2",
+                  "definition" : "/report/deviation/affect/research",
                   "text" : "The integrity of the research area",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/report/deviation/affect/willingness",
+                  "linkId" : "nme3.9.5.3",
+                  "definition" : "/report/deviation/affect/willingness",
                   "text" : "The participants' willingness to continue participation",
                   "type" : "boolean",
                   "required" : false
                 },
                 {
-                  "linkId" : "/report/deviation/affect/explain",
+                  "linkId" : "nme3.9.5.4",
                   "text" : "Please explain any Checked items:",
                   "type" : "text",
                   "enableWhen" : [
                     {
-                      "question" : "/report/deviation/affect/subject",
+                      "question" : "nme3.9.5.1",
                       "operator" : "=",
                       "answerBoolean" : true
                     },
                     {
-                      "question" : "/report/deviation/affect/research",
+                      "question" : "nme3.9.5.2",
                       "operator" : "=",
                       "answerBoolean" : true
                     },
                     {
-                      "question" : "/report/deviation/affect/willingness",
+                      "question" : "nme3.9.5.3",
                       "operator" : "=",
                       "answerBoolean" : true
                     }
@@ -554,18 +567,19 @@
           ]
         },
         {
-          "linkId" : "/report/confidentiality_check",
+          "linkId" : "nme3.10",
+          "definition" : "/report/confidentiality_check",
           "text" : "A breach of Confidentiality",
           "type" : "boolean",
           "required" : false
         },
         {
-          "linkId" : "/report/confidentiality",
+          "linkId" : "nme3.11",
           "text" : "Breach of Confidentiality",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/confidentiality_check",
+              "question" : "nme3.10",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -574,19 +588,19 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/confidentiality/date",
+              "linkId" : "nme3.11.1",
               "text" : "Date breach occurred",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/confidentiality/discovered",
+              "linkId" : "nme3.11.2",
               "text" : "Date discovered:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/confidentiality/description",
+              "linkId" : "nme3.11.3",
               "text" : "Description:",
               "type" : "text",
               "required" : false
@@ -594,18 +608,19 @@
           ]
         },
         {
-          "linkId" : "/report/incarceration_check",
+          "linkId" : "nme3.12",
+          "definition" : "/report/incarceration_check",
           "text" : "Incarceration of a participant in a protocol not approved to enroll prisoners",
           "type" : "boolean",
           "required" : false
         },
         {
-          "linkId" : "/report/incarceration",
+          "linkId" : "nme3.13",
           "text" : "Incarceration",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/incarceration_check",
+              "question" : "nme3.12",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -614,19 +629,19 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/incarceration/date",
+              "linkId" : "nme3.13.1",
               "text" : "Date:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/incarceration/discovered",
+              "linkId" : "nme3.13.2",
               "text" : "Date incarceration was discovered:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/incarceration/description",
+              "linkId" : "nme3.13.3",
               "text" : "Description:",
               "type" : "text",
               "required" : false
@@ -634,7 +649,8 @@
           ]
         },
         {
-          "linkId" : "/report/complaint_check",
+          "linkId" : "nme3.14",
+          "definition" : "/report/complaint_check",
           "text" : "Complaint of a participant indicating unexpected risks or the compliant cannot be resolved by team.",
           "type" : "boolean",
           "required" : false,
@@ -646,12 +662,12 @@
           ]
         },
         {
-          "linkId" : "/report/complaint",
+          "linkId" : "nme3.15",
           "text" : "Complaint",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "/report/complaint_check",
+              "question" : "nme3.14",
               "operator" : "=",
               "answerBoolean" : true
             }
@@ -659,7 +675,7 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "/report/complaint/date",
+              "linkId" : "nme3.15.1",
               "text" : "Complaint Date:",
               "type" : "date",
               "required" : false,
@@ -671,13 +687,13 @@
               ]
             },
             {
-              "linkId" : "/report/complaint/discovered",
+              "linkId" : "nme3.15.2",
               "text" : "Date received:",
               "type" : "date",
               "required" : false
             },
             {
-              "linkId" : "/report/complaint/description",
+              "linkId" : "nme3.15.3",
               "text" : "Description:",
               "type" : "text",
               "required" : false
@@ -687,7 +703,7 @@
       ]
     },
     {
-      "linkId" : "/reporting",
+      "linkId" : "nme4",
       "text" : "Reporting",
       "type" : "group",
       "required" : false,
@@ -708,7 +724,8 @@
               }
             }
           ],
-          "linkId" : "/reporting/sponsor",
+          "linkId" : "nme4.1",
+          "definition" : "/reporting/sponsor",
           "text" : "Was the Sponsor notified?",
           "type" : "choice",
           "required" : false,
@@ -728,12 +745,12 @@
           ]
         },
         {
-          "linkId" : "/reporting/sponsor_date",
+          "linkId" : "nme4.2",
           "text" : "Notification date:",
           "type" : "date",
           "enableWhen" : [
             {
-              "question" : "/reporting/sponsor",
+              "question" : "nme4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -759,7 +776,8 @@
               }
             }
           ],
-          "linkId" : "/reporting/irb",
+          "linkId" : "nme4.3",
+          "definition" : "/reporting/irb",
           "text" : "Was the IRB notified?",
           "type" : "choice",
           "required" : false,
@@ -779,12 +797,12 @@
           ]
         },
         {
-          "linkId" : "/reporting/irb_date",
+          "linkId" : "nme4.4",
           "text" : "Notification date:",
           "type" : "date",
           "enableWhen" : [
             {
-              "question" : "/reporting/irb",
+              "question" : "nme4.3",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -795,7 +813,8 @@
           "required" : false
         },
         {
-          "linkId" : "/reporting/other",
+          "linkId" : "nme4.5",
+          "definition" : "/reporting/other",
           "text" : "Were any Other Parties notified?",
           "type" : "choice",
           "required" : false,
@@ -817,12 +836,12 @@
           ]
         },
         {
-          "linkId" : "i81",
+          "linkId" : "nme4.6",
           "text" : "Please list other notified parties",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/reporting/other",
+              "question" : "nme4.5",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -841,7 +860,7 @@
       ]
     },
     {
-      "linkId" : "/action",
+      "linkId" : "nme5",
       "text" : "Corrective and Preventative Action Plan",
       "type" : "group",
       "required" : false,
@@ -862,7 +881,8 @@
               }
             }
           ],
-          "linkId" : "/action/root",
+          "linkId" : "nme5.1",
+          "definition" : "/action/root",
           "text" : "Was a Root Cause analysis performed?",
           "type" : "choice",
           "required" : false,
@@ -882,12 +902,12 @@
           ]
         },
         {
-          "linkId" : "/action/root_results",
+          "linkId" : "nme5.2",
           "text" : "If yes, provide determination:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/action/root",
+              "question" : "nme5.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -913,7 +933,8 @@
               }
             }
           ],
-          "linkId" : "/action/correction",
+          "linkId" : "nme5.3",
+          "definition" : "/action/correction",
           "text" : "Was Corrective Action implemented?",
           "type" : "choice",
           "required" : false,
@@ -939,12 +960,12 @@
           ]
         },
         {
-          "linkId" : "/action/correction_summary",
+          "linkId" : "nme5.4",
           "text" : "If yes, provide a summary:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/action/correction",
+              "question" : "nme5.3",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -970,7 +991,8 @@
               }
             }
           ],
-          "linkId" : "/action/prevention",
+          "linkId" : "nme5.5",
+          "definition" : "/action/prevention",
           "text" : "Was Preventitive Action implemented?",
           "type" : "choice",
           "required" : false,
@@ -996,12 +1018,12 @@
           ]
         },
         {
-          "linkId" : "/action/prevention_summary",
+          "linkId" : "nme5.6",
           "text" : "If yes, provide a summary:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/action/prevention",
+              "question" : "nme5.5",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1014,7 +1036,7 @@
       ]
     },
     {
-      "linkId" : "/change",
+      "linkId" : "nme6",
       "text" : "Study Protocol and Informed Consent",
       "type" : "group",
       "required" : false,
@@ -1035,7 +1057,8 @@
               }
             }
           ],
-          "linkId" : "/change/study",
+          "linkId" : "nme6.1",
+          "definition" : "/change/study",
           "text" : "Are changes required to the Study Protocol as a result of this report?",
           "type" : "choice",
           "required" : false,
@@ -1055,12 +1078,12 @@
           ]
         },
         {
-          "linkId" : "/change/study_justify",
+          "linkId" : "nme6.2",
           "text" : "If no, justify your decision to not change the study protocol:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/change/study",
+              "question" : "nme6.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "no"
@@ -1086,7 +1109,8 @@
               }
             }
           ],
-          "linkId" : "/change/consent",
+          "linkId" : "nme6.3",
+          "definition" : "/change/consent",
           "text" : "Are changes required to the Informed Consent as a result of this report?",
           "type" : "choice",
           "required" : false,
@@ -1106,12 +1130,12 @@
           ]
         },
         {
-          "linkId" : "/change/consent_justify",
+          "linkId" : "nme6.4",
           "text" : "If no, justify your decision to not change the informed consent:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/change/consent",
+              "question" : "nme6.3",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "no"
@@ -1137,19 +1161,20 @@
               }
             }
           ],
-          "linkId" : "/change/notify",
+          "linkId" : "nme6.5",
+          "definition" : "/change/notify",
           "text" : "Are notifications or re-consenting of participants required as a result of this change?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "/change/study",
+              "question" : "nme6.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
               }
             },
             {
-              "question" : "/change/consent",
+              "question" : "nme6.3",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1174,12 +1199,12 @@
           ]
         },
         {
-          "linkId" : "/change/notify_explain",
+          "linkId" : "nme6.6",
           "text" : "If yes, detail how the notification and/or re-consent will occur:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/change/notify",
+              "question" : "nme6.5",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1190,12 +1215,12 @@
           "required" : false
         },
         {
-          "linkId" : "/change/justify",
+          "linkId" : "nme6.7",
           "text" : "If no, justify your decision to not notify (re-consent) participants:",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "/change/notify",
+              "question" : "nme6.5",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "no"
