@@ -2334,7 +2334,7 @@
                     },
                     {
                       "linkId" : "i416",
-                      "text" : "Please confirm that no inducements, monetary or otherwise, will be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the participant of a planned abortion.",
+                      "text" : "Inducements, monetary or otherwise, will not be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the participant of a planned abortion.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -2356,7 +2356,7 @@
                       "item" : [
                         {
                           "linkId" : "i417",
-                          "text" : "Please confirm that individuals engaged in the research will have no part in any decisions as to the timing, method, or procedures used to terminate a pregnancy or in determining the viability of a neonate.",
+                          "text" : "Individuals engaged in the research will have no part in any decisions as to the timing, method, or procedures used to terminate a pregnancy or in determining the viability of a neonate.",
                           "type" : "choice",
                           "required" : false,
                           "repeats" : false,
@@ -2650,7 +2650,7 @@
                   "item" : [
                     {
                       "linkId" : "i428",
-                      "text" : "Please confirm that you will follow the SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)  to determine whether a prospective participant has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
+                      "text" : "I will follow the SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)  to determine whether a prospective participant has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -2692,7 +2692,7 @@
                       "item" : [
                         {
                           "linkId" : "i432",
-                          "text" : "Describe any waiting period available between informing the prospective participant and obtaining the assent",
+                          "text" : "Describe waiting period between informing the prospective participant and obtaining the assent",
                           "type" : "text",
                           "required" : false,
                           "repeats" : false,
@@ -2839,7 +2839,7 @@
                     }
                   ],
                   "linkId" : "i518",
-                  "text" : "Can or will minors who are: I)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child?",
+                  "text" : "Can or will minors who are: i)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child?",
                   "type" : "choice",
                   "required" : false,
                   "answerOption" : [
@@ -2859,7 +2859,7 @@
                 },
                 {
                   "linkId" : "903",
-                  "text" : "Enrollment of minors who are: I)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child.",
+                  "text" : "Enrollment of minors who are: i)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child.",
                   "type" : "group",
                   "enableWhen" : [
                     {
@@ -2960,7 +2960,7 @@
                     },
                     {
                       "linkId" : "i462",
-                      "text" : "Please confirm that this study is NOT  prohibited by law.",
+                      "text" : "This study is NOT  prohibited by law.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3052,7 +3052,7 @@
                     },
                     {
                       "linkId" : "i474",
-                      "text" : "Please confirm that participants will be withdrawn if they appear to be unduly distressed at any time during the study.",
+                      "text" : "Participants will be withdrawn if they appear to be unduly distressed at any time during the study.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3144,7 +3144,7 @@
                     },
                     {
                       "linkId" : "i480",
-                      "text" : "Please confirm that parole boards will not take into account a Prisoner participation in the research in making decisions regarding parole, and each Prisoner is clearly informed in advance that participation in the research will have no effect on his or her parole.",
+                      "text" : "Parole boards will not take into account a Prisoner participation in the research in making decisions regarding parole, and each Prisoner is clearly informed in advance that participation in the research will have no effect on his or her parole.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3166,7 +3166,7 @@
                     },
                     {
                       "linkId" : "i481",
-                      "text" : "Please confirm that a letter of support from the Prison this research will be conducted in has been submitted to the IRB.",
+                      "text" : "A letter of support from the Prison this research will be conducted in has been submitted to the IRB.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3260,9 +3260,11 @@
                     },
                     {
                       "linkId" : "i487",
-                      "text" : "Describe the ecruitment methods to be applied specifically to students and/or employees. If the same recruitment methods previously described in the protocol will be used, then state that:",
+                      "text" : "Describe the recruitment methods to be applied specifically to students and/or employees. If the same recruitment methods previously described in the protocol will be used, then state that:",
                       "type" : "text",
-                      "required" : false
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
                     },
                     {
                       "linkId" : "i488",
@@ -3282,7 +3284,7 @@
                     },
                     {
                       "linkId" : "i490",
-                      "text" : "Please confirm that you have submitted a letter from the appropriate institutional official (e.g., Department Chair, Dean, Vice-President) who oversees the students and/or employees attesting to the fact that the employeeor studentparticipation in the research is acceptable and that coercion has been minimized.",
+                      "text" : "Submitted a letter from the appropriate institutional official (e.g., Department Chair, Dean, Vice-President) who oversees the students and/or employees attesting to the fact that the employeeor studentparticipation in the research is acceptable and that coercion has been minimized.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3464,7 +3466,7 @@
                         },
                         {
                           "linkId" : "i458",
-                          "text" : "Please confirm that the advocate will not be associated in any way (except in the role as advocate or member of the IRB) with the research, the investigator(s), or the guardian organization.",
+                          "text" : "The advocate will not be associated in any way (except in the role as advocate or member of the IRB) with the research, the investigator(s), or the guardian organization.",
                           "type" : "choice",
                           "required" : false,
                           "repeats" : false,
@@ -3518,7 +3520,7 @@
                       "item" : [
                         {
                           "linkId" : "i398",
-                          "text" : "Please confirm that a script for both the telephone conversation and the voice message is included with the submission.",
+                          "text" : "A script for both the telephone conversation and the voice message is included with the submission.",
                           "type" : "choice",
                           "required" : false,
                           "repeats" : false,
@@ -3550,7 +3552,7 @@
                   "item" : [
                     {
                       "linkId" : "i400",
-                      "text" : "Please confirm that a script for both the telephone conversation and the voice message is included with the submission.",
+                      "text" : "A script for both the telephone conversation and the voice message is included with the submission.",
                       "type" : "choice",
                       "required" : false,
                       "repeats" : false,
@@ -3592,7 +3594,7 @@
                       "item" : [
                         {
                           "linkId" : "i404",
-                          "text" : "Please confirm that any necessary permission will be obtained for posting/airing these (for example, permission to post a flyer on a bulletin board).",
+                          "text" : "Any necessary permission will be obtained for posting/airing these (for example, permission to post a flyer on a bulletin board).",
                           "type" : "choice",
                           "required" : false,
                           "repeats" : false,
@@ -4147,12 +4149,6 @@
           "required" : false
         },
         {
-          "linkId" : "item245",
-          "text" : "Recording of Adverse Events",
-          "type" : "text",
-          "required" : false
-        },
-        {
           "linkId" : "186",
           "text" : "Reporting Procedures",
           "type" : "group",
@@ -4359,37 +4355,14 @@
               "required" : false
             },
             {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                  "valueCodeableConcept" : {
-                    "coding" : [
-                      {
-                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                        "code" : "drop-down",
-                        "display" : "Drop down"
-                      }
-                    ],
-                    "text" : "Drop down"
-                  }
-                }
-              ],
               "linkId" : "item301",
               "text" : "Pharmacokinetic Analysis (if applicable)",
-              "type" : "choice",
+              "type" : "text",
               "required" : false,
-              "answerOption" : [
+              "repeats" : false,
+              "readOnly" : false,
+              "initial" : [
                 {
-                  "valueCoding" : {
-                    "code" : "1",
-                    "display" : "Yes"
-                  }
-                },
-                {
-                  "valueCoding" : {
-                    "code" : "0",
-                    "display" : "No"
-                  }
                 }
               ]
             }
@@ -4616,55 +4589,14 @@
                   "required" : false
                 },
                 {
-                  "extension" : [
-                    {
-                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                      "valueCodeableConcept" : {
-                        "coding" : [
-                          {
-                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                            "code" : "drop-down",
-                            "display" : "Drop down"
-                          }
-                        ],
-                        "text" : "Drop down"
-                      }
-                    }
-                  ],
                   "linkId" : "i391",
                   "text" : "Responsibilities",
-                  "type" : "open-choice",
+                  "type" : "text",
                   "required" : false,
-                  "answerOption" : [
+                  "repeats" : false,
+                  "readOnly" : false,
+                  "initial" : [
                     {
-                      "valueCoding" : {
-                        "code" : "1",
-                        "display" : "Serve as Faculty Sponsor with research oversight responsibilities"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "2",
-                        "display" : "Screen/Recruit"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "2",
-                        "display" : "Finalize Informed Consent"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "2",
-                        "display" : "Perform Research Activities"
-                      }
-                    },
-                    {
-                      "valueCoding" : {
-                        "code" : "2",
-                        "display" : "Access Participant Identifiable Data"
-                      }
                     }
                   ]
                 },
@@ -4928,7 +4860,7 @@
           "item" : [
             {
               "linkId" : "i332",
-              "text" : "Please confirm that an appropriate IRB , registered with the OHRP ,review and approve this study.",
+              "text" : "An appropriate IRB , registered with the OHRP ,review and approve this study.",
               "type" : "choice",
               "required" : false,
               "repeats" : false,
@@ -4950,7 +4882,7 @@
             },
             {
               "linkId" : "i333",
-              "text" : "Please confirm that  any amendments to the protocol or informed consent documents be reviewed and approved by the IRB prior to use, unless required to eliminate an apparent immediate hazard to participants?",
+              "text" : "Any amendments to the protocol or informed consent documents will be reviewed and approved by the IRB prior to use, unless required to eliminate an apparent immediate hazard to participants?",
               "type" : "choice",
               "required" : false,
               "repeats" : false,
