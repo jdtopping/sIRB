@@ -18,19 +18,19 @@
   "experimental" : false,
   "item" : [
     {
-      "linkId" : "study",
+      "linkId" : "rm1",
       "text" : "Research Study",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "study/name",
+          "linkId" : "rm1.1",
           "text" : "Study Title",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "study/irbnum",
+          "linkId" : "rm1.2",
           "text" : "IRB Protocol Number",
           "type" : "string",
           "required" : false
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "linkId" : "institution",
+      "linkId" : "rm2",
       "text" : "Relying Institution",
       "type" : "group",
       "required" : false,
@@ -46,7 +46,7 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "institution/name",
+          "linkId" : "rm2.1",
           "text" : "Institution Name",
           "type" : "string",
           "required" : true
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "linkId" : "principal",
+      "linkId" : "rm3",
       "text" : "Site Principal Investigator",
       "type" : "group",
       "required" : false,
@@ -62,19 +62,19 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "principal/fname",
+          "linkId" : "rm3.1",
           "text" : "First Name",
           "type" : "string",
           "required" : true
         },
         {
-          "linkId" : "principal/mname",
+          "linkId" : "rm3.2",
           "text" : "Middle Name",
           "type" : "string",
           "required" : false
         },
         {
-          "linkId" : "principal/lname",
+          "linkId" : "rm3.3",
           "text" : "Last Name",
           "type" : "string",
           "required" : true
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "linkId" : "materials",
+      "linkId" : "rm4",
       "text" : "Recruitment Materials",
       "type" : "group",
       "required" : false,
@@ -103,7 +103,8 @@
               }
             }
           ],
-          "linkId" : "materials/usematerials",
+          "linkId" : "rm4.1",
+          "definition" : "materials/usematerials",
           "text" : "Will Recruitment Materials be Utilized?",
           "type" : "choice",
           "required" : true,
@@ -138,12 +139,13 @@
               }
             }
           ],
-          "linkId" : "materials/usebroadcast",
+          "linkId" : "rm4.2",
+          "definition" : "materials/usebroadcast",
           "text" : "Will Broadcast Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -183,19 +185,19 @@
                   }
                 }
               ],
-              "linkId" : "materials/usebroadcast-help",
+              "linkId" : "rm4.2_help",
               "text" : "The distribution of audio or video content to a dispersed audience via any electronic mass communications medium.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/broadcast",
+          "linkId" : "rm4.3",
           "text" : "Broadcast Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/usebroadcast",
+              "question" : "rm4.2",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -206,7 +208,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/broadcast/audio",
+              "linkId" : "rm4.3.1",
+              "definition" : "materials/broadcast/audio",
               "text" : "Audio Clip",
               "type" : "boolean",
               "required" : false,
@@ -227,19 +230,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/broadcast/audio-help",
+                  "linkId" : "rm4.3.1_help",
                   "text" : "A contiguous sound recording used to relay audible information.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/broadcast/audiodesc",
+              "linkId" : "rm4.3.2",
               "text" : "Audio Clip Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/broadcast/audio",
+                  "question" : "rm4.3.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -248,7 +251,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/broadcast/video",
+              "linkId" : "rm4.3.3",
+              "definition" : "materials/broadcast/video",
               "text" : "Video Clip",
               "type" : "boolean",
               "required" : false,
@@ -269,19 +273,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/broadcast/video-help",
+                  "linkId" : "rm4.3.3_help",
                   "text" : "Short clips of video, usually part of a longer recording. Sometimes used to mean any short video.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/broadcast/videodesc",
+              "linkId" : "rm4.3.4",
               "text" : "Video Clip Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/broadcast/video",
+                  "question" : "rm4.3.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -290,7 +294,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/broadcast/radio",
+              "linkId" : "rm4.3.5",
+              "definition" : "materials/broadcast/radio",
               "text" : "Radio Spot",
               "type" : "boolean",
               "required" : false,
@@ -311,19 +316,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/broadcast/radio-help",
+                  "linkId" : "rm4.3.5_help",
                   "text" : "A contiguous segment of audio broadcasting airtime.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/broadcast/radiodesc",
+              "linkId" : "rm4.3.6",
               "text" : "Radio Spot Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/broadcast/radio",
+                  "question" : "rm4.3.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -332,7 +337,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/broadcast/tv",
+              "linkId" : "rm4.3.7",
+              "definition" : "materials/broadcast/tv",
               "text" : "TV Spot",
               "type" : "boolean",
               "required" : false,
@@ -353,19 +359,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/broadcast/tv-help",
+                  "linkId" : "rm4.3.7_help",
                   "text" : "A contiguous segment of video broadcasting airtime.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/broadcast/tvdesc",
+              "linkId" : "rm4.3.8",
               "text" : "TV Spot Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/broadcast/tv",
+                  "question" : "rm4.3.7",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -391,12 +397,13 @@
               }
             }
           ],
-          "linkId" : "materials/useprinted",
+          "linkId" : "rm4.4",
+          "definition" : "materials/useprinted",
           "text" : "Will Printed Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -436,19 +443,19 @@
                   }
                 }
               ],
-              "linkId" : "materials/useprinted-help",
+              "linkId" : "rm4.4_help",
               "text" : "Materials produced by printers or publishers, such as books, magazines, booklets, brochures, newspaper.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/printed",
+          "linkId" : "rm4.5",
           "text" : "Printed Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/useprinted",
+              "question" : "rm4.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -459,7 +466,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/printed/billboard",
+              "linkId" : "rm4.5.1",
+              "definition" : "materials/printed/billboard",
               "text" : "Billboard/Bus Ad",
               "type" : "boolean",
               "required" : false,
@@ -480,19 +488,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/billboard-help",
+                  "linkId" : "rm4.5.1_help",
                   "text" : "A large outdoor advertising space designed to capture the attention of motorists and pedestrians.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/billboarddesc",
+              "linkId" : "rm4.5.2",
               "text" : "Billboard/Bus Ad Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/billboard",
+                  "question" : "rm4.5.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -501,7 +509,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/brochure",
+              "linkId" : "rm4.5.3",
+              "definition" : "materials/printed/brochure",
               "text" : "Brochure/Pamphlet",
               "type" : "boolean",
               "required" : false,
@@ -522,19 +531,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/brochure-help",
+                  "linkId" : "rm4.5.3_help",
                   "text" : "A small book or magazine that contains images and information about a company or organization's products and/or services.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/brochuredesc",
+              "linkId" : "rm4.5.4",
               "text" : "Brochure/Pamphlet Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/brochure",
+                  "question" : "rm4.5.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -543,7 +552,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/flyers",
+              "linkId" : "rm4.5.5",
+              "definition" : "materials/printed/flyers",
               "text" : "Flyer/Notice",
               "type" : "boolean",
               "required" : false,
@@ -564,19 +574,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/flyers-help",
+                  "linkId" : "rm4.5.5_help",
                   "text" : "A small piece of paper with information on it about a product or event",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/flyersdesc",
+              "linkId" : "rm4.5.6",
               "text" : "Flyer/Notice Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/flyers",
+                  "question" : "rm4.5.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -585,7 +595,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/magazine",
+              "linkId" : "rm4.5.7",
+              "definition" : "materials/printed/magazine",
               "text" : "Magazine",
               "type" : "boolean",
               "required" : false,
@@ -606,19 +617,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/magazine-help",
+                  "linkId" : "rm4.5.7_help",
                   "text" : "A periodical publication containing articles and illustrations.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/magazinedesc",
+              "linkId" : "rm4.5.8",
               "text" : "Magazine Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/magazine",
+                  "question" : "rm4.5.7",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -627,7 +638,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/mail",
+              "linkId" : "rm4.5.9",
+              "definition" : "materials/printed/mail",
               "text" : "Mail",
               "type" : "boolean",
               "required" : false,
@@ -648,19 +660,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/mail-help",
+                  "linkId" : "rm4.5.9_help",
                   "text" : "Letters and packages conveyed by the postal system.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/maildesc",
+              "linkId" : "rm4.5.10",
               "text" : "Mail Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/mail",
+                  "question" : "rm4.5.9",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -669,7 +681,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/newspaper",
+              "linkId" : "rm4.5.11",
+              "definition" : "materials/printed/newspaper",
               "text" : "Newspaper",
               "type" : "boolean",
               "required" : false,
@@ -690,19 +703,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/newspaper-help",
+                  "linkId" : "rm4.5.11_help",
                   "text" : "A printed publication (usually issued daily or weekly) consisting of folded unstapled sheets and containing news, feature articles and advertisements.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/newspaperdesc",
+              "linkId" : "rm4.5.12",
               "text" : "Newspaper Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/newspaper",
+                  "question" : "rm4.5.11",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -711,7 +724,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/postcard",
+              "linkId" : "rm4.5.13",
+              "definition" : "materials/printed/postcard",
               "text" : "Postcard",
               "type" : "boolean",
               "required" : false,
@@ -732,19 +746,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/postcard-help",
+                  "linkId" : "rm4.5.13_help",
                   "text" : "A message by mail without an envelope.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/postcarddesc",
+              "linkId" : "rm4.5.14",
               "text" : "Postcard Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/postcard",
+                  "question" : "rm4.5.13",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -753,7 +767,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/poster",
+              "linkId" : "rm4.5.15",
+              "definition" : "materials/printed/poster",
               "text" : "Poster/Sign",
               "type" : "boolean",
               "required" : false,
@@ -774,19 +789,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/poster-help",
+                  "linkId" : "rm4.5.15_help",
                   "text" : "A large printed picture, photograph, or notice that you stick or pin to a wall or board, usually for decoration or to advertise something.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/posterdesc",
+              "linkId" : "rm4.5.16",
               "text" : "Poster/Sign Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/poster",
+                  "question" : "rm4.5.15",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -795,7 +810,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/printed/tent",
+              "linkId" : "rm4.5.17",
+              "definition" : "materials/printed/tent",
               "text" : "Table Tent",
               "type" : "boolean",
               "required" : false,
@@ -816,19 +832,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/printed/tent-help",
+                  "linkId" : "rm4.5.17_help",
                   "text" : "A self-standing promotional unit created from printed and folded card stock for table tops.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/printed/tentdesc",
+              "linkId" : "rm4.5.18",
               "text" : "Table Tent Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/printed/tent",
+                  "question" : "rm4.5.17",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -854,12 +870,13 @@
               }
             }
           ],
-          "linkId" : "materials/useelectronic",
+          "linkId" : "rm4.6",
+          "definition" : "materials/useelectronic",
           "text" : "Will Electronic Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -899,19 +916,19 @@
                   }
                 }
               ],
-              "linkId" : "materials/useelectronic-help",
+              "linkId" : "rm4.6_help",
               "text" : "Computer-based technology that facilitates the sharing of ideas and information and the building of virtual networks and communities.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/electronic",
+          "linkId" : "rm4.7",
           "text" : "Electronic Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/useelectronic",
+              "question" : "rm4.6",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -922,7 +939,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/electronic/email",
+              "linkId" : "rm4.7.1",
+              "definition" : "materials/electronic/email",
               "text" : "Email",
               "type" : "boolean",
               "required" : false,
@@ -943,19 +961,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/email-help",
+                  "linkId" : "rm4.7.1_help",
                   "text" : "Messages distributed by electronic means from one computer user to one or more recipients via a network.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/emaildesc",
+              "linkId" : "rm4.7.2",
               "text" : "Email Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/email",
+                  "question" : "rm4.7.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -964,7 +982,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/networking",
+              "linkId" : "rm4.7.3",
+              "definition" : "materials/electronic/networking",
               "text" : "Networking Site",
               "type" : "boolean",
               "required" : false,
@@ -985,19 +1004,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/networking-help",
+                  "linkId" : "rm4.7.3_help",
                   "text" : "An online platform that allows users to create a public profile and interact with other users on the website.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/networkingdesc",
+              "linkId" : "rm4.7.4",
               "text" : "Networking Site Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/networking",
+                  "question" : "rm4.7.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1006,7 +1025,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/podcast",
+              "linkId" : "rm4.7.5",
+              "definition" : "materials/electronic/podcast",
               "text" : "Podcast",
               "type" : "boolean",
               "required" : false,
@@ -1027,19 +1047,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/podcast-help",
+                  "linkId" : "rm4.7.5_help",
                   "text" : "A digital audio file made available on the internet for download to a computer or mobile device. Typically available as a series.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/podcastdesc",
+              "linkId" : "rm4.7.6",
               "text" : "Podcast Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/podcast",
+                  "question" : "rm4.7.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1048,7 +1068,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/social",
+              "linkId" : "rm4.7.7",
+              "definition" : "materials/electronic/social",
               "text" : "Social Media",
               "type" : "boolean",
               "required" : false,
@@ -1069,19 +1090,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/social-help",
+                  "linkId" : "rm4.7.7_help",
                   "text" : "A computer-based technology that facilitates the sharing of ideas and information and the building of virtual networks and communities.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/socialdesc",
+              "linkId" : "rm4.7.8",
               "text" : "Social Media Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/social",
+                  "question" : "rm4.7.7",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1090,7 +1111,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/banner",
+              "linkId" : "rm4.7.9",
+              "definition" : "materials/electronic/banner",
               "text" : "Web Banner",
               "type" : "boolean",
               "required" : false,
@@ -1111,19 +1133,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/banner-help",
+                  "linkId" : "rm4.7.9_help",
                   "text" : "A form of advertising on the World Wide Web embedded in a web page.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/bannerdesc",
+              "linkId" : "rm4.7.10",
               "text" : "Web Banner Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/banner",
+                  "question" : "rm4.7.9",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1132,7 +1154,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/webad",
+              "linkId" : "rm4.7.11",
+              "definition" : "materials/electronic/webad",
               "text" : "Web Page Ad",
               "type" : "boolean",
               "required" : false,
@@ -1153,19 +1176,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/webad-help",
+                  "linkId" : "rm4.7.11_help",
                   "text" : "A form of advertising on the Word Wide Web delivered by an ad server.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/webaddesc",
+              "linkId" : "rm4.7.12",
               "text" : "Web Page Ad Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/webad",
+                  "question" : "rm4.7.11",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1174,7 +1197,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/posting",
+              "linkId" : "rm4.7.13",
+              "definition" : "materials/electronic/posting",
               "text" : "Web/Internet Posting",
               "type" : "boolean",
               "required" : false,
@@ -1195,19 +1219,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/posting-help",
+                  "linkId" : "rm4.7.13_help",
                   "text" : "Communication posted for public viewing or an electronic message sent to & displayed on an online forum.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/postingdesc",
+              "linkId" : "rm4.7.14",
               "text" : "Web/Internet Posting Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/posting",
+                  "question" : "rm4.7.13",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1216,7 +1240,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/electronic/website",
+              "linkId" : "rm4.7.15",
+              "definition" : "materials/electronic/website",
               "text" : "Website",
               "type" : "boolean",
               "required" : false,
@@ -1237,19 +1262,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/electronic/website-help",
+                  "linkId" : "rm4.7.15_help",
                   "text" : "A page or collection of pages on the World Wide Web that contains specific information which was all provided by one person, group or an organization",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/electronic/websitedesc",
+              "linkId" : "rm4.7.16",
               "text" : "Website Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/electronic/website",
+                  "question" : "rm4.7.15",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1275,12 +1300,13 @@
               }
             }
           ],
-          "linkId" : "materials/usedirect",
+          "linkId" : "rm4.8",
+          "definition" : "materials/usedirect",
           "text" : "Will Direct Communication Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1320,19 +1346,20 @@
                   }
                 }
               ],
-              "linkId" : "materials/usedirect-help",
+              "linkId" : "rm4.8_help",
+              "definition" : "materials/usedirect-help",
               "text" : "Communication addressed to a specific person.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/direct",
+          "linkId" : "rm4.9",
           "text" : "Direct Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/usedirect",
+              "question" : "rm4.8",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1343,7 +1370,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/direct/discussion",
+              "linkId" : "rm4.9.1",
+              "definition" : "materials/direct/discussion",
               "text" : "In-Person Discussion",
               "type" : "boolean",
               "required" : false,
@@ -1364,19 +1392,20 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/direct/discussion-help",
+                  "linkId" : "rm4.9.1_help",
+                  "definition" : "materials/direct/discussion-help",
                   "text" : "Involves a person's physical presence rather than communication by phone, email, etc.,",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/direct/discussiondesc",
+              "linkId" : "rm4.9.2",
               "text" : "In-Person Discussion Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/direct/discussion",
+                  "question" : "rm4.9.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1385,7 +1414,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/direct/invitation",
+              "linkId" : "rm4.9.3",
+              "definition" : "materials/direct/invitation",
               "text" : "Letter/Invitation",
               "type" : "boolean",
               "required" : false,
@@ -1406,19 +1436,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/direct/invitation-help",
+                  "linkId" : "rm4.9.3_help",
                   "text" : "A written, typed, or printed communication, especially one sent in an envelope by mail or messenger:",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/direct/invitationdesc",
+              "linkId" : "rm4.9.4",
               "text" : "Letter/Invitation Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/direct/invitation",
+                  "question" : "rm4.9.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1427,7 +1457,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/direct/phone",
+              "linkId" : "rm4.9.5",
+              "definition" : "materials/direct/phone",
               "text" : "Phone Call",
               "type" : "boolean",
               "required" : false,
@@ -1448,19 +1479,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/direct/phone-help",
+                  "linkId" : "rm4.9.5_help",
                   "text" : "A communication or conversation by phone.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/direct/phonedesc",
+              "linkId" : "rm4.9.6",
               "text" : "Phone Call Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/direct/phone",
+                  "question" : "rm4.9.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1486,12 +1517,13 @@
               }
             }
           ],
-          "linkId" : "materials/usegroup",
+          "linkId" : "rm4.10",
+          "definition" : "materials/usegroup",
           "text" : "Will Group Communication Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1531,19 +1563,19 @@
                   }
                 }
               ],
-              "linkId" : "materials/usegroup-help",
+              "linkId" : "rm4.10_help",
               "text" : "Communication addressed to a defined group of people.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/group",
+          "linkId" : "rm4.11",
           "text" : "Group Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/usegroup",
+              "question" : "rm4.10",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1554,7 +1586,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/group/advertisement",
+              "linkId" : "rm4.11.1",
+              "definition" : "materials/group/advertisement",
               "text" : "Advertisement",
               "type" : "boolean",
               "required" : false,
@@ -1575,19 +1608,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/group/advertisement-help",
+                  "linkId" : "rm4.11.1_help",
                   "text" : "An ad that may take many different forms. It could be a banner, a graphic image or an animated GIF of a designated pixel size and byte size.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/group/advertisementdesc",
+              "linkId" : "rm4.11.2",
               "text" : "Advertisement Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/group/advertisement",
+                  "question" : "rm4.11.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1596,7 +1629,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/group/bulletin",
+              "linkId" : "rm4.11.3",
+              "definition" : "materials/group/bulletin",
               "text" : "Bulletin Board",
               "type" : "boolean",
               "required" : false,
@@ -1617,19 +1651,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/group/bulletin-help",
+                  "linkId" : "rm4.11.3_help",
                   "text" : "A website or web page where users can post comments about a particular issue or topic and reply to other users' postings.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/group/bulletindesc",
+              "linkId" : "rm4.11.4",
               "text" : "Bulletin Board Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/group/bulletin",
+                  "question" : "rm4.11.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1638,7 +1672,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/group/newsletter",
+              "linkId" : "rm4.11.5",
+              "definition" : "materials/group/newsletter",
               "text" : "Newsletter",
               "type" : "boolean",
               "required" : false,
@@ -1659,19 +1694,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/group/newsletter-help",
+                  "linkId" : "rm4.11.5_help",
                   "text" : "Communication issued periodically to the members of a society, business, or organization.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/group/newsletterdesc",
+              "linkId" : "rm4.11.6",
               "text" : "Newsletter Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/group/newsletter",
+                  "question" : "rm4.11.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1680,7 +1715,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/group/journal",
+              "linkId" : "rm4.11.7",
+              "definition" : "materials/group/journal",
               "text" : "Professional Journal",
               "type" : "boolean",
               "required" : false,
@@ -1701,19 +1737,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/group/journal-help",
+                  "linkId" : "rm4.11.7_help",
                   "text" : "A scholarly journal addressed to a particular professional audience such as doctors, teachers or engineers and published by a professional organization.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/group/journaldesc",
+              "linkId" : "rm4.11.8",
               "text" : "Professional Journal Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/group/journal",
+                  "question" : "rm4.11.7",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1722,7 +1758,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/group/tip",
+              "linkId" : "rm4.11.9",
+              "definition" : "materials/group/tip",
               "text" : "Tip Sheet",
               "type" : "boolean",
               "required" : false,
@@ -1743,19 +1780,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/group/tip-help",
+                  "linkId" : "rm4.11.9_help",
                   "text" : "A publication that containing the latest information/tips/predictions for a particular business or stock market information or horse racing results, etc.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/group/tipdesc",
+              "linkId" : "rm4.11.10",
               "text" : "Tip Sheet Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/group/tip",
+                  "question" : "rm4.11.9",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1781,12 +1818,13 @@
               }
             }
           ],
-          "linkId" : "materials/usepublic",
+          "linkId" : "rm4.12",
+          "definition" : "materials/usepublic",
           "text" : "Will Public Communication Materials be Utilized?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "materials/usematerials",
+              "question" : "rm4.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1826,19 +1864,19 @@
                   }
                 }
               ],
-              "linkId" : "materials/usepublic-help",
+              "linkId" : "rm4.12_help",
               "text" : "Communication addressed to the public.",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "materials/public",
+          "linkId" : "rm4.13",
           "text" : "Public Communication",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "materials/usepublic",
+              "question" : "rm4.12",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "yes"
@@ -1849,7 +1887,8 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "materials/public/announcement",
+              "linkId" : "rm4.13.1",
+              "definition" : "materials/public/announcement",
               "text" : "Announcement",
               "type" : "boolean",
               "required" : false,
@@ -1870,19 +1909,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/public/announcement-help",
+                  "linkId" : "rm4.13.1_help",
                   "text" : "A public and typically formal statement about a fact, occurrence, or intention.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/public/announcementdesc",
+              "linkId" : "rm4.13.2",
               "text" : "Announcement Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/public/announcement",
+                  "question" : "rm4.13.1",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1891,7 +1930,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/public/press",
+              "linkId" : "rm4.13.3",
+              "definition" : "materials/public/press",
               "text" : "Press Release",
               "type" : "boolean",
               "required" : false,
@@ -1912,19 +1952,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/public/press-help",
+                  "linkId" : "rm4.13.3_help",
                   "text" : "A written statement about a matter of public interest which is given to the press by an organization concerned with the matter.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/public/pressdesc",
+              "linkId" : "rm4.13.4",
               "text" : "Press Release Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/public/press",
+                  "question" : "rm4.13.3",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1933,7 +1973,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/public/solicitation",
+              "linkId" : "rm4.13.5",
+              "definition" : "materials/public/solicitation",
               "text" : "Public Solicitation",
               "type" : "boolean",
               "required" : false,
@@ -1954,19 +1995,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/public/solicitation-help",
+                  "linkId" : "rm4.13.5_help",
                   "text" : "A method of communication involving asking for or trying to obtain something from someone in public.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/public/solicitationdesc",
+              "linkId" : "rm4.13.6",
               "text" : "Public Solicitation Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/public/solicitation",
+                  "question" : "rm4.13.5",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
@@ -1975,7 +2016,8 @@
               "required" : false
             },
             {
-              "linkId" : "materials/public/snowball",
+              "linkId" : "rm4.13.7",
+              "definition" : "materials/public/snowball",
               "text" : "Snowball Sampling",
               "type" : "boolean",
               "required" : false,
@@ -1996,19 +2038,19 @@
                       }
                     }
                   ],
-                  "linkId" : "materials/public/snowball-help",
+                  "linkId" : "rm4.13.7_help",
                   "text" : "A popular technique among social scientists who wish to work with a population that is difficult to identify or locate.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "materials/public/snowballdesc",
+              "linkId" : "rm4.13.8",
               "text" : "Snowball Sampling Description",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "materials/public/snowball",
+                  "question" : "rm4.13.7",
                   "operator" : "=",
                   "answerBoolean" : true
                 }
