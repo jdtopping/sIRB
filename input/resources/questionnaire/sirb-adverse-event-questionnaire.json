@@ -27,14 +27,82 @@
           "definition" : "3",
           "text" : "Study Title",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae1.1_help",
+              "text" : "Study Title from the Informed Consent",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae1.2",
           "definition" : "4",
           "text" : "IRB Protocol Number",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae1.2_help",
+              "text" : "Number assigned to the protocol by IRB",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -70,6 +138,40 @@
                 "display" : "Not Interventional"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae1.3_help",
+              "text" : "Type of study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -92,6 +194,40 @@
                 "code" : "0",
                 "display" : "No"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae1.4_help",
+              "text" : "Indicator for use of FDA regulated product",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -137,6 +273,16 @@
                 "code" : "2",
                 "display" : "IDE"
               }
+            }
+          ],
+          "item" : [
+            {
+              "linkId" : "mae1.5_help",
+              "text" : "Indicator if an IND or IDE is being used in the study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -203,6 +349,38 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "mae3_help",
+          "text" : " Personnel completing the adverse event documentation at the relying site",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "mae3.1",
           "definition" : "15",
           "text" : "First Name",
@@ -240,6 +418,38 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "mae4_help",
+          "text" : "Location where adverse event is recorded",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "mae4.1",
           "definition" : "20",
           "text" : "Name of organization/site where the event occurred",
@@ -267,7 +477,41 @@
           "definition" : "23",
           "text" : "Patient ID",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.1_help",
+              "text" : "Participant dentifier from study case report form",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae5.2",
@@ -479,7 +723,41 @@
           "definition" : "30",
           "text" : "Which Arm/Cohort/treatment group was the participant assigned to?",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.8_help",
+              "text" : "Patient’s treatment strategy assignment",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae5.9",
@@ -513,6 +791,40 @@
                 "code" : "3",
                 "display" : "Not Applicable"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.9_help",
+              "text" : "Patient receive assigned study drug",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -565,6 +877,40 @@
                 "display" : "Blinded Study Agent"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.10_help",
+              "text" : "IND agent or placebo or blinded study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -601,6 +947,40 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.11_help",
+              "text" : "Indicator if adverse medical event occurred with protocol deviation, violation, exception",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -617,7 +997,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "flyover"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae5.12_help",
+              "text" : "Description of protocol deviations, violations, or exceptions that occurred for this participant",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -662,6 +1076,40 @@
                 "display" : "Update"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.1_help",
+              "text" : "Type of adverse event report being submitted",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -675,6 +1123,40 @@
           "initial" : [
             {
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.2_help",
+              "text" : "Diagnosis associated with adverse event.  Any untoward medical occurrence associated with the use of a drug in humans, whether or not considered drug related.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -682,21 +1164,123 @@
           "definition" : "40",
           "text" : "Start Date",
           "type" : "date",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.3_help",
+              "text" : "Date adverse event started",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.4",
           "definition" : "41",
           "text" : "Reported Date",
           "type" : "date",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.4_help",
+              "text" : "Date of this report",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.5",
           "definition" : "42",
           "text" : "Recorded Date",
           "type" : "date",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.5_help",
+              "text" : "Date this adverse event was first recorded",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -732,6 +1316,40 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.6_help",
+              "text" : "Indicator if adverse event is still continuing",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -748,7 +1366,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.7_help",
+              "text" : "Date that the event resolved",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -783,6 +1435,40 @@
                 "code" : "2",
                 "display" : "Unexpected"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.8_help",
+              "text" : "Adverse event was expected or not",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -826,6 +1512,40 @@
                 "display" : "Severe"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.9_help",
+              "text" : "Physician assessment using sponsor defined categories",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -861,6 +1581,40 @@
                 "code" : "0",
                 "display" : "No"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.10_help",
+              "text" : "Indicator if an undesirable experience is associated with use of a medical product",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -937,6 +1691,29 @@
                 "display" : "Disability/incapacity"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.11_help",
+              "text" : "Serious criteria are defined in the protocol",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -953,7 +1730,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.12_help",
+              "text" : "Date adverse event qualified as serious",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -1013,6 +1824,40 @@
                 "display" : "Unknown"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.13_help",
+              "text" : "Participant’s status after the adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -1063,6 +1908,40 @@
                 "code" : "3",
                 "display" : "Unknown"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.14_help",
+              "text" : "Indicator if participant was autopsied",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -1151,7 +2030,41 @@
           "enableBehavior" : "any",
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.16_help",
+              "text" : "Explanation for relationship between study intervention and adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -1174,7 +2087,6 @@
           "text" : "What are possible alternate causes of the SAE?",
           "type" : "choice",
           "enableWhen" : [
-            
             {
               "question" : "mae6.15",
               "operator" : "=",
@@ -1229,6 +2141,40 @@
                 "display" : "Other known or suspected cause"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.17_help",
+              "text" : "Reason for possible alternative serious adverse event causes ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -1245,7 +2191,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.18_help",
+              "text" : "Study procedure  associated with SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.19",
@@ -1261,7 +2241,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.19_help",
+              "text" : "Pre-existing condition associated with SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.20",
@@ -1277,7 +2291,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.20_help",
+              "text" : "Underlying disease associated with SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.21",
@@ -1293,7 +2341,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.21_help",
+              "text" : "Concomitant medication associated with  SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae6.22",
@@ -1309,7 +2391,41 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.22_help",
+              "text" : "Other causal reason was associated with SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -1369,6 +2485,29 @@
                 "display" : "Delayed Dose"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.23_help",
+              "text" : "Changes to  study intervention made after adverse event was detected",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -1398,6 +2537,40 @@
                 "display" : "Not Applicable"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.24_help",
+              "text" : "Adverse event diminished/abated after study intervention was discontinued, interrupted, or dose reduced (dechallenged)",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -1426,6 +2599,40 @@
                 "code" : "3",
                 "display" : "Not Applicable"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.25_help",
+              "text" : "Adverse event recurred when the study intervention was restarted",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -1507,32 +2714,189 @@
           "repeats" : true,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.27_help",
+              "text" : "Concomitant medication associated with  SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "mae6.28.1",
               "definition" : "56",
               "text" : "Medication Name",
               "type" : "string",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.28.1_help",
+                  "text" : "Name of concomitant medication given to participant in response to SAE",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.28.2",
               "definition" : "57",
               "text" : "Indication",
               "type" : "string",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.28.2_help",
+                  "text" : "Indication for giving the concomitant medication to participant",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.28.3",
               "definition" : "58",
               "text" : "Start Date",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.28.3_help",
+                  "text" : "Start date for the concomitant medication given to participant",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.28.4",
               "definition" : "59",
               "text" : "Stop Date",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.28.4_help",
+                  "text" : "Stop date for the concomitant medication given to the participant",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.28.5",
@@ -1552,6 +2916,40 @@
                     "code" : "0",
                     "display" : "No"
                   }
+                }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.28.5_help",
+                  "text" : "Is concomitant medication administration for participant ongoing?",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 }
               ]
             }
@@ -1600,6 +2998,40 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.29_help",
+              "text" : "Treatments/procedures administered in response to  SAE",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -1635,25 +3067,159 @@
           "repeats" : true,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae6.30_help",
+              "text" : "Name of SAE treatment/procedure participant received",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "mae6.30.1",
               "definition" : "63",
               "text" : "Treatment/Procedure",
               "type" : "string",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.30.1_help",
+                  "text" : "Name of SAE treatment/procedure participant received",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.30.2",
               "definition" : "64",
               "text" : "Start Date",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.30.2_help",
+                  "text" : "Start date for SAE treatment/procedure participant received",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.30.3",
               "definition" : "65",
               "text" : "Stop Date",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.30.3_help",
+                  "text" : "Stop date for SAE treatment/procedure participant received",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "mae6.30.4",
@@ -1673,6 +3239,40 @@
                     "code" : "0",
                     "display" : "No"
                   }
+                }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "mae6.30.4_help",
+                  "text" : "Is the SAE treatment/procedure for the participant ongoing",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 }
               ]
             }
@@ -1723,6 +3323,40 @@
             "display" : "No"
           }
         }
+      ],
+      "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "mae7_help",
+          "text" : "Were any laboratory or diagnostic tests administered to the participant in response to the SAE?",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        }
       ]
     },
     {
@@ -1757,6 +3391,38 @@
       "required" : false,
       "repeats" : true,
       "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "mae8_help",
+          "text" : "Laboratory or diagnostic tests obtained in response to AE",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
         {
           "linkId" : "mae8.1",
           "definition" : "69",
