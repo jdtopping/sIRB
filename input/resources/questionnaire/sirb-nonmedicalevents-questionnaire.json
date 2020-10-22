@@ -27,13 +27,81 @@
           "linkId" : "nme1.1",
           "text" : "Study Title:",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme1.1_help",
+              "text" : "Study Title from the Informed Consent",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme1.3",
           "text" : "IRB Protocol Number:",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme1.3_help",
+              "text" : "IRB Number from the Informed Consent",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -97,7 +165,41 @@
             }
           ],
           "enableBehavior" : "all",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme1.5_help",
+              "text" : "Explanation for voluntary hold on new participant enrollment.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -108,22 +210,156 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "nme2_help",
+          "text" : "Investigator responsible for research study at a site",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "nme2.1",
           "text" : "Name:",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme2.1_help",
+              "text" : "Given name and surname of the site PI",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme2.2",
           "text" : "Phone:",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme2.2_help",
+              "text" : "Phone number for site PI",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme2.3",
           "text" : "Email:",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme2.3_help",
+              "text" : "Email address for site PI",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -134,10 +370,76 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "nme3_help",
+          "text" : "Non-medical adverse event report",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "nme3.1",
           "text" : "Report Date:",
           "type" : "date",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.1_help",
+              "text" : "Date report is created",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme3.2",
@@ -159,20 +461,122 @@
                 "display" : "Follow-up"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.2_help",
+              "text" : "Indicator if report is the Initial report or follow-up report",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
           "linkId" : "nme3.3",
           "text" : "Check at least one of the following criteria:",
           "type" : "group",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.3_help",
+              "text" : "Reason for uanticipated problem reporting",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme3.4",
           "definition" : "/report/new_check",
           "text" : "New information resulted in unexpected change in risks of the research.",
           "type" : "boolean",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.4_help",
+              "text" : "Indicator if new information resulted in unexpected change in risks of research",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme3.5",
@@ -192,19 +596,121 @@
               "linkId" : "nme3.5.1",
               "text" : "Date:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.5.1_help",
+                  "text" : "Date new or increased risk first documented",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.5.2",
               "text" : "Date discovered:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.5.2_help",
+                  "text" : "Date new or increased risk discovered",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.5.3",
               "text" : "Description:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.5.3_help",
+                  "text" : "Description of new or increased risk",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -213,7 +719,41 @@
           "definition" : "/report/event_check",
           "text" : "Unanticipated Problem Involving Risk to Participants or Others",
           "type" : "boolean",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.6_help",
+              "text" : "Indicator if problem Involved risk to participants or others",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme3.7",
@@ -233,19 +773,121 @@
               "linkId" : "nme3.7.1",
               "text" : "Event date:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.1_help",
+                  "text" : "Date event occurred",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.7.2",
               "text" : "Date event became aware to study team:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.2_help",
+                  "text" : "Date site research team first became aware of unanticipated problem ",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.7.3",
               "text" : "Event Summary:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.3_help",
+                  "text" : "Summary description of unanticipated problem",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "extension" : [
@@ -281,6 +923,40 @@
                     "display" : "No"
                   }
                 }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.4_help",
+                  "text" : "Indicator if unanticipated problem was unexpected",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
               ]
             },
             {
@@ -297,7 +973,41 @@
                 }
               ],
               "enableBehavior" : "all",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.5_help",
+                  "text" : "Explanation for why unanticipated problem was unexpected",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "extension" : [
@@ -333,6 +1043,40 @@
                     "display" : "No"
                   }
                 }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.6_help",
+                  "text" : "Unanticipated problem associated with participation in the research study",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
               ]
             },
             {
@@ -349,7 +1093,41 @@
                 }
               ],
               "enableBehavior" : "all",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.7_help",
+                  "text" : "Explanation for why unanticipated problem is associated with participation in this research",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "extension" : [
@@ -385,6 +1163,40 @@
                     "display" : "No"
                   }
                 }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.8_help",
+                  "text" : "Indicator if unanticipated problem increased risk of harm to  participants",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
               ]
             },
             {
@@ -401,7 +1213,41 @@
                 }
               ],
               "enableBehavior" : "all",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.7.9_help",
+                  "text" : "Explanation for why unanticipated problem is associated with increased risk of harm for research participants",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -410,7 +1256,41 @@
           "definition" : "/report/deviation_check",
           "text" : "Protocol Deviation (accidential or unitentional)",
           "type" : "boolean",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.8_help",
+              "text" : "Indicator protocol  deviation was accidental or unintentional",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme3.9",
@@ -430,19 +1310,121 @@
               "linkId" : "nme3.9.1",
               "text" : "Date:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.9.1_help",
+                  "text" : "Date non-compliance first identified",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.9.2",
               "text" : "Date discovered:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.9.2_help",
+                  "text" : "Date site research team first discovered non-compliance protocol deviation",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.9.3",
               "text" : "Description:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.9.3_help",
+                  "text" : "Description of non-compliance protocol deviation",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.9.4",
@@ -451,18 +1433,118 @@
               "required" : false,
               "item" : [
                 {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.9.4_help",
+                  "text" : "Reason for protocol deviation",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                },
+                {
                   "linkId" : "nme3.9.4.1",
                   "definition" : "/report/deviation/involve/failure",
                   "text" : "Failure to obtain informed consent when IRB deemed required",
                   "type" : "boolean",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "nme3.9.4.1_help",
+                      "text" : "Informed consent not obtained when required by IRB",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 },
                 {
                   "linkId" : "nme3.9.4.2",
                   "definition" : "/report/deviation/involve/modify",
                   "text" : "Modifying the protocol without IRB approval, except to avoid hazard to participants",
                   "type" : "boolean",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "nme3.9.4.2_help",
+                      "text" : "Protocol modified without IRB approval",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 },
                 {
                   "linkId" : "nme3.9.4.3",
@@ -482,6 +1564,16 @@
                         "code" : "no",
                         "display" : "No"
                       }
+                    }
+                  ],
+                  "item" : [
+                    {
+                      "linkId" : "nme3.9.4.3_help",
+                      "text" : "Conducting research without IRB approval",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
                     }
                   ]
                 },
@@ -507,7 +1599,41 @@
                     }
                   ],
                   "enableBehavior" : "any",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "nme3.9.9.4_help",
+                      "text" : "Explanation for why protocol deviation category checked",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 }
               ]
             },
@@ -591,19 +1717,97 @@
               "linkId" : "nme3.11.1",
               "text" : "Date breach occurred",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.11.1_help",
+                  "text" : "Date breach of confidentiality first documented",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.11.2",
               "text" : "Date discovered:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "linkId" : "nme3.11.2_help",
+                  "text" : "Date site study team discovered breach of confidentiality ",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.11.3",
               "text" : "Description:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.11.3_help",
+                  "text" : "Breach of confidentiality description",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -632,19 +1836,121 @@
               "linkId" : "nme3.13.1",
               "text" : "Date:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.13.1_help",
+                  "text" : "Date site first documented participant incarceration.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.13.2",
               "text" : "Date incarceration was discovered:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.13.2_help",
+                  "text" : "Data site study team discovered patient incarceration",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.13.3",
               "text" : "Description:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.13.3_help",
+                  "text" : "Description of patient incarceration",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -658,6 +1964,40 @@
           "readOnly" : false,
           "initial" : [
             {
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme3.14_help",
+              "text" : "Indicator if participant complaint of unexpected risks was not resolved by study team.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -684,19 +2024,121 @@
               "initial" : [
                 {
                 }
+              ],
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.15.1_help",
+                  "text" : "Date site first documented participant unexpected risk complaint",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
               ]
             },
             {
               "linkId" : "nme3.15.2",
               "text" : "Date received:",
               "type" : "date",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.15.2_help",
+                  "text" : "Date site personnel first received participant unexpected risk complaint",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "nme3.15.3",
               "text" : "Description:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "nme3.15.3_help",
+                  "text" : "Description of participant unexpected risk complaint",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         }
@@ -708,6 +2150,38 @@
       "type" : "group",
       "required" : false,
       "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "nme4_help",
+          "text" : "Reporting information to Sponsor and both relying and reviewing IRBs",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
         {
           "extension" : [
             {
@@ -742,6 +2216,16 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "linkId" : "nme4.1_help",
+              "text" : "Indicator if Sponsor was notified of non-medical adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -758,7 +2242,41 @@
             }
           ],
           "enableBehavior" : "all",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme4.2_help",
+              "text" : "Date sponsor notified of non-medical adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -794,6 +2312,40 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme4.3_help",
+              "text" : "Indicator if study site IRB notified of non-medical adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -810,7 +2362,17 @@
             }
           ],
           "enableBehavior" : "all",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "nme4.4_help",
+              "text" : "Date study site IRB notified of non-medical adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "nme4.5",
@@ -832,6 +2394,40 @@
                 "code" : "0",
                 "display" : "No"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "nme4.5_help",
+              "text" : "Other parties notified of non-medical adverse event",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -1231,6 +2827,9 @@
           "required" : false
         }
       ]
+    },
+    {
+      "linkId" : "i119"
     }
   ]
 }
