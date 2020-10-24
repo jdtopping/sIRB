@@ -35,7 +35,7 @@
           "text" : "Study Title",
           "type" : "text",
           "required" : false,
-           "item" : [
+          "item" : [
             {
               "extension" : [
                 {
@@ -74,11 +74,32 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c2_help",
+          "text" : "PI at a site conducting the study, responsible for the conduct of the study at his/her relying institution",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "c2.1",
           "text" : "Last Name",
           "type" : "string",
           "required" : false,
-           "item" : [
+          "item" : [
             {
               "extension" : [
                 {
@@ -94,7 +115,7 @@
                 }
               ],
               "linkId" : "c2.1_help",
-              "text" : "Surname or family name associated with the site primary responsibility holder.",
+              "text" : "Surname or family name associated with the site primary responsibility holder",
               "type" : "display",
               "required" : false,
               "repeats" : false,
@@ -106,25 +127,117 @@
           "linkId" : "c2.2",
           "text" : "First Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c2.2_help",
+              "text" : "Given name associated with the site primary responsibility holder",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c2.3",
           "text" : "Professional Degrees",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c2.3_help",
+              "text" : "Professional and Academic degrees associated with the site primary responsibility holder",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c2.4",
           "text" : "Associated Institution",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c2.4_help",
+              "text" : "Academic or Profressional Institution associated with the site primary responsibility holder",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c2.5",
           "text" : "Contact Information",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c2.5_help",
+              "text" : "Information on how to contact the Site PI.  Can include both email/phone number",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -135,16 +248,83 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c3_help",
+          "text" : "Information about Lead or Site Institution where study will be conducted",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "c3.1",
           "text" : "Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c3.1_help",
+              "text" : "Public or private entity conducting the study- where the participant will go or call",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c3.2",
           "text" : "Address",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c3.2_help",
+              "text" : "Physical address",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c3.3",
@@ -152,7 +332,30 @@
           "type" : "string",
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c3.3_help",
+              "text" : "Object identifier for institution",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -182,13 +385,59 @@
           "linkId" : "c4.1",
           "text" : "Sponsor Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c4.1_help",
+              "text" : "Entity financially supporting the research",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c4.2",
           "text" : "Sponsor OID",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c4.2_help",
+              "text" : "Object identifier for Sponsor",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -196,7 +445,30 @@
       "linkId" : "c5",
       "text" : "Sponsor Detail",
       "type" : "text",
-      "required" : false
+      "required" : false,
+      "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c5_help",
+          "text" : "Relevant information about the sponsor(s)",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        }
+      ]
     },
     {
       "linkId" : "c6",
@@ -216,6 +488,29 @@
             "display" : "No"
           }
         }
+      ],
+      "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c6_help",
+          "text" : "Consent that is obtained electronically",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        }
       ]
     },
     {
@@ -227,6 +522,27 @@
         {
           "extension" : [
             {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c7_help",
+          "text" : "Section header for the mandated text describing the basic purpose, procedures and reasons for the study.",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
+          "extension" : [
+            {
               "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
               "valueInteger" : 1
             }
@@ -234,7 +550,30 @@
           "linkId" : "c7.1",
           "text" : "Summary Text Statement",
           "type" : "text",
-          "required" : true
+          "required" : true,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c7.1_help",
+              "text" : "Mandated paragraph that describes the basic purpose, procedures and reasons behind the research in easily understood prose",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -260,6 +599,27 @@
               "valueString" : "This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends."
             }
           ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c8.1_help",
+          "text" : "Introductory Paragraph to the participant.  Includes statement of research and explanation of the consent process:  This consent form describes a research study, what you may expect if you decide to take part and important information to help you make your decision.  Please read this form carefully and ask questions about anything that is not clear before you agree to participate.  You may take this consent form home to think about and discuss with family or friends",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         }
       ]
     },
@@ -273,37 +633,175 @@
           "linkId" : "c9.1",
           "text" : "Reason for Research",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.1_help",
+              "text" : "Explanation about why the study is being conducted",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c9.2",
           "text" : "Interactions with others",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.2_help",
+              "text" : "Statement of who the participant can anticipate interacting with during their study participation",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c9.3",
           "text" : "Invited Participants",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.3_help",
+              "text" : "High level information about what participating in the study will entail for the participantr",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c9.4",
           "text" : "Total expected study enrollment",
           "type" : "integer",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.4_help",
+              "text" : "The number of people targeted for enrollment for the multi-site study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c9.5",
           "text" : "Additional Enrollment Text",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.5_help",
+              "text" : "Additional field for including miscellaneous enrollment information. May include information about total enrollment from the relying site",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c9.6",
           "text" : "What is involved in the study?",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c9.6_help",
+              "text" : "High level information about what participating in the study will entail for the participant.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -338,13 +836,59 @@
               "linkId" : "c10.1.1",
               "text" : "Name of the Assessment",
               "type" : "string",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "c10.1_help",
+                  "text" : "Short name of the assessment",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "c10.1.2",
               "text" : "Description of Assessment",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "c10.1.2_help",
+                  "text" : "Short description of the assessment",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -352,7 +896,17 @@
           "linkId" : "c10.2",
           "text" : "Assessment Supplemental Text",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "c10.2_help",
+              "text" : "Additional text if needed to provide additional context about the assessments collected",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -366,7 +920,45 @@
           "linkId" : "c11.1",
           "text" : "Visit Introductory Text",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c11.1_help",
+              "text" : "Introductory Text to include prior to the visit table to introduce what the tables contain and explain any additional detail or information about the visit schedule.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -394,13 +986,74 @@
               "linkId" : "c11.2.1",
               "text" : "Visit Type",
               "type" : "string",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                      "valueBoolean" : false
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "c11.2.1_help",
+                  "text" : "Unique visit type, defined by the procedures which are completed within that visit.  E.g. Screening, Baseline, Followup, Final",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "c11.2.2",
               "text" : "Visit Description",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "c11.2.2_help",
+                  "text" : "Description of Visit types, including what procedures it contains",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "c11.2.3",
@@ -585,13 +1238,33 @@
           "linkId" : "c11.4",
           "text" : "Procedure Supplemental Text",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "c11.4_help",
+              "text" : "Additional Text to include after the procedure table to provide the participant any additional information needed about procedure schedule",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c11.5",
           "text" : "Total Duration of Study Participation",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "c11.5_help",
+              "text" : "Time elapsed for a participant to be part of the study from initial enrollment to final discharge or completion",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -735,7 +1408,17 @@
           "linkId" : "c12.2",
           "text" : "Risk Supplemental Text",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "c12.2_help",
+              "text" : "Additional text for description of other costs not directly associated with a risk",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -771,6 +1454,44 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c12.3_help",
+              "text" : "Indicates whether risks to the fetus are possible",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -786,7 +1507,30 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c12.4_help",
+              "text" : "Textual description of risks to the fetus",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -950,6 +1694,44 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c15.1_help",
+              "text" : "Indicates whether compensation will be offered or not for the study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -965,7 +1747,17 @@
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "c15.2_help",
+              "text" : "Additional text about compensation not captured in the compensation table",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -1030,7 +1822,45 @@
           "linkId" : "c16.1",
           "text" : "What are the costs of participation, if any?",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c16.1_help",
+              "text" : "Explanation informing  participant if any additional costs will occur to the participant as a result of taking part in the study",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "extension" : [
@@ -1064,6 +1894,44 @@
                 "code" : "2",
                 "display" : "No"
               }
+            }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c16.2_help",
+              "text" : "Reimbursement to participant for other study visit costs not directly associated with a visit",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -1106,13 +1974,89 @@
                 "display" : "Acute but not chronic injury covered"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c16.3_help",
+              "text" : "Indicates if participant or the participant's insurance will be responsible for any injury which occurs or if the sponsor will cover any treatment costs for injury",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
           "linkId" : "c16.4",
           "text" : "Additional description of treatment coverage",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode",
+                  "valueBoolean" : false
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c16.4_help",
+              "text" : "Description of other costs not directly associated with a visit",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
