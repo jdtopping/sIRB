@@ -17,7 +17,7 @@
   "status" : "draft",
   "item" : [
     {
-      "linkId" : "7",
+      "linkId" : "p1",
       "text" : "Research Study",
       "type" : "group",
       "required" : false,
@@ -38,7 +38,8 @@
               }
             }
           ],
-          "linkId" : "2",
+          "linkId" : "p1.1",
+          "definition" : "2",
           "text" : "Study Type",
           "type" : "choice",
           "required" : true,
@@ -58,12 +59,13 @@
           ]
         },
         {
-          "linkId" : "i514",
+          "linkId" : "p1.2",
+          "definition" : "i514",
           "text" : "Intervention",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -116,7 +118,7 @@
                   }
                 }
               ],
-              "linkId" : "i514-help",
+              "linkId" : "p1.2_help",
               "text" : "A process or action that is the focus of a clinical study. Interventions include drugs, medical devices, procedures, vaccines, and other products that are either investigational or already available. Interventions can also include noninvasive approaches, such as education or modifying diet and exercise.",
               "type" : "display",
               "required" : false,
@@ -126,19 +128,20 @@
           ]
         },
         {
-          "linkId" : "i520x",
+          "linkId" : "p1.3",
+          "definition" : "i520x",
           "text" : "Does this protocol require an FDA exemption?",
           "type" : "choice",
           "enableWhen" : [
             {
-              "question" : "i514",
+              "question" : "p1.2",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
               }
             },
             {
-              "question" : "i514",
+              "question" : "p1.2",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
@@ -164,12 +167,13 @@
           ]
         },
         {
-          "linkId" : "i521x",
+          "linkId" : "p1.4",
+          "definition" : "i521x",
           "text" : "Type of exemption",
           "type" : "open-choice",
           "enableWhen" : [
             {
-              "question" : "i520x",
+              "question" : "p1.3",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -195,7 +199,7 @@
           ]
         },
         {
-          "linkId" : "8",
+          "linkId" : "p1.5",
           "text" : "Study Title",
           "type" : "text",
           "required" : false,
@@ -216,7 +220,7 @@
                   }
                 }
               ],
-              "linkId" : "8-help",
+              "linkId" : "p1.5_help",
               "text" : "The official title of a protocol used to identify a clinical study.Include phase (e.g. pilot proof of concept study, phase I, phase II, etc.), design (e.g. randomized, double blind, placebo controlled, etc.), if the study is multi-center, the investigational agent (drug, device, biologic, vaccine, procedural and/or behavioral etc., and target disease(s)",
               "type" : "display",
               "required" : false,
@@ -226,7 +230,7 @@
           ]
         },
         {
-          "linkId" : "i503d",
+          "linkId" : "p1.6",
           "text" : "Study Title (Short)",
           "type" : "text",
           "required" : false,
@@ -247,7 +251,7 @@
                   }
                 }
               ],
-              "linkId" : "i503d-help",
+              "linkId" : "p1.6_help",
               "text" : "A short study title written in language intended for the lay public.",
               "type" : "display",
               "required" : false,
@@ -257,62 +261,94 @@
           ]
         },
         {
-          "linkId" : "14",
+          "linkId" : "p1.61",
           "text" : "Principal Investigator",
           "type" : "group",
           "required" : false,
           "repeats" : false,
           "item" : [
             {
-              "linkId" : "15",
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.61_help",
+              "text" : "The individual(s) designated by the applicant organization/recipient to have the appropriate level of authority and responsibility to direct the project or program to be supported by the award. The applicant organization may designate multiple individuals as program directors/principal investigators (PD/PIs) who share the authority and responsibility for leading and directing the project, intellectually and logistically. When multiple PD/PIs are named, each is responsible and accountable to the official(s) at the applicant organization/recipient, or as appropriate, to a collaborating organization for the proper conduct of the project, program, or activity including the submission of all required reports. The presence of more than one PD/PI on an application or award diminishes neither the responsibility nor the accountability of any individual PD/PI. (NIH Definition). https://grants.nih.gov/grants/policy/nihgps/html5/section_1/1.2_definition_of_terms.htm",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
+              "linkId" : "p1.7.1",
               "text" : "First Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "15_1",
+              "linkId" : "p1.7.2",
               "text" : "Last Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item372",
+              "linkId" : "p1.7.3",
               "text" : "Department Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "16",
+              "linkId" : "p1.7.4",
               "text" : "Address",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "item525",
+                  "linkId" : "p1.7.4.1",
                   "text" : "Street Address",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item526",
+                  "linkId" : "p1.7.4.2",
                   "text" : "City",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item527",
+                  "linkId" : "p1.7.4.3",
                   "text" : "State",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item528",
+                  "linkId" : "p1.7.4.4",
                   "text" : "Zip Code",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item516",
+                  "linkId" : "p1.7.4.5",
                   "text" : "Country",
                   "type" : "text",
                   "required" : false,
@@ -322,13 +358,13 @@
               ]
             },
             {
-              "linkId" : "17",
+              "linkId" : "p1.7.5",
               "text" : "Phone",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "18",
+              "linkId" : "p1.7.6",
               "text" : "Email",
               "type" : "text",
               "required" : false
@@ -336,7 +372,8 @@
           ]
         },
         {
-          "linkId" : "18_1",
+          "linkId" : "p1.7",
+          "definition" : "18_1",
           "text" : "Additional Investigator",
           "type" : "choice",
           "required" : false,
@@ -358,12 +395,12 @@
           ]
         },
         {
-          "linkId" : "19",
+          "linkId" : "p1.8",
           "text" : "Additional Investigator",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "18_1",
+              "question" : "p1.7",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -390,12 +427,12 @@
                   }
                 }
               ],
-              "linkId" : "19-help",
+              "linkId" : "p1.8_help",
               "text" : "PI at additional sites, etc. as applicable",
               "type" : "display"
             },
             {
-              "linkId" : "19_1",
+              "linkId" : "p1.8.1",
               "text" : "Additional Investigator Role",
               "type" : "open-choice",
               "required" : false,
@@ -423,55 +460,55 @@
               ]
             },
             {
-              "linkId" : "20",
+              "linkId" : "p1.8.2",
               "text" : "First Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "20_1",
+              "linkId" : "p1.8.3",
               "text" : "Last Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i371",
+              "linkId" : "p1.8.4",
               "text" : "Department Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "21",
+              "linkId" : "p1.8.5",
               "text" : "Address",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "item529",
+                  "linkId" : "p1.8.5.1",
                   "text" : "Street Address",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item530",
+                  "linkId" : "p1.8.5.2",
                   "text" : "City",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i531",
+                  "linkId" : "p1.8.5.3",
                   "text" : "State",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i532",
+                  "linkId" : "p1.8.5.4",
                   "text" : "Zip Code",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item517",
+                  "linkId" : "p1.8.5.5",
                   "text" : "Country",
                   "type" : "text",
                   "required" : false,
@@ -481,13 +518,13 @@
               ]
             },
             {
-              "linkId" : "22",
+              "linkId" : "p1.8.6",
               "text" : "Phone",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "23",
+              "linkId" : "p1.8.7",
               "text" : "Email",
               "type" : "text",
               "required" : false
@@ -495,39 +532,141 @@
           ]
         },
         {
-          "linkId" : "11",
+          "linkId" : "p1.9",
           "text" : "Protocol Number",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.9_help",
+              "text" : "Unique Protocol Identification Number ;  used by the sponsor",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "linkId" : "i504d",
+          "linkId" : "p1.10",
           "text" : "IRB Number",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.10_help",
+              "text" : "Provided by the sIRB. Will not be available at the time of initial submission. ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "linkId" : "12",
+          "linkId" : "p1.11",
           "text" : "ClinicalTrials.Gov Number",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.11_help",
+              "text" : "The unique identification code given to each clinical study upon registration at ClinicalTrials.gov. The format is \"NCT\" followed by an 8-digit number (for example, NCT00000419).",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "linkId" : "50",
+          "linkId" : "p1.12",
           "text" : "Grant Title",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
@@ -537,12 +676,12 @@
           "required" : false
         },
         {
-          "linkId" : "51",
+          "linkId" : "p1.13",
           "text" : "NIH Grant Number",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
@@ -552,12 +691,12 @@
           "required" : false
         },
         {
-          "linkId" : "13",
+          "linkId" : "p1.14",
           "text" : "IND Number",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "i521x",
+              "question" : "p1.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -567,12 +706,12 @@
           "required" : false
         },
         {
-          "linkId" : "13_1",
+          "linkId" : "p1.15",
           "text" : "IDE Number",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "i521x",
+              "question" : "p1.4",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
@@ -582,54 +721,122 @@
           "required" : false
         },
         {
-          "linkId" : "26",
+          "linkId" : "p1.16",
           "text" : "Study Product Name",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.16_help",
+              "text" : "Generic, followed by marketed name if applicable",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "linkId" : "i513",
+          "linkId" : "p1.17",
           "text" : "Study Product Provider",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.17_help",
+              "text" : "e.g. NIH, or company",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
-          "linkId" : "28",
+          "linkId" : "p1.18",
           "text" : "Funding Organization",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "id507",
+              "linkId" : "p1.18.1",
               "text" : "Name",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i508",
+              "linkId" : "p1.18.2",
               "text" : "Address",
               "type" : "group",
               "enableWhen" : [
                 {
-                  "question" : "2",
+                  "question" : "p1.1",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -641,25 +848,27 @@
               "readOnly" : false,
               "item" : [
                 {
-                  "linkId" : "i533",
+                  "linkId" : "p1.18.2.1",
                   "text" : "Street Address",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i534",
+                  "linkId" : "p1.18.2.2",
                   "text" : "City",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 },
                 {
-                  "linkId" : "i535",
+                  "linkId" : "p1.18.2.3",
                   "text" : "State",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i536",
+                  "linkId" : "p1.18.2.4",
                   "text" : "Zip Code",
                   "type" : "text",
                   "required" : false
@@ -667,92 +876,7 @@
               ]
             },
             {
-              "linkId" : "i509",
-              "text" : "Phone Number",
-              "type" : "text",
-              "required" : false
-            }
-          ]
-        },
-        {
-          "linkId" : "24",
-          "text" : "Sponsor",
-          "type" : "group",
-          "enableWhen" : [
-            {
-              "question" : "2",
-              "operator" : "=",
-              "answerCoding" : {
-                "code" : "1"
-              }
-            }
-          ],
-          "required" : false,
-          "item" : [
-            {
-              "linkId" : "i373",
-              "text" : "Name",
-              "type" : "text",
-              "required" : false
-            },
-            {
-              "linkId" : "i374",
-              "text" : "Department Name",
-              "type" : "text",
-              "required" : false
-            },
-            {
-              "linkId" : "i375",
-              "text" : "Address",
-              "type" : "group",
-              "required" : false,
-              "repeats" : false,
-              "readOnly" : false,
-              "item" : [
-                {
-                  "linkId" : "i537",
-                  "text" : "Street Address",
-                  "type" : "text",
-                  "required" : false,
-                  "item" : [
-                    {
-                      "linkId" : "i538",
-                      "text" : "City",
-                      "type" : "text",
-                      "required" : false
-                    },
-                    {
-                      "linkId" : "i539",
-                      "text" : "State",
-                      "type" : "text",
-                      "required" : false
-                    },
-                    {
-                      "linkId" : "i540",
-                      "text" : "Zip Code",
-                      "type" : "text",
-                      "required" : false
-                    },
-                    {
-                      "linkId" : "item518",
-                      "text" : "Country",
-                      "type" : "text",
-                      "required" : false,
-                      "repeats" : false,
-                      "readOnly" : false
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "linkId" : "i376",
-              "text" : "Email",
-              "type" : "text",
-              "required" : false
-            },
-            {
-              "linkId" : "i377",
+              "linkId" : "p1.18.3",
               "text" : "Phone Number",
               "type" : "text",
               "required" : false
@@ -765,28 +889,133 @@
                     "coding" : [
                       {
                         "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                        "code" : "help",
-                        "display" : "Help-Button"
+                        "code" : "help"
                       }
-                    ],
-                    "text" : "Help-Button"
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
                   }
                 }
               ],
-              "linkId" : "24-help",
-              "text" : "Sponsor means an individual or pharmaceutical or medical device company, governmental agency, academic institution, private",
-              "type" : "display"
+              "linkId" : "p1.18_help",
+              "text" : "e.g. NIH, or company",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
         {
-          "linkId" : "i504",
+          "linkId" : "p1.19",
+          "text" : "Sponsor",
+          "type" : "group",
+          "enableWhen" : [
+            {
+              "question" : "p1.1",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "1"
+              }
+            }
+          ],
+          "required" : false,
+          "item" : [
+            {
+              "linkId" : "p1.19_help",
+              "text" : "Individual or pharmaceutical company, governmental agency, academic institution, private organization, or other organization taking responsibility for and investing in a clinical investigation. . The sponsor does not actually conduct the investigation unless the sponsor is a sponsor-investigator. A person other than an individual that uses one or more of its own employees to conduct an investigation that it has initiated is a sponsor, not a sponsor-investigator, and the employees are investigators.21 CFR 312.3",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
+              "linkId" : "p1.19.1",
+              "text" : "Name",
+              "type" : "text",
+              "required" : false
+            },
+            {
+              "linkId" : "p1.19.2",
+              "text" : "Department Name",
+              "type" : "text",
+              "required" : false
+            },
+            {
+              "linkId" : "p1.19.3",
+              "text" : "Address",
+              "type" : "group",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false,
+              "item" : [
+                {
+                  "linkId" : "p1.19.3.1",
+                  "text" : "Street Address",
+                  "type" : "text",
+                  "required" : false,
+                  "item" : [
+                    {
+                      "linkId" : "p1.19.3.1.1",
+                      "text" : "City",
+                      "type" : "text",
+                      "required" : false
+                    },
+                    {
+                      "linkId" : "p1.19.3.1.2",
+                      "text" : "State",
+                      "type" : "text",
+                      "required" : false
+                    },
+                    {
+                      "linkId" : "p1.19.3.1.3",
+                      "text" : "Zip Code",
+                      "type" : "text",
+                      "required" : false
+                    },
+                    {
+                      "linkId" : "p1.19.3.1.4",
+                      "text" : "Country",
+                      "type" : "text",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId" : "p1.19.4",
+              "text" : "Email",
+              "type" : "text",
+              "required" : false
+            },
+            {
+              "linkId" : "p1.19.5",
+              "text" : "Phone Number",
+              "type" : "text",
+              "required" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "p1.20",
           "text" : "Medical Monitor",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i505",
+              "linkId" : "p1.20.1",
               "text" : "First Name",
               "type" : "text",
               "required" : false,
@@ -794,7 +1023,7 @@
               "readOnly" : false
             },
             {
-              "linkId" : "i505_1",
+              "linkId" : "p1.20.2",
               "text" : "Last Name",
               "type" : "text",
               "required" : false,
@@ -802,7 +1031,7 @@
               "readOnly" : false
             },
             {
-              "linkId" : "i506",
+              "linkId" : "p1.20.3",
               "text" : "Phone Number",
               "type" : "text",
               "required" : false,
@@ -810,7 +1039,7 @@
               "readOnly" : false
             },
             {
-              "linkId" : "i507",
+              "linkId" : "p1.20.4",
               "text" : "Email",
               "type" : "text",
               "required" : false,
@@ -818,13 +1047,13 @@
               "readOnly" : false
             },
             {
-              "linkId" : "i512",
+              "linkId" : "p1.20.5",
               "text" : "Address",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "i541",
+                  "linkId" : "p1.20.5.1",
                   "text" : "Street Address",
                   "type" : "text",
                   "required" : false,
@@ -832,7 +1061,7 @@
                   "readOnly" : false
                 },
                 {
-                  "linkId" : "i542",
+                  "linkId" : "p1.20.5.2",
                   "text" : "City",
                   "type" : "text",
                   "required" : false,
@@ -840,13 +1069,13 @@
                   "readOnly" : false
                 },
                 {
-                  "linkId" : "i543",
+                  "linkId" : "p1.20.5.3",
                   "text" : "State",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i544",
+                  "linkId" : "p1.20.5.4",
                   "text" : "Zip Code",
                   "type" : "text",
                   "required" : false,
@@ -854,7 +1083,7 @@
                   "readOnly" : false
                 },
                 {
-                  "linkId" : "item519",
+                  "linkId" : "p1.20.5.5",
                   "text" : "Country",
                   "type" : "text",
                   "required" : false,
@@ -866,18 +1095,18 @@
           ]
         },
         {
-          "linkId" : "31",
+          "linkId" : "p1.21",
           "text" : "Confidentialty Statement",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "35",
+          "linkId" : "p1.22",
           "text" : "Investigator's Signature",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -887,13 +1116,15 @@
           "required" : false
         },
         {
-          "linkId" : "29",
+          "linkId" : "p1.23",
           "text" : "Version Number",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
-          "linkId" : "30",
+          "linkId" : "p1.24",
           "text" : "Version Date ",
           "type" : "date",
           "required" : false,
@@ -918,26 +1149,26 @@
           }
         }
       ],
-      "linkId" : "a1",
+      "linkId" : "p2",
       "text" : "Protocol Amendment Summary of Changes Table",
       "type" : "group",
       "required" : false,
       "repeats" : true,
       "item" : [
         {
-          "linkId" : "a11",
+          "linkId" : "p2.1",
           "text" : "Affected Section(s)",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "a12",
+          "linkId" : "p2.2",
           "text" : "Summary of Revisions Made",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "a13",
+          "linkId" : "p2.3",
           "text" : "Rationale",
           "type" : "text",
           "required" : false
@@ -960,7 +1191,7 @@
           }
         }
       ],
-      "linkId" : "34",
+      "linkId" : "p2.4",
       "text" : "Statement of Compliance",
       "type" : "choice",
       "required" : true,
@@ -995,14 +1226,14 @@
               }
             }
           ],
-          "linkId" : "34-help",
+          "linkId" : "p2.4_help",
           "text" : "Provide a statement that the trial will be conducted in compliance with the protocol, International Council on Harmonisation Good Clinical Practice (ICH GCP) and applicable state, local and federal regulatory requirements. Each engaged institution must have a current Federal-Wide Assurance (FWA) issued by the Office for Human Research Protections (OHRP) and must provide this protocol and the associated informed consent documents and recruitment materials for review and approval by an appropriate Institutional Review Board (IRB) or Ethics Committee (EC) registered with OHRP. Any amendments to the protocol or consent materials must also be approved before implementation. Select one of the two statements below. If the study is an intramural NIH study, use the second statement below:",
           "type" : "display"
         }
       ]
     },
     {
-      "linkId" : "36",
+      "linkId" : "p3",
       "text" : "Protocol Summary",
       "type" : "group",
       "required" : false,
@@ -1010,7 +1241,7 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "39",
+          "linkId" : "p3.1",
           "text" : "Synopsis",
           "type" : "group",
           "required" : false,
@@ -1018,94 +1249,370 @@
           "readOnly" : false,
           "item" : [
             {
-              "linkId" : "40",
+              "linkId" : "p3.1.1",
               "text" : "Title (Full)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i380",
+              "linkId" : "p3.1.2",
               "text" : "Title (Short)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "42",
+              "linkId" : "p3.1.3",
               "text" : "Study Description",
               "type" : "text",
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.2.3_help",
+                  "text" : "Short description of the protocol, including a brief statement of the study hypothesis. This should be only a few sentences in length. A detailed schematic describing all visits and a schedule of assessments should be includedin the Schema and Schedule of Activities",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "43",
+              "linkId" : "p3.1.4",
               "text" : "Objectives",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.4_help",
+                  "text" : "Include the primary and secondary objectives.Theseobjectives should be thesame as the objectives contained in the body of the protocol. These align with Primary Purpose in clinicaltrials.gov",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "44",
+              "linkId" : "p3.1.5",
               "text" : "End Points",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i381",
+              "linkId" : "p3.1.6",
               "text" : "Accrual Ceiling/Number of Participants (projected-for all sites)",
               "type" : "integer",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.6_help",
+                  "text" : "Sample size plus an estimate for persons found to be ineligible during screening, after signing a screening consent. Number is the accrual ceiling for participants projected for all sites",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "45",
+              "linkId" : "p3.1.7",
               "text" : "Study Population",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "46",
+              "linkId" : "p3.1.8",
               "text" : "Phase",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.8_help",
+                  "text" : "Applies to drugs and biologics, Phase 0-4.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "i514d",
+              "linkId" : "p3.1.9",
               "text" : "Description of Sites/Facilities Enrolling Participants",
               "type" : "text",
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.9_help",
+                  "text" : "Brief description of plannedfacilities/participating sites enrolling participants. Indicate number of sites and if the study is intended to include sites outside  the United States.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "i382",
+              "linkId" : "p3.1.10",
               "text" : "Description of Study Intervention ( Agent/Procedure)/Investigational Product",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.10_help",
+                  "text" : "Describe the study intervention. If the study interventionis a drug or biologic, include dose and route of administration. For devices,provide a description ofeach important component, ingredient,property and the principle of operation of the device.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "48",
+              "linkId" : "p3.1.11",
               "text" : "Study Duration",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.11_help",
+                  "text" : "Estimated time (in months) from when the study opens to enrollment until completion of data analyses",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "49",
+              "linkId" : "p3.1.12",
               "text" : "Participant Duration",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.12_help",
+                  "text" : "Time (e.g., in months) it will take for each individual participant to complete all participant visits.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
-              "linkId" : "m1",
+              "linkId" : "p3.1.13",
               "text" : "Methodology",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "id515",
+              "linkId" : "p3.1.14",
               "text" : "Duration of Investigational Product Administration",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "2",
+                  "question" : "p1.1",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -1115,24 +1622,24 @@
               "required" : false
             },
             {
-              "linkId" : "i384",
+              "linkId" : "p3.1.15",
               "text" : "Key Procedures",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i385",
+              "linkId" : "p3.1.16",
               "text" : "Inclusion/Exclusion Criteria",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i383",
+              "linkId" : "p3.1.17",
               "text" : "Reference Theraphy",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "2",
+                  "question" : "p1.1",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -1142,7 +1649,7 @@
               "required" : false
             },
             {
-              "linkId" : "i386",
+              "linkId" : "p3.1.18",
               "text" : "Statistical Analysis",
               "type" : "text",
               "required" : false,
@@ -1152,13 +1659,13 @@
           ]
         },
         {
-          "linkId" : "37",
+          "linkId" : "p3.2",
           "text" : "Schema",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "38",
+          "linkId" : "p3.3",
           "text" : "Schedule of Activities",
           "type" : "text",
           "required" : false
@@ -1166,7 +1673,7 @@
       ]
     },
     {
-      "linkId" : "52",
+      "linkId" : "p4",
       "text" : "INTRODUCTION, BACKGROUND INFORMATION AND SCIENTIFIC RATIONAL",
       "type" : "group",
       "required" : false,
@@ -1174,25 +1681,25 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "55",
+          "linkId" : "p4.1",
           "text" : "Background",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "56",
+              "linkId" : "p4.1.1",
               "text" : "Describe the relevant literature and the specific gaps in current knowledge that this study intends to address",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "57",
+              "linkId" : "p4.1.2",
               "text" : "Provide the scientific or scholarly background for, rationale for, and significance of the research based on the existing literature and how it will add to existing knowledge:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "58",
+              "linkId" : "p4.1.3",
               "text" : "Describe the relevance and usefulness of the objectives",
               "type" : "text",
               "required" : false
@@ -1213,7 +1720,8 @@
                   }
                 }
               ],
-              "linkId" : "59",
+              "linkId" : "p4.1.4",
+              "definition" : "59",
               "text" : "Is this the first time the study drug, device, or intervention/procedure will be used in humans.",
               "type" : "choice",
               "required" : false,
@@ -1233,12 +1741,12 @@
               ]
             },
             {
-              "linkId" : "i392",
+              "linkId" : "p4.1.5",
               "text" : "If there has been experience with the study drug, device, or intervention/procedure in humans, detail the experience to date:",
               "type" : "text",
               "enableWhen" : [
                 {
-                  "question" : "59",
+                  "question" : "p4.1.4",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "0"
@@ -1250,12 +1758,12 @@
               "readOnly" : false
             },
             {
-              "linkId" : "60",
+              "linkId" : "p4.1.6",
               "text" : "Investigational Product",
               "type" : "group",
               "enableWhen" : [
                 {
-                  "question" : "2",
+                  "question" : "p1.1",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -1282,12 +1790,12 @@
                       }
                     }
                   ],
-                  "linkId" : "60-help",
+                  "linkId" : "p4.1.6_help",
                   "text" : "In this section include the name and description of the study intervention (drug, device, biologic, etc.) This section should contain a description of the investigational agent, its make-up, chemical properties and any relevant physical properties, including any available pharmacologic data.Specify the FDA approval status and include the IND Number or justify how the drug meets the IND Exemption criteria if applicable.For device studies this section should include a description of the device, including category of the device, and overview of its intended use or purpose in the research study. Specify the FDA approval status and include the IDE Number or Non-Significant Risk rationale if applicable.",
                   "type" : "display"
                 },
                 {
-                  "linkId" : "item539",
+                  "linkId" : "p4.1.6.1",
                   "text" : "Name and Description",
                   "type" : "text",
                   "required" : false,
@@ -1295,31 +1803,33 @@
                   "readOnly" : false
                 },
                 {
-                  "linkId" : "61",
+                  "linkId" : "p4.1.6.2",
                   "text" : "Preclinical Data",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
                 },
                 {
-                  "linkId" : "62",
+                  "linkId" : "p4.1.6.3",
                   "text" : "Clinical Data to Date",
                   "type" : "group",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "63",
+                      "linkId" : "p4.1.6.3.1",
                       "text" : "Human Pharmacokinetics",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "66",
+                      "linkId" : "p4.1.6.3.2",
                       "text" : "Clinical Studies in adults",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "67",
+                      "linkId" : "p4.1.6.3.3",
                       "text" : "Clinical Studies in Children",
                       "type" : "text",
                       "required" : false
@@ -1344,7 +1854,8 @@
                   }
                 }
               ],
-              "linkId" : "1234d",
+              "linkId" : "p4.1.7",
+              "definition" : "1234d",
               "text" : "Is there an active control group?",
               "type" : "choice",
               "required" : false,
@@ -1364,12 +1875,12 @@
               ]
             },
             {
-              "linkId" : "888",
+              "linkId" : "p4.1.8",
               "text" : "Active Control Group",
               "type" : "group",
               "enableWhen" : [
                 {
-                  "question" : "1234d",
+                  "question" : "p4.1.7",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -1377,33 +1888,22 @@
                 }
               ],
               "required" : false,
+              "repeats" : false,
+              "readOnly" : false,
               "item" : [
                 {
-                  "linkId" : "71",
+                  "linkId" : "p4.1.8.1",
                   "text" : "Describe any potential bias in the selection of the active control such that there will be an unfair advantage for the investigational intervention. For example, is the active control treatment known to be significantly less effective in this study population than another treatment:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "extension" : [
-                    {
-                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                      "valueCodeableConcept" : {
-                        "coding" : [
-                          {
-                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                            "code" : "drop-down",
-                            "display" : "Drop down"
-                          }
-                        ],
-                        "text" : "Drop down"
-                      }
-                    }
-                  ],
-                  "linkId" : "73",
+                  "linkId" : "p4.1.8.2",
                   "text" : "Is the sample size and the randomization ratio for this active control study ethically justified with regard to the number of participants who will be exposed to the risks of the study.",
                   "type" : "choice",
                   "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false,
                   "answerOption" : [
                     {
                       "valueCoding" : {
@@ -1435,7 +1935,8 @@
                       }
                     }
                   ],
-                  "linkId" : "69",
+                  "linkId" : "p4.1.8.3",
+                  "definition" : "69",
                   "text" : "Is the active control an established effective intervention?",
                   "type" : "choice",
                   "required" : false,
@@ -1455,12 +1956,12 @@
                   ]
                 },
                 {
-                  "linkId" : "70",
+                  "linkId" : "p4.1.8.4",
                   "text" : "If no, Clarify how it is ethically justified to use this control in the study",
                   "type" : "text",
                   "enableWhen" : [
                     {
-                      "question" : "69",
+                      "question" : "p4.1.8.3",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "0"
@@ -1474,7 +1975,7 @@
           ]
         },
         {
-          "linkId" : "53",
+          "linkId" : "p4.2",
           "text" : "Study Rationale",
           "type" : "text",
           "required" : false,
@@ -1495,44 +1996,44 @@
                   }
                 }
               ],
-              "linkId" : "53-help",
+              "linkId" : "p4.2_help",
               "text" : "State the problem or question (e.g., describe the population, disease, current standard of care, if one exists, and limitations of knowledge or available therapy) and the reason for conducting the clinical trial",
               "type" : "display"
             }
           ]
         },
         {
-          "linkId" : "74",
+          "linkId" : "p4.3",
           "text" : "Risk/Benefit Assessment",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "75",
+              "linkId" : "p4.3.1",
               "text" : "Potential Risks",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "76",
+                  "linkId" : "p4.3.1.1",
                   "text" : "List the reasonably foreseeable risks, discomforts, hazards, and/or inconveniences to the participants related to their participation in the research, including risk of unintentional loss of confidentiality. Include a description of the probability, magnitude, duration, reversibility, and potential consequences of the risks. Consider physical, psychological, social, legal, and economic risks:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "77",
+                  "linkId" : "p4.3.1.2",
                   "text" : "State which study interventions may have unknown risks:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "78",
+                  "linkId" : "p4.3.1.3",
                   "text" : "State which study interventions may have risks to an embryo or fetus (if a participant is or becomes pregnant) or to a nursing infant of a study participant:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "79",
+                  "linkId" : "p4.3.1.4",
                   "text" : "Describe risks to people other than the participating participant, e.g., risks to family members, friends, others or risks to the community:",
                   "type" : "text",
                   "required" : false
@@ -1553,7 +2054,8 @@
                       }
                     }
                   ],
-                  "linkId" : "1235",
+                  "linkId" : "p4.3.1.5",
+                  "definition" : "1235",
                   "text" : "Are there any risks to study investigators or staff performing the study procedures due to research with high risk populations (e.g. prisoners, intravenous drug users, patients with major psychiatric issues, etc.):?",
                   "type" : "choice",
                   "required" : false,
@@ -1573,12 +2075,12 @@
                   ]
                 },
                 {
-                  "linkId" : "i823",
+                  "linkId" : "p4.3.1.6",
                   "text" : "Risks to study investigators or staff performing the study procedures due to research with high risk populations (e.g. prisoners, intravenous drug users, patients with major psychiatric issues, etc.):",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "1235",
+                      "question" : "p4.3.1.5",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -1588,19 +2090,19 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "81",
+                      "linkId" : "p4.3.1.6.1",
                       "text" : "Describe these risks",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "82",
+                      "linkId" : "p4.3.1.6.2",
                       "text" : "Describe the procedures that will be put in place to minimize these risks:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "83",
+                      "linkId" : "p4.3.1.6.3",
                       "text" : "Describe how these procedures are adequate for the location where study procedures will be performed:",
                       "type" : "text",
                       "required" : false
@@ -1608,7 +2110,7 @@
                   ]
                 },
                 {
-                  "linkId" : "i520",
+                  "linkId" : "p4.3.1.7",
                   "text" : "Other risks",
                   "type" : "text",
                   "required" : false,
@@ -1618,13 +2120,15 @@
               ]
             },
             {
-              "linkId" : "84",
+              "linkId" : "p4.3.2",
               "text" : "Potential Benefits",
               "type" : "group",
               "required" : false,
+              "repeats" : false,
+              "readOnly" : false,
               "item" : [
                 {
-                  "linkId" : "85",
+                  "linkId" : "p4.3.2.1",
                   "text" : "Describe the potential benefits that individual participants may experience from taking part in the research. Include the probability, magnitude, and duration of the potential benefits:",
                   "type" : "text",
                   "required" : false,
@@ -1645,26 +2149,26 @@
                           }
                         }
                       ],
-                      "linkId" : "85-help",
+                      "linkId" : "p4.3.2.1_help",
                       "text" : "Note: Payments and incentives are not conside",
                       "type" : "display"
                     }
                   ]
                 },
                 {
-                  "linkId" : "87",
+                  "linkId" : "p4.3.2.2",
                   "text" : "Describe any benefit to the population from which the participant is drawn:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "88",
+                  "linkId" : "p4.3.2.3",
                   "text" : "Describe any benefit to science, society, and humanity in general:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "93",
+                  "linkId" : "p4.3.2.4",
                   "text" : "Other benefits",
                   "type" : "text",
                   "required" : false
@@ -1672,31 +2176,31 @@
               ]
             },
             {
-              "linkId" : "89",
+              "linkId" : "p4.3.3",
               "text" : "Alternatives to Study Participation",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "90",
+                  "linkId" : "p4.3.3.1",
                   "text" : "Describe alternatives to participating in this research study (e.g. to decide not participate in the study, alternative treatments, no treatment (palliative care), etc.):",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "91",
+                  "linkId" : "p4.3.3.2",
                   "text" : "Describe the standard clinical care that may be an alternative:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "92",
+                  "linkId" : "p4.3.3.3",
                   "text" : "Describe how the participant can receive the research procedures/drug/device used in this study in a non-research setting:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i521",
+                  "linkId" : "p4.3.3.4",
                   "text" : "Other alternatives to study participation",
                   "type" : "text",
                   "required" : false,
@@ -1710,7 +2214,7 @@
       ]
     },
     {
-      "linkId" : "94",
+      "linkId" : "p5",
       "text" : "STUDY PURPOSE, OBJECTIVES OR SPECIFIC AIMS",
       "type" : "group",
       "required" : false,
@@ -1731,30 +2235,30 @@
               }
             }
           ],
-          "linkId" : "94-help",
+          "linkId" : "p5_help",
           "text" : "Describe the purpose, specific aims, or objectives of the study (i.e. the",
           "type" : "display"
         },
         {
-          "linkId" : "i318",
+          "linkId" : "p5.1",
           "text" : "Hypothesis",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "96",
+          "linkId" : "p5.2",
           "text" : "Primary Objectives",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "97",
+          "linkId" : "p5.3",
           "text" : "Secondary Objectives",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "98",
+          "linkId" : "p5.4",
           "text" : "Tertiary/Exploratory Objectives",
           "type" : "text",
           "required" : false
@@ -1762,7 +2266,7 @@
       ]
     },
     {
-      "linkId" : "115",
+      "linkId" : "p6",
       "text" : "STUDY ENDPOINTS",
       "type" : "group",
       "required" : false,
@@ -1783,18 +2287,18 @@
               }
             }
           ],
-          "linkId" : "115-help",
+          "linkId" : "p6_help",
           "text" : "Provide precise definitions of the study endpoints and criteria for evaluation; if the primary outcomes are derived from several measurements (i.e., composite variables) or if endpoints are based composite variables, then describe precisely how the composite variables are derived.",
           "type" : "display"
         },
         {
-          "linkId" : "116",
+          "linkId" : "p6.1",
           "text" : "Primary Endpoints",
           "type" : "text",
           "required" : false,
           "item" : [
             {
-              "linkId" : "117",
+              "linkId" : "p6.1.1",
               "text" : "Justification for Endpoints",
               "type" : "text",
               "required" : false
@@ -1802,13 +2306,13 @@
           ]
         },
         {
-          "linkId" : "118",
+          "linkId" : "p6.2",
           "text" : "Secondary Endpoints",
           "type" : "text",
           "required" : false,
           "item" : [
             {
-              "linkId" : "119",
+              "linkId" : "p6.2.1",
               "text" : "Justification for Secondary Endpoints",
               "type" : "text",
               "required" : false
@@ -1816,13 +2320,13 @@
           ]
         },
         {
-          "linkId" : "120",
+          "linkId" : "p6.3",
           "text" : "Tertiary Endpoints",
           "type" : "text",
           "required" : false,
           "item" : [
             {
-              "linkId" : "121",
+              "linkId" : "p6.3.1",
               "text" : "Justification for Tertiary Endpoints",
               "type" : "text",
               "required" : false
@@ -1830,19 +2334,21 @@
           ]
         },
         {
-          "linkId" : "122",
+          "linkId" : "p6.4",
           "text" : "Primary Safety endpoints",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
-          "linkId" : "124",
+          "linkId" : "p6.5",
           "text" : "Secondary Safety endpoints",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "i393d",
+          "linkId" : "p6.6",
           "text" : "Predictors and/or comparison groups as appropriate for the stated study objectives/specific aims.",
           "type" : "text",
           "required" : false
@@ -1850,30 +2356,30 @@
       ]
     },
     {
-      "linkId" : "101",
+      "linkId" : "p7",
       "text" : "STUDY DESIGN",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "102",
+          "linkId" : "p7.1",
           "text" : "Overall Design",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "108",
+          "linkId" : "p7.2",
           "text" : "Scientific Rationale for Study Design",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "109",
+          "linkId" : "p7.3",
           "text" : "Justification for Dose",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "i514",
+              "question" : "p1.2",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
@@ -1883,58 +2389,64 @@
           "required" : false
         },
         {
-          "linkId" : "112",
+          "linkId" : "p7.4",
           "text" : "Justification for Intervention",
           "type" : "text",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "1"
               }
             }
           ],
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
-          "linkId" : "113",
+          "linkId" : "p7.5",
           "text" : "End of Study Definition",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "103",
+          "linkId" : "p7.6",
           "text" : "Screening Phase",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "104",
+          "linkId" : "p7.7",
           "text" : "Study Intervention Phase",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
-          "linkId" : "106",
+          "linkId" : "p7.8",
           "text" : "Follow Up Phase",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "107",
+          "linkId" : "p7.9",
           "text" : "Allocation to Interventional Group",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "114",
+          "linkId" : "p7.10",
           "text" : "Study/Data Collection Instruments",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
-          "linkId" : "100",
+          "linkId" : "p7.11",
           "text" : "Research Setting",
           "type" : "text",
           "required" : false
@@ -1942,71 +2454,73 @@
       ]
     },
     {
-      "linkId" : "125",
+      "linkId" : "p8",
       "text" : "STUDY POPULATION",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "126",
+          "linkId" : "p8.1",
           "text" : "participant Selection",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "127",
+              "linkId" : "p8.1.1",
               "text" : "Category/Group (eg. Adults, controls, parents, children)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "128",
+              "linkId" : "p8.1.2",
               "text" : "Age Range",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "129",
+              "linkId" : "p8.1.3",
               "text" : "Maximum Number to be Consented or Reviewed/Collected(include withdrawals and screen failures)",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "130",
+              "linkId" : "p8.1.4",
               "text" : "Number Expected to Complete the Study or Needed to Address the Research Question",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "134",
+              "linkId" : "p8.1.5",
               "text" : "Total Number of participants",
               "type" : "integer",
               "required" : false
             },
             {
-              "linkId" : "135",
+              "linkId" : "p8.1.6",
               "text" : "Overall study sample size (if multisite)",
               "type" : "integer",
-              "required" : false
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         }
       ]
     },
     {
-      "linkId" : "136",
+      "linkId" : "p9",
       "text" : "STUDY ENROLLMENT AND WITHDRAWAL",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "item236",
+          "linkId" : "p9.1",
           "text" : "Eligibility Criterea",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "150",
+              "linkId" : "p9.1.1",
               "text" : "Inclusion and Exclusion Criterea",
               "type" : "group",
               "required" : false,
@@ -2014,7 +2528,7 @@
               "readOnly" : false,
               "item" : [
                 {
-                  "linkId" : "item990",
+                  "linkId" : "p9.1.1.1",
                   "text" : "Inclusion Criteria",
                   "type" : "text",
                   "required" : false,
@@ -2036,7 +2550,7 @@
                           }
                         }
                       ],
-                      "linkId" : "item990-help",
+                      "linkId" : "p9.1.1.1_help",
                       "text" : "Describe the criteria that define who will be included in the study as a numbered list",
                       "type" : "display",
                       "required" : false,
@@ -2046,7 +2560,7 @@
                   ]
                 },
                 {
-                  "linkId" : "i991",
+                  "linkId" : "p9.1.1.2",
                   "text" : "Exclusion Criteria",
                   "type" : "text",
                   "required" : false,
@@ -2068,7 +2582,7 @@
                           }
                         }
                       ],
-                      "linkId" : "i991-help",
+                      "linkId" : "p9.1.1.2_help",
                       "text" : "Describe the criteria that define who will be excluded in the study as a numbered list",
                       "type" : "display"
                     }
@@ -2077,7 +2591,7 @@
               ]
             },
             {
-              "linkId" : "i393",
+              "linkId" : "p9.1.2",
               "text" : "Describe in detail how the eligibility criteria will be assessed and satisfied (e.g., medical record review, physical examination):",
               "type" : "text",
               "required" : false,
@@ -2085,10 +2599,12 @@
               "readOnly" : false
             },
             {
-              "linkId" : "i394",
+              "linkId" : "p9.1.3",
               "text" : "State who will determine eligibility. Note that those who are designated to determine eligibility must have appropriate training, expertise, and oversight, for example a physician PI or Co-I on a biomedical study:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             },
             {
               "extension" : [
@@ -2106,7 +2622,7 @@
                   }
                 }
               ],
-              "linkId" : "i395",
+              "linkId" : "p9.1.4",
               "text" : "Can study participants participate in another research study while participating in this research study:",
               "type" : "choice",
               "required" : false,
@@ -2126,19 +2642,19 @@
               ]
             },
             {
-              "linkId" : "152",
+              "linkId" : "p9.1.5",
               "text" : "Screen Failures",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "153",
+              "linkId" : "p9.1.6",
               "text" : "Lifestyle Considerations",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "141",
+              "linkId" : "p9.1.7",
               "text" : "Vulnerable Populations",
               "type" : "group",
               "required" : false,
@@ -2159,7 +2675,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i515",
+                  "linkId" : "p9.1.7.1",
+                  "definition" : "i515",
                   "text" : "Can or will pregnant women be enrolled",
                   "type" : "choice",
                   "required" : false,
@@ -2179,12 +2696,12 @@
                   ]
                 },
                 {
-                  "linkId" : "889",
+                  "linkId" : "p9.1.7.2",
                   "text" : "Enrollment of Pregnant Women",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i515",
+                      "question" : "p9.1.7.1",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -2194,7 +2711,7 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i407",
+                      "linkId" : "p9.1.7.2.1",
                       "text" : "Describe any preclinical studies, including studies on pregnant animals, and clinical studies, including studies on non-pregnant women, that have been conducted that provide data for assessing potential risks to pregnant women and fetuses:",
                       "type" : "text",
                       "required" : false
@@ -2215,7 +2732,8 @@
                           }
                         }
                       ],
-                      "linkId" : "i408",
+                      "linkId" : "p9.1.7.2.2",
+                      "definition" : "i408",
                       "text" : "Are there any risk to the fetus from the study interventions or procedures.",
                       "type" : "choice",
                       "required" : false,
@@ -2235,12 +2753,12 @@
                       ]
                     },
                     {
-                      "linkId" : "i409",
+                      "linkId" : "p9.1.7.2.3",
                       "text" : "Risks to Fetus",
                       "type" : "text",
                       "enableWhen" : [
                         {
-                          "question" : "i408",
+                          "question" : "p9.1.7.2.2",
                           "operator" : "=",
                           "answerCoding" : {
                             "code" : "1"
@@ -2265,7 +2783,8 @@
                           }
                         }
                       ],
-                      "linkId" : "i410",
+                      "linkId" : "p9.1.7.2.4",
+                      "definition" : "i410",
                       "text" : "Do the study interventions or procedures hold out the prospect of direct benefit for the woman or the fetus",
                       "type" : "choice",
                       "required" : false,
@@ -2285,12 +2804,12 @@
                       ]
                     },
                     {
-                      "linkId" : "i411",
+                      "linkId" : "p9.1.7.2.5",
                       "text" : "Describe benefit for the women or fetus",
                       "type" : "text",
                       "enableWhen" : [
                         {
-                          "question" : "i410",
+                          "question" : "p9.1.7.2.4",
                           "operator" : "=",
                           "answerCoding" : {
                             "code" : "1"
@@ -2300,12 +2819,12 @@
                       "required" : false
                     },
                     {
-                      "linkId" : "i412",
+                      "linkId" : "p9.1.7.2.6",
                       "text" : "If there is no prospect of benefit to the fetus, clarify whether the risk to the fetus is NOT greater than Minimal Risk, and whether the purpose of the research is the development of important biomedical knowledge which cannot be obtained by any other means:",
                       "type" : "text",
                       "enableWhen" : [
                         {
-                          "question" : "i410",
+                          "question" : "p9.1.7.2.4",
                           "operator" : "=",
                           "answerCoding" : {
                             "code" : "0"
@@ -2315,25 +2834,25 @@
                       "required" : false
                     },
                     {
-                      "linkId" : "i413",
+                      "linkId" : "p9.1.7.2.7",
                       "text" : "Describe the biomedical knowledge that is expected to result from this research for this population:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i414",
+                      "linkId" : "p9.1.7.2.8",
                       "text" : "Describe how any risk of this research is the least possible for achieving the objectives of the research:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i415",
+                      "linkId" : "p9.1.7.2.9",
                       "text" : "Describe how mothers providing consent are informed of the reasonably foreseeable impact of the research on the fetus or neonate:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i416",
+                      "linkId" : "p9.1.7.2.10",
                       "text" : "Inducements, monetary or otherwise, will not be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the participant of a planned abortion.",
                       "type" : "choice",
                       "required" : false,
@@ -2355,7 +2874,7 @@
                       ],
                       "item" : [
                         {
-                          "linkId" : "i417",
+                          "linkId" : "p9.1.7.2.10.1",
                           "text" : "Individuals engaged in the research will have no part in any decisions as to the timing, method, or procedures used to terminate a pregnancy or in determining the viability of a neonate.",
                           "type" : "choice",
                           "required" : false,
@@ -2396,7 +2915,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i516",
+                  "linkId" : "p9.1.7.3",
+                  "definition" : "i516",
                   "text" : "Can or will the research involve neonates of uncertain viability or non-viable neonates?",
                   "type" : "choice",
                   "required" : false,
@@ -2416,12 +2936,12 @@
                   ]
                 },
                 {
-                  "linkId" : "900",
+                  "linkId" : "p9.1.7.31",
                   "text" : "Research involving neonates of uncertain viability or non-viable neonates",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i516",
+                      "question" : "p9.1.7.3",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -2431,19 +2951,19 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i419",
+                      "linkId" : "p9.1.7.3.1",
                       "text" : "Describe any preclinical and clinical studies that have been conducted that provide data for assessing potential risks to neonates:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i420",
+                      "linkId" : "p9.1.7.3.2",
                       "text" : "Describe the important biomedical knowledge that will be developed from this research and why it cannot be obtained by other means",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i421",
+                      "linkId" : "p9.1.7.3.3",
                       "text" : "Describe whether there will be added risk to the neonate resulting from the research",
                       "type" : "text",
                       "required" : false,
@@ -2451,7 +2971,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i422",
+                      "linkId" : "p9.1.7.3.4",
                       "text" : "Describe how individuals providing consent are informed of the reasonably foreseeable impact of the research on the neonate:",
                       "type" : "text",
                       "required" : false
@@ -2472,7 +2992,7 @@
                           }
                         }
                       ],
-                      "linkId" : "i423",
+                      "linkId" : "p9.1.7.3.5",
                       "text" : "No person shall perform or offer to perform an abortion where part or all of the consideration for said performance is that the fetal remains may be used for experimentation or other kind of research or study:",
                       "type" : "choice",
                       "required" : false,
@@ -2507,7 +3027,7 @@
                           }
                         }
                       ],
-                      "linkId" : "i424",
+                      "linkId" : "p9.1.7.3.6",
                       "text" : "Individuals engaged in the research will have no part in determining the viability of a neonate:",
                       "type" : "choice",
                       "required" : false,
@@ -2542,7 +3062,7 @@
                           }
                         }
                       ],
-                      "linkId" : "i425",
+                      "linkId" : "p9.1.7.3.7",
                       "text" : "For non-viable neonates, the vital functions of the neonate will not be artificially maintained and that the research will not terminate the heartbeat or respiration of the neonate:",
                       "type" : "choice",
                       "required" : false,
@@ -2577,7 +3097,7 @@
                           }
                         }
                       ],
-                      "linkId" : "i426",
+                      "linkId" : "p9.1.7.3.8",
                       "text" : "For neonates of uncertain viability, the research holds out the prospect of enhancing the probability of survival of the neonate to the point of viability, and any risk is the least possible for achieving that objective",
                       "type" : "choice",
                       "required" : false,
@@ -2614,7 +3134,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i517",
+                  "linkId" : "p9.1.7.4",
+                  "definition" : "i517",
                   "text" : "Can or will participants who are not yet adults (neonates, children, teenagers) be enrolled?",
                   "type" : "choice",
                   "required" : false,
@@ -2634,12 +3155,12 @@
                   ]
                 },
                 {
-                  "linkId" : "901",
+                  "linkId" : "p9.1.7.5",
                   "text" : "Enrollment of participants who are not yet adults (neonates, children, teenagers)",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i517",
+                      "question" : "p9.1.7.4",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -2649,7 +3170,7 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i428",
+                      "linkId" : "p9.1.7.5.1",
                       "text" : "I will follow the SOP: Legally Authorized Representatives, Children, and Guardians (HRP-013)  to determine whether a prospective participant has or has not attained the legal age for consent to treatments or procedures involved in the research under the applicable law of the jurisdiction in which the research will be conducted. (e.g., individuals under the age of 18 years).",
                       "type" : "choice",
                       "required" : false,
@@ -2671,7 +3192,7 @@
                       ],
                       "item" : [
                         {
-                          "linkId" : "i429",
+                          "linkId" : "p9.1.7.5.1.1",
                           "text" : "If this SOP will not be followed, describe how this (attainment of legal age for consent or not) will be determined:",
                           "type" : "text",
                           "required" : false
@@ -2679,19 +3200,19 @@
                       ]
                     },
                     {
-                      "linkId" : "i430",
+                      "linkId" : "p9.1.7.5.2",
                       "text" : "Describe how permission to participate in the study will be obtained from the parents or legal guardians:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i431",
+                      "linkId" : "p9.1.7.5.3",
                       "text" : "Assent process of children",
                       "type" : "group",
                       "required" : false,
                       "item" : [
                         {
-                          "linkId" : "i432",
+                          "linkId" : "p9.1.7.5.3.1",
                           "text" : "Describe waiting period between informing the prospective participant and obtaining the assent",
                           "type" : "text",
                           "required" : false,
@@ -2699,7 +3220,7 @@
                           "readOnly" : false
                         },
                         {
-                          "linkId" : "i433",
+                          "linkId" : "p9.1.7.5.3.2",
                           "text" : "Describe any process to ensure ongoing assent",
                           "type" : "text",
                           "required" : false,
@@ -2707,13 +3228,13 @@
                           "readOnly" : false
                         },
                         {
-                          "linkId" : "i434",
+                          "linkId" : "p9.1.7.5.3.3",
                           "text" : "Describe Research team members involved in the assent process:",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i435",
+                          "linkId" : "p9.1.7.5.3.4",
                           "text" : "Describe how long children will have to consider study participation:",
                           "type" : "text",
                           "required" : false,
@@ -2721,7 +3242,7 @@
                           "readOnly" : false
                         },
                         {
-                          "linkId" : "i436",
+                          "linkId" : "p9.1.7.5.3.5",
                           "text" : "Describe steps that will be taken to minimize the possibility of coercion or undue influence:",
                           "type" : "text",
                           "required" : false,
@@ -2729,7 +3250,7 @@
                           "readOnly" : false
                         },
                         {
-                          "linkId" : "i437",
+                          "linkId" : "p9.1.7.5.3.6",
                           "text" : "Describe steps that will be taken to ensure the participants's understanding:",
                           "type" : "text",
                           "required" : false,
@@ -2737,7 +3258,7 @@
                           "readOnly" : false
                         },
                         {
-                          "linkId" : "i438",
+                          "linkId" : "p9.1.7.5.3.7",
                           "text" : "If assent will not be obtained from children, specify why:",
                           "type" : "text",
                           "required" : false
@@ -2758,7 +3279,8 @@
                               }
                             }
                           ],
-                          "linkId" : "i521",
+                          "linkId" : "p9.1.7.5.3.8",
+                          "definition" : "i521",
                           "text" : "Will children reach 18 years of age while in the study?",
                           "type" : "choice",
                           "required" : false,
@@ -2778,12 +3300,12 @@
                           ]
                         },
                         {
-                          "linkId" : "902",
+                          "linkId" : "p9.1.7.5.3.9",
                           "text" : "Children reaching 18 years of age while in the study",
                           "type" : "group",
                           "enableWhen" : [
                             {
-                              "question" : "i521",
+                              "question" : "p9.1.7.5.3.8",
                               "operator" : "=",
                               "answerCoding" : {
                                 "code" : "1"
@@ -2793,25 +3315,27 @@
                           "required" : false,
                           "item" : [
                             {
-                              "linkId" : "i440",
+                              "linkId" : "p9.1.7.5.1.9.1",
                               "text" : "Describe the plan to obtain written informed consent from the participant at age 18 years:",
                               "type" : "text",
                               "required" : false
                             },
                             {
-                              "linkId" : "i441",
+                              "linkId" : "p9.1.7.5.1.9.2",
                               "text" : "Describe who will be responsible for managing the plan:",
                               "type" : "text",
                               "required" : false
                             },
                             {
-                              "linkId" : "i442",
+                              "linkId" : "p9.1.7.5.1.9.3",
                               "text" : "Describe where the consent discussion will take place:",
                               "type" : "text",
-                              "required" : false
+                              "required" : false,
+                              "repeats" : false,
+                              "readOnly" : false
                             },
                             {
-                              "linkId" : "i443",
+                              "linkId" : "p9.1.7.5.1.9.4",
                               "text" : "Describe what will happen if the participant cannot be located to provide consent at age 18 years:",
                               "type" : "text",
                               "required" : false
@@ -2838,7 +3362,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i518",
+                  "linkId" : "p9.1.7.6",
+                  "definition" : "i518",
                   "text" : "Can or will minors who are: i)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child?",
                   "type" : "choice",
                   "required" : false,
@@ -2858,12 +3383,12 @@
                   ]
                 },
                 {
-                  "linkId" : "903",
+                  "linkId" : "p9.1.7.7",
                   "text" : "Enrollment of minors who are: i)married, widowed, divorced; or ii)Parent of a child; or iii)a member of any of the armed forces; or    iv)pregnant or believes herself to be pregnant; or v)living separate and apart from his/her parent or legal guardian, and is managing his/her own financial affairs  be approached for study participation for either themselves or their child.",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i518",
+                      "question" : "p9.1.7.6",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -2875,19 +3400,19 @@
                   "readOnly" : false,
                   "item" : [
                     {
-                      "linkId" : "i445",
+                      "linkId" : "p9.1.7.7.1",
                       "text" : "Describe how will it be determined that this population has the capacity to consent for this study.  Please note that the circumstance of parenthood, pregnancy, etc. may not mean that the person has the same capacity of an adult who can understand the risks, benefits, and alternatives for indicated care. Thus, sound and sensitive clinical judgment that is attentive to both the minorrights and the minoractual competence and needs must be considered, and is to include a determination as to whether involvement of family or other adults familiar to the minor is necessary and appropriate:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i446",
+                      "linkId" : "p9.1.7.7.2",
                       "text" : "Describe how informed consent will be executed with this population in a way that allows for independent and thoughtful decision-making:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i447",
+                      "linkId" : "p9.1.7.7.3",
                       "text" : "Describe any additional steps or procedures that will be used when performing informed consent with this population:",
                       "type" : "text",
                       "required" : false
@@ -2910,7 +3435,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i522",
+                  "linkId" : "p9.1.7.8",
+                  "definition" : "i522",
                   "text" : "Can or will cognitively impaired adults (adults with impaired-decision making capacity) or adults who may lose the capacity to consent be enrolled?",
                   "type" : "choice",
                   "required" : false,
@@ -2930,12 +3456,12 @@
                   ]
                 },
                 {
-                  "linkId" : "904",
+                  "linkId" : "p9.1.7.9",
                   "text" : "Enrollment of cognitively impaired adults (adults with impaired-decision making capacity) or adults who may lose the capacity to consent",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i522",
+                      "question" : "p9.1.7.8",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -2947,19 +3473,19 @@
                   "readOnly" : false,
                   "item" : [
                     {
-                      "linkId" : "i460",
+                      "linkId" : "p9.1.7.9.1",
                       "text" : "Describe whether the research holds out a prospect of direct benefit to the individual participant that is unavailable outside the research context",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i461",
+                      "linkId" : "p9.1.7.9.2",
                       "text" : "Describe why the objectives of the study cannot be met by enrolling participants who are able to give consent",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i462",
+                      "linkId" : "p9.1.7.9.3",
                       "text" : "This study is NOT  prohibited by law.",
                       "type" : "choice",
                       "required" : false,
@@ -2981,43 +3507,43 @@
                       ]
                     },
                     {
-                      "linkId" : "i463",
+                      "linkId" : "p9.1.7.9.4",
                       "text" : "Describe the process to determine whether or not the individual is capable of consent:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i464",
+                      "linkId" : "p9.1.7.9.5",
                       "text" : "Describe who will determine if the participant is able to provide informed consent:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i465",
+                      "linkId" : "p9.1.7.9.6",
                       "text" : "Describe how it will be determined whether the participant is able to provide informed consent:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i466",
+                      "linkId" : "p9.1.7.9.7",
                       "text" : "Describe when and how often (even after obtaining informed consent) it will be determined whether the participant is able to provide informed consent",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i467",
+                      "linkId" : "p9.1.7.9.8",
                       "text" : "List the individuals from whom permission will be obtained if the participant cannot provide informed consent. Prioritize the list (e.g., durable power of attorney for health care, court appointed guardian for health care decisions, spouse, and adult child.):",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i468",
+                      "linkId" : "p9.1.7.9.9",
                       "text" : "If it is possible that participants may regain capacity to provide informed consent during the study, describe how frequently this will be assessed and state that participants will be consented to the study in the event that they regain capacity to provide informed consent",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i469",
+                      "linkId" : "p9.1.7.9.10",
                       "text" : "Process for assent of participants ",
                       "type" : "group",
                       "required" : false,
@@ -3025,19 +3551,19 @@
                       "readOnly" : false,
                       "item" : [
                         {
-                          "linkId" : "i470",
+                          "linkId" : "p9.1.7.9.10.1",
                           "text" : "Describe whether assent will be required of all, some, or none of the participants. If some, specify which participants will be required to assent and which will not:",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i471",
+                          "linkId" : "p9.1.7.9.10.2",
                           "text" : "If assent will not be obtained from some or all participants, an explanation of why not:",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i472",
+                          "linkId" : "p9.1.7.9.10.3",
                           "text" : "Describe whether assent of the participants will be documented and the process to document assent. The IRB allows the person obtaining assent to document assent on the consent document and does not routinely require assent documents and does not routinely require participants to sign assent documents:",
                           "type" : "text",
                           "required" : false
@@ -3045,13 +3571,13 @@
                       ]
                     },
                     {
-                      "linkId" : "i473",
+                      "linkId" : "p9.1.7.9.11",
                       "text" : "Provide a description of how the patient will be informed of the potential risks and benefits of the study and any procedures associated with its use:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i474",
+                      "linkId" : "p9.1.7.9.12",
                       "text" : "Participants will be withdrawn if they appear to be unduly distressed at any time during the study.",
                       "type" : "choice",
                       "required" : false,
@@ -3090,7 +3616,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i476",
+                  "linkId" : "p9.1.7.10",
+                  "definition" : "i476",
                   "text" : "Can or will prisoners be enrolled?",
                   "type" : "choice",
                   "required" : false,
@@ -3110,12 +3637,12 @@
                   ]
                 },
                 {
-                  "linkId" : "905",
+                  "linkId" : "p9.1.7.11",
                   "text" : "Enrollment of  prisoners",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i476",
+                      "question" : "p9.1.7.10",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -3125,25 +3652,25 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i477",
+                      "linkId" : "p9.1.7.11.1",
                       "text" : "Describe any possible advantages accruing to the Prisoner through his or her participation in the research, when compared to the general living conditions, medical care, quality of food, amenities and opportunity for earnings in the prison, are not of such a magnitude that his or her ability to weigh the risks of the research against the value of such advantages in the limited choice environment of the prison is impaired:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i478",
+                      "linkId" : "p9.1.7.11.2",
                       "text" : "Describe whether the risks involved in the research are commensurate with risks that would be accepted by non-Prisoner volunteers",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i479",
+                      "linkId" : "p9.1.7.11.3",
                       "text" : "Describe procedures for the selection of participants within the prison which are fair to all Prisoners and immune from arbitrary intervention by prison authorities or Prisoners. Unless the Principal Investigator provides to the Board justification in writing for following some other procedures, control participants must be selected randomly from the group of available Prisoners who meet the characteristics needed for that particular research project:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i480",
+                      "linkId" : "p9.1.7.11.4",
                       "text" : "Parole boards will not take into account a Prisoner participation in the research in making decisions regarding parole, and each Prisoner is clearly informed in advance that participation in the research will have no effect on his or her parole.",
                       "type" : "choice",
                       "required" : false,
@@ -3165,7 +3692,7 @@
                       ]
                     },
                     {
-                      "linkId" : "i481",
+                      "linkId" : "p9.1.7.11.5",
                       "text" : "A letter of support from the Prison this research will be conducted in has been submitted to the IRB.",
                       "type" : "choice",
                       "required" : false,
@@ -3187,7 +3714,7 @@
                       ]
                     },
                     {
-                      "linkId" : "i482",
+                      "linkId" : "p9.1.7.11.6",
                       "text" : "If follow-up examination or care of participants after the end of their participation is required, describe the provision for such examination or care, taking into account the varying lengths of individual Prisoners  sentences, and for informing participants of this fact:",
                       "type" : "text",
                       "required" : false
@@ -3210,7 +3737,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i484",
+                  "linkId" : "p9.1.7.12",
+                  "definition" : "i484",
                   "text" : "Can or will students and/or employees be enrolled in this research?",
                   "type" : "choice",
                   "required" : false,
@@ -3230,12 +3758,12 @@
                   ]
                 },
                 {
-                  "linkId" : "906",
+                  "linkId" : "p9.1.7.13",
                   "text" : "Enrollment of students and/or employees ",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i484",
+                      "question" : "p9.1.7.12",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -3245,7 +3773,7 @@
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i485",
+                      "linkId" : "p9.1.7.13.1",
                       "text" : "Describe the justification for specifically targeting recruitment efforts to enroll students and/or employees:",
                       "type" : "text",
                       "required" : false,
@@ -3253,13 +3781,13 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i486",
+                      "linkId" : "p9.1.7.13.2",
                       "text" : "Describe how potential coercion will be eliminated",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i487",
+                      "linkId" : "p9.1.7.13.3",
                       "text" : "Describe the recruitment methods to be applied specifically to students and/or employees. If the same recruitment methods previously described in the protocol will be used, then state that:",
                       "type" : "text",
                       "required" : false,
@@ -3267,7 +3795,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i488",
+                      "linkId" : "p9.1.7.13.4",
                       "text" : "Describe additional safeguards included to protect the rights and welfare of students and employees:",
                       "type" : "text",
                       "required" : false,
@@ -3275,7 +3803,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i489",
+                      "linkId" : "p9.1.7.13.5",
                       "text" : "Describe protections to ensure that a participant's decision about participation and/or early withdrawal from the study will not affect his/her status as a student or employee:",
                       "type" : "text",
                       "required" : false,
@@ -3283,7 +3811,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i490",
+                      "linkId" : "p9.1.7.13.6",
                       "text" : "Submitted a letter from the appropriate institutional official (e.g., Department Chair, Dean, Vice-President) who oversees the students and/or employees attesting to the fact that the employeeor studentparticipation in the research is acceptable and that coercion has been minimized.",
                       "type" : "choice",
                       "required" : false,
@@ -3322,7 +3850,8 @@
                       }
                     }
                   ],
-                  "linkId" : "i519",
+                  "linkId" : "p9.1.7.14",
+                  "definition" : "i519",
                   "text" : "Can or will wards of the state and/or children at risk of becoming wards of the state be enrolled (this includes foster children or any child that is in state custody)?",
                   "type" : "choice",
                   "required" : false,
@@ -3342,12 +3871,12 @@
                   ]
                 },
                 {
-                  "linkId" : "907",
+                  "linkId" : "p9.1.7.15",
                   "text" : "Enrollment of  wards of the state and/or children at risk of becoming wards of the state be enrolled (this includes foster children or any child that is in state custody).",
                   "type" : "group",
                   "enableWhen" : [
                     {
-                      "question" : "i519",
+                      "question" : "p9.1.7.14",
                       "operator" : "=",
                       "answerCoding" : {
                         "code" : "1"
@@ -3359,7 +3888,7 @@
                   "readOnly" : false,
                   "item" : [
                     {
-                      "linkId" : "i449",
+                      "linkId" : "p9.1.7.15.1",
                       "text" : "Describe the justification for recruiting and enrolling this population",
                       "type" : "text",
                       "required" : false,
@@ -3367,7 +3896,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i450",
+                      "linkId" : "p9.1.7.15.2",
                       "text" : "Describe any additional details about the recruitment methods to be used. If the same recruitment methods previously described in the protocol will be used, then state that:",
                       "type" : "text",
                       "required" : false,
@@ -3375,7 +3904,7 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i451",
+                      "linkId" : "p9.1.7.15.3",
                       "text" : "Describe any additional details about the informed consent process to be used. If the same informed consent process for enrolling minors previously described in the protocol will be used, then state that:",
                       "type" : "text",
                       "required" : false,
@@ -3383,13 +3912,13 @@
                       "readOnly" : false
                     },
                     {
-                      "linkId" : "i452",
+                      "linkId" : "p9.1.7.15.4",
                       "text" : "Describe how it will be ensured that the appropriate person(s) grants permission for each ward to participate in the research:",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i453",
+                      "linkId" : "p9.1.7.15.5",
                       "text" : "Describe how the research team will know if there has been a change in guardianship status during the course of the research and how permission will be obtained from the new guardian:",
                       "type" : "text",
                       "required" : false
@@ -3410,7 +3939,8 @@
                           }
                         }
                       ],
-                      "linkId" : "i520",
+                      "linkId" : "p9.1.7.15.6",
+                      "definition" : "i520",
                       "text" : "Is the study is greater than minimal risk?",
                       "type" : "choice",
                       "required" : false,
@@ -3430,12 +3960,12 @@
                       ]
                     },
                     {
-                      "linkId" : "909",
+                      "linkId" : "p9.1.7.15.7",
                       "text" : "Greater than minimal risk study",
                       "type" : "group",
                       "enableWhen" : [
                         {
-                          "question" : "i520",
+                          "question" : "p9.1.7.15.6",
                           "operator" : "=",
                           "answerCoding" : {
                             "code" : "1"
@@ -3447,25 +3977,25 @@
                       "readOnly" : false,
                       "item" : [
                         {
-                          "linkId" : "i455",
+                          "linkId" : "p9.1.7.15.7.1",
                           "text" : "Describe whether the research is related to their status as wards OR if the research is conducted in schools, camps, hospitals, institutions, or similar settings in which the majority of children involved as participants are not wards",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i456",
+                          "linkId" : "p9.1.7.15.7.2",
                           "text" : "Describe how an advocate will be appointed for each child who is a ward, in addition to any other individual acting on behalf of the child as guardian or in loco parentis",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i457",
+                          "linkId" : "p9.1.7.15.7.3",
                           "text" : "Describe the background and experience of the advocate to act in the best interests of the child for the duration of the childparticipation in the research:",
                           "type" : "text",
                           "required" : false
                         },
                         {
-                          "linkId" : "i458",
+                          "linkId" : "p9.1.7.15.7.4",
                           "text" : "The advocate will not be associated in any way (except in the role as advocate or member of the IRB) with the research, the investigator(s), or the guardian organization.",
                           "type" : "choice",
                           "required" : false,
@@ -3495,31 +4025,31 @@
           ]
         },
         {
-          "linkId" : "138",
+          "linkId" : "p9.2",
           "text" : "STRATEGIES FOR RECRUITMENT AND RETENTION",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "139",
+              "linkId" : "p9.2.1",
               "text" : "Recruitment Methods",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "id396",
+                  "linkId" : "p9.2.1.1",
                   "text" : "Describe when, where, and how potential participants will be recruited",
                   "type" : "text",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i397",
+                      "linkId" : "p9.2.1.1.1",
                       "text" : "If potential participants will be recruited by telephone, describe how many times the research team will attempt to call / leave a voice message:",
                       "type" : "text",
                       "required" : false,
                       "item" : [
                         {
-                          "linkId" : "i398",
+                          "linkId" : "p9.2.1.1.1.1",
                           "text" : "A script for both the telephone conversation and the voice message is included with the submission.",
                           "type" : "choice",
                           "required" : false,
@@ -3545,13 +4075,13 @@
                   ]
                 },
                 {
-                  "linkId" : "i399",
+                  "linkId" : "p9.2.1.2",
                   "text" : "When participants respond to recruitment material, describe the information that will be provided to them about the study and the information that will be collected from participants (e.g. name, telephone number, etc.). Describe also, how many times you will attempt to respond to call the participant back / leave a voice message:",
                   "type" : "text",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i400",
+                      "linkId" : "p9.2.1.2.1",
                       "text" : "A script for both the telephone conversation and the voice message is included with the submission.",
                       "type" : "choice",
                       "required" : false,
@@ -3575,25 +4105,25 @@
                   ]
                 },
                 {
-                  "linkId" : "i401",
+                  "linkId" : "p9.2.1.3",
                   "text" : "Describe source of participants (for example, patient population, local community, etc.):",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i402",
+                  "linkId" : "p9.2.1.4",
                   "text" : "Describe methods that will be used to identify potential participants:",
                   "type" : "text",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i403",
+                      "linkId" : "p9.2.1.4.1",
                       "text" : "If print and media advertisements will be used, specify when, where, how long and frequency of the advertisements that will be published/aired:",
                       "type" : "text",
                       "required" : false,
                       "item" : [
                         {
-                          "linkId" : "i404",
+                          "linkId" : "p9.2.1.4.1.1",
                           "text" : "Any necessary permission will be obtained for posting/airing these (for example, permission to post a flyer on a bulletin board).",
                           "type" : "choice",
                           "required" : false,
@@ -3619,13 +4149,13 @@
                   ]
                 },
                 {
-                  "linkId" : "i405",
+                  "linkId" : "p9.2.1.5",
                   "text" : "If recruitment material is being mailed or otherwise distributed, submit the proposed material and describe where/how the distribution list will be obtained:",
                   "type" : "text",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i406",
+                      "linkId" : "p9.2.1.5.1",
                       "text" : "Describe how the recruitment methods described will be effective in attracting the targeted participant population:",
                       "type" : "text",
                       "required" : false
@@ -3637,7 +4167,7 @@
           ]
         },
         {
-          "linkId" : "137",
+          "linkId" : "p9.3",
           "text" : "DURATION OF STUDY PARTICIPATION. (If there are sub-studies, include duration of participation in each sub-study.)",
           "type" : "text",
           "required" : false
@@ -3645,12 +4175,12 @@
       ]
     },
     {
-      "linkId" : "154",
+      "linkId" : "p10",
       "text" : "STUDY INTERVENTION",
       "type" : "group",
       "enableWhen" : [
         {
-          "question" : "2",
+          "question" : "p1.1",
           "operator" : "=",
           "answerCoding" : {
             "code" : "1"
@@ -3660,7 +4190,7 @@
       "required" : false,
       "item" : [
         {
-          "linkId" : "155",
+          "linkId" : "p10.1",
           "text" : "Study Agent",
           "type" : "group",
           "required" : false,
@@ -3668,7 +4198,7 @@
           "readOnly" : false,
           "item" : [
             {
-              "linkId" : "item540",
+              "linkId" : "p10.1.1",
               "text" : "Study Agent and Control Description",
               "type" : "text",
               "required" : false,
@@ -3676,19 +4206,19 @@
               "readOnly" : false
             },
             {
-              "linkId" : "156",
+              "linkId" : "p10.1.2",
               "text" : "Receipts/Acquisition",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "157",
+              "linkId" : "p10.1.3",
               "text" : "Study Agent Accountability/ Return or Destruction of Investigational Product",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "161",
+              "linkId" : "p10.1.4",
               "text" : "Formulation and appearance of Control Product",
               "type" : "text",
               "required" : false,
@@ -3696,85 +4226,85 @@
               "readOnly" : false
             },
             {
-              "linkId" : "162",
+              "linkId" : "p10.1.5",
               "text" : "Formulation and appearance of Test Product",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "163",
+              "linkId" : "p10.1.6",
               "text" : "Packaging and Labeling",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "160",
+              "linkId" : "p10.1.7",
               "text" : "Product Storage and Stability",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "164",
+              "linkId" : "p10.1.8",
               "text" : "Preparation",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "166",
+              "linkId" : "p10.1.9",
               "text" : "Administration and/or Dosing",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "170",
+              "linkId" : "p10.1.10",
               "text" : "Route of Administration",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "171",
+              "linkId" : "p10.1.11",
               "text" : "Starting Dose and Dose Escalation Schedule",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "172",
+              "linkId" : "p10.1.12",
               "text" : "Dose Adjustments/Modifications/Delays",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "173",
+              "linkId" : "p10.1.13",
               "text" : "Duration of Therapy",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "174",
+              "linkId" : "p10.1.14",
               "text" : "Tracking Dose",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "175",
+              "linkId" : "p10.1.15",
               "text" : "Device Specific Considerations",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "169",
+              "linkId" : "p10.1.16",
               "text" : "Administration Instructions",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "167",
+              "linkId" : "p10.1.17",
               "text" : "Dispensing [authority, requirements]",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "168",
+              "linkId" : "p10.1.18",
               "text" : "Supply of Study Drug at the Site",
               "type" : "text",
               "required" : false
@@ -3782,12 +4312,12 @@
           ]
         },
         {
-          "linkId" : "158",
+          "linkId" : "p10.2",
           "text" : "Study Behavioral or Social Intervention(s)",
           "type" : "group",
           "enableWhen" : [
             {
-              "question" : "2",
+              "question" : "p1.1",
               "operator" : "=",
               "answerCoding" : {
                 "code" : "2"
@@ -3797,19 +4327,19 @@
           "required" : false,
           "item" : [
             {
-              "linkId" : "159",
+              "linkId" : "p10.2.1",
               "text" : "Administration of Intervention",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item237",
+              "linkId" : "p10.2.2",
               "text" : "Procedures for Training Interventionalists and Monitoring Intervention Fidelity",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item238",
+              "linkId" : "p10.2.3",
               "text" : "Assessment of participant Compliance with Study Intervention",
               "type" : "text",
               "required" : false
@@ -3817,25 +4347,25 @@
           ]
         },
         {
-          "linkId" : "id519",
+          "linkId" : "p10.3",
           "text" : "Study Procedural Intervention(s) Description",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "id520",
+              "linkId" : "p10.3.1",
               "text" : "Administration of Procedural Intervention",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "id521",
+              "linkId" : "p10.3.2",
               "text" : "Procedures for Training of Clinicians on Procedural Intervention",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i522d",
+              "linkId" : "p10.3.3",
               "text" : "Assessment of Clinician and/or Participant Compliance with Study Procedural Intervention",
               "type" : "text",
               "required" : false
@@ -3843,13 +4373,13 @@
           ]
         },
         {
-          "linkId" : "177",
+          "linkId" : "p10.4",
           "text" : "participant Compliance and Monitoring",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "178",
+          "linkId" : "p10.5",
           "text" : "Study Intervention/Experimental Manipulation Adherence",
           "type" : "text",
           "required" : false
@@ -3857,37 +4387,37 @@
       ]
     },
     {
-      "linkId" : "sw123",
+      "linkId" : "p11",
       "text" : "STUDY INTERVENTION DISCONTINUATION AND PARTICIPANT DISCONTINUATION/WITHDRAWAL",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "item523",
+          "linkId" : "p11.1",
           "text" : "Discontinuation of Study Intervention",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "142",
+          "linkId" : "p11.2",
           "text" : "Participant withdrawal and Termination",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "149",
+              "linkId" : "p11.2.1",
               "text" : "Reasons for Withdrawal  or Termination",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "145",
+              "linkId" : "p11.2.2",
               "text" : "Handling of Participant Withdrawal or Termination",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "147",
+              "linkId" : "p11.2.3",
               "text" : "Replacement of participants",
               "type" : "text",
               "required" : false
@@ -3895,7 +4425,7 @@
           ]
         },
         {
-          "linkId" : "146",
+          "linkId" : "p11.3",
           "text" : "Lost to Follow-Up",
           "type" : "text",
           "required" : false
@@ -3903,25 +4433,25 @@
       ]
     },
     {
-      "linkId" : "item253",
+      "linkId" : "p12",
       "text" : "STUDY PROCEDURES",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "item275",
+          "linkId" : "p12.1",
           "text" : "Study Procedures/Evaluations",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i523",
+              "linkId" : "p12.1.1",
               "text" : "Study Specific Procedures",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i524",
+              "linkId" : "p12.1.2",
               "text" : "Standard of Care Study Procedures",
               "type" : "text",
               "required" : false
@@ -3929,37 +4459,37 @@
           ]
         },
         {
-          "linkId" : "i525",
+          "linkId" : "p12.2",
           "text" : "Laboratory Procedures/Evaluations",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i526",
+              "linkId" : "p12.2.1",
               "text" : "Clinical Laboratory Evaluations",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i528d",
+              "linkId" : "p12.2.2",
               "text" : "Research Laboratory Evaluations",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i527",
+              "linkId" : "p12.2.3",
               "text" : "Other Assays or Procedures",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i528",
+              "linkId" : "p12.2.4",
               "text" : "Specimen Preparation, Handling, and Storage",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "id529",
+              "linkId" : "p12.2.5",
               "text" : "Specimen Shipment",
               "type" : "text",
               "required" : false
@@ -3967,49 +4497,49 @@
           ]
         },
         {
-          "linkId" : "item289",
+          "linkId" : "p12.3",
           "text" : "Data Collection and Follow Up for Withdrawn participants",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item290",
+          "linkId" : "p12.4",
           "text" : "Justification for Sensitive Procedures (e.g., use of placebo, medication withdrawal, provocative testing, and deception).",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item291",
+          "linkId" : "p12.5",
           "text" : "Precautionary Medications, Treatments, and Procedures",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item292",
+          "linkId" : "p12.6",
           "text" : "Prohibited Medications, Treatments, and Procedures",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item293",
+          "linkId" : "p12.7",
           "text" : "Prophylactic Medications, Treatments, and Procedures",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item294",
+          "linkId" : "p12.8",
           "text" : "Rescue Medications, Treatments, and Procedures",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item295",
+          "linkId" : "p12.9",
           "text" : "Participant Access to Study Agent at Study Closure",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "179",
+          "linkId" : "p12.10",
           "text" : "Concomitant Medications, Treatments , and Procedures",
           "type" : "text",
           "required" : false
@@ -4017,7 +4547,7 @@
       ]
     },
     {
-      "linkId" : "item276",
+      "linkId" : "p13",
       "text" : "SCHEDULE OF STUDY PROCEDURES",
       "type" : "group",
       "required" : false,
@@ -4025,57 +4555,57 @@
       "readOnly" : false,
       "item" : [
         {
-          "linkId" : "item277",
+          "linkId" : "p13.1",
           "text" : "Screening",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item278",
+          "linkId" : "p13.2",
           "text" : "Enrollment/Visit 1/Baseline Visit",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item279",
+          "linkId" : "p13.3",
           "text" : "Intermediate Visits",
           "type" : "text",
           "required" : false,
           "repeats" : true
         },
         {
-          "linkId" : "item283",
+          "linkId" : "p13.4",
           "text" : "Final Study Visit",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item281",
+          "linkId" : "p13.5",
           "text" : "Withdrawal/Early Termination Visit",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item287",
+          "linkId" : "p13.6",
           "text" : "Unscheduled Visit",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item284",
+          "linkId" : "p13.7",
           "text" : "Follow Up Phase of the Study",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "item285",
+              "linkId" : "p13.7.1",
               "text" : "Visit",
               "type" : "text",
               "required" : false,
               "repeats" : true
             },
             {
-              "linkId" : "item286",
+              "linkId" : "p13.7.2",
               "text" : "End of Study Visit",
               "type" : "text",
               "required" : false
@@ -4085,31 +4615,31 @@
       ]
     },
     {
-      "linkId" : "181",
+      "linkId" : "p14",
       "text" : "ASSESSMENT OF SAFETY",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "185",
+          "linkId" : "p14.1",
           "text" : "Specification of Safety Parameters",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "187",
+              "linkId" : "p14.1.1",
               "text" : "Definition of Adverse Events(AE)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "188",
+              "linkId" : "p14.1.2",
               "text" : "Definition of Serious Adverse Events (SAE)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item244",
+              "linkId" : "p14.1.3",
               "text" : "Definition of Unanticipated Problems",
               "type" : "text",
               "required" : false
@@ -4117,25 +4647,25 @@
           ]
         },
         {
-          "linkId" : "189",
+          "linkId" : "p14.2",
           "text" : "Classification of an Adverse Event",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "190",
+              "linkId" : "p14.2.1",
               "text" : "Severity of an Event",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "191",
+              "linkId" : "p14.2.2",
               "text" : "Relationship to Study Intervention/Experimental Manipulation",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "192",
+              "linkId" : "p14.2.3",
               "text" : "Expectedness",
               "type" : "text",
               "required" : false
@@ -4143,43 +4673,43 @@
           ]
         },
         {
-          "linkId" : "193",
+          "linkId" : "p14.3",
           "text" : "Time Period and Frequencey for Event Assessment and Follow-Up",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "186",
+          "linkId" : "p14.4",
           "text" : "Reporting Procedures",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "194",
+              "linkId" : "p14.4.1",
               "text" : "Notifying the IRB",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "194-1",
+                  "linkId" : "p14.4.1.1",
                   "text" : "Adverse Event Reporting",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "194-2",
+                  "linkId" : "p14.4.1.2",
                   "text" : "Serious Adverse Event Reporting",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "194-3",
+                  "linkId" : "p14.4.1.3",
                   "text" : "Unanticipated Problem Reporting",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "194-5",
+                  "linkId" : "p14.4.1.4",
                   "text" : "Reporting of Pregnancy",
                   "type" : "text",
                   "required" : false
@@ -4187,31 +4717,31 @@
               ]
             },
             {
-              "linkId" : "195",
+              "linkId" : "p14.4.2",
               "text" : "Notifyiing the Study Sponsor",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item246",
+              "linkId" : "p14.4.3",
               "text" : "Notifying the FDA",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item247",
+              "linkId" : "p14.4.4",
               "text" : "Notifying Participating Investigators",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item249",
+              "linkId" : "p14.4.5",
               "text" : "Reporting Events to Participants",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "197",
+              "linkId" : "p14.4.6",
               "text" : "Events of Special Interest",
               "type" : "text",
               "required" : false
@@ -4219,13 +4749,13 @@
           ]
         },
         {
-          "linkId" : "item250",
+          "linkId" : "p14.5",
           "text" : "Follow Up Report",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item251",
+          "linkId" : "p14.6",
           "text" : "Study Halting/Stopping Rules",
           "type" : "text",
           "required" : false
@@ -4233,97 +4763,97 @@
       ]
     },
     {
-      "linkId" : "203",
+      "linkId" : "p15",
       "text" : "STATISTICAL CONSIDERATIONS",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "item297",
+          "linkId" : "p15.1",
           "text" : "Statistical and Analytical Plans(SAP)",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "204",
+          "linkId" : "p15.2",
           "text" : "Statistical Hypotheses",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item298d",
+          "linkId" : "p15.3",
           "text" : "Analysis Datasets",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "206",
+          "linkId" : "p15.4",
           "text" : "Populations for Analysis",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "205",
+          "linkId" : "p15.5",
           "text" : "Sample Size Determination",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "207",
+          "linkId" : "p15.6",
           "text" : "Description of Statistical Methods",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "208",
+              "linkId" : "p15.6.1",
               "text" : "General Approach",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "209",
+              "linkId" : "p15.6.2",
               "text" : "Analysis of Primary Efficacy Endpoints(s)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "211",
+              "linkId" : "p15.6.3",
               "text" : "Analysis of Secondary Endpoint(s)",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "212",
+              "linkId" : "p15.6.4",
               "text" : "Safety Analyses",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item302",
+              "linkId" : "p15.6.5",
               "text" : "Adherence and Retention Analyses",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item300",
+              "linkId" : "p15.6.6",
               "text" : "Baseline Descriptive Statistics",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "214",
+              "linkId" : "p15.6.7",
               "text" : "Planned Interim Analyses",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "item3030",
+                  "linkId" : "p15.6.7.1",
                   "text" : "Safety Review",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item304",
+                  "linkId" : "p15.6.7.2",
                   "text" : "Efficacy Review",
                   "type" : "text",
                   "required" : false
@@ -4331,31 +4861,31 @@
               ]
             },
             {
-              "linkId" : "215",
+              "linkId" : "p15.6.8",
               "text" : "Additional Sub-Group Analyses",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item305",
+              "linkId" : "p15.6.9",
               "text" : "Multiple Comparison/Multiplicity",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "216",
+              "linkId" : "p15.6.10",
               "text" : "Tabulation of Individual Response Data",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "217",
+              "linkId" : "p15.6.11",
               "text" : "Exploratory Analyses",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item301",
+              "linkId" : "p15.6.12",
               "text" : "Pharmacokinetic Analysis (if applicable)",
               "type" : "text",
               "required" : false,
@@ -4369,31 +4899,31 @@
           ]
         },
         {
-          "linkId" : "i5299",
+          "linkId" : "p15.7",
           "text" : "Sample Size",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item306d",
+          "linkId" : "p15.8",
           "text" : "Measures to Minimize Bias",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "item307d",
+              "linkId" : "p15.8.1",
               "text" : "Enrollment/Randomization/Masking Procedures",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item308d",
+              "linkId" : "p15.8.2",
               "text" : "Evaluation of Success of Blinding",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item309",
+              "linkId" : "p15.8.3",
               "text" : "Breaking the Study Blind/Participant Code",
               "type" : "text",
               "required" : false
@@ -4403,91 +4933,91 @@
       ]
     },
     {
-      "linkId" : "218",
+      "linkId" : "p16",
       "text" : "SUPPORTING DOCUMENTATION AND OPERATIONAL CONSIDERATIONS",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "219",
+          "linkId" : "p16.1",
           "text" : "Regulatory, Ethical and Study Oversight Considerations",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i491",
+              "linkId" : "p16.1.1",
               "text" : "Protocol Amendments",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i492",
+              "linkId" : "p16.1.2",
               "text" : "Ethical Standard",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i493",
+              "linkId" : "p16.1.3",
               "text" : "Institutional Review Board",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "220",
+              "linkId" : "p16.1.4",
               "text" : "Informed Consent Process",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "221",
+                  "linkId" : "p16.1.4.1",
                   "text" : "Consent/Assent and Other Informational Documents Provided to Participants",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "222",
+                  "linkId" : "p16.1.4.2",
                   "text" : "Consent Procedures and Documentation",
                   "type" : "group",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "i495",
+                      "linkId" : "p16.1.4.2.1",
                       "text" : "Specify how the research team will assure that participants have sufficient time to consider whether to participate in the research",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i496",
+                      "linkId" : "p16.1.4.2.2",
                       "text" : "Describe the parental permission process and the child assent process. (If study involves children)",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i497",
+                      "linkId" : "p16.1.4.2.3",
                       "text" : "Some participants may be vulnerable to coercion or undue influence, such as those who are economically or educationally disadvantaged, mentally disabled, or students (undergraduate, graduate, and medical students) and employees (administrative, clerical, nursing, lab technicians, post-doctoral fellows and house staff, etc.), describe the procedures to ensure the voluntary participation of these individuals",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i499",
+                      "linkId" : "p16.1.4.2.4",
                       "text" : "Methods of Informed Consent for non-English Speakers",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i500",
+                      "linkId" : "p16.1.4.2.5",
                       "text" : "Waiver or Alteration of Consent Process",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "i498",
+                      "linkId" : "p16.1.4.2.6",
                       "text" : "HIPAA Authorization",
                       "type" : "group",
                       "required" : false,
                       "item" : [
                         {
-                          "linkId" : "i501",
+                          "linkId" : "p16.1.4.2.7.1",
                           "text" : "Participant's Capacity to Give Legally Effective Consent",
                           "type" : "text",
                           "required" : false
@@ -4497,7 +5027,7 @@
                   ]
                 },
                 {
-                  "linkId" : "i494",
+                  "linkId" : "p16.1.4.3",
                   "text" : "Indicate where the consent process will take place.",
                   "type" : "text",
                   "required" : false
@@ -4505,31 +5035,31 @@
               ]
             },
             {
-              "linkId" : "224",
+              "linkId" : "p16.1.5",
               "text" : "Participant data and Confidentialty",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "item306",
+                  "linkId" : "p16.1.5.1",
                   "text" : "Research Use of Stored Human Samples, Specimens, or Data",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item303",
+                  "linkId" : "p16.1.5.2",
                   "text" : "Confidentiality of Research Biospeciemen/Data",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item3050",
+                  "linkId" : "p16.1.5.3",
                   "text" : "Certificate of Confidentiality (if applicable)",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item2970",
+                  "linkId" : "p16.1.5.4",
                   "text" : "Provisions to Protect the Privacy of Participants:",
                   "type" : "text",
                   "required" : false
@@ -4537,13 +5067,13 @@
               ]
             },
             {
-              "linkId" : "item307",
+              "linkId" : "p16.1.6",
               "text" : "Future Use of Stored Human Specimens and Data",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "223",
+              "linkId" : "p16.1.7",
               "text" : "Study Discontinuation and Closure",
               "type" : "text",
               "required" : false
@@ -4564,32 +5094,32 @@
                   }
                 }
               ],
-              "linkId" : "i388",
+              "linkId" : "p16.1.8",
               "text" : "Key Roles and Expertise of Study Team",
               "type" : "group",
               "required" : false,
               "repeats" : true,
               "item" : [
                 {
-                  "linkId" : "i389",
+                  "linkId" : "p16.1.8.1",
                   "text" : "First Name",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i389_1",
+                  "linkId" : "p16.1.8.2",
                   "text" : "Last Name",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i390",
+                  "linkId" : "p16.1.8.3",
                   "text" : "Position/Title",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i391",
+                  "linkId" : "p16.1.8.4",
                   "text" : "Responsibilities",
                   "type" : "text",
                   "required" : false,
@@ -4616,74 +5146,74 @@
                       }
                     }
                   ],
-                  "linkId" : "i388-help",
+                  "linkId" : "p16.1.8.4_help",
                   "text" : "Provide a list of persons, companies, and/or groups serving in key roles in the conduct or oversight of the trial. This should include the sponsormedical expert for the trial (medical monitor), investigator responsible for conducting the trial (principal investigator (PI)), qualified clinician responsible for the siteclinical decisions (site investigator), and any clinical laboratory(ies) or other institutions involved in the trial. Other key roles may include the NIH point of contact (program director or officer), regulatory specialist, biostatistician, data coordinating center (DCC), data management center, data manager, or industry partner.",
                   "type" : "display"
                 }
               ]
             },
             {
-              "linkId" : "218s",
+              "linkId" : "p16.1.9",
               "text" : "Safety Oversight",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "228",
+              "linkId" : "p16.1.10",
               "text" : "Clinical Monitoring",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "229",
+              "linkId" : "p16.1.11",
               "text" : "Quality Assurance and Quality Control",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "230",
+              "linkId" : "p16.1.12",
               "text" : "Data Handling and Record Keeping",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "item3000",
+                  "linkId" : "p16.1.12.1",
                   "text" : "Data Quality Control and Reporting",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "231",
+                  "linkId" : "p16.1.12.2",
                   "text" : "Data Collection and Management Responsibilities",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "item3010",
+                  "linkId" : "p16.1.12.3",
                   "text" : "Data Archival",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "232",
+                  "linkId" : "p16.1.12.4",
                   "text" : "Study Records Retention",
                   "type" : "group",
                   "required" : false,
                   "item" : [
                     {
-                      "linkId" : "item299",
+                      "linkId" : "p16.1.12.4.1",
                       "text" : "Photographs, Audio/Video Recordings Retention",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "item304d",
+                      "linkId" : "p16.1.12.4.2",
                       "text" : "Data and/or Biological Specimens Access",
                       "type" : "text",
                       "required" : false
                     },
                     {
-                      "linkId" : "item298",
+                      "linkId" : "p16.1.12.4.3",
                       "text" : "Data and/or Biological Specimens Retention/Banking",
                       "type" : "text",
                       "required" : false
@@ -4693,31 +5223,31 @@
               ]
             },
             {
-              "linkId" : "233",
+              "linkId" : "p16.1.13",
               "text" : "Protocol Deviations",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "234",
+              "linkId" : "p16.1.14",
               "text" : "Publication and Data Sharing Policy",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "235",
+              "linkId" : "p16.1.15",
               "text" : "Conflict of Interest Policy",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item3020",
+              "linkId" : "p16.1.16",
               "text" : "Source Documents and Access to Source Data/Documents",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "item308",
+              "linkId" : "p16.1.17",
               "text" : "Collections of Photographs, or Audio/Video Recording",
               "type" : "text",
               "required" : false
@@ -4725,25 +5255,25 @@
           ]
         },
         {
-          "linkId" : "item312",
+          "linkId" : "p16.2",
           "text" : "Prior Approvals/Attachments Requiring Signatures",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "236",
+          "linkId" : "p16.3",
           "text" : "Additional Considerations",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "237",
+          "linkId" : "p16.4",
           "text" : "Abbreviations and Special Terms",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item311",
+          "linkId" : "p16.5",
           "text" : "Attachments",
           "type" : "text",
           "required" : false,
@@ -4752,19 +5282,19 @@
       ]
     },
     {
-      "linkId" : "i319",
+      "linkId" : "p17",
       "text" : "STUDY ADMINISTRATION",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "i322",
+          "linkId" : "p17.1",
           "text" : "Setting",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i323",
+              "linkId" : "p17.1.1",
               "text" : "Describe the sites / locations where your research team will conduct the research:",
               "type" : "text",
               "required" : false
@@ -4772,13 +5302,13 @@
           ]
         },
         {
-          "linkId" : "i320",
+          "linkId" : "p17.2",
           "text" : "Registration",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i321",
+              "linkId" : "p17.2.1",
               "text" : "Describe the steps the research team will take to ensure that a participant is appropriately enrolled or registered in the study prior to receiving any study intervention (e.g. describe and submit any protocol eligibility checklist that will be used, specify who on the research team will confirm eligibility and that consent was documented, etc.):",
               "type" : "text",
               "required" : false
@@ -4786,31 +5316,31 @@
           ]
         },
         {
-          "linkId" : "i325",
+          "linkId" : "p17.3",
           "text" : "Resources Available",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i326",
+              "linkId" : "p17.3.1",
               "text" : "Describe the roles/tasks of each research team member",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i327",
+              "linkId" : "p17.3.2",
               "text" : "Describe the qualifications (e.g., training, experience) of the PI and research team to perform their roles. Provide enough information for the IRB to determine the PI and research team are qualified to conduct the proposed research. Alternatively, you can submit the current CVs for the research team instead:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i328",
+              "linkId" : "p17.3.3",
               "text" : "Describe the coverage plan to address any issues (including participant safety issues) that occur while the PI is away and/or unavailable. The research team member designated to serve as the acting PI in the PIabsence should have similar training and expertise as the PI:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i329",
+              "linkId" : "p17.3.4",
               "text" : "Describe the process to ensure the research team members have adequate oversight and are adequately trained regarding the protocol, study procedures, and their roles and responsibilities:",
               "type" : "text",
               "required" : false
@@ -4831,7 +5361,7 @@
                   }
                 }
               ],
-              "linkId" : "i330",
+              "linkId" : "p17.3.5",
               "text" : "Are medical or psychological resources that participants might need, such as for emergencies or medical issues, are available for the study?",
               "type" : "choice",
               "required" : false,
@@ -4853,13 +5383,13 @@
           ]
         },
         {
-          "linkId" : "i331",
+          "linkId" : "p17.4",
           "text" : "IRB Review",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i332",
+              "linkId" : "p17.4.1",
               "text" : "An appropriate IRB , registered with the OHRP ,review and approve this study.",
               "type" : "choice",
               "required" : false,
@@ -4881,7 +5411,7 @@
               ]
             },
             {
-              "linkId" : "i333",
+              "linkId" : "p17.4.2",
               "text" : "Any amendments to the protocol or informed consent documents will be reviewed and approved by the IRB prior to use, unless required to eliminate an apparent immediate hazard to participants?",
               "type" : "choice",
               "required" : false,
@@ -4905,7 +5435,7 @@
           ]
         },
         {
-          "linkId" : "i334",
+          "linkId" : "p17.5",
           "text" : "Community-Based Participatory Research/Field Research",
           "type" : "group",
           "required" : false,
@@ -4926,7 +5456,8 @@
                   }
                 }
               ],
-              "linkId" : "i336",
+              "linkId" : "p17.5.1",
+              "definition" : "i336",
               "text" : "Can or will this study involve community-based participatory research?",
               "type" : "choice",
               "required" : false,
@@ -4946,12 +5477,12 @@
               ]
             },
             {
-              "linkId" : "910",
+              "linkId" : "p17.5.2",
               "text" : "Community-based participatory research",
               "type" : "group",
               "enableWhen" : [
                 {
-                  "question" : "i336",
+                  "question" : "p17.5.1",
                   "operator" : "=",
                   "answerCoding" : {
                     "code" : "1"
@@ -4963,25 +5494,25 @@
               "readOnly" : false,
               "item" : [
                 {
-                  "linkId" : "i337",
+                  "linkId" : "p17.5.2.1",
                   "text" : "Describe the communities that will be involved in this research:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i338",
+                  "linkId" : "p17.5.2.2",
                   "text" : "Describe the composition and involvement of any community advisory board:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i339",
+                  "linkId" : "p17.5.2.3",
                   "text" : "Describe the involvement of the community in the design, protocol development, informed consent process, access to data and samples, and conduct of the research",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i340",
+                  "linkId" : "p17.5.2.4",
                   "text" : "Describe the plans on dissemination and publication of study results which are in agreement with the community:",
                   "type" : "text",
                   "required" : false
@@ -4991,61 +5522,61 @@
           ]
         },
         {
-          "linkId" : "i341",
+          "linkId" : "p17.6",
           "text" : "Multi Site Research",
           "type" : "group",
           "required" : false,
           "item" : [
             {
-              "linkId" : "i355",
+              "linkId" : "p17.6.1",
               "text" : "Describe the plan for tracking IRB approval of documents and consent forms for each site:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i356",
+              "linkId" : "p17.6.2",
               "text" : "Name of the sponsor and Contract Research Organization (CRO):",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i357",
+              "linkId" : "p17.6.3",
               "text" : "Describe the training that will be provided to the enrolling sites staff prior to protocol implementation at that study site and throughout the course of the study. Include the type of training, e.g., study meetings, teleconferences, etc., as well as who will provide the training and how it will be documented:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i360",
-              "text" : "Describe the plan for ensuring that amendments to the Coordinating Centertemplate protocol and template consent forms will be communicated to all sites:",
+              "linkId" : "p17.6.4",
+              "text" : "Describe the plan for ensuring that amendments to the Coordinating Center template protocol and template consent forms will be communicated to all sites:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i359",
+              "linkId" : "p17.6.5",
               "text" : "Describe the plan for ensuring that all sites have the most current version of the protocol and consent forms:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i361",
+              "linkId" : "p17.6.6",
               "text" : "Describe the plan for collection and management of data from all sites. Specify if data will be shared outside (e.g., with other investigators, sponsor, etc.) and how the data will be shared (e.g. how data will be received from and distributed to other sites as needed).  If available, please provide the Data Sharing Plan or Policy:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i362",
+              "linkId" : "p17.6.7",
               "text" : "Plan to manage and/or monitor each site's study conduct including enrollment, research events, withdrawals and protocol deviations:",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "i363",
+                  "linkId" : "p17.6.7.1",
                   "text" : "Describe how the Coordinating Center will monitor each site's study conduct during the different phases of the study (e.g. remotely, in-person visits, reports, etc.):",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i364",
+                  "linkId" : "p17.6.7.2",
                   "text" : "Describe whether monitoring visits will be conducted. If so, how often? What will the site monitoring visits entail?:",
                   "type" : "text",
                   "required" : false
@@ -5053,31 +5584,31 @@
               ]
             },
             {
-              "linkId" : "i365",
+              "linkId" : "p17.6.8",
               "text" : "Describe the plan for processing, reporting and evaluating unanticipated problems, protocol violations, deviations, and serious adverse events from all sites to the IRB, funder, and federal agencies (e.g. FDA):",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "i366",
+              "linkId" : "p17.6.9",
               "text" : "Plan for handling of the investigational product (drug/device/biologic) at each site (if applicable):",
               "type" : "group",
               "required" : false,
               "item" : [
                 {
-                  "linkId" : "i367",
+                  "linkId" : "p17.6.9.1",
                   "text" : "Describe how they will be provided to each enrolling site:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i368",
+                  "linkId" : "p17.6.9.2",
                   "text" : "Describe how dispensing will be monitored:",
                   "type" : "text",
                   "required" : false
                 },
                 {
-                  "linkId" : "i369",
+                  "linkId" : "p17.6.9.3",
                   "text" : "Describe what investigational product accountability procedures will be implemented:",
                   "type" : "text",
                   "required" : false
@@ -5085,13 +5616,13 @@
               ]
             },
             {
-              "linkId" : "i370",
+              "linkId" : "p17.6.10",
               "text" : "Describe the procedures for study closures and early site termination:",
               "type" : "text",
               "required" : false
             },
             {
-              "linkId" : "id371",
+              "linkId" : "p17.6.11",
               "text" : "Describe any collaborations not described above, such as [institution] investigators with multiple affiliations that would engage other institutions in research (e.g., [institution] is paying another institution for the research, the research is being conducted on behalf of another institution):",
               "type" : "text",
               "required" : false
@@ -5099,7 +5630,7 @@
           ]
         },
         {
-          "linkId" : "226",
+          "linkId" : "p17.7",
           "text" : "Key Roles and Study Governance",
           "type" : "text",
           "required" : false
@@ -5107,31 +5638,31 @@
       ]
     },
     {
-      "linkId" : "item313",
+      "linkId" : "p18",
       "text" : "STUDY FINANCES",
       "type" : "group",
       "required" : false,
       "item" : [
         {
-          "linkId" : "item314",
+          "linkId" : "p18.1",
           "text" : "Funding Source",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item315",
+          "linkId" : "p18.2",
           "text" : "Costs to the participant",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item316",
+          "linkId" : "p18.3",
           "text" : "Participant Reimbursements or Payments",
           "type" : "text",
           "required" : false
         },
         {
-          "linkId" : "item317",
+          "linkId" : "p18.4",
           "text" : "Compensation for Research-Related Injury",
           "type" : "text",
           "required" : false,
@@ -5141,7 +5672,7 @@
       ]
     },
     {
-      "linkId" : "239",
+      "linkId" : "p19",
       "text" : "REFERENCES",
       "type" : "text",
       "required" : false

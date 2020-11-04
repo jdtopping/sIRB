@@ -239,7 +239,7 @@
               ]
             },
             {
-              "linkId" : "dl2.3.1",
+              "linkId" : "dl2.1.3",
               "text" : "Overall Principal Investigator",
               "type" : "group",
               "required" : false,
@@ -264,7 +264,7 @@
                       }
                     }
                   ],
-                  "linkId" : "dl2.3.1_help",
+                  "linkId" : "dl2.1.3_help",
                   "text" : "Principal Investigator responsible for the conduct of the study overall; oversees all participating sites",
                   "type" : "display",
                   "required" : false,
@@ -272,19 +272,19 @@
                   "readOnly" : false
                 },
                 {
-                  "linkId" : "dl2.3.1.1",
+                  "linkId" : "dl2.1.3.1",
                   "text" : "First Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "dl2.3.1.2",
+                  "linkId" : "dl2.1.3.2",
                   "text" : "Last Name",
                   "type" : "string",
                   "required" : false
                 },
                 {
-                  "linkId" : "dl2.3.1.3",
+                  "linkId" : "dl2.1.3.3",
                   "text" : "Email",
                   "type" : "string",
                   "required" : false
