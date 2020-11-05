@@ -392,6 +392,28 @@
                 "display" : "No"
               }
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help",
+                        "display" : "Help-Button"
+                      }
+                    ],
+                    "text" : "Help-Button"
+                  }
+                }
+              ],
+              "linkId" : "p1.7_help",
+              "text" : "PI at additional sites, etc. as applicable",
+              "type" : "display"
+            }
           ]
         },
         {
@@ -411,26 +433,6 @@
           "repeats" : true,
           "readOnly" : false,
           "item" : [
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                  "valueCodeableConcept" : {
-                    "coding" : [
-                      {
-                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                        "code" : "help",
-                        "display" : "Help-Button"
-                      }
-                    ],
-                    "text" : "Help-Button"
-                  }
-                }
-              ],
-              "linkId" : "p1.8_help",
-              "text" : "PI at additional sites, etc. as applicable",
-              "type" : "display"
-            },
             {
               "linkId" : "p1.8.1",
               "text" : "Additional Investigator Role",
@@ -825,6 +827,38 @@
           "required" : false,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.18_help",
+              "text" : "e.g. NIH, or company",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "p1.18.1",
               "text" : "Name",
               "type" : "text",
@@ -880,7 +914,24 @@
               "text" : "Phone Number",
               "type" : "text",
               "required" : false
-            },
+            }
+          ]
+        },
+        {
+          "linkId" : "p1.19",
+          "text" : "Sponsor",
+          "type" : "group",
+          "enableWhen" : [
+            {
+              "question" : "p1.1",
+              "operator" : "=",
+              "answerCoding" : {
+                "code" : "1"
+              }
+            }
+          ],
+          "required" : false,
+          "item" : [
             {
               "extension" : [
                 {
@@ -906,31 +957,6 @@
                   }
                 }
               ],
-              "linkId" : "p1.18_help",
-              "text" : "e.g. NIH, or company",
-              "type" : "display",
-              "required" : false,
-              "repeats" : false,
-              "readOnly" : false
-            }
-          ]
-        },
-        {
-          "linkId" : "p1.19",
-          "text" : "Sponsor",
-          "type" : "group",
-          "enableWhen" : [
-            {
-              "question" : "p1.1",
-              "operator" : "=",
-              "answerCoding" : {
-                "code" : "1"
-              }
-            }
-          ],
-          "required" : false,
-          "item" : [
-            {
               "linkId" : "p1.19_help",
               "text" : "Individual or pharmaceutical company, governmental agency, academic institution, private organization, or other organization taking responsibility for and investing in a clinical investigation. . The sponsor does not actually conduct the investigation unless the sponsor is a sponsor-investigator. A person other than an individual that uses one or more of its own employees to conduct an investigation that it has initiated is a sponsor, not a sponsor-investigator, and the employees are investigators.21 CFR 312.3",
               "type" : "display",
@@ -1091,6 +1117,38 @@
                   "readOnly" : false
                 }
               ]
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p1.20_help",
+              "text" : "Medical expert for the trial ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -1346,7 +1404,41 @@
               "linkId" : "p3.1.5",
               "text" : "End Points",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.5_help",
+                  "text" : "Primary endpoint and secondary endpoints.These endpoints should be thesame as the endpoints contained in the body of the protocol. These align with Outcome Measures in clinicaltrials.gov",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.6",
@@ -1392,7 +1484,41 @@
               "linkId" : "p3.1.7",
               "text" : "Study Population",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.7_help",
+                  "text" : "Specify sample size, gender, age, demographic group, general health status, and geographic location.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.8",
@@ -1470,7 +1596,7 @@
                     }
                   ],
                   "linkId" : "p3.1.9_help",
-                  "text" : "Brief description of plannedfacilities/participating sites enrolling participants. Indicate number of sites and if the study is intended to include sites outside  the United States.",
+                  "text" : "Brief description of planned facilities/participating sites enrolling participants. Indicate number of sites and if the study is intended to include sites outside  the United States.",
                   "type" : "display",
                   "required" : false,
                   "repeats" : false,
@@ -1604,7 +1730,41 @@
               "linkId" : "p3.1.13",
               "text" : "Methodology",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.13_help",
+                  "text" : "Design attributes such as single blind, double blind or open label; Randomized, placebo or active placebo control; cross-over design, etc.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.14",
@@ -1619,19 +1779,121 @@
                   }
                 }
               ],
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.14_help",
+                  "text" : "Total duration of investigational product administration (including any open-label lead-in, if applicable).",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.15",
               "text" : "Key Procedures",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p1.3.15_help",
+                  "text" : "Procedures that are required for the study (e.g. harvesting of tumor, vaccine, tumor biopsy and blood draws)",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.16",
-              "text" : "Inclusion/Exclusion Criteria",
+              "text" : "Main Inclusion/Exclusion Criteria",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.16_help",
+                  "text" : "Entire list of inclusion and exclusion criteria will appear later in the protocol. Only include the key inclusion and exclusion criteria in this section.  ",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.17",
@@ -1646,7 +1908,41 @@
                   }
                 }
               ],
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.17_help",
+                  "text" : "Note if there is a standard reference therapy against which the investigational product is being compared, or if the reference is a placebo",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p3.1.18",
@@ -1654,7 +1950,41 @@
               "type" : "text",
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p3.1.18_help",
+                  "text" : "A very brief description of the main elements of the statistical methodology to be used in the study. Limit this section to discussion of the analysis of the primary endpoint and perhaps the main secondary endpoint.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -1662,13 +1992,81 @@
           "linkId" : "p3.2",
           "text" : "Schema",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p3.2_help",
+              "text" : "This section should include a diagram that provides a quick “snapshot” of the study and ideally be limited to one page. Below are examples of schematics that show the level of detail needed to convey an overview of study design. Depending on the nature of your study, one example may be more appropriate than another. Regardless, the examples included here are intended to guide the development of a schematic that is appropriate to the planned study design and will need to be customized for the protocol. If you utilize Example 1, complete the tables with study-specific information and adapt the table(s) to illustrate your study design. If you utilize Example 2 or 3, revise with study-specific information and adapt the diagram to illustrate your study design (e.g., changing method of assignment to study group, adding study arms, visits, etc.). The time point(s) indicated in the schematic should correspond to the time point(s) in Section 7.3, Study Schedule, e.g., Visit 1, Day 0; Visit 2, Day 30 ± 7; etc.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p3.3",
           "text" : "Schedule of Activities",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p3.3_help",
+              "text" : "The schedule of activities must capture the procedures that will be accomplished at each study visit, and all contact, with study participants e.g., telephone contacts.  This includes any tests that are used for eligibility, participant randomization or stratification, or decisions on study intervention discontinuation. Only include procedures that contribute to participant eligibility and study objectives and endpoints.  Other procedures should be done sparingly and with consideration, as they may add unnecessary complexity and detract from recruitment. ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -1690,13 +2088,70 @@
               "linkId" : "p4.1.1",
               "text" : "Describe the relevant literature and the specific gaps in current knowledge that this study intends to address",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p4.1.1_help",
+                  "text" : "Gaps that this study intends to address based on literature",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p4.1.2",
               "text" : "Provide the scientific or scholarly background for, rationale for, and significance of the research based on the existing literature and how it will add to existing knowledge:",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p4.1.2_help",
+                  "text" : "Based on the existing literature and how it will add to existing knowledge",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p4.1.3",
@@ -1755,7 +2210,41 @@
               ],
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p4.1.5_help",
+                  "text" : "Details If the intervention/drug/device is not the first time used.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p4.1.6",
@@ -1988,17 +2477,29 @@
                     "coding" : [
                       {
                         "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                        "code" : "help",
-                        "display" : "Help-Button"
+                        "code" : "help"
                       }
-                    ],
-                    "text" : "Help-Button"
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
                   }
                 }
               ],
               "linkId" : "p4.2_help",
-              "text" : "State the problem or question (e.g., describe the population, disease, current standard of care, if one exists, and limitations of knowledge or available therapy) and the reason for conducting the clinical trial",
-              "type" : "display"
+              "text" : "The problems or question and reason for conducting the study. E.g. explain the population, disease, standard of care (if there is one),  and limitations of knowledge or available therapy. ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -2141,17 +2642,29 @@
                             "coding" : [
                               {
                                 "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                                "code" : "help",
-                                "display" : "Help-Button"
+                                "code" : "help"
                               }
-                            ],
-                            "text" : "Help-Button"
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
                           }
                         }
                       ],
                       "linkId" : "p4.3.2.1_help",
-                      "text" : "Note: Payments and incentives are not conside",
-                      "type" : "display"
+                      "text" : "Note: Payments and incentives are not considered benbefits.",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
                     }
                   ]
                 },
@@ -2220,24 +2733,12 @@
       "required" : false,
       "item" : [
         {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-              "valueCodeableConcept" : {
-                "coding" : [
-                  {
-                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                    "code" : "help",
-                    "display" : "Help-Button"
-                  }
-                ],
-                "text" : "Help-Button"
-              }
-            }
-          ],
           "linkId" : "p5_help",
-          "text" : "Describe the purpose, specific aims, or objectives of the study (i.e. the",
-          "type" : "display"
+          "text" : "Describe the purpose, specific aims, or objectives of the study",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
           "linkId" : "p5.1",
@@ -2249,19 +2750,121 @@
           "linkId" : "p5.2",
           "text" : "Primary Objectives",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p5.2_help",
+              "text" : "The primary objective is the main question. This objective generally drives statistical planning for the trial (e.g., calculation of the sample size to provide the appropriate power for statistical testing).",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p5.3",
           "text" : "Secondary Objectives",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p5.3_help",
+              "text" : "The secondary objective(s) are goals that will provide further information on the use of the intervention.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p5.4",
           "text" : "Tertiary/Exploratory Objectives",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p5.4_help",
+              "text" : "Tertiary/exploratory objective(s) serve as a basis for explaining or supporting findings of primary analyses and for suggesting further hypotheses for later research.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -2298,10 +2901,76 @@
           "required" : false,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p6.1_help",
+              "text" : "The primary endpoint(s) should be clearly specified and its importance and role in the analysis and interpretation of study results should be defined. The primary endpoint(s) is the basis for concluding that the study met its objective (e.g., “the study wins”). Often Phase 2 and 3 trials include primary objectives, and therefore primary endpoints, to demonstrate effectiveness. Generally, there should be just one primary endpoint that will provide a clinically relevant, valid, and reliable measure of the primary objective. Additional primary endpoints may require an adjustment to the sample size calculations and p-value threshold. However, this is not always the case. For example, in many trials of medical devices there are primary endpoints for both safety and effectiveness.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "p6.1.1",
               "text" : "Justification for Endpoints",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p6.1.1_help",
+                  "text" : "Briefly explain why the endpoint(s) were chosen.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -2316,6 +2985,14 @@
               "text" : "Justification for Secondary Endpoints",
               "type" : "text",
               "required" : false
+            },
+            {
+              "linkId" : "p6.2_help",
+              "text" : "Briefly explain why the endpoint(s) were chosen.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
             }
           ]
         },
@@ -2326,10 +3003,76 @@
           "required" : false,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p6.3_help",
+              "text" : "Exploratory endpoints should be specified. Exploratory endpoints may include clinically important events that are expected to occur too infrequently to show a treatment effect or endpoints that for other reasons are thought to be less likely to show an effect but are included to explore new hypotheses.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "p6.3.1",
               "text" : "Justification for Tertiary Endpoints",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p6.3.1_help",
+                  "text" : "Briefly explain why the endpoint(s) were chosen.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -2365,13 +3108,81 @@
           "linkId" : "p7.1",
           "text" : "Overall Design",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p7.1_help",
+              "text" : "The scientific integrity of the trial and the credibility of the data from the trial depend substantially on the trial design. A description of the trial design should be consistent with the Protocol Synopsis and Protocol Schema.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p7.2",
           "text" : "Scientific Rationale for Study Design",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p7.2_help",
+              "text" : "Describe the rationale for the type and selection of control (e.g. placebo, active drug, dose-response, historical) and study design (e.g., non-inferiority as opposed to superiority). Discuss known or potential problems associated with the control  chosen in light of the specific disease and intervention(s) being studied.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p7.3",
@@ -2403,23 +3214,91 @@
           ],
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p7.4_help",
+              "text" : "Provide a justification for the route of administration, planned maximum dosage, and dosing regimen, including starting dose, of the study intervention(s) and control product(s).",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p7.5",
           "text" : "End of Study Definition",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p7.5_help",
+              "text" : "A clinical trial is considered completed when participants are no longer being examined or the last participant’s last study visit has occurred.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p7.6",
-          "text" : "Screening Phase",
+          "text" : "Screening Activities",
           "type" : "text",
           "required" : false
         },
         {
           "linkId" : "p7.7",
-          "text" : "Study Intervention Phase",
+          "text" : "Study Intervention Activities",
           "type" : "text",
           "required" : false,
           "repeats" : false,
@@ -2427,9 +3306,11 @@
         },
         {
           "linkId" : "p7.8",
-          "text" : "Follow Up Phase",
+          "text" : "Follow Up Activities",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
           "linkId" : "p7.9",
@@ -2461,7 +3342,7 @@
       "item" : [
         {
           "linkId" : "p8.1",
-          "text" : "participant Selection",
+          "text" : "Participant Selection",
           "type" : "group",
           "required" : false,
           "item" : [
@@ -2551,7 +3432,7 @@
                         }
                       ],
                       "linkId" : "p9.1.1.1_help",
-                      "text" : "Describe the criteria that define who will be included in the study as a numbered list",
+                      "text" : "Description of criteria that define participants  to include in study",
                       "type" : "display",
                       "required" : false,
                       "repeats" : false,
@@ -2583,7 +3464,7 @@
                         }
                       ],
                       "linkId" : "p9.1.1.2_help",
-                      "text" : "Describe the criteria that define who will be excluded in the study as a numbered list",
+                      "text" : "Description of criteria that define participants  to exclude in study",
                       "type" : "display"
                     }
                   ]
@@ -2645,13 +3526,81 @@
               "linkId" : "p9.1.5",
               "text" : "Screen Failures",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p9.1.5_help",
+                  "text" : "Participants who are consented to participate in the clinical trial, who do not meet one or more criteria required for participation in the trial during the screening procedures, are considered screen failures. Indicate how screen failures will be handled in the trial, including conditions and criteria upon which re-screening is acceptable, when applicable.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p9.1.6",
               "text" : "Lifestyle Considerations",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p9.1.6_help",
+                  "text" : "Describe any restrictions during any parts of the study pertaining to lifestyle and/or diet (e.g., food and drink restrictions, timing of meals relative to dosing, intake of caffeine, alcohol, or tobacco, or limits on activity), and considerations for household contacts. Describe what action will be taken if prohibited medications, treatments or procedures are indicated for care (e.g., early withdrawal).",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p9.1.7",
@@ -4209,13 +5158,81 @@
               "linkId" : "p10.1.2",
               "text" : "Receipts/Acquisition",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.2_help",
+                  "text" : "State how the study intervention and control product will be provided to the investigator, including who will be supplying the investigational product and any other protocol dictated medications/devices. If investigational product(s) will be purchased through commercial sources, state this.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.3",
               "text" : "Study Agent Accountability/ Return or Destruction of Investigational Product",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.3_help",
+                  "text" : "Describe plans about how and by whom the study intervention will be distributed, including participation of a drug repository or pharmacy, and plans for disposal of expired or return of unused product.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.4",
@@ -4223,37 +5240,241 @@
               "type" : "text",
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.4_help",
+                  "text" : "Describe the formulation and appearance the study intervention, as supplied. Information in this section can usually be obtained from the IB or the package insert, or device labeling. This section should include the name of the manufacturer of the control product.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.5",
               "text" : "Formulation and appearance of Test Product",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.5_help",
+                  "text" : "Describe the formulation and appearance the study intervention, as supplied. Information in this section can usually be obtained from the IB or the package insert, or device labeling. This section should include the name of the manufacturer of the control product.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.6",
               "text" : "Packaging and Labeling",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.6_help",
+                  "text" : "Describe the packaging and labeling of the study intervention and control product, as supplied. Information in this section can usually be obtained from the IB or the package insert, or device labeling.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.7",
               "text" : "Product Storage and Stability",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.7_help",
+                  "text" : "Describe storage and stability requirements (e.g., protection from light, temperature, humidity) for the study intervention and control product. For studies in which multi-dose vials are utilized, provide additional information regarding stability and expiration time after initial use (e.g., the seal is broken).",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.8",
               "text" : "Preparation",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.8_help",
+                  "text" : "Describe the preparation of the study intervention and control product, including any preparation required by study staff and/or study participants. Include thawing, diluting, mixing, and reconstitution/preparation instructions in this section, as appropriate, or within a MOP or SOP. For devices, include any relevant assembly or use instructions.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.9",
               "text" : "Administration and/or Dosing",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.9_help",
+                  "text" : "Describe the procedures for selecting each participant's dose of study intervention and control product. For drugs, that includes the timing of dosing (e.g., time of day, interval), the duration (e.g., the length of time study participants will be administered the study intervention), the planned route of administration (e.g., oral, nasal, intramuscular), and the relation of dosing to meals.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.10",
@@ -4265,7 +5486,41 @@
               "linkId" : "p10.1.11",
               "text" : "Starting Dose and Dose Escalation Schedule",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.1.11_help",
+                  "text" : "State the starting dose and schedule of the study intervention and control product, including the maximum and minimum duration for those participants who continue in the study. For example, in some oncology trials for participants with no available therapeutic alternatives, intervention continues even after disease progression. In this instance, consider alternative designs that enable participants to rollover to a continued treatment arm and include appropriate instructions to guide this implementation.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p10.1.12",
@@ -4368,13 +5623,47 @@
               "linkId" : "p10.3.3",
               "text" : "Assessment of Clinician and/or Participant Compliance with Study Procedural Intervention",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p10.3.3_help",
+                  "text" : "Define how adherence to the protocol (e.g., administration of study intervention, use of device,) will be assessed, and verified (if applicable, e.g., plasma assays, electronic monitoring devices, daily diaries). Include a discussion of what documents are mandatory to complete (e.g., participant drug log) and what source documents/records will be used to calculate study intervention compliance.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
         {
           "linkId" : "p10.4",
-          "text" : "participant Compliance and Monitoring",
+          "text" : "Participant Compliance and Monitoring",
           "type" : "text",
           "required" : false
         },
@@ -4405,6 +5694,38 @@
           "required" : false,
           "item" : [
             {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p11.2_help",
+              "text" : "Participants may withdraw voluntarily from the study or the PI may discontinue a participant from the study. This section should state which adverse events would result in discontinuation of study intervention or participant discontinuation/withdrawal. In addition, participants may discontinue the study intervention, but remain in the study for follow-up, especially for safety and efficacy study endpoints (if applicable). Consider requiring separate documentation for study intervention discontinuation and participant discontinuation/withdrawal from the study. In addition, a dedicated Case Report Form (CRF) page should capture the date and the specific underlying reason for discontinuation of study intervention or participant discontinuation/withdrawal.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            },
+            {
               "linkId" : "p11.2.1",
               "text" : "Reasons for Withdrawal  or Termination",
               "type" : "text",
@@ -4428,7 +5749,41 @@
           "linkId" : "p11.3",
           "text" : "Lost to Follow-Up",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p11.3_help",
+              "text" : "The protocol should describe the nature and duration of study follow-up. Validity of the study is a potential issue when participants are lost to follow-up, as information that is important to the endpoint evaluation is then lost. Participants are considered lost to follow-up when they stop reporting to scheduled study visits and cannot be reached to complete all protocol-required study procedures. Describe the plans to minimize loss to follow-up and missing data.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -4530,7 +5885,41 @@
           "linkId" : "p12.8",
           "text" : "Rescue Medications, Treatments, and Procedures",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p12.8_help",
+              "text" : "List all medications, treatments, and/or procedures that may be provided during the study for “rescue therapy” and relevant instructions about administration of rescue medications.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p12.9",
@@ -4542,7 +5931,41 @@
           "linkId" : "p12.10",
           "text" : "Concomitant Medications, Treatments , and Procedures",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p12.10_help",
+              "text" : "This section should be consistent with the medication restrictions in the inclusion/exclusion criteria previously listed. Describe the data that will be recorded related to permitted concomitant medications, supplements, complementary and alternative therapies, treatments, and/or procedures. Include details about when the information will be collected (e.g., screening, all study visits). Describe how allowed concomitant therapy might affect the outcome (e.g., drug-drug interaction, direct effects on the study endpoints) and how the independent effects of concomitant and study interventions could be ascertained.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
@@ -4621,6 +6044,38 @@
       "required" : false,
       "item" : [
         {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "p14_help",
+          "text" : "The following subsections are intended to highlight the specific assessments related to safety and the aspects of the study which are proposed to ensure the safety of trial participants. Consider developing this section in consultation with the study Medical Monitor. Consider the risks of the study intervention and other study procedures and the characteristics of the study population (e.g., vulnerable populations such as children).",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
           "linkId" : "p14.1",
           "text" : "Specification of Safety Parameters",
           "type" : "group",
@@ -4630,19 +6085,121 @@
               "linkId" : "p14.1.1",
               "text" : "Definition of Adverse Events(AE)",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.1.1_help",
+                  "text" : "Provide the definition of an AE being used for the clinical trial. The FDA definition of an AE is used in this template since this template is for IND and IDE studies. For some studies, definitions from the OHRP Guidance on Reviewing and Reporting Unanticipated Problems Involving Risks to Subjects or Others and Adverse Events; or ICH GCP definition may be more appropriate. However, it is important to note that FDA regulations require reporting based on the definition included in 21 CFR 312.32 (a) for studies performed under an IND, regardless of the definition of AE used in the protocol.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p14.1.2",
               "text" : "Definition of Serious Adverse Events (SAE)",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.1.2_help",
+                  "text" : "Provide the definition of an SAE being used for the clinical trial. The FDA definition of an SAE is used in this template since this template is for IND and IDE studies. It is important to note that FDA regulations require reporting based on the definition included in 21 CFR 312.32 (a) for studies performed under an IND, regardless of the definition of SAE used in the protocol. Note that the example text provided is from the drug regulations (21 CFR 312.32 (a)). There is no definition for SAE in the device regulations. Therefore, investigators should develop an appropriate definition for their study. This definition could include an unanticipated adverse device effect, but an SAE is broader than that definition. According to 21 CFR 812.3(s), an “unanticipated adverse device effect means any serious adverse effect on health or safety or any life-threatening problem or death caused by, or associated with, a device, if that effect, problem, or death was not previously identified in nature, severity, or degree of incidence in the investigational plan or application (including a supplementary plan or application), or any other unanticipated serious problem associated with a device that relates to the rights, safety, or welfare of subjects.”",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p14.1.3",
               "text" : "Definition of Unanticipated Problems",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.1.3_help",
+                  "text" : "The reporting of UPs applies to non-exempt human subjects research conducted or supported by HHS. Provide the definition of an UP being used for this clinical trial. An incident, experience, or outcome that meets the definition of an UP generally will warrant consideration of changes to the protocol or consent in order to protect the safety, welfare, or rights of participants or others. Other UPs may warrant corrective actions at a specific study site. Examples of corrective actions or changes that might need to be considered in response to an UP include: • Modification of inclusion or exclusion criteria to mitigate the newly identified risks",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -4656,19 +6213,121 @@
               "linkId" : "p14.2.1",
               "text" : "Severity of an Event",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.2.1_help",
+                  "text" : "All AEs will be assessed by the study clinician using a protocol defined grading system. Describe the method of grading an AE for severity. For example, many toxicity tables are available for use and are adaptable to various study designs. Selection of a toxicity table or severity scale should be made in consultation with the study Medical Monitor.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p14.2.2",
               "text" : "Relationship to Study Intervention/Experimental Manipulation",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.2.2_help",
+                  "text" : "All AEs will have their relationship to study intervention or study participation assessed with a level of specificity appropriate to the study design. The clinician’s assessment of an AE's relationship to study intervention (drug, biologic, device) is part of the documentation process, but it is not a factor in determining what is or is not reported in the study. Describe the method of determining the relationship of an AE to a study intervention. If there is any doubt as to whether a clinical observation is an AE, the event should be reported. Some protocols may use a binary assessment (related/not related); others may have a scale of relatedness. Evaluation of relatedness must consider etiologies such as natural history of the underlying disease, concurrent illness, concomitant therapy, study-related procedures, accidents, and other external factors. In a clinical trial, the study intervention must always be suspect.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p14.2.3",
               "text" : "Expectedness",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.2.3_help",
+                  "text" : "Expected adverse reactions are AEs that are known to occur for the study intervention being studied and should be collected in a standard, systematic format using a grading scale based on functional assessment or magnitude of reaction. Identify the source of the reference safety information used to determine the expectedness of the AE (e.g., IB, approved labeling). Expectedness is assessed based on the awareness of AEs previously observed, not on the basis of what might be anticipated from the properties of the study intervention.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -4694,25 +6353,161 @@
                   "linkId" : "p14.4.1.1",
                   "text" : "Adverse Event Reporting",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "p14.4.1.1_help",
+                      "text" : "Describe the AE reporting procedures, including timeframes. Further details should be included in a MOP or SOP including a description and a flow chart of when events are reported to various oversight (e.g., Data and Safety Monitoring Board (DSMB), safety monitoring committee, independent safety monitor) and regulatory s, and what study staff are responsible for completing and signing off on the AE reports, and who will receive notification of AEs. According to 21 CFR 312.64(b), “…The investigator must record nonserious adverse events and report them to the sponsor according to the timetable for reporting specified in the protocol”.",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 },
                 {
                   "linkId" : "p14.4.1.2",
                   "text" : "Serious Adverse Event Reporting",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "p14.4.1.2_help",
+                      "text" : "Describe the SAE reporting procedures, including timeframes. Further details should be included in a MOP or SOP including a description and a flow chart of when events are reported to various oversight and regulatory s, and what study staff are responsible for completing and signing off on the SAE reports, and who will receive notification of SAEs.",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 },
                 {
                   "linkId" : "p14.4.1.3",
                   "text" : "Unanticipated Problem Reporting",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "p14.4.1.3_help",
+                      "text" : "This section addresses responsibilities of investigators for reporting of UPs. Describe the UP reporting procedures, including timeframes. Further details should be included in a MOP or SOP including a description and a flow chart of when events are reported to various oversight (e.g., DSMB, safety monitoring committee, independent safety monitor) and regulatory s, and what study staff are responsible for completing and signing off on the UP report forms. Institutions engaged in human subjects research conducted or supported by Department of Health and Human Services (DHHS) must have written procedures for ensuring prompt reporting to the IRB, appropriate institutional officials, and any supporting department or agency head of any unanticipated problem involving risks to subjects or others (45 CFR 46.103(b)(5)). Furthermore, for research covered by an assurance approved for federal wide use by OHRP, DHHS regulations at 45 CFR 46.103(a) require that institutions promptly report any unanticipated problems to OHRP. Refer to the Reportable Events guidance in IRBear for further details.",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 },
                 {
                   "linkId" : "p14.4.1.4",
                   "text" : "Reporting of Pregnancy",
                   "type" : "text",
-                  "required" : false
+                  "required" : false,
+                  "item" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                                "code" : "help"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                          "valueCodeableConcept" : {
+                            "coding" : [
+                              {
+                                "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                                "code" : "instructions"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId" : "p14.4.1.4_help",
+                      "text" : "State the study’s pregnancy-related policy and procedure. Include appropriate mechanisms for reporting to the DCC or NIH, the IND or IDE sponsor, study leadership, IRB, and regulatory agencies. Provide appropriate modifications to study procedures (e.g., discontinuation of study intervention, while continuing safety follow-up, requesting permission to follow pregnant women to pregnancy outcome).",
+                      "type" : "display",
+                      "required" : false,
+                      "repeats" : false,
+                      "readOnly" : false
+                    }
+                  ]
                 }
               ]
             },
@@ -4738,13 +6533,81 @@
               "linkId" : "p14.4.5",
               "text" : "Reporting Events to Participants",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.4.5_help",
+                  "text" : "Describe how participants will be informed about AEs and SAEs, and study-related results on an individual or aggregate level. In addition, describe plans for detecting and managing incidental findings associated with study procedures",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p14.4.6",
               "text" : "Events of Special Interest",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p14.4.6_help",
+                  "text" : "Describe any other events that merit reporting to the sponsor, study leadership, IRB, and regulatory agencies. For example, in oncology trials, secondary malignancies are often captured.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             }
           ]
         },
@@ -4778,13 +6641,81 @@
           "linkId" : "p15.2",
           "text" : "Statistical Hypotheses",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p15.2_help",
+              "text" : "State the formal and testable null and alternative hypotheses for primary and key secondary endpoints, specifying the type of comparison (e.g., superiority, equivalence or non-inferiority, dose response) and time period for which each endpoint will be analyzed.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p15.3",
           "text" : "Analysis Datasets",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p15.3_help",
+              "text" : "Clearly identify and describe the analysis datasets (e.g., which participants will be included in each).",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p15.4",
@@ -4796,7 +6727,41 @@
           "linkId" : "p15.5",
           "text" : "Sample Size Determination",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p15.5_help",
+              "text" : "Include number of participants to recruit, screen, and enroll to have adequate power to test the key hypotheses for the study. Provide all information needed to validate your calculations and judge the feasibility of enrolling and following the necessary number of participants. Further, present calculations from a suitable range of assumptions to gauge the robustness of the proposed sample size.Discuss whether the sample size provides sufficient power for addressing secondary endpoints or exploratory analyses (e.g., sub analyses or moderator analyses involving an interaction term.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p15.6",
@@ -4826,7 +6791,41 @@
               "linkId" : "p15.6.4",
               "text" : "Safety Analyses",
               "type" : "text",
-              "required" : false
+              "required" : false,
+              "item" : [
+                {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                            "code" : "instructions"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId" : "p15.6.4_help",
+                  "text" : "Describe how safety endpoints will be analyzed (e.g., as summary statistics during treatment and/or as change scores from baselines such as shift tables). If your study is evaluating a formal safety endpoint, all of the factors to be included in Analysis of the Primary Efficacy Endpoint(s) section should be included here. Describe how AEs will be coded (e.g., Medical Dictionary for Regulatory Activities (MedDRA)), calculated (e.g., each AE will be counted once only for a given participant), presented (e.g., severity, frequency, and relationship of AEs to study intervention will be presented by System Organ Class (SOC) and preferred term ings) and what information will be reported about each AE (e.g., start date, stop date, severity, relationship, expectedness, outcome, and duration). Adverse events leading to premature discontinuation from the study intervention and serious treatment-emergent AEs should be presented either in a table or a listing. The information included here should be consistent with the information contained within Assessment of Safety section.",
+                  "type" : "display",
+                  "required" : false,
+                  "repeats" : false,
+                  "readOnly" : false
+                }
+              ]
             },
             {
               "linkId" : "p15.6.5",
@@ -4902,7 +6901,41 @@
           "linkId" : "p15.7",
           "text" : "Sample Size",
           "type" : "text",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "p15.7_help",
+              "text" : "Include number of participants to recruit, screen, and enroll to have adequate power to test the key hypotheses for the study. Provide all information needed to validate your calculations and judge the feasibility of enrolling and following the necessary number of participants.Further, present calculations from a suitable range of assumptions to gauge the robustness of the proposed sample size. Discuss whether the sample size provides sufficient power for addressing secondary endpoints or exploratory analyses.",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "p15.8",
@@ -5101,6 +7134,26 @@
               "repeats" : true,
               "item" : [
                 {
+                  "extension" : [
+                    {
+                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept" : {
+                        "coding" : [
+                          {
+                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                            "code" : "help",
+                            "display" : "Help-Button"
+                          }
+                        ],
+                        "text" : "Help-Button"
+                      }
+                    }
+                  ],
+                  "linkId" : "p16.1.8.4_help",
+                  "text" : "Provide a list of persons, companies, and/or groups serving in key roles in the conduct or oversight of the trial. This should include the sponsormedical expert for the trial (medical monitor), investigator responsible for conducting the trial (principal investigator (PI)), qualified clinician responsible for the siteclinical decisions (site investigator), and any clinical laboratory(ies) or other institutions involved in the trial. Other key roles may include the NIH point of contact (program director or officer), regulatory specialist, biostatistician, data coordinating center (DCC), data management center, data manager, or industry partner.",
+                  "type" : "display"
+                },
+                {
                   "linkId" : "p16.1.8.1",
                   "text" : "First Name",
                   "type" : "text",
@@ -5129,26 +7182,6 @@
                     {
                     }
                   ]
-                },
-                {
-                  "extension" : [
-                    {
-                      "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                      "valueCodeableConcept" : {
-                        "coding" : [
-                          {
-                            "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                            "code" : "help",
-                            "display" : "Help-Button"
-                          }
-                        ],
-                        "text" : "Help-Button"
-                      }
-                    }
-                  ],
-                  "linkId" : "p16.1.8.4_help",
-                  "text" : "Provide a list of persons, companies, and/or groups serving in key roles in the conduct or oversight of the trial. This should include the sponsormedical expert for the trial (medical monitor), investigator responsible for conducting the trial (principal investigator (PI)), qualified clinician responsible for the siteclinical decisions (site investigator), and any clinical laboratory(ies) or other institutions involved in the trial. Other key roles may include the NIH point of contact (program director or officer), regulatory specialist, biostatistician, data coordinating center (DCC), data management center, data manager, or industry partner.",
-                  "type" : "display"
                 }
               ]
             },
