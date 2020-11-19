@@ -4035,6 +4035,40 @@
             {
               "valueString" : "The Department of Health and Human Services (HHS) has issued a Certificate of Confidentiality to further protect your privacy. With this Certificate, the investigators may not disclose research information that may identify you in any Federal, State, or local civil, criminal, administrative, legislative, or other proceedings, unless you have consented for this use.[trunc]"
             }
+          ],
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c28.1_help",
+              "text" : "Indicator if study is covered under a certificate of confidentiality (automatially issued for NIH studies)",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
           ]
         },
         {
@@ -4058,7 +4092,41 @@
       "linkId" : "c29",
       "text" : "When will the PHI Authorization Expire based on date or time past an event",
       "type" : "text",
-      "required" : false
+      "required" : false,
+      "item" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                    "code" : "help"
+                  }
+                ]
+              }
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                    "code" : "instructions"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId" : "c29_help",
+          "text" : "PHI authorization expiration.  Might be never, a certain date, or a period after a study milestone, such as 6 months after study closure.",
+          "type" : "display",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        }
+      ]
     },
     {
       "linkId" : "c30",
@@ -4362,27 +4430,63 @@
         },
         {
           "linkId" : "c32.2",
-          "text" : "sIRB Version Number of Consent",
+          "text" : "sIRB Version Date of  Consent",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "linkId" : "c32.2_help",
+              "text" : "Date that changes whenever a change is made to the consent.  It is the versioning system of the sIRB institution, and is updated in accordance with the institution's policy.  ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c32.3",
-          "text" : "Relying Site Version Number of Consent",
-          "type" : "string",
-          "required" : false
-        },
-        {
-          "linkId" : "c32.4",
-          "text" : "sIRB Version Date of Consent",
-          "type" : "dateTime",
-          "required" : false
-        },
-        {
-          "linkId" : "c32.5",
           "text" : "Relying Site Version Date of Consent",
-          "type" : "dateTime",
-          "required" : false
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "C32.3_help",
+              "text" : "A number that changes whenever a change is made to the consent.  It is the versioning system of the relying institution, and is updated in accordance with the institution's policy.  ",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "c32.6",
