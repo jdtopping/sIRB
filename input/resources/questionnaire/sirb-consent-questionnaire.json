@@ -95,6 +95,35 @@
           "readOnly" : false
         },
         {
+          "linkId" : "c2.2",
+          "text" : "Given Name",
+          "type" : "string",
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "c2.2_help",
+              "text" : "Given name associated with the site primary responsibility holder",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
           "linkId" : "c2.1",
           "text" : "Last Name",
           "type" : "string",
@@ -124,37 +153,16 @@
           ]
         },
         {
-          "linkId" : "c2.2",
-          "text" : "First Name",
+          "linkId" : "c2.6",
+          "text" : "Suffix",
           "type" : "string",
           "required" : false,
-          "item" : [
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                  "valueCodeableConcept" : {
-                    "coding" : [
-                      {
-                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
-                        "code" : "help"
-                      }
-                    ]
-                  }
-                }
-              ],
-              "linkId" : "c2.2_help",
-              "text" : "Given name associated with the site primary responsibility holder",
-              "type" : "display",
-              "required" : false,
-              "repeats" : false,
-              "readOnly" : false
-            }
-          ]
+          "repeats" : false,
+          "readOnly" : false
         },
         {
           "linkId" : "c2.3",
-          "text" : "Professional Degrees",
+          "text" : "Professional Degree(s)",
           "type" : "string",
           "required" : false,
           "item" : [

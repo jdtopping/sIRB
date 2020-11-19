@@ -314,7 +314,7 @@
         {
           "linkId" : "mae2.1",
           "definition" : "10",
-          "text" : "First Name",
+          "text" : "Given Name",
           "type" : "string",
           "required" : false
         },
@@ -324,6 +324,22 @@
           "text" : "Last Name",
           "type" : "string",
           "required" : false
+        },
+        {
+          "linkId" : "mae2.5",
+          "text" : "Suffix",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
+        },
+        {
+          "linkId" : "mae2.6",
+          "text" : "Professional Degree(s)",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false
         },
         {
           "linkId" : "mae2.3",
