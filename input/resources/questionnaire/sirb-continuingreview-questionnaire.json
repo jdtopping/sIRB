@@ -477,7 +477,41 @@
           "linkId" : "cr2.1",
           "text" : "Given Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "cr2.1_help",
+              "text" : "Given name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "cr2.4",
@@ -485,7 +519,41 @@
           "type" : "string",
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "cr2.4_help",
+              "text" : "Surname or family name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "cr2.5",
@@ -493,11 +561,45 @@
           "type" : "string",
           "required" : false,
           "repeats" : false,
-          "readOnly" : false
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "cr2.5_help",
+              "text" : "Suffix such as Junior (Jr.), Senior (Sr.), I, II, III, IV, etc. associated with the site principal investigator's name",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "cr2.6",
-          "text" : "Professional Degree(s)",
+          "text" : "Degree(s)",
           "type" : "string",
           "required" : false,
           "repeats" : false,
