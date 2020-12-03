@@ -277,7 +277,7 @@
         },
         {
           "linkId" : "nme2.1",
-          "text" : "Name:",
+          "text" : "Given Name",
           "type" : "string",
           "required" : false,
           "item" : [
@@ -307,7 +307,133 @@
                 }
               ],
               "linkId" : "nme2.1_help",
-              "text" : "Given name and surname of the site PI",
+              "text" : "Given name of the site PI",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "me2.4",
+          "text" : "Last Name",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "me2.4_help",
+              "text" : "Surname or family name associated with the  principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "me2.5",
+          "text" : "Suffix",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "me2.5_help",
+              "text" : "Suffix such as Junior (Jr.), Senior (Sr.), I, II, III, IV, etc. associated with the principal investigator's name",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "me2.6",
+          "text" : "Degree(s)",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "me2.6_help",
+              "text" : "Professional and Academic degrees associated with the principal investigator",
               "type" : "display",
               "required" : false,
               "repeats" : false,

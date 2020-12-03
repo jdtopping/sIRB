@@ -314,16 +314,168 @@
         {
           "linkId" : "mae2.1",
           "definition" : "10",
-          "text" : "First Name",
+          "text" : "Given Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae2.1_help",
+              "text" : "Given name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae2.2",
           "definition" : "11",
           "text" : "Last Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae2.2_help",
+              "text" : "Surname or family name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "mae2.5",
+          "text" : "Suffix",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae2.5_help",
+              "text" : "Suffix such as Junior (Jr.), Senior (Sr.), I, II, III, IV, etc. associated with the site principal investigator's name",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "mae2.6",
+          "text" : "Degree(s)",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "mae2.6_help",
+              "text" : "Professional and Academic degrees associated with the site investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "mae2.3",
@@ -374,7 +526,7 @@
             }
           ],
           "linkId" : "mae3_help",
-          "text" : " Personnel completing the adverse event documentation at the relying site",
+          "text" : "Personnel completing the adverse event documentation at the relying site",
           "type" : "display",
           "required" : false,
           "repeats" : false,
@@ -383,9 +535,15 @@
         {
           "linkId" : "mae3.1",
           "definition" : "15",
-          "text" : "First Name",
+          "text" : "Given Name",
           "type" : "string",
-          "required" : false
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "initial" : [
+            {
+            }
+          ]
         },
         {
           "linkId" : "mae3.2",

@@ -163,21 +163,167 @@
         },
         {
           "linkId" : "rm3.1",
-          "text" : "First Name",
+          "text" : "Given Name",
           "type" : "string",
-          "required" : true
-        },
-        {
-          "linkId" : "rm3.2",
-          "text" : "Middle Name",
-          "type" : "string",
-          "required" : false
+          "required" : true,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "rm3.1_help",
+              "text" : "Given name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         },
         {
           "linkId" : "rm3.3",
           "text" : "Last Name",
           "type" : "string",
-          "required" : true
+          "required" : true,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "rm3.3_help",
+              "text" : "Surname or family name associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "rm3.2",
+          "text" : "Suffix",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "rm3.2_help",
+              "text" : "Suffix such as Junior (Jr.), Senior (Sr.), I, II, III, IV, etc. associated with the site principal investigator's name",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
+        },
+        {
+          "linkId" : "rm3.4",
+          "text" : "Degree(s)",
+          "type" : "string",
+          "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
+          "item" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-item-control",
+                        "code" : "help"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+                  "valueCodeableConcept" : {
+                    "coding" : [
+                      {
+                        "system" : "http://hl7.org/fhir/questionnaire-display-category",
+                        "code" : "instructions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId" : "rm3.4_help",
+              "text" : "Professional and Academic degrees associated with the site principal investigator",
+              "type" : "display",
+              "required" : false,
+              "repeats" : false,
+              "readOnly" : false
+            }
+          ]
         }
       ]
     },
