@@ -919,8 +919,8 @@
         },
         {
           "linkId" : "p1.11",
-          "text" : "ClinicalTrials.Gov Number",
-          "type" : "text",
+          "text" : "ClinicalTrials.Gov Identifier",
+          "type" : "string",
           "enableWhen" : [
             {
               "question" : "p1.1",
@@ -2447,8 +2447,10 @@
         {
           "linkId" : "p3.2",
           "text" : "Schema",
-          "type" : "text",
+          "type" : "attachment",
           "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
           "item" : [
             {
               "extension" : [
@@ -2487,8 +2489,10 @@
         {
           "linkId" : "p3.3",
           "text" : "Schedule of Activities",
-          "type" : "text",
+          "type" : "attachment",
           "required" : false,
+          "repeats" : false,
+          "readOnly" : false,
           "item" : [
             {
               "extension" : [
@@ -4255,52 +4259,6 @@
                       "text" : "Describe how mothers providing consent are informed of the reasonably foreseeable impact of the research on the fetus or neonate:",
                       "type" : "text",
                       "required" : false
-                    },
-                    {
-                      "linkId" : "p9.1.7.2.10",
-                      "text" : "Inducements, monetary or otherwise, will not be offered to terminate a pregnancy and that in the case of a fetus, the fetus is not the participant of a planned abortion.",
-                      "type" : "choice",
-                      "required" : false,
-                      "repeats" : false,
-                      "readOnly" : false,
-                      "answerOption" : [
-                        {
-                          "valueCoding" : {
-                            "code" : "1",
-                            "display" : "Yes"
-                          }
-                        },
-                        {
-                          "valueCoding" : {
-                            "code" : "0",
-                            "display" : "No"
-                          }
-                        }
-                      ],
-                      "item" : [
-                        {
-                          "linkId" : "p9.1.7.2.10.1",
-                          "text" : "Individuals engaged in the research will have no part in any decisions as to the timing, method, or procedures used to terminate a pregnancy or in determining the viability of a neonate.",
-                          "type" : "choice",
-                          "required" : false,
-                          "repeats" : false,
-                          "readOnly" : false,
-                          "answerOption" : [
-                            {
-                              "valueCoding" : {
-                                "code" : "1",
-                                "display" : "Yes"
-                              }
-                            },
-                            {
-                              "valueCoding" : {
-                                "code" : "0",
-                                "display" : "No"
-                              }
-                            }
-                          ]
-                        }
-                      ]
                     }
                   ]
                 },
@@ -4888,28 +4846,6 @@
                       "text" : "Describe why the objectives of the study cannot be met by enrolling participants who are able to give consent",
                       "type" : "text",
                       "required" : false
-                    },
-                    {
-                      "linkId" : "p9.1.7.9.3",
-                      "text" : "This study is NOT  prohibited by law.",
-                      "type" : "choice",
-                      "required" : false,
-                      "repeats" : false,
-                      "readOnly" : false,
-                      "answerOption" : [
-                        {
-                          "valueCoding" : {
-                            "code" : "1",
-                            "display" : "Yes"
-                          }
-                        },
-                        {
-                          "valueCoding" : {
-                            "code" : "0",
-                            "display" : "No"
-                          }
-                        }
-                      ]
                     },
                     {
                       "linkId" : "p9.1.7.9.4",
@@ -8858,9 +8794,10 @@
         {
           "linkId" : "p16.5",
           "text" : "Attachments",
-          "type" : "text",
+          "type" : "attachment",
           "required" : false,
-          "repeats" : true
+          "repeats" : true,
+          "readOnly" : false
         }
       ]
     }
