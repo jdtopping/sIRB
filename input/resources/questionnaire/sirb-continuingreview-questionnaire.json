@@ -135,7 +135,7 @@
             },
             {
               "valueCoding" : {
-                "code" : "open-no-subjects",
+                "code" : "open-no-participants",
                 "display" : "Open with no participant"
               }
             },
@@ -183,7 +183,7 @@
             {
               "valueCoding" : {
                 "code" : "continue-meds",
-                "display" : "Continuing interventions - includes medications"
+                "display" : "Continuing interventions"
               }
             },
             {

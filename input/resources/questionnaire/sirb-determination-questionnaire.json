@@ -747,7 +747,7 @@
             },
             {
               "linkId" : "dl2.3.2",
-              "text" : "Site Investigator",
+              "text" : "Site Principal Investigator",
               "type" : "group",
               "required" : false,
               "item" : [

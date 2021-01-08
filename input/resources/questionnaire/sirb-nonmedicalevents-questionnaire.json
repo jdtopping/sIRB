@@ -2301,7 +2301,7 @@
                 }
               ],
               "linkId" : "nme3.14_help",
-              "text" : "Indicator if participant complaint of unexpected risks was not resolved by study team.",
+              "text" : "Indicator if participant complaint of unexpected risks was not resolved by study team. Complaint information is related to study site. ",
               "type" : "display",
               "required" : false,
               "repeats" : false,
@@ -2311,7 +2311,7 @@
         },
         {
           "linkId" : "nme3.15",
-          "text" : "Complaint",
+          "text" : "Participant Complaint",
           "type" : "group",
           "enableWhen" : [
             {
