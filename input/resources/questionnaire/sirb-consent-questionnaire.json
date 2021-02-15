@@ -27,8 +27,14 @@
       ],
       "linkId" : "c1",
       "text" : "Research Study",
-      "type" : "text",
+      "type" : "group",
       "required" : true,
+      "repeats" : false,
+      "readOnly" : false,
+      "initial" : [
+        {
+        }
+      ],
       "item" : [
         {
           "linkId" : "c1.1",

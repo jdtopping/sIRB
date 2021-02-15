@@ -1313,7 +1313,11 @@
               "type" : "display",
               "required" : false,
               "repeats" : false,
-              "readOnly" : false
+              "readOnly" : false,
+              "initial" : [
+                {
+                }
+              ]
             }
           ]
         },
