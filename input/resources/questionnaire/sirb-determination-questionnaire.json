@@ -220,7 +220,7 @@
                 },
                 {
                   "linkId" : "dl2.1.2.1",
-                  "text" : "Given Name",
+                  "text" : "First Name",
                   "type" : "string",
                   "required" : false,
                   "item" : [
@@ -250,7 +250,7 @@
                         }
                       ],
                       "linkId" : "dl2.1.2.1_help",
-                      "text" : "Given name associated with the point of contact",
+                      "text" : "First or Given name associated with the point of contact",
                       "type" : "display",
                       "required" : false,
                       "repeats" : false,
@@ -425,7 +425,7 @@
                 },
                 {
                   "linkId" : "dl2.1.3.1",
-                  "text" : "Given Name",
+                  "text" : "First Name",
                   "type" : "string",
                   "required" : false,
                   "item" : [
@@ -455,7 +455,7 @@
                         }
                       ],
                       "linkId" : "dl2.1.3.1_help",
-                      "text" : "Given name associated with the overall principal investigator",
+                      "text" : "First or Given name associated with the overall principal investigator",
                       "type" : "display",
                       "required" : false,
                       "repeats" : false,
@@ -785,7 +785,7 @@
                 },
                 {
                   "linkId" : "dl2.3.2.1",
-                  "text" : "Given Name",
+                  "text" : "First Name",
                   "type" : "string",
                   "required" : false,
                   "item" : [
@@ -815,7 +815,7 @@
                         }
                       ],
                       "linkId" : "dl2.3.2.1_help",
-                      "text" : "First name or Given name associated with the site investigator",
+                      "text" : "First or Given name associated with the site investigator",
                       "type" : "display",
                       "required" : false,
                       "repeats" : false,
