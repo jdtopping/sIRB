@@ -152,7 +152,7 @@
                 {
                   "linkId" : "dl2.1.1.2",
                   "text" : "Federal Wide Assurance (FWA):",
-                  "type" : "string",
+                  "type" : "integer",
                   "required" : false,
                   "item" : [
                     {
@@ -706,7 +706,7 @@
                 {
                   "linkId" : "dl2.3.1.2",
                   "text" : "Federal Wide Assurance (FWA)",
-                  "type" : "string",
+                  "type" : "integer",
                   "required" : false,
                   "item" : [
                     {
@@ -815,7 +815,7 @@
                         }
                       ],
                       "linkId" : "dl2.3.2.1_help",
-                      "text" : "Given name associated with the site investigator",
+                      "text" : "First name or Given name associated with the site investigator",
                       "type" : "display",
                       "required" : false,
                       "repeats" : false,
