@@ -434,7 +434,6 @@
 							}
 						}
 					],
-					"enableBehavior" : "all",
 					"required" : false,
 					"item" : [
 						{
@@ -1046,7 +1045,6 @@
 							}
 						}
 					],
-					"enableBehavior" : "All",
 					"item" : [
 						{
 							"linkId" : "cr4.2.1",
@@ -1170,7 +1168,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1221,7 +1218,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1272,7 +1268,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1357,7 +1352,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1408,7 +1402,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1459,7 +1452,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false,
 							"repeats" : false,
 							"readOnly" : false
@@ -1512,7 +1504,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1563,7 +1554,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1684,7 +1674,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1770,7 +1759,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						}
 					]
@@ -1788,7 +1776,6 @@
 							}
 						}
 					],
-					"enableBehavior" : "All",
 					"required" : false,
 					"item" : [
 						{
@@ -1913,7 +1900,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -1964,7 +1950,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2015,7 +2000,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2100,7 +2084,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2151,7 +2134,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2202,7 +2184,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false,
 							"repeats" : false,
 							"readOnly" : false
@@ -2255,7 +2236,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2306,7 +2286,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2427,7 +2406,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						},
 						{
@@ -2513,7 +2491,6 @@
 									}
 								}
 							],
-							"enableBehavior" : "all",
 							"required" : false
 						}
 					]
@@ -2578,7 +2555,6 @@
 					"text" : "Have there been any internal or local adverse events in the research?",
 					"type" : "choice",
 					"required" : false,
-					"enableBehavior" : "all",
 					"answerOption" : [
 						{
 							"valueCoding" : {
@@ -2622,7 +2598,6 @@
 							}
 						}
 					],
-					"enableBehavior" : "all",
 					"required" : false,
 					"answerOption" : [
 						{
@@ -2730,7 +2705,6 @@
 							}
 						}
 					],
-					"enableBehavior" : "all",
 					"required" : false
 				}
 			]
