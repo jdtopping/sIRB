@@ -1,11 +1,6 @@
-The Determination Letter
+Determination Letter
 
-		Composition => Bundle = FHIR Document
+<a href="https://lhncbc.github.io/questionnaire-viewer/?q=https://raw.githubusercontent.com/jdtopping/sIRB/master/input/resources/questionnaire/sirb-determination-questionnaire.json">Continuing Review Questionnaire</a> 
 
-		Questionnaire => QuestionnaireResponse
 		
-Lorem Ipsum.
-
-<table><tr><td><img src="determination.png" /></td></tr></table>
-
 [Next Page - Recruitment Materials](RecruitmentMaterials.html)
