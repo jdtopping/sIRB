@@ -541,8 +541,7 @@
           "repeats" : false,
           "readOnly" : false,
           "initial" : [
-            {
-            }
+            
           ]
         },
         {
@@ -1279,8 +1278,7 @@
           "repeats" : false,
           "readOnly" : false,
           "initial" : [
-            {
-            }
+            
           ],
           "item" : [
             {
@@ -1315,8 +1313,7 @@
               "repeats" : false,
               "readOnly" : false,
               "initial" : [
-                {
-                }
+                
               ]
             }
           ]
