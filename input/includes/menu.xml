@@ -2,18 +2,20 @@
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Standardized sIRB Questionnaire Forms<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Single IRB Forms<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="Determination.html">Determination</a></li>
-      <li><a href="RecruitmentMaterials.html">Recruitment Materials</a></li>
-      <li><a href="Protocol.html">Protocol</a></li>
-      <li><a href="Consent.html">Consent</a></li>
-      <li><a href="AdverseEvent.html">Adverse Event </a></li>
-      <li><a href="Non-MedicalEvent.html">Non-Medical Event</a></li>
-      <li><a href="ContinuingReview.html">Continuing Review</a></li>    </ul>
+      <li><a href="index.html">Single IRB Forms</a></li>
+      <li><a href="initiate_study.html">Initiate Study</a></li>
+      <li><a href="protocol.html">Protocol</a></li>
+      <li><a href="consent.html">Consent</a></li>
+      <li><a href="recruitment_materials.html">Recruitment Materials</a></li>
+      <li><a href="medical_adverse_event.html">Medical Adverse Event</a></li>
+      <li><a href="non-medical_adverse_event.html">Non-Medical Adverse Event</a></li>
+      <li><a href="determination_letter.html">Determination Letter</a></li>
+      <li><a href="continuing_review.html">Continuing Review</a></li>    </ul>
   </li>
-  <li><a href="Downloads.html">Downloads</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>
